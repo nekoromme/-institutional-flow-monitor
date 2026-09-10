@@ -3,6 +3,7 @@
 同じ原データで旧・新の検査を比べる。後の保有増加を見て銘柄を戻す
 処理はない。原データを公開ログへ出さず、件数・判定・ハッシュを残す。
 """
+from collections import Counter
 from datetime import datetime, timedelta
 import hashlib
 import json
@@ -38,6 +39,8 @@ def zero_assessment(daily, minute, trades, probes, start, end):
     positive_trades = [r for r in trades if numeric(r.get('s')) and r['s'] > 0]
     # @だけの通常約定は、公式説明では出来高へ算入される。
     regular = [r for r in positive_trades if r.get('c') == ['@']]
+    # 条件の組合せを残す。次の調査で原数値を公開せずに原因を追える。
+    profiles = Counter(','.join(sorted(r.get('c', []))) for r in positive_trades)
     positive_minutes = sum(numeric(r.get('v')) and r['v'] > 0 for r in minute)
     zeros = [r for r in daily if r.get('v') == 0]
     if not complete:
@@ -56,6 +59,7 @@ def zero_assessment(daily, minute, trades, probes, start, end):
             'daily_rows': len(daily), 'daily_zero_rows': len(zeros), 'minute_rows': len(minute),
             'positive_volume_minute_rows': positive_minutes, 'trade_rows': len(trades),
             'positive_size_trade_rows': len(positive_trades), 'regular_positive_trade_rows': len(regular),
+            'positive_trade_condition_profiles': dict(profiles),
             'zero_accepted_as_valid_observation': False, 'automatic_replacement_performed': False}
 
 
@@ -115,7 +119,7 @@ def run(root, client):
     holdings = json.loads((root/'docs/evidence/batch-holdings-2026-09-10.json').read_text())
     if market['protocol_sha256'] != PROTOCOL_SHA or digest(p) != market['market_input_and_scores_sha256']:
         raise ValueError('quality_repair_input_mismatch')
-    if market.get('version') != 'batch-market-0.2':
+    if market.get('version') != 'batch-market-0.3':
         raise ValueError('quality_repair_requires_new_audit_basis')
     old = {r['symbol']:r for r in prior['rows']}
     days = [s['date'] for s in private['sessions']]
@@ -125,7 +129,8 @@ def run(root, client):
         source = private['symbols'].get(symbol)
         if not source: continue
         # 同じ今回の取得値に「期間末までの補正だけ」という旧検査を当てる。
-        legacy = split_adjustment_audit(source['raw'], source['adjusted'], complete=True,
+        legacy = split_adjustment_audit(source['raw'], source['adjusted'],
+                                        complete=all(p['complete'] for p in current.get('probes', [])),
                                         through=protocol['evaluation_end'])[symbol]
         matched = None
         if legacy['status'] == 'comparable_sample' and current['status'] == 'scored':
@@ -163,6 +168,7 @@ def run(root, client):
             'zero_volume_verification':zero, 'repaired_quarter_comparison':comparison,
             'repaired_month_prefix_comparisons':repaired_comparisons(protocol, market, private, holdings),
             'decisions':{'audit_basis_fix':'adopted_as_unit_and_date_correction',
+                         'window_scoped_hold':'adopted_unresolved_values_not_used_in_known_windows',
                          'zero_volume_acceptance':'not_adopted_without_validity_evidence',
                          'one_month_signal_filter':'not_adopted_requires_separate_period_validation',
                          'positive_price_filter':'not_adopted_buyer_identity_and_excluded_accumulation_unresolved'},

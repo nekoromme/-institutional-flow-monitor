@@ -3,12 +3,18 @@ from datetime import date, datetime, timedelta
 import unittest
 
 from flow_probe.alpaca import NY, split_adjustment_audit
+from flow_probe.batch_market import can_prepare_windows
 from flow_probe.quality_repair import zero_assessment
 from flow_probe.reference import documented_price_factor
 from flow_probe.research import prepare_daily
 
 
 class QualityRepairTests(unittest.TestCase):
+    def test_window_scoping_does_not_admit_missing_pairs_or_invalid_values(self):
+        self.assertTrue(can_prepare_windows({'coverage_complete':True,'invalid_pairs':0,'unresolved_days':['2025-09-17']}))
+        self.assertFalse(can_prepare_windows({'coverage_complete':False,'invalid_pairs':0}))
+        self.assertFalse(can_prepare_windows({'coverage_complete':True,'invalid_pairs':1}))
+
     def test_later_split_fixes_audit_but_not_historical_volume_units(self):
         start = date(2025, 9, 1)
         days = [(start+timedelta(days=i)).isoformat() for i in range(120)

@@ -26,6 +26,15 @@ def quarter_signal(rows, field, expected_sessions):
     return any(r[field] for r in rows)
 
 
+def can_prepare_windows(audit):
+    """対応が揃う有限の数値なら、不一致日の影響は各過去窓で判定できる。
+
+    不一致を許容する関数ではない。prepare_dailyが当日と過去60日を確認し、
+    不一致を含む窓を不明にする。古い1日の価格差で未来を永久停止しない。
+    """
+    return bool(audit.get('coverage_complete') and audit.get('invalid_pairs') == 0)
+
+
 def run(root, client):
     protocol = load_protocol(root)
     # endは取得する足の範囲。提供元の補正を過去時点へ戻す指定ではない。
@@ -62,7 +71,7 @@ def run(root, client):
                 audit = split_adjustment_audit(raw, adjusted, complete=True, through=adjustment_basis)
                 # 補正差の原株数は公開しない。件数と該当日だけを記録する。
                 item['adjustment_audit'] = {k:audit[symbol][k] for k in ('status','paired_days','unpaired_days','coverage_complete','invalid_pairs','price_mismatch_days','volume_mismatch_days','unresolved_days','zero_raw_volume_days')}
-                if audit[symbol]['status'] != 'comparable_sample':
+                if not can_prepare_windows(audit[symbol]):
                     item['reason'] = 'unreviewed_adjustment_difference_or_missing_pairs'
                 else:
                     prepared, _ = prepare_daily(raw, sessions, audit)
@@ -85,10 +94,11 @@ def run(root, client):
             print(json.dumps({'batch_market_processed': len(output), 'total': len(protocol['symbols'])}), flush=True)
     body = json.dumps({'sessions':sessions,'symbols':private}, sort_keys=True, allow_nan=False).encode()
     (folder/'market-input-and-scores.json').write_bytes(body)
-    return {'version':'batch-market-0.2','protocol_sha256':PROTOCOL_SHA,
+    return {'version':'batch-market-0.3','protocol_sha256':PROTOCOL_SHA,
             'retrieved_at_utc':retrieved_at.isoformat(),
             'provider_adjustment_audit_through':adjustment_basis,
             'feature_adjustment_basis':'each_decision_day_only',
+            'unresolved_adjustment_policy':'hold_affected_input_windows; quarter_requires_all_days_known',
             'quality_repair_plan_sha256':hashlib.sha256((root/'docs/QUALITY_REPAIR_PLAN.md').read_bytes()).hexdigest(),
             'code_commit':os.environ.get('GITHUB_SHA','local'),'rows':output,
             'market_input_and_scores_sha256':hashlib.sha256(body).hexdigest(),
