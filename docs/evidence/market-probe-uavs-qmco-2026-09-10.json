@@ -1,0 +1,1587 @@
+{
+  "commit": "fa1539f536f88ec1a2f9b849bfde0edc87ae9ac0",
+  "completed_at": "2026-09-10T03:04:46.303432+00:00",
+  "credentials_present": {
+    "key": true,
+    "secret": true
+  },
+  "market": {
+    "asset_status": {
+      "AAOI": {
+        "exchange": "NASDAQ",
+        "status": "active",
+        "tradable": true
+      },
+      "MU": {
+        "exchange": "NASDAQ",
+        "status": "active",
+        "tradable": true
+      },
+      "ONTO": {
+        "exchange": "NYSE",
+        "status": "active",
+        "tradable": true
+      },
+      "QMCO": {
+        "exchange": "NASDAQ",
+        "status": "active",
+        "tradable": true
+      },
+      "UAVS": {
+        "exchange": "AMEX",
+        "status": "active",
+        "tradable": true
+      }
+    },
+    "calendar_sessions": 752,
+    "cutoff_policy": "only_sessions_closed_at_least_30_minutes_ago",
+    "load_estimate": {
+      "approx_300_symbols_252_sessions_bytes": 4283737920,
+      "limitations": "five_current_symbols_only; includes_between_session_records; excludes_filings_storage_and_index_overhead; not_a_quote_or_invoice",
+      "sample_based_uncompressed_response_bytes_per_symbol_session": 56663
+    },
+    "missing_minute_audits": [
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-08-12T14:40:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 4507,
+        "status": "ok",
+        "symbol": "UAVS",
+        "trade_records": 41
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-09-09T19:48:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 2018,
+        "status": "ok",
+        "symbol": "UAVS",
+        "trade_records": 19
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-08-12T15:36:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 3689,
+        "status": "ok",
+        "symbol": "ONTO",
+        "trade_records": 34
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-09-09T19:38:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 3679,
+        "status": "ok",
+        "symbol": "ONTO",
+        "trade_records": 34
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-08-26T16:48:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 3654,
+        "status": "ok",
+        "symbol": "AAOI",
+        "trade_records": 37
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-09-01T16:45:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 7468,
+        "status": "ok",
+        "symbol": "AAOI",
+        "trade_records": 76
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-08-12T19:02:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 2385,
+        "status": "ok",
+        "symbol": "QMCO",
+        "trade_records": 24
+      },
+      {
+        "complete": true,
+        "http_requests": 1,
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "minute": "2026-09-09T18:56:00Z",
+        "only_odd_lot_condition": true,
+        "received_bytes": 1960,
+        "status": "ok",
+        "symbol": "QMCO",
+        "trade_records": 20
+      }
+    ],
+    "probes": [
+      {
+        "adjustment": "raw",
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 4.074,
+        "end": "2026-09-09T20:00:00Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 8,
+        "http_status": 200,
+        "kind": "bars",
+        "name": "sip_daily_3year",
+        "pages": 8,
+        "quality": {
+          "AAOI": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "MU": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "ONTO": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "QMCO": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "UAVS": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        },
+        "received_bytes": 399584,
+        "records": 3760,
+        "retries": 0,
+        "start": "2023-09-11T04:00:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": "1Day"
+      },
+      {
+        "adjustment": "split",
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 3.922,
+        "end": "2026-09-09T20:00:00Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 8,
+        "http_status": 200,
+        "kind": "bars",
+        "name": "sip_daily_3year_split_adjusted",
+        "pages": 8,
+        "quality": {
+          "AAOI": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "MU": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "ONTO": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "QMCO": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "UAVS": {
+            "expected_sessions": 752,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 752,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 752,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        },
+        "received_bytes": 394933,
+        "records": 3760,
+        "retries": 0,
+        "start": "2023-09-11T04:00:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": "1Day"
+      },
+      {
+        "adjustment": "raw",
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 3.682,
+        "end": "2026-09-09T19:59:59.999999Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 6,
+        "http_status": 200,
+        "kind": "bars",
+        "name": "sip_minutes_20sessions",
+        "pages": 6,
+        "quality": {
+          "AAOI": {
+            "expected_regular_minutes": 7800,
+            "extended_or_other_records": 6405,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 2,
+            "observed_regular_minutes": 7798,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 14203
+          },
+          "MU": {
+            "expected_regular_minutes": 7800,
+            "extended_or_other_records": 10480,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 0,
+            "observed_regular_minutes": 7800,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 18280
+          },
+          "ONTO": {
+            "expected_regular_minutes": 7800,
+            "extended_or_other_records": 170,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 1160,
+            "observed_regular_minutes": 6640,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 6810
+          },
+          "QMCO": {
+            "expected_regular_minutes": 7800,
+            "extended_or_other_records": 1062,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 741,
+            "observed_regular_minutes": 7059,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 8121
+          },
+          "UAVS": {
+            "expected_regular_minutes": 7800,
+            "extended_or_other_records": 1435,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 1824,
+            "observed_regular_minutes": 5976,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 7411
+          }
+        },
+        "received_bytes": 5666320,
+        "records": 54825,
+        "retries": 0,
+        "start": "2026-08-12T13:30:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": "1Min"
+      },
+      {
+        "adjustment": "raw",
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 1.085,
+        "end": "2026-09-09T19:59:59.999999Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "iex",
+        "http_requests": 2,
+        "http_status": 200,
+        "kind": "bars",
+        "name": "iex_minutes_comparison",
+        "pages": 2,
+        "quality": {
+          "AAOI": {
+            "expected_regular_minutes": 390,
+            "extended_or_other_records": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 137,
+            "observed_regular_minutes": 253,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 253
+          },
+          "MU": {
+            "expected_regular_minutes": 390,
+            "extended_or_other_records": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 4,
+            "observed_regular_minutes": 386,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 386
+          },
+          "ONTO": {
+            "expected_regular_minutes": 390,
+            "extended_or_other_records": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 305,
+            "observed_regular_minutes": 85,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 85
+          },
+          "QMCO": {
+            "expected_regular_minutes": 390,
+            "extended_or_other_records": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 238,
+            "observed_regular_minutes": 152,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 152
+          },
+          "UAVS": {
+            "expected_regular_minutes": 390,
+            "extended_or_other_records": 0,
+            "first_timestamp": "2026-09-09T13:37:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "missing_regular_minutes": 372,
+            "observed_regular_minutes": 18,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 18
+          }
+        },
+        "received_bytes": 92493,
+        "records": 894,
+        "retries": 0,
+        "start": "2026-09-09T13:30:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": "1Min"
+      },
+      {
+        "adjustment": null,
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 3.921,
+        "end": "2026-09-09T14:00:59.999999Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 8,
+        "http_status": 200,
+        "kind": "trades",
+        "name": "sip_trades_one_minute",
+        "pages": 8,
+        "quality": {
+          "AAOI": {
+            "first_timestamp": "2026-09-09T14:00:00.013344892Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.846877928Z",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 682
+          },
+          "MU": {
+            "first_timestamp": "2026-09-09T14:00:00.001249883Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.97571173Z",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 6481
+          },
+          "ONTO": {
+            "first_timestamp": "2026-09-09T14:00:00.689347979Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:58.543569672Z",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 183
+          },
+          "QMCO": {
+            "first_timestamp": "2026-09-09T14:00:00.993632364Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:54.439089839Z",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 47
+          },
+          "UAVS": {
+            "first_timestamp": "2026-09-09T14:00:59.919381235Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.919381235Z",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 1
+          }
+        },
+        "received_bytes": 721339,
+        "records": 7394,
+        "retries": 0,
+        "start": "2026-09-09T14:00:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": null
+      },
+      {
+        "adjustment": null,
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 2.018,
+        "end": "2026-09-09T14:00:59.999999Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 4,
+        "http_status": 200,
+        "kind": "quotes",
+        "name": "sip_quotes_one_minute",
+        "pages": 4,
+        "quality": {
+          "AAOI": {
+            "crossed_quotes": 0,
+            "first_timestamp": "2026-09-09T14:00:00.013625147Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.688044793Z",
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 609
+          },
+          "MU": {
+            "crossed_quotes": 0,
+            "first_timestamp": "2026-09-09T14:00:00.097221642Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.951919245Z",
+            "locked_quotes": 2,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 2561
+          },
+          "ONTO": {
+            "crossed_quotes": 0,
+            "first_timestamp": "2026-09-09T14:00:07.331974697Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.993025854Z",
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 245
+          },
+          "QMCO": {
+            "crossed_quotes": 0,
+            "first_timestamp": "2026-09-09T14:00:02.878224205Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.290925625Z",
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 29
+          },
+          "UAVS": {
+            "crossed_quotes": 0,
+            "first_timestamp": "2026-09-09T14:00:29.995488539Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2026-09-09T14:00:59.995510954Z",
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity",
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 2
+          }
+        },
+        "received_bytes": 403347,
+        "records": 3446,
+        "retries": 0,
+        "start": "2026-09-09T14:00:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "timeframe": null
+      },
+      {
+        "adjustment": "raw",
+        "automatic_feed_fallback": false,
+        "complete": true,
+        "elapsed_seconds": 0.33,
+        "end": "2016-01-08T05:00:00Z",
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "feed_requested": "sip",
+        "http_requests": 1,
+        "http_status": 200,
+        "kind": "bars",
+        "name": "sip_daily_2016_sample",
+        "pages": 1,
+        "quality": {
+          "MU": {
+            "expected_sessions": 0,
+            "first_timestamp": "2016-01-05T05:00:00Z",
+            "identical_rows_or_duplicate_bar_times": 0,
+            "invalid_records": 0,
+            "last_timestamp": "2016-01-08T05:00:00Z",
+            "missing_sessions": [],
+            "observed_sessions": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "records": 4,
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        },
+        "received_bytes": 474,
+        "records": 4,
+        "retries": 0,
+        "start": "2016-01-05T05:00:00Z",
+        "status": "ok",
+        "symbol_mapping_asof": "-",
+        "symbols": [
+          "MU"
+        ],
+        "timeframe": "1Day"
+      }
+    ],
+    "purpose": "data_feasibility_only_not_a_stock_screen",
+    "required_market_probe_ok": true,
+    "session": {
+      "close": "16:00",
+      "date": "2026-09-09",
+      "open": "09:30",
+      "session_close": "2000",
+      "session_open": "0400",
+      "settlement_date": "2026-09-10"
+    },
+    "split_adjustment_audit": {
+      "AAOI": {
+        "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        "invalid_pairs": 0,
+        "paired_days": 752,
+        "price_volume_adjustment_mismatches": 0,
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "status": "comparable_sample",
+        "unpaired_days": 0
+      },
+      "MU": {
+        "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        "invalid_pairs": 0,
+        "paired_days": 752,
+        "price_volume_adjustment_mismatches": 0,
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "status": "comparable_sample",
+        "unpaired_days": 0
+      },
+      "ONTO": {
+        "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        "invalid_pairs": 0,
+        "paired_days": 752,
+        "price_volume_adjustment_mismatches": 0,
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "status": "comparable_sample",
+        "unpaired_days": 0
+      },
+      "QMCO": {
+        "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        "invalid_pairs": 0,
+        "paired_days": 752,
+        "price_volume_adjustment_mismatches": 86,
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2023-09-15",
+            "price_multiplier": 20,
+            "records": 5
+          },
+          {
+            "first_day": "2023-09-18",
+            "last_day": "2023-09-18",
+            "price_multiplier": 19.9973705,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-19",
+            "last_day": "2023-09-19",
+            "price_multiplier": 19.99474859,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-20",
+            "last_day": "2023-09-21",
+            "price_multiplier": 20,
+            "records": 2
+          },
+          {
+            "first_day": "2023-09-22",
+            "last_day": "2023-09-22",
+            "price_multiplier": 20.0030125,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-25",
+            "last_day": "2023-09-25",
+            "price_multiplier": 19.99378593,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-26",
+            "last_day": "2023-09-26",
+            "price_multiplier": 20.00651148,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-27",
+            "last_day": "2023-09-27",
+            "price_multiplier": 20,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-28",
+            "last_day": "2023-09-28",
+            "price_multiplier": 19.99674585,
+            "records": 1
+          },
+          {
+            "first_day": "2023-09-29",
+            "last_day": "2023-10-02",
+            "price_multiplier": 20,
+            "records": 2
+          },
+          {
+            "first_day": "2023-10-03",
+            "last_day": "2023-10-03",
+            "price_multiplier": 20.00336757,
+            "records": 1
+          },
+          {
+            "first_day": "2023-10-04",
+            "last_day": "2023-10-16",
+            "price_multiplier": 20,
+            "records": 9
+          },
+          {
+            "first_day": "2023-10-17",
+            "last_day": "2023-10-17",
+            "price_multiplier": 19.99330768,
+            "records": 1
+          },
+          {
+            "first_day": "2023-10-18",
+            "last_day": "2023-10-18",
+            "price_multiplier": 20,
+            "records": 1
+          },
+          {
+            "first_day": "2023-10-19",
+            "last_day": "2023-10-19",
+            "price_multiplier": 19.99203505,
+            "records": 1
+          },
+          {
+            "first_day": "2023-10-20",
+            "last_day": "2024-02-13",
+            "price_multiplier": 20,
+            "records": 79
+          },
+          {
+            "first_day": "2024-02-14",
+            "last_day": "2024-02-14",
+            "price_multiplier": 19.99706788,
+            "records": 1
+          },
+          {
+            "first_day": "2024-02-15",
+            "last_day": "2024-02-26",
+            "price_multiplier": 20,
+            "records": 7
+          },
+          {
+            "first_day": "2024-02-27",
+            "last_day": "2024-02-27",
+            "price_multiplier": 19.9960008,
+            "records": 1
+          },
+          {
+            "first_day": "2024-02-28",
+            "last_day": "2024-02-29",
+            "price_multiplier": 20,
+            "records": 2
+          },
+          {
+            "first_day": "2024-03-01",
+            "last_day": "2024-03-01",
+            "price_multiplier": 20.00396118,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-04",
+            "last_day": "2024-03-11",
+            "price_multiplier": 20,
+            "records": 6
+          },
+          {
+            "first_day": "2024-03-12",
+            "last_day": "2024-03-12",
+            "price_multiplier": 20.00770268,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-13",
+            "last_day": "2024-03-14",
+            "price_multiplier": 20,
+            "records": 2
+          },
+          {
+            "first_day": "2024-03-15",
+            "last_day": "2024-03-15",
+            "price_multiplier": 20.00277816,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-18",
+            "last_day": "2024-03-20",
+            "price_multiplier": 20,
+            "records": 3
+          },
+          {
+            "first_day": "2024-03-21",
+            "last_day": "2024-03-21",
+            "price_multiplier": 20.00660284,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-22",
+            "last_day": "2024-03-27",
+            "price_multiplier": 20,
+            "records": 4
+          },
+          {
+            "first_day": "2024-03-28",
+            "last_day": "2024-03-28",
+            "price_multiplier": 19.99663922,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-01",
+            "last_day": "2024-04-01",
+            "price_multiplier": 20,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-02",
+            "last_day": "2024-04-02",
+            "price_multiplier": 20.00741015,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-03",
+            "last_day": "2024-04-03",
+            "price_multiplier": 19.99277587,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-04",
+            "last_day": "2024-04-04",
+            "price_multiplier": 20.00700771,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-05",
+            "last_day": "2024-04-08",
+            "price_multiplier": 20.00357526,
+            "records": 2
+          },
+          {
+            "first_day": "2024-04-09",
+            "last_day": "2024-04-09",
+            "price_multiplier": 20.00774743,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-10",
+            "last_day": "2024-04-10",
+            "price_multiplier": 20,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-11",
+            "last_day": "2024-04-11",
+            "price_multiplier": 20.00739645,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-12",
+            "last_day": "2024-05-10",
+            "price_multiplier": 20,
+            "records": 21
+          },
+          {
+            "first_day": "2024-05-13",
+            "last_day": "2024-05-13",
+            "price_multiplier": 19.99624131,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-14",
+            "last_day": "2024-05-14",
+            "price_multiplier": 20,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-15",
+            "last_day": "2024-05-15",
+            "price_multiplier": 20.00357207,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-16",
+            "last_day": "2024-05-17",
+            "price_multiplier": 20,
+            "records": 2
+          },
+          {
+            "first_day": "2024-05-20",
+            "last_day": "2024-05-21",
+            "price_multiplier": 20.00361729,
+            "records": 2
+          },
+          {
+            "first_day": "2024-05-22",
+            "last_day": "2024-06-11",
+            "price_multiplier": 20,
+            "records": 14
+          },
+          {
+            "first_day": "2024-06-12",
+            "last_day": "2024-06-12",
+            "price_multiplier": 20.00396904,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-13",
+            "last_day": "2024-08-26",
+            "price_multiplier": 20,
+            "records": 51
+          },
+          {
+            "first_day": "2024-08-27",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 510
+          }
+        ],
+        "status": "needs_review",
+        "unpaired_days": 0
+      },
+      "UAVS": {
+        "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        "invalid_pairs": 0,
+        "paired_days": 752,
+        "price_volume_adjustment_mismatches": 135,
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2024-02-08",
+            "price_multiplier": 1000,
+            "records": 105
+          },
+          {
+            "first_day": "2024-02-09",
+            "last_day": "2024-03-15",
+            "price_multiplier": 50,
+            "records": 25
+          },
+          {
+            "first_day": "2024-03-18",
+            "last_day": "2024-03-18",
+            "price_multiplier": 50.00552303,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-19",
+            "last_day": "2024-03-25",
+            "price_multiplier": 50,
+            "records": 5
+          },
+          {
+            "first_day": "2024-03-26",
+            "last_day": "2024-03-26",
+            "price_multiplier": 50.00707314,
+            "records": 1
+          },
+          {
+            "first_day": "2024-03-27",
+            "last_day": "2024-03-28",
+            "price_multiplier": 50.00644247,
+            "records": 2
+          },
+          {
+            "first_day": "2024-04-01",
+            "last_day": "2024-04-01",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-02",
+            "last_day": "2024-04-02",
+            "price_multiplier": 50.00724323,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-03",
+            "last_day": "2024-04-08",
+            "price_multiplier": 50,
+            "records": 4
+          },
+          {
+            "first_day": "2024-04-09",
+            "last_day": "2024-04-09",
+            "price_multiplier": 49.9936988,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-10",
+            "last_day": "2024-04-10",
+            "price_multiplier": 50.0069185,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-11",
+            "last_day": "2024-04-15",
+            "price_multiplier": 50,
+            "records": 3
+          },
+          {
+            "first_day": "2024-04-16",
+            "last_day": "2024-04-17",
+            "price_multiplier": 50.00762079,
+            "records": 2
+          },
+          {
+            "first_day": "2024-04-18",
+            "last_day": "2024-04-18",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-19",
+            "last_day": "2024-04-19",
+            "price_multiplier": 50.0078456,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-22",
+            "last_day": "2024-04-22",
+            "price_multiplier": 49.99230651,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-23",
+            "last_day": "2024-04-23",
+            "price_multiplier": 50.00676133,
+            "records": 1
+          },
+          {
+            "first_day": "2024-04-24",
+            "last_day": "2024-05-07",
+            "price_multiplier": 50,
+            "records": 10
+          },
+          {
+            "first_day": "2024-05-08",
+            "last_day": "2024-05-08",
+            "price_multiplier": 50.00734754,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-09",
+            "last_day": "2024-05-14",
+            "price_multiplier": 50,
+            "records": 4
+          },
+          {
+            "first_day": "2024-05-15",
+            "last_day": "2024-05-15",
+            "price_multiplier": 49.99286428,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-16",
+            "last_day": "2024-05-17",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-05-20",
+            "last_day": "2024-05-20",
+            "price_multiplier": 50.00728544,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-21",
+            "last_day": "2024-05-21",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-22",
+            "last_day": "2024-05-22",
+            "price_multiplier": 50.00745268,
+            "records": 1
+          },
+          {
+            "first_day": "2024-05-23",
+            "last_day": "2024-05-30",
+            "price_multiplier": 50,
+            "records": 5
+          },
+          {
+            "first_day": "2024-05-31",
+            "last_day": "2024-06-03",
+            "price_multiplier": 50.00718288,
+            "records": 2
+          },
+          {
+            "first_day": "2024-06-04",
+            "last_day": "2024-06-04",
+            "price_multiplier": 50.00781616,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-05",
+            "last_day": "2024-06-05",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-06",
+            "last_day": "2024-06-06",
+            "price_multiplier": 50.0077918,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-07",
+            "last_day": "2024-06-07",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-10",
+            "last_day": "2024-06-10",
+            "price_multiplier": 49.99210734,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-11",
+            "last_day": "2024-06-11",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-12",
+            "last_day": "2024-06-12",
+            "price_multiplier": 50.00751993,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-13",
+            "last_day": "2024-06-13",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-14",
+            "last_day": "2024-06-14",
+            "price_multiplier": 50.00805283,
+            "records": 1
+          },
+          {
+            "first_day": "2024-06-17",
+            "last_day": "2024-06-20",
+            "price_multiplier": 50.00948227,
+            "records": 3
+          },
+          {
+            "first_day": "2024-06-21",
+            "last_day": "2024-06-24",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-06-25",
+            "last_day": "2024-06-27",
+            "price_multiplier": 50.00979432,
+            "records": 3
+          },
+          {
+            "first_day": "2024-06-28",
+            "last_day": "2024-06-28",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-01",
+            "last_day": "2024-07-01",
+            "price_multiplier": 50.01023961,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-02",
+            "last_day": "2024-07-02",
+            "price_multiplier": 50.01090037,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-03",
+            "last_day": "2024-07-05",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-07-08",
+            "last_day": "2024-07-08",
+            "price_multiplier": 50.01136105,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-09",
+            "last_day": "2024-07-09",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-10",
+            "last_day": "2024-07-10",
+            "price_multiplier": 50.01192464,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-11",
+            "last_day": "2024-07-12",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-07-15",
+            "last_day": "2024-07-16",
+            "price_multiplier": 50.01092896,
+            "records": 2
+          },
+          {
+            "first_day": "2024-07-17",
+            "last_day": "2024-07-17",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-18",
+            "last_day": "2024-07-18",
+            "price_multiplier": 50.01173985,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-19",
+            "last_day": "2024-07-26",
+            "price_multiplier": 50,
+            "records": 6
+          },
+          {
+            "first_day": "2024-07-29",
+            "last_day": "2024-07-29",
+            "price_multiplier": 50.01166861,
+            "records": 1
+          },
+          {
+            "first_day": "2024-07-30",
+            "last_day": "2024-07-31",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-08-01",
+            "last_day": "2024-08-02",
+            "price_multiplier": 50.01199328,
+            "records": 2
+          },
+          {
+            "first_day": "2024-08-05",
+            "last_day": "2024-08-05",
+            "price_multiplier": 49.98757146,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-06",
+            "last_day": "2024-08-06",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-07",
+            "last_day": "2024-08-07",
+            "price_multiplier": 50.01364256,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-08",
+            "last_day": "2024-08-08",
+            "price_multiplier": 49.98664887,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-09",
+            "last_day": "2024-08-09",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-12",
+            "last_day": "2024-08-12",
+            "price_multiplier": 50.01330849,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-13",
+            "last_day": "2024-08-23",
+            "price_multiplier": 50,
+            "records": 9
+          },
+          {
+            "first_day": "2024-08-26",
+            "last_day": "2024-08-26",
+            "price_multiplier": 49.98829314,
+            "records": 1
+          },
+          {
+            "first_day": "2024-08-27",
+            "last_day": "2024-08-29",
+            "price_multiplier": 50,
+            "records": 3
+          },
+          {
+            "first_day": "2024-08-30",
+            "last_day": "2024-08-30",
+            "price_multiplier": 50.01266785,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-03",
+            "last_day": "2024-09-03",
+            "price_multiplier": 50.01562988,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-04",
+            "last_day": "2024-09-09",
+            "price_multiplier": 50,
+            "records": 4
+          },
+          {
+            "first_day": "2024-09-10",
+            "last_day": "2024-09-11",
+            "price_multiplier": 50.01914975,
+            "records": 2
+          },
+          {
+            "first_day": "2024-09-12",
+            "last_day": "2024-09-16",
+            "price_multiplier": 50,
+            "records": 3
+          },
+          {
+            "first_day": "2024-09-17",
+            "last_day": "2024-09-17",
+            "price_multiplier": 49.98248687,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-18",
+            "last_day": "2024-09-19",
+            "price_multiplier": 50,
+            "records": 2
+          },
+          {
+            "first_day": "2024-09-20",
+            "last_day": "2024-09-20",
+            "price_multiplier": 50.01804403,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-23",
+            "last_day": "2024-09-23",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-24",
+            "last_day": "2024-09-24",
+            "price_multiplier": 50.01907669,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-25",
+            "last_day": "2024-09-25",
+            "price_multiplier": 50,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-26",
+            "last_day": "2024-09-26",
+            "price_multiplier": 50.02080732,
+            "records": 1
+          },
+          {
+            "first_day": "2024-09-27",
+            "last_day": "2024-10-14",
+            "price_multiplier": 50,
+            "records": 12
+          },
+          {
+            "first_day": "2024-10-15",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 476
+          }
+        ],
+        "status": "needs_review",
+        "unpaired_days": 0
+      }
+    }
+  },
+  "market_http": {
+    "elapsed_seconds": 26.086,
+    "http_requests": 51,
+    "received_bytes": 7807126,
+    "retries": 0
+  },
+  "schema_version": 1,
+  "sec": {
+    "error": {
+      "category": "forbidden_check_auth_and_entitlement",
+      "http_status": 403
+    },
+    "filings": [],
+    "issuer_lookup": {},
+    "manager_cik": "0001067983",
+    "scope": "two_original_filings_one_manager; not_total_institutional_ownership",
+    "status": "blocked",
+    "unresolved": [
+      "CUSIP_to_ticker_history_needs_authoritative_mapping",
+      "all_managers_and_amendments_not_yet_aggregated",
+      "share_class_and_point_in_time_denominator_require_validation",
+      "missing_holding_is_not_zero_ownership"
+    ]
+  },
+  "sec_http": {
+    "elapsed_seconds": 0.11,
+    "http_requests": 1,
+    "received_bytes": 1925,
+    "retries": 0
+  },
+  "started_at": "2026-09-10T03:04:20.081708+00:00",
+  "version": "0.1.2",
+  "evidence_workflow_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34431890077"
+}

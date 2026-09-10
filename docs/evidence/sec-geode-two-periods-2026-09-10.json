@@ -1,0 +1,487 @@
+{
+  "schema_version": 2,
+  "checked_at": "2026-09-10T03:15:08.793238+00:00",
+  "issuer_lookup": {
+    "MU": {
+      "cik_str": 723125,
+      "ticker": "MU",
+      "title": "MICRON TECHNOLOGY INC"
+    },
+    "ONTO": {
+      "cik_str": 704532,
+      "ticker": "ONTO",
+      "title": "ONTO INNOVATION INC."
+    },
+    "AAOI": {
+      "cik_str": 1158114,
+      "ticker": "AAOI",
+      "title": "APPLIED OPTOELECTRONICS, INC."
+    },
+    "QMCO": {
+      "cik_str": 709283,
+      "ticker": "QMCO",
+      "title": "QUANTUM CORP /DE/"
+    },
+    "UAVS": {
+      "cik_str": 8504,
+      "ticker": "UAVS",
+      "title": "AgEagle Aerial Systems Inc."
+    }
+  },
+  "manager_name": "GEODE CAPITAL MANAGEMENT, LLC",
+  "manager_cik": "0001214717",
+  "filings": [
+    {
+      "form": "13F-HR",
+      "filing_date": "2026-08-12",
+      "period_of_report": "2026-06-30",
+      "accession": "0001214717-26-000008",
+      "primary_document": "primary_doc.xml",
+      "primary_document_as_listed": "xslForm13F_X02/primary_doc.xml",
+      "accepted_at": "2026-08-12T13:36:41.000Z",
+      "status": "ok",
+      "manager_cik": "0001214717",
+      "information_table_url": "https://www.sec.gov/Archives/edgar/data/1214717/000121471726000008/GCMQ2202613F.xml",
+      "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1214717/000121471726000008/primary_doc.xml",
+      "information_table_sha256": "b91070b63644fcbf2cf6ff555b4fe6169d5d493c3f625350eca90eff55ff19de",
+      "information_table_bytes": 4677958,
+      "table_rows": 8470,
+      "primary_period_matches": true,
+      "declared_entry_count_matches": true,
+      "is_amendment": "not_present_original_form_selected",
+      "confidential_omitted": "false",
+      "candidate_matches": {
+        "MU": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "595112103",
+          "matched_rows": 2,
+          "reported_share_sum": 27705797,
+          "reported_rows": [
+            {
+              "issuer": "MICRON TECHNOLOGY INC",
+              "class": "COM",
+              "cusip": "595112103",
+              "shares": 24117230,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "MICRON TECHNOLOGY INC",
+              "class": "COM",
+              "cusip": "595112103",
+              "shares": 3588567,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "ONTO": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "683344105",
+          "matched_rows": 2,
+          "reported_share_sum": 1433715,
+          "reported_rows": [
+            {
+              "issuer": "ONTO INNOVATION INC",
+              "class": "COM",
+              "cusip": "683344105",
+              "shares": 1237951,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "ONTO INNOVATION INC",
+              "class": "COM",
+              "cusip": "683344105",
+              "shares": 195764,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "AAOI": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "03823U102",
+          "matched_rows": 2,
+          "reported_share_sum": 1670936,
+          "reported_rows": [
+            {
+              "issuer": "APPLIED OPTOELECTRONICS INC",
+              "class": "COM",
+              "cusip": "03823U102",
+              "shares": 1475805,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "APPLIED OPTOELECTRONICS INC",
+              "class": "COM",
+              "cusip": "03823U102",
+              "shares": 195131,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "QMCO": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "747906600",
+          "matched_rows": 2,
+          "reported_share_sum": 164600,
+          "reported_rows": [
+            {
+              "issuer": "QUANTUM CORP",
+              "class": "COM",
+              "cusip": "747906600",
+              "shares": 134954,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "QUANTUM CORP",
+              "class": "COM",
+              "cusip": "747906600",
+              "shares": 29646,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false,
+          "identifier_check": {
+            "status": "matched_issuer_source_for_sample_period",
+            "source": "https://investors.quantum.com/news-events/press-releases/detail/203/quantum-announces-reverse-stock-split",
+            "period": "2026-06-30"
+          }
+        },
+        "UAVS": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "00848K309",
+          "matched_rows": 2,
+          "reported_share_sum": 572717,
+          "reported_rows": [
+            {
+              "issuer": "AGEAGLE AERIAL SYSTEMS INC",
+              "class": "COM SHS",
+              "cusip": "00848K309",
+              "shares": 480148,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "AGEAGLE AERIAL SYSTEMS INC",
+              "class": "COM SHS",
+              "cusip": "00848K309",
+              "shares": 92569,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false,
+          "identifier_check": {
+            "status": "matched_issuer_source_for_sample_period",
+            "source": "https://www.sec.gov/Archives/edgar/data/8504/000149315224041068/form8-k.htm",
+            "period": "2026-06-30"
+          }
+        }
+      }
+    },
+    {
+      "form": "13F-HR",
+      "filing_date": "2026-05-15",
+      "period_of_report": "2026-03-31",
+      "accession": "0001214717-26-000006",
+      "primary_document": "primary_doc.xml",
+      "primary_document_as_listed": "xslForm13F_X02/primary_doc.xml",
+      "accepted_at": "2026-05-15T16:12:28.000Z",
+      "status": "ok",
+      "manager_cik": "0001214717",
+      "information_table_url": "https://www.sec.gov/Archives/edgar/data/1214717/000121471726000006/GCMQ1202613F.xml",
+      "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1214717/000121471726000006/primary_doc.xml",
+      "information_table_sha256": "9270a90c6009016bf54c421afafbee82a48b076aab87661de4a58a49fb9b4626",
+      "information_table_bytes": 4735329,
+      "table_rows": 8577,
+      "primary_period_matches": true,
+      "declared_entry_count_matches": true,
+      "is_amendment": "not_present_original_form_selected",
+      "confidential_omitted": "false",
+      "candidate_matches": {
+        "MU": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "595112103",
+          "matched_rows": 2,
+          "reported_share_sum": 27432757,
+          "reported_rows": [
+            {
+              "issuer": "MICRON TECHNOLOGY INC",
+              "class": "COM",
+              "cusip": "595112103",
+              "shares": 23818316,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "MICRON TECHNOLOGY INC",
+              "class": "COM",
+              "cusip": "595112103",
+              "shares": 3614441,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "ONTO": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "683344105",
+          "matched_rows": 2,
+          "reported_share_sum": 1211014,
+          "reported_rows": [
+            {
+              "issuer": "ONTO INNOVATION INC",
+              "class": "COM",
+              "cusip": "683344105",
+              "shares": 1023354,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "ONTO INNOVATION INC",
+              "class": "COM",
+              "cusip": "683344105",
+              "shares": 187660,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "AAOI": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "03823U102",
+          "matched_rows": 2,
+          "reported_share_sum": 1621305,
+          "reported_rows": [
+            {
+              "issuer": "APPLIED OPTOELECTRONICS INC",
+              "class": "COM",
+              "cusip": "03823U102",
+              "shares": 1392656,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "APPLIED OPTOELECTRONICS INC",
+              "class": "COM",
+              "cusip": "03823U102",
+              "shares": 228649,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false
+        },
+        "QMCO": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "747906600",
+          "matched_rows": 2,
+          "reported_share_sum": 159179,
+          "reported_rows": [
+            {
+              "issuer": "QUANTUM CORP",
+              "class": "COM",
+              "cusip": "747906600",
+              "shares": 129758,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "QUANTUM CORP",
+              "class": "COM",
+              "cusip": "747906600",
+              "shares": 29421,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false,
+          "identifier_check": {
+            "status": "matched_issuer_source_for_sample_period",
+            "source": "https://investors.quantum.com/news-events/press-releases/detail/203/quantum-announces-reverse-stock-split",
+            "period": "2026-03-31"
+          }
+        },
+        "UAVS": {
+          "status": "candidate_name_and_common_class_only",
+          "cusip": "00848K309",
+          "matched_rows": 2,
+          "reported_share_sum": 502536,
+          "reported_rows": [
+            {
+              "issuer": "AGEAGLE AERIAL SYSTEMS INC",
+              "class": "COM SHS",
+              "cusip": "00848K309",
+              "shares": 411317,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": ""
+            },
+            {
+              "issuer": "AGEAGLE AERIAL SYSTEMS INC",
+              "class": "COM SHS",
+              "cusip": "00848K309",
+              "shares": 91219,
+              "unit": "SH",
+              "put_call": "",
+              "investment_discretion": "DFND",
+              "other_managers": "1"
+            }
+          ],
+          "verified_universal_identifier_mapping": false,
+          "identifier_check": {
+            "status": "matched_issuer_source_for_sample_period",
+            "source": "https://www.sec.gov/Archives/edgar/data/8504/000149315224041068/form8-k.htm",
+            "period": "2026-03-31"
+          }
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "scope": "one_manager_as_reported_rows_only_not_net_market_buying",
+    "institutional_ownership_percent": null,
+    "by_symbol": {
+      "UAVS": {
+        "status": "paired_reported_rows_for_review",
+        "eligible_as_institutional_inflow_label": false,
+        "cusip": "00848K309",
+        "earlier_period": "2026-03-31",
+        "later_period": "2026-06-30",
+        "earlier_reported_shares": 502536,
+        "later_reported_shares": 572717,
+        "earlier_shares_in_later_units": 502536.0,
+        "reported_share_change": 70181.0,
+        "later_public_at": "2026-08-12T13:36:41.000Z",
+        "manager_relationship_deduplication": "not_complete"
+      },
+      "MU": {
+        "status": "paired_reported_rows_for_review",
+        "eligible_as_institutional_inflow_label": false,
+        "cusip": "595112103",
+        "earlier_period": "2026-03-31",
+        "later_period": "2026-06-30",
+        "earlier_reported_shares": 27432757,
+        "later_reported_shares": 27705797,
+        "earlier_shares_in_later_units": 27432757.0,
+        "reported_share_change": 273040.0,
+        "later_public_at": "2026-08-12T13:36:41.000Z",
+        "manager_relationship_deduplication": "not_complete"
+      },
+      "ONTO": {
+        "status": "paired_reported_rows_for_review",
+        "eligible_as_institutional_inflow_label": false,
+        "cusip": "683344105",
+        "earlier_period": "2026-03-31",
+        "later_period": "2026-06-30",
+        "earlier_reported_shares": 1211014,
+        "later_reported_shares": 1433715,
+        "earlier_shares_in_later_units": 1211014.0,
+        "reported_share_change": 222701.0,
+        "later_public_at": "2026-08-12T13:36:41.000Z",
+        "manager_relationship_deduplication": "not_complete"
+      },
+      "AAOI": {
+        "status": "paired_reported_rows_for_review",
+        "eligible_as_institutional_inflow_label": false,
+        "cusip": "03823U102",
+        "earlier_period": "2026-03-31",
+        "later_period": "2026-06-30",
+        "earlier_reported_shares": 1621305,
+        "later_reported_shares": 1670936,
+        "earlier_shares_in_later_units": 1621305.0,
+        "reported_share_change": 49631.0,
+        "later_public_at": "2026-08-12T13:36:41.000Z",
+        "manager_relationship_deduplication": "not_complete"
+      },
+      "QMCO": {
+        "status": "paired_reported_rows_for_review",
+        "eligible_as_institutional_inflow_label": false,
+        "cusip": "747906600",
+        "earlier_period": "2026-03-31",
+        "later_period": "2026-06-30",
+        "earlier_reported_shares": 159179,
+        "later_reported_shares": 164600,
+        "earlier_shares_in_later_units": 159179.0,
+        "reported_share_change": 5421.0,
+        "later_public_at": "2026-08-12T13:36:41.000Z",
+        "manager_relationship_deduplication": "not_complete"
+      }
+    }
+  },
+  "validation_http": {
+    "http_requests": 5,
+    "received_bytes": 6184,
+    "retries": 1,
+    "elapsed_seconds": 54.867
+  },
+  "validation_used_local_copies_of_previously_fetched_information_tables": true,
+  "automated_github_sec_route": "403_blocked",
+  "all_institutional_ownership_ready": false,
+  "new_issuer_denominator_probe": {
+    "UAVS": {
+      "status": "available_unvalidated",
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/dei/EntityCommonStockSharesOutstanding.json",
+      "records": 67,
+      "oldest_period": "2011-08-15",
+      "latest_period": "2026-08-14",
+      "share_class_reconciled": false
+    },
+    "QMCO": {
+      "status": "available_unvalidated",
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/dei/EntityCommonStockSharesOutstanding.json",
+      "records": 58,
+      "oldest_period": "2011-08-02",
+      "latest_period": "2026-08-06",
+      "share_class_reconciled": false
+    }
+  }
+}

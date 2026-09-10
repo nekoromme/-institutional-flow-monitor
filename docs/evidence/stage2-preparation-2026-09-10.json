@@ -1,0 +1,968 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "started_at": "2026-09-10T03:13:49.378748+00:00",
+  "commit": "d99f9ded0084f2012b9de95d901cd882788d8481",
+  "credentials_present": {
+    "key": true,
+    "secret": true
+  },
+  "market": {
+    "purpose": "data_feasibility_only_not_a_stock_screen",
+    "probes": [
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Day",
+        "start": "2023-09-11T04:00:00Z",
+        "end": "2026-09-09T20:00:00Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": "raw",
+        "symbol_mapping_asof": "-",
+        "pages": 8,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 3760,
+        "elapsed_seconds": 4.332,
+        "received_bytes": 399584,
+        "http_requests": 8,
+        "retries": 0,
+        "name": "sip_daily_3year",
+        "quality": {
+          "UAVS": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "MU": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "ONTO": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "AAOI": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "QMCO": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Day",
+        "start": "2023-09-11T04:00:00Z",
+        "end": "2026-09-09T20:00:00Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": "split",
+        "symbol_mapping_asof": "-",
+        "pages": 8,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 3760,
+        "elapsed_seconds": 3.692,
+        "received_bytes": 394933,
+        "http_requests": 8,
+        "retries": 0,
+        "name": "sip_daily_3year_split_adjusted",
+        "quality": {
+          "UAVS": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "MU": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "ONTO": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "AAOI": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "QMCO": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Min",
+        "start": "2026-08-12T13:30:00Z",
+        "end": "2026-09-09T19:59:59.999999Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": "raw",
+        "symbol_mapping_asof": "-",
+        "pages": 6,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 54825,
+        "elapsed_seconds": 3.508,
+        "received_bytes": 5666320,
+        "http_requests": 6,
+        "retries": 0,
+        "name": "sip_minutes_20sessions",
+        "quality": {
+          "UAVS": {
+            "records": 7411,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 5976,
+            "missing_regular_minutes": 1824,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 1435
+          },
+          "MU": {
+            "records": 18280,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7800,
+            "missing_regular_minutes": 0,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 10480
+          },
+          "ONTO": {
+            "records": 6810,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 6640,
+            "missing_regular_minutes": 1160,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 170
+          },
+          "AAOI": {
+            "records": 14203,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7798,
+            "missing_regular_minutes": 2,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 6405
+          },
+          "QMCO": {
+            "records": 8121,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7059,
+            "missing_regular_minutes": 741,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 1062
+          }
+        }
+      },
+      {
+        "feed_requested": "iex",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Min",
+        "start": "2026-09-09T13:30:00Z",
+        "end": "2026-09-09T19:59:59.999999Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": "raw",
+        "symbol_mapping_asof": "-",
+        "pages": 2,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 894,
+        "elapsed_seconds": 1.04,
+        "received_bytes": 92493,
+        "http_requests": 2,
+        "retries": 0,
+        "name": "iex_minutes_comparison",
+        "quality": {
+          "UAVS": {
+            "records": 18,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:37:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 18,
+            "missing_regular_minutes": 372,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "MU": {
+            "records": 386,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 386,
+            "missing_regular_minutes": 4,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "ONTO": {
+            "records": 85,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 85,
+            "missing_regular_minutes": 305,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "AAOI": {
+            "records": 253,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 253,
+            "missing_regular_minutes": 137,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "QMCO": {
+            "records": 152,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 152,
+            "missing_regular_minutes": 238,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "trades",
+        "timeframe": null,
+        "start": "2026-09-09T14:00:00Z",
+        "end": "2026-09-09T14:00:59.999999Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": null,
+        "symbol_mapping_asof": "-",
+        "pages": 8,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 7394,
+        "elapsed_seconds": 4.017,
+        "received_bytes": 721339,
+        "http_requests": 8,
+        "retries": 0,
+        "name": "sip_trades_one_minute",
+        "quality": {
+          "UAVS": {
+            "records": 1,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:59.919381235Z",
+            "last_timestamp": "2026-09-09T14:00:59.919381235Z"
+          },
+          "MU": {
+            "records": 6481,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.001249883Z",
+            "last_timestamp": "2026-09-09T14:00:59.97571173Z"
+          },
+          "ONTO": {
+            "records": 183,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.689347979Z",
+            "last_timestamp": "2026-09-09T14:00:58.543569672Z"
+          },
+          "AAOI": {
+            "records": 682,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.013344892Z",
+            "last_timestamp": "2026-09-09T14:00:59.846877928Z"
+          },
+          "QMCO": {
+            "records": 47,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.993632364Z",
+            "last_timestamp": "2026-09-09T14:00:54.439089839Z"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "quotes",
+        "timeframe": null,
+        "start": "2026-09-09T14:00:00Z",
+        "end": "2026-09-09T14:00:59.999999Z",
+        "symbols": [
+          "UAVS",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "QMCO"
+        ],
+        "adjustment": null,
+        "symbol_mapping_asof": "-",
+        "pages": 4,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 3446,
+        "elapsed_seconds": 1.921,
+        "received_bytes": 403347,
+        "http_requests": 4,
+        "retries": 0,
+        "name": "sip_quotes_one_minute",
+        "quality": {
+          "UAVS": {
+            "records": 2,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:29.995488539Z",
+            "last_timestamp": "2026-09-09T14:00:59.995510954Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "MU": {
+            "records": 2561,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.097221642Z",
+            "last_timestamp": "2026-09-09T14:00:59.951919245Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 2,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "ONTO": {
+            "records": 245,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:07.331974697Z",
+            "last_timestamp": "2026-09-09T14:00:59.993025854Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "AAOI": {
+            "records": 609,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.013625147Z",
+            "last_timestamp": "2026-09-09T14:00:59.688044793Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "QMCO": {
+            "records": 29,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:02.878224205Z",
+            "last_timestamp": "2026-09-09T14:00:59.290925625Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Day",
+        "start": "2016-01-05T05:00:00Z",
+        "end": "2016-01-08T05:00:00Z",
+        "symbols": [
+          "MU"
+        ],
+        "adjustment": "raw",
+        "symbol_mapping_asof": "-",
+        "pages": 1,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 4,
+        "elapsed_seconds": 0.361,
+        "received_bytes": 474,
+        "http_requests": 1,
+        "retries": 0,
+        "name": "sip_daily_2016_sample",
+        "quality": {
+          "MU": {
+            "records": 4,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2016-01-05T05:00:00Z",
+            "last_timestamp": "2016-01-08T05:00:00Z",
+            "expected_sessions": 0,
+            "observed_sessions": 0,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        }
+      }
+    ],
+    "session": {
+      "close": "16:00",
+      "date": "2026-09-09",
+      "open": "09:30",
+      "session_close": "2000",
+      "session_open": "0400",
+      "settlement_date": "2026-09-10"
+    },
+    "calendar_sessions": 752,
+    "cutoff_policy": "only_sessions_closed_at_least_30_minutes_ago",
+    "asset_status": {
+      "UAVS": {
+        "status": "active",
+        "exchange": "AMEX",
+        "tradable": true
+      },
+      "MU": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      },
+      "ONTO": {
+        "status": "active",
+        "exchange": "NYSE",
+        "tradable": true
+      },
+      "AAOI": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      },
+      "QMCO": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      }
+    },
+    "split_adjustment_audit": {
+      "UAVS": {
+        "status": "comparable_sample",
+        "paired_days": 752,
+        "unpaired_days": 0,
+        "invalid_pairs": 0,
+        "price_volume_adjustment_mismatches": 0,
+        "pairs_with_price_differences_inside_rounding_tolerance": 117,
+        "factor_source": "documented_events",
+        "documented_events": [
+          {
+            "trading_day": "2024-02-09",
+            "old_shares": 20,
+            "new_shares": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/8504/000149315224005564/form8-k.htm"
+          },
+          {
+            "trading_day": "2024-10-15",
+            "old_shares": 50,
+            "new_shares": 1,
+            "source": "https://www.sec.gov/Archives/edgar/data/8504/000149315224041068/form8-k.htm"
+          }
+        ],
+        "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2024-02-08",
+            "price_multiplier": 1000,
+            "records": 105
+          },
+          {
+            "first_day": "2024-02-09",
+            "last_day": "2024-10-14",
+            "price_multiplier": 50,
+            "records": 171
+          },
+          {
+            "first_day": "2024-10-15",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 476
+          }
+        ],
+        "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal"
+      },
+      "MU": {
+        "status": "comparable_sample",
+        "paired_days": 752,
+        "unpaired_days": 0,
+        "invalid_pairs": 0,
+        "price_volume_adjustment_mismatches": 0,
+        "pairs_with_price_differences_inside_rounding_tolerance": 0,
+        "factor_source": "documented_events",
+        "documented_events": [],
+        "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal"
+      },
+      "ONTO": {
+        "status": "comparable_sample",
+        "paired_days": 752,
+        "unpaired_days": 0,
+        "invalid_pairs": 0,
+        "price_volume_adjustment_mismatches": 0,
+        "pairs_with_price_differences_inside_rounding_tolerance": 0,
+        "factor_source": "documented_events",
+        "documented_events": [],
+        "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal"
+      },
+      "AAOI": {
+        "status": "comparable_sample",
+        "paired_days": 752,
+        "unpaired_days": 0,
+        "invalid_pairs": 0,
+        "price_volume_adjustment_mismatches": 0,
+        "pairs_with_price_differences_inside_rounding_tolerance": 0,
+        "factor_source": "documented_events",
+        "documented_events": [],
+        "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 752
+          }
+        ],
+        "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal"
+      },
+      "QMCO": {
+        "status": "needs_review",
+        "paired_days": 752,
+        "unpaired_days": 0,
+        "invalid_pairs": 0,
+        "price_volume_adjustment_mismatches": 36,
+        "pairs_with_price_differences_inside_rounding_tolerance": 30,
+        "factor_source": "documented_events",
+        "documented_events": [
+          {
+            "trading_day": "2024-08-27",
+            "old_shares": 20,
+            "new_shares": 1,
+            "source": "https://investors.quantum.com/news-events/press-releases/detail/203/quantum-announces-reverse-stock-split"
+          }
+        ],
+        "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+        "provider_adjustment_segments": [
+          {
+            "first_day": "2023-09-11",
+            "last_day": "2024-08-26",
+            "price_multiplier": 20,
+            "records": 242
+          },
+          {
+            "first_day": "2024-08-27",
+            "last_day": "2026-09-09",
+            "price_multiplier": 1,
+            "records": 510
+          }
+        ],
+        "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal"
+      }
+    },
+    "research_preparation": {
+      "protocol": {
+        "version": "stage2-pilot-0.1",
+        "purpose": "engineering_pilot_not_evidence_of_institutional_detection",
+        "volume_scope": "alpaca_sip_provider_daily_bar_not_regular_session_only",
+        "baseline_sessions": 60,
+        "baseline_rule": "previous_60_full_length_market_sessions_excluding_current",
+        "shortened_sessions": "exclude_from_signal_and_baseline_no_linear_scaling",
+        "missing_or_zero_baseline": "unknown_do_not_zero_fill",
+        "split_rule": "convert_prior_share_volume_to_decision_day_units_only",
+        "candidate_rule_for_next_stage": "volume_strictly_above_nearest_rank_95th_percentile",
+        "repeat_rule_for_next_stage": "current_day_abnormal_and_at_least_2_in_last_5_market_sessions",
+        "repeat_missing_rule": "unknown_if_any_of_5_daily_judgments_unknown",
+        "aggregate_score": null,
+        "main_label": "split_adjusted_reported_holdings_change_in_containing_calendar_quarter",
+        "label_unit": "symbol_calendar_quarter_not_individual_daily_alert",
+        "return_horizon_sessions": 10,
+        "entry_rule": "next_regular_open_after_actual_or_conservative_signal_availability",
+        "pilot_symbols_are_not_low_ownership_certified": true,
+        "model_selection_or_backtest_performed": false
+      },
+      "rows": 3760,
+      "by_symbol": {
+        "UAVS": {
+          "warmup": 60,
+          "shortened_session": 7,
+          "prepared": 619,
+          "nonpositive_or_invalid_volume": 66
+        },
+        "MU": {
+          "warmup": 60,
+          "shortened_session": 7,
+          "prepared": 685
+        },
+        "ONTO": {
+          "warmup": 60,
+          "shortened_session": 7,
+          "prepared": 685
+        },
+        "AAOI": {
+          "warmup": 60,
+          "shortened_session": 7,
+          "prepared": 685
+        },
+        "QMCO": {
+          "unresolved_adjustment": 752
+        }
+      },
+      "all_institution_holdings_labels_ready": false,
+      "backtest_ready": false,
+      "performance_results": null,
+      "dataset_sha256": "32d2878f3e6877f29b9287fa82f1f4580afcb99587052efd9397e8282ab8a4c7",
+      "dataset_bytes": 2154918,
+      "persistence": "local_file_only; GitHub_runner_copy_expires_after_job; not_uploaded"
+    },
+    "missing_minute_audits": [
+      {
+        "symbol": "UAVS",
+        "minute": "2026-08-12T14:40:00Z",
+        "trade_records": 41,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 4507
+      },
+      {
+        "symbol": "UAVS",
+        "minute": "2026-09-09T19:48:00Z",
+        "trade_records": 19,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 2018
+      },
+      {
+        "symbol": "ONTO",
+        "minute": "2026-08-12T15:36:00Z",
+        "trade_records": 34,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3689
+      },
+      {
+        "symbol": "ONTO",
+        "minute": "2026-09-09T19:38:00Z",
+        "trade_records": 34,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3679
+      },
+      {
+        "symbol": "AAOI",
+        "minute": "2026-08-26T16:48:00Z",
+        "trade_records": 37,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3654
+      },
+      {
+        "symbol": "AAOI",
+        "minute": "2026-09-01T16:45:00Z",
+        "trade_records": 76,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 7468
+      },
+      {
+        "symbol": "QMCO",
+        "minute": "2026-08-12T19:02:00Z",
+        "trade_records": 24,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 2385
+      },
+      {
+        "symbol": "QMCO",
+        "minute": "2026-09-09T18:56:00Z",
+        "trade_records": 20,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 1960
+      }
+    ],
+    "load_estimate": {
+      "sample_based_uncompressed_response_bytes_per_symbol_session": 56663,
+      "approx_300_symbols_252_sessions_bytes": 4283737920,
+      "limitations": "five_current_symbols_only; includes_between_session_records; excludes_filings_storage_and_index_overhead; not_a_quote_or_invoice"
+    },
+    "required_market_probe_ok": true
+  },
+  "sec": {
+    "status": "blocked",
+    "issuer_lookup": {},
+    "filings": [],
+    "manager_cik": "0001214717",
+    "scope": "two_original_filings_one_manager; not_total_institutional_ownership",
+    "unresolved": [
+      "CUSIP_to_ticker_history_needs_authoritative_mapping",
+      "all_managers_and_amendments_not_yet_aggregated",
+      "share_class_and_point_in_time_denominator_require_validation",
+      "missing_holding_is_not_zero_ownership"
+    ],
+    "error": {
+      "category": "forbidden_check_auth_and_entitlement",
+      "http_status": 403
+    }
+  },
+  "market_http": {
+    "http_requests": 51,
+    "received_bytes": 7807126,
+    "retries": 0,
+    "elapsed_seconds": 26.083
+  },
+  "sec_http": {
+    "http_requests": 1,
+    "received_bytes": 1925,
+    "retries": 0,
+    "elapsed_seconds": 0.15
+  },
+  "completed_at": "2026-09-10T03:14:15.639024+00:00",
+  "evidence_workflow_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34432513588"
+}
