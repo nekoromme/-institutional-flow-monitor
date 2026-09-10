@@ -40,3 +40,8 @@ jobs:
         run: python -m flow_probe
       - name: 固定した2026年1〜3月だけで出来高モデルを試行
         run: python -m flow_probe.pilot
+      - name: CJMBの固定期間で出来高判定と保有比較の対応を試行
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python -m flow_probe.cjmb_pilot
