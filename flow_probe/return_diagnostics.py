@@ -4,7 +4,7 @@
 ログへ出さない。追加の保有報告を待たず、既存の通知をそのまま評価する。
 """
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 import hashlib
 import json
 import math
@@ -16,13 +16,26 @@ from .__main__ import assert_no_secrets
 from .alpaca import NY, fetch_pages, split_adjustment_audit
 from .batch_common import load_protocol, PROTOCOL_SHA
 from .bulk13f import digest
-from .cjmb_pilot import validate_calendar
 from .http_client import SafeHttp, ProbeError
 from .returns_core import (by_date, valid_bar, schedule, evaluate, summarize,
                            failure_slices, wait_pairs, HORIZONS)
 
 START, END = '2025-12-15', '2026-04-30'
 PLAN = 'docs/RETURN_DIAGNOSTIC_PROTOCOL.md'
+
+
+def validate_price_calendar(sessions):
+    """通知後の追跡用。旧試行の3月末限定の暦検査とは別に範囲を固定する。"""
+    if not isinstance(sessions,list) or not sessions:raise ProbeError('invalid_return_calendar')
+    days=[]
+    for row in sessions:
+        if not isinstance(row,dict):raise ProbeError('invalid_return_session')
+        day=row.get('date','');date.fromisoformat(day)
+        if not START<=day<=END or row.get('open')!='09:30' or row.get('close') not in {'13:00','16:00'}:
+            raise ProbeError('unreviewed_return_session')
+        days.append(day)
+    if days!=sorted(set(days)):raise ProbeError('invalid_return_calendar_order')
+    return days
 
 
 def object_hash(value):
@@ -109,7 +122,7 @@ def run(root,client):
     if market['protocol_sha256']!=PROTOCOL_SHA or digest(source_path)!=market['market_input_and_scores_sha256']:
         raise ValueError('return_signal_input_mismatch')
     sessions=client.json('https://paper-api.alpaca.markets/v2/calendar',{'start':START,'end':END})
-    days=validate_calendar(sessions)
+    days=validate_price_calendar(sessions)
     if [d for d in days if d<='2026-03-31'] != [s['date'] for s in source['sessions'] if s['date']>=START]:
         raise ValueError('return_calendar_changed')
     retrieved=datetime.now(timezone.utc);symbols=tuple(targets)+('SPY',)

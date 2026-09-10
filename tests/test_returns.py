@@ -3,7 +3,8 @@ from datetime import date, timedelta
 import unittest
 
 from flow_probe.returns_core import after_cost, schedule, value_attempt, evaluate, summarize, wait_pairs
-from flow_probe.return_diagnostics import prepare_books
+from flow_probe.return_diagnostics import prepare_books, validate_price_calendar
+from flow_probe.http_client import ProbeError
 
 
 def fixture():
@@ -21,6 +22,15 @@ def signal(day, repeated=False):
 
 
 class ReturnTests(unittest.TestCase):
+    def test_price_calendar_accepts_april_followup_without_changing_old_pilot(self):
+        sessions=[{'date':d,'open':'09:30','close':'16:00'} for d in ['2026-03-31','2026-04-01','2026-04-30']]
+        self.assertEqual(validate_price_calendar(sessions),[r['date'] for r in sessions])
+
+    def test_price_calendar_rejects_duplicates_and_outside_fixed_range(self):
+        row={'date':'2026-04-01','open':'09:30','close':'16:00'}
+        for sessions in [[row,row],[{**row,'date':'2026-05-01'}]]:
+            with self.assertRaises(ProbeError):validate_price_calendar(sessions)
+
     def test_round_trip_cost_includes_purchase_capital(self):
         self.assertAlmostEqual(after_cost(1,0.0025),0.9975/1.0025-1)
         self.assertAlmostEqual(after_cost(1.1,0.01),1.1*0.99/1.01-1)
