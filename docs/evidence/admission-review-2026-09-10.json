@@ -1,0 +1,1865 @@
+{
+  "version": "admission-review-0.1",
+  "selection_as_of": "2026-01-01",
+  "holdings_period": "2025-09-30",
+  "catalog_sha256": "7b72d6c86a1dc029162bbae51c376b64023555ebcf38935f8fe38c46f7525b0c",
+  "selection_uses_returns_or_ratio": false,
+  "review_queue": [
+    4,
+    179,
+    189
+  ],
+  "rows": [
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "ticker": "LSH",
+      "denominator_review": {
+        "security_class_verified": true,
+        "period": "2025-09-30",
+        "shares": 17427559,
+        "source_sha256": "8413ac452ea7097f27c3339b5bde3fa3699bbc48691a62e5a188713b1caedb62",
+        "fact_id": "ixv-11608",
+        "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+        "current_shares_outstanding": null
+      },
+      "listing_evidence": {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "8-K",
+          "filed": "2025-12-19",
+          "filename": "edgar/data/1996192/0001213900-25-123832.txt"
+        },
+        "source_sha256": "b14f6e37cb6be010e76a02eed5865d8fc72dad95e1b24e06e581fb0db85f8c40",
+        "accepted_at_new_york": "20251219160529",
+        "cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common stock, par value US$0.0001 per share",
+              "ticker": "LSH",
+              "exchange": "Nasdaq",
+              "context": "AsOf2025-12-15",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "LSH",
+          "accepted_at_new_york": "20251219160529",
+          "listing_at_selection_date_confirmed": false,
+          "issuer_binding": "single_issuer_in_filing"
+        }
+      },
+      "listing_proxy_assumption": "latest_pre_cutoff_filing_registration; not_exchange_session_confirmation",
+      "reported_shares": 92535,
+      "diagnostic_period_ratio_percent": 0.530969,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 1
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_positions": [],
+      "ready_for_reported_holdings_pilot_with_listing_proxy": false,
+      "listing_at_selection_date_confirmed": false,
+      "complete_institutional_ownership_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "ticker": "KAPA",
+      "denominator_review": {
+        "security_class_verified": true,
+        "period": "2025-09-30",
+        "shares": 20821353,
+        "source_sha256": "f762a83711045d17f7c9b865c99105d354e440f41159986a1c31b347a96683b7",
+        "fact_id": "Fact000122",
+        "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+        "current_shares_outstanding": null
+      },
+      "listing_evidence": {
+        "source": {
+          "cik": "0001962011",
+          "name": "Kairos Pharma, LTD.",
+          "form": "10-Q",
+          "filed": "2025-11-14",
+          "filename": "edgar/data/1962011/0001493152-25-023276.txt"
+        },
+        "source_sha256": "f762a83711045d17f7c9b865c99105d354e440f41159986a1c31b347a96683b7",
+        "accepted_at_new_york": "20251114134149",
+        "cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $0.001 per share",
+              "ticker": "KAPA",
+              "exchange": "NYSE American",
+              "context": "From2025-01-01to2025-09-30",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "KAPA",
+          "accepted_at_new_york": "20251114134149",
+          "listing_at_selection_date_confirmed": false,
+          "issuer_binding": "single_issuer_in_filing"
+        }
+      },
+      "listing_proxy_assumption": "latest_pre_cutoff_filing_registration; not_exchange_session_confirmation",
+      "reported_shares": 445019,
+      "diagnostic_period_ratio_percent": 2.13732,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 4
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_positions": [
+        {
+          "shares_each": 44286,
+          "manager_ciks": [
+            "0001664193",
+            "0001673954"
+          ],
+          "overlap_confirmed": false,
+          "automatically_subtracted": 0
+        }
+      ],
+      "ready_for_reported_holdings_pilot_with_listing_proxy": false,
+      "listing_at_selection_date_confirmed": false,
+      "complete_institutional_ownership_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "ticker": "CJMB",
+      "denominator_review": {
+        "security_class_verified": true,
+        "period": "2025-09-30",
+        "shares": 4623027,
+        "source_sha256": "d3be4282a100a9f14cdff2de622d0697cf88cbe5b492fab76ea794b8f7f87151",
+        "fact_id": "Fact000172",
+        "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+        "current_shares_outstanding": null
+      },
+      "listing_evidence": {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "8-K",
+          "filed": "2025-12-31",
+          "filename": "edgar/data/2032545/0001493152-25-029719.txt"
+        },
+        "source_sha256": "cb717ed10270228d8d02fb4b53d6851553c712ddc496a1a0bf4b3150ff9b2913",
+        "accepted_at_new_york": "20251231090024",
+        "cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.001 par value",
+              "ticker": "CJMB",
+              "exchange": "The Nasdaq Stock Market LLC",
+              "context": "AsOf2025-12-29",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "CJMB",
+          "accepted_at_new_york": "20251231090024",
+          "listing_at_selection_date_confirmed": false,
+          "issuer_binding": "single_issuer_in_filing"
+        }
+      },
+      "listing_proxy_assumption": "latest_pre_cutoff_filing_registration; not_exchange_session_confirmation",
+      "reported_shares": 749827,
+      "diagnostic_period_ratio_percent": 16.219395,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 0
+        },
+        "no_detected_aggregation_issues": true,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_positions": [],
+      "ready_for_reported_holdings_pilot_with_listing_proxy": true,
+      "listing_at_selection_date_confirmed": false,
+      "complete_institutional_ownership_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    }
+  ],
+  "numeric_candidate_inventory": [
+    {
+      "ordinal": 3,
+      "cusip": "759509102",
+      "ticker": "RS",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 14,
+        "potential_overlaps": 122,
+        "unresolved_references": 226,
+        "repeated_rows": 15,
+        "unreviewed_class_rows": 16,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 170
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "ticker": "LSH",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 0,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 1
+      },
+      "selected_for_first_class_review": true,
+      "class_review_remaining": false
+    },
+    {
+      "ordinal": 8,
+      "cusip": "874054109",
+      "ticker": "TTWO",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 22,
+        "potential_overlaps": 166,
+        "unresolved_references": 363,
+        "repeated_rows": 32,
+        "unreviewed_class_rows": 30,
+        "confidential_omission_managers": 5,
+        "confidential_status_unknown_managers": 291
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 9,
+      "cusip": "256086109",
+      "ticker": "DCGO",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 1,
+        "potential_overlaps": 12,
+        "unresolved_references": 19,
+        "repeated_rows": 2,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 34
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 11,
+      "cusip": "832154405",
+      "ticker": "SMSI",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 5,
+        "repeated_rows": 1,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 7
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 12,
+      "cusip": "344174107",
+      "ticker": "FHTX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 1,
+        "potential_overlaps": 9,
+        "unresolved_references": 13,
+        "repeated_rows": 2,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 23
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 16,
+      "cusip": "30263Y104",
+      "ticker": "FSBW",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 13,
+        "unresolved_references": 14,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 19
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 17,
+      "cusip": "45780L104",
+      "ticker": "INGN",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 19,
+        "unresolved_references": 35,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 33
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 18,
+      "cusip": "03837C106",
+      "ticker": "APYX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 1,
+        "unresolved_references": 10,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 9
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 20,
+      "cusip": "88822Q103",
+      "ticker": "TIPT",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 18,
+        "unresolved_references": 35,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 2,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 34
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 28,
+      "cusip": "745848101",
+      "ticker": "LUNG",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 7,
+        "unresolved_references": 17,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 23
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 30,
+      "cusip": "910340108",
+      "ticker": "UFCS",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 26,
+        "unresolved_references": 38,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 5,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 45
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 33,
+      "cusip": "023135106",
+      "ticker": "AMZN",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 83,
+        "potential_overlaps": 736,
+        "unresolved_references": 836,
+        "repeated_rows": 171,
+        "unreviewed_class_rows": 122,
+        "confidential_omission_managers": 24,
+        "confidential_status_unknown_managers": 1512
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 38,
+      "cusip": "30049A107",
+      "ticker": "EPM",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 17,
+        "unresolved_references": 25,
+        "repeated_rows": 2,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 25
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 42,
+      "cusip": "626755102",
+      "ticker": "MUSA",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 6,
+        "potential_overlaps": 81,
+        "unresolved_references": 195,
+        "repeated_rows": 9,
+        "unreviewed_class_rows": 15,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 143
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 46,
+      "cusip": "70805E109",
+      "ticker": "PNTG",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 21,
+        "unresolved_references": 40,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 3,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 48
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 55,
+      "cusip": "035255108",
+      "ticker": "ANIK",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 13,
+        "unresolved_references": 17,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 30
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 59,
+      "cusip": "03823U102",
+      "ticker": "AAOI",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 18,
+        "unresolved_references": 29,
+        "repeated_rows": 3,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 54
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 60,
+      "cusip": "126327105",
+      "ticker": "LAW",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 11,
+        "unresolved_references": 22,
+        "repeated_rows": 3,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 29
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 62,
+      "cusip": "48238T109",
+      "ticker": "KAR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 6,
+        "potential_overlaps": 46,
+        "unresolved_references": 61,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 9,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 73
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 63,
+      "cusip": "68213N109",
+      "ticker": "OMCL",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 50,
+        "unresolved_references": 69,
+        "repeated_rows": 7,
+        "unreviewed_class_rows": 5,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 71
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 67,
+      "cusip": "237690102",
+      "ticker": "DAIO",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 1,
+        "unresolved_references": 6,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 5
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 70,
+      "cusip": "76152G100",
+      "ticker": "RVPH",
+      "historical_index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 2,
+        "unresolved_references": 11,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 6
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 74,
+      "cusip": "92686J106",
+      "ticker": "VKTX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 9,
+        "potential_overlaps": 49,
+        "unresolved_references": 88,
+        "repeated_rows": 7,
+        "unreviewed_class_rows": 5,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 99
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 75,
+      "cusip": "055645303",
+      "ticker": "BRT",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 8,
+        "unresolved_references": 11,
+        "repeated_rows": 3,
+        "unreviewed_class_rows": 9,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 19
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 79,
+      "cusip": "53635B107",
+      "ticker": "LQDT",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 29,
+        "unresolved_references": 37,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 3,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 43
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 80,
+      "cusip": "N5749R100",
+      "ticker": "MRUS",
+      "historical_index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 22,
+        "unresolved_references": 155,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 6,
+        "confidential_omission_managers": 3,
+        "confidential_status_unknown_managers": 92
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 85,
+      "cusip": "678026105",
+      "ticker": "OIS",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 30,
+        "unresolved_references": 37,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 34
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 86,
+      "cusip": "60855R100",
+      "ticker": "MOH",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 10,
+        "potential_overlaps": 96,
+        "unresolved_references": 231,
+        "repeated_rows": 15,
+        "unreviewed_class_rows": 12,
+        "confidential_omission_managers": 3,
+        "confidential_status_unknown_managers": 182
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 93,
+      "cusip": "554382101",
+      "ticker": "MAC",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 7,
+        "potential_overlaps": 46,
+        "unresolved_references": 64,
+        "repeated_rows": 7,
+        "unreviewed_class_rows": 46,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 76
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 94,
+      "cusip": "36468G103",
+      "ticker": "GAME",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 1,
+        "potential_overlaps": 1,
+        "unresolved_references": 8,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 10
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 100,
+      "cusip": "44888K407",
+      "ticker": "HYFM",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 6,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 4
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 103,
+      "cusip": "83191H107",
+      "ticker": "SND",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 5,
+        "unresolved_references": 12,
+        "repeated_rows": 1,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 12
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 110,
+      "cusip": "74164M108",
+      "ticker": "PRI",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 11,
+        "potential_overlaps": 95,
+        "unresolved_references": 273,
+        "repeated_rows": 12,
+        "unreviewed_class_rows": 11,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 130
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 111,
+      "cusip": "00847J105",
+      "ticker": "AGYS",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 37,
+        "unresolved_references": 64,
+        "repeated_rows": 6,
+        "unreviewed_class_rows": 6,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 69
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 114,
+      "cusip": "92823T207",
+      "ticker": "VHC",
+      "historical_index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 3,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 6
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 116,
+      "cusip": "55955D100",
+      "ticker": "MGNI",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 40,
+        "unresolved_references": 55,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 4,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 89
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 125,
+      "cusip": "320866106",
+      "ticker": "FMBH",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 24,
+        "unresolved_references": 35,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 33
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 126,
+      "cusip": "252131107",
+      "ticker": "DXCM",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 13,
+        "potential_overlaps": 141,
+        "unresolved_references": 274,
+        "repeated_rows": 27,
+        "unreviewed_class_rows": 22,
+        "confidential_omission_managers": 3,
+        "confidential_status_unknown_managers": 262
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 129,
+      "cusip": "88322Q108",
+      "ticker": "TGTX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 42,
+        "unresolved_references": 71,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 9,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 102
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 130,
+      "cusip": "444859102",
+      "ticker": "HUM",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 16,
+        "potential_overlaps": 171,
+        "unresolved_references": 350,
+        "repeated_rows": 25,
+        "unreviewed_class_rows": 14,
+        "confidential_omission_managers": 6,
+        "confidential_status_unknown_managers": 241
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 132,
+      "cusip": "108621103",
+      "ticker": "BWB",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 21,
+        "unresolved_references": 44,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 36
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 133,
+      "cusip": "20337X109",
+      "ticker": "COMM",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 8,
+        "potential_overlaps": 41,
+        "unresolved_references": 57,
+        "repeated_rows": 2,
+        "unreviewed_class_rows": 4,
+        "confidential_omission_managers": 4,
+        "confidential_status_unknown_managers": 90
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 136,
+      "cusip": "59156R108",
+      "ticker": "MET",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 30,
+        "potential_overlaps": 215,
+        "unresolved_references": 428,
+        "repeated_rows": 27,
+        "unreviewed_class_rows": 31,
+        "confidential_omission_managers": 6,
+        "confidential_status_unknown_managers": 331
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 141,
+      "cusip": "15202L107",
+      "ticker": "CSR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 23,
+        "unresolved_references": 47,
+        "repeated_rows": 8,
+        "unreviewed_class_rows": 24,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 40
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 142,
+      "cusip": "00191U102",
+      "ticker": "ASGN",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 7,
+        "potential_overlaps": 49,
+        "unresolved_references": 169,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 6,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 75
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 150,
+      "cusip": "125141101",
+      "ticker": "CECO",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 33,
+        "unresolved_references": 40,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 3,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 69
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 153,
+      "cusip": "84833T103",
+      "ticker": "SPRO",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 3,
+        "unresolved_references": 5,
+        "repeated_rows": 1,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 10
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 160,
+      "cusip": "553498106",
+      "ticker": "MSA",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 61,
+        "unresolved_references": 183,
+        "repeated_rows": 11,
+        "unreviewed_class_rows": 14,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 106
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 166,
+      "cusip": "983134107",
+      "ticker": "WYNN",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 11,
+        "potential_overlaps": 65,
+        "unresolved_references": 97,
+        "repeated_rows": 15,
+        "unreviewed_class_rows": 13,
+        "confidential_omission_managers": 3,
+        "confidential_status_unknown_managers": 137
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 172,
+      "cusip": "46131B704",
+      "ticker": "IVR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 16,
+        "unresolved_references": 43,
+        "repeated_rows": 5,
+        "unreviewed_class_rows": 27,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 37
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 174,
+      "cusip": "46266C105",
+      "ticker": "IQV",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 19,
+        "potential_overlaps": 143,
+        "unresolved_references": 260,
+        "repeated_rows": 26,
+        "unreviewed_class_rows": 19,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 291
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 176,
+      "cusip": "67079U306",
+      "ticker": "NUTX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 1,
+        "potential_overlaps": 9,
+        "unresolved_references": 9,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 21
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 177,
+      "cusip": "045487105",
+      "ticker": "ASB",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 5,
+        "potential_overlaps": 44,
+        "unresolved_references": 63,
+        "repeated_rows": 8,
+        "unreviewed_class_rows": 10,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 77
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "ticker": "KAPA",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 0,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 4
+      },
+      "selected_for_first_class_review": true,
+      "class_review_remaining": false
+    },
+    {
+      "ordinal": 181,
+      "cusip": "67401P405",
+      "ticker": "OCSL",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 6,
+        "unresolved_references": 25,
+        "repeated_rows": 1,
+        "unreviewed_class_rows": 13,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 47
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 182,
+      "cusip": "53224K302",
+      "ticker": "LTBR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 4,
+        "potential_overlaps": 5,
+        "unresolved_references": 14,
+        "repeated_rows": 6,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 30
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 184,
+      "cusip": "87583X109",
+      "ticker": "TNGX",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 1,
+        "potential_overlaps": 17,
+        "unresolved_references": 37,
+        "repeated_rows": 3,
+        "unreviewed_class_rows": 2,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 42
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 186,
+      "cusip": "20602D101",
+      "ticker": "CNXC",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 8,
+        "potential_overlaps": 64,
+        "unresolved_references": 168,
+        "repeated_rows": 9,
+        "unreviewed_class_rows": 7,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 83
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 188,
+      "cusip": "047649108",
+      "ticker": "ATKR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 6,
+        "potential_overlaps": 62,
+        "unresolved_references": 70,
+        "repeated_rows": 6,
+        "unreviewed_class_rows": 4,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 76
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "ticker": "CJMB",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 0,
+        "potential_overlaps": 0,
+        "unresolved_references": 0,
+        "repeated_rows": 0,
+        "unreviewed_class_rows": 0,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 0
+      },
+      "selected_for_first_class_review": true,
+      "class_review_remaining": false
+    },
+    {
+      "ordinal": 193,
+      "cusip": "75943R102",
+      "ticker": "RLAY",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 2,
+        "potential_overlaps": 24,
+        "unresolved_references": 50,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 1,
+        "confidential_omission_managers": 2,
+        "confidential_status_unknown_managers": 54
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 196,
+      "cusip": "184499101",
+      "ticker": "CLNE",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 6,
+        "potential_overlaps": 22,
+        "unresolved_references": 34,
+        "repeated_rows": 3,
+        "unreviewed_class_rows": 2,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 40
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 197,
+      "cusip": "419870100",
+      "ticker": "HE",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 7,
+        "potential_overlaps": 28,
+        "unresolved_references": 161,
+        "repeated_rows": 4,
+        "unreviewed_class_rows": 2,
+        "confidential_omission_managers": 0,
+        "confidential_status_unknown_managers": 65
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    },
+    {
+      "ordinal": 198,
+      "cusip": "020764106",
+      "ticker": "AMR",
+      "historical_index_flags": [],
+      "holdings_quality_counts": {
+        "unresolved_filings": 3,
+        "potential_overlaps": 25,
+        "unresolved_references": 40,
+        "repeated_rows": 7,
+        "unreviewed_class_rows": 6,
+        "confidential_omission_managers": 1,
+        "confidential_status_unknown_managers": 65
+      },
+      "selected_for_first_class_review": false,
+      "class_review_remaining": true
+    }
+  ],
+  "issuer_cover_records": [
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "8-K",
+        "filed": "2025-10-03",
+        "filename": "edgar/data/1996192/0001213900-25-096070.txt"
+      },
+      "source_sha256": "54d2f8f785032d8119af9005649d1bf8b041581e69ac6d966ca19e1f70b1d20f",
+      "accepted_at_new_york": "20251003160549",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common stock, par value US$0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq Stock Market LLC",
+            "context": "AsOf2025-09-29",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251003160549",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "10-Q",
+        "filed": "2025-11-19",
+        "filename": "edgar/data/1996192/0001213900-25-112601.txt"
+      },
+      "source_sha256": "8413ac452ea7097f27c3339b5bde3fa3699bbc48691a62e5a188713b1caedb62",
+      "accepted_at_new_york": "20251119160125",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value US$0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq",
+            "context": "c0",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251119160125",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "10-K",
+        "filed": "2025-10-14",
+        "filename": "edgar/data/1996192/0001213900-25-098720.txt"
+      },
+      "source_sha256": "e376c7b77aca276536a6f613abee8bb07a0eb4748d3a9bf7208b827e0c5d06e4",
+      "accepted_at_new_york": "20251014160607",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value US$0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq",
+            "context": "c0",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251014160607",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "8-K",
+        "filed": "2025-10-06",
+        "filename": "edgar/data/1996192/0001213900-25-096538.txt"
+      },
+      "source_sha256": "72ea11356f4c95ea2cf598b9f9d00bd461a7fee6adcefcb94169beee648925b9",
+      "accepted_at_new_york": "20251006161025",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common stock, par value US$0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq",
+            "context": "AsOf2025-09-30",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251006161025",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "8-K",
+        "filed": "2025-12-02",
+        "filename": "edgar/data/1996192/0001213900-25-117240.txt"
+      },
+      "source_sha256": "ee132dbaf20852283bcd21bf0c71c36b0427eda398f206ac14a8b419efd3fde0",
+      "accepted_at_new_york": "20251202160543",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value $0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq",
+            "context": "AsOf2025-11-25",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251202160543",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001996192",
+        "name": "Lakeside Holding Ltd",
+        "form": "8-K",
+        "filed": "2025-12-19",
+        "filename": "edgar/data/1996192/0001213900-25-123832.txt"
+      },
+      "source_sha256": "b14f6e37cb6be010e76a02eed5865d8fc72dad95e1b24e06e581fb0db85f8c40",
+      "accepted_at_new_york": "20251219160529",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common stock, par value US$0.0001 per share",
+            "ticker": "LSH",
+            "exchange": "Nasdaq",
+            "context": "AsOf2025-12-15",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "LSH",
+        "accepted_at_new_york": "20251219160529",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001962011",
+        "name": "Kairos Pharma, LTD.",
+        "form": "10-Q",
+        "filed": "2025-11-14",
+        "filename": "edgar/data/1962011/0001493152-25-023276.txt"
+      },
+      "source_sha256": "f762a83711045d17f7c9b865c99105d354e440f41159986a1c31b347a96683b7",
+      "accepted_at_new_york": "20251114134149",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value $0.001 per share",
+            "ticker": "KAPA",
+            "exchange": "NYSE American",
+            "context": "From2025-01-01to2025-09-30",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "KAPA",
+        "accepted_at_new_york": "20251114134149",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001962011",
+        "name": "Kairos Pharma, LTD.",
+        "form": "8-K",
+        "filed": "2025-10-07",
+        "filename": "edgar/data/1962011/0001493152-25-017208.txt"
+      },
+      "source_sha256": "49247f72f64f5f17e598eabd58b6585dacc26b6df1caf0b557d00161353085da",
+      "accepted_at_new_york": "20251007080047",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value $0.001, per share",
+            "ticker": "KAPA",
+            "exchange": "NYSE American",
+            "context": "AsOf2025-10-01",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "KAPA",
+        "accepted_at_new_york": "20251007080047",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0002032545",
+        "name": "CALLAN JMB INC.",
+        "form": "10-Q",
+        "filed": "2025-11-14",
+        "filename": "edgar/data/2032545/0001493152-25-023475.txt"
+      },
+      "source_sha256": "d3be4282a100a9f14cdff2de622d0697cf88cbe5b492fab76ea794b8f7f87151",
+      "accepted_at_new_york": "20251114161133",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value $0.001 per share",
+            "ticker": "CJMB",
+            "exchange": "The Nasdaq Stock Market LLC",
+            "context": "From2025-01-01to2025-09-30",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "CJMB",
+        "accepted_at_new_york": "20251114161133",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0002032545",
+        "name": "CALLAN JMB INC.",
+        "form": "8-K",
+        "filed": "2025-12-05",
+        "filename": "edgar/data/2032545/0001493152-25-026422.txt"
+      },
+      "source_sha256": "91fde0b3d29f6d307b6310c0ae1f0a74375734cd0dbcdda1aa7a2bbfe39c7cdc",
+      "accepted_at_new_york": "20251205170027",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, $0.001 par value",
+            "ticker": "CJMB",
+            "exchange": "The Nasdaq Stock Market LLC",
+            "context": "AsOf2025-12-01",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "CJMB",
+        "accepted_at_new_york": "20251205170027",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0002032545",
+        "name": "CALLAN JMB INC.",
+        "form": "8-K",
+        "filed": "2025-11-14",
+        "filename": "edgar/data/2032545/0001493152-25-023445.txt"
+      },
+      "source_sha256": "9a29ea46baaaeaacdade31373f81946ba2fab85033e9fd870896a220a0db86c4",
+      "accepted_at_new_york": "20251114160600",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, $0.001 par value",
+            "ticker": "CJMB",
+            "exchange": "The Nasdaq Stock Market LLC",
+            "context": "AsOf2025-11-01",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "CJMB",
+        "accepted_at_new_york": "20251114160600",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0001962011",
+        "name": "Kairos Pharma, LTD.",
+        "form": "8-K",
+        "filed": "2025-10-15",
+        "filename": "edgar/data/1962011/0001493152-25-018145.txt"
+      },
+      "source_sha256": "72e725ce1dd6a3a99bd6eee1e756a5e8dd43ec50d79dfcc7fc8c1e90374f90ac",
+      "accepted_at_new_york": "20251015161043",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, par value $0.001, per share",
+            "ticker": "KAPA",
+            "exchange": "NYSE American",
+            "context": "AsOf2025-10-08",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "KAPA",
+        "accepted_at_new_york": "20251015161043",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0002032545",
+        "name": "CALLAN JMB INC.",
+        "form": "8-K",
+        "filed": "2025-12-31",
+        "filename": "edgar/data/2032545/0001493152-25-029719.txt"
+      },
+      "source_sha256": "cb717ed10270228d8d02fb4b53d6851553c712ddc496a1a0bf4b3150ff9b2913",
+      "accepted_at_new_york": "20251231090024",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, $0.001 par value",
+            "ticker": "CJMB",
+            "exchange": "The Nasdaq Stock Market LLC",
+            "context": "AsOf2025-12-29",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "CJMB",
+        "accepted_at_new_york": "20251231090024",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    },
+    {
+      "source": {
+        "cik": "0002032545",
+        "name": "CALLAN JMB INC.",
+        "form": "8-K",
+        "filed": "2025-12-08",
+        "filename": "edgar/data/2032545/0001493152-25-026612.txt"
+      },
+      "source_sha256": "aca90f3a381de2e3a79bd100a81f65b2adc38d63f1de37417465ab1eb2eb5903",
+      "accepted_at_new_york": "20251208151150",
+      "cover": {
+        "kind": "listing_cover",
+        "status": "single_common_security_in_filing",
+        "securities": [
+          {
+            "title": "Common Stock, $0.001 par value",
+            "ticker": "CJMB",
+            "exchange": "The Nasdaq Stock Market LLC",
+            "context": "AsOf2025-12-08",
+            "common_stock_candidate": true
+          }
+        ],
+        "ticker_in_filing": "CJMB",
+        "accepted_at_new_york": "20251208151150",
+        "listing_at_selection_date_confirmed": false,
+        "issuer_binding": "single_issuer_in_filing"
+      }
+    }
+  ],
+  "manager_primary_reviews": [
+    {
+      "cik": "0001179392",
+      "name": "TWO SIGMA INVESTMENTS, LP",
+      "accession": "0000899140-25-001286",
+      "url": "https://www.sec.gov/Archives/edgar/data/1179392/000089914025001286/primary_doc.xml",
+      "path": "data/sec-admission/0000899140-25-001286-primary.xml",
+      "status": "ok",
+      "sha256": "4aba80d28f117e124f688d8e5b8f0d1f2d6c2facd2df8b79e2cf01bdbeed3379",
+      "bytes": 5324,
+      "review": {
+        "status": "unknown",
+        "reason": "field_absent_in_original_xml"
+      }
+    },
+    {
+      "cik": "0001000275",
+      "name": "ROYAL BANK OF CANADA",
+      "accession": "0001140361-25-042265",
+      "url": "https://www.sec.gov/Archives/edgar/data/1000275/000114036125042265/primary_doc.xml",
+      "path": "data/sec-admission/0001140361-25-042265-primary.xml",
+      "status": "ok",
+      "sha256": "9b43c95d589379183ceb3e8518946f0d9e4a665b0721be54fa8bb0669b8aea90",
+      "bytes": 7453,
+      "review": {
+        "status": "unknown",
+        "reason": "field_absent_in_original_xml"
+      }
+    },
+    {
+      "cik": "0001423053",
+      "name": "CITADEL ADVISORS LLC",
+      "accession": "0001104659-25-112514",
+      "url": "https://www.sec.gov/Archives/edgar/data/1423053/000110465925112514/primary_doc.xml",
+      "path": "data/sec-admission/0001104659-25-112514-primary.xml",
+      "status": "ok",
+      "sha256": "e2f8372ac50a24566972151c42621145e7c213596c9848f4c41443609a721cbf",
+      "bytes": 2470,
+      "review": {
+        "status": "unknown",
+        "reason": "field_absent_in_original_xml"
+      }
+    },
+    {
+      "cik": "0001664193",
+      "name": "Aptus Capital Advisors, LLC",
+      "accession": "0001398344-25-020792",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664193/000139834425020792/primary_doc.xml",
+      "path": "data/sec-admission/0001398344-25-020792-primary.xml",
+      "status": "ok",
+      "sha256": "495cef3206c26d998a7e2bf3a083b8a2c13cae43db1c6a05c0f384dafa522cec",
+      "bytes": 2505,
+      "review": {
+        "status": "unknown",
+        "reason": "field_absent_in_original_xml"
+      }
+    },
+    {
+      "cik": "0001450144",
+      "name": "TWO SIGMA SECURITIES, LLC",
+      "accession": "0000899140-25-001288",
+      "url": "https://www.sec.gov/Archives/edgar/data/1450144/000089914025001288/primary_doc.xml",
+      "path": "data/sec-admission/0000899140-25-001288-primary.xml",
+      "status": "ok",
+      "sha256": "a806081fabd8da9e15735071b84807da63399b111a09a241537b47bb0e57dcd7",
+      "bytes": 1858,
+      "review": {
+        "status": "unknown",
+        "reason": "field_absent_in_original_xml"
+      }
+    },
+    {
+      "cik": "0001673954",
+      "name": "SevenBridge Financial Group, LLC",
+      "accession": "0001951757-25-001420",
+      "url": "https://www.sec.gov/Archives/edgar/data/1673954/000195175725001420/primary_doc.xml",
+      "path": "data/sec-admission/0001951757-25-001420-primary.xml",
+      "status": "ok",
+      "sha256": "c1f3f7fd63bc9ce53ee9519763e983bcd6dd9f8dee851022970b794467ab7467",
+      "bytes": 1993,
+      "review": {
+        "status": "not_declared",
+        "reason": "explicit_original_xml_field"
+      }
+    }
+  ],
+  "event_reviews": [
+    {
+      "accession": "0001213900-25-096070",
+      "event": "minimum_bid_compliance_regained",
+      "event_date": "2025-09-29",
+      "does_not_prove_continuous_listing": true
+    },
+    {
+      "accession": "0001213900-25-117240",
+      "event": "authorized_common_and_preferred_share_increases_not_approved",
+      "does_not_change_outstanding_share_denominator": true
+    },
+    {
+      "accession": "0001213900-25-123832",
+      "event": "private_placement_contract_for_8400000_common_shares",
+      "event_date": "2025-12-15",
+      "contract_shares": 8400000,
+      "completion_date_not_confirmed": true,
+      "do_not_mix_with_september_holdings": true
+    },
+    {
+      "accession": "0001493152-25-029719",
+      "event": "annual_meeting_election_and_auditor_ratification",
+      "event_date": "2025-12-29",
+      "voting_share_count_not_new_period_denominator": true
+    }
+  ],
+  "summary": {
+    "numeric_candidates": 65,
+    "class_reviews_completed": 3,
+    "original_issuer_filings_checked": 14,
+    "original_manager_covers_checked": 6,
+    "pilot_materials_ready_with_listing_proxy": 1,
+    "accuracy_measurement_eligible": 0
+  },
+  "limitations": [
+    "review_subset_not_representative",
+    "listing_proxy_not_continuous_listing_proof",
+    "public_13f_holdings_not_complete_institutional_ownership",
+    "no_low_ownership_threshold_or_comparison_group_fixed",
+    "no_predictive_performance_result"
+  ],
+  "validation": {
+    "code_version": "0.5.1",
+    "code_commit": "67ec940e7ea1b20e966dd34c9287d26756e8e8ca",
+    "local_tests_passed": 101,
+    "github_tests_passed": 101,
+    "github_run_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34452300272",
+    "github_job_id": 102790569702,
+    "github_run_conclusion": "success",
+    "scored_dataset_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_pilot_unchanged": true,
+    "source_review_executed_locally": true,
+    "institutional_flow_predictive_accuracy_validated": false
+  }
+}
