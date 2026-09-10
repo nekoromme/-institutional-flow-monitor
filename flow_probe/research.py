@@ -91,7 +91,7 @@ def prepare_daily(rows: dict, sessions: list, split_audit: dict) -> tuple[list, 
 def save_prepared(rows: dict, sessions: list, split_audit: dict, destination: str) -> dict:
     prepared, report = prepare_daily(rows, sessions, split_audit)
     # 原数値を含むファイルは無視対象のdata/へ。公開用レポートには件数とハッシュだけ。
-    body = json.dumps({"protocol": PROTOCOL, "records": prepared}, sort_keys=True,
+    body = json.dumps({"protocol": PROTOCOL, "session_days": [s["date"] for s in sessions], "records": prepared}, sort_keys=True,
                       separators=(",", ":"), allow_nan=False).encode()
     path = Path(destination)
     path.parent.mkdir(parents=True, exist_ok=True)

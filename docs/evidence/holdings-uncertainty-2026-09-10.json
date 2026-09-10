@@ -1,0 +1,882 @@
+{
+  "version": "holdings-uncertainty-0.1",
+  "as_of": "2026-06-01",
+  "policy": "retain_diagnostic_totals; no_automatic_subtraction; unknown_labels_excluded_from_accuracy",
+  "interpretation": "associated_manager_shares_are_work_priority_not_duplicate_or_missing_share_estimate",
+  "quarters": {
+    "2025-12-31": {
+      "UAVS": {
+        "unresolved_reference_count": 7,
+        "managers_touched_by_references_overlap_or_repeated_rows": 4,
+        "associated_manager_shares_counted_once": 422015,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 0,
+        "unreviewed_class_row_count": 0,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 4,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 115572,
+            "accessions": [
+              "0002012383-26-000920"
+            ]
+          },
+          {
+            "cik": "0001533964",
+            "kind": "holding_row_reference",
+            "name": "Virtu Financial LLC",
+            "reference_count": 1,
+            "manager_reported_shares": 112360,
+            "accessions": [
+              "0001533964-26-000008"
+            ]
+          },
+          {
+            "cik": "0001828301",
+            "kind": "holding_row_reference",
+            "name": "XTX Topco Ltd",
+            "reference_count": 1,
+            "manager_reported_shares": 98203,
+            "accessions": [
+              "0001828301-26-000001"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 95880,
+            "accessions": [
+              "0000073124-26-000008"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 0,
+        "potential_overlap_relationships_sample": []
+      },
+      "QMCO": {
+        "unresolved_reference_count": 12,
+        "managers_touched_by_references_overlap_or_repeated_rows": 5,
+        "associated_manager_shares_counted_once": 277372,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 0,
+        "unreviewed_class_row_count": 0,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 5,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 220746,
+            "accessions": [
+              "0002012383-26-000920"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 28762,
+            "accessions": [
+              "0000073124-26-000008"
+            ]
+          },
+          {
+            "cik": "0000080255",
+            "kind": "holding_row_reference",
+            "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+            "reference_count": 1,
+            "manager_reported_shares": 15901,
+            "accessions": [
+              "0000080255-26-000231"
+            ]
+          },
+          {
+            "cik": "0001828301",
+            "kind": "holding_row_reference",
+            "name": "XTX Topco Ltd",
+            "reference_count": 1,
+            "manager_reported_shares": 11948,
+            "accessions": [
+              "0001828301-26-000001"
+            ]
+          },
+          {
+            "cik": "0001141802",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHWESTERN MUTUAL WEALTH MANAGEMENT CO",
+            "reference_count": 5,
+            "manager_reported_shares": 15,
+            "accessions": [
+              "0001141802-26-000007"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 0,
+        "potential_overlap_relationships_sample": []
+      },
+      "MU": {
+        "unresolved_reference_count": 571,
+        "managers_touched_by_references_overlap_or_repeated_rows": 425,
+        "associated_manager_shares_counted_once": 534553007,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 51,
+        "unreviewed_class_row_count": 25,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 164,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 100701543,
+            "accessions": [
+              "0002012383-26-000920"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 10654349,
+            "accessions": [
+              "0000073124-26-000008"
+            ]
+          },
+          {
+            "cik": "0000861177",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+            "reference_count": 2,
+            "manager_reported_shares": 8847074,
+            "accessions": [
+              "0000861177-26-000001"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 337,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0001462160",
+              "0001694895"
+            ],
+            "names": [
+              "Mitsubishi UFJ Trust & Banking Corp",
+              "Mitsubishi UFJ Asset Management (UK) Ltd."
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              511761,
+              4000
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001345929",
+              "0001462160"
+            ],
+            "names": [
+              "BROWN ADVISORY INC",
+              "Mitsubishi UFJ Trust & Banking Corp"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              77274,
+              511761
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001462160",
+              "0001766150"
+            ],
+            "names": [
+              "Mitsubishi UFJ Trust & Banking Corp",
+              "EASTERLY INVESTMENT PARTNERS LLC"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              511761,
+              2037
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      },
+      "ONTO": {
+        "unresolved_reference_count": 196,
+        "managers_touched_by_references_overlap_or_repeated_rows": 123,
+        "associated_manager_shares_counted_once": 29783219,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 7,
+        "unreviewed_class_row_count": 15,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 45,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 4931826,
+            "accessions": [
+              "0002012383-26-000920"
+            ]
+          },
+          {
+            "cik": "0000902219",
+            "kind": "holding_row_reference",
+            "name": "WELLINGTON MANAGEMENT GROUP LLP",
+            "reference_count": 2,
+            "manager_reported_shares": 1218548,
+            "accessions": [
+              "0000902219-26-000103"
+            ]
+          },
+          {
+            "cik": "0001037792",
+            "kind": "holding_row_reference",
+            "name": "PARADIGM CAPITAL MANAGEMENT INC/NY",
+            "reference_count": 2,
+            "manager_reported_shares": 1125838,
+            "accessions": [
+              "0001037792-26-000001"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 92,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0000053417",
+              "0001137774"
+            ],
+            "names": [
+              "JENNISON ASSOCIATES LLC",
+              "PRUDENTIAL FINANCIAL INC"
+            ],
+            "kinds": [
+              "included_manager",
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              680822,
+              3075
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0000861177",
+              "0001610520"
+            ],
+            "names": [
+              "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+              "UBS Group AG"
+            ],
+            "kinds": [
+              "included_manager",
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              145891,
+              256731
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0000102909",
+              "0001767306"
+            ],
+            "names": [
+              "VANGUARD GROUP INC",
+              "Vanguard Personalized Indexing Management, LLC"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              5576305,
+              5310
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      },
+      "AAOI": {
+        "unresolved_reference_count": 46,
+        "managers_touched_by_references_overlap_or_repeated_rows": 45,
+        "associated_manager_shares_counted_once": 13435450,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 3,
+        "unreviewed_class_row_count": 6,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 21,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 5306432,
+            "accessions": [
+              "0002012383-26-000920"
+            ]
+          },
+          {
+            "cik": "0000080255",
+            "kind": "holding_row_reference",
+            "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+            "reference_count": 1,
+            "manager_reported_shares": 2229757,
+            "accessions": [
+              "0000080255-26-000231"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 526928,
+            "accessions": [
+              "0000073124-26-000008"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 30,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0000861177",
+              "0001610520"
+            ],
+            "names": [
+              "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+              "UBS Group AG"
+            ],
+            "kinds": [
+              "included_manager",
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              93485,
+              951065
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001207017",
+              "0001692234"
+            ],
+            "names": [
+              "LAZARD ASSET MANAGEMENT LLC",
+              "Russell Investments Group, Ltd."
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              9881,
+              69978
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0000073124",
+              "0000938206"
+            ],
+            "names": [
+              "NORTHERN TRUST CORP",
+              "Driehaus Capital Management LLC"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              526928,
+              507473
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      }
+    },
+    "2026-03-31": {
+      "UAVS": {
+        "unresolved_reference_count": 11,
+        "managers_touched_by_references_overlap_or_repeated_rows": 6,
+        "associated_manager_shares_counted_once": 1144989,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 0,
+        "unreviewed_class_row_count": 0,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 4,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 378799,
+            "accessions": [
+              "0002012383-26-001841"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 95880,
+            "accessions": [
+              "0000073124-26-000036"
+            ]
+          },
+          {
+            "cik": "0001533964",
+            "kind": "holding_row_reference",
+            "name": "Virtu Financial LLC",
+            "reference_count": 1,
+            "manager_reported_shares": 66866,
+            "accessions": [
+              "0001533964-26-000010"
+            ]
+          },
+          {
+            "cik": "0001141802",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHWESTERN MUTUAL WEALTH MANAGEMENT CO",
+            "reference_count": 5,
+            "manager_reported_shares": 100,
+            "accessions": [
+              "0001085146-26-000398"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 1,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0001316507",
+              "0001455258"
+            ],
+            "names": [
+              "Calamos Advisors LLC",
+              "Calamos Wealth Management LLC"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              301672,
+              301672
+            ],
+            "equal_row_share_counts": [
+              301672
+            ],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      },
+      "QMCO": {
+        "unresolved_reference_count": 6,
+        "managers_touched_by_references_overlap_or_repeated_rows": 3,
+        "associated_manager_shares_counted_once": 268095,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 0,
+        "unreviewed_class_row_count": 0,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 3,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 217532,
+            "accessions": [
+              "0002012383-26-001841"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 28762,
+            "accessions": [
+              "0000073124-26-000036"
+            ]
+          },
+          {
+            "cik": "0000080255",
+            "kind": "holding_row_reference",
+            "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+            "reference_count": 1,
+            "manager_reported_shares": 21801,
+            "accessions": [
+              "0000080255-26-000381"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 0,
+        "potential_overlap_relationships_sample": []
+      },
+      "MU": {
+        "unresolved_reference_count": 626,
+        "managers_touched_by_references_overlap_or_repeated_rows": 488,
+        "associated_manager_shares_counted_once": 401839981,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 56,
+        "unreviewed_class_row_count": 37,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 169,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 103147586,
+            "accessions": [
+              "0002012383-26-001841"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 10399487,
+            "accessions": [
+              "0000073124-26-000036"
+            ]
+          },
+          {
+            "cik": "0000861177",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+            "reference_count": 3,
+            "manager_reported_shares": 9594813,
+            "accessions": [
+              "0000861177-26-000003"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 428,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0001056947",
+              "0001970075"
+            ],
+            "names": [
+              "CAISSE DES DEPOTS ET CONSIGNATIONS",
+              "LBP AM SA"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              16662,
+              160121
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001341401",
+              "0002080520"
+            ],
+            "names": [
+              "River Road Asset Management, LLC",
+              "ABN AMRO INVESTMENT SOLUTIONS"
+            ],
+            "kinds": [
+              "included_manager",
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              14494,
+              73934
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001374384",
+              "0002111369"
+            ],
+            "names": [
+              "Intesa Sanpaolo S.p.A.",
+              "VUB Generali dochodkova spravcovska spolocnost, a.s."
+            ],
+            "kinds": [
+              "included_manager",
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              56480,
+              2589
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      },
+      "ONTO": {
+        "unresolved_reference_count": 195,
+        "managers_touched_by_references_overlap_or_repeated_rows": 133,
+        "associated_manager_shares_counted_once": 22670560,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 8,
+        "unreviewed_class_row_count": 15,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 48,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 5534265,
+            "accessions": [
+              "0002012383-26-001841"
+            ]
+          },
+          {
+            "cik": "0001068837",
+            "kind": "holding_row_reference",
+            "name": "VOYA INVESTMENT MANAGEMENT LLC",
+            "reference_count": 4,
+            "manager_reported_shares": 917155,
+            "accessions": [
+              "0001068837-26-000002"
+            ]
+          },
+          {
+            "cik": "0000080255",
+            "kind": "holding_row_reference",
+            "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+            "reference_count": 1,
+            "manager_reported_shares": 605783,
+            "accessions": [
+              "0000080255-26-000381"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 105,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0000073124",
+              "0002040686"
+            ],
+            "names": [
+              "NORTHERN TRUST CORP",
+              "Police & Firemen's Retirement System of New Jersey"
+            ],
+            "kinds": [
+              "included_manager"
+            ],
+            "manager_share_totals": [
+              456017,
+              21040
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0000107136",
+              "0001795705"
+            ],
+            "names": [
+              "&PARTNERS",
+              "Brooklyn Investment Group"
+            ],
+            "kinds": [
+              "included_manager"
+            ],
+            "manager_share_totals": [
+              2435,
+              6019
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001795705",
+              "0001992825"
+            ],
+            "names": [
+              "Brooklyn Investment Group",
+              "Farther Finance Advisors, LLC"
+            ],
+            "kinds": [
+              "included_manager"
+            ],
+            "manager_share_totals": [
+              6019,
+              1801
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      },
+      "AAOI": {
+        "unresolved_reference_count": 61,
+        "managers_touched_by_references_overlap_or_repeated_rows": 65,
+        "associated_manager_shares_counted_once": 18268794,
+        "associated_shares_are_error_bound": false,
+        "unresolved_filing_count": 5,
+        "unreviewed_class_row_count": 4,
+        "certified_holdings_change": null,
+        "low_ownership_eligible": null,
+        "reference_review_queue_count": 26,
+        "reference_review_queue_sample": [
+          {
+            "cik": "0002012383",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "BlackRock, Inc.",
+            "reference_count": 3,
+            "manager_reported_shares": 7192329,
+            "accessions": [
+              "0002012383-26-001841"
+            ]
+          },
+          {
+            "cik": "0000080255",
+            "kind": "holding_row_reference",
+            "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+            "reference_count": 1,
+            "manager_reported_shares": 1732381,
+            "accessions": [
+              "0000080255-26-000381"
+            ]
+          },
+          {
+            "cik": "0000073124",
+            "kind": "cover_reference_target_link_unproven",
+            "name": "NORTHERN TRUST CORP",
+            "reference_count": 2,
+            "manager_reported_shares": 583494,
+            "accessions": [
+              "0000073124-26-000036"
+            ]
+          }
+        ],
+        "potential_overlap_relationships_count": 46,
+        "potential_overlap_relationships_sample": [
+          {
+            "ciks": [
+              "0001795705",
+              "0001992825"
+            ],
+            "names": [
+              "Brooklyn Investment Group",
+              "Farther Finance Advisors, LLC"
+            ],
+            "kinds": [
+              "included_manager"
+            ],
+            "manager_share_totals": [
+              12484,
+              656
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001795705",
+              "0001956790"
+            ],
+            "names": [
+              "Brooklyn Investment Group",
+              "FourThought Financial Partners, LLC"
+            ],
+            "kinds": [
+              "included_manager"
+            ],
+            "manager_share_totals": [
+              12484,
+              3530
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          },
+          {
+            "ciks": [
+              "0001744347",
+              "0002016827"
+            ],
+            "names": [
+              "Vident Advisory, LLC",
+              "REX Advisers, LLC"
+            ],
+            "kinds": [
+              "reported_by"
+            ],
+            "manager_share_totals": [
+              7497,
+              7300
+            ],
+            "equal_row_share_counts": [],
+            "status": "potential_overlap_not_automatically_subtracted"
+          }
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "audit": "cc99459ea8665eaec7a729ca5ba6d05c096f1350a9db2acc2683e1669d768d7a",
+    "ledger": "420f906fcb1146dde26f00157d9a6e75d4818dcd8897bf913ee5acf8672d91a1"
+  },
+  "detail_policy": "bounded_examples; full_local_queue_reproducible_with_flow_probe.uncertainty"
+}
