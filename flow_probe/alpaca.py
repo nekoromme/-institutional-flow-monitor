@@ -16,7 +16,7 @@ NY = ZoneInfo("America/New_York")
 UTC = timezone.utc
 DATA_URL = "https://data.alpaca.markets/v2/stocks/"
 # 取得品質の試験用。低機関保有銘柄の選定結果ではない。
-SYMBOLS = ("AAPL", "MU", "ONTO", "AAOI", "FN")
+SYMBOLS = ("UAVS", "MU", "ONTO", "AAOI", "QMCO")
 
 
 def iso(value: datetime) -> str:
@@ -44,12 +44,13 @@ def completed_sessions(rows: list, now: datetime) -> list:
 
 def fetch_pages(client: SafeHttp, kind: str, symbols: tuple, start: datetime,
                 end: datetime, *, feed: str, timeframe: str | None = None,
-                limit: int = 1000, max_pages: int = 30) -> tuple[dict, dict]:
+                limit: int = 1000, max_pages: int = 30,
+                adjustment: str = "raw") -> tuple[dict, dict]:
     """全ページを取得する。上限・失敗は『取り切った』と表示しない。"""
     params = {"symbols": ",".join(symbols), "start": iso(start), "end": iso(end),
               "feed": feed, "limit": limit, "sort": "asc", "asof": "-"}
     if kind == "bars":
-        params.update(timeframe=timeframe, adjustment="raw")
+        params.update(timeframe=timeframe, adjustment=adjustment)
     rows = {s: [] for s in symbols}
     seen_tokens = set()
     began = time.monotonic()
@@ -57,7 +58,8 @@ def fetch_pages(client: SafeHttp, kind: str, symbols: tuple, start: datetime,
     meta = {"feed_requested": feed, "automatic_feed_fallback": False,
             "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
             "kind": kind, "timeframe": timeframe, "start": iso(start), "end": iso(end),
-            "symbols": list(symbols), "pages": 0, "complete": False,
+            "symbols": list(symbols), "adjustment": adjustment if kind == "bars" else None,
+            "symbol_mapping_asof": "-", "pages": 0, "complete": False,
             "http_status": None, "status": "pending"}
     try:
         for _ in range(max_pages):
@@ -98,6 +100,49 @@ def fetch_pages(client: SafeHttp, kind: str, symbols: tuple, start: datetime,
 
 def numeric(value) -> bool:
     return isinstance(value, (float, int)) and not isinstance(value, bool) and math.isfinite(value)
+
+
+def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool) -> dict:
+    """同じ日の補正前後を比較。価格や出来高の原数値は公開しない。"""
+    result = {}
+    for symbol, rows in raw.items():
+        original = {r["t"]: r for r in rows}
+        revised = {r["t"]: r for r in adjusted.get(symbol, [])}
+        shared = sorted(original.keys() & revised.keys())
+        invalid = mismatches = 0
+        segments = []
+        for stamp in shared:
+            a, b = original[stamp], revised[stamp]
+            if not all(numeric(r.get(k)) and r[k] > 0 for r in (a, b) for k in ("o", "h", "l", "c")):
+                invalid += 1
+                continue
+            factor = b["c"] / a["c"]
+            if not all(math.isclose(b[k], a[k]*factor, rel_tol=1e-5, abs_tol=1e-5)
+                       for k in ("o", "h", "l")):
+                mismatches += 1
+            if not all(numeric(r.get("v")) and r["v"] >= 0 for r in (a, b)):
+                invalid += 1
+                continue
+            # 出来高が整数に丸められる場合の1株以内の差は許容する。
+            if not math.isclose(b["v"], a["v"]/factor, rel_tol=1e-6, abs_tol=1.0):
+                mismatches += 1
+            day = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(NY).date().isoformat()
+            if not segments or not math.isclose(segments[-1]["price_multiplier"], factor, rel_tol=1e-5):
+                segments.append({"first_day": day, "last_day": day,
+                                 "price_multiplier": round(factor, 8), "records": 1})
+            else:
+                segments[-1]["last_day"] = day
+                segments[-1]["records"] += 1
+        result[symbol] = {
+            "status": "comparable_sample" if complete and shared and not invalid and not mismatches
+                and original.keys() == revised.keys() and len(rows) == len(original)
+                and len(adjusted.get(symbol, [])) == len(revised) else "needs_review",
+            "paired_days": len(shared), "unpaired_days": len(original.keys() ^ revised.keys()),
+            "invalid_pairs": invalid, "price_volume_adjustment_mismatches": mismatches,
+            "provider_adjustment_segments": segments,
+            "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+        }
+    return result
 
 
 def missing_minute_samples(rows: list, sessions: list, limit: int = 2) -> list:
@@ -209,9 +254,10 @@ def run_market(client: SafeHttp, now: datetime) -> dict:
             report["asset_status"][symbol] = {"error": exc.summary()}
 
     def probe(name, kind, symbols, start, end, selected_sessions, feed="sip", timeframe=None,
-              limit=1000, max_pages=30):
+              limit=1000, max_pages=30, adjustment="raw"):
         rows, meta = fetch_pages(client, kind, symbols, start, end, feed=feed,
-                                 timeframe=timeframe, limit=limit, max_pages=max_pages)
+                                 timeframe=timeframe, limit=limit, max_pages=max_pages,
+                                 adjustment=adjustment)
         meta["name"] = name
         meta["quality"] = quality(rows, kind, selected_sessions, timeframe=timeframe,
                                    complete=meta["complete"], start=start, end=end)
@@ -220,8 +266,14 @@ def run_market(client: SafeHttp, now: datetime) -> dict:
         return rows, meta
 
     first_open = session_times(sessions[0])[0].replace(hour=0, minute=0)
-    _, daily = probe("sip_daily_3year", "bars", SYMBOLS, first_open, closed,
+    raw_daily, daily = probe("sip_daily_3year", "bars", SYMBOLS, first_open, closed,
                      sessions, timeframe="1Day", limit=500)
+    split_daily, split_meta = probe("sip_daily_3year_split_adjusted", "bars", SYMBOLS,
+                                    first_open, closed, sessions, timeframe="1Day",
+                                    limit=500, adjustment="split")
+    report["split_adjustment_audit"] = split_adjustment_audit(
+        raw_daily, split_daily, complete=daily["complete"] and split_meta["complete"])
+    del raw_daily, split_daily
     minute_sessions = sessions[-20:]
     minute_start = session_times(minute_sessions[0])[0]
     minutes, minute_meta = probe("sip_minutes_20sessions", "bars", SYMBOLS,
@@ -259,9 +311,9 @@ def run_market(client: SafeHttp, now: datetime) -> dict:
     for kind in ("trades", "quotes"):
         probe("sip_" + kind + "_one_minute", kind, SYMBOLS, tick_start, tick_end, [],
               limit=1000, max_pages=20)
-    # 提供開始直後の履歴にも届くか。成功はこの標本の範囲だけを意味する。
+    # 現在の試験銘柄だけで古い履歴を確認。旧社名・旧コードは自動接続しない。
     old_start = datetime(2016, 1, 5, tzinfo=NY)
-    probe("sip_daily_2016_sample", "bars", ("AAPL",), old_start,
+    probe("sip_daily_2016_sample", "bars", ("MU",), old_start,
           old_start+timedelta(days=3), [], timeframe="1Day", limit=100, max_pages=2)
     bytes_per_session_symbol = None
     if minute_meta["complete"] and minute_meta["records"]:

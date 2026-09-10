@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 
 from flow_probe.__main__ import assert_no_secrets
 from flow_probe.alpaca import (NY, completed_sessions, fetch_pages, missing_minute_samples, quality,
-                               session_times, timestamp_ns)
+                               session_times, split_adjustment_audit, timestamp_ns)
 from flow_probe.http_client import ProbeError, SafeHttp, error_category
 from flow_probe.sec import (match_common_share_candidates, parse_information_table,
                             select_original_filings)
@@ -71,6 +71,27 @@ class MarketTests(unittest.TestCase):
         a = timestamp_ns("2025-01-06T14:30:00.123456001Z")
         b = timestamp_ns("2025-01-06T14:30:00.123456999Z")
         self.assertEqual(b-a, 998)
+
+    def test_reverse_split_adjusts_price_and_volume_in_opposite_directions(self):
+        raw = {"t": "2025-01-06T05:00:00Z", "o": 1, "h": 2, "l": 1, "c": 2, "v": 1000}
+        adjusted = {**raw, "o": 20, "h": 40, "l": 20, "c": 40, "v": 50}
+        q = split_adjustment_audit({"UAVS": [raw]}, {"UAVS": [adjusted]}, complete=True)["UAVS"]
+        self.assertEqual(q["status"], "comparable_sample")
+        self.assertEqual(q["provider_adjustment_segments"][0]["price_multiplier"], 20)
+        bad = {**adjusted, "v": 20000}
+        q = split_adjustment_audit({"UAVS": [raw]}, {"UAVS": [bad]}, complete=True)["UAVS"]
+        self.assertEqual(q["status"], "needs_review")
+
+    def test_split_probe_cannot_claim_completeness_with_an_unpaired_day(self):
+        raw = {"t": "2025-01-06T05:00:00Z", "o": 1, "h": 2, "l": 1, "c": 2, "v": 1000}
+        q = split_adjustment_audit({"QMCO": [raw]}, {"QMCO": []}, complete=True)["QMCO"]
+        self.assertEqual(q["status"], "needs_review")
+        self.assertEqual(q["unpaired_days"], 1)
+        client = FakeClient([{"bars": {}, "next_page_token": None}])
+        _, meta = fetch_pages(client, "bars", ("QMCO",), self.start, self.end,
+                              feed="sip", timeframe="1Day", adjustment="split")
+        self.assertEqual(client.requests[0][1]["adjustment"], "split")
+        self.assertEqual(meta["adjustment"], "split")
 
     def test_market_session_needs_delay_margin(self):
         rows = [{"date": "2025-07-02", "open": "09:30", "close": "16:00"},
