@@ -11,6 +11,8 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from .http_client import ProbeError, SafeHttp
+from .reference import SPLIT_EVENTS, documented_price_factor
+from .research import save_prepared
 
 NY = ZoneInfo("America/New_York")
 UTC = timezone.utc
@@ -102,23 +104,32 @@ def numeric(value) -> bool:
     return isinstance(value, (float, int)) and not isinstance(value, bool) and math.isfinite(value)
 
 
-def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool) -> dict:
+def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool,
+                           through: str | None = None) -> dict:
     """同じ日の補正前後を比較。価格や出来高の原数値は公開しない。"""
     result = {}
     for symbol, rows in raw.items():
         original = {r["t"]: r for r in rows}
         revised = {r["t"]: r for r in adjusted.get(symbol, [])}
         shared = sorted(original.keys() & revised.keys())
-        invalid = mismatches = 0
+        invalid = mismatches = rounding_pairs = 0
         segments = []
         for stamp in shared:
             a, b = original[stamp], revised[stamp]
             if not all(numeric(r.get(k)) and r[k] > 0 for r in (a, b) for k in ("o", "h", "l", "c")):
                 invalid += 1
                 continue
-            factor = b["c"] / a["c"]
-            if not all(math.isclose(b[k], a[k]*factor, rel_tol=1e-5, abs_tol=1e-5)
-                       for k in ("o", "h", "l")):
+            day = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(NY).date().isoformat()
+            # 本番の比較は正式資料の倍率を使う。小数価格の丸めから併合を推定しない。
+            factor = documented_price_factor(symbol, day, through) if through else b["c"] / a["c"]
+            strict_price_match = all(math.isclose(b[k], a[k]*factor, rel_tol=1e-6, abs_tol=1e-6)
+                                     for k in ("o", "h", "l", "c"))
+            # 原数値・補正値に各0.0001ドル以内の丸めがある、という診断上の許容幅。
+            # 公式の精度保証とみなさず、許容幅内の件数を別記する。
+            price_match = all(math.isclose(b[k], a[k]*factor, rel_tol=1e-8,
+                                           abs_tol=0.0001*(factor+1)) for k in ("o", "h", "l", "c"))
+            rounding_pairs += price_match and not strict_price_match
+            if not price_match:
                 mismatches += 1
             if not all(numeric(r.get("v")) and r["v"] >= 0 for r in (a, b)):
                 invalid += 1
@@ -126,7 +137,6 @@ def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool) -> dict
             # 出来高が整数に丸められる場合の1株以内の差は許容する。
             if not math.isclose(b["v"], a["v"]/factor, rel_tol=1e-6, abs_tol=1.0):
                 mismatches += 1
-            day = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(NY).date().isoformat()
             if not segments or not math.isclose(segments[-1]["price_multiplier"], factor, rel_tol=1e-5):
                 segments.append({"first_day": day, "last_day": day,
                                  "price_multiplier": round(factor, 8), "records": 1})
@@ -139,8 +149,12 @@ def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool) -> dict
                 and len(adjusted.get(symbol, [])) == len(revised) else "needs_review",
             "paired_days": len(shared), "unpaired_days": len(original.keys() ^ revised.keys()),
             "invalid_pairs": invalid, "price_volume_adjustment_mismatches": mismatches,
+            "pairs_with_price_differences_inside_rounding_tolerance": rounding_pairs,
+            "factor_source": "documented_events" if through else "ratio_diagnostic_only",
+            "documented_events": SPLIT_EVENTS.get(symbol, []) if through else [],
+            "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
             "provider_adjustment_segments": segments,
-            "interpretation": "observed_provider_factors; corporate_action_dates_and_identifiers_not_verified; retrieval_time_adjustment_not_point_in_time",
+            "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal",
         }
     return result
 
@@ -231,7 +245,7 @@ def quality(rows: dict, kind: str, sessions: list, *, timeframe: str | None,
     return result
 
 
-def run_market(client: SafeHttp, now: datetime) -> dict:
+def run_market(client: SafeHttp, now: datetime, *, research_path: str | None = None) -> dict:
     report = {"purpose": "data_feasibility_only_not_a_stock_screen", "probes": []}
     history_start = (now.astimezone(NY).date() - timedelta(days=1096)).isoformat()
     calendar = client.json("https://paper-api.alpaca.markets/v2/calendar",
@@ -272,7 +286,11 @@ def run_market(client: SafeHttp, now: datetime) -> dict:
                                     first_open, closed, sessions, timeframe="1Day",
                                     limit=500, adjustment="split")
     report["split_adjustment_audit"] = split_adjustment_audit(
-        raw_daily, split_daily, complete=daily["complete"] and split_meta["complete"])
+        raw_daily, split_daily, complete=daily["complete"] and split_meta["complete"],
+        through=now.date().isoformat())
+    if research_path:
+        report["research_preparation"] = save_prepared(
+            raw_daily, sessions, report["split_adjustment_audit"], research_path)
     del raw_daily, split_daily
     minute_sessions = sessions[-20:]
     minute_start = session_times(minute_sessions[0])[0]

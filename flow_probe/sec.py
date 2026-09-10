@@ -5,13 +5,16 @@ from __future__ import annotations
 import hashlib
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
 from .alpaca import SYMBOLS
 from .http_client import ProbeError, SafeHttp
+from .reference import SECURITY_SAMPLES, documented_price_factor
 
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
-# Berkshire Hathaway。保有率が低い銘柄の抽出ではなく、資料構造の試験用。
-MANAGER_CIK = "0001067983"
+# Geode。少数銘柄だけの運用者ではなく、指定5銘柄の照合を試す標本。
+# この一社から全機関の保有率は計算しない。
+MANAGER_CIK = "0001214717"
 
 
 def local_name(tag: str) -> str:
@@ -43,7 +46,9 @@ def parse_information_table(body: bytes) -> list:
                         "cusip": field(node, "cusip").upper(),
                         "shares": int(amount),
                         "unit": field(node, "sshPrnamtType").upper(),
-                        "put_call": field(node, "putCall").upper()})
+                        "put_call": field(node, "putCall").upper(),
+                        "investment_discretion": field(node, "investmentDiscretion"),
+                        "other_managers": field(node, "otherManager")})
     return entries
 
 
@@ -86,6 +91,8 @@ def select_original_filings(recent: dict, as_of_date: str) -> list:
 
 
 def normalize_name(value: str) -> str:
+    # SEC会社名末尾の登記地注記だけを除く。似た会社名への曖昧な照合はしない。
+    value = re.sub(r"\s*/[A-Z]{2}/\s*$", "", value.upper())
     return re.sub(r"[^A-Z0-9]", "", value.upper())
 
 
@@ -96,12 +103,13 @@ def match_common_share_candidates(entries: list, issuers: dict) -> dict:
         matches = [r for r in entries
                    if normalize_name(r["issuer"]) == normalize_name(issuer["title"])
                    and r["unit"] == "SH" and not r["put_call"]
-                   and r["class"].upper().strip() in {"COM", "COMMON STOCK"}]
+                   and r["class"].upper().strip() in {"COM", "COMMON STOCK", "COM SHS", "COM NEW"}]
         cusips = {r["cusip"] for r in matches}
         if len(cusips) == 1 and all(re.fullmatch(r"[A-Z0-9]{9}", c) for c in cusips):
             result[symbol] = {"status": "candidate_name_and_common_class_only",
                               "cusip": next(iter(cusips)), "matched_rows": len(matches),
                               "reported_share_sum": sum(r["shares"] for r in matches),
+                              "reported_rows": matches,
                               "verified_universal_identifier_mapping": False}
         elif len(cusips) > 1:
             result[symbol] = {"status": "ambiguous_multiple_securities"}
@@ -111,8 +119,11 @@ def match_common_share_candidates(entries: list, issuers: dict) -> dict:
     return result
 
 
-def fetch_filing(client: SafeHttp, metadata: dict, issuers: dict) -> dict:
-    base = ("https://www.sec.gov/Archives/edgar/data/" + str(int(MANAGER_CIK)) + "/"
+def fetch_filing(client: SafeHttp, metadata: dict, issuers: dict,
+                 manager_cik: str = MANAGER_CIK) -> dict:
+    if not re.fullmatch(r"\d{1,10}", manager_cik):
+        raise ProbeError("invalid_manager_cik")
+    base = ("https://www.sec.gov/Archives/edgar/data/" + str(int(manager_cik)) + "/"
             + metadata["accession"].replace("-", "") + "/")
     index = client.json(base + "index.json")
     if not isinstance(index, dict):
@@ -125,19 +136,75 @@ def fetch_filing(client: SafeHttp, metadata: dict, issuers: dict) -> dict:
         primary = ET.fromstring(primary_body)
     except ET.ParseError:
         raise ProbeError("invalid_primary_filing_xml") from None
+    stated_period = field(primary, "reportCalendarOrQuarter") or field(primary, "periodOfReport")
+    try:
+        primary_period = datetime.strptime(stated_period, "%m-%d-%Y").date().isoformat()
+    except ValueError:
+        raise ProbeError("unrecognized_primary_report_period") from None
+    if primary_period != metadata["period_of_report"]:
+        raise ProbeError("filing_period_mismatch")
     for name in xml_names[:4]:
         body = client.read(base + name)
         entries = parse_information_table(body)
         if not entries:
             continue
-        return {**metadata, "status": "ok", "information_table_url": base+name,
+        stated_count = field(primary, "tableEntryTotal")
+        if not stated_count.isdigit() or int(stated_count) != len(entries):
+            raise ProbeError("filing_table_entry_count_mismatch")
+        matches = match_common_share_candidates(entries, issuers)
+        for symbol, match in matches.items():
+            reference = SECURITY_SAMPLES.get(symbol)
+            if reference and reference["valid_from"] <= primary_period <= reference["verified_through"]:
+                match["identifier_check"] = {
+                    "status": "matched_issuer_source_for_sample_period" if match.get("cusip") == reference["cusip"] else "not_matched",
+                    "source": reference["source"], "period": primary_period,
+                }
+        return {**metadata, "status": "ok", "manager_cik": manager_cik.zfill(10),
+                "information_table_url": base+name,
                 "primary_document_url": base+metadata["primary_document"],
                 "information_table_sha256": hashlib.sha256(body).hexdigest(),
                 "information_table_bytes": len(body), "table_rows": len(entries),
-                "is_amendment": field(primary, "isAmendment"),
+                "primary_period_matches": True, "declared_entry_count_matches": True,
+                "is_amendment": field(primary, "isAmendment") or "not_present_original_form_selected",
                 "confidential_omitted": field(primary, "isConfidentialOmitted"),
-                "candidate_matches": match_common_share_candidates(entries, issuers)}
+                "candidate_matches": matches}
     raise ProbeError("information_table_not_found_in_bounded_search")
+
+
+def compare_sample_filings(filings: list, symbols: tuple = SYMBOLS) -> dict:
+    """同じ報告者・同じ証券の二期を対応させる。全機関の流入の正解にはしない。"""
+    ordered = sorted(filings, key=lambda r: r.get("period_of_report", ""))
+    result = {"scope": "one_manager_as_reported_rows_only_not_net_market_buying",
+              "institutional_ownership_percent": None, "by_symbol": {}}
+    for symbol in symbols:
+        item = {"status": "unknown", "eligible_as_institutional_inflow_label": False}
+        result["by_symbol"][symbol] = item
+        if len(ordered) != 2 or any(r.get("status") != "ok" or r.get("form") != "13F-HR"
+                                  or r.get("is_amendment", "").lower() == "true"
+                                  or r.get("confidential_omitted") != "false"
+                                  or not r.get("primary_period_matches")
+                                  or not r.get("declared_entry_count_matches") for r in ordered):
+            item["reason"] = "incomplete_or_unvalidated_filings"
+            continue
+        a, b = ordered
+        left, right = (r.get("candidate_matches", {}).get(symbol, {}) for r in ordered)
+        if a.get("manager_cik") != b.get("manager_cik") or not a.get("manager_cik"):
+            item["reason"] = "manager_mismatch"
+        elif not left.get("cusip") or left.get("cusip") != right.get("cusip"):
+            item["reason"] = "identifier_missing_or_changed"
+        elif "reported_share_sum" not in left or "reported_share_sum" not in right:
+            item["reason"] = "unmatched_holding_is_not_zero"
+        else:
+            factor = documented_price_factor(symbol, a["period_of_report"], b["period_of_report"])
+            item.update(status="paired_reported_rows_for_review", cusip=left["cusip"],
+                        earlier_period=a["period_of_report"], later_period=b["period_of_report"],
+                        earlier_reported_shares=left["reported_share_sum"],
+                        later_reported_shares=right["reported_share_sum"],
+                        earlier_shares_in_later_units=left["reported_share_sum"]/factor,
+                        reported_share_change=right["reported_share_sum"]-left["reported_share_sum"]/factor,
+                        later_public_at=b.get("accepted_at"),
+                        manager_relationship_deduplication="not_complete")
+    return result
 
 
 def run_sec(client: SafeHttp, as_of_date: str) -> dict:
@@ -198,4 +265,5 @@ def run_sec(client: SafeHttp, as_of_date: str) -> dict:
             report["denominator_probe"][symbol] = {"status": "error", "error": exc.summary()}
     report["status"] = "sample_access_ok" if len(report["filings"]) == 2 and all(
         r["status"] == "ok" for r in report["filings"]) else "partial"
+    report["two_period_comparison"] = compare_sample_filings(report["filings"])
     return report

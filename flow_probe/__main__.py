@@ -43,6 +43,17 @@ def markdown(report: dict) -> str:
             for symbol, q in p["quality"].items():
                 missing = q.get("missing_regular_minutes")
                 lines.append(f"| {symbol} | {q.get('observed_regular_minutes', 0)} / {q.get('expected_regular_minutes', 0)} | {missing if missing is not None else '未判定'} | {q['invalid_records']} |")
+    preparation = market.get("research_preparation", {})
+    if preparation:
+        lines += ["", "## 第2段階：検証用データの準備", "",
+                  "| 銘柄 | 過去60日をそろえて準備できた日数 | 保留理由と件数 |",
+                  "| --- | ---: | --- |"]
+        for symbol, counts in preparation["by_symbol"].items():
+            reasons = ", ".join(f"{k}: {v}" for k, v in counts.items() if k != "prepared")
+            lines.append(f"| {symbol} | {counts.get('prepared', 0)} | {reasons} |")
+        lines += ["", "日足の出来高を使い、過去分の株数を判定日の単位へ補正しています。",
+                  "機関保有の採点用データは未完成です。モデルの成績はまだ計算していません。",
+                  "原数値は実行環境内のファイルだけに保存し、公開していません。GitHubでの実行終了後には残りません。"]
     lines += ["", "1分足が存在しない理由には、売買がなかった場合や集計対象条件もあります。取得障害と即断せず、ゼロで埋めません。", "",
               "保有情報の試験：" + report["sec"].get("status", "unknown"),
               "会社名・銘柄コード・証券番号の一般的な対応表と、全機関の重複整理は次の段階で整備が必要です。", "",
@@ -77,7 +88,7 @@ def main() -> int:
     else:
         print("市場データの読み取り試験を開始します。")
         try:
-            report["market"] = run_market(market_client, now)
+            report["market"] = run_market(market_client, now, research_path="data/stage2-daily.json")
         except ProbeError as exc:
             report["market"] = {"status": "blocked", "error": exc.summary()}
         except Exception as exc:
