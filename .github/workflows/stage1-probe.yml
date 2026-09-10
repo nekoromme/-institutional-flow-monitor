@@ -1,0 +1,40 @@
+name: 第1段階・データ接続試験
+
+# 定期監視はまだ始めない。初回の追加・修正と、手動実行でだけ試す。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'flow_probe/**'
+      - 'tests/**'
+      - '.github/workflows/stage1-probe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage1-data-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: コードを取得
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Pythonを準備
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 秘密を使わない動作確認
+        run: python -m unittest discover -s tests -v
+      - name: 実際のデータで接続と品質を確認
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PYTHONUNBUFFERED: '1'
+        run: python -m flow_probe

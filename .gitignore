@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# この企画の取得データ・実行結果は、公開コードに混ぜない。
+.env.*
+!.env.example
+data/
+diagnostics/
+*.sqlite
+*.sqlite3
+*.parquet
