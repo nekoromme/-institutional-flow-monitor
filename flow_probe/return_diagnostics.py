@@ -24,14 +24,14 @@ START, END = '2025-12-15', '2026-04-30'
 PLAN = 'docs/RETURN_DIAGNOSTIC_PROTOCOL.md'
 
 
-def validate_price_calendar(sessions):
+def validate_price_calendar(sessions, *, start=START, end=END):
     """通知後の追跡用。旧試行の3月末限定の暦検査とは別に範囲を固定する。"""
     if not isinstance(sessions,list) or not sessions:raise ProbeError('invalid_return_calendar')
     days=[]
     for row in sessions:
         if not isinstance(row,dict):raise ProbeError('invalid_return_session')
         day=row.get('date','');date.fromisoformat(day)
-        if not START<=day<=END or row.get('open')!='09:30' or row.get('close') not in {'13:00','16:00'}:
+        if not start<=day<=end or row.get('open')!='09:30' or row.get('close') not in {'13:00','16:00'}:
             raise ProbeError('unreviewed_return_session')
         days.append(day)
     if days!=sorted(set(days)):raise ProbeError('invalid_return_calendar_order')
@@ -42,7 +42,7 @@ def object_hash(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,allow_nan=False).encode()).hexdigest()
 
 
-def prepare_books(data, sessions, source, through):
+def prepare_books(data, sessions, source, through, *, overlap_start=START, overlap_end='2026-03-31'):
     """照合済みの日だけを価格評価に使う。以前の通知入力との差は隠さない。"""
     days={s['date'] for s in sessions};books={};quality=[]
     audits=split_adjustment_audit(data['raw'],data['split'],complete=True,through=through)
@@ -51,7 +51,7 @@ def prepare_books(data, sessions, source, through):
         audit=audits[symbol];unresolved=set(audit['unresolved_days']);changed=[]
         previous=source.get(symbol,{}).get('raw',{}).get(symbol,[])
         for day,old in by_date(previous).items():
-            if START <= day <= '2026-03-31':
+            if overlap_start <= day <= overlap_end:
                 now=a.get(day)
                 if not now or any(now.get(k)!=old.get(k) for k in ('o','h','l','c','v')):changed.append(day)
         # 将来価格の再取得で通知入力まで変わった場合、今回は自動更新しない。

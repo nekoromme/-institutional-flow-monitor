@@ -37,14 +37,14 @@ def valid_bar(row):
     return row['l'] <= min(row['o'], row['c']) <= max(row['o'], row['c']) <= row['h']
 
 
-def schedule(scored, days, field, horizon):
+def schedule(scored, days, field, horizon, *, start='2026-01-01', end='2026-03-31'):
     """通知だけで予定を決める。将来の価格を見て再購入日を変えない。"""
     if days != sorted(set(days)): raise ValueError('invalid_return_calendar')
     index = {d:i for i,d in enumerate(days)}
     output, skipped = [], Counter()
     grouped = defaultdict(list)
     for row in scored:
-        if '2026-01-01' <= row['date'] <= '2026-03-31': grouped[row['symbol']].append(row)
+        if start <= row['date'] <= end: grouped[row['symbol']].append(row)
     for symbol, rows in sorted(grouped.items()):
         busy_through = -1
         for row in sorted(rows, key=lambda x:x['date']):
@@ -152,7 +152,7 @@ def summarize(rows):
     return result
 
 
-def failure_slices(rows):
+def failure_slices(rows, *, months=('2026-01','2026-02','2026-03')):
     """0・値幅の半分という固定境界で見る。良い境界の検索はしない。"""
     output={}
     for field,cut in [('pre_signal_five_day_return',0),('entry_gap',0),('signal_close_position',0.5)]:
@@ -160,7 +160,7 @@ def failure_slices(rows):
         output[field]={'above':summarize([r for r in known if r[field]>cut]),
                        'at_or_below':summarize([r for r in known if r[field]<=cut]),
                        'unknown':len(rows)-len(known),'cut':cut}
-    output['months']={m:summarize([r for r in rows if r['signal_date'].startswith(m)]) for m in ['2026-01','2026-02','2026-03']}
+    output['months']={m:summarize([r for r in rows if r['signal_date'].startswith(m)]) for m in months}
     return output
 
 
