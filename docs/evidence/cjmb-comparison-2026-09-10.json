@@ -1,0 +1,1757 @@
+{
+  "version": "cjmb-comparison-0.1",
+  "target": {
+    "ticker": "CJMB",
+    "cusip": "131100109",
+    "cik": "0002032545"
+  },
+  "selection_as_of": "2026-01-01",
+  "outcome_as_of": "2026-06-01",
+  "periods": [
+    "2025-12-31",
+    "2026-03-31"
+  ],
+  "catalog_sha256": "01b7be5f342097fca0c454306873f4f0ead9fc359905f8464ba2636b78d2affb",
+  "admission_sha256": "bb28ec4d7dc6485261b77507ef317a901913312d28af65b00db66cf0e76c4c07",
+  "archive_sources": [
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2025-28feb2026_form13f.zip",
+      "sha256": "ff340fc5dc0bc60539b03c3a97fffa3fe4ab0d728d6507a4aadabb4a888fbe01",
+      "bytes": 90264650,
+      "information_rows": 3473209,
+      "cache_sha256": "9b3b4048a3edd5f5859fd5494ae90e0915e4b3808bad9401e8123a93309ea31c",
+      "target_cusips": [
+        "131100109"
+      ]
+    },
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01mar2026-31may2026_form13f.zip",
+      "sha256": "05f4da8f526cd471a387af45661a8cb3bbfaf345d3ec9c2cefd31349aa257e63",
+      "bytes": 99411274,
+      "information_rows": 3822885,
+      "cache_sha256": "fdfbd466ac3821b6be0c611ecb0b4a2a691fb6464ebb58c81eb46f20fde15138",
+      "target_cusips": [
+        "131100109"
+      ]
+    }
+  ],
+  "source_table_verification": [
+    {
+      "accession": "0001540235-26-000002",
+      "original_rows": 4593,
+      "bulk_rows": 4593,
+      "all_rows_match": true,
+      "source_only_rows": 0,
+      "bulk_only_rows": 0,
+      "duplicate_payload_excess": 1,
+      "unique_cusips": 3875,
+      "summed_reported_value": 139705144107,
+      "invalid_reported_value_rows": 0
+    },
+    {
+      "accession": "0001481986-26-000001",
+      "original_rows": 1204,
+      "bulk_rows": 1204,
+      "all_rows_match": true,
+      "source_only_rows": 0,
+      "bulk_only_rows": 0,
+      "duplicate_payload_excess": 0,
+      "unique_cusips": 1089,
+      "summed_reported_value": 3780835934,
+      "invalid_reported_value_rows": 0
+    }
+  ],
+  "source_review_applications": [
+    {
+      "accession": "0001540235-26-000002",
+      "status": "matched",
+      "allow_table_for_analysis": true
+    },
+    {
+      "accession": "0001481986-26-000001",
+      "status": "matched",
+      "allow_table_for_analysis": false
+    }
+  ],
+  "quarters": {
+    "2025-12-31": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "131100109",
+      "reported_share_sum_before_overlap_resolution": 732311,
+      "positive_reporting_managers": 12,
+      "included_rows": 14,
+      "excluded_row_reasons": {},
+      "unreviewed_class_rows": [],
+      "unresolved_filings": [],
+      "potential_overlap_relationships": [],
+      "unresolved_manager_references": [
+        {
+          "cik": "0001481986",
+          "accession": "0001481986-26-000001",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "DRW Securities, LLC",
+            "sequence": "1"
+          }
+        }
+      ],
+      "repeated_row_payloads": [],
+      "confidential_omission_managers": [],
+      "confidential_status_unknown_managers": [
+        "0001423053",
+        "0001462245"
+      ],
+      "top_reported_positions": [
+        {
+          "cik": "0001105907",
+          "name": "BARD ASSOCIATES INC",
+          "shares": 279646,
+          "accessions": [
+            "0001105907-26-000003"
+          ]
+        },
+        {
+          "cik": "0001540235",
+          "name": "Creative Planning",
+          "shares": 205693,
+          "accessions": [
+            "0001540235-26-000002"
+          ]
+        },
+        {
+          "cik": "0001699575",
+          "name": "Cable Car Capital, LP",
+          "shares": 130862,
+          "accessions": [
+            "0002073679-26-000028"
+          ]
+        },
+        {
+          "cik": "0001423053",
+          "name": "CITADEL ADVISORS LLC",
+          "shares": 44002,
+          "accessions": [
+            "0001104659-26-016408"
+          ]
+        },
+        {
+          "cik": "0002107584",
+          "name": "Financial Plan, Inc.",
+          "shares": 21114,
+          "accessions": [
+            "0002107584-26-000001"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 13107,
+          "accessions": [
+            "0001214717-26-000003"
+          ]
+        },
+        {
+          "cik": "0001462245",
+          "name": "HighTower Advisors, LLC",
+          "shares": 12500,
+          "accessions": [
+            "0001085146-26-000163"
+          ]
+        },
+        {
+          "cik": "0001037389",
+          "name": "RENAISSANCE TECHNOLOGIES LLC",
+          "shares": 11400,
+          "accessions": [
+            "0001037389-26-000023"
+          ]
+        },
+        {
+          "cik": "0001481986",
+          "name": "DRW Securities, LLC",
+          "shares": 10296,
+          "accessions": [
+            "0001481986-26-000001"
+          ]
+        },
+        {
+          "cik": "0001533421",
+          "name": "Tower Research Capital LLC (TRC)",
+          "shares": 3667,
+          "accessions": [
+            "0001533421-26-000004"
+          ]
+        }
+      ],
+      "ledger": [
+        {
+          "cik": "0000070858",
+          "name": "BANK OF AMERICA CORP /DE/",
+          "shares": 12,
+          "accessions": [
+            "0000070858-26-000116"
+          ],
+          "rows": [
+            {
+              "accession": "0000070858-26-000116",
+              "row_id": "125429458",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 11,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "01",
+              "reported_value": 12,
+              "votes": [
+                0,
+                11,
+                0
+              ]
+            },
+            {
+              "accession": "0000070858-26-000116",
+              "row_id": "125429459",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 1,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "03",
+              "reported_value": 1,
+              "votes": [
+                0,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0000895421",
+          "name": "MORGAN STANLEY",
+          "shares": 12,
+          "accessions": [
+            "0000895421-26-000187"
+          ],
+          "rows": [
+            {
+              "accession": "0000895421-26-000187",
+              "row_id": "129527464",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 12,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "01",
+              "reported_value": 13,
+              "votes": [
+                12,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001037389",
+          "name": "RENAISSANCE TECHNOLOGIES LLC",
+          "shares": 11400,
+          "accessions": [
+            "0001037389-26-000023"
+          ],
+          "rows": [
+            {
+              "accession": "0001037389-26-000023",
+              "row_id": "124412209",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 11400,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "0",
+              "reported_value": 12654,
+              "votes": [
+                11400,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001105907",
+          "name": "BARD ASSOCIATES INC",
+          "shares": 279646,
+          "accessions": [
+            "0001105907-26-000003"
+          ],
+          "rows": [
+            {
+              "accession": "0001105907-26-000003",
+              "row_id": "124786637",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 279646,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 310408,
+              "votes": [
+                0,
+                0,
+                279646
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 13107,
+          "accessions": [
+            "0001214717-26-000003"
+          ],
+          "rows": [
+            {
+              "accession": "0001214717-26-000003",
+              "row_id": "123769721",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 10517,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "",
+              "reported_value": 11673,
+              "votes": [
+                10517,
+                0,
+                0
+              ]
+            },
+            {
+              "accession": "0001214717-26-000003",
+              "row_id": "123769722",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 2590,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "1",
+              "reported_value": 2874,
+              "votes": [
+                2590,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001423053",
+          "name": "CITADEL ADVISORS LLC",
+          "shares": 44002,
+          "accessions": [
+            "0001104659-26-016408"
+          ],
+          "rows": [
+            {
+              "accession": "0001104659-26-016408",
+              "row_id": "125279759",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 44002,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "1",
+              "reported_value": 48842,
+              "votes": [
+                44002,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001462245",
+          "name": "HighTower Advisors, LLC",
+          "shares": 12500,
+          "accessions": [
+            "0001085146-26-000163"
+          ],
+          "rows": [
+            {
+              "accession": "0001085146-26-000163",
+              "row_id": "123604061",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 12500,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 13875,
+              "votes": [
+                12500,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001481986",
+          "name": "DRW Securities, LLC",
+          "shares": 10296,
+          "accessions": [
+            "0001481986-26-000001"
+          ],
+          "rows": [
+            {
+              "accession": "0001481986-26-000001",
+              "row_id": "124402885",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 10296,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "OTR",
+              "other_managers": "1",
+              "reported_value": 11428,
+              "votes": [
+                10296,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001533421",
+          "name": "Tower Research Capital LLC (TRC)",
+          "shares": 3667,
+          "accessions": [
+            "0001533421-26-000004"
+          ],
+          "rows": [
+            {
+              "accession": "0001533421-26-000004",
+              "row_id": "125217312",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 3667,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "2",
+              "reported_value": 4070,
+              "votes": [
+                3667,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001540235",
+          "name": "Creative Planning",
+          "shares": 205693,
+          "accessions": [
+            "0001540235-26-000002"
+          ],
+          "rows": [
+            {
+              "accession": "0001540235-26-000002",
+              "row_id": "125453499",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 205693,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 228319,
+              "votes": [
+                0,
+                0,
+                205693
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001699575",
+          "name": "Cable Car Capital, LP",
+          "shares": 130862,
+          "accessions": [
+            "0002073679-26-000028"
+          ],
+          "rows": [
+            {
+              "accession": "0002073679-26-000028",
+              "row_id": "125299633",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 130862,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 145257,
+              "votes": [
+                130862,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0002107584",
+          "name": "Financial Plan, Inc.",
+          "shares": 21114,
+          "accessions": [
+            "0002107584-26-000001"
+          ],
+          "rows": [
+            {
+              "accession": "0002107584-26-000001",
+              "row_id": "122911957",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 21114,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 23437,
+              "votes": [
+                0,
+                0,
+                21114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_reviewed_filings": [
+        {
+          "cik": "0001540235",
+          "name": "Creative Planning",
+          "accession": "0001540235-26-000002",
+          "decision": "full_original_table_matches_bulk_header_count_warning_retained",
+          "original_declared_entries": 4596,
+          "actual_entries": 4593,
+          "primary": {
+            "source": {
+              "filename": "edgar/data/1540235/0001540235-26-000002.txt",
+              "form": "13F-HR",
+              "filed": "2026-02-17",
+              "cik": "0001540235"
+            },
+            "path": "data/sec-cjmb/0001540235-26-000002.txt",
+            "accepted": "20260217130331",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1540235/0001540235-26-000002.txt",
+            "sha256": "3cc633b70633540ac2a4b0b49b5b3c842192853c8146ed2a5a99ccb22a49f368",
+            "bytes": 2475291
+          },
+          "information_table": {
+            "source": {
+              "filename": "edgar/data/1540235/0001540235-26-000002.txt",
+              "form": "13F-HR",
+              "filed": "2026-02-17",
+              "cik": "0001540235"
+            },
+            "path": "data/sec-cjmb/0001540235-26-000002.txt",
+            "accepted": "20260217130331",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1540235/0001540235-26-000002.txt",
+            "sha256": "3cc633b70633540ac2a4b0b49b5b3c842192853c8146ed2a5a99ccb22a49f368",
+            "bytes": 2475291
+          },
+          "whole_ownership_verified": false,
+          "original_table_valid": false,
+          "reviewed_table_usable": true
+        },
+        {
+          "cik": "0001481986",
+          "name": "DRW Securities, LLC",
+          "accession": "0001481986-26-000001",
+          "decision": "reference_fields_reviewed_no_identity_override",
+          "original_declared_entries": 1204,
+          "actual_entries": 1204,
+          "primary": {
+            "source": {
+              "filename": "edgar/data/1481986/0001481986-26-000001.txt",
+              "form": "13F-HR",
+              "filed": "2026-02-12",
+              "cik": "0001481986"
+            },
+            "path": "data/sec-cjmb/0001481986-26-000001.txt",
+            "accepted": "20260212172649",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1481986/0001481986-26-000001.txt",
+            "sha256": "d9af222cb9a6d1d89e0e90642fdb5b58c45c6652573d1d85b0fca5b5c06d0d37",
+            "bytes": 828686
+          },
+          "information_table": {
+            "source": {
+              "filename": "edgar/data/1481986/0001481986-26-000001.txt",
+              "form": "13F-HR",
+              "filed": "2026-02-12",
+              "cik": "0001481986"
+            },
+            "path": "data/sec-cjmb/0001481986-26-000001.txt",
+            "accepted": "20260212172649",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1481986/0001481986-26-000001.txt",
+            "sha256": "d9af222cb9a6d1d89e0e90642fdb5b58c45c6652573d1d85b0fca5b5c06d0d37",
+            "bytes": 828686
+          },
+          "whole_ownership_verified": false,
+          "original_table_valid": true,
+          "reviewed_table_usable": false
+        }
+      ],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 1,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 2
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_positions": [],
+      "denominator": {
+        "shares": 4858663,
+        "period": "2025-12-31",
+        "security_class_verified": true,
+        "source": {
+          "source": {
+            "filename": "edgar/data/2032545/0001493152-26-014292.txt",
+            "form": "10-K",
+            "filed": "2026-03-31",
+            "cik": "0002032545"
+          },
+          "path": "data/sec-cjmb/0001493152-26-014292.txt",
+          "accepted": "20260331170110",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-014292.txt",
+          "sha256": "fb70992ef369a3385b284075ba46c79d4d7ed51fad391775106cff76f2bf7dc7",
+          "bytes": 20557402
+        },
+        "available_at_selection_date": false,
+        "used_for_outcome_comparison_only": true
+      },
+      "official_security": {
+        "entry": {
+          "cusip": "131100109",
+          "issuer": "CALLAN JMB INC",
+          "class": "COM",
+          "status": ""
+        },
+        "source": {
+          "source_url": "https://www.sec.gov/files/investment/13flist2025q4.txt",
+          "sha256": "6a70489393bc1d1977d00fabedb58550e904fe9c0a4a98cf35361920b91847c9",
+          "bytes": 994842
+        }
+      },
+      "included_filing_dates": [
+        "2026-01-28",
+        "2026-02-06",
+        "2026-02-09",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-17",
+        "2026-05-27"
+      ],
+      "manager_operations": {
+        "0002107584": [
+          {
+            "accession": "0002107584-26-000001",
+            "filed": "2026-01-28",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001533421": [
+          {
+            "accession": "0001533421-26-000004",
+            "filed": "2026-02-17",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001699575": [
+          {
+            "accession": "0002073679-26-000028",
+            "filed": "2026-02-17",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001540235": [
+          {
+            "accession": "0001540235-26-000002",
+            "filed": "2026-02-17",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0000070858": [
+          {
+            "accession": "0000070858-26-000116",
+            "filed": "2026-02-17",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001423053": [
+          {
+            "accession": "0001104659-26-016408",
+            "filed": "2026-02-17",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001105907": [
+          {
+            "accession": "0001105907-26-000003",
+            "filed": "2026-02-13",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0000895421": [
+          {
+            "accession": "0000895421-26-000080",
+            "filed": "2026-02-13",
+            "operation": "original",
+            "amendment_number": null
+          },
+          {
+            "accession": "0000895421-26-000187",
+            "filed": "2026-05-27",
+            "operation": "replace",
+            "amendment_number": 1
+          }
+        ],
+        "0001481986": [
+          {
+            "accession": "0001481986-26-000001",
+            "filed": "2026-02-12",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001037389": [
+          {
+            "accession": "0001037389-26-000023",
+            "filed": "2026-02-12",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001214717": [
+          {
+            "accession": "0001214717-26-000003",
+            "filed": "2026-02-09",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001462245": [
+          {
+            "accession": "0001085146-26-000163",
+            "filed": "2026-02-06",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ]
+      }
+    },
+    "2026-03-31": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "131100109",
+      "reported_share_sum_before_overlap_resolution": 600892,
+      "positive_reporting_managers": 12,
+      "included_rows": 14,
+      "excluded_row_reasons": {},
+      "unreviewed_class_rows": [],
+      "unresolved_filings": [],
+      "potential_overlap_relationships": [],
+      "unresolved_manager_references": [],
+      "repeated_row_payloads": [],
+      "confidential_omission_managers": [],
+      "confidential_status_unknown_managers": [
+        "0001766159",
+        "0001462245"
+      ],
+      "top_reported_positions": [
+        {
+          "cik": "0001540235",
+          "name": "Creative Planning",
+          "shares": 255693,
+          "accessions": [
+            "0001540235-26-000003"
+          ]
+        },
+        {
+          "cik": "0001105907",
+          "name": "BARD ASSOCIATES INC",
+          "shares": 245482,
+          "accessions": [
+            "0001105907-26-000009"
+          ]
+        },
+        {
+          "cik": "0001595888",
+          "name": "JANE STREET GROUP, LLC",
+          "shares": 28263,
+          "accessions": [
+            "0001595888-26-000043"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 22969,
+          "accessions": [
+            "0001214717-26-000006"
+          ]
+        },
+        {
+          "cik": "0001475597",
+          "name": "HRT FINANCIAL LP",
+          "shares": 18715,
+          "accessions": [
+            "0001475597-26-000032"
+          ]
+        },
+        {
+          "cik": "0001462245",
+          "name": "HighTower Advisors, LLC",
+          "shares": 12500,
+          "accessions": [
+            "0001085146-26-000383"
+          ]
+        },
+        {
+          "cik": "0002100119",
+          "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+          "shares": 6664,
+          "accessions": [
+            "0002100119-26-001311"
+          ]
+        },
+        {
+          "cik": "0001766159",
+          "name": "Qsemble Capital Management, LP",
+          "shares": 4828,
+          "accessions": [
+            "0001766159-26-000004"
+          ]
+        },
+        {
+          "cik": "0000933478",
+          "name": "VANGUARD FIDUCIARY TRUST CO",
+          "shares": 2072,
+          "accessions": [
+            "0000933478-26-000004"
+          ]
+        },
+        {
+          "cik": "0001533421",
+          "name": "Tower Research Capital LLC (TRC)",
+          "shares": 2070,
+          "accessions": [
+            "0001533421-26-000006"
+          ]
+        }
+      ],
+      "ledger": [
+        {
+          "cik": "0000933478",
+          "name": "VANGUARD FIDUCIARY TRUST CO",
+          "shares": 2072,
+          "accessions": [
+            "0000933478-26-000004"
+          ],
+          "rows": [
+            {
+              "accession": "0000933478-26-000004",
+              "row_id": "127627179",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 2072,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "",
+              "reported_value": 2590,
+              "votes": [
+                2072,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001105907",
+          "name": "BARD ASSOCIATES INC",
+          "shares": 245482,
+          "accessions": [
+            "0001105907-26-000009"
+          ],
+          "rows": [
+            {
+              "accession": "0001105907-26-000009",
+              "row_id": "127404729",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 245482,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 306853,
+              "votes": [
+                0,
+                0,
+                245482
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 22969,
+          "accessions": [
+            "0001214717-26-000006"
+          ],
+          "rows": [
+            {
+              "accession": "0001214717-26-000006",
+              "row_id": "128997247",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 20314,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "",
+              "reported_value": 25392,
+              "votes": [
+                20314,
+                0,
+                0
+              ]
+            },
+            {
+              "accession": "0001214717-26-000006",
+              "row_id": "128997248",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 2655,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "1",
+              "reported_value": 3318,
+              "votes": [
+                2655,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001462245",
+          "name": "HighTower Advisors, LLC",
+          "shares": 12500,
+          "accessions": [
+            "0001085146-26-000383"
+          ],
+          "rows": [
+            {
+              "accession": "0001085146-26-000383",
+              "row_id": "127162413",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 12500,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 15625,
+              "votes": [
+                12500,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001475597",
+          "name": "HRT FINANCIAL LP",
+          "shares": 18715,
+          "accessions": [
+            "0001475597-26-000032"
+          ],
+          "rows": [
+            {
+              "accession": "0001475597-26-000032",
+              "row_id": "128522348",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 18715,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "",
+              "reported_value": 23,
+              "votes": [
+                18715,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001533421",
+          "name": "Tower Research Capital LLC (TRC)",
+          "shares": 2070,
+          "accessions": [
+            "0001533421-26-000006"
+          ],
+          "rows": [
+            {
+              "accession": "0001533421-26-000006",
+              "row_id": "128890861",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 2070,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "2",
+              "reported_value": 2588,
+              "votes": [
+                2070,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001540235",
+          "name": "Creative Planning",
+          "shares": 255693,
+          "accessions": [
+            "0001540235-26-000003"
+          ],
+          "rows": [
+            {
+              "accession": "0001540235-26-000003",
+              "row_id": "127890955",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 255693,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "0",
+              "reported_value": 319616,
+              "votes": [
+                0,
+                0,
+                255693
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001595888",
+          "name": "JANE STREET GROUP, LLC",
+          "shares": 28263,
+          "accessions": [
+            "0001595888-26-000043"
+          ],
+          "rows": [
+            {
+              "accession": "0001595888-26-000043",
+              "row_id": "127939350",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 26276,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "1",
+              "reported_value": 32845,
+              "votes": [
+                26276,
+                0,
+                0
+              ]
+            },
+            {
+              "accession": "0001595888-26-000043",
+              "row_id": "127939351",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 1987,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "3",
+              "reported_value": 2484,
+              "votes": [
+                1987,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001610520",
+          "name": "UBS Group AG",
+          "shares": 1634,
+          "accessions": [
+            "0001610520-26-000057"
+          ],
+          "rows": [
+            {
+              "accession": "0001610520-26-000057",
+              "row_id": "127266269",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 1634,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "30",
+              "reported_value": 2043,
+              "votes": [
+                1634,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001766159",
+          "name": "Qsemble Capital Management, LP",
+          "shares": 4828,
+          "accessions": [
+            "0001766159-26-000004"
+          ],
+          "rows": [
+            {
+              "accession": "0001766159-26-000004",
+              "row_id": "127419964",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 4828,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "N/A",
+              "reported_value": 1034930,
+              "votes": [
+                4828,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0001963355",
+          "name": "Caitong International Asset Management Co., Ltd",
+          "shares": 2,
+          "accessions": [
+            "0001628280-26-033233"
+          ],
+          "rows": [
+            {
+              "accession": "0001628280-26-033233",
+              "row_id": "127783437",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 2,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "SOLE",
+              "other_managers": "",
+              "reported_value": 2,
+              "votes": [
+                0,
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "cik": "0002100119",
+          "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+          "shares": 6664,
+          "accessions": [
+            "0002100119-26-001311"
+          ],
+          "rows": [
+            {
+              "accession": "0002100119-26-001311",
+              "row_id": "129395985",
+              "cusip": "131100109",
+              "issuer": "CALLAN JMB INC",
+              "class": "COM",
+              "shares": 6664,
+              "unit": "SH",
+              "put_call": "",
+              "discretion": "DFND",
+              "other_managers": "",
+              "reported_value": 8330,
+              "votes": [
+                0,
+                0,
+                6664
+              ]
+            }
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 2
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_positions": [],
+      "denominator": {
+        "shares": 5646118,
+        "period": "2026-03-31",
+        "security_class_verified": true,
+        "source": {
+          "source": {
+            "filename": "edgar/data/2032545/0001493152-26-023708.txt",
+            "form": "10-Q",
+            "filed": "2026-05-15",
+            "cik": "0002032545"
+          },
+          "path": "data/sec-cjmb/0001493152-26-023708.txt",
+          "accepted": "20260515160202",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-023708.txt",
+          "sha256": "b9857f804dddf71c9425d26674777f41d79311b83b17a072e35542b5057ea366",
+          "bytes": 6094353
+        },
+        "available_at_selection_date": false,
+        "used_for_outcome_comparison_only": true
+      },
+      "official_security": {
+        "entry": {
+          "cusip": "131100109",
+          "issuer": "CALLAN JMB INC",
+          "class": "COM",
+          "status": ""
+        },
+        "source": {
+          "source_url": "https://www.sec.gov/files/investment/13flist2026q1.txt",
+          "sha256": "8c6b35079ccadbadda946d59523aadc697e5e8dc64b60ae1aae3c4c3047455fb",
+          "bytes": 1995921
+        }
+      },
+      "included_filing_dates": [
+        "2026-05-05",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "manager_operations": {
+        "0001533421": [
+          {
+            "accession": "0001533421-26-000006",
+            "filed": "2026-05-15",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001214717": [
+          {
+            "accession": "0001214717-26-000006",
+            "filed": "2026-05-15",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0002100119": [
+          {
+            "accession": "0002100119-26-001306",
+            "filed": "2026-05-08",
+            "operation": "original",
+            "amendment_number": null
+          },
+          {
+            "accession": "0002100119-26-001311",
+            "filed": "2026-05-15",
+            "operation": "replace",
+            "amendment_number": 1
+          },
+          {
+            "accession": "0002100119-26-001313",
+            "filed": "2026-05-15",
+            "operation": "append",
+            "amendment_number": 2
+          }
+        ],
+        "0000933478": [
+          {
+            "accession": "0000933478-26-000004",
+            "filed": "2026-05-08",
+            "operation": "original",
+            "amendment_number": null
+          },
+          {
+            "accession": "0000933478-26-000008",
+            "filed": "2026-05-15",
+            "operation": "append",
+            "amendment_number": 1
+          }
+        ],
+        "0001475597": [
+          {
+            "accession": "0001475597-26-000032",
+            "filed": "2026-05-14",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001540235": [
+          {
+            "accession": "0001540235-26-000003",
+            "filed": "2026-05-12",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001595888": [
+          {
+            "accession": "0001595888-26-000043",
+            "filed": "2026-05-12",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001963355": [
+          {
+            "accession": "0001628280-26-033233",
+            "filed": "2026-05-11",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001105907": [
+          {
+            "accession": "0001105907-26-000009",
+            "filed": "2026-05-08",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001766159": [
+          {
+            "accession": "0001766159-26-000004",
+            "filed": "2026-05-07",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001610520": [
+          {
+            "accession": "0001610520-26-000057",
+            "filed": "2026-05-05",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ],
+        "0001462245": [
+          {
+            "accession": "0001085146-26-000383",
+            "filed": "2026-05-05",
+            "operation": "original",
+            "amendment_number": null
+          }
+        ]
+      }
+    }
+  },
+  "before_source_review": {
+    "2025-12-31": {
+      "reported_shares": 526618,
+      "quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 0,
+          "unresolved_references": 1,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 2
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      }
+    },
+    "2026-03-31": {
+      "reported_shares": 600892,
+      "quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 2
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      }
+    }
+  },
+  "before_source_review_change": 74274,
+  "change": {
+    "diagnostic_reported_share_change": -131419,
+    "decomposition": {
+      "both": 24101,
+      "previous_only": -217698,
+      "current_only": 62178
+    },
+    "manager_records": [
+      {
+        "cik": "0000070858",
+        "name": "BANK OF AMERICA CORP /DE/",
+        "previous_reported_shares": 12,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -12,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0000895421",
+        "name": "MORGAN STANLEY",
+        "previous_reported_shares": 12,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -12,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0000933478",
+        "name": "VANGUARD FIDUCIARY TRUST CO",
+        "previous_reported_shares": null,
+        "current_reported_shares": 2072,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 2072,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001037389",
+        "name": "RENAISSANCE TECHNOLOGIES LLC",
+        "previous_reported_shares": 11400,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -11400,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001105907",
+        "name": "BARD ASSOCIATES INC",
+        "previous_reported_shares": 279646,
+        "current_reported_shares": 245482,
+        "presence": "both",
+        "contribution_to_reported_sum_difference": -34164,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001214717",
+        "name": "GEODE CAPITAL MANAGEMENT, LLC",
+        "previous_reported_shares": 13107,
+        "current_reported_shares": 22969,
+        "presence": "both",
+        "contribution_to_reported_sum_difference": 9862,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001423053",
+        "name": "CITADEL ADVISORS LLC",
+        "previous_reported_shares": 44002,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -44002,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001462245",
+        "name": "HighTower Advisors, LLC",
+        "previous_reported_shares": 12500,
+        "current_reported_shares": 12500,
+        "presence": "both",
+        "contribution_to_reported_sum_difference": 0,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001475597",
+        "name": "HRT FINANCIAL LP",
+        "previous_reported_shares": null,
+        "current_reported_shares": 18715,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 18715,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001481986",
+        "name": "DRW Securities, LLC",
+        "previous_reported_shares": 10296,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -10296,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001533421",
+        "name": "Tower Research Capital LLC (TRC)",
+        "previous_reported_shares": 3667,
+        "current_reported_shares": 2070,
+        "presence": "both",
+        "contribution_to_reported_sum_difference": -1597,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001540235",
+        "name": "Creative Planning",
+        "previous_reported_shares": 205693,
+        "current_reported_shares": 255693,
+        "presence": "both",
+        "contribution_to_reported_sum_difference": 50000,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001595888",
+        "name": "JANE STREET GROUP, LLC",
+        "previous_reported_shares": null,
+        "current_reported_shares": 28263,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 28263,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001610520",
+        "name": "UBS Group AG",
+        "previous_reported_shares": null,
+        "current_reported_shares": 1634,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 1634,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001699575",
+        "name": "Cable Car Capital, LP",
+        "previous_reported_shares": 130862,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -130862,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001766159",
+        "name": "Qsemble Capital Management, LP",
+        "previous_reported_shares": null,
+        "current_reported_shares": 4828,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 4828,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0001963355",
+        "name": "Caitong International Asset Management Co., Ltd",
+        "previous_reported_shares": null,
+        "current_reported_shares": 2,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 2,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0002100119",
+        "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+        "previous_reported_shares": null,
+        "current_reported_shares": 6664,
+        "presence": "current_only",
+        "contribution_to_reported_sum_difference": 6664,
+        "actual_trade_change_confirmed": false
+      },
+      {
+        "cik": "0002107584",
+        "name": "Financial Plan, Inc.",
+        "previous_reported_shares": 21114,
+        "current_reported_shares": null,
+        "presence": "previous_only",
+        "contribution_to_reported_sum_difference": -21114,
+        "actual_trade_change_confirmed": false
+      }
+    ],
+    "absence_is_zero_actual_ownership": false,
+    "institutional_flow_label": null,
+    "eligible_for_accuracy_measurement": false
+  },
+  "ratios": {
+    "status": "public_reported_holdings_proxy_only",
+    "previous_ratio_percent": 15.072274,
+    "current_ratio_percent": 10.642569,
+    "ratio_change_percentage_points": -4.429705,
+    "shares_outstanding_change": 787455,
+    "shares_outstanding_change_percent": 16.207236,
+    "actual_institutional_ownership_percent": null
+  },
+  "share_unit_bridge": {
+    "source_sha256": "b9857f804dddf71c9425d26674777f41d79311b83b17a072e35542b5057ea366",
+    "rows": [
+      "January 1, 2026 - $ - 4,858,663 $ 4,860 $ 12,583,193 $ ( 10,260,014 ) $ 2,328,039",
+      "Issuance of ELOC Shares - - 768,705 768 2,091,454 2,092,222",
+      "Restricted stock unit awards vesting 18,750 18 ( 18 ) -",
+      "March 31, 2026 - $ - 5,646,118 $ 5,646 $ 15,068,955 $ ( 13,475,068 ) $ 1,599,533"
+    ],
+    "row_sha256": [
+      "0eecb883f2979c96d59b3a0297e801af4b54211b583d77b8b3537bf1fdc7dd3d",
+      "57610aa11ec2e2cfabe7c23805d4ee693637a7c84577a56a8f6b6b588a0a2613",
+      "7d0dd7031242e706e6302b3a35348104dc9c4b31df08f1b880699162691b5166",
+      "b2fc48976f5ac86e70bd6041b9b61a80de18e0d70d6645e6f5e7033231c84ac7"
+    ],
+    "beginning_shares": 4858663,
+    "equity_line_issued_shares": 768705,
+    "vested_award_shares": 18750,
+    "ending_shares": 5646118,
+    "reviewed_unit_multiplier": 1,
+    "explanation": "Q1 equity roll-forward reconciles opening ordinary shares, new issuance and vested awards to closing shares; pre-IPO reverse split affects an earlier period."
+  },
+  "drw_reference_review": {
+    "accession": "0001481986-26-000001",
+    "sequence": "1",
+    "name": "DRW Securities, LLC",
+    "crd_number": "000045908",
+    "sec_file_number": "8-51241",
+    "cik_or_13f_file_number_in_reference": null,
+    "decision": "name_matches_filer_but_no_identifier_override; unresolved_reference_retained"
+  },
+  "previous_period_vintage_check": {
+    "early_as_of": "2026-03-01",
+    "late_as_of": "2026-06-01",
+    "early_reported_shares": 732311,
+    "late_reported_shares": 732311,
+    "same_active_ledger": false,
+    "changes": [
+      {
+        "cik": "0000895421",
+        "previous_accessions": [
+          "0000895421-26-000080"
+        ],
+        "latest_accessions": [
+          "0000895421-26-000187"
+        ],
+        "previous_reported_shares": 12,
+        "latest_reported_shares": 12,
+        "same_reported_position_payloads": true
+      }
+    ]
+  },
+  "limitations": [
+    "public_13f_not_complete_institutional_ownership",
+    "unresolved_reference_and_confidential_status",
+    "quarterly_holdings_do_not_identify_trade_days",
+    "reporting_entity_changes_are_not_proven_trades",
+    "single_security_not_accuracy_sample",
+    "no_comparison_group_or_low_ownership_threshold",
+    "no_cjmb_volume_signal_scored"
+  ],
+  "outcomes_used_for_selection_or_signal": false,
+  "institutional_flow_label": null,
+  "accuracy": null,
+  "returns": null,
+  "validation": {
+    "code_version": "0.5.2",
+    "code_commit": "b0875b10881d3478e083081f8331fcc1e695576c",
+    "local_tests_passed": 109,
+    "github_tests_passed": 109,
+    "github_run_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34455666357",
+    "github_job_id": 102801339629,
+    "github_run_conclusion": "success",
+    "scored_dataset_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_five_symbol_scores_unchanged": true,
+    "original_source_and_holdings_comparison_executed_locally": true,
+    "cjmb_volume_score_computed": false,
+    "institutional_predictive_accuracy_validated": false
+  }
+}
