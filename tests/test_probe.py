@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 
 from flow_probe.__main__ import assert_no_secrets
-from flow_probe.alpaca import (NY, completed_sessions, fetch_pages, quality,
+from flow_probe.alpaca import (NY, completed_sessions, fetch_pages, missing_minute_samples, quality,
                                session_times, timestamp_ns)
 from flow_probe.http_client import ProbeError, SafeHttp, error_category
 from flow_probe.sec import (match_common_share_candidates, parse_information_table,
@@ -98,6 +98,12 @@ class MarketTests(unittest.TestCase):
         self.assertEqual(q["invalid_records"], 1)
         self.assertEqual(q["identical_rows_or_duplicate_bar_times"], 1)
 
+    def test_missing_minute_audit_stays_inside_real_session(self):
+        session = {"date": "2025-01-06", "open": "09:30", "close": "09:33"}
+        rows = [{"t": "2025-01-06T14:31:00Z"}]
+        samples = missing_minute_samples(rows, [session])
+        self.assertEqual([r.minute for r in samples], [30, 32])
+
 
 class SecurityTests(unittest.TestCase):
     def test_secrets_suppress_output(self):
@@ -165,6 +171,16 @@ class FilingsTests(unittest.TestCase):
         rows = select_original_filings(recent, "2025-09-10")
         self.assertEqual([r["period_of_report"] for r in rows], ["2025-06-30", "2025-03-31"])
         self.assertTrue(all(r["form"] == "13F-HR" for r in rows))
+
+    def test_sec_display_path_resolves_only_known_transform_directory(self):
+        recent = {"form": ["13F-HR"], "filingDate": ["2025-08-14"],
+                  "reportDate": ["2025-06-30"], "accessionNumber": ["0000000001-25-000001"],
+                  "primaryDocument": ["xslForm13F_X02/primary_doc.xml"]}
+        rows = select_original_filings(recent, "2025-09-10")
+        self.assertEqual(rows[0]["primary_document"], "primary_doc.xml")
+        recent["primaryDocument"] = ["../primary_doc.xml"]
+        with self.assertRaises(ProbeError):
+            select_original_filings(recent, "2025-09-10")
 
 
 if __name__ == "__main__":

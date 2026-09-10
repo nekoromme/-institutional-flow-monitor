@@ -100,6 +100,22 @@ def numeric(value) -> bool:
     return isinstance(value, (float, int)) and not isinstance(value, bool) and math.isfinite(value)
 
 
+def missing_minute_samples(rows: list, sessions: list, limit: int = 2) -> list:
+    """存在しない分足を少数だけ選び、約定の実在を追加確認するための時刻を返す。"""
+    present = {timestamp_ns(r["t"]) for r in rows}
+    absent = []
+    for session in sessions:
+        current, closed = session_times(session)
+        while current < closed:
+            if timestamp_ns(iso(current)) not in present:
+                absent.append(current)
+            current += timedelta(minutes=1)
+    if len(absent) <= limit:
+        return absent
+    # 最初の一か所だけに偏らないよう、離れた二つを標本にする。
+    return [absent[0], absent[-1]][:limit]
+
+
 def quality(rows: dict, kind: str, sessions: list, *, timeframe: str | None,
             complete: bool, start: datetime, end: datetime) -> dict:
     """生の価格・約定は返さず、欠損や形式不整合の件数だけ返す。"""
@@ -211,6 +227,29 @@ def run_market(client: SafeHttp, now: datetime) -> dict:
     minutes, minute_meta = probe("sip_minutes_20sessions", "bars", SYMBOLS,
                                 minute_start, closed-timedelta(microseconds=1), minute_sessions,
                                 timeframe="1Min", limit=10000, max_pages=20)
+    report["missing_minute_audits"] = []
+    if minute_meta["complete"]:
+        for symbol in SYMBOLS:
+            for gap in missing_minute_samples(minutes[symbol], minute_sessions):
+                trades, meta = fetch_pages(client, "trades", (symbol,), gap,
+                                           gap+timedelta(minutes=1)-timedelta(microseconds=1),
+                                           feed="sip", limit=1000, max_pages=5)
+                data = trades[symbol]
+                only_odd_lot = bool(data) and all("I" in (t.get("c") or []) for t in data)
+                reason = "inconclusive"
+                if meta["complete"]:
+                    if not data:
+                        reason = "no_trades_returned_for_sample"
+                    elif only_odd_lot:
+                        reason = "trades_exist_all_have_odd_lot_condition"
+                    else:
+                        reason = "trades_exist_bar_absent_requires_condition_review"
+                report["missing_minute_audits"].append({
+                    "symbol": symbol, "minute": iso(gap), "trade_records": len(data),
+                    "complete": meta["complete"], "status": meta["status"],
+                    "interpretation": reason, "only_odd_lot_condition": only_odd_lot,
+                    "http_requests": meta["http_requests"], "received_bytes": meta["received_bytes"],
+                })
     del minutes
     # 単一取引所は比較試験として明示。全米市場の代替として自動採用しない。
     probe("iex_minutes_comparison", "bars", SYMBOLS, opened, closed-timedelta(microseconds=1),

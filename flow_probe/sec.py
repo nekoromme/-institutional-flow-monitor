@@ -64,12 +64,18 @@ def select_original_filings(recent: dict, as_of_date: str) -> list:
             continue
         if not re.fullmatch(r"\d{10}-\d{2}-\d{6}", accession):
             raise ProbeError("invalid_accession")
-        if not re.fullmatch(r"[A-Za-z0-9_.-]+", primary):
+        # SECの履歴には、表示用の変換フォルダが付いたパスも載る。
+        # その既知の一段だけを除き、元のXMLを取得する。任意の経路は許可しない。
+        original_primary = primary
+        if re.fullmatch(r"xslForm13F_[A-Za-z0-9]+/[A-Za-z0-9_.-]+", primary):
+            primary = primary.split("/", 1)[1]
+        if not re.fullmatch(r"[A-Za-z0-9_-][A-Za-z0-9_.-]*", primary):
             raise ProbeError("invalid_primary_document_name")
         accepted = recent.get("acceptanceDateTime", [])
         selected.append({"form": form, "filing_date": filing_date,
                          "period_of_report": report_date, "accession": accession,
                          "primary_document": primary,
+                         "primary_document_as_listed": original_primary,
                          "accepted_at": accepted[i] if i < len(accepted) else None})
     selected.sort(key=lambda row: (row["period_of_report"], row["filing_date"]), reverse=True)
     unique = []
