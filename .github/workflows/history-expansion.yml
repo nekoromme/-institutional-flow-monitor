@@ -41,6 +41,8 @@ jobs:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           PYTHONUNBUFFERED: '1'
         run: python -m research.history.supplement --expansion
+      - name: 取得成功と品質上の保留を分ける
+        run: python -m research.history.expansion_quality
       - uses: actions/upload-artifact@v4
         if: always()
         with:

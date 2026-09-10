@@ -1,0 +1,94 @@
+{
+  "scope": "fixed_200_candidates_per_year_with_partial_source_acquisition",
+  "source_collection_interrupted": true,
+  "planned_source_files": 974,
+  "retained_source_records": 708,
+  "source_statuses": {
+    "downloaded": 634,
+    "blocked": 74
+  },
+  "blocked_reasons": {
+    "response_too_large": 26,
+    "network_or_timeout": 48
+  },
+  "source_files_not_yet_attempted": 266,
+  "years": [
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 3,
+        "no_source": 39,
+        "not_downloaded": 12,
+        "parse_or_validation_requires_review": 3,
+        "single_common_security_in_filing": 143
+      },
+      "cusip_issuer_verified": 138,
+      "lookup_candidate_changes": 16,
+      "ownership_statuses": {
+        "cusip_cover_requires_review": 8,
+        "matched": 138,
+        "no_source": 50,
+        "subject_company_mismatch": 4
+      },
+      "price_collection_candidates": 116,
+      "ticker_linked": 121,
+      "year": 2023,
+      "additional_price_requests": 94,
+      "held_identity_collisions": []
+    },
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 4,
+        "no_source": 33,
+        "not_downloaded": 38,
+        "parse_or_validation_requires_review": 1,
+        "single_common_security_in_filing": 124
+      },
+      "cusip_issuer_verified": 116,
+      "lookup_candidate_changes": 16,
+      "ownership_statuses": {
+        "cusip_cover_requires_review": 8,
+        "matched": 116,
+        "no_source": 47,
+        "not_downloaded": 24,
+        "subject_company_mismatch": 5
+      },
+      "price_collection_candidates": 93,
+      "ticker_linked": 100,
+      "year": 2024,
+      "additional_price_requests": 70,
+      "held_identity_collisions": []
+    },
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 1,
+        "no_source": 35,
+        "not_downloaded": 136,
+        "single_common_security_in_filing": 28
+      },
+      "cusip_issuer_verified": 28,
+      "lookup_candidate_changes": 35,
+      "ownership_statuses": {
+        "matched": 28,
+        "no_source": 42,
+        "not_downloaded": 130
+      },
+      "price_collection_candidates": 25,
+      "ticker_linked": 25,
+      "year": 2025,
+      "additional_price_requests": 1,
+      "held_identity_collisions": []
+    }
+  ],
+  "returns_computed": false,
+  "full_review_sha256": {
+    "2023": "6ed6e21ed42dd15412675dd9e689503882db72926f305ab4edbfe4847f57e9a9",
+    "2024": "b0633a8c38bb89d5171d7b15bb67b32b03d7a407b89d48ded23537e633b20e65",
+    "2025": "44d31d00ecb011847e2d82866a68f0497d4e7c263826fb3df330b731dabbc34d"
+  }
+}
