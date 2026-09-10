@@ -1,0 +1,635 @@
+{
+  "adjustment_audit": {
+    "CJMB": {
+      "coverage_complete": true,
+      "documented_events": [],
+      "factor_source": "documented_events",
+      "interpretation": "sample_comparison_only; retrieval_time_adjustment_not_point_in_time; event_inventory_not_universal",
+      "invalid_pairs": 0,
+      "mismatch_examples": [],
+      "paired_days": 146,
+      "pairs_with_price_differences_inside_rounding_tolerance": 0,
+      "price_mismatch_days": 0,
+      "price_volume_adjustment_mismatches": 0,
+      "provider_adjustment_segments": [
+        {
+          "first_day": "2025-09-02",
+          "last_day": "2026-03-31",
+          "price_multiplier": 1,
+          "records": 146
+        }
+      ],
+      "rounding_tolerance_assumption": "price_absolute_0.0001_times_factor_plus_0.0001; volume_1_share; not_provider_precision_guarantee",
+      "status": "comparable_sample",
+      "unpaired_days": 0,
+      "unresolved_days": [],
+      "volume_mismatch_days": 0,
+      "zero_raw_volume_days": []
+    }
+  },
+  "commit": "47acb35bb391bbaf03bf1f70ae74db6124cc0a30",
+  "comparison_sha256": "51e15ca502cc591a4ea10f49ed9e6dfcf08708fb897b12fbed9de49ce6c187c7",
+  "data_persistence": "raw_bars_prepared_windows_and_scores_local_only_not_uploaded",
+  "history_end": "2026-03-31",
+  "history_start": "2025-09-01",
+  "http": {
+    "elapsed_seconds": 1.061,
+    "http_requests": 3,
+    "received_bytes": 47337,
+    "retries": 0
+  },
+  "market_input_sha256": "a14f2ab178e4624af4dddd346800759893778103e4542f4355c9bcf2096d4606",
+  "preparation": {
+    "all_institution_holdings_labels_ready": false,
+    "backtest_ready": false,
+    "by_symbol": {
+      "CJMB": {
+        "prepared": 84,
+        "shortened_session": 2,
+        "warmup": 60
+      }
+    },
+    "performance_results": null,
+    "protocol": {
+      "aggregate_score": null,
+      "baseline_rule": "previous_60_full_length_market_sessions_excluding_current",
+      "baseline_sessions": 60,
+      "candidate_rule_for_next_stage": "volume_strictly_above_nearest_rank_95th_percentile",
+      "entry_rule": "next_regular_open_after_actual_or_conservative_signal_availability",
+      "label_unit": "symbol_calendar_quarter_not_individual_daily_alert",
+      "main_label": "split_adjusted_reported_holdings_change_in_containing_calendar_quarter",
+      "missing_or_zero_baseline": "unknown_do_not_zero_fill",
+      "model_selection_or_backtest_performed": false,
+      "pilot_symbols_are_not_low_ownership_certified": true,
+      "purpose": "engineering_pilot_not_evidence_of_institutional_detection",
+      "repeat_missing_rule": "unknown_if_any_of_5_daily_judgments_unknown",
+      "repeat_rule_for_next_stage": "current_day_abnormal_and_at_least_2_in_last_5_market_sessions",
+      "return_horizon_sessions": 10,
+      "shortened_sessions": "exclude_from_signal_and_baseline_no_linear_scaling",
+      "split_rule": "convert_prior_share_volume_to_decision_day_units_only",
+      "version": "stage2-pilot-0.1",
+      "volume_scope": "alpaca_sip_provider_daily_bar_not_regular_session_only"
+    },
+    "rows": 146
+  },
+  "prepared_sha256": "af4aede0604674cc6fba5fec14397e05345185e120893e8d793d1015bf7daf80",
+  "probes": [
+    {
+      "adjustment": "raw",
+      "automatic_feed_fallback": false,
+      "complete": true,
+      "elapsed_seconds": 0.455,
+      "end": "2026-04-01T03:59:59Z",
+      "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+      "feed_requested": "sip",
+      "http_requests": 1,
+      "http_status": 200,
+      "kind": "bars",
+      "pages": 1,
+      "received_bytes": 14251,
+      "records": 146,
+      "retries": 0,
+      "start": "2025-09-01T04:00:00Z",
+      "status": "ok",
+      "symbol_mapping_asof": "-",
+      "symbols": [
+        "CJMB"
+      ],
+      "timeframe": "1Day"
+    },
+    {
+      "adjustment": "split",
+      "automatic_feed_fallback": false,
+      "complete": true,
+      "elapsed_seconds": 0.506,
+      "end": "2026-04-01T03:59:59Z",
+      "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+      "feed_requested": "sip",
+      "http_requests": 1,
+      "http_status": 200,
+      "kind": "bars",
+      "pages": 1,
+      "received_bytes": 14251,
+      "records": 146,
+      "retries": 0,
+      "start": "2025-09-01T04:00:00Z",
+      "status": "ok",
+      "symbol_mapping_asof": "-",
+      "symbols": [
+        "CJMB"
+      ],
+      "timeframe": "1Day"
+    }
+  ],
+  "protocol": {
+    "aggregate_score": null,
+    "baseline_rule": "previous_60_full_length_market_sessions_excluding_current",
+    "baseline_sessions": 60,
+    "candidate_rule_for_next_stage": "volume_strictly_above_nearest_rank_95th_percentile",
+    "entry_rule": "next_regular_open_after_actual_or_conservative_signal_availability",
+    "label_unit": "symbol_calendar_quarter_not_individual_daily_alert",
+    "main_label": "split_adjusted_reported_holdings_change_in_containing_calendar_quarter",
+    "missing_or_zero_baseline": "unknown_do_not_zero_fill",
+    "model_selection_or_backtest_performed": false,
+    "pilot_symbols_are_not_low_ownership_certified": true,
+    "purpose": "engineering_pilot_not_evidence_of_institutional_detection",
+    "repeat_missing_rule": "unknown_if_any_of_5_daily_judgments_unknown",
+    "repeat_rule_for_next_stage": "current_day_abnormal_and_at_least_2_in_last_5_market_sessions",
+    "return_horizon_sessions": 10,
+    "shortened_sessions": "exclude_from_signal_and_baseline_no_linear_scaling",
+    "split_rule": "convert_prior_share_volume_to_decision_day_units_only",
+    "version": "stage2-pilot-0.1",
+    "volume_scope": "alpaca_sip_provider_daily_bar_not_regular_session_only"
+  },
+  "raw_data_quality": {
+    "CJMB": {
+      "expected_sessions": 146,
+      "first_timestamp": "2025-09-02T04:00:00Z",
+      "identical_rows_or_duplicate_bar_times": 0,
+      "invalid_records": 0,
+      "last_timestamp": "2026-03-31T04:00:00Z",
+      "missing_sessions": [],
+      "observed_sessions": 146,
+      "out_of_order": 0,
+      "outside_requested_interval": 0,
+      "records": 146,
+      "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+    }
+  },
+  "scored_sha256": "4661309984517166032c696e156f78ed3405b58284c81e9d3bb04eefc236e4d4",
+  "status": "completed",
+  "trial": {
+    "abnormal_days": 8,
+    "accuracy": null,
+    "actual_historical_notification_time": null,
+    "calendar_sessions": 61,
+    "comparison_link": {
+      "accuracy_eligible_symbol_quarters": 0,
+      "is_actual_net_institutional_trade": false,
+      "linked_symbol_quarters": 1,
+      "ratio_change_percentage_points": -4.429705,
+      "reported_share_change": -131419,
+      "unit": "one_symbol_calendar_quarter"
+    },
+    "daily_judgments_without_market_values": [
+      {
+        "abnormal": false,
+        "date": "2026-01-02",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-05",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-06",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-07",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-08",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-09",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-12",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": true
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-13",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-14",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-15",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": true
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-16",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": true
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-20",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": true
+      },
+      {
+        "abnormal": true,
+        "date": "2026-01-21",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": true
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-22",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-23",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-26",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-27",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-28",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-29",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-01-30",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": true,
+        "date": "2026-02-02",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-03",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-04",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-05",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-06",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-09",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-10",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-11",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-12",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-13",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-17",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-18",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-19",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-20",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-23",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-24",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-25",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-26",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-02-27",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-02",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-03",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-04",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-05",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-06",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-09",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-10",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-11",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-12",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-13",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": true,
+        "date": "2026-03-16",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-17",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-18",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-19",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-20",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-23",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-24",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-25",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-26",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-27",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-30",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      },
+      {
+        "abnormal": false,
+        "date": "2026-03-31",
+        "reason": null,
+        "repeat_reason": null,
+        "repeated": false
+      }
+    ],
+    "evaluation_period": {
+      "end": "2026-03-31",
+      "start": "2026-01-01"
+    },
+    "filing_lead_days": null,
+    "holdings_used_to_generate_signal": false,
+    "institutional_flow_label": null,
+    "limitations": [
+      "one_security_one_quarter_is_not_validation_sample",
+      "low_ownership_threshold_and_control_group_not_fixed",
+      "holdings_have_unresolved_reference_and_confidential_status",
+      "historical_data_retrieved_now_not_archived_as_known_then",
+      "abnormal_volume_does_not_identify_buyer_or_trade_direction"
+    ],
+    "purpose": "engineering_trial_not_predictive_accuracy",
+    "repeated_abnormal_days": 5,
+    "returns": null,
+    "unknown_abnormal_days": 0,
+    "unknown_reasons": {},
+    "unknown_repeat_days": 0
+  },
+  "version": "cjmb-volume-pilot-0.1",
+  "ci_validation": {
+    "run_id": 34458105562,
+    "job_id": 102809170477,
+    "url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34458105562",
+    "conclusion": "success",
+    "code_commit": "47acb35bb391bbaf03bf1f70ae74db6124cc0a30",
+    "tests_passed": 114,
+    "existing_five_scored_dataset_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_five_score_unchanged": true
+  }
+}
