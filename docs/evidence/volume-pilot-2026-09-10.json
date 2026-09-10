@@ -1,0 +1,144 @@
+{
+  "accuracy": null,
+  "actual_historical_notification_time": null,
+  "by_symbol": {
+    "AAOI": {
+      "abnormal_days": 9,
+      "calendar_sessions": 61,
+      "diagnostic_reported_share_change": 5393405,
+      "diagnostic_reported_shares_end": 52893491,
+      "diagnostic_reported_shares_previous": 47500086,
+      "eligible_for_accuracy_measurement": false,
+      "exclusion_reasons": [
+        "historical_low_ownership_universe_not_established",
+        "aggregate_holdings_not_certified",
+        "quarter_does_not_identify_trade_day",
+        "joint_reporting_or_repeated_rows_unresolved",
+        "filings_or_security_class_unresolved"
+      ],
+      "institutional_flow_label": null,
+      "low_ownership_at_signal": null,
+      "repeated_abnormal_days": 6,
+      "unknown_abnormal_days": 0,
+      "unknown_abnormal_reasons": {},
+      "unknown_repeat_days": 0
+    },
+    "MU": {
+      "abnormal_days": 12,
+      "calendar_sessions": 61,
+      "diagnostic_reported_share_change": -41275320,
+      "diagnostic_reported_shares_end": 840714107,
+      "diagnostic_reported_shares_previous": 881989427,
+      "eligible_for_accuracy_measurement": false,
+      "exclusion_reasons": [
+        "historical_low_ownership_universe_not_established",
+        "aggregate_holdings_not_certified",
+        "quarter_does_not_identify_trade_day",
+        "joint_reporting_or_repeated_rows_unresolved",
+        "filings_or_security_class_unresolved"
+      ],
+      "institutional_flow_label": null,
+      "low_ownership_at_signal": null,
+      "repeated_abnormal_days": 7,
+      "unknown_abnormal_days": 0,
+      "unknown_abnormal_reasons": {},
+      "unknown_repeat_days": 0
+    },
+    "ONTO": {
+      "abnormal_days": 4,
+      "calendar_sessions": 61,
+      "diagnostic_reported_share_change": 22792,
+      "diagnostic_reported_shares_end": 47251084,
+      "diagnostic_reported_shares_previous": 47228292,
+      "eligible_for_accuracy_measurement": false,
+      "exclusion_reasons": [
+        "historical_low_ownership_universe_not_established",
+        "aggregate_holdings_not_certified",
+        "quarter_does_not_identify_trade_day",
+        "joint_reporting_or_repeated_rows_unresolved",
+        "filings_or_security_class_unresolved"
+      ],
+      "institutional_flow_label": null,
+      "low_ownership_at_signal": null,
+      "repeated_abnormal_days": 2,
+      "unknown_abnormal_days": 0,
+      "unknown_abnormal_reasons": {},
+      "unknown_repeat_days": 0
+    },
+    "QMCO": {
+      "abnormal_days": 2,
+      "calendar_sessions": 61,
+      "diagnostic_reported_share_change": -444384,
+      "diagnostic_reported_shares_end": 1610725,
+      "diagnostic_reported_shares_previous": 2055109,
+      "eligible_for_accuracy_measurement": false,
+      "exclusion_reasons": [
+        "historical_low_ownership_universe_not_established",
+        "aggregate_holdings_not_certified",
+        "quarter_does_not_identify_trade_day",
+        "joint_reporting_or_repeated_rows_unresolved"
+      ],
+      "institutional_flow_label": null,
+      "low_ownership_at_signal": null,
+      "repeated_abnormal_days": 1,
+      "unknown_abnormal_days": 0,
+      "unknown_abnormal_reasons": {},
+      "unknown_repeat_days": 0
+    },
+    "UAVS": {
+      "abnormal_days": 7,
+      "calendar_sessions": 61,
+      "diagnostic_reported_share_change": 1398614,
+      "diagnostic_reported_shares_end": 4677116,
+      "diagnostic_reported_shares_previous": 3278502,
+      "eligible_for_accuracy_measurement": false,
+      "exclusion_reasons": [
+        "historical_low_ownership_universe_not_established",
+        "aggregate_holdings_not_certified",
+        "quarter_does_not_identify_trade_day",
+        "joint_reporting_or_repeated_rows_unresolved"
+      ],
+      "institutional_flow_label": null,
+      "low_ownership_at_signal": null,
+      "repeated_abnormal_days": 6,
+      "unknown_abnormal_days": 0,
+      "unknown_abnormal_reasons": {},
+      "unknown_repeat_days": 0
+    }
+  },
+  "commit": "2444316412bdfe86ceca834e0f824c93e6fd135c",
+  "evaluation_period": {
+    "from": "2026-01-01",
+    "previous_holdings_period": "2025-12-31",
+    "through": "2026-03-31"
+  },
+  "filing_lead_days": null,
+  "holdings_snapshot_as_of": "2026-06-01",
+  "holdings_used_to_generate_signal": false,
+  "label_unit": "symbol_calendar_quarter",
+  "market_data_vintage": "current_historical_snapshot_not_archived_as_known_then",
+  "other_periods_scored": false,
+  "persistence": "raw_inputs_and_daily_scores_not_uploaded; runner_files_expire",
+  "protocol": "stage2-pilot-0.1",
+  "purpose": "technical_trial_not_performance_validation",
+  "return_results": null,
+  "scored_dataset_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+  "source_sha256": {
+    "holdings": "a6c48ca1312945b4518671cb90384f82289b9ad3d87726a2cc8eba9f7b316a96",
+    "prepared": "38fda3a94b9141a6ba2f8ed015eb26e6fce67311cc272b1e55bc646ee6b2d793"
+  },
+  "version": "volume-pilot-0.1",
+  "validation": {
+    "workflow_run_id": 34439101611,
+    "job_id": 102750186177,
+    "workflow_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34439101611",
+    "conclusion": "success",
+    "tests_passed": 62,
+    "market_required_probe_ok": true,
+    "started_at": "2026-09-10T04:56:24.307364+00:00",
+    "completed_at": "2026-09-10T04:56:52.193313+00:00",
+    "sec_live_probe_status": "blocked",
+    "holdings_source": "versioned_previous_local_SEC_audit; no_new_holdings_download_in_this_workflow"
+  }
+}
+
