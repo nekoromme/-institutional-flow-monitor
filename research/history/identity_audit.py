@@ -138,7 +138,7 @@ def download(root,proposals,limit=40):
     prior={r['source']['filename']:r for r in json.loads(out.read_text())['files']} if out.exists() else {}
     folder=root/'data/history/identity-originals';folder.mkdir(parents=True,exist_ok=True)
     state=threading.local()
-    # 応答待ちが長いため同時接続を8本まで許すが、開始は全接続で0.4秒間隔。
+    # 応答待ちが長いため同時接続を16本まで許すが、開始は全接続で0.4秒間隔。
     # 接続ごとに独立して連打する方式にはしない。
     throttle=threading.Lock()
     last_start=[0.0]
@@ -166,7 +166,7 @@ def download(root,proposals,limit=40):
                     'retrieved_at_utc':datetime.now(timezone.utc).isoformat()}
         except ProbeError as exc:return {**item,'status':'blocked','url':url,'error':exc.summary()}
     results=[]
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=16) as pool:
         for future in as_completed([pool.submit(work,item) for item in queue.values()]):
             results.append(future.result())
             # 再開中に中断しても、まだこの実行で触っていない取得済み記録を失わない。

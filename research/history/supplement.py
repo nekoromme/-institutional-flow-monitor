@@ -25,8 +25,12 @@ def requested_symbols(request,year):
     return tuple(sorted(values))
 
 
-def main():
-    path=ROOT/'research/history/price-request.json'
+def main(*,expansion=False):
+    # 追加の対象は別の要求書・保存先へ。前回の入力を上書きしない。
+    request_name='expansion-request.json' if expansion else 'price-request.json'
+    namespace='expansion' if expansion else 'supplement'
+    prefix='expanded' if expansion else 'additional'
+    path=ROOT/'research/history'/request_name
     request=json.loads(path.read_text())
     secret=os.environ.get('ALPACA_SECRET_KEY','');key=os.environ.get('ALPACA_API_KEY','')
     if not key or len(secret)<16:raise ValueError('market_credentials_missing')
@@ -36,7 +40,7 @@ def main():
     for year in (2023,2024,2025):
         symbols=requested_symbols(request,year)
         if not symbols:continue
-        start=f'{year-1}-09-01';end=f'{year+1}-01-31';name=f'additional-{year}'
+        start=f'{year-1}-09-01';end=f'{year+1}-01-31';name=f'{prefix}-{year}'
         try:
             sessions=client.json('https://paper-api.alpaca.markets/v2/calendar',{'start':start,'end':end})
             days=validate_price_calendar(sessions,start=start,end=end)
@@ -63,14 +67,19 @@ def main():
                 'plaintext_sha256':hashlib.sha256(raw).hexdigest(),'encrypted_sha256':digest(dest),
                 'decrypt_roundtrip_verified':True,'backtest_admitted':False}
             report['chunks'].append(chunk)
-            write_json(ROOT/f'diagnostics/history/supplement/{name}.json',chunk)
+            write_json(ROOT/f'diagnostics/history/{namespace}/{name}.json',chunk)
             print(json.dumps({'year':year,'symbols':len(symbols),'records_per_adjustment':sum(q['records'] for q in quality['raw'].values()),
                 'missing_symbol_days':sum(q['missing_sessions'] for q in quality['raw'].values())}),flush=True)
         except (ProbeError,ValueError,KeyError,TypeError) as exc:
             report['errors'].append({'year':year,'error':exc.summary() if isinstance(exc,ProbeError) else type(exc).__name__})
     report['http']=client.metrics();report['collection_complete']=not report['errors']
-    write_json(ROOT/'diagnostics/history/supplement/summary.json',report)
+    write_json(ROOT/f'diagnostics/history/{namespace}/summary.json',report)
     print(json.dumps({'collection_complete':report['collection_complete'],'errors':report['errors'],'http':report['http']}))
     return 0 if report['collection_complete'] else 1
 
-if __name__=='__main__':raise SystemExit(main())
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--expansion',action='store_true',help='固定した残り候補の不足データを別名で保存')
+    args=parser.parse_args()
+    raise SystemExit(main(expansion=args.expansion))

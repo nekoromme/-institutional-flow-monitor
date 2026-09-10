@@ -1,0 +1,57 @@
+name: 固定した全候補の不足価格を追加収集
+on:
+  push:
+    branches: [main]
+    paths:
+      # 結果文書や読取処理の修正だけでは市場データを取り直さない。
+      - 'research/history/expansion-request.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: historical-expansion
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cryptography==46.0.3
+      - run: python -m unittest discover -s research/history -p 'test_*.py' -v
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-supplement-encrypted-0bc5930c822001ee8ee6e44704cf7a3269cbc0c3
+          run-id: 34538504180
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/encrypted/
+      - name: 残った補正差を項目別に点検
+        env:
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python -m research.history.precision_diagnostics
+      - name: 原書類で対応した追加候補の日足を取得
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PYTHONUNBUFFERED: '1'
+        run: python -m research.history.supplement --expansion
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-expansion-public-${{ github.sha }}
+          path: diagnostics/history/expansion/
+          retention-days: 90
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-expansion-encrypted-${{ github.sha }}
+          path: data/history/encrypted/expanded-*.enc
+          retention-days: 90
+          if-no-files-found: error
