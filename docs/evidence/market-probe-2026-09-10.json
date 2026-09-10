@@ -1,0 +1,644 @@
+{
+  "schema_version": 1,
+  "version": "0.1.1",
+  "started_at": "2026-09-10T02:00:38.646033+00:00",
+  "commit": "c0ac1c273349ed1baa0c702a07d7b952bcfa5db6",
+  "credentials_present": {
+    "key": true,
+    "secret": true
+  },
+  "market": {
+    "purpose": "data_feasibility_only_not_a_stock_screen",
+    "probes": [
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Day",
+        "start": "2023-09-11T04:00:00Z",
+        "end": "2026-09-09T20:00:00Z",
+        "symbols": [
+          "AAPL",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "FN"
+        ],
+        "pages": 8,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 3760,
+        "elapsed_seconds": 4.057,
+        "received_bytes": 412939,
+        "http_requests": 8,
+        "retries": 0,
+        "name": "sip_daily_3year",
+        "quality": {
+          "AAPL": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "MU": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "ONTO": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "AAOI": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          },
+          "FN": {
+            "records": 752,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2023-09-11T04:00:00Z",
+            "last_timestamp": "2026-09-09T04:00:00Z",
+            "expected_sessions": 752,
+            "observed_sessions": 752,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Min",
+        "start": "2026-08-12T13:30:00Z",
+        "end": "2026-09-09T19:59:59.999999Z",
+        "symbols": [
+          "AAPL",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "FN"
+        ],
+        "pages": 7,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 64640,
+        "elapsed_seconds": 7.043,
+        "received_bytes": 6816820,
+        "http_requests": 7,
+        "retries": 0,
+        "name": "sip_minutes_20sessions",
+        "quality": {
+          "AAPL": {
+            "records": 16589,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7800,
+            "missing_regular_minutes": 0,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 8789
+          },
+          "MU": {
+            "records": 18280,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7800,
+            "missing_regular_minutes": 0,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 10480
+          },
+          "ONTO": {
+            "records": 6810,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 6640,
+            "missing_regular_minutes": 1160,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 170
+          },
+          "AAOI": {
+            "records": 14203,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7798,
+            "missing_regular_minutes": 2,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 6405
+          },
+          "FN": {
+            "records": 8758,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-08-12T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 7800,
+            "observed_regular_minutes": 7553,
+            "missing_regular_minutes": 247,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 1205
+          }
+        }
+      },
+      {
+        "feed_requested": "iex",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Min",
+        "start": "2026-09-09T13:30:00Z",
+        "end": "2026-09-09T19:59:59.999999Z",
+        "symbols": [
+          "AAPL",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "FN"
+        ],
+        "pages": 3,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 1247,
+        "elapsed_seconds": 1.556,
+        "received_bytes": 131133,
+        "http_requests": 3,
+        "retries": 0,
+        "name": "iex_minutes_comparison",
+        "quality": {
+          "AAPL": {
+            "records": 390,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 390,
+            "missing_regular_minutes": 0,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "MU": {
+            "records": 386,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 386,
+            "missing_regular_minutes": 4,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "ONTO": {
+            "records": 85,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 85,
+            "missing_regular_minutes": 305,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "AAOI": {
+            "records": 253,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:30:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 253,
+            "missing_regular_minutes": 137,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          },
+          "FN": {
+            "records": 133,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T13:31:00Z",
+            "last_timestamp": "2026-09-09T19:59:00Z",
+            "expected_regular_minutes": 390,
+            "observed_regular_minutes": 133,
+            "missing_regular_minutes": 257,
+            "missing_interpretation": "absent_bar_is_not_proof_of_data_loss; do_not_fill_zero",
+            "extended_or_other_records": 0
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "trades",
+        "timeframe": null,
+        "start": "2026-09-09T14:00:00Z",
+        "end": "2026-09-09T14:00:59.999999Z",
+        "symbols": [
+          "AAPL",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "FN"
+        ],
+        "pages": 12,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 11567,
+        "elapsed_seconds": 6.073,
+        "received_bytes": 1125178,
+        "http_requests": 12,
+        "retries": 0,
+        "name": "sip_trades_one_minute",
+        "quality": {
+          "AAPL": {
+            "records": 4123,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.016650406Z",
+            "last_timestamp": "2026-09-09T14:00:59.828513644Z"
+          },
+          "MU": {
+            "records": 6481,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.001249883Z",
+            "last_timestamp": "2026-09-09T14:00:59.97571173Z"
+          },
+          "ONTO": {
+            "records": 183,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.689347979Z",
+            "last_timestamp": "2026-09-09T14:00:58.543569672Z"
+          },
+          "AAOI": {
+            "records": 682,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.013344892Z",
+            "last_timestamp": "2026-09-09T14:00:59.846877928Z"
+          },
+          "FN": {
+            "records": 98,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.983729494Z",
+            "last_timestamp": "2026-09-09T14:00:57.72215618Z"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "quotes",
+        "timeframe": null,
+        "start": "2026-09-09T14:00:00Z",
+        "end": "2026-09-09T14:00:59.999999Z",
+        "symbols": [
+          "AAPL",
+          "MU",
+          "ONTO",
+          "AAOI",
+          "FN"
+        ],
+        "pages": 9,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 8109,
+        "elapsed_seconds": 4.44,
+        "received_bytes": 941828,
+        "http_requests": 9,
+        "retries": 0,
+        "name": "sip_quotes_one_minute",
+        "quality": {
+          "AAPL": {
+            "records": 4558,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.002156191Z",
+            "last_timestamp": "2026-09-09T14:00:59.933936506Z",
+            "crossed_quotes": 1,
+            "locked_quotes": 28,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "MU": {
+            "records": 2561,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.097221642Z",
+            "last_timestamp": "2026-09-09T14:00:59.951919245Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 2,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "ONTO": {
+            "records": 245,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:07.331974697Z",
+            "last_timestamp": "2026-09-09T14:00:59.993025854Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "AAOI": {
+            "records": 609,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.013625147Z",
+            "last_timestamp": "2026-09-09T14:00:59.688044793Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          },
+          "FN": {
+            "records": 136,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2026-09-09T14:00:00.984443228Z",
+            "last_timestamp": "2026-09-09T14:00:59.994301627Z",
+            "crossed_quotes": 0,
+            "locked_quotes": 0,
+            "note": "quote_anomalies_are_diagnostics_not_institution_identity"
+          }
+        }
+      },
+      {
+        "feed_requested": "sip",
+        "automatic_feed_fallback": false,
+        "feed_provenance": "explicit_request_parameter; provider_does_not_echo_feed",
+        "kind": "bars",
+        "timeframe": "1Day",
+        "start": "2016-01-05T05:00:00Z",
+        "end": "2016-01-08T05:00:00Z",
+        "symbols": [
+          "AAPL"
+        ],
+        "pages": 1,
+        "complete": true,
+        "http_status": 200,
+        "status": "ok",
+        "records": 4,
+        "elapsed_seconds": 0.254,
+        "received_bytes": 482,
+        "http_requests": 1,
+        "retries": 0,
+        "name": "sip_daily_2016_sample",
+        "quality": {
+          "AAPL": {
+            "records": 4,
+            "invalid_records": 0,
+            "identical_rows_or_duplicate_bar_times": 0,
+            "out_of_order": 0,
+            "outside_requested_interval": 0,
+            "first_timestamp": "2016-01-05T05:00:00Z",
+            "last_timestamp": "2016-01-08T05:00:00Z",
+            "expected_sessions": 0,
+            "observed_sessions": 0,
+            "missing_sessions": [],
+            "volume_scope": "provider_daily_bar; not_assumed_regular_hours_only"
+          }
+        }
+      }
+    ],
+    "session": {
+      "close": "16:00",
+      "date": "2026-09-09",
+      "open": "09:30",
+      "session_close": "2000",
+      "session_open": "0400",
+      "settlement_date": "2026-09-10"
+    },
+    "calendar_sessions": 752,
+    "cutoff_policy": "only_sessions_closed_at_least_30_minutes_ago",
+    "asset_status": {
+      "AAPL": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      },
+      "MU": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      },
+      "ONTO": {
+        "status": "active",
+        "exchange": "NYSE",
+        "tradable": true
+      },
+      "AAOI": {
+        "status": "active",
+        "exchange": "NASDAQ",
+        "tradable": true
+      },
+      "FN": {
+        "status": "active",
+        "exchange": "NYSE",
+        "tradable": true
+      }
+    },
+    "missing_minute_audits": [
+      {
+        "symbol": "ONTO",
+        "minute": "2026-08-12T15:36:00Z",
+        "trade_records": 34,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3689
+      },
+      {
+        "symbol": "ONTO",
+        "minute": "2026-09-09T19:38:00Z",
+        "trade_records": 34,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3679
+      },
+      {
+        "symbol": "AAOI",
+        "minute": "2026-08-26T16:48:00Z",
+        "trade_records": 37,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 3654
+      },
+      {
+        "symbol": "AAOI",
+        "minute": "2026-09-01T16:45:00Z",
+        "trade_records": 76,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_all_have_odd_lot_condition",
+        "only_odd_lot_condition": true,
+        "http_requests": 1,
+        "received_bytes": 7468
+      },
+      {
+        "symbol": "FN",
+        "minute": "2026-08-12T14:39:00Z",
+        "trade_records": 27,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_bar_absent_requires_condition_review",
+        "only_odd_lot_condition": false,
+        "http_requests": 1,
+        "received_bytes": 2912
+      },
+      {
+        "symbol": "FN",
+        "minute": "2026-09-09T19:26:00Z",
+        "trade_records": 36,
+        "complete": true,
+        "status": "ok",
+        "interpretation": "trades_exist_bar_absent_requires_condition_review",
+        "only_odd_lot_condition": false,
+        "http_requests": 1,
+        "received_bytes": 3896
+      }
+    ],
+    "load_estimate": {
+      "sample_based_uncompressed_response_bytes_per_symbol_session": 68168,
+      "approx_300_symbols_252_sessions_bytes": 5153515920,
+      "limitations": "five_current_symbols_only; includes_between_session_records; excludes_filings_storage_and_index_overhead; not_a_quote_or_invoice"
+    },
+    "required_market_probe_ok": true
+  },
+  "sec": {
+    "status": "blocked",
+    "issuer_lookup": {},
+    "filings": [],
+    "manager_cik": "0001067983",
+    "scope": "two_original_filings_one_manager; not_total_institutional_ownership",
+    "unresolved": [
+      "CUSIP_to_ticker_history_needs_authoritative_mapping",
+      "all_managers_and_amendments_not_yet_aggregated",
+      "share_class_and_point_in_time_denominator_require_validation",
+      "missing_holding_is_not_zero_ownership"
+    ],
+    "error": {
+      "category": "forbidden_check_auth_and_entitlement",
+      "http_status": 403
+    }
+  },
+  "market_http": {
+    "http_requests": 52,
+    "received_bytes": 9552948,
+    "retries": 0,
+    "elapsed_seconds": 30.778
+  },
+  "sec_http": {
+    "http_requests": 1,
+    "received_bytes": 1925,
+    "retries": 0,
+    "elapsed_seconds": 0.121
+  },
+  "completed_at": "2026-09-10T02:01:09.582447+00:00",
+  "workflow_run_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34427729366"
+}

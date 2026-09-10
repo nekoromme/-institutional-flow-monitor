@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "started_at": "2026-09-10T01:57:59.603041+00:00",
+  "commit": "local",
+  "credentials_present": {
+    "key": false,
+    "secret": false
+  },
+  "market": {
+    "status": "not_requested"
+  },
+  "sec": {
+    "status": "partial",
+    "issuer_lookup": {
+      "AAPL": {
+        "cik": 320193,
+        "title": "Apple Inc."
+      },
+      "MU": {
+        "cik": 723125,
+        "title": "MICRON TECHNOLOGY INC"
+      },
+      "ONTO": {
+        "cik": 704532,
+        "title": "ONTO INNOVATION INC."
+      },
+      "FN": {
+        "cik": 1408710,
+        "title": "Fabrinet"
+      },
+      "AAOI": {
+        "cik": 1158114,
+        "title": "APPLIED OPTOELECTRONICS, INC."
+      }
+    },
+    "filings": [
+      {
+        "form": "13F-HR",
+        "filing_date": "2026-08-14",
+        "period_of_report": "2026-06-30",
+        "accession": "0001193125-26-352200",
+        "primary_document": "primary_doc.xml",
+        "primary_document_as_listed": "xslForm13F_X02/primary_doc.xml",
+        "accepted_at": "2026-08-14T20:05:04.000Z",
+        "status": "ok",
+        "information_table_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml",
+        "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/primary_doc.xml",
+        "information_table_sha256": "6a2798aa0fa9731c33b0f0b748229eaf7cdf118f9c46fd5a4a9a3de6979d4d95",
+        "information_table_bytes": 44724,
+        "table_rows": 89,
+        "is_amendment": "false",
+        "confidential_omitted": "false",
+        "candidate_matches": {
+          "AAPL": {
+            "status": "candidate_name_and_common_class_only",
+            "cusip": "037833100",
+            "matched_rows": 12,
+            "reported_share_sum": 227917808,
+            "verified_universal_identifier_mapping": false
+          },
+          "MU": {
+            "status": "not_matched_not_zero_ownership"
+          },
+          "ONTO": {
+            "status": "not_matched_not_zero_ownership"
+          },
+          "FN": {
+            "status": "not_matched_not_zero_ownership"
+          },
+          "AAOI": {
+            "status": "not_matched_not_zero_ownership"
+          }
+        }
+      },
+      {
+        "form": "13F-HR",
+        "filing_date": "2026-05-15",
+        "period_of_report": "2026-03-31",
+        "accession": "0001193125-26-226661",
+        "primary_document": "primary_doc.xml",
+        "primary_document_as_listed": "xslForm13F_X02/primary_doc.xml",
+        "accepted_at": "2026-05-15T20:06:05.000Z",
+        "status": "error",
+        "error": {
+          "category": "network_or_timeout",
+          "http_status": null
+        }
+      }
+    ],
+    "manager_cik": "0001067983",
+    "scope": "two_original_filings_one_manager; not_total_institutional_ownership",
+    "unresolved": [
+      "CUSIP_to_ticker_history_needs_authoritative_mapping",
+      "all_managers_and_amendments_not_yet_aggregated",
+      "share_class_and_point_in_time_denominator_require_validation",
+      "missing_holding_is_not_zero_ownership"
+    ],
+    "issuer_lookup_source": "https://www.sec.gov/files/company_tickers.json",
+    "ticker_file_contains_cusip": false,
+    "original_filings_selected": 2,
+    "amendment_count_in_recent_history": 5,
+    "denominator_probe": {
+      "AAPL": {
+        "status": "available_unvalidated",
+        "records": 70,
+        "oldest_period": "2009-06-27",
+        "latest_period": "2026-07-17",
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/dei/EntityCommonStockSharesOutstanding.json",
+        "point_in_time_share_class_reconciliation_complete": false
+      },
+      "MU": {
+        "status": "available_unvalidated",
+        "records": 64,
+        "oldest_period": "2009-12-03",
+        "latest_period": "2026-06-17",
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/dei/EntityCommonStockSharesOutstanding.json",
+        "point_in_time_share_class_reconciliation_complete": false
+      },
+      "ONTO": {
+        "status": "available_unvalidated",
+        "records": 61,
+        "oldest_period": "2011-08-03",
+        "latest_period": "2026-07-31",
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/dei/EntityCommonStockSharesOutstanding.json",
+        "point_in_time_share_class_reconciliation_complete": false
+      },
+      "FN": {
+        "status": "available_unvalidated",
+        "records": 60,
+        "oldest_period": "2011-10-28",
+        "latest_period": "2026-08-07",
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001408710/dei/EntityCommonStockSharesOutstanding.json",
+        "point_in_time_share_class_reconciliation_complete": false
+      },
+      "AAOI": {
+        "status": "available_unvalidated",
+        "records": 58,
+        "oldest_period": "2013-11-07",
+        "latest_period": "2026-08-03",
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/dei/EntityCommonStockSharesOutstanding.json",
+        "point_in_time_share_class_reconciliation_complete": false
+      }
+    }
+  },
+  "market_http": {
+    "http_requests": 0,
+    "received_bytes": 0,
+    "retries": 0,
+    "elapsed_seconds": 0.0
+  },
+  "sec_http": {
+    "http_requests": 22,
+    "received_bytes": 1055818,
+    "retries": 11,
+    "elapsed_seconds": 176.967
+  },
+  "completed_at": "2026-09-10T02:00:56.572437+00:00",
+  "execution_context": "local_workspace_after_SEC_display_path_fix; no_Alpaca_credentials_used",
+  "followup_retry_status": "completed_with_network_or_timeout; polling_tool_also_reported_network_approval_cancellation",
+  "followup_retry": {
+    "scope": "retry_failed_filing_only",
+    "started_at": "2026-09-10T02:01:30.928099+00:00",
+    "code_commit": "c0ac1c273349ed1baa0c702a07d7b952bcfa5db6",
+    "results": [
+      {
+        "form": "13F-HR",
+        "filing_date": "2026-05-15",
+        "period_of_report": "2026-03-31",
+        "accession": "0001193125-26-226661",
+        "primary_document": "primary_doc.xml",
+        "primary_document_as_listed": "xslForm13F_X02/primary_doc.xml",
+        "accepted_at": "2026-05-15T20:06:05.000Z",
+        "status": "error",
+        "error": {
+          "category": "network_or_timeout",
+          "http_status": null
+        }
+      }
+    ],
+    "http": {
+      "http_requests": 3,
+      "received_bytes": 0,
+      "retries": 2,
+      "elapsed_seconds": 48.049
+    }
+  }
+}
