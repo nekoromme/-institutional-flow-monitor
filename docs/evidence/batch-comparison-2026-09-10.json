@@ -1,0 +1,1381 @@
+{
+  "version": "batch-comparison-0.1",
+  "protocol_sha256": "ebb17d254790110735dd1de7952b88773f3139b462c3742dbaa2f853b66c3a92",
+  "groups": {
+    "primary_low_reported_ratio": {
+      "candidate_symbols": 6,
+      "results": {
+        "observed_public_reports": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "HYFM",
+                "CJMB"
+              ],
+              "n": 2,
+              "reported_increases": 0,
+              "increase_fraction": 0.0
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "CJMB"
+              ],
+              "n": 1,
+              "reported_increases": 0,
+              "increase_fraction": 0.0
+            },
+            "no_signal": {
+              "symbols": [
+                "HYFM"
+              ],
+              "n": 1,
+              "reported_increases": 0,
+              "increase_fraction": 0.0
+            },
+            "difference_percentage_points": 0.0,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "strict_quality_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "matched_managers_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "HYFM",
+                "CJMB"
+              ],
+              "n": 2,
+              "reported_increases": 2,
+              "increase_fraction": 1.0
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "CJMB"
+              ],
+              "n": 1,
+              "reported_increases": 1,
+              "increase_fraction": 1.0
+            },
+            "no_signal": {
+              "symbols": [
+                "HYFM"
+              ],
+              "n": 1,
+              "reported_increases": 1,
+              "increase_fraction": 1.0
+            },
+            "difference_percentage_points": 0.0,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        }
+      }
+    },
+    "relative_lower_third": {
+      "candidate_symbols": 18,
+      "results": {
+        "observed_public_reports": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "DCGO",
+                "APYX",
+                "TIPT",
+                "DAIO",
+                "BRT",
+                "HYFM",
+                "SND",
+                "FMBH",
+                "SPRO",
+                "IVR",
+                "NUTX",
+                "LTBR",
+                "CJMB",
+                "CLNE"
+              ],
+              "n": 14,
+              "reported_increases": 8,
+              "increase_fraction": 0.5714285714285714
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "DCGO",
+                "APYX",
+                "TIPT",
+                "BRT",
+                "FMBH",
+                "SPRO",
+                "IVR",
+                "NUTX",
+                "CJMB",
+                "CLNE"
+              ],
+              "n": 10,
+              "reported_increases": 6,
+              "increase_fraction": 0.6
+            },
+            "no_signal": {
+              "symbols": [
+                "DAIO",
+                "HYFM",
+                "SND",
+                "LTBR"
+              ],
+              "n": 4,
+              "reported_increases": 2,
+              "increase_fraction": 0.5
+            },
+            "difference_percentage_points": 9.999999999999998,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "strict_quality_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "matched_managers_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "DCGO",
+                "APYX",
+                "TIPT",
+                "DAIO",
+                "BRT",
+                "HYFM",
+                "SND",
+                "FMBH",
+                "SPRO",
+                "IVR",
+                "NUTX",
+                "LTBR",
+                "CJMB",
+                "CLNE"
+              ],
+              "n": 14,
+              "reported_increases": 10,
+              "increase_fraction": 0.7142857142857143
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "DCGO",
+                "APYX",
+                "TIPT",
+                "BRT",
+                "FMBH",
+                "SPRO",
+                "IVR",
+                "NUTX",
+                "CJMB",
+                "CLNE"
+              ],
+              "n": 10,
+              "reported_increases": 7,
+              "increase_fraction": 0.7
+            },
+            "no_signal": {
+              "symbols": [
+                "DAIO",
+                "HYFM",
+                "SND",
+                "LTBR"
+              ],
+              "n": 4,
+              "reported_increases": 3,
+              "increase_fraction": 0.75
+            },
+            "difference_percentage_points": -5.000000000000004,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        }
+      }
+    },
+    "all_eligible_descriptive_only": {
+      "candidate_symbols": 54,
+      "results": {
+        "observed_public_reports": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "RS",
+                "TTWO",
+                "DCGO",
+                "FHTX",
+                "FSBW",
+                "INGN",
+                "APYX",
+                "TIPT",
+                "LUNG",
+                "UFCS",
+                "AMZN",
+                "EPM",
+                "MUSA",
+                "PNTG",
+                "ANIK",
+                "AAOI",
+                "LAW",
+                "DAIO",
+                "VKTX",
+                "BRT",
+                "LQDT",
+                "OIS",
+                "HYFM",
+                "SND",
+                "PRI",
+                "MGNI",
+                "FMBH",
+                "DXCM",
+                "TGTX",
+                "HUM",
+                "BWB",
+                "MET",
+                "CSR",
+                "ASGN",
+                "CECO",
+                "SPRO",
+                "MSA",
+                "WYNN",
+                "IVR",
+                "IQV",
+                "NUTX",
+                "ASB",
+                "LTBR",
+                "CNXC",
+                "ATKR",
+                "CJMB",
+                "CLNE",
+                "HE",
+                "AMR"
+              ],
+              "n": 49,
+              "reported_increases": 25,
+              "increase_fraction": 0.5102040816326531
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "RS",
+                "TTWO",
+                "DCGO",
+                "FSBW",
+                "INGN",
+                "APYX",
+                "TIPT",
+                "LUNG",
+                "UFCS",
+                "AMZN",
+                "MUSA",
+                "PNTG",
+                "ANIK",
+                "AAOI",
+                "LAW",
+                "BRT",
+                "OIS",
+                "PRI",
+                "FMBH",
+                "TGTX",
+                "HUM",
+                "MET",
+                "CSR",
+                "ASGN",
+                "CECO",
+                "SPRO",
+                "WYNN",
+                "IVR",
+                "IQV",
+                "NUTX",
+                "CNXC",
+                "CJMB",
+                "CLNE",
+                "AMR"
+              ],
+              "n": 34,
+              "reported_increases": 17,
+              "increase_fraction": 0.5
+            },
+            "no_signal": {
+              "symbols": [
+                "FHTX",
+                "EPM",
+                "DAIO",
+                "VKTX",
+                "LQDT",
+                "HYFM",
+                "SND",
+                "MGNI",
+                "DXCM",
+                "BWB",
+                "MSA",
+                "ASB",
+                "LTBR",
+                "ATKR",
+                "HE"
+              ],
+              "n": 15,
+              "reported_increases": 8,
+              "increase_fraction": 0.5333333333333333
+            },
+            "difference_percentage_points": -3.3333333333333326,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "strict_quality_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        },
+        "matched_managers_sensitivity": {
+          "quarter_abnormal": {
+            "signal": {
+              "symbols": [
+                "RS",
+                "TTWO",
+                "DCGO",
+                "FHTX",
+                "FSBW",
+                "INGN",
+                "APYX",
+                "TIPT",
+                "LUNG",
+                "UFCS",
+                "AMZN",
+                "EPM",
+                "MUSA",
+                "PNTG",
+                "ANIK",
+                "AAOI",
+                "LAW",
+                "DAIO",
+                "VKTX",
+                "BRT",
+                "LQDT",
+                "OIS",
+                "HYFM",
+                "SND",
+                "PRI",
+                "MGNI",
+                "FMBH",
+                "DXCM",
+                "TGTX",
+                "HUM",
+                "BWB",
+                "MET",
+                "CSR",
+                "ASGN",
+                "CECO",
+                "SPRO",
+                "MSA",
+                "WYNN",
+                "IVR",
+                "IQV",
+                "NUTX",
+                "ASB",
+                "LTBR",
+                "CNXC",
+                "ATKR",
+                "CJMB",
+                "CLNE",
+                "HE",
+                "AMR"
+              ],
+              "n": 49,
+              "reported_increases": 31,
+              "increase_fraction": 0.6326530612244898
+            },
+            "no_signal": {
+              "symbols": [],
+              "n": 0,
+              "reported_increases": 0,
+              "increase_fraction": null
+            },
+            "difference_percentage_points": null,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          },
+          "quarter_repeated": {
+            "signal": {
+              "symbols": [
+                "RS",
+                "TTWO",
+                "DCGO",
+                "FSBW",
+                "INGN",
+                "APYX",
+                "TIPT",
+                "LUNG",
+                "UFCS",
+                "AMZN",
+                "MUSA",
+                "PNTG",
+                "ANIK",
+                "AAOI",
+                "LAW",
+                "BRT",
+                "OIS",
+                "PRI",
+                "FMBH",
+                "TGTX",
+                "HUM",
+                "MET",
+                "CSR",
+                "ASGN",
+                "CECO",
+                "SPRO",
+                "WYNN",
+                "IVR",
+                "IQV",
+                "NUTX",
+                "CNXC",
+                "CJMB",
+                "CLNE",
+                "AMR"
+              ],
+              "n": 34,
+              "reported_increases": 21,
+              "increase_fraction": 0.6176470588235294
+            },
+            "no_signal": {
+              "symbols": [
+                "FHTX",
+                "EPM",
+                "DAIO",
+                "VKTX",
+                "LQDT",
+                "HYFM",
+                "SND",
+                "MGNI",
+                "DXCM",
+                "BWB",
+                "MSA",
+                "ASB",
+                "LTBR",
+                "ATKR",
+                "HE"
+              ],
+              "n": 15,
+              "reported_increases": 10,
+              "increase_fraction": 0.6666666666666666
+            },
+            "difference_percentage_points": -4.901960784313719,
+            "unit": "symbol_quarter",
+            "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+          }
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "symbol": "RS",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LSH",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": null,
+      "quarter_repeated": null,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [
+        "quarter_abnormal_unknown",
+        "quarter_repeated_unknown"
+      ],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TTWO",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DCGO",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SMSI",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": null,
+      "quarter_repeated": null,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [
+        "quarter_abnormal_unknown",
+        "quarter_repeated_unknown"
+      ],
+      "market_reason": "unreviewed_adjustment_difference_or_missing_pairs",
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FHTX",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FSBW",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "INGN",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "APYX",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TIPT",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LUNG",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "UFCS",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AMZN",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "EPM",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MUSA",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "PNTG",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ANIK",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AAOI",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LAW",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DAIO",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "VKTX",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "BRT",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LQDT",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "OIS",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "GAME",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": null,
+      "quarter_repeated": null,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [
+        "quarter_abnormal_unknown",
+        "quarter_repeated_unknown"
+      ],
+      "market_reason": "unreviewed_adjustment_difference_or_missing_pairs",
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HYFM",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SND",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "PRI",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MGNI",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FMBH",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DXCM",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TGTX",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HUM",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "BWB",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "COMM",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": null,
+      "quarter_repeated": null,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [
+        "quarter_abnormal_unknown",
+        "quarter_repeated_unknown"
+      ],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MET",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CSR",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ASGN",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CECO",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SPRO",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MSA",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "WYNN",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "IVR",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "IQV",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "NUTX",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ASB",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "KAPA",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": null,
+      "quarter_repeated": null,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [
+        "quarter_abnormal_unknown",
+        "quarter_repeated_unknown"
+      ],
+      "market_reason": "unreviewed_adjustment_difference_or_missing_pairs",
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LTBR",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CNXC",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ATKR",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CJMB",
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": false,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CLNE",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HE",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": false,
+      "observed_reported_increase": false,
+      "matched_manager_increase": false,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AMR",
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false,
+      "quarter_abnormal": true,
+      "quarter_repeated": true,
+      "observed_reported_increase": true,
+      "matched_manager_increase": true,
+      "strict_quality_clear": false,
+      "remaining_reasons": [],
+      "market_reason": null,
+      "actual_institutional_net_buy": null
+    }
+  ],
+  "institutional_detection_accuracy": null,
+  "investment_returns": null,
+  "filing_lead_days": null,
+  "limitations": [
+    "exploratory_single_calendar_quarter_not_independent_holdout",
+    "unresolved_holdings_quality; observed_sum_not_complete_institutional_ownership",
+    "quarter_end_positions_do_not_identify_intraperiod_trade_direction_or_timing",
+    "selection_uses_reported_ratio_proxy_and_pre_cutoff_listing_proxy",
+    "market_original_snapshot_not_persisted_privately",
+    "no_multiple_quarter_or_market_sector_matched_validation"
+  ],
+  "source_hashes": {
+    "market": "e9d319f218b1c6f4ccbd85499e5413c864d6545bf88122fc1cb19e40faf91e6a",
+    "holdings": "97d19c20e668ae1bdc676bd69f2a9662fb8fe0858a1fee135e8a0ab269e9a9f9"
+  },
+  "validation": {
+    "diagnostics_followup": {
+      "batch_scored_results_unchanged": true,
+      "cjmb_score_unchanged": true,
+      "code_commit": "9af7d89231019e6c9b7ba0df4a84d87081703640",
+      "conclusion": "success",
+      "existing_five_score_unchanged": true,
+      "job_id": 102827670675,
+      "run_id": 34463842233,
+      "tests_passed": 129,
+      "url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34463842233"
+    },
+    "initial": {
+      "cjmb_score_unchanged": true,
+      "code_commit": "e06eb441b474798ed12140ff8fc12dee5161216d",
+      "conclusion": "success",
+      "condition_freeze_commit": "2cd014f0a9bf78a6081777cbb33fde18fc058c10",
+      "existing_five_score_unchanged": true,
+      "job_id": 102826268358,
+      "run_id": 34463405277,
+      "tests_passed": 129,
+      "url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34463405277"
+    }
+  }
+}

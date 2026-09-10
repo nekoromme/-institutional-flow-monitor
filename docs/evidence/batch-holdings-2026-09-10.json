@@ -1,0 +1,3489 @@
+{
+  "version": "batch-holdings-0.1",
+  "protocol_sha256": "ebb17d254790110735dd1de7952b88773f3139b462c3742dbaa2f853b66c3a92",
+  "periods": [
+    "2025-12-31",
+    "2026-03-31"
+  ],
+  "outcome_as_of": "2026-06-01",
+  "archives": [
+    {
+      "archive": "01dec2025-28feb2026_form13f.zip",
+      "sha256": "ff340fc5dc0bc60539b03c3a97fffa3fe4ab0d728d6507a4aadabb4a888fbe01",
+      "cache_sha256": "6a238f4b1366bdb5723223b7e6329adb836ff455960a42f39f3435e80210b53b",
+      "information_rows": 3473209
+    },
+    {
+      "archive": "01mar2026-31may2026_form13f.zip",
+      "sha256": "05f4da8f526cd471a387af45661a8cb3bbfaf345d3ec9c2cefd31349aa257e63",
+      "cache_sha256": "fed4553dfdba565800f2fa774587d3ea30bf58d38eac33f091a265549c5911ca",
+      "information_rows": 3822885
+    }
+  ],
+  "cjmb_review_sha256": "51e15ca502cc591a4ea10f49ed9e6dfcf08708fb897b12fbed9de49ce6c187c7",
+  "rows": [
+    {
+      "symbol": "RS",
+      "cusip": "759509102",
+      "previous": {
+        "reported_shares": 43297860,
+        "positive_managers": 610,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 19,
+            "potential_overlaps": 113,
+            "unresolved_references": 200,
+            "repeated_rows": 9,
+            "unreviewed_class_rows": 13,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 165
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "759509102",
+          "issuer": "RELIANCE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 41548496,
+        "positive_managers": 617,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 14,
+            "potential_overlaps": 121,
+            "unresolved_references": 203,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 11,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 154
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "759509102",
+          "issuer": "RELIANCE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -1749364,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -532647,
+      "matched_manager_increase": false,
+      "matched_managers": 518,
+      "previous_only_managers": 92,
+      "current_only_managers": 99,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LSH",
+      "cusip": "51216F109",
+      "previous": {
+        "reported_shares": 207218,
+        "positive_managers": 8,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 1,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 2
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "51216F109",
+          "issuer": "LAKESIDE HLDG LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 718763,
+        "positive_managers": 7,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 2,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 1
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "51216F109",
+          "issuer": "LAKESIDE HLDG LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 511545,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 106129,
+      "matched_manager_increase": true,
+      "matched_managers": 3,
+      "previous_only_managers": 5,
+      "current_only_managers": 4,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TTWO",
+      "cusip": "874054109",
+      "previous": {
+        "reported_shares": 168021427,
+        "positive_managers": 1040,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 26,
+            "potential_overlaps": 182,
+            "unresolved_references": 289,
+            "repeated_rows": 20,
+            "unreviewed_class_rows": 25,
+            "confidential_omission_managers": 5,
+            "confidential_status_unknown_managers": 303
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "874054109",
+          "issuer": "TAKE-TWO INTERACTIVE SOFTWAR",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 161529506,
+        "positive_managers": 999,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 27,
+            "potential_overlaps": 171,
+            "unresolved_references": 273,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 28,
+            "confidential_omission_managers": 5,
+            "confidential_status_unknown_managers": 279
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "874054109",
+          "issuer": "TAKE-TWO INTERACTIVE SOFTWAR",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -6491921,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -4778551,
+      "matched_manager_increase": false,
+      "matched_managers": 842,
+      "previous_only_managers": 198,
+      "current_only_managers": 157,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DCGO",
+      "cusip": "256086109",
+      "previous": {
+        "reported_shares": 41488529,
+        "positive_managers": 112,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 13,
+            "unresolved_references": 17,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 31
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "256086109",
+          "issuer": "DOCGO INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 40639761,
+        "positive_managers": 119,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 18,
+            "unresolved_references": 21,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 34
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "256086109",
+          "issuer": "DOCGO INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -848768,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 85012,
+      "matched_manager_increase": true,
+      "matched_managers": 91,
+      "previous_only_managers": 21,
+      "current_only_managers": 28,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SMSI",
+      "cusip": "832154405",
+      "previous": {
+        "reported_shares": 1860807,
+        "positive_managers": 25,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 8,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 4
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "832154405",
+          "issuer": "SMITH MICRO SOFTWARE INC",
+          "class": "COM SHS",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 1576514,
+        "positive_managers": 22,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 6,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 2
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "832154405",
+          "issuer": "SMITH MICRO SOFTWARE INC",
+          "class": "COM SHS",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -284293,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -72972,
+      "matched_manager_increase": false,
+      "matched_managers": 18,
+      "previous_only_managers": 7,
+      "current_only_managers": 4,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FHTX",
+      "cusip": "344174107",
+      "previous": {
+        "reported_shares": 29200824,
+        "positive_managers": 91,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 10,
+            "unresolved_references": 14,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 26
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "344174107",
+          "issuer": "FOGHORN THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 44440251,
+        "positive_managers": 105,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 13,
+            "unresolved_references": 16,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 25
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "344174107",
+          "issuer": "FOGHORN THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 15239427,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 2189133,
+      "matched_manager_increase": true,
+      "matched_managers": 81,
+      "previous_only_managers": 10,
+      "current_only_managers": 24,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FSBW",
+      "cusip": "30263Y104",
+      "previous": {
+        "reported_shares": 4995986,
+        "positive_managers": 98,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 15,
+            "unresolved_references": 17,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 22
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "30263Y104",
+          "issuer": "FS BANCORP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 4792223,
+        "positive_managers": 102,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 15,
+            "unresolved_references": 12,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 20
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "30263Y104",
+          "issuer": "FS BANCORP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -203763,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -362701,
+      "matched_manager_increase": false,
+      "matched_managers": 92,
+      "previous_only_managers": 6,
+      "current_only_managers": 10,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "INGN",
+      "cusip": "45780L104",
+      "previous": {
+        "reported_shares": 18478866,
+        "positive_managers": 130,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 13,
+            "unresolved_references": 27,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 34
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "45780L104",
+          "issuer": "INOGEN INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 18284817,
+        "positive_managers": 123,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 15,
+            "unresolved_references": 16,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 31
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "45780L104",
+          "issuer": "INOGEN INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -194049,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 471865,
+      "matched_manager_increase": true,
+      "matched_managers": 100,
+      "previous_only_managers": 30,
+      "current_only_managers": 23,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "APYX",
+      "cusip": "03837C106",
+      "previous": {
+        "reported_shares": 19102956,
+        "positive_managers": 58,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 4,
+            "unresolved_references": 19,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 12
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "03837C106",
+          "issuer": "APYX MEDICAL CORPORATION",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 20528902,
+        "positive_managers": 66,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 4,
+            "unresolved_references": 19,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 15
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "03837C106",
+          "issuer": "APYX MEDICAL CORPORATION",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 1425946,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 160121,
+      "matched_manager_increase": true,
+      "matched_managers": 50,
+      "previous_only_managers": 8,
+      "current_only_managers": 16,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TIPT",
+      "cusip": "88822Q103",
+      "previous": {
+        "reported_shares": 16402775,
+        "positive_managers": 134,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 20,
+            "unresolved_references": 37,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 28
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "88822Q103",
+          "issuer": "TIPTREE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 16646482,
+        "positive_managers": 138,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 14,
+            "unresolved_references": 23,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 31
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "88822Q103",
+          "issuer": "TIPTREE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 243707,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 164941,
+      "matched_manager_increase": true,
+      "matched_managers": 109,
+      "previous_only_managers": 25,
+      "current_only_managers": 29,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LUNG",
+      "cusip": "745848101",
+      "previous": {
+        "reported_shares": 32389287,
+        "positive_managers": 110,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 13,
+            "unresolved_references": 24,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 26
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "745848101",
+          "issuer": "PULMONX CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 31749557,
+        "positive_managers": 111,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 14,
+            "unresolved_references": 18,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 24
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "745848101",
+          "issuer": "PULMONX CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -639730,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 889754,
+      "matched_manager_increase": true,
+      "matched_managers": 90,
+      "previous_only_managers": 20,
+      "current_only_managers": 21,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "UFCS",
+      "cusip": "910340108",
+      "previous": {
+        "reported_shares": 16854476,
+        "positive_managers": 203,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 25,
+            "unresolved_references": 36,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 55
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "910340108",
+          "issuer": "UNITED FIRE GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 17146279,
+        "positive_managers": 214,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 23,
+            "unresolved_references": 23,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 50
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "910340108",
+          "issuer": "UNITED FIRE GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 291803,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 204618,
+      "matched_manager_increase": true,
+      "matched_managers": 182,
+      "previous_only_managers": 21,
+      "current_only_managers": 32,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AMZN",
+      "cusip": "023135106",
+      "previous": {
+        "reported_shares": 7042982204,
+        "positive_managers": 5912,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 92,
+            "potential_overlaps": 796,
+            "unresolved_references": 902,
+            "repeated_rows": 148,
+            "unreviewed_class_rows": 57,
+            "confidential_omission_managers": 22,
+            "confidential_status_unknown_managers": 1638
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "023135106",
+          "issuer": "AMAZON COM INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 6866007701,
+        "positive_managers": 5779,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 103,
+            "potential_overlaps": 834,
+            "unresolved_references": 949,
+            "repeated_rows": 80,
+            "unreviewed_class_rows": 77,
+            "confidential_omission_managers": 22,
+            "confidential_status_unknown_managers": 1572
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "023135106",
+          "issuer": "AMAZON COM INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -176974503,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -63669485,
+      "matched_manager_increase": false,
+      "matched_managers": 5494,
+      "previous_only_managers": 418,
+      "current_only_managers": 285,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "EPM",
+      "cusip": "30049A107",
+      "previous": {
+        "reported_shares": 18165567,
+        "positive_managers": 116,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 13,
+            "unresolved_references": 22,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 27
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "30049A107",
+          "issuer": "EVOLUTION PETE CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 17855810,
+        "positive_managers": 119,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 13,
+            "unresolved_references": 22,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 24
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "30049A107",
+          "issuer": "EVOLUTION PETE CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -309757,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 251650,
+      "matched_manager_increase": true,
+      "matched_managers": 93,
+      "previous_only_managers": 23,
+      "current_only_managers": 26,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MUSA",
+      "cusip": "626755102",
+      "previous": {
+        "reported_shares": 16348634,
+        "positive_managers": 509,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 12,
+            "potential_overlaps": 79,
+            "unresolved_references": 210,
+            "repeated_rows": 6,
+            "unreviewed_class_rows": 17,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 147
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "626755102",
+          "issuer": "MURPHY USA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 15511351,
+        "positive_managers": 520,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 12,
+            "potential_overlaps": 83,
+            "unresolved_references": 217,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 15,
+            "confidential_omission_managers": 3,
+            "confidential_status_unknown_managers": 134
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "626755102",
+          "issuer": "MURPHY USA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -837283,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -482137,
+      "matched_manager_increase": false,
+      "matched_managers": 424,
+      "previous_only_managers": 85,
+      "current_only_managers": 96,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "PNTG",
+      "cusip": "70805E109",
+      "previous": {
+        "reported_shares": 27237436,
+        "positive_managers": 177,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 24,
+            "unresolved_references": 42,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 41
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "70805E109",
+          "issuer": "PENNANT GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 33323449,
+        "positive_managers": 182,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 23,
+            "unresolved_references": 43,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 44
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "70805E109",
+          "issuer": "PENNANT GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 6086013,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 1407523,
+      "matched_manager_increase": true,
+      "matched_managers": 149,
+      "previous_only_managers": 28,
+      "current_only_managers": 33,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ANIK",
+      "cusip": "035255108",
+      "previous": {
+        "reported_shares": 12305570,
+        "positive_managers": 125,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 12,
+            "unresolved_references": 17,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 30
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "035255108",
+          "issuer": "ANIKA THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 12358332,
+        "positive_managers": 128,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 11,
+            "unresolved_references": 10,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 25
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "035255108",
+          "issuer": "ANIKA THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 52762,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 328717,
+      "matched_manager_increase": true,
+      "matched_managers": 105,
+      "previous_only_managers": 20,
+      "current_only_managers": 23,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AAOI",
+      "cusip": "03823U102",
+      "previous": {
+        "reported_shares": 47500048,
+        "positive_managers": 209,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 30,
+            "unresolved_references": 46,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 6,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 60
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "03823U102",
+          "issuer": "APPLIED OPTOELECTRONICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 52893491,
+        "positive_managers": 361,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 46,
+            "unresolved_references": 61,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 98
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "03823U102",
+          "issuer": "APPLIED OPTOELECTRONICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 5393443,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 311259,
+      "matched_manager_increase": true,
+      "matched_managers": 175,
+      "previous_only_managers": 34,
+      "current_only_managers": 186,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LAW",
+      "cusip": "126327105",
+      "previous": {
+        "reported_shares": 36337970,
+        "positive_managers": 124,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 21,
+            "unresolved_references": 32,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 33
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "126327105",
+          "issuer": "CS DISCO INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 35579713,
+        "positive_managers": 119,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 18,
+            "unresolved_references": 24,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 26
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "126327105",
+          "issuer": "CS DISCO INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -758257,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 711736,
+      "matched_manager_increase": true,
+      "matched_managers": 95,
+      "previous_only_managers": 29,
+      "current_only_managers": 24,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DAIO",
+      "cusip": "237690102",
+      "previous": {
+        "reported_shares": 2955197,
+        "positive_managers": 27,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 1,
+            "unresolved_references": 7,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 6
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "237690102",
+          "issuer": "DATA I O CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 2869951,
+        "positive_managers": 29,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 1,
+            "unresolved_references": 6,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 4
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "237690102",
+          "issuer": "DATA I O CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -85246,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -77761,
+      "matched_manager_increase": false,
+      "matched_managers": 22,
+      "previous_only_managers": 5,
+      "current_only_managers": 7,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "VKTX",
+      "cusip": "92686J106",
+      "previous": {
+        "reported_shares": 71827413,
+        "positive_managers": 405,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 12,
+            "potential_overlaps": 54,
+            "unresolved_references": 83,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 114
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "92686J106",
+          "issuer": "VIKING THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 73092896,
+        "positive_managers": 396,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 51,
+            "unresolved_references": 67,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 3,
+            "confidential_status_unknown_managers": 103
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "92686J106",
+          "issuer": "VIKING THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 1265483,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 2338634,
+      "matched_manager_increase": true,
+      "matched_managers": 327,
+      "previous_only_managers": 78,
+      "current_only_managers": 69,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "BRT",
+      "cusip": "055645303",
+      "previous": {
+        "reported_shares": 5283170,
+        "positive_managers": 85,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 7,
+            "unresolved_references": 15,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 14,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 17
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "055645303",
+          "issuer": "BRT APARTMENTS CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 5120507,
+        "positive_managers": 87,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 8,
+            "unresolved_references": 15,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 18,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 19
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "055645303",
+          "issuer": "BRT APARTMENTS CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -162663,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -12424,
+      "matched_manager_increase": false,
+      "matched_managers": 74,
+      "previous_only_managers": 11,
+      "current_only_managers": 13,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LQDT",
+      "cusip": "53635B107",
+      "previous": {
+        "reported_shares": 23737352,
+        "positive_managers": 174,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 30,
+            "unresolved_references": 38,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 43
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "53635B107",
+          "issuer": "LIQUIDITY SVCS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 24507697,
+        "positive_managers": 180,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 31,
+            "unresolved_references": 32,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 39
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "53635B107",
+          "issuer": "LIQUIDITY SVCS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 770345,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": -27710,
+      "matched_manager_increase": false,
+      "matched_managers": 149,
+      "previous_only_managers": 25,
+      "current_only_managers": 31,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "OIS",
+      "cusip": "678026105",
+      "previous": {
+        "reported_shares": 50999486,
+        "positive_managers": 174,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 35,
+            "unresolved_references": 39,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 42
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "678026105",
+          "issuer": "OIL STS INTL INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 53991092,
+        "positive_managers": 210,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 46,
+            "unresolved_references": 35,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 51
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "678026105",
+          "issuer": "OIL STS INTL INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2991606,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": -651388,
+      "matched_manager_increase": false,
+      "matched_managers": 150,
+      "previous_only_managers": 24,
+      "current_only_managers": 60,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "GAME",
+      "cusip": "36468G103",
+      "previous": {
+        "reported_shares": 14269671,
+        "positive_managers": 45,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 0,
+            "unresolved_references": 9,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 8
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "36468G103",
+          "issuer": "GAMESQUARE HLDGS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 14662274,
+        "positive_managers": 40,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 1,
+            "unresolved_references": 6,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 5
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "36468G103",
+          "issuer": "GAMESQUARE HLDGS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 392603,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 638673,
+      "matched_manager_increase": true,
+      "matched_managers": 32,
+      "previous_only_managers": 13,
+      "current_only_managers": 8,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HYFM",
+      "cusip": "44888K407",
+      "previous": {
+        "reported_shares": 384127,
+        "positive_managers": 21,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 4,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 3
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "44888K407",
+          "issuer": "HYDROFARM HLDGS GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 279360,
+        "positive_managers": 20,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 3,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 3
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "44888K407",
+          "issuer": "HYDROFARM HLDGS GROUP INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -104767,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 9894,
+      "matched_manager_increase": true,
+      "matched_managers": 15,
+      "previous_only_managers": 6,
+      "current_only_managers": 5,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SND",
+      "cusip": "83191H107",
+      "previous": {
+        "reported_shares": 13996521,
+        "positive_managers": 64,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 6,
+            "unresolved_references": 17,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 14
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "83191H107",
+          "issuer": "SMART SAND INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 17270709,
+        "positive_managers": 81,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 8,
+            "unresolved_references": 17,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 18
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "83191H107",
+          "issuer": "SMART SAND INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 3274188,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 2088153,
+      "matched_manager_increase": true,
+      "matched_managers": 54,
+      "previous_only_managers": 10,
+      "current_only_managers": 27,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "PRI",
+      "cusip": "74164M108",
+      "previous": {
+        "reported_shares": 30140865,
+        "positive_managers": 485,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 12,
+            "potential_overlaps": 89,
+            "unresolved_references": 266,
+            "repeated_rows": 5,
+            "unreviewed_class_rows": 9,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 132
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "74164M108",
+          "issuer": "PRIMERICA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 28731399,
+        "positive_managers": 478,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 11,
+            "potential_overlaps": 94,
+            "unresolved_references": 268,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 10,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 124
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "74164M108",
+          "issuer": "PRIMERICA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -1409466,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -620309,
+      "matched_manager_increase": false,
+      "matched_managers": 417,
+      "previous_only_managers": 68,
+      "current_only_managers": 61,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MGNI",
+      "cusip": "55955D100",
+      "previous": {
+        "reported_shares": 136640115,
+        "positive_managers": 296,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 32,
+            "unresolved_references": 156,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 78
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "55955D100",
+          "issuer": "MAGNITE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 130936616,
+        "positive_managers": 287,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 34,
+            "unresolved_references": 49,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 71
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "55955D100",
+          "issuer": "MAGNITE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -5703499,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -2111377,
+      "matched_manager_increase": false,
+      "matched_managers": 237,
+      "previous_only_managers": 59,
+      "current_only_managers": 50,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "FMBH",
+      "cusip": "320866106",
+      "previous": {
+        "reported_shares": 11518836,
+        "positive_managers": 154,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 23,
+            "unresolved_references": 37,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 38
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "320866106",
+          "issuer": "FIRST MID ILL BANCSHARES INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 13474273,
+        "positive_managers": 167,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 24,
+            "unresolved_references": 24,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 36
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "320866106",
+          "issuer": "FIRST MID BANCSHARES INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 1955437,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 407764,
+      "matched_manager_increase": true,
+      "matched_managers": 141,
+      "previous_only_managers": 13,
+      "current_only_managers": 26,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "DXCM",
+      "cusip": "252131107",
+      "previous": {
+        "reported_shares": 364519690,
+        "positive_managers": 892,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 18,
+            "potential_overlaps": 129,
+            "unresolved_references": 264,
+            "repeated_rows": 16,
+            "unreviewed_class_rows": 13,
+            "confidential_omission_managers": 5,
+            "confidential_status_unknown_managers": 244
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "252131107",
+          "issuer": "DEXCOM INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 362599533,
+        "positive_managers": 925,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 17,
+            "potential_overlaps": 162,
+            "unresolved_references": 288,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 12,
+            "confidential_omission_managers": 3,
+            "confidential_status_unknown_managers": 239
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "252131107",
+          "issuer": "DEXCOM INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -1920157,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 4792009,
+      "matched_manager_increase": true,
+      "matched_managers": 768,
+      "previous_only_managers": 124,
+      "current_only_managers": 157,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "TGTX",
+      "cusip": "88322Q108",
+      "previous": {
+        "reported_shares": 103027743,
+        "positive_managers": 339,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 41,
+            "unresolved_references": 69,
+            "repeated_rows": 4,
+            "unreviewed_class_rows": 6,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 95
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "88322Q108",
+          "issuer": "TG THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 105058937,
+        "positive_managers": 348,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 45,
+            "unresolved_references": 63,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 7,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 93
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "88322Q108",
+          "issuer": "TG THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2031194,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 2655315,
+      "matched_manager_increase": true,
+      "matched_managers": 282,
+      "previous_only_managers": 57,
+      "current_only_managers": 66,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HUM",
+      "cusip": "444859102",
+      "previous": {
+        "reported_shares": 119781519,
+        "positive_managers": 826,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 20,
+            "potential_overlaps": 160,
+            "unresolved_references": 250,
+            "repeated_rows": 13,
+            "unreviewed_class_rows": 19,
+            "confidential_omission_managers": 5,
+            "confidential_status_unknown_managers": 220
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "444859102",
+          "issuer": "HUMANA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 114292944,
+        "positive_managers": 753,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 15,
+            "potential_overlaps": 139,
+            "unresolved_references": 221,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 9,
+            "confidential_omission_managers": 3,
+            "confidential_status_unknown_managers": 198
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "444859102",
+          "issuer": "HUMANA INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -5488575,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -4825438,
+      "matched_manager_increase": false,
+      "matched_managers": 637,
+      "previous_only_managers": 189,
+      "current_only_managers": 116,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "BWB",
+      "cusip": "108621103",
+      "previous": {
+        "reported_shares": 17228870,
+        "positive_managers": 137,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 23,
+            "unresolved_references": 47,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 36
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "108621103",
+          "issuer": "BRIDGEWATER BANCSHARES INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 17436374,
+        "positive_managers": 138,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 23,
+            "unresolved_references": 41,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 34
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "108621103",
+          "issuer": "BRIDGEWATER BANCSHARES INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 207504,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 81106,
+      "matched_manager_increase": true,
+      "matched_managers": 122,
+      "previous_only_managers": 15,
+      "current_only_managers": 16,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "COMM",
+      "cusip": "20337X109",
+      "previous": {
+        "reported_shares": 194027114,
+        "positive_managers": 336,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 8,
+            "potential_overlaps": 51,
+            "unresolved_references": 61,
+            "repeated_rows": 4,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 98
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "20337X109",
+          "issuer": "COMMSCOPE HLDG CO INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 200960010,
+        "positive_managers": 319,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 8,
+            "potential_overlaps": 36,
+            "unresolved_references": 43,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 95
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "20337X109",
+          "issuer": "VISTANCE NETWORKS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 6932896,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 5179119,
+      "matched_manager_increase": true,
+      "matched_managers": 256,
+      "previous_only_managers": 80,
+      "current_only_managers": 63,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MET",
+      "cusip": "59156R108",
+      "previous": {
+        "reported_shares": 489403120,
+        "positive_managers": 1375,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 36,
+            "potential_overlaps": 218,
+            "unresolved_references": 422,
+            "repeated_rows": 19,
+            "unreviewed_class_rows": 28,
+            "confidential_omission_managers": 8,
+            "confidential_status_unknown_managers": 345
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "59156R108",
+          "issuer": "METLIFE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 479120435,
+        "positive_managers": 1311,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 34,
+            "potential_overlaps": 229,
+            "unresolved_references": 423,
+            "repeated_rows": 4,
+            "unreviewed_class_rows": 27,
+            "confidential_omission_managers": 5,
+            "confidential_status_unknown_managers": 319
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "59156R108",
+          "issuer": "METLIFE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -10282685,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -939367,
+      "matched_manager_increase": false,
+      "matched_managers": 1189,
+      "previous_only_managers": 186,
+      "current_only_managers": 122,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CSR",
+      "cusip": "15202L107",
+      "previous": {
+        "reported_shares": 15359347,
+        "positive_managers": 191,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 23,
+            "unresolved_references": 40,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 30,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 49
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "15202L107",
+          "issuer": "CENTERSPACE",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 15307423,
+        "positive_managers": 191,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 28,
+            "unresolved_references": 39,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 35,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 49
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "15202L107",
+          "issuer": "CENTERSPACE",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -51924,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 296929,
+      "matched_manager_increase": true,
+      "matched_managers": 160,
+      "previous_only_managers": 31,
+      "current_only_managers": 31,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ASGN",
+      "cusip": "00191U102",
+      "previous": {
+        "reported_shares": 40310850,
+        "positive_managers": 266,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 47,
+            "unresolved_references": 160,
+            "repeated_rows": 3,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 73
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "00191U102",
+          "issuer": "ASGN INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 42670208,
+        "positive_managers": 238,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 6,
+            "potential_overlaps": 43,
+            "unresolved_references": 149,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 68
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "00191U102",
+          "issuer": "ASGN INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2359358,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 4646406,
+      "matched_manager_increase": true,
+      "matched_managers": 193,
+      "previous_only_managers": 73,
+      "current_only_managers": 45,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CECO",
+      "cusip": "125141101",
+      "previous": {
+        "reported_shares": 29467606,
+        "positive_managers": 224,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 43,
+            "unresolved_references": 31,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 68
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "125141101",
+          "issuer": "CECO ENVIRONMENTAL CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 31243702,
+        "positive_managers": 258,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 46,
+            "unresolved_references": 41,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 11,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 74
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "125141101",
+          "issuer": "CECO ENVIRONMENTAL CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 1776096,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 3153535,
+      "matched_manager_increase": true,
+      "matched_managers": 195,
+      "previous_only_managers": 29,
+      "current_only_managers": 63,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "SPRO",
+      "cusip": "84833T103",
+      "previous": {
+        "reported_shares": 21119399,
+        "positive_managers": 56,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 1,
+            "unresolved_references": 16,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 10
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "84833T103",
+          "issuer": "SPERO THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 21065197,
+        "positive_managers": 50,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 1,
+            "unresolved_references": 5,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 8
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "84833T103",
+          "issuer": "SPERO THERAPEUTICS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -54202,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 486093,
+      "matched_manager_increase": true,
+      "matched_managers": 42,
+      "previous_only_managers": 14,
+      "current_only_managers": 8,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "MSA",
+      "cusip": "553498106",
+      "previous": {
+        "reported_shares": 34468283,
+        "positive_managers": 392,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 8,
+            "potential_overlaps": 61,
+            "unresolved_references": 187,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 14,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 107
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "553498106",
+          "issuer": "MSA SAFETY INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 33286401,
+        "positive_managers": 433,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 8,
+            "potential_overlaps": 65,
+            "unresolved_references": 171,
+            "repeated_rows": 3,
+            "unreviewed_class_rows": 13,
+            "confidential_omission_managers": 2,
+            "confidential_status_unknown_managers": 123
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "553498106",
+          "issuer": "MSA SAFETY INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -1181882,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -432143,
+      "matched_manager_increase": false,
+      "matched_managers": 359,
+      "previous_only_managers": 33,
+      "current_only_managers": 74,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "WYNN",
+      "cusip": "983134107",
+      "previous": {
+        "reported_shares": 65650675,
+        "positive_managers": 535,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 12,
+            "potential_overlaps": 72,
+            "unresolved_references": 209,
+            "repeated_rows": 12,
+            "unreviewed_class_rows": 13,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 146
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "983134107",
+          "issuer": "WYNN RESORTS LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 67730736,
+        "positive_managers": 491,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 9,
+            "potential_overlaps": 65,
+            "unresolved_references": 82,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 12,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 121
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "983134107",
+          "issuer": "WYNN RESORTS LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2080061,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 5586353,
+      "matched_manager_increase": true,
+      "matched_managers": 419,
+      "previous_only_managers": 116,
+      "current_only_managers": 72,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "IVR",
+      "cusip": "46131B704",
+      "previous": {
+        "reported_shares": 31047918,
+        "positive_managers": 135,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 13,
+            "unresolved_references": 39,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 34,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 34
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "46131B704",
+          "issuer": "INVESCO MORTGAGE CAPITAL INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 33973093,
+        "positive_managers": 137,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 15,
+            "unresolved_references": 41,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 36,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 37
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "46131B704",
+          "issuer": "INVESCO MORTGAGE CAPITAL INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2925175,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 1879481,
+      "matched_manager_increase": true,
+      "matched_managers": 104,
+      "previous_only_managers": 31,
+      "current_only_managers": 33,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "IQV",
+      "cusip": "46266C105",
+      "previous": {
+        "reported_shares": 160524933,
+        "positive_managers": 1095,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 25,
+            "potential_overlaps": 164,
+            "unresolved_references": 283,
+            "repeated_rows": 22,
+            "unreviewed_class_rows": 16,
+            "confidential_omission_managers": 2,
+            "confidential_status_unknown_managers": 312
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "46266C105",
+          "issuer": "IQVIA HLDGS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 155615297,
+        "positive_managers": 1022,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 27,
+            "potential_overlaps": 173,
+            "unresolved_references": 263,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 10,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 284
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "46266C105",
+          "issuer": "IQVIA HLDGS INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -4909636,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -897370,
+      "matched_manager_increase": false,
+      "matched_managers": 893,
+      "previous_only_managers": 202,
+      "current_only_managers": 129,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "NUTX",
+      "cusip": "67079U306",
+      "previous": {
+        "reported_shares": 2587044,
+        "positive_managers": 115,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 18,
+            "unresolved_references": 16,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 26
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "67079U306",
+          "issuer": "NUTEX HEALTH INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 2771932,
+        "positive_managers": 127,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 13,
+            "unresolved_references": 16,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 26
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "67079U306",
+          "issuer": "NUTEX HEALTH INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 184888,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": -26641,
+      "matched_manager_increase": false,
+      "matched_managers": 87,
+      "previous_only_managers": 28,
+      "current_only_managers": 40,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ASB",
+      "cusip": "045487105",
+      "previous": {
+        "reported_shares": 143242086,
+        "positive_managers": 325,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 9,
+            "potential_overlaps": 46,
+            "unresolved_references": 68,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 8,
+            "confidential_omission_managers": 2,
+            "confidential_status_unknown_managers": 86
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "045487105",
+          "issuer": "ASSOCIATED BANC CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 145626829,
+        "positive_managers": 355,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 8,
+            "potential_overlaps": 58,
+            "unresolved_references": 75,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 2,
+            "confidential_status_unknown_managers": 93
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "045487105",
+          "issuer": "ASSOCIATED BANC-CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2384743,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 1959789,
+      "matched_manager_increase": true,
+      "matched_managers": 279,
+      "previous_only_managers": 46,
+      "current_only_managers": 76,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "KAPA",
+      "cusip": "48301N104",
+      "previous": {
+        "reported_shares": 855718,
+        "positive_managers": 14,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 2,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 4
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "48301N104",
+          "issuer": "KAIROS PHARMA LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 601061,
+        "positive_managers": 11,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 0,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 3
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "48301N104",
+          "issuer": "KAIROS PHARMA LTD",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -254657,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -16017,
+      "matched_manager_increase": false,
+      "matched_managers": 7,
+      "previous_only_managers": 7,
+      "current_only_managers": 4,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "LTBR",
+      "cusip": "53224K302",
+      "previous": {
+        "reported_shares": 13272782,
+        "positive_managers": 112,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 5,
+            "unresolved_references": 16,
+            "repeated_rows": 1,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 27
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "53224K302",
+          "issuer": "LIGHTBRIDGE CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 14320711,
+        "positive_managers": 132,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 1,
+            "potential_overlaps": 11,
+            "unresolved_references": 28,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 31
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "53224K302",
+          "issuer": "LIGHTBRIDGE CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 1047929,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 1589614,
+      "matched_manager_increase": true,
+      "matched_managers": 99,
+      "previous_only_managers": 13,
+      "current_only_managers": 33,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CNXC",
+      "cusip": "20602D101",
+      "previous": {
+        "reported_shares": 62109433,
+        "positive_managers": 325,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 6,
+            "potential_overlaps": 63,
+            "unresolved_references": 65,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 87
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "20602D101",
+          "issuer": "CONCENTRIX CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 67524649,
+        "positive_managers": 286,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 59,
+            "unresolved_references": 65,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 4,
+            "confidential_omission_managers": 1,
+            "confidential_status_unknown_managers": 63
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "20602D101",
+          "issuer": "CONCENTRIX CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 5415216,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 6639235,
+      "matched_manager_increase": true,
+      "matched_managers": 233,
+      "previous_only_managers": 92,
+      "current_only_managers": 53,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "ATKR",
+      "cusip": "047649108",
+      "previous": {
+        "reported_shares": 31765254,
+        "positive_managers": 298,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 5,
+            "potential_overlaps": 50,
+            "unresolved_references": 65,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 74
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "047649108",
+          "issuer": "ATKORE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 32324043,
+        "positive_managers": 296,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 49,
+            "unresolved_references": 59,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 2,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 75
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "047649108",
+          "issuer": "ATKORE INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 558789,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 420932,
+      "matched_manager_increase": true,
+      "matched_managers": 243,
+      "previous_only_managers": 55,
+      "current_only_managers": 53,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CJMB",
+      "cusip": "131100109",
+      "previous": {
+        "reported_shares": 732311,
+        "positive_managers": 12,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 1,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 2
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "131100109",
+          "issuer": "CALLAN JMB INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": true
+      },
+      "current": {
+        "reported_shares": 600892,
+        "positive_managers": 12,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 0,
+            "potential_overlaps": 0,
+            "unresolved_references": 0,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 0,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 2
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "131100109",
+          "issuer": "CALLAN JMB INC",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": true
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -131419,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": 24101,
+      "matched_manager_increase": true,
+      "matched_managers": 5,
+      "previous_only_managers": 7,
+      "current_only_managers": 7,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "CLNE",
+      "cusip": "184499101",
+      "previous": {
+        "reported_shares": 103276912,
+        "positive_managers": 195,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 4,
+            "potential_overlaps": 21,
+            "unresolved_references": 37,
+            "repeated_rows": 2,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 48
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "184499101",
+          "issuer": "CLEAN ENERGY FUELS CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 105995994,
+        "positive_managers": 211,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 3,
+            "potential_overlaps": 28,
+            "unresolved_references": 37,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 1,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 46
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "184499101",
+          "issuer": "CLEAN ENERGY FUELS CORP",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 2719082,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": -1330047,
+      "matched_manager_increase": false,
+      "matched_managers": 172,
+      "previous_only_managers": 23,
+      "current_only_managers": 39,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "HE",
+      "cusip": "419870100",
+      "previous": {
+        "reported_shares": 142104522,
+        "positive_managers": 307,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 10,
+            "potential_overlaps": 32,
+            "unresolved_references": 160,
+            "repeated_rows": 3,
+            "unreviewed_class_rows": 3,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 71
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "419870100",
+          "issuer": "HAWAIIAN ELEC INDUSTRIES",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 138115867,
+        "positive_managers": 324,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 7,
+            "potential_overlaps": 36,
+            "unresolved_references": 168,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 8,
+            "confidential_omission_managers": 4,
+            "confidential_status_unknown_managers": 78
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "419870100",
+          "issuer": "HAWAIIAN ELEC INDS INC MTN B",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": -3988655,
+      "observed_reported_increase": false,
+      "matched_manager_share_change": -1853663,
+      "matched_manager_increase": false,
+      "matched_managers": 253,
+      "previous_only_managers": 54,
+      "current_only_managers": 71,
+      "actual_institutional_net_buy": null
+    },
+    {
+      "symbol": "AMR",
+      "cusip": "020764106",
+      "previous": {
+        "reported_shares": 11197491,
+        "positive_managers": 263,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 6,
+            "potential_overlaps": 30,
+            "unresolved_references": 60,
+            "repeated_rows": 4,
+            "unreviewed_class_rows": 5,
+            "confidential_omission_managers": 0,
+            "confidential_status_unknown_managers": 73
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "020764106",
+          "issuer": "ALPHA METALLURGICAL RESOUR I",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "current": {
+        "reported_shares": 11257320,
+        "positive_managers": 254,
+        "quality": {
+          "counts": {
+            "unresolved_filings": 2,
+            "potential_overlaps": 30,
+            "unresolved_references": 46,
+            "repeated_rows": 0,
+            "unreviewed_class_rows": 8,
+            "confidential_omission_managers": 2,
+            "confidential_status_unknown_managers": 65
+          },
+          "no_detected_aggregation_issues": false,
+          "complete_institutional_coverage_confirmed": false
+        },
+        "official_security_status": "matched",
+        "official_security": {
+          "cusip": "020764106",
+          "issuer": "ALPHA METALLURGICAL RESOUR I",
+          "class": "COM",
+          "status": ""
+        },
+        "separate_original_review_used": false
+      },
+      "security_lists_match": true,
+      "strict_quality_clear": false,
+      "observed_reported_share_change": 59829,
+      "observed_reported_increase": true,
+      "matched_manager_share_change": 225599,
+      "matched_manager_increase": true,
+      "matched_managers": 206,
+      "previous_only_managers": 57,
+      "current_only_managers": 48,
+      "actual_institutional_net_buy": null
+    }
+  ],
+  "summary": {
+    "symbols": 54,
+    "information_rows_scanned": 7296094,
+    "official_security_unresolved": 0,
+    "strict_quality_clear": 0,
+    "network_requests": 0
+  }
+}
