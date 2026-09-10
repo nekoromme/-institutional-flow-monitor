@@ -1,0 +1,73 @@
+{
+  "reviewed_on": "2026-09-10",
+  "as_of": "2026-01-01",
+  "ordinal": 39,
+  "issuer": "Leslies Inc",
+  "issuer_cik": "0001821806",
+  "candidate_cusip": "527064109",
+  "status": "corporate_action_evidence_found_mapping_not_applied",
+  "old_identifier_source": {
+    "source": {
+      "cik": "0001821806",
+      "form": "SCHEDULE 13G/A",
+      "filed": "2025-08-13",
+      "filename": "edgar/data/1821806/0000936753-25-000059.txt"
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/1821806/0000936753-25-000059.txt",
+    "sha256": "856a442a54568776864ce95b95417cc10b176d7efbd7a3ce71eaf8b9d5094a07",
+    "bytes": 7099,
+    "review": {
+      "kind": "ownership_identity",
+      "status": "matched",
+      "issuer_cik": "0001821806",
+      "issuer_cusip": "527064109",
+      "issuer_name": "Leslie's Inc",
+      "security_class": "Common Stock SH",
+      "accepted_at_new_york": "20250813161148",
+      "uses_reporting_person_as_issuer": false
+    }
+  },
+  "new_identifier_source": {
+    "kind": "ownership_identity",
+    "status": "identity_conflict",
+    "issuer_cik": "0001821806",
+    "issuer_cusip": "527064208",
+    "issuer_name": "Leslie's Inc",
+    "security_class": "Common Stock SH NEW",
+    "accepted_at_new_york": "20251007105357",
+    "uses_reporting_person_as_issuer": false,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1821806/0000936753-25-000070.txt",
+    "source_sha256": "8db9e3dc818a17a993d0bc3a6a8817d7d2fb07695c94ec133b10de370fe29792",
+    "form": "SCHEDULE 13G/A",
+    "filed": "2025-10-07"
+  },
+  "corporate_action_source": {
+    "source": {
+      "cik": "0001821806",
+      "name": "Leslie's, Inc.",
+      "form": "10-K",
+      "filed": "2025-12-18",
+      "filename": "edgar/data/1821806/0001193125-25-323811.txt"
+    },
+    "url": "https://www.sec.gov/Archives/edgar/data/1821806/0001193125-25-323811.txt",
+    "sha256": "2f74345ea595fb59698a41503861099e2e74c1a0e198e078517f9f808e9029a8",
+    "accepted_at_new_york": "20251218090048",
+    "reviewed_facts": {
+      "reverse_split_new_shares": 1,
+      "reverse_split_old_shares": 20,
+      "effective_date": "2025-09-26",
+      "split_adjusted_trading_date": "2025-09-29",
+      "new_cusip": "527064208",
+      "ticker_in_filing": "LESL"
+    }
+  },
+  "applied_to_holdings": false,
+  "applied_to_volume_model": false,
+  "eligible_for_backtest": false,
+  "remaining_checks": [
+    "過去の保有報告が併合前・併合後のどちらの株数単位で記載されているか",
+    "旧番号と新番号の有効期間および対象一覧への対応",
+    "基準日時点の上場状況と機関保有率"
+  ],
+  "interpretation": "旧番号と新番号の不一致に関係する株式併合の原資料を確認した。保有株数の単位を確認するまでは、旧番号の保有を新番号へ自動合算しない。"
+}
