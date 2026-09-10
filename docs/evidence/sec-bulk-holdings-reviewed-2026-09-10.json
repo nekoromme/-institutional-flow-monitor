@@ -3923,6 +3923,13 @@
       ],
       "identical_calamos_position_rows": 256,
       "economic_overlap_confirmed": false
-    }
+    },
+    "code_commit": "255891b0a278adc9e45b94d98bba6a810bf5d604",
+    "github_run_id": 34437337335,
+    "github_run_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34437337335",
+    "github_conclusion": "success",
+    "github_tests_passed": 54,
+    "original_filing_verification_execution": "workspace",
+    "github_workflow_executes_original_filing_verification": false
   }
 }
