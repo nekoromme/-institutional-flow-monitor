@@ -1,0 +1,590 @@
+{
+  "exploration": {
+    "shared": {
+      "n": 25,
+      "priced": 25,
+      "mean_net_return": 0.023586657920920975,
+      "win_fraction": 0.64,
+      "trades": [
+        {
+          "symbol": "AAOI",
+          "signal_date": "2026-01-30",
+          "net_return": 0.05304104651487229
+        },
+        {
+          "symbol": "AAOI",
+          "signal_date": "2026-03-02",
+          "net_return": 0.022959813580802235
+        },
+        {
+          "symbol": "ANIK",
+          "signal_date": "2026-02-05",
+          "net_return": 0.017017552273163705
+        },
+        {
+          "symbol": "ANIK",
+          "signal_date": "2026-02-27",
+          "net_return": -0.016074021075444977
+        },
+        {
+          "symbol": "APYX",
+          "signal_date": "2026-01-14",
+          "net_return": 0.07461346633416466
+        },
+        {
+          "symbol": "APYX",
+          "signal_date": "2026-02-03",
+          "net_return": -0.11754550275893971
+        },
+        {
+          "symbol": "APYX",
+          "signal_date": "2026-03-11",
+          "net_return": -0.01511488454436416
+        },
+        {
+          "symbol": "ASGN",
+          "signal_date": "2026-02-05",
+          "net_return": -0.14952183198972713
+        },
+        {
+          "symbol": "ASGN",
+          "signal_date": "2026-03-23",
+          "net_return": 0.02530123289906072
+        },
+        {
+          "symbol": "CJMB",
+          "signal_date": "2026-01-12",
+          "net_return": 0.44105254106114056
+        },
+        {
+          "symbol": "CLNE",
+          "signal_date": "2026-02-05",
+          "net_return": 0.022434072299565955
+        },
+        {
+          "symbol": "DCGO",
+          "signal_date": "2026-03-17",
+          "net_return": -0.1974841741799347
+        },
+        {
+          "symbol": "FMBH",
+          "signal_date": "2026-01-21",
+          "net_return": 0.016373539834624085
+        },
+        {
+          "symbol": "FMBH",
+          "signal_date": "2026-03-23",
+          "net_return": 0.05637778213641953
+        },
+        {
+          "symbol": "INGN",
+          "signal_date": "2026-02-11",
+          "net_return": 0.02855221496819782
+        },
+        {
+          "symbol": "IVR",
+          "signal_date": "2026-01-12",
+          "net_return": 0.00956270740471643
+        },
+        {
+          "symbol": "KAPA",
+          "signal_date": "2026-02-27",
+          "net_return": 0.04878347039581454
+        },
+        {
+          "symbol": "LUNG",
+          "signal_date": "2026-03-06",
+          "net_return": -0.2988513173025983
+        },
+        {
+          "symbol": "OIS",
+          "signal_date": "2026-01-29",
+          "net_return": 0.07447115227426071
+        },
+        {
+          "symbol": "OIS",
+          "signal_date": "2026-02-19",
+          "net_return": 0.22751043184118958
+        },
+        {
+          "symbol": "PNTG",
+          "signal_date": "2026-02-27",
+          "net_return": -0.01219559010713478
+        },
+        {
+          "symbol": "SMSI",
+          "signal_date": "2026-03-05",
+          "net_return": 0.20238143380288043
+        },
+        {
+          "symbol": "SPRO",
+          "signal_date": "2026-02-05",
+          "net_return": -0.009294944457039156
+        },
+        {
+          "symbol": "TGTX",
+          "signal_date": "2026-03-20",
+          "net_return": 0.10889745533618833
+        },
+        {
+          "symbol": "UFCS",
+          "signal_date": "2026-02-12",
+          "net_return": -0.02358119851885432
+        }
+      ]
+    },
+    "old_only": {
+      "n": 29,
+      "priced": 29,
+      "mean_net_return": -0.006228851072908741,
+      "win_fraction": 0.41379310344827586,
+      "trades": [
+        {
+          "symbol": "AAOI",
+          "signal_date": "2026-03-17",
+          "net_return": -0.1171795181649401
+        },
+        {
+          "symbol": "AMR",
+          "signal_date": "2026-02-27",
+          "net_return": 0.1452214336111688
+        },
+        {
+          "symbol": "AMZN",
+          "signal_date": "2026-02-06",
+          "net_return": -0.022605113287509027
+        },
+        {
+          "symbol": "BRT",
+          "signal_date": "2026-03-20",
+          "net_return": -0.0035370756781513135
+        },
+        {
+          "symbol": "CECO",
+          "signal_date": "2026-02-25",
+          "net_return": -0.15284264907763145
+        },
+        {
+          "symbol": "CLNE",
+          "signal_date": "2026-03-20",
+          "net_return": 0.15851217027852926
+        },
+        {
+          "symbol": "CNXC",
+          "signal_date": "2026-01-14",
+          "net_return": -0.07045521175291092
+        },
+        {
+          "symbol": "CNXC",
+          "signal_date": "2026-02-13",
+          "net_return": 0.056535632843025985
+        },
+        {
+          "symbol": "CNXC",
+          "signal_date": "2026-03-24",
+          "net_return": 0.04871515623711553
+        },
+        {
+          "symbol": "CSR",
+          "signal_date": "2026-03-24",
+          "net_return": 0.03876237549837991
+        },
+        {
+          "symbol": "FSBW",
+          "signal_date": "2026-03-20",
+          "net_return": 0.041954482994739584
+        },
+        {
+          "symbol": "HUM",
+          "signal_date": "2026-01-28",
+          "net_return": -0.10942906040506728
+        },
+        {
+          "symbol": "INGN",
+          "signal_date": "2026-01-12",
+          "net_return": -0.05928997730393126
+        },
+        {
+          "symbol": "IQV",
+          "signal_date": "2026-02-04",
+          "net_return": -0.15691759195167965
+        },
+        {
+          "symbol": "LAW",
+          "signal_date": "2026-02-06",
+          "net_return": -0.23479385075395054
+        },
+        {
+          "symbol": "LAW",
+          "signal_date": "2026-02-26",
+          "net_return": 0.5026718916993234
+        },
+        {
+          "symbol": "MET",
+          "signal_date": "2026-02-05",
+          "net_return": 0.0377833107105654
+        },
+        {
+          "symbol": "MET",
+          "signal_date": "2026-02-27",
+          "net_return": -0.055037061530886944
+        },
+        {
+          "symbol": "MUSA",
+          "signal_date": "2026-02-05",
+          "net_return": -0.01331134886542773
+        },
+        {
+          "symbol": "NUTX",
+          "signal_date": "2026-02-04",
+          "net_return": -0.16245639860864536
+        },
+        {
+          "symbol": "NUTX",
+          "signal_date": "2026-03-06",
+          "net_return": -0.015059403770884217
+        },
+        {
+          "symbol": "PNTG",
+          "signal_date": "2026-01-27",
+          "net_return": 0.12260605317307838
+        },
+        {
+          "symbol": "PRI",
+          "signal_date": "2026-02-12",
+          "net_return": 0.012008271222504918
+        },
+        {
+          "symbol": "RS",
+          "signal_date": "2026-02-18",
+          "net_return": -0.061571372772887045
+        },
+        {
+          "symbol": "TGTX",
+          "signal_date": "2026-01-09",
+          "net_return": 0.07831093407421053
+        },
+        {
+          "symbol": "TIPT",
+          "signal_date": "2026-03-11",
+          "net_return": 0.04445019526655081
+        },
+        {
+          "symbol": "TTWO",
+          "signal_date": "2026-02-02",
+          "net_return": -0.12705644252117454
+        },
+        {
+          "symbol": "WYNN",
+          "signal_date": "2026-02-13",
+          "net_return": -0.09069626490360361
+        },
+        {
+          "symbol": "WYNN",
+          "signal_date": "2026-03-04",
+          "net_return": -0.01593024737426496
+        }
+      ]
+    },
+    "new_only": {
+      "n": 2,
+      "priced": 2,
+      "mean_net_return": -0.011301760972547203,
+      "win_fraction": 0.5,
+      "trades": [
+        {
+          "symbol": "LAW",
+          "signal_date": "2026-03-03",
+          "net_return": 0.032471761772040475
+        },
+        {
+          "symbol": "TGTX",
+          "signal_date": "2026-01-15",
+          "net_return": -0.05507528371713488
+        }
+      ]
+    }
+  },
+  "validation": {
+    "shared": {
+      "n": 23,
+      "priced": 23,
+      "mean_net_return": 0.04367116635976514,
+      "win_fraction": 0.6086956521739131,
+      "trades": [
+        {
+          "symbol": "ASB",
+          "signal_date": "2026-06-18",
+          "net_return": 0.04228066198141023
+        },
+        {
+          "symbol": "ATKR",
+          "signal_date": "2026-05-22",
+          "net_return": -0.07336571362291933
+        },
+        {
+          "symbol": "BWB",
+          "signal_date": "2026-06-08",
+          "net_return": 0.04404799090569278
+        },
+        {
+          "symbol": "BWB",
+          "signal_date": "2026-06-24",
+          "net_return": 0.038845617234446905
+        },
+        {
+          "symbol": "CECO",
+          "signal_date": "2026-05-04",
+          "net_return": -0.00020502752731110796
+        },
+        {
+          "symbol": "CECO",
+          "signal_date": "2026-05-28",
+          "net_return": 0.1596851078300383
+        },
+        {
+          "symbol": "CNXC",
+          "signal_date": "2026-06-29",
+          "net_return": 0.17145074376994573
+        },
+        {
+          "symbol": "DAIO",
+          "signal_date": "2026-05-15",
+          "net_return": 0.3082571349404266
+        },
+        {
+          "symbol": "DXCM",
+          "signal_date": "2026-05-15",
+          "net_return": 0.20564142322620382
+        },
+        {
+          "symbol": "FHTX",
+          "signal_date": "2026-06-29",
+          "net_return": 0.1083161661064731
+        },
+        {
+          "symbol": "LUNG",
+          "signal_date": "2026-05-01",
+          "net_return": -0.056965794469051256
+        },
+        {
+          "symbol": "MGNI",
+          "signal_date": "2026-05-07",
+          "net_return": -0.04481699680928675
+        },
+        {
+          "symbol": "MGNI",
+          "signal_date": "2026-06-15",
+          "net_return": 0.12613814301455673
+        },
+        {
+          "symbol": "MSA",
+          "signal_date": "2026-05-06",
+          "net_return": -0.04364692682651394
+        },
+        {
+          "symbol": "SMSI",
+          "signal_date": "2026-06-11",
+          "net_return": -0.08925568814121032
+        },
+        {
+          "symbol": "SND",
+          "signal_date": "2026-06-30",
+          "net_return": -0.030909699698649096
+        },
+        {
+          "symbol": "SPRO",
+          "signal_date": "2026-05-15",
+          "net_return": 0.016565085481242914
+        },
+        {
+          "symbol": "TGTX",
+          "signal_date": "2026-05-07",
+          "net_return": -0.09241540500213896
+        },
+        {
+          "symbol": "TIPT",
+          "signal_date": "2026-06-01",
+          "net_return": -0.0021623963940231583
+        },
+        {
+          "symbol": "TIPT",
+          "signal_date": "2026-06-26",
+          "net_return": 0.010690774470689002
+        },
+        {
+          "symbol": "TTWO",
+          "signal_date": "2026-06-22",
+          "net_return": 0.06663449908163765
+        },
+        {
+          "symbol": "UFCS",
+          "signal_date": "2026-06-23",
+          "net_return": 0.02369397335880441
+        },
+        {
+          "symbol": "VKTX",
+          "signal_date": "2026-06-23",
+          "net_return": 0.1159331533641339
+        }
+      ]
+    },
+    "old_only": {
+      "n": 21,
+      "priced": 21,
+      "mean_net_return": 0.02315139326105754,
+      "win_fraction": 0.47619047619047616,
+      "trades": [
+        {
+          "symbol": "AAOI",
+          "signal_date": "2026-06-09",
+          "net_return": -0.1487456630558186
+        },
+        {
+          "symbol": "AMZN",
+          "signal_date": "2026-06-25",
+          "net_return": 0.07443216083380366
+        },
+        {
+          "symbol": "APYX",
+          "signal_date": "2026-05-04",
+          "net_return": 0.32782698426347956
+        },
+        {
+          "symbol": "ATKR",
+          "signal_date": "2026-05-01",
+          "net_return": -0.009787269732676185
+        },
+        {
+          "symbol": "CLNE",
+          "signal_date": "2026-06-24",
+          "net_return": 0.25839812234120574
+        },
+        {
+          "symbol": "CNXC",
+          "signal_date": "2026-05-01",
+          "net_return": -0.02962055089548843
+        },
+        {
+          "symbol": "CSR",
+          "signal_date": "2026-06-08",
+          "net_return": -0.024531492405783673
+        },
+        {
+          "symbol": "FMBH",
+          "signal_date": "2026-06-18",
+          "net_return": 0.05576333914450693
+        },
+        {
+          "symbol": "HYFM",
+          "signal_date": "2026-06-26",
+          "net_return": -0.0320890381051262
+        },
+        {
+          "symbol": "INGN",
+          "signal_date": "2026-05-11",
+          "net_return": -0.01693963289973266
+        },
+        {
+          "symbol": "IVR",
+          "signal_date": "2026-06-22",
+          "net_return": 0.006567452336899704
+        },
+        {
+          "symbol": "KAPA",
+          "signal_date": "2026-05-13",
+          "net_return": 0.1133154375208476
+        },
+        {
+          "symbol": "KAPA",
+          "signal_date": "2026-06-26",
+          "net_return": -0.002456766096627594
+        },
+        {
+          "symbol": "LQDT",
+          "signal_date": "2026-05-11",
+          "net_return": 0.035855775408639934
+        },
+        {
+          "symbol": "LQDT",
+          "signal_date": "2026-06-22",
+          "net_return": 0.007731669494705606
+        },
+        {
+          "symbol": "LTBR",
+          "signal_date": "2026-06-05",
+          "net_return": -0.022667910677403258
+        },
+        {
+          "symbol": "MET",
+          "signal_date": "2026-06-18",
+          "net_return": 0.04261355183800042
+        },
+        {
+          "symbol": "MSA",
+          "signal_date": "2026-05-29",
+          "net_return": -0.02903543704059952
+        },
+        {
+          "symbol": "PRI",
+          "signal_date": "2026-06-22",
+          "net_return": 0.068013702926492
+        },
+        {
+          "symbol": "SPRO",
+          "signal_date": "2026-06-17",
+          "net_return": -0.1278775173619734
+        },
+        {
+          "symbol": "TTWO",
+          "signal_date": "2026-05-22",
+          "net_return": -0.06058765935514332
+        }
+      ]
+    },
+    "new_only": {
+      "n": 7,
+      "priced": 7,
+      "mean_net_return": 0.08590606072471978,
+      "win_fraction": 0.7142857142857143,
+      "trades": [
+        {
+          "symbol": "AMZN",
+          "signal_date": "2026-06-29",
+          "net_return": 0.037521111903199955
+        },
+        {
+          "symbol": "APYX",
+          "signal_date": "2026-05-07",
+          "net_return": 0.24303438933530375
+        },
+        {
+          "symbol": "CLNE",
+          "signal_date": "2026-06-26",
+          "net_return": 0.24779942036799896
+        },
+        {
+          "symbol": "LQDT",
+          "signal_date": "2026-06-26",
+          "net_return": -0.017121829572410263
+        },
+        {
+          "symbol": "LTBR",
+          "signal_date": "2026-06-18",
+          "net_return": -0.08310834484037832
+        },
+        {
+          "symbol": "MET",
+          "signal_date": "2026-06-26",
+          "net_return": 0.08188417455659569
+        },
+        {
+          "symbol": "PRI",
+          "signal_date": "2026-06-26",
+          "net_return": 0.09133350332272872
+        }
+      ]
+    }
+  },
+  "interpretation": "descriptive_trade_set_change_not_causal_effect_or_portfolio_return"
+}
