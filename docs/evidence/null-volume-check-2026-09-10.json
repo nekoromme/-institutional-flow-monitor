@@ -1,0 +1,50 @@
+{
+  "version": "null-volume-check-0.1",
+  "seed": 614329,
+  "independent_simulated_paths": 10000,
+  "assumption": "iid_continuous_positive_volumes_no_institutional_component_no_short_sessions",
+  "exact_marginal_abnormal_probability_under_assumption": 0.06557377049180328,
+  "simulated_abnormal_day_fraction": 0.06594918032786885,
+  "horizons_sessions": {
+    "20": {
+      "any_abnormal": {
+        "paths": 7524,
+        "fraction": 0.7524,
+        "simulation_standard_error_percentage_points": 0.4316181645853196
+      },
+      "any_repeated": {
+        "paths": 2348,
+        "fraction": 0.2348,
+        "simulation_standard_error_percentage_points": 0.42387375479026773
+      }
+    },
+    "40": {
+      "any_abnormal": {
+        "paths": 9455,
+        "fraction": 0.9455,
+        "simulation_standard_error_percentage_points": 0.22700165197636776
+      },
+      "any_repeated": {
+        "paths": 4212,
+        "fraction": 0.4212,
+        "simulation_standard_error_percentage_points": 0.49375151645336746
+      }
+    },
+    "61": {
+      "any_abnormal": {
+        "paths": 9936,
+        "fraction": 0.9936,
+        "simulation_standard_error_percentage_points": 0.07974358908401327
+      },
+      "any_repeated": {
+        "paths": 5818,
+        "fraction": 0.5818,
+        "simulation_standard_error_percentage_points": 0.4932633779229916
+      }
+    }
+  },
+  "production_threshold_changed": false,
+  "real_market_false_positive_rate": null,
+  "script_sha256": "cc707c26512aacbf4aea081e505782bce2df7d5d1f306dda56f402c6e6d189a6",
+  "classifier_sha256": "8b60ca29898becb36d2bac58e7032ed87cca5243929278da811790f662fe2145"
+}
