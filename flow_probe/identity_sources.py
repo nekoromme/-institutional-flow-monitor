@@ -16,7 +16,7 @@ from .cohort import AS_OF
 from .http_client import SafeHttp, ProbeError
 from .identity_reference import HTML_REMOVAL_REVIEWS
 
-VERSION = 'identity-sources-0.2'
+VERSION = 'identity-sources-0.3'
 
 
 def local(tag):
@@ -148,8 +148,16 @@ def listing_cover_parts(primary, header, source, cik):
 def parse_cover(doc, cik, accepted):
     parser = CoverFacts(); parser.feed(doc)
     found_ciks = {r['text'].zfill(10) for r in parser.facts if r['name'] == 'entitycentralindexkey'}
-    if found_ciks != {cik}:
+    if cik not in found_ciks:
         raise ValueError('cover_issuer_cik_mismatch')
+    # 親子会社の共同決算書では、同じ書類に複数の発行会社番号がある。
+    # その場合は、株式種類・銘柄・市場と同じ文脈にある会社番号で限定する。
+    # 文脈の対応が不明なら、先頭の会社や銘柄を勝手に採用しない。
+    issuers_by_context = defaultdict(set)
+    for fact in parser.facts:
+        if fact['name'] == 'entitycentralindexkey':
+            issuers_by_context[fact['context']].add(fact['text'].zfill(10))
+    multiple_issuers = len(found_ciks) > 1
     grouped = defaultdict(lambda: defaultdict(list))
     for fact in parser.facts:
         if fact['name'] != 'entitycentralindexkey':
@@ -157,6 +165,13 @@ def parse_cover(doc, cik, accepted):
     securities, ambiguous = [], False
     names = ('security12btitle', 'tradingsymbol', 'securityexchangename')
     for context, values in grouped.items():
+        if multiple_issuers:
+            owners = issuers_by_context.get(context, set())
+            if len(owners) == 1 and cik not in owners:
+                continue
+            if owners != {cik}:
+                ambiguous = True
+                continue
         if not context or any(len(values[k]) != 1 for k in names):
             ambiguous = True
             continue
@@ -167,7 +182,8 @@ def parse_cover(doc, cik, accepted):
     match = len(common) == 1 and not ambiguous and common[0]['ticker'] not in {'', 'N/A', 'NONE', 'None'}
     return {'kind': 'listing_cover', 'status': 'single_common_security_in_filing' if match else 'needs_class_review',
             'securities': securities, 'ticker_in_filing': common[0]['ticker'] if match else None,
-            'accepted_at_new_york': accepted, 'listing_at_selection_date_confirmed': False}
+            'accepted_at_new_york': accepted, 'listing_at_selection_date_confirmed': False,
+            'issuer_binding': 'same_context_as_issuer_cik' if multiple_issuers else 'single_issuer_in_filing'}
 
 
 def removal_notice(body, source, cik):

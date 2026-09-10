@@ -105,6 +105,29 @@ class IdentityTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             listing_cover_parts(cover().encode(), header, source('10-Q'), '0000000009')
 
+    def test_joint_report_only_uses_target_issuer_context(self):
+        other = fact('EntityCentralIndexKey', '0000000009', 'child')
+        other += fact('Security12bTitle', 'Common Stock', 'child')
+        other += fact('TradingSymbol', 'CHILD', 'child')
+        other += fact('SecurityExchangeName', 'NYSE', 'child')
+        result = listing_cover(body(cover(other), '10-Q'), source('10-Q'), CIK)
+        self.assertEqual(result['ticker_in_filing'], 'ABC')
+        self.assertEqual(result['issuer_binding'], 'same_context_as_issuer_cik')
+        self.assertEqual(len(result['securities']), 1)
+        child = listing_cover(body(cover(other), '10-Q'), source('10-Q'), '0000000009')
+        self.assertEqual(child['ticker_in_filing'], 'CHILD')
+
+    def test_joint_report_missing_or_conflicting_context_stays_unknown(self):
+        for extra in [fact('EntityCentralIndexKey', '0000000009'),
+                      fact('EntityCentralIndexKey', '0000000009', 'child')]:
+            # 1番目は同じ文脈に二つの会社、2番目は銘柄の文脈に会社番号がない。
+            content = cover(extra)
+            if 'child' in extra:
+                content = content.replace(fact('EntityCentralIndexKey', CIK),
+                                          fact('EntityCentralIndexKey', CIK, 'parent'))
+            result = listing_cover(body(content, '10-Q'), source('10-Q'), CIK)
+            self.assertIsNone(result['ticker_in_filing'])
+
     def test_bond_warrant_and_preferred_removal_do_not_remove_common_stock(self):
         for title, expected in [('Common Stock', 'common_stock_notice'),
                                 ('Floating Rate Senior Notes due 2025', 'other_or_unclassified_security_notice'),
