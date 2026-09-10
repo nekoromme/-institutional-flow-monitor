@@ -4242,5 +4242,17 @@
       ],
       "reviews": {}
     }
-  ]
+  ],
+  "validation": {
+    "code_commit": "9631cc24338975ab9e00b3ce49add3385d7a10ae",
+    "tests_passed": 79,
+    "workflow_run_id": 34443641227,
+    "job_id": 102763651498,
+    "workflow_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34443641227",
+    "conclusion": "success",
+    "original_identity_review_execution": "local; source hashes verified and original headers matched",
+    "github_scope": "unit tests and existing five-symbol market-data pilot; identity sources not downloaded in GitHub runner",
+    "existing_pilot_scored_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_pilot_scores_unchanged": true
+  }
 }
