@@ -15,7 +15,7 @@ from .holdings_reference import reviewed_denominator
 from .filing_review import apply_filing_reviews, load_catalog, pilot_comparison
 
 
-VERSION = "holdings-audit-0.2"
+VERSION = "holdings-audit-0.3"
 SECURITIES = {
     "UAVS": {"cik": "0000008504", "cusip": "00848K309"},
     "QMCO": {"cik": "0000709283", "cusip": "747906600"},
@@ -107,7 +107,7 @@ def select_denominator(concepts, period, as_of):
 def aggregate_security(states, cusip):
     included = defaultdict(list)
     rejected, unresolved = [], []
-    confidential = []
+    confidential, confidential_unknown = [], []
     for cik, state in states.items():
         if state["issues"]:
             if cusip in state["target_cusips_in_history"]:
@@ -125,6 +125,8 @@ def aggregate_security(states, cusip):
                 included[cik].append(row)
         if included.get(cik) and state["confidential_omitted"]:
             confidential.append(cik)
+        if included.get(cik) and state.get("confidential_status_unknown", False):
+            confidential_unknown.append(cik)
 
     file_to_ciks = defaultdict(set)
     for cik, state in states.items():
@@ -212,6 +214,7 @@ def aggregate_security(states, cusip):
         "unresolved_filings": unresolved, "potential_overlap_relationships": edges,
         "unresolved_manager_references": unknown_references, "repeated_row_payloads": duplicate_rows,
         "confidential_omission_managers": confidential,
+        "confidential_status_unknown_managers": confidential_unknown,
         "top_reported_positions": sorted(({k: v for k, v in m.items() if k != "rows"} for m in ledger),
                                          key=lambda m: (-m["shares"], m["cik"]))[:10],
         "ledger": ledger,
@@ -242,7 +245,7 @@ def public_summary(report):
     summary["quarters"] = {}
     sampled = ("unreviewed_class_rows", "unresolved_filings", "potential_overlap_relationships",
                "unresolved_manager_references", "repeated_row_payloads", "confidential_omission_managers",
-               "amended_managers_with_target_in_history")
+               "amended_managers_with_target_in_history", "confidential_status_unknown_managers")
     for period, quarter in report["quarters"].items():
         public_quarter = {k: v for k, v in quarter.items() if k != "symbols"}
         public_quarter["symbols"] = {}

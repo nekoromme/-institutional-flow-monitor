@@ -12,7 +12,12 @@ from pathlib import Path
 from zipfile import ZipFile
 
 
-PARSER_VERSION = "bulk13f-0.1.1"
+PARSER_VERSION = "bulk13f-0.1.2"
+
+
+def confidential_status(value):
+    """空欄は不明。機密扱いあり／なしのどちらにも勝手に置き換えない。"""
+    return {'Y': True, 'N': False}.get(value)
 
 
 def integer(value):
@@ -80,7 +85,7 @@ def extract_archive(path, cusips):
                 "ACCESSION_NUMBER", "TABLEENTRYTOTAL", "ISCONFIDENTIALOMITTED")):
             filings[row["ACCESSION_NUMBER"]].update({
                 "declared_entries": integer(row["TABLEENTRYTOTAL"]),
-                "confidential_omitted": row["ISCONFIDENTIALOMITTED"] != "N",
+                "confidential_omitted": confidential_status(row["ISCONFIDENTIALOMITTED"]),
             })
         for name, destination in (("OTHERMANAGER", "reported_by"),
                                   ("OTHERMANAGER2", "included_managers")):
@@ -183,5 +188,6 @@ def select_filings(filings, period, as_of):
                        "filings": selected, "rows": rows, "operations": operations,
                        "issues": sorted(set(issues)),
                        "target_cusips_in_history": sorted({r["cusip"] for f in history for r in f["rows"]}),
-                       "confidential_omitted": any(f.get("confidential_omitted", False) for f in selected)}
+                       "confidential_omitted": any(f.get("confidential_omitted") is True for f in selected),
+                       "confidential_status_unknown": any(f.get("confidential_omitted") is None for f in selected)}
     return states
