@@ -1,0 +1,1846 @@
+{
+  "code_commit": "14927b0830226f8b5735c49fc503fee2afe10c58",
+  "event_catalog_sha256": "259d5b11cd15f6b195695f197063d4fabf2c9b9e408693e7855e400d1e76f76f",
+  "plan_sha256": "102b9ac8a5322ec13c8680f3ce6c69d3f770bc217767065ece58b03a7e81d7fb",
+  "private_ledger_encrypted_sha256": "d2d76ed91ec9713baf19f89884ac239cc653eed993b08f86e09a12c95df14ae5",
+  "reserved_year_opened": false,
+  "reserved_year_returns_computed": false,
+  "scope": "exploratory_identity_linked_candidates_not_complete_investment_universe",
+  "years": [
+    {
+      "actual_execution_verified": false,
+      "benchmark_comparison_performed": false,
+      "cash_dividends_included": false,
+      "cost_each_side": 0.0025,
+      "main_holding_sessions": 10,
+      "price_policy": "original_strict",
+      "requested_symbols": 22,
+      "signal_counts": {
+        "abnormal": {
+          "true": 391,
+          "unknown": 321
+        },
+        "price_up_only": {
+          "true": 2428,
+          "unknown": 489
+        },
+        "repeated": {
+          "true": 184,
+          "unknown": 489
+        },
+        "repeated_up": {
+          "true": 102,
+          "unknown": 489
+        }
+      },
+      "skips": {
+        "abnormal": {
+          "signal_while_position_reserved": 212,
+          "unknown_signal_days": 321
+        },
+        "price_up_only": {
+          "signal_while_position_reserved": 2056,
+          "unknown_signal_days": 489
+        },
+        "repeated": {
+          "signal_while_position_reserved": 97,
+          "unknown_signal_days": 489
+        },
+        "repeated_up": {
+          "signal_while_position_reserved": 51,
+          "unknown_signal_days": 489
+        }
+      },
+      "summaries": {
+        "abnormal": {
+          "attempts": 179,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 5,
+          "cost_sensitivity": {
+            "0": 0.0017877472378341772,
+            "0.0025": -0.003208700379312021,
+            "0.005": -0.008180290048114318,
+            "0.01": -0.018049633895588297
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.004893654164805891,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.0017712281758062057,
+            "minimum_mean": -0.006922064998931003
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.0878058726479306,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.003208700379312021,
+          "mean_price_return": 0.0017877472378341772,
+          "mean_win": 0.10387632780881277,
+          "median_net_return": -0.010438775764423869,
+          "net_win_fraction": 0.441340782122905,
+          "not_executable": 0,
+          "priced": 179,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.010912848560153515,
+          "worst_adverse_price_return": -0.615958240119314,
+          "worst_net_return": -0.5807740157436387
+        },
+        "price_up_only": {
+          "attempts": 372,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 8,
+          "cost_sensitivity": {
+            "0": 0.0031600736261212323,
+            "0.0025": -0.0018432185116647973,
+            "0.005": -0.006821618648765444,
+            "0.01": -0.01670448228726732
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.0003302874727884493,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.0009007187574120064,
+            "minimum_mean": -0.0070151713435555275
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.07709699235534313,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.0018432185116647973,
+          "mean_price_return": 0.0031600736261212323,
+          "mean_win": 0.08106348148560795,
+          "median_net_return": -0.004987531172069737,
+          "net_win_fraction": 0.47580645161290325,
+          "not_executable": 0,
+          "priced": 372,
+          "symbols": 22,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.0035620331517829157,
+          "worst_adverse_price_return": -0.5417789757412399,
+          "worst_net_return": -0.463068743236249
+        },
+        "repeated": {
+          "attempts": 87,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 1,
+          "cost_sensitivity": {
+            "0": 0.007340979025593995,
+            "0.0025": 0.002316834491800624,
+            "0.005": -0.002682314298043659,
+            "0.01": -0.0126063670937247
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.0017039172398867991,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.012482494972127304,
+            "minimum_mean": -0.009097160694608721
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.10790409727382144,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.002316834491800624,
+          "mean_price_return": 0.007340979025593995,
+          "mean_win": 0.09612188280296834,
+          "median_net_return": 0.00393240383888771,
+          "net_win_fraction": 0.5402298850574713,
+          "not_executable": 0,
+          "priced": 87,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.010986422262020243,
+          "worst_adverse_price_return": -0.6055226824457594,
+          "worst_net_return": -0.5996399533710103
+        },
+        "repeated_up": {
+          "attempts": 51,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 1,
+          "cost_sensitivity": {
+            "0": 0.009836086262293663,
+            "0.0025": 0.004799497303379581,
+            "0.005": -0.0002120339990225916,
+            "0.01": -0.010160667921118097
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.021366199550601338,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.012219371700568344,
+            "minimum_mean": -0.006686437892715693
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.08648915767964073,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.004799497303379581,
+          "mean_price_return": 0.009836086262293663,
+          "mean_win": 0.0797866067537177,
+          "median_net_return": 0.00393240383888771,
+          "net_win_fraction": 0.5490196078431373,
+          "not_executable": 0,
+          "priced": 51,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.006686437892715693,
+          "worst_adverse_price_return": -0.30618401206636503,
+          "worst_net_return": -0.25711738752665836
+        }
+      },
+      "year": 2023,
+      "price_quality": [
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AXTA",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "BJRI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CHMI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "EXPI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FELE",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FFIV",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "GLSI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HGBL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HLF",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "IONQ",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "MCBC",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "NRIX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {
+            "unreviewed_adjustment_or_invalid_bar": 49
+          },
+          "observed_days": 355,
+          "symbol": "ORGN",
+          "valid_days": 306
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RSG",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "SCTL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TKNO",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TPHS",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TTGT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "UNP",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {
+            "unreviewed_adjustment_or_invalid_bar": 40
+          },
+          "observed_days": 355,
+          "symbol": "VCNX",
+          "valid_days": 315
+        }
+      ],
+      "largest_trades": {
+        "abnormal": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-12-28",
+            "entry_date": "2023-12-29",
+            "exit_date": "2024-01-12",
+            "net_return": 1.368129675810474
+          }
+        ],
+        "price_up_only": [
+          {
+            "symbol": "IONQ",
+            "signal_date": "2023-05-03",
+            "entry_date": "2023-05-04",
+            "exit_date": "2023-05-17",
+            "net_return": 0.6358370129721571
+          }
+        ],
+        "repeated": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-12-29",
+            "entry_date": "2024-01-02",
+            "exit_date": "2024-01-16",
+            "net_return": 1.1463969153203952
+          }
+        ],
+        "repeated_up": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-05-09",
+            "entry_date": "2023-05-10",
+            "exit_date": "2023-05-23",
+            "net_return": 0.5790962571081433
+          }
+        ]
+      }
+    },
+    {
+      "actual_execution_verified": false,
+      "benchmark_comparison_performed": false,
+      "cash_dividends_included": false,
+      "cost_each_side": 0.0025,
+      "main_holding_sessions": 10,
+      "price_policy": "cent_rounding_compatibility",
+      "requested_symbols": 22,
+      "signal_counts": {
+        "abnormal": {
+          "true": 416,
+          "unknown": 64
+        },
+        "price_up_only": {
+          "true": 2547,
+          "unknown": 240
+        },
+        "repeated": {
+          "true": 200,
+          "unknown": 240
+        },
+        "repeated_up": {
+          "true": 106,
+          "unknown": 240
+        }
+      },
+      "skips": {
+        "abnormal": {
+          "signal_while_position_reserved": 227,
+          "unknown_signal_days": 64
+        },
+        "price_up_only": {
+          "signal_while_position_reserved": 2155,
+          "unknown_signal_days": 240
+        },
+        "repeated": {
+          "signal_while_position_reserved": 109,
+          "unknown_signal_days": 240
+        },
+        "repeated_up": {
+          "signal_while_position_reserved": 52,
+          "unknown_signal_days": 240
+        }
+      },
+      "summaries": {
+        "abnormal": {
+          "attempts": 189,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 5,
+          "cost_sensitivity": {
+            "0": 0.0014211986423226576,
+            "0.0025": -0.0035734208022773486,
+            "0.005": -0.008543191393919255,
+            "0.01": -0.018408924103069886
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.0040893321578640085,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.0005998685424592109,
+            "minimum_mean": -0.007097747395308114
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.08967703840823286,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.0035734208022773486,
+          "mean_price_return": 0.0014211986423226576,
+          "mean_win": 0.10639023541737667,
+          "median_net_return": -0.010706776237181415,
+          "net_win_fraction": 0.43915343915343913,
+          "not_executable": 0,
+          "priced": 189,
+          "symbols": 22,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.010869713869366452,
+          "worst_adverse_price_return": -0.615958240119314,
+          "worst_net_return": -0.5807740157436387
+        },
+        "price_up_only": {
+          "attempts": 392,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 8,
+          "cost_sensitivity": {
+            "0": -0.0009006908289881593,
+            "0.0025": -0.005883729777471898,
+            "0.005": -0.010841977487406087,
+            "0.01": -0.020684835565047813
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.007248995641072113,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.0029205359296572905,
+            "minimum_mean": -0.010973570700664001
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.08223916467213246,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.005883729777471898,
+          "mean_price_return": -0.0009006908289881593,
+          "mean_win": 0.08221869510098259,
+          "median_net_return": -0.006026259229136077,
+          "net_win_fraction": 0.4642857142857143,
+          "not_executable": 0,
+          "priced": 392,
+          "symbols": 22,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.007524959298570694,
+          "worst_adverse_price_return": -0.7330316742081449,
+          "worst_net_return": -0.6803353606932894
+        },
+        "repeated": {
+          "attempts": 91,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 1,
+          "cost_sensitivity": {
+            "0": 0.00634602672846827,
+            "0.0025": 0.0013268445502715358,
+            "0.005": -0.0036673665723124097,
+            "0.01": -0.013581617365164767
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": -0.0015376826503205774,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.009988350000247576,
+            "minimum_mean": -0.009626126217626693
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.10449332264228214,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.0013268445502715358,
+          "mean_price_return": 0.00634602672846827,
+          "mean_win": 0.09612407766026754,
+          "median_net_return": 0.0037186504944071164,
+          "net_win_fraction": 0.5274725274725275,
+          "not_executable": 0,
+          "priced": 91,
+          "symbols": 22,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.011396156236063172,
+          "worst_adverse_price_return": -0.6055226824457594,
+          "worst_net_return": -0.5996399533710103
+        },
+        "repeated_up": {
+          "attempts": 54,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 1,
+          "cost_sensitivity": {
+            "0": 0.0022081155321083596,
+            "0.0025": -0.002790428685009287,
+            "0.005": -0.007764104522937395,
+            "0.01": -0.017637589725953196
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.013822481848739453,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.0032963891383513376,
+            "minimum_mean": -0.013769422756578203
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.09171954377286912,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.002790428685009287,
+          "mean_price_return": 0.0022081155321083596,
+          "mean_win": 0.0797866067537177,
+          "median_net_return": 0.0022193239121091057,
+          "net_win_fraction": 0.5185185185185185,
+          "not_executable": 0,
+          "priced": 54,
+          "symbols": 22,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.013769422756578203,
+          "worst_adverse_price_return": -0.30618401206636503,
+          "worst_net_return": -0.25711738752665836
+        }
+      },
+      "year": 2023,
+      "price_quality": [
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AXTA",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "BJRI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CHMI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "EXPI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FELE",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FFIV",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "GLSI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HGBL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HLF",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "IONQ",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "MCBC",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "NRIX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [
+            "2022-09-15",
+            "2022-11-16",
+            "2022-12-14",
+            "2023-03-02",
+            "2023-03-07",
+            "2023-05-03",
+            "2023-05-22",
+            "2023-10-04",
+            "2023-10-05",
+            "2023-10-10",
+            "2023-10-11",
+            "2023-10-23",
+            "2023-10-24",
+            "2023-10-25",
+            "2023-10-26",
+            "2023-10-30",
+            "2023-10-31",
+            "2023-11-01",
+            "2023-11-10",
+            "2023-11-20",
+            "2023-11-21",
+            "2023-11-24",
+            "2023-11-27",
+            "2023-11-28",
+            "2023-11-29",
+            "2023-12-01",
+            "2023-12-04",
+            "2023-12-05",
+            "2023-12-06",
+            "2023-12-11",
+            "2023-12-12",
+            "2023-12-13",
+            "2023-12-14",
+            "2023-12-18",
+            "2023-12-21",
+            "2023-12-26",
+            "2023-12-28",
+            "2023-12-29",
+            "2024-01-02",
+            "2024-01-11",
+            "2024-01-12",
+            "2024-01-16",
+            "2024-01-18",
+            "2024-01-24",
+            "2024-01-25",
+            "2024-01-26",
+            "2024-01-29",
+            "2024-01-30",
+            "2024-01-31"
+          ],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "ORGN",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RSG",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "SCTL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TKNO",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TPHS",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TTGT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "UNP",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [
+            "2023-10-04",
+            "2023-10-05",
+            "2023-10-16",
+            "2023-10-17",
+            "2023-10-18",
+            "2023-10-19",
+            "2023-10-23",
+            "2023-10-24",
+            "2023-10-25",
+            "2023-10-26",
+            "2023-10-27",
+            "2023-10-30",
+            "2023-10-31",
+            "2023-11-01",
+            "2023-11-02",
+            "2023-11-03",
+            "2023-11-06",
+            "2023-11-07",
+            "2023-11-08",
+            "2023-11-09",
+            "2023-11-10",
+            "2023-11-15",
+            "2023-11-16",
+            "2023-11-17",
+            "2023-11-20",
+            "2023-11-21",
+            "2023-11-22",
+            "2023-11-27",
+            "2023-11-28",
+            "2023-11-29",
+            "2023-11-30",
+            "2023-12-04",
+            "2023-12-26",
+            "2024-01-04"
+          ],
+          "issues": {
+            "unreviewed_adjustment_or_invalid_bar": 6
+          },
+          "observed_days": 355,
+          "symbol": "VCNX",
+          "valid_days": 349
+        }
+      ],
+      "largest_trades": {
+        "abnormal": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-12-28",
+            "entry_date": "2023-12-29",
+            "exit_date": "2024-01-12",
+            "net_return": 1.368129675810474
+          }
+        ],
+        "price_up_only": [
+          {
+            "symbol": "IONQ",
+            "signal_date": "2023-05-03",
+            "entry_date": "2023-05-04",
+            "exit_date": "2023-05-17",
+            "net_return": 0.6358370129721571
+          }
+        ],
+        "repeated": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-12-29",
+            "entry_date": "2024-01-02",
+            "exit_date": "2024-01-16",
+            "net_return": 1.1463969153203952
+          }
+        ],
+        "repeated_up": [
+          {
+            "symbol": "TPHS",
+            "signal_date": "2023-05-09",
+            "entry_date": "2023-05-10",
+            "exit_date": "2023-05-23",
+            "net_return": 0.5790962571081433
+          }
+        ]
+      }
+    },
+    {
+      "actual_execution_verified": false,
+      "benchmark_comparison_performed": false,
+      "cash_dividends_included": false,
+      "cost_each_side": 0.0025,
+      "main_holding_sessions": 10,
+      "price_policy": "original_strict",
+      "requested_symbols": 23,
+      "signal_counts": {
+        "abnormal": {
+          "true": 376,
+          "unknown": 750
+        },
+        "price_up_only": {
+          "true": 2398,
+          "unknown": 990
+        },
+        "repeated": {
+          "true": 169,
+          "unknown": 990
+        },
+        "repeated_up": {
+          "true": 86,
+          "unknown": 990
+        }
+      },
+      "skips": {
+        "abnormal": {
+          "signal_while_position_reserved": 200,
+          "unknown_signal_days": 750
+        },
+        "price_up_only": {
+          "signal_while_position_reserved": 2022,
+          "unknown_signal_days": 990
+        },
+        "repeated": {
+          "signal_while_position_reserved": 90,
+          "unknown_signal_days": 990
+        },
+        "repeated_up": {
+          "signal_while_position_reserved": 40,
+          "unknown_signal_days": 990
+        }
+      },
+      "summaries": {
+        "abnormal": {
+          "attempts": 176,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 5,
+          "cost_sensitivity": {
+            "0": 0.023061394908581424,
+            "0.0025": 0.017958844310533757,
+            "0.005": 0.012881679536356841,
+            "0.01": 0.0028027534252431587
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.02242261492935863,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.02137949641189655,
+            "minimum_mean": 0.009405343747877527
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.06136006655506236,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.017958844310533757,
+          "mean_price_return": 0.023061394908581424,
+          "mean_win": 0.09038045857912151,
+          "median_net_return": 0.003462940401182335,
+          "net_win_fraction": 0.5227272727272727,
+          "not_executable": 0,
+          "priced": 176,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.007505657996528452,
+          "worst_adverse_price_return": -0.2732558139534884,
+          "worst_net_return": -0.20984303946017302
+        },
+        "price_up_only": {
+          "attempts": 376,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 1,
+          "cost_erased_positive_trades": 7,
+          "cost_sensitivity": {
+            "0": 0.005774473655226367,
+            "0.0025": 0.0007581421157989081,
+            "0.005": -0.004233232550298171,
+            "0.01": -0.014141852555768235
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.006883123257260121,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.002846160188444494,
+            "minimum_mean": -0.002733378696799966
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.06432476649540037,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.0007581421157989081,
+          "mean_price_return": 0.005774473655226367,
+          "mean_win": 0.07794949884070967,
+          "median_net_return": -0.010043515901240752,
+          "net_win_fraction": 0.4574468085106383,
+          "not_executable": 0,
+          "priced": 376,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.0035505408915745703,
+          "worst_adverse_price_return": -0.3045267489711935,
+          "worst_net_return": -0.2650945250980433
+        },
+        "repeated": {
+          "attempts": 79,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.01771018872683634,
+            "0.0025": 0.012634327436428274,
+            "0.005": 0.007583719187265934,
+            "0.01": -0.0024424882776554915
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.009453882829485614,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.020912639526028804,
+            "minimum_mean": 0.0008129626225763204
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.07184404052604362,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.012634327436428274,
+          "mean_price_return": 0.01771018872683634,
+          "mean_win": 0.09927880739793792,
+          "median_net_return": -0.006475400284335797,
+          "net_win_fraction": 0.4936708860759494,
+          "not_executable": 0,
+          "priced": 79,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.0008927447800289398,
+          "worst_adverse_price_return": -0.32795698924731187,
+          "worst_net_return": -0.30991070710320967
+        },
+        "repeated_up": {
+          "attempts": 46,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.04490272118038234,
+            "0.0025": 0.0396912362867147,
+            "0.005": 0.0345056791785876,
+            "0.01": 0.024211578186711387
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.10083503316546016,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.05964277059970718,
+            "minimum_mean": -0.00047710177939079833
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.0845101074594871,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.0396912362867147,
+          "mean_price_return": 0.04490272118038234,
+          "mean_win": 0.15354246805406635,
+          "median_net_return": 0.003191513558214454,
+          "net_win_fraction": 0.5217391304347826,
+          "not_executable": 0,
+          "priced": 46,
+          "symbols": 19,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.00047710177939079833,
+          "worst_adverse_price_return": -0.27337398373983735,
+          "worst_net_return": -0.2537406483790523
+        }
+      },
+      "year": 2024,
+      "price_quality": [
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AVNT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AVTR",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AXTA",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "BJRI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CRM",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CSX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "EXPI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FELE",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {
+            "unreviewed_adjustment_or_invalid_bar": 50
+          },
+          "observed_days": 355,
+          "symbol": "FEMY",
+          "valid_days": 305
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FFIV",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HGBL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HWKN",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "IONQ",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "JYNT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "NRIX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {
+            "unreviewed_adjustment_or_invalid_bar": 119
+          },
+          "observed_days": 355,
+          "symbol": "ORGN",
+          "valid_days": 236
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RSG",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 149,
+          "symbol": "SCTL",
+          "valid_days": 149
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TKNO",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TTGT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "UNP",
+          "valid_days": 355
+        }
+      ],
+      "largest_trades": {
+        "abnormal": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-15",
+            "entry_date": "2024-07-16",
+            "exit_date": "2024-07-29",
+            "net_return": 1.847266449261462
+          }
+        ],
+        "price_up_only": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-11",
+            "entry_date": "2024-07-12",
+            "exit_date": "2024-07-25",
+            "net_return": 1.6165142698808532
+          }
+        ],
+        "repeated": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-17",
+            "entry_date": "2024-07-18",
+            "exit_date": "2024-07-31",
+            "net_return": 0.9284777746355763
+          }
+        ],
+        "repeated_up": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-15",
+            "entry_date": "2024-07-16",
+            "exit_date": "2024-07-29",
+            "net_return": 1.847266449261462
+          }
+        ]
+      }
+    },
+    {
+      "actual_execution_verified": false,
+      "benchmark_comparison_performed": false,
+      "cash_dividends_included": false,
+      "cost_each_side": 0.0025,
+      "main_holding_sessions": 10,
+      "price_policy": "cent_rounding_compatibility",
+      "requested_symbols": 23,
+      "signal_counts": {
+        "abnormal": {
+          "true": 408,
+          "unknown": 252
+        },
+        "price_up_only": {
+          "true": 2608,
+          "unknown": 516
+        },
+        "repeated": {
+          "true": 183,
+          "unknown": 516
+        },
+        "repeated_up": {
+          "true": 95,
+          "unknown": 516
+        }
+      },
+      "skips": {
+        "abnormal": {
+          "signal_while_position_reserved": 217,
+          "unknown_signal_days": 252
+        },
+        "price_up_only": {
+          "signal_while_position_reserved": 2197,
+          "unknown_signal_days": 516
+        },
+        "repeated": {
+          "signal_while_position_reserved": 96,
+          "unknown_signal_days": 516
+        },
+        "repeated_up": {
+          "signal_while_position_reserved": 45,
+          "unknown_signal_days": 516
+        }
+      },
+      "summaries": {
+        "abnormal": {
+          "attempts": 191,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 5,
+          "cost_sensitivity": {
+            "0": 0.019520174967971298,
+            "0.0025": 0.01443528631476458,
+            "0.005": 0.009375695615056268,
+            "0.01": -0.0006683433482261707
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.018011538756958285,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.017399774660729762,
+            "minimum_mean": 0.0064288570333853445
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.06737927201387064,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.01443528631476458,
+          "mean_price_return": 0.019520174967971298,
+          "mean_win": 0.09371949747859665,
+          "median_net_return": 0.002348715867350082,
+          "net_win_fraction": 0.5078534031413613,
+          "not_executable": 0,
+          "priced": 191,
+          "symbols": 23,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.004788806509781962,
+          "worst_adverse_price_return": -0.27941176470588247,
+          "worst_net_return": -0.24642438022590574
+        },
+        "price_up_only": {
+          "attempts": 411,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 1,
+          "cost_erased_positive_trades": 7,
+          "cost_sensitivity": {
+            "0": 0.005431376691799789,
+            "0.0025": 0.00041675635917246364,
+            "0.005": -0.004572915613591151,
+            "0.01": -0.014478155519919036
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.006088519366551471,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.002305931888403825,
+            "minimum_mean": -0.002778085653670356
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.06981890605552907,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.00041675635917246364,
+          "mean_price_return": 0.005431376691799789,
+          "mean_win": 0.08621816017388892,
+          "median_net_return": -0.011721116671408627,
+          "net_win_fraction": 0.45012165450121655,
+          "not_executable": 0,
+          "priced": 411,
+          "symbols": 23,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.003524944893319441,
+          "worst_adverse_price_return": -0.3125000000000001,
+          "worst_net_return": -0.2970020600672232
+        },
+        "repeated": {
+          "attempts": 87,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.016396063721061453,
+            "0.0025": 0.011326756670083685,
+            "0.005": 0.006282670052195272,
+            "0.01": -0.0037305910060883006
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.007583251206308411,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.018690600595303083,
+            "minimum_mean": 0.000578965815732861
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.07565420539569659,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.011326756670083685,
+          "mean_price_return": 0.016396063721061453,
+          "mean_win": 0.10452064459770541,
+          "median_net_return": -0.008481254728347598,
+          "net_win_fraction": 0.4827586206896552,
+          "not_executable": 0,
+          "priced": 87,
+          "symbols": 23,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.0006622099495546999,
+          "worst_adverse_price_return": -0.32795698924731187,
+          "worst_net_return": -0.30991070710320967
+        },
+        "repeated_up": {
+          "attempts": 50,
+          "benchmark_pairs": 0,
+          "cash_entitlement_valuations": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.03590020341940511,
+            "0.0025": 0.03073361886369745,
+            "0.005": 0.02559273870876437,
+            "0.01": 0.015387328104169349
+          },
+          "dividend_adjustment_changes_return": 0,
+          "dividend_reference_pairs": 0,
+          "equal_symbol_mean_net_return": 0.0854707116597574,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.04791639263519979,
+            "minimum_mean": -0.006338479715848766
+          },
+          "mean_dividend_adjusted_reference_net": null,
+          "mean_loss": -0.08262839577356615,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.03073361886369745,
+          "mean_price_return": 0.03590020341940511,
+          "mean_win": 0.15354246805406635,
+          "median_net_return": -0.01479510704007203,
+          "net_win_fraction": 0.48,
+          "not_executable": 0,
+          "priced": 50,
+          "symbols": 21,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.006338479715848766,
+          "worst_adverse_price_return": -0.27337398373983735,
+          "worst_net_return": -0.2537406483790523
+        }
+      },
+      "year": 2024,
+      "price_quality": [
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AVNT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AVTR",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "AXTA",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "BJRI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CRM",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "CSX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "EXPI",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FELE",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [
+            "2023-10-04",
+            "2023-10-11",
+            "2023-10-18",
+            "2023-10-25",
+            "2023-10-30",
+            "2023-11-16",
+            "2023-11-20",
+            "2023-11-22",
+            "2023-11-29",
+            "2023-11-30",
+            "2023-12-01",
+            "2023-12-05",
+            "2023-12-06",
+            "2023-12-07",
+            "2023-12-12",
+            "2023-12-13",
+            "2023-12-26",
+            "2024-01-03",
+            "2024-01-04",
+            "2024-01-09",
+            "2024-01-12",
+            "2024-01-16",
+            "2024-01-17",
+            "2024-01-22",
+            "2024-01-23",
+            "2024-01-24",
+            "2024-01-25",
+            "2024-01-26",
+            "2024-01-30",
+            "2024-02-01",
+            "2024-02-06",
+            "2024-02-21",
+            "2024-03-14",
+            "2024-04-26",
+            "2024-05-09",
+            "2024-07-15",
+            "2024-08-01",
+            "2024-08-12",
+            "2024-08-16",
+            "2024-08-22",
+            "2024-08-23",
+            "2024-08-27",
+            "2024-09-19",
+            "2024-11-15",
+            "2024-11-18",
+            "2024-12-10",
+            "2024-12-12",
+            "2024-12-13",
+            "2024-12-18",
+            "2025-01-14"
+          ],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FEMY",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "FFIV",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HGBL",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "HWKN",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "IONQ",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "JYNT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "NRIX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [
+            "2023-10-04",
+            "2023-10-05",
+            "2023-10-10",
+            "2023-10-11",
+            "2023-10-23",
+            "2023-10-24",
+            "2023-10-25",
+            "2023-10-26",
+            "2023-10-30",
+            "2023-10-31",
+            "2023-11-01",
+            "2023-11-10",
+            "2023-11-20",
+            "2023-11-21",
+            "2023-11-24",
+            "2023-11-27",
+            "2023-11-28",
+            "2023-11-29",
+            "2023-12-01",
+            "2023-12-04",
+            "2023-12-05",
+            "2023-12-06",
+            "2023-12-11",
+            "2023-12-12",
+            "2023-12-13",
+            "2023-12-14",
+            "2023-12-18",
+            "2023-12-21",
+            "2023-12-26",
+            "2023-12-28",
+            "2023-12-29",
+            "2024-01-02",
+            "2024-01-11",
+            "2024-01-12",
+            "2024-01-16",
+            "2024-01-18",
+            "2024-01-24",
+            "2024-01-25",
+            "2024-01-26",
+            "2024-01-29",
+            "2024-01-30",
+            "2024-01-31",
+            "2024-02-01",
+            "2024-02-05",
+            "2024-02-06",
+            "2024-02-07",
+            "2024-02-08",
+            "2024-02-09",
+            "2024-02-12",
+            "2024-02-13",
+            "2024-02-14",
+            "2024-02-15",
+            "2024-02-20",
+            "2024-02-21",
+            "2024-02-23",
+            "2024-03-04",
+            "2024-03-06",
+            "2024-03-07",
+            "2024-03-11",
+            "2024-03-12",
+            "2024-03-14",
+            "2024-03-15",
+            "2024-03-18",
+            "2024-03-21",
+            "2024-03-22",
+            "2024-03-26",
+            "2024-03-27",
+            "2024-04-02",
+            "2024-04-03",
+            "2024-04-04",
+            "2024-04-08",
+            "2024-04-09",
+            "2024-04-11",
+            "2024-04-15",
+            "2024-04-16",
+            "2024-04-17",
+            "2024-04-18",
+            "2024-04-19",
+            "2024-04-23",
+            "2024-04-25",
+            "2024-04-26",
+            "2024-04-29",
+            "2024-04-30",
+            "2024-05-02",
+            "2024-05-15",
+            "2024-05-16",
+            "2024-05-17",
+            "2024-05-20",
+            "2024-05-22",
+            "2024-05-23",
+            "2024-06-17",
+            "2024-06-25",
+            "2024-07-01",
+            "2024-07-02",
+            "2024-07-05",
+            "2024-07-09",
+            "2024-07-10",
+            "2024-07-11",
+            "2024-07-12",
+            "2024-07-17",
+            "2024-07-19",
+            "2024-07-23",
+            "2024-07-24",
+            "2024-07-25",
+            "2024-07-26",
+            "2024-07-29",
+            "2024-07-30",
+            "2024-07-31",
+            "2024-08-05",
+            "2024-08-06",
+            "2024-08-08",
+            "2024-08-09",
+            "2024-08-12",
+            "2024-08-20",
+            "2024-08-27",
+            "2024-09-10",
+            "2024-11-06",
+            "2024-11-20",
+            "2024-12-24"
+          ],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "ORGN",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RGNX",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "RSG",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 149,
+          "symbol": "SCTL",
+          "valid_days": 149
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TKNO",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "TTGT",
+          "valid_days": 355
+        },
+        {
+          "cent_rounding_accepted_dates": [],
+          "issues": {},
+          "observed_days": 355,
+          "symbol": "UNP",
+          "valid_days": 355
+        }
+      ],
+      "largest_trades": {
+        "abnormal": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-15",
+            "entry_date": "2024-07-16",
+            "exit_date": "2024-07-29",
+            "net_return": 1.847266449261462
+          }
+        ],
+        "price_up_only": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-11",
+            "entry_date": "2024-07-12",
+            "exit_date": "2024-07-25",
+            "net_return": 1.6165142698808532
+          }
+        ],
+        "repeated": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-17",
+            "entry_date": "2024-07-18",
+            "exit_date": "2024-07-31",
+            "net_return": 0.9284777746355763
+          }
+        ],
+        "repeated_up": [
+          {
+            "symbol": "TKNO",
+            "signal_date": "2024-07-15",
+            "entry_date": "2024-07-16",
+            "exit_date": "2024-07-29",
+            "net_return": 1.847266449261462
+          }
+        ]
+      }
+    }
+  ],
+  "run_id": 34541548704,
+  "full_result_sha256": "e43454c4e07b4426a7a2d625dd50ec5705dc00204fdb9c3e472ca147dd150bbe",
+  "reserved_year_boundary": {
+    "unopened_dataset": "additional-2025.enc",
+    "signal_years": [
+      2023,
+      2024
+    ],
+    "latest_exit_date_used": "2025-01-16",
+    "interpretation": "No 2025-origin signals scored; 2024 year-end positions use January 2025 exit padding. Not a claim that all 2025 prices are unseen."
+  }
+}
