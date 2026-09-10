@@ -26,7 +26,7 @@ def shares_between(events,symbol,start,end):
 def prepare_prices(payload,events):
     books={};quality=[];through=payload['retrieved_at_utc'][:10]
     for symbol,raw in payload['prices']['raw'].items():
-        original=by_date(raw);adjusted=by_date(payload['prices']['split'][symbol]);book={};issues=Counter()
+        original=by_date(raw);adjusted=by_date(payload['prices']['split'][symbol]);book={};issues=Counter();details=[]
         for day,row in original.items():
             other=adjusted.get(day)
             valid=valid_bar(row) and valid_bar(other)
@@ -36,12 +36,18 @@ def prepare_prices(payload,events):
                 valid=all(math.isclose(other[k],row[k]*factor,rel_tol=1e-8,abs_tol=.0001*(factor+1)) for k in ('o','h','l','c'))
                 valid=valid and math.isclose(other['v'],row['v']/factor,rel_tol=1e-6,abs_tol=1.0)
             reason=None if valid else 'unreviewed_adjustment_or_invalid_bar'
-            if reason:issues[reason]+=1
+            if reason:
+                issues[reason]+=1
+                if valid_bar(row) and valid_bar(other):
+                    price_errors={k:abs(other[k]-row[k]*factor) for k in ('o','h','l','c')}
+                    details.append({'date':day,'expected_price_factor':factor,'price_absolute_errors':price_errors,
+                                    'volume_absolute_error':abs(other['v']-row['v']/factor),
+                                    'price_tolerance':.0001*(factor+1),'volume_tolerance':max(1.0,1e-6*max(other['v'],row['v']/factor))})
             book[day]={'raw':row,'valid':bool(valid),'reason':reason}
         if original.keys()!=adjusted.keys():
             for x in book.values():x.update(valid=False,reason='unpaired_dates')
         books[symbol]=book
-        quality.append({'symbol':symbol,'observed_days':len(book),'valid_days':sum(x['valid'] for x in book.values()),'issues':dict(issues)})
+        quality.append({'symbol':symbol,'observed_days':len(book),'valid_days':sum(x['valid'] for x in book.values()),'issues':dict(issues),'adjustment_failure_diagnostics':details})
     return books,quality
 
 
