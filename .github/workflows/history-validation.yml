@@ -34,10 +34,20 @@ jobs:
         env:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python -m research.history.adjustment_scan
+      - name: 固定条件で開発期間を検証
+        env:
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python -m research.history.development_validation
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: history-validation-public-${{ github.sha }}
           path: diagnostics/history/validation/
+          retention-days: 90
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: history-validation-encrypted-${{ github.sha }}
+          path: data/history/encrypted/validation-ledgers.enc
           retention-days: 90
           if-no-files-found: error

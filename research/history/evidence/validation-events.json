@@ -1,0 +1,77 @@
+{
+  "purpose": "share_units_and_terminal_cash_entitlement_only",
+  "future_events_must_not_enter_past_signal_units": true,
+  "events": [
+    {
+      "symbol": "SCTL",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2024-04-08",
+      "cash_per_share_usd": 1.1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1588972/0001193125-24-089300.txt",
+      "source_sha256": "9e43a6f0efa7520370b3710a169a7a059269442ad0cbe7eba392e1d287abeed7",
+      "filed": "2024-04-08",
+      "review_basis": "original_8K_intro_and_item_3_01",
+      "selection_information": false
+    },
+    {
+      "symbol": "VCNX",
+      "kind": "split",
+      "effective_date": "2023-09-26",
+      "effective_date_basis": "first_split_adjusted_trading_session_in_original_filing",
+      "new_shares_per_old_share": 0.06666666666666667,
+      "old_shares": 15,
+      "new_shares": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1205922/0001193125-23-240553.txt",
+      "source_sha256": "4dc6c81104fe12f0494f2336f121410173b5ea0a7ed5abb95a8707ca1389bcc9",
+      "filed": "2023-09-22",
+      "source_local_path": "data/history/action-review/0001193125-23-240553.txt",
+      "selection_information": false,
+      "review_basis": "original_filing_explicit_ratio_and_trading_date"
+    },
+    {
+      "symbol": "VCNX",
+      "kind": "split",
+      "effective_date": "2024-02-20",
+      "effective_date_basis": "first_split_adjusted_trading_session_in_original_filing",
+      "new_shares_per_old_share": 0.07142857142857142,
+      "old_shares": 14,
+      "new_shares": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1205922/0001193125-24-037078.txt",
+      "source_sha256": "f84bdbb44b7d0a1edb46174b58165cfe026dab085f6fd42b21eb37afbef355c2",
+      "filed": "2024-02-15",
+      "source_local_path": "data/history/action-review/0001193125-24-037078.txt",
+      "selection_information": false,
+      "review_basis": "original_filing_explicit_ratio_and_trading_date"
+    },
+    {
+      "symbol": "ORGN",
+      "kind": "split",
+      "effective_date": "2026-03-20",
+      "effective_date_basis": "first_split_adjusted_trading_session_in_original_filing",
+      "new_shares_per_old_share": 0.03333333333333333,
+      "old_shares": 30,
+      "new_shares": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1802457/0001802457-26-000012.txt",
+      "source_sha256": "0a9a6f6fad5e0430b105f36791479bea60de82dd4ce4a5c9b1a4a02508f7f437",
+      "filed": "2026-03-19",
+      "source_local_path": "data/history/action-review/0001802457-26-000012.txt",
+      "selection_information": false,
+      "review_basis": "original_filing_explicit_ratio_and_trading_date"
+    },
+    {
+      "symbol": "FEMY",
+      "kind": "split",
+      "effective_date": "2026-06-08",
+      "effective_date_basis": "first_split_adjusted_trading_session_in_original_filing",
+      "new_shares_per_old_share": 0.05,
+      "old_shares": 20,
+      "new_shares": 1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1339005/0001140361-26-033157.txt",
+      "source_sha256": "0fb80023910c72ce63f0fdef08b0324e49b511cfe18810a090871f4af48bd333",
+      "filed": "2026-08-14",
+      "source_local_path": "data/history/action-review/0001140361-26-033157.txt",
+      "selection_information": false,
+      "review_basis": "original_filing_explicit_ratio_and_trading_date"
+    }
+  ]
+}

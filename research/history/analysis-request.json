@@ -1,1 +1,1 @@
-{"mode":"scan","years":[2023,2024],"source_run":34538504180,"purpose":"inspect_saved_adjustments_without_returns"}
+{"mode": "evaluate", "years": [2023, 2024], "source_run": 34538504180, "purpose": "fixed_rule_development_comparison_after_primary_action_review", "plan_sha256": "102b9ac8a5322ec13c8680f3ce6c69d3f770bc217767065ece58b03a7e81d7fb"}
