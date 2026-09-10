@@ -12,6 +12,20 @@ SPLIT_EVENTS = {
         {"trading_day": "2024-08-27", "old_shares": 20, "new_shares": 1,
          "source": "https://investors.quantum.com/news-events/press-releases/detail/203/quantum-announces-reverse-stock-split"},
     ],
+    # 以下は2026年1〜3月より後の併合。現在取得した補正値の照合には使うが、
+    # documented_price_factorのthroughが過去の判定日なら倍率に含まれない。
+    "SMSI": [
+        {"trading_day": "2026-06-05", "old_shares": 5, "new_shares": 1,
+         "source": "https://www.sec.gov/Archives/edgar/data/948708/000143774926018372/smsi20260526_8k.htm"},
+    ],
+    "GAME": [
+        {"trading_day": "2026-08-24", "old_shares": 8, "new_shares": 1,
+         "source": "https://www.sec.gov/Archives/edgar/data/1714562/000149315226039213/form8-k.htm"},
+    ],
+    "KAPA": [
+        {"trading_day": "2026-09-01", "old_shares": 7, "new_shares": 1,
+         "source": "https://www.sec.gov/Archives/edgar/data/1962011/000149315226039695/form8-k.htm"},
+    ],
 }
 
 # 今回の二期に限って照合を検証する。新しい報告期へ自動延長しない。

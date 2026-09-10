@@ -4,7 +4,7 @@
 残る銘柄は続ける。結果を見て境界値や銘柄群を変更する処理はない。
 """
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -28,6 +28,10 @@ def quarter_signal(rows, field, expected_sessions):
 
 def run(root, client):
     protocol = load_protocol(root)
+    # endは取得する足の範囲。提供元の補正を過去時点へ戻す指定ではない。
+    # 品質照合は取得日、特徴量の株数単位は各判定日、と分けて扱う。
+    retrieved_at = datetime.now(timezone.utc)
+    adjustment_basis = retrieved_at.astimezone(NY).date().isoformat()
     sessions = client.json('https://paper-api.alpaca.markets/v2/calendar',
                            {'start': protocol['history_start'], 'end': protocol['evaluation_end']})
     days = validate_calendar(sessions)
@@ -55,7 +59,7 @@ def run(root, client):
             elif any(q[k] for k in ('invalid_records','identical_rows_or_duplicate_bar_times','out_of_order','outside_requested_interval')):
                 item['reason'] = 'invalid_market_records'
             else:
-                audit = split_adjustment_audit(raw, adjusted, complete=True, through=protocol['evaluation_end'])
+                audit = split_adjustment_audit(raw, adjusted, complete=True, through=adjustment_basis)
                 # 補正差の原株数は公開しない。件数と該当日だけを記録する。
                 item['adjustment_audit'] = {k:audit[symbol][k] for k in ('status','paired_days','unpaired_days','coverage_complete','invalid_pairs','price_mismatch_days','volume_mismatch_days','unresolved_days','zero_raw_volume_days')}
                 if audit[symbol]['status'] != 'comparable_sample':
@@ -81,7 +85,11 @@ def run(root, client):
             print(json.dumps({'batch_market_processed': len(output), 'total': len(protocol['symbols'])}), flush=True)
     body = json.dumps({'sessions':sessions,'symbols':private}, sort_keys=True, allow_nan=False).encode()
     (folder/'market-input-and-scores.json').write_bytes(body)
-    return {'version':'batch-market-0.1','protocol_sha256':PROTOCOL_SHA,
+    return {'version':'batch-market-0.2','protocol_sha256':PROTOCOL_SHA,
+            'retrieved_at_utc':retrieved_at.isoformat(),
+            'provider_adjustment_audit_through':adjustment_basis,
+            'feature_adjustment_basis':'each_decision_day_only',
+            'quality_repair_plan_sha256':hashlib.sha256((root/'docs/QUALITY_REPAIR_PLAN.md').read_bytes()).hexdigest(),
             'code_commit':os.environ.get('GITHUB_SHA','local'),'rows':output,
             'market_input_and_scores_sha256':hashlib.sha256(body).hexdigest(),
             'persistence':'private_runner_local_only_not_uploaded; original_snapshot_expires_after_job',

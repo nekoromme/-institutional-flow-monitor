@@ -76,7 +76,13 @@ def run(root):
     if holdings['protocol_sha256']!=PROTOCOL_SHA or market['protocol_sha256']!=PROTOCOL_SHA:raise ValueError('factor_protocol_mismatch')
     if digest(private_path)!=market['market_input_and_scores_sha256']:raise ValueError('factor_private_input_mismatch')
     target={r['symbol']:r for r in protocol['symbols']};h={r['symbol']:r for r in holdings['rows']}
-    complete=[r['symbol'] for r in market['rows'] if r['quarter_abnormal'] is not None and r['quarter_repeated'] is not None]
+    # 品質修正で復帰した銘柄を、以前の49銘柄の診断へ黙って追加しない。
+    # 復帰後の全群はquality_repair側で別に評価する。
+    frozen=json.loads((root/'docs/evidence/factor-diagnostics-2026-09-10.json').read_text())
+    complete=frozen['same_complete_cohort']
+    now_complete={r['symbol'] for r in market['rows'] if r['quarter_abnormal'] is not None and r['quarter_repeated'] is not None}
+    if len(complete)!=len(set(complete)) or not set(complete)<=now_complete:
+        raise ValueError('previous_factor_cohort_no_longer_complete')
     prefix={};direction={'abnormal':Counter(),'other':Counter()};flips=[]
     for symbol in complete:
         if h[symbol]['observed_reported_increase']!=h[symbol]['matched_manager_increase']:flips.append(symbol)
