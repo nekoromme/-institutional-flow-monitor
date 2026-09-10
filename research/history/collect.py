@@ -3,6 +3,7 @@
 証券候補一覧の作成と、既存銘柄での収集の試験は分けて記録する。
 後者を過去の正式な対象一覧と取り違えないことが重要。
 """
+import argparse
 import base64
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -234,31 +235,35 @@ def collect_market(root, client, secret):
 
 
 def main():
+    parser = argparse.ArgumentParser(description='原データの収集だけを行う。損益は計算しない。')
+    parser.add_argument('--scope', choices=('all','market','public'), default='all')
+    args = parser.parse_args()
     key, secret = os.environ.get('ALPACA_API_KEY',''), os.environ.get('ALPACA_SECRET_KEY','')
-    if not key or len(secret)<16:
+    if args.scope != 'public' and (not key or len(secret)<16):
         print('history_credentials_missing');return 1
     market = SafeHttp(key,secret,timeout=30,max_requests=100,max_seconds=300)
     sec = SafeHttp(timeout=60,max_requests=20,max_seconds=720)
     result = {'version':'history-foundation-0.1','code_commit':os.environ.get('GITHUB_SHA','local'),
               'plan_sha256':digest(ROOT/'research/history/PLAN.md'), 'frames':[], 'market':[],
-              'returns_computed':False,'historical_universe_ready':False,'errors':[]}
+              'returns_computed':False,'historical_universe_ready':False,'errors':[], 'requested_scope':args.scope}
     # 市場と各年の公的資料は独立。片方の不足で他方の保存まで失わない。
     try:
-        result['market'] = collect_market(ROOT,market,secret)
+        if args.scope != 'public':
+            result['market'] = collect_market(ROOT,market,secret)
     except (ProbeError,ValueError,KeyError,TypeError) as exc:
         result['errors'].append({'stage':'market','error':exc.summary() if isinstance(exc,ProbeError) else type(exc).__name__})
-    for year in ARCHIVES:
+    for year in (ARCHIVES if args.scope != 'market' else ()):
         try:
             result['frames'].append(collect_frame(ROOT,year,sec))
         except (ProbeError,ValueError,KeyError,TypeError) as exc:
             result['errors'].append({'stage':f'frame-{year}', 'error':exc.summary() if isinstance(exc,ProbeError) else type(exc).__name__})
     result['http'] = {'market':market.metrics(),'sec':sec.metrics()}
-    result['collection_complete'] = len(result['market'])==5 and len(result['frames'])==3 and not result['errors']
+    result['collection_complete'] = (args.scope=='public' or len(result['market'])==5) and (args.scope=='market' or len(result['frames'])==3) and not result['errors']
     write_json(ROOT/'diagnostics/history/summary.json',result)
     # 全候補と品質の明細は添付へ。公開ログには件数・ハッシュだけ。
     compact = {**result,'market':[{k:v for k,v in m.items() if k!='quality'} for m in result['market']]}
     text = json.dumps(compact,ensure_ascii=False,allow_nan=False)
-    if key in text or secret in text: raise ValueError('secret_in_public_summary')
+    if (key and key in text) or (secret and secret in text): raise ValueError('secret_in_public_summary')
     print('HISTORY_DATA_BEGIN'); print(text); print('HISTORY_DATA_END')
     return 0 if result['collection_complete'] else 1
 

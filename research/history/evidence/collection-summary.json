@@ -1,0 +1,566 @@
+{
+  "created_on": "2026-09-10",
+  "market_collection_commit": "840eb55c9a32fe7558f8e95375526cd50617d1eb",
+  "initial_actions_run": 34485284749,
+  "initial_actions_conclusion": "failure",
+  "initial_actions_failure_reason": "SEC requests returned HTTP 403; market collection and both artifact uploads succeeded",
+  "sec_followup_environment": "local normal HTTP; same official public URLs",
+  "market_collection_probe_complete": true,
+  "historical_universe_ready": false,
+  "historical_identity_verified": 0,
+  "signals_or_returns_computed": false,
+  "development_years": [
+    2023,
+    2024
+  ],
+  "reserved_return_years": [
+    2025
+  ],
+  "reservation_limit": "2026 outcomes were already seen; retrospective 2025 check is not a fully prospective experiment",
+  "market": [
+    {
+      "chunk": "2022-baseline",
+      "start": "2022-09-01",
+      "end": "2022-12-31",
+      "symbols": 59,
+      "sessions": 84,
+      "records_per_adjustment": 4704,
+      "missing_symbol_sessions": 252,
+      "missing_by_symbol": {
+        "CJMB": 84,
+        "KAPA": 84,
+        "LSH": 84
+      },
+      "zero_volume_rows": 46,
+      "invalid_rows": 0,
+      "duplicate_dates": 0,
+      "adjustment_date_mismatch_symbols": [],
+      "decrypt_roundtrip_verified": true,
+      "encrypted_sha256": "0195548aaa075189b8da11fe5748f529c1996da5413402ea083356ff9223da31",
+      "plaintext_sha256": "a04f9be584bab458dff5207af0b6a26ac3f87a93d2bbc9f546a43e4357c411ff"
+    },
+    {
+      "chunk": "2023",
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "symbols": 59,
+      "sessions": 250,
+      "records_per_adjustment": 14000,
+      "missing_symbol_sessions": 750,
+      "missing_by_symbol": {
+        "CJMB": 250,
+        "KAPA": 250,
+        "LSH": 250
+      },
+      "zero_volume_rows": 0,
+      "invalid_rows": 0,
+      "duplicate_dates": 0,
+      "adjustment_date_mismatch_symbols": [],
+      "decrypt_roundtrip_verified": true,
+      "encrypted_sha256": "541b7a5afb18b23397db0c18546aa6563b198f872c01994bdfab37347be565f9",
+      "plaintext_sha256": "678a1c4f1e20766c580fec3251e99137da522c9654cf924f6c828f99dae25074"
+    },
+    {
+      "chunk": "2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "symbols": 59,
+      "sessions": 252,
+      "records_per_adjustment": 14316,
+      "missing_symbol_sessions": 552,
+      "missing_by_symbol": {
+        "CJMB": 252,
+        "KAPA": 177,
+        "LSH": 123
+      },
+      "zero_volume_rows": 6,
+      "invalid_rows": 0,
+      "duplicate_dates": 0,
+      "adjustment_date_mismatch_symbols": [],
+      "decrypt_roundtrip_verified": true,
+      "encrypted_sha256": "73ff6ddd7522fcf0e71d2ed0a7909796a63169b7ff029a0f62af54a5493b17ac",
+      "plaintext_sha256": "c4e003d39de09b107b4d16b5d7688dd420898c9d78590ec44c7148d91e2d23fc"
+    },
+    {
+      "chunk": "2025-reserved",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "symbols": 59,
+      "sessions": 250,
+      "records_per_adjustment": 14728,
+      "missing_symbol_sessions": 22,
+      "missing_by_symbol": {
+        "CJMB": 22
+      },
+      "zero_volume_rows": 1,
+      "invalid_rows": 0,
+      "duplicate_dates": 0,
+      "adjustment_date_mismatch_symbols": [],
+      "decrypt_roundtrip_verified": true,
+      "encrypted_sha256": "186e2e8a6685f17f9021070faf7914567ce302f67bae39fb19bc30506cebd1a6",
+      "plaintext_sha256": "0b79adb0e11c6a219cbbbb3c8746f975d1de0733b721515f126433c89c19252b"
+    },
+    {
+      "chunk": "2026-exits",
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "symbols": 59,
+      "sessions": 20,
+      "records_per_adjustment": 1168,
+      "missing_symbol_sessions": 12,
+      "missing_by_symbol": {
+        "COMM": 12
+      },
+      "zero_volume_rows": 1,
+      "invalid_rows": 0,
+      "duplicate_dates": 0,
+      "adjustment_date_mismatch_symbols": [],
+      "decrypt_roundtrip_verified": true,
+      "encrypted_sha256": "ef1c0b23a7c6fe80536c38df6e654ba2f1c08831b302029492907c2266592f31",
+      "plaintext_sha256": "9e3e9bda913638634ee28eb3bc57402158e7e6f7e9d67a8ea231fe052b131a86"
+    }
+  ],
+  "reported_frames": [
+    {
+      "archive_vintage": "current_extract_of_historical_filings",
+      "certified_investment_universe": false,
+      "current_ticker_list_used": false,
+      "cutoff_audit": {
+        "accepted_manager_states": 8026,
+        "as_of": "2023-01-01",
+        "later_period_filings_excluded": 0,
+        "same_period_filings_excluded_at_or_after_cutoff": 0,
+        "selected_period": "2022-09-30",
+        "unresolved_manager_states": 385
+      },
+      "frame_count": 14293,
+      "frame_sha256": "89deba4a83c31ecd54a212cb29691c18259f10b719bee38f7da7dd1ebeadc1e9",
+      "historical_ticker_listing_and_ownership_mapping": "pending",
+      "holdings_period": "2022-09-30",
+      "information_rows_scanned_for_frame": 2622058,
+      "information_rows_validated": 5254385,
+      "review_batch_count": 200,
+      "selection_as_of": "2023-01-01",
+      "sources": [
+        {
+          "bytes": 63065916,
+          "retrieved_at_utc": "2026-09-10T13:54:47.573883+00:00",
+          "sha256": "f09e3588a93aa5fca7bef17009be924de9c3c5179b36c5c8749d3cb0f7fc61ad",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2022q3_form13f.zip"
+        },
+        {
+          "bytes": 62847968,
+          "retrieved_at_utc": "2026-09-10T13:55:13.024236+00:00",
+          "sha256": "9275e86ec07d95b8958cfd6a0617a4eb72e3f6769490d7f008ea09e9cc999fe9",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2022q4_form13f.zip"
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "archive_vintage": "current_extract_of_historical_filings",
+      "certified_investment_universe": false,
+      "current_ticker_list_used": false,
+      "cutoff_audit": {
+        "accepted_manager_states": 8424,
+        "as_of": "2024-01-01",
+        "later_period_filings_excluded": 0,
+        "same_period_filings_excluded_at_or_after_cutoff": 0,
+        "selected_period": "2023-09-30",
+        "unresolved_manager_states": 176
+      },
+      "frame_count": 13336,
+      "frame_sha256": "05b26bf4dcf51c89b321575bf1d95f37aa321111930d2c7f456dd29a81e10796",
+      "historical_ticker_listing_and_ownership_mapping": "pending",
+      "holdings_period": "2023-09-30",
+      "information_rows_scanned_for_frame": 2886468,
+      "information_rows_validated": 5610507,
+      "review_batch_count": 200,
+      "selection_as_of": "2024-01-01",
+      "sources": [
+        {
+          "bytes": 70206149,
+          "retrieved_at_utc": "2026-09-10T13:55:40.545548+00:00",
+          "sha256": "68d4a299ff5d1b8224695fc017ffce3030d972cfe9ccd0e450a99001a1cc171f",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2023q3_form13f.zip"
+        },
+        {
+          "bytes": 73022463,
+          "retrieved_at_utc": "2026-09-10T13:55:57.232577+00:00",
+          "sha256": "aaccf592ab3c329fbb02a8d99eb1ed59aaeb1d578c57676273fcb89a69bdd6c4",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2023q4_form13f.zip"
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "archive_vintage": "current_extract_of_historical_filings",
+      "certified_investment_universe": false,
+      "current_ticker_list_used": false,
+      "cutoff_audit": {
+        "accepted_manager_states": 8937,
+        "as_of": "2025-01-01",
+        "later_period_filings_excluded": 9890,
+        "same_period_filings_excluded_at_or_after_cutoff": 99,
+        "selected_period": "2024-09-30",
+        "unresolved_manager_states": 158
+      },
+      "frame_count": 12770,
+      "frame_sha256": "b18c058f011f63027be8d82e791f422ea7865b731a44b0d2b13d9b6a833bb4a7",
+      "historical_ticker_listing_and_ownership_mapping": "pending",
+      "holdings_period": "2024-09-30",
+      "information_rows_scanned_for_frame": 6564163,
+      "information_rows_validated": 6564163,
+      "review_batch_count": 200,
+      "selection_as_of": "2025-01-01",
+      "sources": [
+        {
+          "bytes": 81665193,
+          "retrieved_at_utc": "2026-09-10T13:56:31.937347+00:00",
+          "sha256": "1a34fe4db7865656e2fe5ac2f27fca30e8712e2fd3ceeba4a5fa867fdd9345c1",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01sep2024-30nov2024_form13f.zip"
+        },
+        {
+          "bytes": 86543810,
+          "retrieved_at_utc": "2026-09-10T13:56:51.153401+00:00",
+          "sha256": "11c6a1461051983f63839a655d4c9e4473a2ce963783f9d482af36e9b85551ea",
+          "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2024-28feb2025_form13f.zip"
+        }
+      ],
+      "year": 2025
+    }
+  ],
+  "official_security_lists": [
+    {
+      "frame_sha256": "1f234c01a8ada46570c65969e60bbd85d80f93aba8408d462fb59fcddc366f9e",
+      "historical_identity_and_low_ownership_verified": false,
+      "official_common_and_reported_count": 3719,
+      "pdf_table_validation": {
+        "historical_publication_timestamp_verified": false,
+        "narrow_common_unique": 3721,
+        "repeated_security_numbers": 1342,
+        "rows": 24388,
+        "run_date": "2022-10-05",
+        "total_count_verified": true,
+        "unique_security_numbers": 23046
+      },
+      "reported_frame_count": 14293,
+      "review_batch_count": 200,
+      "source": {
+        "bytes": 2722777,
+        "retrieved_at_utc": "2026-09-10T13:57:29.231029+00:00",
+        "sha256": "43f574525527f90481abc8572d315a45610415ebd725e2303f2374a7a67bb1f1",
+        "url": "https://www.sec.gov/files/investment/13flist2022q3.pdf"
+      },
+      "year": 2023
+    },
+    {
+      "frame_sha256": "7921da1ce36d7165021e70777f056269d856e4ecaa3d7fe275540dc210b0ae62",
+      "historical_identity_and_low_ownership_verified": false,
+      "official_common_and_reported_count": 3505,
+      "pdf_table_validation": {
+        "historical_publication_timestamp_verified": false,
+        "narrow_common_unique": 3507,
+        "repeated_security_numbers": 1446,
+        "rows": 23485,
+        "run_date": "2023-10-02",
+        "total_count_verified": true,
+        "unique_security_numbers": 22039
+      },
+      "reported_frame_count": 13336,
+      "review_batch_count": 200,
+      "source": {
+        "bytes": 2699656,
+        "retrieved_at_utc": "2026-09-10T13:57:45.105730+00:00",
+        "sha256": "e52ed923717e5e4f112a45acf97bed758600d38448a801c589fe00052c3d05d9",
+        "url": "https://www.sec.gov/files/investment/13flist2023q3.pdf"
+      },
+      "year": 2024
+    },
+    {
+      "frame_sha256": "f8149a88a314557be7dead463857191082c696457bb9cc2dfb6f13b9fc4af64a",
+      "historical_identity_and_low_ownership_verified": false,
+      "official_common_and_reported_count": 3346,
+      "pdf_table_validation": {
+        "historical_publication_timestamp_verified": false,
+        "narrow_common_unique": 3348,
+        "repeated_security_numbers": 1564,
+        "rows": 22860,
+        "run_date": "2024-10-01",
+        "total_count_verified": true,
+        "unique_security_numbers": 21296
+      },
+      "reported_frame_count": 12770,
+      "review_batch_count": 200,
+      "source": {
+        "bytes": 2521022,
+        "retrieved_at_utc": "2026-09-10T13:58:14.751786+00:00",
+        "sha256": "bdb91c24b1d5ec9b111bc39d5c207af7e2b0d1ec4b949601599279eeaa06741f",
+        "url": "https://www.sec.gov/files/investment/13flist2024q3.pdf"
+      },
+      "year": 2025
+    }
+  ],
+  "filing_indexes": [
+    {
+      "current_index_of_historical_filings_not_original_vintage": true,
+      "indexed_entities": 158755,
+      "indexed_filings": 1116624,
+      "matching": {
+        "historical_listing_source_candidates": 151,
+        "identity_verified": 0,
+        "reviewed_names": 200,
+        "single_name_candidate": 158,
+        "year": 2023
+      },
+      "selection_as_of": "2023-01-01",
+      "sources": [
+        {
+          "bytes": 4463894,
+          "retrieved_at_utc": "2026-09-10T13:55:43.584875+00:00",
+          "sha256": "0a9f259ce9403ac3c591acc5f3282c14ac1e51aacbcbdb28da9bf5b45c6a957f",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR1/master.gz"
+        },
+        {
+          "bytes": 3764147,
+          "retrieved_at_utc": "2026-09-10T13:56:02.370244+00:00",
+          "sha256": "3a74f34d00c9e046f0f9aa96adcbcc2eb6695191221929d8aa59ee43547b5cb5",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR2/master.gz"
+        },
+        {
+          "bytes": 3140701,
+          "retrieved_at_utc": "2026-09-10T13:56:10.739870+00:00",
+          "sha256": "5b6ca360d79961a2a2461b15c1d236841d8bc0e4b9790364c80227baf2b59927",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR3/master.gz"
+        },
+        {
+          "bytes": 3037037,
+          "retrieved_at_utc": "2026-09-10T13:56:18.583662+00:00",
+          "sha256": "0cced15a3dd445c735477a62d403c006d3e9f779f5709718d7983fd8f02ebf7f",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR4/master.gz"
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "current_index_of_historical_filings_not_original_vintage": true,
+      "indexed_entities": 148166,
+      "indexed_filings": 1160204,
+      "matching": {
+        "historical_listing_source_candidates": 156,
+        "identity_verified": 0,
+        "reviewed_names": 200,
+        "single_name_candidate": 162,
+        "year": 2024
+      },
+      "selection_as_of": "2024-01-01",
+      "sources": [
+        {
+          "bytes": 4310505,
+          "retrieved_at_utc": "2026-09-10T13:56:32.855873+00:00",
+          "sha256": "d853e4b868d7c201ad43136a928d896e55b5f8e25cb6c11dba20651918681038",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR1/master.gz"
+        },
+        {
+          "bytes": 3905089,
+          "retrieved_at_utc": "2026-09-10T13:56:41.867509+00:00",
+          "sha256": "c169d764284662fa030b42648c77ddd92a807f44f346ac648dcec7b4c5e609dd",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR2/master.gz"
+        },
+        {
+          "bytes": 3252466,
+          "retrieved_at_utc": "2026-09-10T13:56:50.277142+00:00",
+          "sha256": "304c29c27f7bb1ea0d9699e92210299f1c0dc97615fb24121229c9bd125a5879",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR3/master.gz"
+        },
+        {
+          "bytes": 3229154,
+          "retrieved_at_utc": "2026-09-10T13:57:59.475700+00:00",
+          "sha256": "c8b11087a1b493c9fdd1e53ba3be9a985eea4caed2309020f40eaaa042652eba",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR4/master.gz"
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "current_index_of_historical_filings_not_original_vintage": true,
+      "indexed_entities": 147629,
+      "indexed_filings": 1241441,
+      "matching": {
+        "historical_listing_source_candidates": 147,
+        "identity_verified": 0,
+        "reviewed_names": 200,
+        "single_name_candidate": 154,
+        "year": 2025
+      },
+      "selection_as_of": "2025-01-01",
+      "sources": [
+        {
+          "bytes": 4491993,
+          "retrieved_at_utc": "2026-09-10T13:58:25.902914+00:00",
+          "sha256": "4738ce9dc91ee6904f7f9cbd52cb5864ef7d047639a61db1df9a60e3676848fa",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR1/master.gz"
+        },
+        {
+          "bytes": 3949749,
+          "retrieved_at_utc": "2026-09-10T13:58:43.173519+00:00",
+          "sha256": "40563d21420cae073e7677ec4a4de7cf63abe7a8b7dbed9815c5a9ab50bbf002",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR2/master.gz"
+        },
+        {
+          "bytes": 3425228,
+          "retrieved_at_utc": "2026-09-10T13:58:58.433937+00:00",
+          "sha256": "e9839dd4a2c71b6fbaa3b8caa8bae7f80d55a6a2106a1e651ce6fac5f721d08e",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR3/master.gz"
+        },
+        {
+          "bytes": 3508260,
+          "retrieved_at_utc": "2026-09-10T13:59:15.152521+00:00",
+          "sha256": "83790a668b82ed3d806909f45b71b806e7db4e54f11aa99c823c3e05e0c5c115",
+          "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR4/master.gz"
+        }
+      ],
+      "year": 2025
+    }
+  ],
+  "source_catalog": [
+    {
+      "bytes": 4463894,
+      "retrieved_at_utc": "2026-09-10T13:55:43.584875+00:00",
+      "sha256": "0a9f259ce9403ac3c591acc5f3282c14ac1e51aacbcbdb28da9bf5b45c6a957f",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR1/master.gz"
+    },
+    {
+      "bytes": 3764147,
+      "retrieved_at_utc": "2026-09-10T13:56:02.370244+00:00",
+      "sha256": "3a74f34d00c9e046f0f9aa96adcbcc2eb6695191221929d8aa59ee43547b5cb5",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR2/master.gz"
+    },
+    {
+      "bytes": 3140701,
+      "retrieved_at_utc": "2026-09-10T13:56:10.739870+00:00",
+      "sha256": "5b6ca360d79961a2a2461b15c1d236841d8bc0e4b9790364c80227baf2b59927",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR3/master.gz"
+    },
+    {
+      "bytes": 3037037,
+      "retrieved_at_utc": "2026-09-10T13:56:18.583662+00:00",
+      "sha256": "0cced15a3dd445c735477a62d403c006d3e9f779f5709718d7983fd8f02ebf7f",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2022/QTR4/master.gz"
+    },
+    {
+      "bytes": 4310505,
+      "retrieved_at_utc": "2026-09-10T13:56:32.855873+00:00",
+      "sha256": "d853e4b868d7c201ad43136a928d896e55b5f8e25cb6c11dba20651918681038",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR1/master.gz"
+    },
+    {
+      "bytes": 3905089,
+      "retrieved_at_utc": "2026-09-10T13:56:41.867509+00:00",
+      "sha256": "c169d764284662fa030b42648c77ddd92a807f44f346ac648dcec7b4c5e609dd",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR2/master.gz"
+    },
+    {
+      "bytes": 3252466,
+      "retrieved_at_utc": "2026-09-10T13:56:50.277142+00:00",
+      "sha256": "304c29c27f7bb1ea0d9699e92210299f1c0dc97615fb24121229c9bd125a5879",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR3/master.gz"
+    },
+    {
+      "bytes": 3229154,
+      "retrieved_at_utc": "2026-09-10T13:57:59.475700+00:00",
+      "sha256": "c8b11087a1b493c9fdd1e53ba3be9a985eea4caed2309020f40eaaa042652eba",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2023/QTR4/master.gz"
+    },
+    {
+      "bytes": 4491993,
+      "retrieved_at_utc": "2026-09-10T13:58:25.902914+00:00",
+      "sha256": "4738ce9dc91ee6904f7f9cbd52cb5864ef7d047639a61db1df9a60e3676848fa",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR1/master.gz"
+    },
+    {
+      "bytes": 3949749,
+      "retrieved_at_utc": "2026-09-10T13:58:43.173519+00:00",
+      "sha256": "40563d21420cae073e7677ec4a4de7cf63abe7a8b7dbed9815c5a9ab50bbf002",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR2/master.gz"
+    },
+    {
+      "bytes": 3425228,
+      "retrieved_at_utc": "2026-09-10T13:58:58.433937+00:00",
+      "sha256": "e9839dd4a2c71b6fbaa3b8caa8bae7f80d55a6a2106a1e651ce6fac5f721d08e",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR3/master.gz"
+    },
+    {
+      "bytes": 3508260,
+      "retrieved_at_utc": "2026-09-10T13:59:15.152521+00:00",
+      "sha256": "83790a668b82ed3d806909f45b71b806e7db4e54f11aa99c823c3e05e0c5c115",
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2024/QTR4/master.gz"
+    },
+    {
+      "bytes": 86543810,
+      "retrieved_at_utc": "2026-09-10T13:56:51.153401+00:00",
+      "sha256": "11c6a1461051983f63839a655d4c9e4473a2ce963783f9d482af36e9b85551ea",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2024-28feb2025_form13f.zip"
+    },
+    {
+      "bytes": 81665193,
+      "retrieved_at_utc": "2026-09-10T13:56:31.937347+00:00",
+      "sha256": "1a34fe4db7865656e2fe5ac2f27fca30e8712e2fd3ceeba4a5fa867fdd9345c1",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01sep2024-30nov2024_form13f.zip"
+    },
+    {
+      "bytes": 63065916,
+      "retrieved_at_utc": "2026-09-10T13:54:47.573883+00:00",
+      "sha256": "f09e3588a93aa5fca7bef17009be924de9c3c5179b36c5c8749d3cb0f7fc61ad",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2022q3_form13f.zip"
+    },
+    {
+      "bytes": 62847968,
+      "retrieved_at_utc": "2026-09-10T13:55:13.024236+00:00",
+      "sha256": "9275e86ec07d95b8958cfd6a0617a4eb72e3f6769490d7f008ea09e9cc999fe9",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2022q4_form13f.zip"
+    },
+    {
+      "bytes": 70206149,
+      "retrieved_at_utc": "2026-09-10T13:55:40.545548+00:00",
+      "sha256": "68d4a299ff5d1b8224695fc017ffce3030d972cfe9ccd0e450a99001a1cc171f",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2023q3_form13f.zip"
+    },
+    {
+      "bytes": 73022463,
+      "retrieved_at_utc": "2026-09-10T13:55:57.232577+00:00",
+      "sha256": "aaccf592ab3c329fbb02a8d99eb1ed59aaeb1d578c57676273fcb89a69bdd6c4",
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/2023q4_form13f.zip"
+    },
+    {
+      "bytes": 2722777,
+      "retrieved_at_utc": "2026-09-10T13:57:29.231029+00:00",
+      "sha256": "43f574525527f90481abc8572d315a45610415ebd725e2303f2374a7a67bb1f1",
+      "url": "https://www.sec.gov/files/investment/13flist2022q3.pdf"
+    },
+    {
+      "bytes": 2699656,
+      "retrieved_at_utc": "2026-09-10T13:57:45.105730+00:00",
+      "sha256": "e52ed923717e5e4f112a45acf97bed758600d38448a801c589fe00052c3d05d9",
+      "url": "https://www.sec.gov/files/investment/13flist2023q3.pdf"
+    },
+    {
+      "bytes": 2521022,
+      "retrieved_at_utc": "2026-09-10T13:58:14.751786+00:00",
+      "sha256": "bdb91c24b1d5ec9b111bc39d5c207af7e2b0d1ec4b949601599279eeaa06741f",
+      "url": "https://www.sec.gov/files/investment/13flist2024q3.pdf"
+    }
+  ],
+  "actions_artifacts": {
+    "expires_at": "2026-12-09T13:51:35Z",
+    "public_id": 10155353711,
+    "encrypted_id": 10155356821
+  },
+  "unresolved": [
+    "historical CUSIP/ticker/listing/issuer identity",
+    "IPO, renaming, delisting and vendor gaps",
+    "corporate actions and adjustment reference dates",
+    "period-specific share counts and ownership quality",
+    "official lists omit unreported holdings; current archive vintage does not prove historical publication time"
+  ]
+}

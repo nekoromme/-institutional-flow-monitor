@@ -6,13 +6,34 @@ on:
       - 'research/history/**'
       - '.github/workflows/history-data.yml'
   workflow_dispatch:
+    inputs:
+      scope:
+        description: '収集範囲。公的資料は実行環境により取得が拒否される場合がある'
+        required: true
+        default: market
+        type: choice
+        options: [market, public, all]
 permissions:
   contents: read
 concurrency:
   group: history-data-collection
   cancel-in-progress: false
 jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cryptography==46.0.3
+      - run: python -m unittest discover -s research/history -p 'test_*.py' -v
   collect:
+    # コード修正のたびに取得済みの3年分を取り直さない。
+    if: github.event_name == 'workflow_dispatch'
+    needs: checks
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -22,16 +43,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: 保存用の暗号ライブラリを準備
-        run: python -m pip install cryptography==46.0.3
-      - name: 秘密を使わない収集・保存の点検
-        run: python -m unittest discover -s research/history -p 'test_*.py' -v
-      - name: 原データと当時の証券候補を収集
+      - run: python -m pip install cryptography==46.0.3
+      - name: 指定範囲のデータを収集
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          COLLECTION_SCOPE: ${{ inputs.scope }}
           PYTHONUNBUFFERED: '1'
-        run: python -m research.history.collect
+        run: python -m research.history.collect --scope "$COLLECTION_SCOPE"
       - name: 公開可能な候補一覧と取得台帳を保存
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,7 +60,7 @@ jobs:
           retention-days: 90
           if-no-files-found: error
       - name: 暗号化済み原市場データだけを保存
-        if: always()
+        if: always() && inputs.scope != 'public'
         uses: actions/upload-artifact@v4
         with:
           name: history-encrypted-${{ github.sha }}
