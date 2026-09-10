@@ -55,12 +55,15 @@ def prepare_daily(rows: dict, sessions: list, split_audit: dict) -> tuple[list, 
             bar = by_day.get(day)
             history = prior[-window_length:]
             reason = None
-            if split_audit.get(symbol, {}).get("status") != "comparable_sample":
-                reason = "unresolved_adjustment"
+            audit = split_audit.get(symbol, {})
+            if audit.get("status") != "comparable_sample" and not audit.get("coverage_complete"):
+                reason = "incomplete_adjustment_audit"
             elif day not in full_set:
                 reason = "shortened_session"
             elif len(history) < window_length:
                 reason = "warmup"
+            elif set(history+[day]) & set(audit.get("unresolved_days", [])):
+                reason = "unresolved_adjustment_in_current_or_history"
             elif any(d in duplicates or d not in by_day for d in history+[day]):
                 reason = "missing_or_duplicate_day"
             else:

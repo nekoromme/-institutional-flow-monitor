@@ -33,6 +33,14 @@ class ResearchTests(unittest.TestCase):
         self.assertEqual(rows[60]["status"], "missing_or_duplicate_day")
         self.assertNotIn("baseline_volumes_in_decision_day_shares", rows[60])
 
+    def test_bad_adjustment_blocks_only_windows_containing_that_day(self):
+        sessions, bars = self.fixture()
+        audit = {"QMCO": {"status": "needs_review", "coverage_complete": True,
+                          "unresolved_days": [sessions[0]["date"]]}}
+        rows, _ = prepare_daily({"QMCO": bars}, sessions, audit)
+        self.assertEqual(rows[60]["status"], "unresolved_adjustment_in_current_or_history")
+        self.assertEqual(rows[61]["status"], "prepared")
+
     def test_documented_factor_is_not_inferred_from_rounded_close(self):
         raw = {"t": "2024-08-26T04:00:00Z", "o": 0.5, "h": 0.6, "l": 0.4, "c": 0.5001, "v": 1000}
         adj = {**raw, "o": 10, "h": 12, "l": 8, "c": 10.001, "v": 50}

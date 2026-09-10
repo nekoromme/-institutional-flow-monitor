@@ -113,13 +113,18 @@ def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool,
         revised = {r["t"]: r for r in adjusted.get(symbol, [])}
         shared = sorted(original.keys() & revised.keys())
         invalid = mismatches = rounding_pairs = 0
+        price_mismatches = volume_mismatches = 0
+        unresolved_days, zero_volume_days, examples = set(), [], []
         segments = []
         for stamp in shared:
             a, b = original[stamp], revised[stamp]
+            day = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(NY).date().isoformat()
+            if a.get("v") == 0:
+                zero_volume_days.append(day)
             if not all(numeric(r.get(k)) and r[k] > 0 for r in (a, b) for k in ("o", "h", "l", "c")):
                 invalid += 1
+                unresolved_days.add(day)
                 continue
-            day = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(NY).date().isoformat()
             # 本番の比較は正式資料の倍率を使う。小数価格の丸めから併合を推定しない。
             factor = documented_price_factor(symbol, day, through) if through else b["c"] / a["c"]
             strict_price_match = all(math.isclose(b[k], a[k]*factor, rel_tol=1e-6, abs_tol=1e-6)
@@ -131,12 +136,25 @@ def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool,
             rounding_pairs += price_match and not strict_price_match
             if not price_match:
                 mismatches += 1
+                price_mismatches += 1
+                unresolved_days.add(day)
+                if len(examples) < 6:
+                    examples.append({"day": day, "field": "price",
+                                     "max_relative_difference": max(abs(b[k]-a[k]*factor)/(a[k]*factor)
+                                                                    for k in ("o", "h", "l", "c"))})
             if not all(numeric(r.get("v")) and r["v"] >= 0 for r in (a, b)):
                 invalid += 1
+                unresolved_days.add(day)
                 continue
             # 出来高が整数に丸められる場合の1株以内の差は許容する。
             if not math.isclose(b["v"], a["v"]/factor, rel_tol=1e-6, abs_tol=1.0):
                 mismatches += 1
+                volume_mismatches += 1
+                unresolved_days.add(day)
+                if len(examples) < 6:
+                    examples.append({"day": day, "field": "volume",
+                                     "relative_difference": (b["v"]-a["v"]/factor)/(a["v"]/factor) if a["v"] else None,
+                                     "difference_in_adjusted_shares": b["v"]-a["v"]/factor})
             if not segments or not math.isclose(segments[-1]["price_multiplier"], factor, rel_tol=1e-5):
                 segments.append({"first_day": day, "last_day": day,
                                  "price_multiplier": round(factor, 8), "records": 1})
@@ -148,7 +166,13 @@ def split_adjustment_audit(raw: dict, adjusted: dict, *, complete: bool,
                 and original.keys() == revised.keys() and len(rows) == len(original)
                 and len(adjusted.get(symbol, [])) == len(revised) else "needs_review",
             "paired_days": len(shared), "unpaired_days": len(original.keys() ^ revised.keys()),
+            "coverage_complete": bool(complete and shared and original.keys() == revised.keys()
+                                      and len(rows) == len(original)
+                                      and len(adjusted.get(symbol, [])) == len(revised)),
             "invalid_pairs": invalid, "price_volume_adjustment_mismatches": mismatches,
+            "price_mismatch_days": price_mismatches, "volume_mismatch_days": volume_mismatches,
+            "unresolved_days": sorted(unresolved_days), "zero_raw_volume_days": zero_volume_days,
+            "mismatch_examples": examples,
             "pairs_with_price_differences_inside_rounding_tolerance": rounding_pairs,
             "factor_source": "documented_events" if through else "ratio_diagnostic_only",
             "documented_events": SPLIT_EVENTS.get(symbol, []) if through else [],
