@@ -5,6 +5,7 @@
 """
 import argparse
 from collections import Counter
+from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import gzip
 import hashlib
@@ -161,17 +162,21 @@ def download(root,proposals,limit=40):
             compressed=gzip.compress(raw,mtime=0)
             temp=path.with_suffix('.part');temp.write_bytes(compressed);temp.replace(path)
             return {**item,'status':'downloaded','url':url,'path':str(path.relative_to(root)),
-                    'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw),'compressed_bytes':len(compressed)}
+                    'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw),'compressed_bytes':len(compressed),
+                    'retrieved_at_utc':datetime.now(timezone.utc).isoformat()}
         except ProbeError as exc:return {**item,'status':'blocked','url':url,'error':exc.summary()}
     results=[]
     with ThreadPoolExecutor(max_workers=8) as pool:
         for future in as_completed([pool.submit(work,item) for item in queue.values()]):
             results.append(future.result())
-            write_json(out,{'planned_files':len(queue),'files':sorted(results,key=lambda r:r['source']['filename'])})
+            # 再開中に中断しても、まだこの実行で触っていない取得済み記録を失わない。
+            retained={**prior,**{r['source']['filename']:r for r in results}}
+            write_json(out,{'planned_files':len(queue),'review_limit_per_year':limit,
+                            'files':sorted(retained.values(),key=lambda r:r['source']['filename'])})
             if len(results)%20==0 or len(results)==len(queue):
                 print(json.dumps({'completed':len(results),'planned':len(queue),
                      'statuses':dict(Counter(r['status'] for r in results))}),flush=True)
-    return {'files':results}
+    return {'files':list({**prior,**{r['source']['filename']:r for r in results}}.values())}
 
 
 def review(root,proposals,downloads):

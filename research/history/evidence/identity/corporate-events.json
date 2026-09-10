@@ -1,0 +1,40 @@
+{
+  "purpose": "explain_observed_price_gaps_only",
+  "returns_computed": false,
+  "cash_payment_timing_not_verified": true,
+  "events": [
+    {
+      "symbol": "SCTL",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2024-04-08",
+      "cash_per_share_usd": 1.1,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1588972/0001193125-24-089300.txt",
+      "source_sha256": "9e43a6f0efa7520370b3710a169a7a059269442ad0cbe7eba392e1d287abeed7",
+      "filed": "2024-04-08",
+      "review_basis": "original_8K_intro_and_item_3_01",
+      "selection_information": false
+    },
+    {
+      "symbol": "AMTM",
+      "kind": "regular_way_trading_start",
+      "first_regular_way_date": "2024-09-30",
+      "when_issued_start": "2024-09-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2011286/0002011286-24-000072.txt",
+      "source_sha256": "f237db05177ae7e08ecb677f4f4ac73a5a5c2b2acbbb30f49dda7020f1fa9cbe",
+      "filed": "2024-12-17",
+      "review_basis": "original_10K_item_5_and_note_23",
+      "selection_information": false
+    },
+    {
+      "symbol": "TRML",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2025-10-28",
+      "cash_per_share_usd": 48.0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1827506/0001104659-25-102971.txt",
+      "source_sha256": "16aa5ca1e1d72f88415eef80e524effe99743f7b5b96fbfabb67ec5a0af74150",
+      "filed": "2025-10-28",
+      "review_basis": "original_8K_item_2_01_and_3_01",
+      "selection_information": false
+    }
+  ]
+}

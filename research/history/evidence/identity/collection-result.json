@@ -1,0 +1,143 @@
+{
+  "code_commit": "0bc5930c822001ee8ee6e44704cf7a3269cbc0c3",
+  "workflow_run": 34538504180,
+  "conclusion": "success",
+  "artifacts": {
+    "public_id": 10176335855,
+    "encrypted_id": 10176336624,
+    "expires_at": "2026-12-09T22:39:16Z"
+  },
+  "new_distinct_codes": 32,
+  "new_symbol_years": 69,
+  "market_chunks": [
+    {
+      "year": 2023,
+      "symbols": 22,
+      "core_records": 5500,
+      "core_missing": 0,
+      "records_including_padding": 7810,
+      "missing_including_padding": 0,
+      "zero_volume_rows": 0,
+      "invalid_rows": 0,
+      "duplicates": 0,
+      "explained_missing_symbols": [],
+      "adjustment_date_mismatch_symbols": [],
+      "encrypted_sha256": "b02ae64ddf8d6dba6fb4024d8b7bcd5dbc59518dd442373b1757edc7e05945d4",
+      "plaintext_sha256": "fa3dee7a4b59fc5b7e531d7bd4616cef54843419dd78ee29dd461757f685577e",
+      "decrypt_roundtrip_verified": true
+    },
+    {
+      "year": 2024,
+      "symbols": 23,
+      "core_records": 5610,
+      "core_missing": 186,
+      "records_including_padding": 7959,
+      "missing_including_padding": 206,
+      "zero_volume_rows": 0,
+      "invalid_rows": 0,
+      "duplicates": 0,
+      "explained_missing_symbols": [
+        "SCTL"
+      ],
+      "adjustment_date_mismatch_symbols": [],
+      "encrypted_sha256": "50c9defa87dc99f897a46b8cc4ef31d27abd7df378a90a848cfd04a89b2804ef",
+      "plaintext_sha256": "fcd3d067cfae362904a3e1996e90c399da18e05acb319edfc9354af8a8035803",
+      "decrypt_roundtrip_verified": true
+    },
+    {
+      "year": 2025,
+      "symbols": 24,
+      "core_records": 5955,
+      "core_missing": 45,
+      "records_including_padding": 8412,
+      "missing_including_padding": 84,
+      "zero_volume_rows": 0,
+      "invalid_rows": 0,
+      "duplicates": 0,
+      "explained_missing_symbols": [
+        "AMTM",
+        "TRML"
+      ],
+      "adjustment_date_mismatch_symbols": [],
+      "encrypted_sha256": "2b2f3f97f0813f86294b465b9f551daf9d8efaec5dcdef29dd75647aa972bf6e",
+      "plaintext_sha256": "e821f30d83ae03a0e0f36f1bf01012fb7303fd3f9324c79a09d6c582f07d1498",
+      "decrypt_roundtrip_verified": true
+    }
+  ],
+  "http": {
+    "elapsed_seconds": 9.576,
+    "http_requests": 12,
+    "received_bytes": 7638290,
+    "retries": 0
+  },
+  "returns_computed": false,
+  "historical_universe_ready": false,
+  "missing_dates_consistent_with_reviewed_corporate_events": true,
+  "cash_merger_accounting_implemented": false,
+  "split_and_dividend_events_verified": false,
+  "identity": [
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 1,
+        "no_source": 39,
+        "not_downloaded": 131,
+        "parse_or_validation_requires_review": 1,
+        "single_common_security_in_filing": 28
+      },
+      "cusip_issuer_verified": 27,
+      "lookup_candidate_changes": 16,
+      "ownership_statuses": {
+        "matched": 27,
+        "no_source": 50,
+        "not_downloaded": 122,
+        "subject_company_mismatch": 1
+      },
+      "price_collection_candidates": 22,
+      "ticker_linked": 24,
+      "year": 2023
+    },
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 1,
+        "no_source": 33,
+        "not_downloaded": 137,
+        "single_common_security_in_filing": 29
+      },
+      "cusip_issuer_verified": 28,
+      "lookup_candidate_changes": 16,
+      "ownership_statuses": {
+        "cusip_cover_requires_review": 1,
+        "matched": 28,
+        "no_source": 47,
+        "not_downloaded": 124
+      },
+      "price_collection_candidates": 23,
+      "ticker_linked": 23,
+      "year": 2024
+    },
+    {
+      "backtest_eligible": 0,
+      "candidates": 200,
+      "cover_statuses": {
+        "needs_class_review": 1,
+        "no_source": 35,
+        "not_downloaded": 136,
+        "single_common_security_in_filing": 28
+      },
+      "cusip_issuer_verified": 28,
+      "lookup_candidate_changes": 35,
+      "ownership_statuses": {
+        "matched": 28,
+        "no_source": 42,
+        "not_downloaded": 130
+      },
+      "price_collection_candidates": 25,
+      "ticker_linked": 25,
+      "year": 2025
+    }
+  ]
+}

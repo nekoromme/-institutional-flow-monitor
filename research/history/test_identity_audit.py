@@ -1,6 +1,13 @@
 """別会社・未来の提出・本文中の偶然の番号一致を採用しないための検査。"""
 import unittest
-from research.history.identity_audit import legacy_ownership, official_names
+import gzip
+import hashlib
+import io
+import json
+from contextlib import redirect_stdout
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from research.history.identity_audit import legacy_ownership, official_names, download
 from research.history.supplement import requested_symbols
 
 SOURCE={'filename':'edgar/data/123/0000000999-22-000001.txt','form':'SC 13G/A','filed':'2022-11-10'}
@@ -14,6 +21,19 @@ def filing(text,subject='0000000123',accepted='20221110160000'):
         '</SEC-HEADER><DOCUMENT>\n<TYPE>SC 13G/A\n<TEXT>'+text+'</TEXT></DOCUMENT>').encode()
 
 class AuditChecks(unittest.TestCase):
+    def test_resuming_small_scope_keeps_other_already_saved_source_records(self):
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp);out=root/'diagnostics/history/audit';out.mkdir(parents=True)
+            raw=b'cached original fixture';p=root/'cached.gz';p.write_bytes(gzip.compress(raw))
+            first={'filename':'edgar/data/1/first.txt'};other={'filename':'edgar/data/2/other.txt'}
+            prior=[{'source':s,'uses':[],'status':'downloaded','path':'cached.gz',
+                    'sha256':hashlib.sha256(raw).hexdigest()} for s in (first,other)]
+            (out/'downloads.json').write_text(json.dumps({'files':prior}))
+            proposals=[{'year':2023,'rows':[{'ordinal':1,'selected_sources':{'listing_cover':first}}]}]
+            with redirect_stdout(io.StringIO()):result=download(root,proposals,limit=1)
+            self.assertEqual(len(result['files']),2)
+            self.assertEqual(len(json.loads((out/'downloads.json').read_text())['files']),2)
+
     def test_unverified_or_duplicate_security_cannot_enter_price_request(self):
         valid={'cusip_issuer_verified':True,'price_collection_candidate':True,'ticker_in_reviewed_filing':'ABC'}
         for rows in [[dict(valid,cusip_issuer_verified=False)],[valid,valid]]:
