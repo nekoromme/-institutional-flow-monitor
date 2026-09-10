@@ -1,0 +1,4246 @@
+{
+  "version": "identity-sources-0.1",
+  "as_of": "2026-01-01",
+  "input_frame_sha256": "14351bd51bb2a862e232e2b57d301d08a18587e0b48a497e9b913b851dcdc2c5",
+  "scope": "first_20_in_frozen_order_plus_latest_indexed_removal_per_issuer",
+  "source_files_downloaded": 51,
+  "source_bytes": 193874996,
+  "primary_document_fallback_count": 3,
+  "summary": {
+    "candidates": 200,
+    "issuer_name_candidates": 187,
+    "cusip_issuer_verified": 17,
+    "ticker_linked_to_reviewed_cover": 17,
+    "common_stock_removal_notices": 11,
+    "fund_reports_for_candidate_entities": 2,
+    "backtest_eligible": 0
+  },
+  "rows": [
+    {
+      "ordinal": 1,
+      "cusip": "86745K104",
+      "issuer": "SUNNOVA ENERGY INTL INC.",
+      "issuer_candidate_cik": "0001772695",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "NOVA",
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001772695",
+          "issuer_cusip": "86745K104",
+          "issuer_name": "Sunnova Energy International Inc.",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250515160104",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1772695/0001213900-25-044154.txt",
+          "source_sha256": "0773c2df4f5671100b3540143ee80b684fcfd594842fc6d0858f1588812a23f3",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-05-15"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.0001 par value per share",
+              "ticker": "NOVA",
+              "exchange": "New York Stock Exchange",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "NOVA",
+          "accepted_at_new_york": "20250303160115",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1772695/000177269525000020/nova-20241231.htm",
+          "source_sha256": "6e6ab19c9ba15a3fee755841df05826e855d36150f9099452b9aeaf192712054",
+          "header_source_url": "https://www.sec.gov/Archives/edgar/data/1772695/000177269525000020/0001772695-25-000020.hdr.sgml",
+          "header_source_sha256": "5aa2c52ab9764ca1062abcb4c3625804103c3bebd2611bc42ac22fba7fd5b14c",
+          "acquisition": "primary_document_plus_original_header",
+          "form": "10-K",
+          "filed": "2025-03-03"
+        },
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250610102546",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1772695/0000876661-25-000435.txt",
+          "source_sha256": "608445ad7a40720c81023738f6412d30e5d220bcf17903a79d0ef198d55c0353",
+          "form": "25-NSE",
+          "filed": "2025-06-10"
+        }
+      }
+    },
+    {
+      "ordinal": 2,
+      "cusip": "88337F105",
+      "issuer": "THE ODP CORP",
+      "issuer_candidate_cik": "0000800240",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "ODP",
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000800240",
+          "issuer_cusip": "88337F105",
+          "issuer_name": "ODP CORP/THE",
+          "security_class": "COMMON-STOCK",
+          "accepted_at_new_york": "20251112163334",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/800240/0000312069-25-000604.txt",
+          "source_sha256": "7e92648dd9e1b8694ed7c1c4f079d917bb73798c7531411791bab0aebacfe029",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-11-12"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $0.01 per share",
+              "ticker": "ODP",
+              "exchange": "NASDAQ",
+              "context": "C_d4618835-1a87-44e9-b7b1-4bf9779344c8",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "ODP",
+          "accepted_at_new_york": "20251105113217",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/800240/0001193125-25-266241.txt",
+          "source_sha256": "2ace140ceedc93a814d66a93cdfe687987af4eb2556c3c74a63c89ad14d2266f",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251210084243",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/800240/0001354457-25-001240.txt",
+          "source_sha256": "110e0af2dc8dd06f1cfd0d6f443a00a35091fb70780e961b373db4b4e93afb73",
+          "form": "25-NSE",
+          "filed": "2025-12-10"
+        }
+      }
+    },
+    {
+      "ordinal": 3,
+      "cusip": "759509102",
+      "issuer": "RELIANCE INC",
+      "issuer_candidate_cik": "0000861884",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "RS",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000861884",
+          "issuer_cusip": "759509102",
+          "issuer_name": "RELIANCE INC",
+          "security_class": "COMMON STOCK",
+          "accepted_at_new_york": "20251114121922",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/861884/0000080255-25-000799.txt",
+          "source_sha256": "d56bc235393a4eee214a8c5259214ebd009fea59cf4e4e28e0ec58aef769bd9a",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-11-14"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.001 par value",
+              "ticker": "RS",
+              "exchange": "New York Stock Exchange",
+              "context": "Duration_1_1_2025_To_9_30_2025_H7pSbwLx8Eu0mmSQSSqhnw",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "RS",
+          "accepted_at_new_york": "20251028161204",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/861884/0001104659-25-103175.txt",
+          "source_sha256": "7186612ebfc35356a9ada34dbb7396c99f07a12efeff208d83a4d865a04e69f7",
+          "form": "10-Q",
+          "filed": "2025-10-28"
+        }
+      }
+    },
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "issuer": "LAKESIDE HLDG LTD",
+      "issuer_candidate_cik": "0001996192",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "LSH",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001996192",
+          "issuer_cusip": "51216F109",
+          "issuer_name": "Lakeside Holding Ltd",
+          "security_class": "Common stock, par value US$0.0001 per share",
+          "accepted_at_new_york": "20251110170630",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-108296.txt",
+          "source_sha256": "5d19f48c0f06829e981f2cf5d91ae881705cc648c69ab4e2f8f1146c373c462d",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-11-10"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value US$0.0001 per share",
+              "ticker": "LSH",
+              "exchange": "Nasdaq",
+              "context": "c0",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "LSH",
+          "accepted_at_new_york": "20251119160125",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-112601.txt",
+          "source_sha256": "8413ac452ea7097f27c3339b5bde3fa3699bbc48691a62e5a188713b1caedb62",
+          "form": "10-Q",
+          "filed": "2025-11-19"
+        }
+      }
+    },
+    {
+      "ordinal": 5,
+      "cusip": "68375N103",
+      "issuer": "OPKO HEALTH INC",
+      "issuer_candidate_cik": "0000944809",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "OPK",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000944809",
+          "issuer_cusip": "68375N103",
+          "issuer_name": "OPKO HEALTH, INC.",
+          "security_class": "Common Stock, par value $0.01 per share",
+          "accepted_at_new_york": "20251001164643",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/944809/0000898860-25-000005.txt",
+          "source_sha256": "632f05698a173dc4a09a62c40efa92873850bd3f65b2ad1c4fb6e50f9595f386",
+          "form": "SCHEDULE 13D/A",
+          "filed": "2025-10-01"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $0.01 per share",
+              "ticker": "OPK",
+              "exchange": "NASDAQ",
+              "context": "C_d85f15b7-9a92-447c-91af-d24778f6b5a0",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "OPK",
+          "accepted_at_new_york": "20251029161204",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/944809/0001193125-25-256328.txt",
+          "source_sha256": "7b55fa4731595a6836b6a8bb8d5d27a3e0f07e7f2f18940cfd58299d8d72d9b2",
+          "form": "10-Q",
+          "filed": "2025-10-29"
+        }
+      }
+    },
+    {
+      "ordinal": 6,
+      "cusip": "95766N103",
+      "issuer": "WESTERN ASSET MUN HIGH INCOM",
+      "issuer_candidate_cik": "0000830487",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "fund_report": {
+          "kind": "fund_report",
+          "status": "candidate_entity_fund_report_confirmed",
+          "accepted_at_new_york": "20251230141607",
+          "cusip_identity_verified_by_this_report": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/830487/0001133228-25-014296.txt",
+          "source_sha256": "06255a71c129f59eacf41d08d308757db2f353a036810dcc969032c34b19e650",
+          "form": "N-CSR",
+          "filed": "2025-12-30"
+        }
+      }
+    },
+    {
+      "ordinal": 7,
+      "cusip": "78454L100",
+      "issuer": "SM ENERGY CO",
+      "issuer_candidate_cik": "0000893538",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "SM",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000893538",
+          "issuer_cusip": "78454L100",
+          "issuer_name": "SM Energy Co",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251031112843",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/893538/0000102909-25-000282.txt",
+          "source_sha256": "ffa7cdd930993b088d0754ae29cf4cca9e93dbe83efb1ffcf1ce175ada13131a",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-10-31"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common stock, $0.01 par value",
+              "ticker": "SM",
+              "exchange": "New York Stock Exchange",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "SM",
+          "accepted_at_new_york": "20251103064535",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/893538/0000893538-25-000138.txt",
+          "source_sha256": "e5028902d8116aa547b9249212c20e5d8a53330f313eeac957de1ea99c29c392",
+          "form": "10-Q",
+          "filed": "2025-11-03"
+        }
+      }
+    },
+    {
+      "ordinal": 8,
+      "cusip": "874054109",
+      "issuer": "TAKE-TWO INTERACTIVE SOFTWAR",
+      "issuer_candidate_cik": "0000946581",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "TTWO",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000946581",
+          "issuer_cusip": "874054109",
+          "issuer_name": "Take-Two Interactive Software, Inc.",
+          "security_class": "Common Stock, par value $0.01 per share",
+          "accepted_at_new_york": "20251231114813",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/946581/0001011438-25-000603.txt",
+          "source_sha256": "78d4823fd65d03b1e7ca76c24d7e5d6d8e327bfe951f29ade9225113d888bbcd",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-12-31"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.01 par value",
+              "ticker": "TTWO",
+              "exchange": "NASDAQ Global Select Market",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "TTWO",
+          "accepted_at_new_york": "20251106173215",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/946581/0001628280-25-050326.txt",
+          "source_sha256": "ac0a65495cef46d812e4c9cff39954acf3425f184e24e0ca5f5ad4e4cf84cfe6",
+          "form": "10-Q",
+          "filed": "2025-11-07"
+        }
+      }
+    },
+    {
+      "ordinal": 9,
+      "cusip": "256086109",
+      "issuer": "DOCGO INC",
+      "issuer_candidate_cik": "0001822359",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "DCGO",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001822359",
+          "issuer_cusip": "256086109",
+          "issuer_name": "DocGo Inc",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250430105325",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822359/0000932471-25-000413.txt",
+          "source_sha256": "c220b9eae129f201b63d74a71f7046f14f09b7e6b285787a11f29ea4248111d3",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-04-30"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $0.0001 per share",
+              "ticker": "DCGO",
+              "exchange": "The Nasdaq Stock Market LLC",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "DCGO",
+          "accepted_at_new_york": "20251110163905",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822359/0001628280-25-051102.txt",
+          "source_sha256": "f37fa605bd730cd5d64e737a62588d1eddc8ab9823f72b05a827df3915509424",
+          "form": "10-Q",
+          "filed": "2025-11-10"
+        }
+      }
+    },
+    {
+      "ordinal": 10,
+      "cusip": "09256A109",
+      "issuer": "BLACKROCK ENHANCED LARGE CAP",
+      "issuer_candidate_cik": "0001278895",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "fund_report": {
+          "kind": "fund_report",
+          "status": "candidate_entity_fund_report_confirmed",
+          "accepted_at_new_york": "20250904161736",
+          "cusip_identity_verified_by_this_report": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1278895/0001193125-25-196075.txt",
+          "source_sha256": "9014b3f862b8a73726cadb09f7e96b731b48dae7cf7655c03e2cd6bcce480171",
+          "form": "N-CSRS",
+          "filed": "2025-09-04"
+        }
+      }
+    },
+    {
+      "ordinal": 11,
+      "cusip": "832154405",
+      "issuer": "SMITH MICRO SOFTWARE INC",
+      "issuer_candidate_cik": "0000948708",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "SMSI",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000948708",
+          "issuer_cusip": "832154405",
+          "issuer_name": "SMITH MICRO SOFTWARE, INC.",
+          "security_class": "Common Stock, par value $0.001 per share",
+          "accepted_at_new_york": "20251117172648",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/948708/0001437749-25-035480.txt",
+          "source_sha256": "8f86fc0f50f3c3f395a84834727bd7ea0a9119442139f80400dc11ac37325447",
+          "form": "SCHEDULE 13D",
+          "filed": "2025-11-17"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $0.001 per share",
+              "ticker": "SMSI",
+              "exchange": "Nasdaq",
+              "context": "d_2025-01-01_2025-09-30",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "SMSI",
+          "accepted_at_new_york": "20251105160838",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/948708/0001437749-25-033340.txt",
+          "source_sha256": "58057587eec05cc81d8f7bedc7f4f2a6a6e7e899b1b48f05fd2e0b78e7f6acbc",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        }
+      }
+    },
+    {
+      "ordinal": 12,
+      "cusip": "344174107",
+      "issuer": "FOGHORN THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001822462",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "FHTX",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001822462",
+          "issuer_cusip": "344174107",
+          "issuer_name": "FOGHORN THERAPEUTICS INC",
+          "security_class": "COMMON STOCK",
+          "accepted_at_new_york": "20250212092811",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822462/0000315066-25-000841.txt",
+          "source_sha256": "e9c056e7be8cedddeb2960bf7cf3c73cd28a2ff9026c42dbc064e9a425299fff",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-02-12"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.0001 par value per share",
+              "ticker": "FHTX",
+              "exchange": "The Nasdaq Global Market",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "FHTX",
+          "accepted_at_new_york": "20251105070417",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822462/0001628280-25-049238.txt",
+          "source_sha256": "235834521c7195404c3118d132c2cde67810c0bb0f484144f6ae137e4913fec6",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        }
+      }
+    },
+    {
+      "ordinal": 13,
+      "cusip": "88688T100",
+      "issuer": "TILRAY BRANDS INC",
+      "issuer_candidate_cik": "0001731348",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.0001 par value per share",
+              "ticker": "TLRY",
+              "exchange": "Nasdaq",
+              "context": "d_2025-06-01_2025-08-31",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "TLRY",
+          "accepted_at_new_york": "20251009171245",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1731348/0001437749-25-030797.txt",
+          "source_sha256": "1cf413605409e91d5044b715ad8acc39d290c4c3c313aa355bdd3dea3d1a9899",
+          "form": "10-Q",
+          "filed": "2025-10-09"
+        }
+      }
+    },
+    {
+      "ordinal": 14,
+      "cusip": "67000B104",
+      "issuer": "NOVANTA INC",
+      "issuer_candidate_cik": "0001076930",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "NOVT",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001076930",
+          "issuer_cusip": "67000B104",
+          "issuer_name": "NOVANTA INC",
+          "security_class": "COMMON STOCK",
+          "accepted_at_new_york": "20251114121922",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1076930/0000080255-25-000803.txt",
+          "source_sha256": "6218e06969ec753f2bd0f4ce0270175151c115a92bbed3a327609add91c8b28c",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-11-14"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common shares, no par value",
+              "ticker": "NOVT",
+              "exchange": "The Nasdaq Global Select Market",
+              "context": "C_6afb671d-a628-4c90-a8fa-e6c6b2113e09",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "NOVT",
+          "accepted_at_new_york": "20251103171122",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1076930/0001193125-25-262774.txt",
+          "source_sha256": "562828c73ec2f8d2af5b03f3b6b16f72bfbaf392e3a5ebc3ef9fe9049ac57062",
+          "form": "10-Q",
+          "filed": "2025-11-03"
+        }
+      }
+    },
+    {
+      "ordinal": 15,
+      "cusip": "26873J107",
+      "issuer": "EMX RTY CORP",
+      "issuer_candidate_cik": "0001285786",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "EMX",
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001285786",
+          "issuer_cusip": "26873J107",
+          "issuer_name": "EMX Royalty Corporation",
+          "security_class": "Common Shares",
+          "accepted_at_new_york": "20251107135446",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1285786/0001703148-25-000007.txt",
+          "source_sha256": "f35682a4f09844617ce71e7c8bcb6ec973e980d820c4c207cfa0c82475afe9d6",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-11-07"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Shares, no par value",
+              "ticker": "EMX",
+              "exchange": "NYSE",
+              "context": "c-1",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "EMX",
+          "accepted_at_new_york": "20250312164917",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1285786/0001285786-25-000003.txt",
+          "source_sha256": "43b5753c6ff3a07fd0eee513680edb9b3b5b634c8fb646fa9594af227b0973fb",
+          "form": "40-F",
+          "filed": "2025-03-12"
+        },
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251113100234",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1285786/0001143313-25-000088.txt",
+          "source_sha256": "1ce05353a01e9a16f6d24a2388106594fa566c21181d1b8059774761dfa43e23",
+          "form": "25-NSE",
+          "filed": "2025-11-13"
+        }
+      }
+    },
+    {
+      "ordinal": 16,
+      "cusip": "30263Y104",
+      "issuer": "FS BANCORP INC",
+      "issuer_candidate_cik": "0001530249",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "FSBW",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001530249",
+          "issuer_cusip": "30263Y104",
+          "issuer_name": "FS Bancorp Inc",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250729133421",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1530249/0000932471-25-000902.txt",
+          "source_sha256": "f4b79d4656737c63d0823898a77b317d7b6cc92c2cad5e510536b33aaf0025ea",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-07-29"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, par value $.01 per share",
+              "ticker": "FSBW",
+              "exchange": "NASDAQ",
+              "context": "d_2025-01-01_2025-09-30",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "FSBW",
+          "accepted_at_new_york": "20251110163806",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1530249/000143774925034119/fsbw20250930_10q.htm",
+          "source_sha256": "2f93111432957211f58668c7c63b6cef7ca6188eddc0b7b2510c68055f7f9eda",
+          "header_source_url": "https://www.sec.gov/Archives/edgar/data/1530249/000143774925034119/0001437749-25-034119.hdr.sgml",
+          "header_source_sha256": "f9eb7e0f35d15a78d47259cc926fc2fa66a40188e95016d2be6e75da2196dcd9",
+          "acquisition": "primary_document_plus_original_header",
+          "form": "10-Q",
+          "filed": "2025-11-10"
+        }
+      }
+    },
+    {
+      "ordinal": 17,
+      "cusip": "45780L104",
+      "issuer": "INOGEN INC",
+      "issuer_candidate_cik": "0001294133",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "INGN",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001294133",
+          "issuer_cusip": "45780L104",
+          "issuer_name": "Inogen Inc",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250717195440",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1294133/0002052113-25-003069.txt",
+          "source_sha256": "ad0d5f6bfdbb86ed8350ae08203b9a17e857004e0298860d2bbeeb7fbad40531",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-07-17"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock, $0.001 par value",
+              "ticker": "INGN",
+              "exchange": "The NASDAQ Stock Market LLC",
+              "context": "C_72f40cd1-6a37-4e16-ad72-656ca82e0778",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "INGN",
+          "accepted_at_new_york": "20251106160833",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1294133/0001193125-25-269484.txt",
+          "source_sha256": "b72de22b8fef0c7c96dddb7dcf407ae16c2558012166ebae779ee823fa192442",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        }
+      }
+    },
+    {
+      "ordinal": 18,
+      "cusip": "03837C106",
+      "issuer": "APYX MEDICAL CORPORATION",
+      "issuer_candidate_cik": "0000719135",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "APYX",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0000719135",
+          "issuer_cusip": "03837C106",
+          "issuer_name": "APYX MEDICAL CORPORATION",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250214163239",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/719135/0001104659-25-014212.txt",
+          "source_sha256": "52132eb1710ed6a66fab526121b79c1253a356d2865a9fbba9d0161912256fd2",
+          "form": "SCHEDULE 13G",
+          "filed": "2025-02-14"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common Stock",
+              "ticker": "APYX",
+              "exchange": "Nasdaq",
+              "context": "d_2025-01-01_2025-09-30",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "APYX",
+          "accepted_at_new_york": "20251106102858",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/719135/0001437749-25-033499.txt",
+          "source_sha256": "4a2317457d346cb527bc3cbc1ded5485e9d4247118a2cd75bda290ade93a70db",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        }
+      }
+    },
+    {
+      "ordinal": 19,
+      "cusip": "500754106",
+      "issuer": "KRAFT HEINZ CO",
+      "issuer_candidate_cik": "0001637459",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "KHC",
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001637459",
+          "issuer_cusip": "500754106",
+          "issuer_name": "Kraft Heinz Co/The",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250430111200",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1637459/0000932471-25-000554.txt",
+          "source_sha256": "3e13f66de3424a6daffe875de48c736359f98e0babd716a9574828f643d558f9",
+          "form": "SCHEDULE 13G/A",
+          "filed": "2025-04-30"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common stock, $0.01 par value",
+              "ticker": "KHC",
+              "exchange": "The Nasdaq Stock Market LLC",
+              "context": "c-2",
+              "common_stock_candidate": true
+            },
+            {
+              "title": "3.500% Senior Notes due 2029",
+              "ticker": "KHC29",
+              "exchange": "The Nasdaq Stock Market LLC",
+              "context": "c-3",
+              "common_stock_candidate": false
+            },
+            {
+              "title": "3.250% Senior Notes due 2033",
+              "ticker": "KHC33",
+              "exchange": "The Nasdaq Stock Market LLC",
+              "context": "c-4",
+              "common_stock_candidate": false
+            }
+          ],
+          "ticker_in_filing": "KHC",
+          "accepted_at_new_york": "20251029165434",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1637459/0001637459-25-000166.txt",
+          "source_sha256": "7cce8c9b1263e9272ffd6f017a5642d2f350e9d81a66f965acc785c19c617a02",
+          "form": "10-Q",
+          "filed": "2025-10-29"
+        },
+        "removal": {
+          "kind": "removal",
+          "status": "other_or_unclassified_security_notice",
+          "security_class": "Floating Rate Senior Notes due 2025",
+          "accepted_at_new_york": "20250508161328",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1637459/0001354457-25-000390.txt",
+          "source_sha256": "eb06607581dcacac8a0a07a1921c3743c054414f8586c28ee7e3977e962191ce",
+          "form": "25-NSE",
+          "filed": "2025-05-08"
+        }
+      }
+    },
+    {
+      "ordinal": 20,
+      "cusip": "88822Q103",
+      "issuer": "TIPTREE INC",
+      "issuer_candidate_cik": "0001393726",
+      "identity_verified": true,
+      "ticker_in_reviewed_filing": "TIPT",
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {
+        "ownership_identity": {
+          "kind": "ownership_identity",
+          "status": "matched",
+          "issuer_cik": "0001393726",
+          "issuer_cusip": "88822Q103",
+          "issuer_name": "TIPTREE INC.",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251117185724",
+          "uses_reporting_person_as_issuer": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1393726/0001437749-25-035499.txt",
+          "source_sha256": "775e9375f5fa289403ba8a302c40d43e3f1cf5dc963477525e4777854321e4b1",
+          "form": "SCHEDULE 13D/A",
+          "filed": "2025-11-17"
+        },
+        "listing_cover": {
+          "kind": "listing_cover",
+          "status": "single_common_security_in_filing",
+          "securities": [
+            {
+              "title": "Common stock, par value $0.001 per share",
+              "ticker": "TIPT",
+              "exchange": "The Nasdaq Stock Market",
+              "context": "C_98dffab1-6502-4ca1-8699-9e29956c7e36",
+              "common_stock_candidate": true
+            }
+          ],
+          "ticker_in_filing": "TIPT",
+          "accepted_at_new_york": "20251031084451",
+          "listing_at_selection_date_confirmed": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1393726/000119312525259809/tipt-20250930.htm",
+          "source_sha256": "0cc73a3d21c5db38bdd009ebeb8950f7406b5d15b50ea13476893b852b0c5a03",
+          "header_source_url": "https://www.sec.gov/Archives/edgar/data/1393726/000119312525259809/0001193125-25-259809.hdr.sgml",
+          "header_source_sha256": "7d219148e0c7da6a44df5851c2bad404d1770ad2813b9350da8487d973e50fdd",
+          "acquisition": "primary_document_plus_original_header",
+          "form": "10-Q",
+          "filed": "2025-10-31"
+        }
+      }
+    },
+    {
+      "ordinal": 21,
+      "cusip": "67064R102",
+      "issuer": "NUVEEN VIRGINIA QLTY MUNCPL",
+      "issuer_candidate_cik": "0000897421",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 22,
+      "cusip": "524660107",
+      "issuer": "LEGGETT & PLATT INC",
+      "issuer_candidate_cik": "0000058492",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 23,
+      "cusip": "444097109",
+      "issuer": "HUDSON PAC PPTYS INC",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 24,
+      "cusip": "65441V101",
+      "issuer": "NINE ENERGY SERVICE INC",
+      "issuer_candidate_cik": "0001532286",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 25,
+      "cusip": "443510607",
+      "issuer": "HUBBELL INC",
+      "issuer_candidate_cik": "0000048898",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 26,
+      "cusip": "723484101",
+      "issuer": "PINNACLE WEST CAP CORP",
+      "issuer_candidate_cik": "0000764622",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 27,
+      "cusip": "379463102",
+      "issuer": "GLOBAL WTR RES INC",
+      "issuer_candidate_cik": "0001434728",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 28,
+      "cusip": "745848101",
+      "issuer": "PULMONX CORP",
+      "issuer_candidate_cik": "0001127537",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 29,
+      "cusip": "36352H100",
+      "issuer": "GALIANO GOLD INC",
+      "issuer_candidate_cik": "0001377757",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 30,
+      "cusip": "910340108",
+      "issuer": "UNITED FIRE GROUP INC",
+      "issuer_candidate_cik": "0000101199",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 31,
+      "cusip": "250639101",
+      "issuer": "DESWELL INDS INC",
+      "issuer_candidate_cik": "0000946936",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 32,
+      "cusip": "27829G106",
+      "issuer": "EATON VANCE RISK-MANAGED DIV",
+      "issuer_candidate_cik": "0001395325",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 33,
+      "cusip": "023135106",
+      "issuer": "AMAZON COM INC",
+      "issuer_candidate_cik": "0001018724",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 34,
+      "cusip": "69121K104",
+      "issuer": "BLUE OWL CAPITAL CORPORATION",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 35,
+      "cusip": "10806X102",
+      "issuer": "BRIDGEBIO PHARMA INC",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 36,
+      "cusip": "421298100",
+      "issuer": "HAYWARD HLDGS INC",
+      "issuer_candidate_cik": "0001834622",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 37,
+      "cusip": "76882G107",
+      "issuer": "RIVERNORTH DOUBLELINE STRATE",
+      "issuer_candidate_cik": "0001678130",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 38,
+      "cusip": "30049A107",
+      "issuer": "EVOLUTION PETE CORP",
+      "issuer_candidate_cik": "0001006655",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 39,
+      "cusip": "527064109",
+      "issuer": "LESLIES INC",
+      "issuer_candidate_cik": "0001821806",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 40,
+      "cusip": "782011100",
+      "issuer": "RUSH STREET INTERACTIVE INC",
+      "issuer_candidate_cik": "0001793659",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 41,
+      "cusip": "092479104",
+      "issuer": "BLACKROCK MUN INCOME QUALITY",
+      "issuer_candidate_cik": "0001181187",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 42,
+      "cusip": "626755102",
+      "issuer": "MURPHY USA INC",
+      "issuer_candidate_cik": "0001573516",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 43,
+      "cusip": "258622109",
+      "issuer": "DOUBLELINE INCOME SOLUTIONS",
+      "issuer_candidate_cik": "0001566388",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 44,
+      "cusip": "363576109",
+      "issuer": "GALLAGHER ARTHUR J & CO",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 45,
+      "cusip": "683416101",
+      "issuer": "OOMA INC",
+      "issuer_candidate_cik": "0001327688",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 46,
+      "cusip": "70805E109",
+      "issuer": "PENNANT GROUP INC",
+      "issuer_candidate_cik": "0001766400",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 47,
+      "cusip": "32055Y201",
+      "issuer": "FIRST INTST BANCSYSTEM INC",
+      "issuer_candidate_cik": "0000860413",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 48,
+      "cusip": "872540109",
+      "issuer": "TJX COS INC NEW",
+      "issuer_candidate_cik": "0000109198",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 49,
+      "cusip": "45333F109",
+      "issuer": "INCANNEX HEALTHCARE INC",
+      "issuer_candidate_cik": "0001873875",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 50,
+      "cusip": "433535101",
+      "issuer": "HIREQUEST INC",
+      "issuer_candidate_cik": "0001140102",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 51,
+      "cusip": "84265V105",
+      "issuer": "SOUTHERN COPPER CORP",
+      "issuer_candidate_cik": "0001001838",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 52,
+      "cusip": "647551100",
+      "issuer": "NEW MTN FIN CORP",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 53,
+      "cusip": "830940102",
+      "issuer": "SKYWARD SPECIALTY INS GROUP",
+      "issuer_candidate_cik": "0001519449",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 54,
+      "cusip": "12763L105",
+      "issuer": "CADRE HLDGS INC",
+      "issuer_candidate_cik": "0001860543",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 55,
+      "cusip": "035255108",
+      "issuer": "ANIKA THERAPEUTICS INC",
+      "issuer_candidate_cik": "0000898437",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 56,
+      "cusip": "651229106",
+      "issuer": "NEWELL BRANDS INC",
+      "issuer_candidate_cik": "0000814453",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 57,
+      "cusip": "84741T104",
+      "issuer": "SPECIAL OPPORTUNITIES FD INC",
+      "issuer_candidate_cik": "0000897802",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 58,
+      "cusip": "401617105",
+      "issuer": "GUESS INC",
+      "issuer_candidate_cik": "0000912463",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 59,
+      "cusip": "03823U102",
+      "issuer": "APPLIED OPTOELECTRONICS INC",
+      "issuer_candidate_cik": "0001158114",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 60,
+      "cusip": "126327105",
+      "issuer": "CS DISCO INC",
+      "issuer_candidate_cik": "0001625641",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 61,
+      "cusip": "760911107",
+      "issuer": "RESEARCH FRONTIERS INC",
+      "issuer_candidate_cik": "0000793524",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 62,
+      "cusip": "48238T109",
+      "issuer": "OPENLANE INC",
+      "issuer_candidate_cik": "0001395942",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 63,
+      "cusip": "68213N109",
+      "issuer": "OMNICELL COM",
+      "issuer_candidate_cik": "0000926326",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 64,
+      "cusip": "19842X109",
+      "issuer": "COLUMBIA SELIGM PREM TECH GR",
+      "issuer_candidate_cik": "0001471420",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 65,
+      "cusip": "440327104",
+      "issuer": "HORACE MANN EDUCATORS CORP N",
+      "issuer_candidate_cik": "0000850141",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 66,
+      "cusip": "17248W303",
+      "issuer": "CINGULATE INC",
+      "issuer_candidate_cik": "0001862150",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 67,
+      "cusip": "237690102",
+      "issuer": "DATA I O CORP",
+      "issuer_candidate_cik": "0000351998",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 68,
+      "cusip": "45816D100",
+      "issuer": "CORECARD CORPORATION",
+      "issuer_candidate_cik": "0000320340",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251031114441",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/320340/0000876661-25-000817.txt",
+          "source_sha256": "721bc50d99c34ac4257e9652f965b06ae81985291ced5f6ed90a9da2aed813ad",
+          "form": "25-NSE",
+          "filed": "2025-10-31"
+        }
+      }
+    },
+    {
+      "ordinal": 69,
+      "cusip": "675232102",
+      "issuer": "OCEANEERING INTL INC",
+      "issuer_candidate_cik": "0000073756",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 70,
+      "cusip": "76152G100",
+      "issuer": "REVIVA PHARMACEUTCLS HLDGS I",
+      "issuer_candidate_cik": "0001742927",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "other_or_unclassified_security_notice",
+          "security_class": "Warrants expiring 12/14/2025",
+          "accepted_at_new_york": "20251212165315",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1742927/0001354457-25-001259.txt",
+          "source_sha256": "3e19e0fbac0e3a42c4bff5337f7308ff44a60f5d769bcaaac4544e2897659101",
+          "form": "25-NSE",
+          "filed": "2025-12-12"
+        }
+      }
+    },
+    {
+      "ordinal": 71,
+      "cusip": "668771108",
+      "issuer": "GEN DIGITAL INC",
+      "issuer_candidate_cik": "0000849399",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 72,
+      "cusip": "09255P107",
+      "issuer": "BLACKROCK CORPOR HI YLD FD I",
+      "issuer_candidate_cik": "0001222401",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 73,
+      "cusip": "74317M104",
+      "issuer": "PROFICIENT AUTO LOGISTICS IN",
+      "issuer_candidate_cik": "0001998768",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 74,
+      "cusip": "92686J106",
+      "issuer": "VIKING THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001607678",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 75,
+      "cusip": "055645303",
+      "issuer": "BRT APARTMENTS CORP",
+      "issuer_candidate_cik": "0000014846",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 76,
+      "cusip": "126633205",
+      "issuer": "CVR PARTNERS LP",
+      "issuer_candidate_cik": "0001425292",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 77,
+      "cusip": "40434L105",
+      "issuer": "HP INC",
+      "issuer_candidate_cik": "0000047217",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 78,
+      "cusip": "228895108",
+      "issuer": "CRYO-CELL INTL INC",
+      "issuer_candidate_cik": "0000862692",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 79,
+      "cusip": "53635B107",
+      "issuer": "LIQUIDITY SVCS INC",
+      "issuer_candidate_cik": "0001235468",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 80,
+      "cusip": "N5749R100",
+      "issuer": "MERUS N V",
+      "issuer_candidate_cik": "0001651311",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 81,
+      "cusip": "03475V101",
+      "issuer": "ANGIODYNAMICS INC",
+      "issuer_candidate_cik": "0001275187",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 82,
+      "cusip": "04638F108",
+      "issuer": "ASTRONOVA INC",
+      "issuer_candidate_cik": "0000008146",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 83,
+      "cusip": "516806205",
+      "issuer": "VITAL ENERGY INC",
+      "issuer_candidate_cik": "0001528129",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251215091752",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1528129/0000876661-25-000963.txt",
+          "source_sha256": "46394ecb6946f0bc994216e3c2b2dabd71e936150739cb2d57d18f9556f51191",
+          "form": "25-NSE",
+          "filed": "2025-12-15"
+        }
+      }
+    },
+    {
+      "ordinal": 84,
+      "cusip": "G0378L100",
+      "issuer": "ANGLOGOLD ASHANTI PLC",
+      "issuer_candidate_cik": "0001973832",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 85,
+      "cusip": "678026105",
+      "issuer": "OIL STS INTL INC",
+      "issuer_candidate_cik": "0001121484",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 86,
+      "cusip": "60855R100",
+      "issuer": "MOLINA HEALTHCARE INC",
+      "issuer_candidate_cik": "0001179929",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 87,
+      "cusip": "55939A107",
+      "issuer": "MAGNERA CORP",
+      "issuer_candidate_cik": "0000041719",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 88,
+      "cusip": "401664107",
+      "issuer": "GUGGENHEIM TAXABLE MUNICP BO",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 89,
+      "cusip": "65487K100",
+      "issuer": "NLIGHT INC",
+      "issuer_candidate_cik": "0001124796",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 90,
+      "cusip": "278279104",
+      "issuer": "EATON VANCE FLTING RATE INC",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 91,
+      "cusip": "45826H109",
+      "issuer": "INTEGER HLDGS CORP",
+      "issuer_candidate_cik": "0001114483",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 92,
+      "cusip": "42226A107",
+      "issuer": "HEALTHEQUITY INC",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 93,
+      "cusip": "554382101",
+      "issuer": "MACERICH CO",
+      "issuer_candidate_cik": "0000912242",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 94,
+      "cusip": "36468G103",
+      "issuer": "GAMESQUARE HLDGS INC",
+      "issuer_candidate_cik": "0001714562",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 95,
+      "cusip": "55025L108",
+      "issuer": "LUMENT FINANCE TRUST INC",
+      "issuer_candidate_cik": "0001547546",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 96,
+      "cusip": "23285D109",
+      "issuer": "CYTEK BIOSCIENCES INC",
+      "issuer_candidate_cik": "0001831915",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 97,
+      "cusip": "339764201",
+      "issuer": "FLORA GROWTH CORP",
+      "issuer_candidate_cik": "0001790169",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 98,
+      "cusip": "21676P103",
+      "issuer": "COOPER STD HLDGS INC",
+      "issuer_candidate_cik": "0001320461",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 99,
+      "cusip": "602496101",
+      "issuer": "MIMEDX GROUP INC",
+      "issuer_candidate_cik": "0001376339",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 100,
+      "cusip": "44888K407",
+      "issuer": "HYDROFARM HLDGS GROUP INC",
+      "issuer_candidate_cik": "0001695295",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 101,
+      "cusip": "04272N102",
+      "issuer": "ARRIVENT BIOPHARMA INC",
+      "issuer_candidate_cik": "0001868279",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 102,
+      "cusip": "543518104",
+      "issuer": "LOOP INDS INC",
+      "issuer_candidate_cik": "0001504678",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 103,
+      "cusip": "83191H107",
+      "issuer": "SMART SAND INC",
+      "issuer_candidate_cik": "0001529628",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 104,
+      "cusip": "425885100",
+      "issuer": "HENNESSY ADVISORS INC",
+      "issuer_candidate_cik": "0001145255",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 105,
+      "cusip": "254709108",
+      "issuer": "DISCOVER FINL SVCS",
+      "issuer_candidate_cik": "0001393612",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250519134441",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1393612/0000876661-25-000350.txt",
+          "source_sha256": "a989c62c3666f4061fee7c5c7a94a8e120e04ef56726422fda46e3a16fecbb2b",
+          "form": "25-NSE",
+          "filed": "2025-05-19"
+        }
+      }
+    },
+    {
+      "ordinal": 106,
+      "cusip": "98585N106",
+      "issuer": "YEXT INC",
+      "issuer_candidate_cik": "0001614178",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 107,
+      "cusip": "294766100",
+      "issuer": "EQUUS TOTAL RETURN INC",
+      "issuer_candidate_cik": "0000878932",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 108,
+      "cusip": "095306106",
+      "issuer": "BLUE BIRD CORP",
+      "issuer_candidate_cik": "0001589526",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 109,
+      "cusip": "532206109",
+      "issuer": "LIFE360 INC",
+      "issuer_candidate_cik": "0001581760",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 110,
+      "cusip": "74164M108",
+      "issuer": "PRIMERICA INC",
+      "issuer_candidate_cik": "0001475922",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 111,
+      "cusip": "00847J105",
+      "issuer": "AGILYSYS INC",
+      "issuer_candidate_cik": "0000078749",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 112,
+      "cusip": "18913Y103",
+      "issuer": "CLOUGH GLOBAL DIVID & INCOME",
+      "issuer_candidate_cik": "0001288795",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 113,
+      "cusip": "693475105",
+      "issuer": "PNC FINL SVCS GROUP INC",
+      "issuer_candidate_cik": "0000713676",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 114,
+      "cusip": "92823T207",
+      "issuer": "VIRNETX HLDG CORP",
+      "issuer_candidate_cik": "0001082324",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "status": "parse_or_validation_requires_review",
+          "reason": "missing_or_ambiguous_primary_xml",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1082324/0001140361-25-035705.txt",
+          "source_sha256": "6a7b2f715b93d97a3b6a30da8503c788170d395932591871d0be28dd3b4a41e0",
+          "form": "25",
+          "filed": "2025-09-22"
+        }
+      }
+    },
+    {
+      "ordinal": 115,
+      "cusip": "09627Y109",
+      "issuer": "BLUEPRINT MEDICINES CORP",
+      "issuer_candidate_cik": "0001597264",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250718145828",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1597264/0001354457-25-000693.txt",
+          "source_sha256": "97aca19d560f60d2625b69edfb85b40cec4297d08c7d7c18174ed57baf9d36a9",
+          "form": "25-NSE",
+          "filed": "2025-07-18"
+        }
+      }
+    },
+    {
+      "ordinal": 116,
+      "cusip": "55955D100",
+      "issuer": "MAGNITE INC",
+      "issuer_candidate_cik": "0001595974",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 117,
+      "cusip": "58844R108",
+      "issuer": "MERCHANTS BANCORP IND",
+      "issuer_candidate_cik": "0001629019",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "other_or_unclassified_security_notice",
+          "security_class": "Depositary Shares Each Representing a 1/40th Interest in a Share of Series B Fixed-to-Floating Rate",
+          "accepted_at_new_york": "20250102162942",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1629019/0001354457-25-000004.txt",
+          "source_sha256": "f39cacf9ee403b618cd0135477b0cad930791faf8c0e1b1cebbf234e07633028",
+          "form": "25-NSE",
+          "filed": "2025-01-02"
+        }
+      }
+    },
+    {
+      "ordinal": 118,
+      "cusip": "00373V100",
+      "issuer": "ABOVE FOOD INGREDIENTS INC",
+      "issuer_candidate_cik": "0001979484",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 119,
+      "cusip": "876511106",
+      "issuer": "TASEKO MINES LTD",
+      "issuer_candidate_cik": "0000878518",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 120,
+      "cusip": "75508B104",
+      "issuer": "RAYONIER ADVANCED MATLS INC",
+      "issuer_candidate_cik": "0001597672",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 121,
+      "cusip": "98943L107",
+      "issuer": "ZENTALIS PHARMACEUTICALS INC",
+      "issuer_candidate_cik": "0001725160",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 122,
+      "cusip": "59151K108",
+      "issuer": "METHANEX CORP",
+      "issuer_candidate_cik": "0000886977",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 123,
+      "cusip": "879369106",
+      "issuer": "TELEFLEX INCORPORATED",
+      "issuer_candidate_cik": "0000096943",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 124,
+      "cusip": "05329W102",
+      "issuer": "AUTONATION INC",
+      "issuer_candidate_cik": "0000350698",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 125,
+      "cusip": "320866106",
+      "issuer": "FIRST MID ILL BANCSHARES INC",
+      "issuer_candidate_cik": "0000700565",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 126,
+      "cusip": "252131107",
+      "issuer": "DEXCOM INC",
+      "issuer_candidate_cik": "0001093557",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 127,
+      "cusip": "55616P104",
+      "issuer": "MACYS INC",
+      "issuer_candidate_cik": "0000794367",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 128,
+      "cusip": "92922P106",
+      "issuer": "W & T OFFSHORE INC",
+      "issuer_candidate_cik": "0001288403",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 129,
+      "cusip": "88322Q108",
+      "issuer": "TG THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001001316",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 130,
+      "cusip": "444859102",
+      "issuer": "HUMANA INC",
+      "issuer_candidate_cik": "0000049071",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 131,
+      "cusip": "600544100",
+      "issuer": "MILLERKNOLL INC",
+      "issuer_candidate_cik": "0000066382",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 132,
+      "cusip": "108621103",
+      "issuer": "BRIDGEWATER BANCSHARES INC",
+      "issuer_candidate_cik": "0001341317",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 133,
+      "cusip": "20337X109",
+      "issuer": "COMMSCOPE HLDG CO INC",
+      "issuer_candidate_cik": "0001517228",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 134,
+      "cusip": "256163106",
+      "issuer": "DOCUSIGN INC",
+      "issuer_candidate_cik": "0001261333",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 135,
+      "cusip": "62944T105",
+      "issuer": "NVR INC",
+      "issuer_candidate_cik": "0000906163",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 136,
+      "cusip": "59156R108",
+      "issuer": "METLIFE INC",
+      "issuer_candidate_cik": "0001099219",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 137,
+      "cusip": "070203104",
+      "issuer": "BASSETT FURNITURE INDS INC",
+      "issuer_candidate_cik": "0000010329",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 138,
+      "cusip": "26142Q304",
+      "issuer": "DRAGANFLY INC.",
+      "issuer_candidate_cik": "0001786286",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 139,
+      "cusip": "749685103",
+      "issuer": "RPM INTL INC",
+      "issuer_candidate_cik": "0000110621",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 140,
+      "cusip": "776696106",
+      "issuer": "ROPER TECHNOLOGIES INC",
+      "issuer_candidate_cik": "0000882835",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 141,
+      "cusip": "15202L107",
+      "issuer": "CENTERSPACE",
+      "issuer_candidate_cik": "0000798359",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 142,
+      "cusip": "00191U102",
+      "issuer": "ASGN INC",
+      "issuer_candidate_cik": "0000890564",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 143,
+      "cusip": "69924R108",
+      "issuer": "PARAMOUNT GROUP INC",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 144,
+      "cusip": "16934Q802",
+      "issuer": "CHIMERA INVT CORP",
+      "issuer_candidate_cik": "0001409493",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 145,
+      "cusip": "45674E109",
+      "issuer": "IN8BIO INC",
+      "issuer_candidate_cik": "0001740279",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 146,
+      "cusip": "666762109",
+      "issuer": "NORTHRIM BANCORP INC",
+      "issuer_candidate_cik": "0001163370",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 147,
+      "cusip": "018581108",
+      "issuer": "BREAD FINANCIAL HOLDINGS INC",
+      "issuer_candidate_cik": "0001101215",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 148,
+      "cusip": "912909108",
+      "issuer": "UNITED STATES STL CORP NEW",
+      "issuer_candidate_cik": "0001163302",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 1,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250618094113",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1163302/0000876882-25-000016.txt",
+          "source_sha256": "84044a80b03967266b5a946560053c06932d0a0497d59a13b47f16e22f90a6f1",
+          "form": "25-NSE",
+          "filed": "2025-06-18"
+        }
+      }
+    },
+    {
+      "ordinal": 149,
+      "cusip": "844895102",
+      "issuer": "SOUTHWEST GAS HLDGS INC",
+      "issuer_candidate_cik": "0001692115",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "other_or_unclassified_security_notice",
+          "security_class": "Preferred Stock Purchase Rights",
+          "accepted_at_new_york": "20250521090353",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1692115/0000876661-25-000367.txt",
+          "source_sha256": "287697c2a14359ccb5cb5911ce73277cd34da2b757b088ae01dc1fda7eb6f6fa",
+          "form": "25-NSE",
+          "filed": "2025-05-21"
+        }
+      }
+    },
+    {
+      "ordinal": 150,
+      "cusip": "125141101",
+      "issuer": "CECO ENVIRONMENTAL CORP",
+      "issuer_candidate_cik": "0000003197",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 151,
+      "cusip": "396879108",
+      "issuer": "GREENWICH LIFESCIENCES INC",
+      "issuer_candidate_cik": "0001799788",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 152,
+      "cusip": "416515104",
+      "issuer": "HARTFORD INSURANCE GROUP INC",
+      "issuer_candidate_cik": "0000874766",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 153,
+      "cusip": "84833T103",
+      "issuer": "SPERO THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001701108",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 154,
+      "cusip": "67073S307",
+      "issuer": "CIMG INC",
+      "issuer_candidate_cik": "0001527613",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 155,
+      "cusip": "609786108",
+      "issuer": "MONOGRAM TECHNOLOGIES INC",
+      "issuer_candidate_cik": "0001769759",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251007092501",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1769759/0001354457-25-000997.txt",
+          "source_sha256": "2a331ea27e6d67f8644654d7eddd02ec05ef2360483050fe1ff6d05f208a61e1",
+          "form": "25-NSE",
+          "filed": "2025-10-07"
+        }
+      }
+    },
+    {
+      "ordinal": 156,
+      "cusip": "88162G103",
+      "issuer": "TETRA TECH INC NEW",
+      "issuer_candidate_cik": "0000831641",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 157,
+      "cusip": "573075108",
+      "issuer": "MARTEN TRANS LTD",
+      "issuer_candidate_cik": "0000799167",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 158,
+      "cusip": "46116X101",
+      "issuer": "INTRA-CELLULAR THERAPIES INC",
+      "issuer_candidate_cik": "0001567514",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20250402090259",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1567514/0001354457-25-000272.txt",
+          "source_sha256": "71e2b5ae91d7ee3ea690bfb372ce9cdb7bf26d9ed7006b6b738c50fa7f62e246",
+          "form": "25-NSE",
+          "filed": "2025-04-02"
+        }
+      }
+    },
+    {
+      "ordinal": 159,
+      "cusip": "G0750C108",
+      "issuer": "AXALTA COATING SYS LTD",
+      "issuer_candidate_cik": "0001616862",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 160,
+      "cusip": "553498106",
+      "issuer": "MSA SAFETY INC",
+      "issuer_candidate_cik": "0000066570",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 161,
+      "cusip": "89142B107",
+      "issuer": "TORRID HLDGS INC",
+      "issuer_candidate_cik": "0001792781",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 162,
+      "cusip": "844741108",
+      "issuer": "SOUTHWEST AIRLS CO",
+      "issuer_candidate_cik": "0000092380",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 163,
+      "cusip": "48666K109",
+      "issuer": "KB HOME",
+      "issuer_candidate_cik": "0000795266",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 164,
+      "cusip": "55453W105",
+      "issuer": "MACKENZIE RLTY CAP INC",
+      "issuer_candidate_cik": "0001550913",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 165,
+      "cusip": "74460D109",
+      "issuer": "PUBLIC STORAGE OPER CO",
+      "issuer_candidate_cik": "0001989278",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 166,
+      "cusip": "983134107",
+      "issuer": "WYNN RESORTS LTD",
+      "issuer_candidate_cik": "0001174922",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 167,
+      "cusip": "87807B107",
+      "issuer": "TC ENERGY CORP",
+      "issuer_candidate_cik": "0001232384",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 168,
+      "cusip": "94845U105",
+      "issuer": "WEBTOON ENTMT INC",
+      "issuer_candidate_cik": "0001997859",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 169,
+      "cusip": "08915P101",
+      "issuer": "BIG 5 SPORTING GOODS CORP",
+      "issuer_candidate_cik": "0001156388",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "common_stock_removal_notice_requires_resolution_before_admission"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "kind": "removal",
+          "status": "common_stock_notice",
+          "security_class": "Common Stock",
+          "accepted_at_new_york": "20251002122628",
+          "automatic_delisting_effective_date": null,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1156388/0001354457-25-000978.txt",
+          "source_sha256": "88e0dd592fb42cad45764b4abefa5aacf2985eb523e2ecedae7c346430b23d9c",
+          "form": "25-NSE",
+          "filed": "2025-10-02"
+        }
+      }
+    },
+    {
+      "ordinal": 170,
+      "cusip": "14216R101",
+      "issuer": "CARISMA THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001485003",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {
+        "removal": {
+          "status": "parse_or_validation_requires_review",
+          "reason": "missing_or_ambiguous_primary_xml",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1485003/0001104659-25-121109.txt",
+          "source_sha256": "9342dd64a9c72a98bc0e7888fd009f2b684af87bbd84d889c5c712de8ac6ecfc",
+          "form": "25",
+          "filed": "2025-12-15"
+        }
+      }
+    },
+    {
+      "ordinal": 171,
+      "cusip": "806037107",
+      "issuer": "SCANSOURCE INC",
+      "issuer_candidate_cik": "0000918965",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 172,
+      "cusip": "46131B704",
+      "issuer": "INVESCO MORTGAGE CAPITAL INC",
+      "issuer_candidate_cik": "0001437071",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 173,
+      "cusip": "29271Q103",
+      "issuer": "ENERGY SVCS ACQUISITION CORP",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 174,
+      "cusip": "46266C105",
+      "issuer": "IQVIA HLDGS INC",
+      "issuer_candidate_cik": "0001478242",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 175,
+      "cusip": "670928100",
+      "issuer": "NUVEEN MUN VALUE FD INC",
+      "issuer_candidate_cik": "0000812801",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 176,
+      "cusip": "67079U306",
+      "issuer": "NUTEX HEALTH INC",
+      "issuer_candidate_cik": "0001479681",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 177,
+      "cusip": "045487105",
+      "issuer": "ASSOCIATED BANC CORP",
+      "issuer_candidate_cik": "0000007789",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 178,
+      "cusip": "36828A101",
+      "issuer": "GE VERNOVA INC",
+      "issuer_candidate_cik": "0001996810",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "issuer": "KAIROS PHARMA LTD",
+      "issuer_candidate_cik": "0001962011",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 180,
+      "cusip": "75902K106",
+      "issuer": "REGIONAL MGMT CORP",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 181,
+      "cusip": "67401P405",
+      "issuer": "OAKTREE SPECIALTY LENDING CO",
+      "issuer_candidate_cik": "0001414932",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 182,
+      "cusip": "53224K302",
+      "issuer": "LIGHTBRIDGE CORP",
+      "issuer_candidate_cik": "0001084554",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 183,
+      "cusip": "76881Y109",
+      "issuer": "RIVERNORTH OPPORTUNITIES FD",
+      "issuer_candidate_cik": "0001501072",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 184,
+      "cusip": "87583X109",
+      "issuer": "TANGO THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001819133",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 185,
+      "cusip": "09250W107",
+      "issuer": "BLACKROCK HEALTH SCIENCES TR",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 186,
+      "cusip": "20602D101",
+      "issuer": "CONCENTRIX CORP",
+      "issuer_candidate_cik": "0001803599",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 187,
+      "cusip": "233331107",
+      "issuer": "DTE ENERGY CO",
+      "issuer_candidate_cik": "0000936340",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 188,
+      "cusip": "047649108",
+      "issuer": "ATKORE INC",
+      "issuer_candidate_cik": "0001666138",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "issuer": "CALLAN JMB INC",
+      "issuer_candidate_cik": "0002032545",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 190,
+      "cusip": "816307300",
+      "issuer": "SELECTQUOTE INC",
+      "issuer_candidate_cik": "0001794783",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 191,
+      "cusip": "33734E103",
+      "issuer": "FIRST TR MTG INCOME FD",
+      "issuer_candidate_cik": "0001319183",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "fund_report"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 192,
+      "cusip": "27829L105",
+      "issuer": "EATON VANCE NATL MUN OPPORT",
+      "issuer_candidate_cik": null,
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [],
+      "reviews": {}
+    },
+    {
+      "ordinal": 193,
+      "cusip": "75943R102",
+      "issuer": "RELAY THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001812364",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 194,
+      "cusip": "68827L101",
+      "issuer": "OSISKO GOLD ROYALTIES LTD",
+      "issuer_candidate_cik": "0001627272",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 195,
+      "cusip": "053807103",
+      "issuer": "AVNET INC",
+      "issuer_candidate_cik": "0000008858",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 196,
+      "cusip": "184499101",
+      "issuer": "CLEAN ENERGY FUELS CORP",
+      "issuer_candidate_cik": "0001368265",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 197,
+      "cusip": "419870100",
+      "issuer": "HAWAIIAN ELEC INDUSTRIES",
+      "issuer_candidate_cik": "0000354707",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 198,
+      "cusip": "020764106",
+      "issuer": "ALPHA METALLURGICAL RESOUR I",
+      "issuer_candidate_cik": "0001704715",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 199,
+      "cusip": "23331S100",
+      "issuer": "DHI GROUP INC",
+      "issuer_candidate_cik": "0001393883",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    },
+    {
+      "ordinal": 200,
+      "cusip": "405024100",
+      "issuer": "HAEMONETICS CORP MASS",
+      "issuer_candidate_cik": "0000313143",
+      "identity_verified": false,
+      "ticker_in_reviewed_filing": null,
+      "ticker_at_selection_date": null,
+      "review_flags": [],
+      "additional_removal_notices_not_reviewed": 0,
+      "eligible_for_backtest": false,
+      "pending_sources": [
+        "ownership_identity",
+        "listing_cover"
+      ],
+      "reviews": {}
+    }
+  ]
+}

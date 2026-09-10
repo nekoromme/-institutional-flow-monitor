@@ -1,0 +1,4240 @@
+{
+  "version": "historical-identity-0.1",
+  "as_of": "2026-01-01",
+  "input_frame_sha256": "14351bd51bb2a862e232e2b57d301d08a18587e0b48a497e9b913b851dcdc2c5",
+  "index_sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR1/master.gz",
+      "sha256": "7f2dce76a503d73a1f819b3221c33818689954868b9100c9aa0a506f2ed9fed1",
+      "bytes": 4212501
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR2/master.gz",
+      "sha256": "5d4ba07160b4356cfc0983bfbad1c7d5e5eba3b9d9f6ff1424b23b87e594dbfc",
+      "bytes": 4152695
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR3/master.gz",
+      "sha256": "523c9fadd1c0add56fc0af183e424ba24fb6e532c1bde03e994a6f035abe0460",
+      "bytes": 3614356
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR4/master.gz",
+      "sha256": "7e4f3c550d6b7eb84c85b6f277d94fbc0ba085e1aba2ba3cd8030cb9d15028d8",
+      "bytes": 3408985
+    }
+  ],
+  "indexed_entities": 151917,
+  "index_vintage": "current_reconstruction_of_2025_indexes; post_acceptance_corrections_possible",
+  "rows": [
+    {
+      "ordinal": 1,
+      "cusip": "86745K104",
+      "issuer": "SUNNOVA ENERGY INTL INC.",
+      "issuer_candidate_cik": "0001772695",
+      "name_candidates": [
+        {
+          "cik": "0001772695",
+          "name": "Sunnova Energy International Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 2,
+      "cusip": "88337F105",
+      "issuer": "THE ODP CORP",
+      "issuer_candidate_cik": "0000800240",
+      "name_candidates": [
+        {
+          "cik": "0000800240",
+          "name": "ODP Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 3,
+      "cusip": "759509102",
+      "issuer": "RELIANCE INC",
+      "issuer_candidate_cik": "0000861884",
+      "name_candidates": [
+        {
+          "cik": "0000861884",
+          "name": "RELIANCE, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "issuer": "LAKESIDE HLDG LTD",
+      "issuer_candidate_cik": "0001996192",
+      "name_candidates": [
+        {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "name_similarity": 0.973
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 5,
+      "cusip": "68375N103",
+      "issuer": "OPKO HEALTH INC",
+      "issuer_candidate_cik": "0000944809",
+      "name_candidates": [
+        {
+          "cik": "0000944809",
+          "name": "OPKO HEALTH, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 6,
+      "cusip": "95766N103",
+      "issuer": "WESTERN ASSET MUN HIGH INCOM",
+      "issuer_candidate_cik": "0000830487",
+      "name_candidates": [
+        {
+          "cik": "0000830487",
+          "name": "WESTERN ASSET MUNICIPAL HIGH INCOME FUND INC.",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001228509",
+          "name": "WESTERN ASSET GLOBAL HIGH INCOME FUND INC.",
+          "name_similarity": 0.7419
+        },
+        {
+          "cik": "0001058239",
+          "name": "WESTERN ASSET HIGH INCOME FUND II INC.",
+          "name_similarity": 0.7241
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 7,
+      "cusip": "78454L100",
+      "issuer": "SM ENERGY CO",
+      "issuer_candidate_cik": "0000893538",
+      "name_candidates": [
+        {
+          "cik": "0000893538",
+          "name": "SM Energy Co",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 8,
+      "cusip": "874054109",
+      "issuer": "TAKE-TWO INTERACTIVE SOFTWAR",
+      "issuer_candidate_cik": "0000946581",
+      "name_candidates": [
+        {
+          "cik": "0000946581",
+          "name": "TAKE TWO INTERACTIVE SOFTWARE INC",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 9,
+      "cusip": "256086109",
+      "issuer": "DOCGO INC",
+      "issuer_candidate_cik": "0001822359",
+      "name_candidates": [
+        {
+          "cik": "0001822359",
+          "name": "DocGo Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 10,
+      "cusip": "09256A109",
+      "issuer": "BLACKROCK ENHANCED LARGE CAP",
+      "issuer_candidate_cik": "0001278895",
+      "name_candidates": [
+        {
+          "cik": "0001278895",
+          "name": "BlackRock Enhanced Large Cap Core Fund, Inc.",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001370755",
+          "name": "BlackRock TCP Capital Corp.",
+          "name_similarity": 0.7083
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 11,
+      "cusip": "832154405",
+      "issuer": "SMITH MICRO SOFTWARE INC",
+      "issuer_candidate_cik": "0000948708",
+      "name_candidates": [
+        {
+          "cik": "0000948708",
+          "name": "SMITH MICRO SOFTWARE, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 12,
+      "cusip": "344174107",
+      "issuer": "FOGHORN THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001822462",
+      "name_candidates": [
+        {
+          "cik": "0001822462",
+          "name": "Foghorn Therapeutics Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 13,
+      "cusip": "88688T100",
+      "issuer": "TILRAY BRANDS INC",
+      "issuer_candidate_cik": "0001731348",
+      "name_candidates": [
+        {
+          "cik": "0001731348",
+          "name": "Tilray Brands, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 14,
+      "cusip": "67000B104",
+      "issuer": "NOVANTA INC",
+      "issuer_candidate_cik": "0001076930",
+      "name_candidates": [
+        {
+          "cik": "0001076930",
+          "name": "NOVANTA INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001000694",
+          "name": "NOVAVAX INC",
+          "name_similarity": 0.7143
+        },
+        {
+          "cik": "0001109345",
+          "name": "NOVA LTD.",
+          "name_similarity": 0.7143
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 15,
+      "cusip": "26873J107",
+      "issuer": "EMX RTY CORP",
+      "issuer_candidate_cik": "0001285786",
+      "name_candidates": [
+        {
+          "cik": "0001285786",
+          "name": "EMX Royalty Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 16,
+      "cusip": "30263Y104",
+      "issuer": "FS BANCORP INC",
+      "issuer_candidate_cik": "0001530249",
+      "name_candidates": [
+        {
+          "cik": "0001530249",
+          "name": "FS Bancorp, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 17,
+      "cusip": "45780L104",
+      "issuer": "INOGEN INC",
+      "issuer_candidate_cik": "0001294133",
+      "name_candidates": [
+        {
+          "cik": "0001294133",
+          "name": "Inogen Inc",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 18,
+      "cusip": "03837C106",
+      "issuer": "APYX MEDICAL CORPORATION",
+      "issuer_candidate_cik": "0000719135",
+      "name_candidates": [
+        {
+          "cik": "0000719135",
+          "name": "Apyx Medical Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 19,
+      "cusip": "500754106",
+      "issuer": "KRAFT HEINZ CO",
+      "issuer_candidate_cik": "0001637459",
+      "name_candidates": [
+        {
+          "cik": "0001637459",
+          "name": "Kraft Heinz Co",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000046640",
+          "name": "Kraft Heinz Foods Co",
+          "name_similarity": 0.8
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 20,
+      "cusip": "88822Q103",
+      "issuer": "TIPTREE INC",
+      "issuer_candidate_cik": "0001393726",
+      "name_candidates": [
+        {
+          "cik": "0001393726",
+          "name": "TIPTREE INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 21,
+      "cusip": "67064R102",
+      "issuer": "NUVEEN VIRGINIA QLTY MUNCPL",
+      "issuer_candidate_cik": "0000897421",
+      "name_candidates": [
+        {
+          "cik": "0000897421",
+          "name": "NUVEEN VIRGINIA QUALITY MUNICIPAL INCOME FUND",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001074952",
+          "name": "Nuveen California Quality Municipal Income Fund",
+          "name_similarity": 0.75
+        },
+        {
+          "cik": "0000892992",
+          "name": "NUVEEN ARIZONA QUALITY MUNICIPAL INCOME FUND",
+          "name_similarity": 0.7246
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 22,
+      "cusip": "524660107",
+      "issuer": "LEGGETT & PLATT INC",
+      "issuer_candidate_cik": "0000058492",
+      "name_candidates": [
+        {
+          "cik": "0000058492",
+          "name": "LEGGETT & PLATT INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 23,
+      "cusip": "444097109",
+      "issuer": "HUDSON PAC PPTYS INC",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001482512",
+          "name": "Hudson Pacific Properties, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001496264",
+          "name": "Hudson Pacific Properties, L.P.",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 24,
+      "cusip": "65441V101",
+      "issuer": "NINE ENERGY SERVICE INC",
+      "issuer_candidate_cik": "0001532286",
+      "name_candidates": [
+        {
+          "cik": "0001532286",
+          "name": "Nine Energy Service, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 25,
+      "cusip": "443510607",
+      "issuer": "HUBBELL INC",
+      "issuer_candidate_cik": "0000048898",
+      "name_candidates": [
+        {
+          "cik": "0000048898",
+          "name": "HUBBELL INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 26,
+      "cusip": "723484101",
+      "issuer": "PINNACLE WEST CAP CORP",
+      "issuer_candidate_cik": "0000764622",
+      "name_candidates": [
+        {
+          "cik": "0000764622",
+          "name": "PINNACLE WEST CAPITAL CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 27,
+      "cusip": "379463102",
+      "issuer": "GLOBAL WTR RES INC",
+      "issuer_candidate_cik": "0001434728",
+      "name_candidates": [
+        {
+          "cik": "0001434728",
+          "name": "Global Water Resources, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002085993",
+          "name": "Global Critical Resources Corp",
+          "name_similarity": 0.7442
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 28,
+      "cusip": "745848101",
+      "issuer": "PULMONX CORP",
+      "issuer_candidate_cik": "0001127537",
+      "name_candidates": [
+        {
+          "cik": "0001127537",
+          "name": "Pulmonx Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 29,
+      "cusip": "36352H100",
+      "issuer": "GALIANO GOLD INC",
+      "issuer_candidate_cik": "0001377757",
+      "name_candidates": [
+        {
+          "cik": "0001377757",
+          "name": "Galiano Gold Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 30,
+      "cusip": "910340108",
+      "issuer": "UNITED FIRE GROUP INC",
+      "issuer_candidate_cik": "0000101199",
+      "name_candidates": [
+        {
+          "cik": "0000101199",
+          "name": "UNITED FIRE GROUP INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001620280",
+          "name": "Uniti Group Inc.",
+          "name_similarity": 0.8
+        },
+        {
+          "cik": "0002020795",
+          "name": "Uniti Group Inc.",
+          "name_similarity": 0.8
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 31,
+      "cusip": "250639101",
+      "issuer": "DESWELL INDS INC",
+      "issuer_candidate_cik": "0000946936",
+      "name_candidates": [
+        {
+          "cik": "0000946936",
+          "name": "DESWELL INDUSTRIES INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 32,
+      "cusip": "27829G106",
+      "issuer": "EATON VANCE RISK-MANAGED DIV",
+      "issuer_candidate_cik": "0001395325",
+      "name_candidates": [
+        {
+          "cik": "0001395325",
+          "name": "Eaton Vance Risk-Managed Diversified Equity Income Fund",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001076598",
+          "name": "EATON VANCE MANAGEMENT",
+          "name_similarity": 0.7273
+        },
+        {
+          "cik": "0001176005",
+          "name": "EATON VANCE MANAGEMENT EVM",
+          "name_similarity": 0.7234
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 33,
+      "cusip": "023135106",
+      "issuer": "AMAZON COM INC",
+      "issuer_candidate_cik": "0001018724",
+      "name_candidates": [
+        {
+          "cik": "0001018724",
+          "name": "AMAZON COM INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 34,
+      "cusip": "69121K104",
+      "issuer": "BLUE OWL CAPITAL CORPORATION",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001655888",
+          "name": "Blue Owl Capital Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001823945",
+          "name": "BLUE OWL CAPITAL INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001655887",
+          "name": "Blue Owl Capital Corp II",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 35,
+      "cusip": "10806X102",
+      "issuer": "BRIDGEBIO PHARMA INC",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001743881",
+          "name": "BridgeBio Pharma, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002076615",
+          "name": "BridgeBio Pharma LLC",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 36,
+      "cusip": "421298100",
+      "issuer": "HAYWARD HLDGS INC",
+      "issuer_candidate_cik": "0001834622",
+      "name_candidates": [
+        {
+          "cik": "0001834622",
+          "name": "Hayward Holdings, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 37,
+      "cusip": "76882G107",
+      "issuer": "RIVERNORTH DOUBLELINE STRATE",
+      "issuer_candidate_cik": "0001678130",
+      "name_candidates": [
+        {
+          "cik": "0001678130",
+          "name": "RiverNorth/DoubleLine Strategic Opportunity Fund, Inc.",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 38,
+      "cusip": "30049A107",
+      "issuer": "EVOLUTION PETE CORP",
+      "issuer_candidate_cik": "0001006655",
+      "name_candidates": [
+        {
+          "cik": "0001006655",
+          "name": "EVOLUTION PETROLEUM CORP",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001870157",
+          "name": "Evolution Parent, Inc.",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 39,
+      "cusip": "527064109",
+      "issuer": "LESLIES INC",
+      "issuer_candidate_cik": "0001821806",
+      "name_candidates": [
+        {
+          "cik": "0001821806",
+          "name": "Leslie's, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001939451",
+          "name": "LESLIE DARA",
+          "name_similarity": 0.7059
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 40,
+      "cusip": "782011100",
+      "issuer": "RUSH STREET INTERACTIVE INC",
+      "issuer_candidate_cik": "0001793659",
+      "name_candidates": [
+        {
+          "cik": "0001793659",
+          "name": "Rush Street Interactive, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 41,
+      "cusip": "092479104",
+      "issuer": "BLACKROCK MUN INCOME QUALITY",
+      "issuer_candidate_cik": "0001181187",
+      "name_candidates": [
+        {
+          "cik": "0001181187",
+          "name": "BLACKROCK MUNICIPAL INCOME QUALITY TRUST",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001137393",
+          "name": "BLACKROCK MUNICIPAL INCOME TRUST",
+          "name_similarity": 0.8667
+        },
+        {
+          "cik": "0001232860",
+          "name": "BLACKROCK MUNICIPAL INCOME FUND, INC.",
+          "name_similarity": 0.8475
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 42,
+      "cusip": "626755102",
+      "issuer": "MURPHY USA INC",
+      "issuer_candidate_cik": "0001573516",
+      "name_candidates": [
+        {
+          "cik": "0001573516",
+          "name": "Murphy USA Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001223199",
+          "name": "MURPHY SUSAN H",
+          "name_similarity": 0.8571
+        },
+        {
+          "cik": "0001602825",
+          "name": "Murphy Oil USA, Inc.",
+          "name_similarity": 0.8571
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 43,
+      "cusip": "258622109",
+      "issuer": "DOUBLELINE INCOME SOLUTIONS",
+      "issuer_candidate_cik": "0001566388",
+      "name_candidates": [
+        {
+          "cik": "0001566388",
+          "name": "DoubleLine Income Solutions Fund",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0002100409",
+          "name": "DoubleLine Income Portfolio",
+          "name_similarity": 0.8
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 44,
+      "cusip": "363576109",
+      "issuer": "GALLAGHER ARTHUR J & CO",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001807721",
+          "name": "Gallagher Karen Catherine",
+          "name_similarity": 0.7143
+        },
+        {
+          "cik": "0001521126",
+          "name": "Gallagher Marie T.",
+          "name_similarity": 0.7059
+        },
+        {
+          "cik": "0001611242",
+          "name": "Gallagher Sarah M.",
+          "name_similarity": 0.7059
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 45,
+      "cusip": "683416101",
+      "issuer": "OOMA INC",
+      "issuer_candidate_cik": "0001327688",
+      "name_candidates": [
+        {
+          "cik": "0001327688",
+          "name": "OOMA INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 46,
+      "cusip": "70805E109",
+      "issuer": "PENNANT GROUP INC",
+      "issuer_candidate_cik": "0001766400",
+      "name_candidates": [
+        {
+          "cik": "0001766400",
+          "name": "Pennant Group, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 47,
+      "cusip": "32055Y201",
+      "issuer": "FIRST INTST BANCSYSTEM INC",
+      "issuer_candidate_cik": "0000860413",
+      "name_candidates": [
+        {
+          "cik": "0000860413",
+          "name": "FIRST INTERSTATE BANCSYSTEM INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001125727",
+          "name": "FIRST INTERSTATE BANK",
+          "name_similarity": 0.8182
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 48,
+      "cusip": "872540109",
+      "issuer": "TJX COS INC NEW",
+      "issuer_candidate_cik": "0000109198",
+      "name_candidates": [
+        {
+          "cik": "0000109198",
+          "name": "TJX COMPANIES INC /DE/",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 49,
+      "cusip": "45333F109",
+      "issuer": "INCANNEX HEALTHCARE INC",
+      "issuer_candidate_cik": "0001873875",
+      "name_candidates": [
+        {
+          "cik": "0001873875",
+          "name": "Incannex Healthcare Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 50,
+      "cusip": "433535101",
+      "issuer": "HIREQUEST INC",
+      "issuer_candidate_cik": "0001140102",
+      "name_candidates": [
+        {
+          "cik": "0001140102",
+          "name": "HireQuest, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 51,
+      "cusip": "84265V105",
+      "issuer": "SOUTHERN COPPER CORP",
+      "issuer_candidate_cik": "0001001838",
+      "name_candidates": [
+        {
+          "cik": "0001001838",
+          "name": "SOUTHERN COPPER CORP/",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001160661",
+          "name": "SOUTHERN POWER CO",
+          "name_similarity": 0.8148
+        },
+        {
+          "cik": "0000092122",
+          "name": "SOUTHERN CO",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 52,
+      "cusip": "647551100",
+      "issuer": "NEW MTN FIN CORP",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001496099",
+          "name": "New Mountain Finance Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001491925",
+          "name": "New Mountain Finance Holdings, L.L.C.",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001527830",
+          "name": "New Mountain Finance Advisers, L.L.C.",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 53,
+      "cusip": "830940102",
+      "issuer": "SKYWARD SPECIALTY INS GROUP",
+      "issuer_candidate_cik": "0001519449",
+      "name_candidates": [
+        {
+          "cik": "0001519449",
+          "name": "Skyward Specialty Insurance Group, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 54,
+      "cusip": "12763L105",
+      "issuer": "CADRE HLDGS INC",
+      "issuer_candidate_cik": "0001860543",
+      "name_candidates": [
+        {
+          "cik": "0001860543",
+          "name": "Cadre Holdings, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 55,
+      "cusip": "035255108",
+      "issuer": "ANIKA THERAPEUTICS INC",
+      "issuer_candidate_cik": "0000898437",
+      "name_candidates": [
+        {
+          "cik": "0000898437",
+          "name": "Anika Therapeutics, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 56,
+      "cusip": "651229106",
+      "issuer": "NEWELL BRANDS INC",
+      "issuer_candidate_cik": "0000814453",
+      "name_candidates": [
+        {
+          "cik": "0000814453",
+          "name": "NEWELL BRANDS INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 57,
+      "cusip": "84741T104",
+      "issuer": "SPECIAL OPPORTUNITIES FD INC",
+      "issuer_candidate_cik": "0000897802",
+      "name_candidates": [
+        {
+          "cik": "0000897802",
+          "name": "SPECIAL OPPORTUNITIES FUND, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 58,
+      "cusip": "401617105",
+      "issuer": "GUESS INC",
+      "issuer_candidate_cik": "0000912463",
+      "name_candidates": [
+        {
+          "cik": "0000912463",
+          "name": "GUESS INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 59,
+      "cusip": "03823U102",
+      "issuer": "APPLIED OPTOELECTRONICS INC",
+      "issuer_candidate_cik": "0001158114",
+      "name_candidates": [
+        {
+          "cik": "0001158114",
+          "name": "APPLIED OPTOELECTRONICS, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 60,
+      "cusip": "126327105",
+      "issuer": "CS DISCO INC",
+      "issuer_candidate_cik": "0001625641",
+      "name_candidates": [
+        {
+          "cik": "0001625641",
+          "name": "CS Disco, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 61,
+      "cusip": "760911107",
+      "issuer": "RESEARCH FRONTIERS INC",
+      "issuer_candidate_cik": "0000793524",
+      "name_candidates": [
+        {
+          "cik": "0000793524",
+          "name": "RESEARCH FRONTIERS INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 62,
+      "cusip": "48238T109",
+      "issuer": "OPENLANE INC",
+      "issuer_candidate_cik": "0001395942",
+      "name_candidates": [
+        {
+          "cik": "0001395942",
+          "name": "OPENLANE, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002067992",
+          "name": "Opendate, Inc.",
+          "name_similarity": 0.75
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 63,
+      "cusip": "68213N109",
+      "issuer": "OMNICELL COM",
+      "issuer_candidate_cik": "0000926326",
+      "name_candidates": [
+        {
+          "cik": "0000926326",
+          "name": "OMNICELL, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001339173",
+          "name": "OMNICAP, LLC",
+          "name_similarity": 0.7778
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 64,
+      "cusip": "19842X109",
+      "issuer": "COLUMBIA SELIGM PREM TECH GR",
+      "issuer_candidate_cik": "0001471420",
+      "name_candidates": [
+        {
+          "cik": "0001471420",
+          "name": "Columbia Seligman Premium Technology Growth Fund, Inc.",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 65,
+      "cusip": "440327104",
+      "issuer": "HORACE MANN EDUCATORS CORP N",
+      "issuer_candidate_cik": "0000850141",
+      "name_candidates": [
+        {
+          "cik": "0000850141",
+          "name": "HORACE MANN EDUCATORS CORP /DE/",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000062011",
+          "name": "HORACE MANN INVESTORS, INC.",
+          "name_similarity": 0.7895
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 66,
+      "cusip": "17248W303",
+      "issuer": "CINGULATE INC",
+      "issuer_candidate_cik": "0001862150",
+      "name_candidates": [
+        {
+          "cik": "0001862150",
+          "name": "Cingulate Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 67,
+      "cusip": "237690102",
+      "issuer": "DATA I O CORP",
+      "issuer_candidate_cik": "0000351998",
+      "name_candidates": [
+        {
+          "cik": "0000351998",
+          "name": "DATA I/O CORP",
+          "name_similarity": 0.9091
+        },
+        {
+          "cik": "0001561550",
+          "name": "Datadog, Inc.",
+          "name_similarity": 0.7692
+        },
+        {
+          "cik": "0001891176",
+          "name": "Datafold, Inc.",
+          "name_similarity": 0.7143
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 68,
+      "cusip": "45816D100",
+      "issuer": "CORECARD CORPORATION",
+      "issuer_candidate_cik": "0000320340",
+      "name_candidates": [
+        {
+          "cik": "0000320340",
+          "name": "CoreCard Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 69,
+      "cusip": "675232102",
+      "issuer": "OCEANEERING INTL INC",
+      "issuer_candidate_cik": "0000073756",
+      "name_candidates": [
+        {
+          "cik": "0000073756",
+          "name": "OCEANEERING INTERNATIONAL INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 70,
+      "cusip": "76152G100",
+      "issuer": "REVIVA PHARMACEUTCLS HLDGS I",
+      "issuer_candidate_cik": "0001742927",
+      "name_candidates": [
+        {
+          "cik": "0001742927",
+          "name": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+          "name_similarity": 0.9474
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 71,
+      "cusip": "668771108",
+      "issuer": "GEN DIGITAL INC",
+      "issuer_candidate_cik": "0000849399",
+      "name_candidates": [
+        {
+          "cik": "0000849399",
+          "name": "Gen Digital Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 72,
+      "cusip": "09255P107",
+      "issuer": "BLACKROCK CORPOR HI YLD FD I",
+      "issuer_candidate_cik": "0001222401",
+      "name_candidates": [
+        {
+          "cik": "0001222401",
+          "name": "BLACKROCK CORPORATE HIGH YIELD FUND, INC.",
+          "name_similarity": 0.9333
+        },
+        {
+          "cik": "0000879361",
+          "name": "BLACKROCK MUNIYIELD FUND, INC.",
+          "name_similarity": 0.7451
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 73,
+      "cusip": "74317M104",
+      "issuer": "PROFICIENT AUTO LOGISTICS IN",
+      "issuer_candidate_cik": "0001998768",
+      "name_candidates": [
+        {
+          "cik": "0001998768",
+          "name": "Proficient Auto Logistics, Inc",
+          "name_similarity": 0.9583
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 74,
+      "cusip": "92686J106",
+      "issuer": "VIKING THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001607678",
+      "name_candidates": [
+        {
+          "cik": "0001607678",
+          "name": "Viking Therapeutics, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 75,
+      "cusip": "055645303",
+      "issuer": "BRT APARTMENTS CORP",
+      "issuer_candidate_cik": "0000014846",
+      "name_candidates": [
+        {
+          "cik": "0000014846",
+          "name": "BRT Apartments Corp.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 76,
+      "cusip": "126633205",
+      "issuer": "CVR PARTNERS LP",
+      "issuer_candidate_cik": "0001425292",
+      "name_candidates": [
+        {
+          "cik": "0001425292",
+          "name": "CVR PARTNERS, LP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 77,
+      "cusip": "40434L105",
+      "issuer": "HP INC",
+      "issuer_candidate_cik": "0000047217",
+      "name_candidates": [
+        {
+          "cik": "0000047217",
+          "name": "HP INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 78,
+      "cusip": "228895108",
+      "issuer": "CRYO-CELL INTL INC",
+      "issuer_candidate_cik": "0000862692",
+      "name_candidates": [
+        {
+          "cik": "0000862692",
+          "name": "CRYO CELL INTERNATIONAL INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 79,
+      "cusip": "53635B107",
+      "issuer": "LIQUIDITY SVCS INC",
+      "issuer_candidate_cik": "0001235468",
+      "name_candidates": [
+        {
+          "cik": "0001235468",
+          "name": "LIQUIDITY SERVICES INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001713330",
+          "name": "LIQUIDITY.IO, LLC",
+          "name_similarity": 0.7097
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 80,
+      "cusip": "N5749R100",
+      "issuer": "MERUS N V",
+      "issuer_candidate_cik": "0001651311",
+      "name_candidates": [
+        {
+          "cik": "0001651311",
+          "name": "Merus N.V.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 81,
+      "cusip": "03475V101",
+      "issuer": "ANGIODYNAMICS INC",
+      "issuer_candidate_cik": "0001275187",
+      "name_candidates": [
+        {
+          "cik": "0001275187",
+          "name": "ANGIODYNAMICS INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 82,
+      "cusip": "04638F108",
+      "issuer": "ASTRONOVA INC",
+      "issuer_candidate_cik": "0000008146",
+      "name_candidates": [
+        {
+          "cik": "0000008146",
+          "name": "AstroNova, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 83,
+      "cusip": "516806205",
+      "issuer": "VITAL ENERGY INC",
+      "issuer_candidate_cik": "0001528129",
+      "name_candidates": [
+        {
+          "cik": "0001528129",
+          "name": "Vital Energy, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001823262",
+          "name": "Vitale Nancy",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 84,
+      "cusip": "G0378L100",
+      "issuer": "ANGLOGOLD ASHANTI PLC",
+      "issuer_candidate_cik": "0001973832",
+      "name_candidates": [
+        {
+          "cik": "0001973832",
+          "name": "AngloGold Ashanti PLC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 85,
+      "cusip": "678026105",
+      "issuer": "OIL STS INTL INC",
+      "issuer_candidate_cik": "0001121484",
+      "name_candidates": [
+        {
+          "cik": "0001121484",
+          "name": "OIL STATES INTERNATIONAL, INC",
+          "name_similarity": 0.9268
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 86,
+      "cusip": "60855R100",
+      "issuer": "MOLINA HEALTHCARE INC",
+      "issuer_candidate_cik": "0001179929",
+      "name_candidates": [
+        {
+          "cik": "0001179929",
+          "name": "MOLINA HEALTHCARE, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 87,
+      "cusip": "55939A107",
+      "issuer": "MAGNERA CORP",
+      "issuer_candidate_cik": "0000041719",
+      "name_candidates": [
+        {
+          "cik": "0000041719",
+          "name": "Magnera Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001595974",
+          "name": "MAGNITE, INC.",
+          "name_similarity": 0.7143
+        },
+        {
+          "cik": "0001904617",
+          "name": "Magner Mairead",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 88,
+      "cusip": "401664107",
+      "issuer": "GUGGENHEIM TAXABLE MUNICP BO",
+      "issuer_candidate_cik": null,
+      "name_candidates": [],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 89,
+      "cusip": "65487K100",
+      "issuer": "NLIGHT INC",
+      "issuer_candidate_cik": "0001124796",
+      "name_candidates": [
+        {
+          "cik": "0001124796",
+          "name": "NLIGHT, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 90,
+      "cusip": "278279104",
+      "issuer": "EATON VANCE FLTING RATE INC",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001116914",
+          "name": "Eaton Vance Floating Rate Portfolio/MA",
+          "name_similarity": 0.7843
+        },
+        {
+          "cik": "0001258623",
+          "name": "Eaton Vance Senior Floating-Rate Trust",
+          "name_similarity": 0.7547
+        },
+        {
+          "cik": "0001288992",
+          "name": "Eaton Vance Floating-Rate Income Trust",
+          "name_similarity": 0.7547
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 91,
+      "cusip": "45826H109",
+      "issuer": "INTEGER HLDGS CORP",
+      "issuer_candidate_cik": "0001114483",
+      "name_candidates": [
+        {
+          "cik": "0001114483",
+          "name": "Integer Holdings Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001955107",
+          "name": "Intelerad Holdings ULC",
+          "name_similarity": 0.8
+        },
+        {
+          "cik": "0001209251",
+          "name": "Integrity Capital Holdings, INC",
+          "name_similarity": 0.7179
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 92,
+      "cusip": "42226A107",
+      "issuer": "HEALTHEQUITY INC",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001428336",
+          "name": "HEALTHEQUITY, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002067068",
+          "name": "Health Equity Investments LLC",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0002063663",
+          "name": "healthKERI, Inc.",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 93,
+      "cusip": "554382101",
+      "issuer": "MACERICH CO",
+      "issuer_candidate_cik": "0000912242",
+      "name_candidates": [
+        {
+          "cik": "0000912242",
+          "name": "MACERICH CO",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 94,
+      "cusip": "36468G103",
+      "issuer": "GAMESQUARE HLDGS INC",
+      "issuer_candidate_cik": "0001714562",
+      "name_candidates": [
+        {
+          "cik": "0001714562",
+          "name": "GameSquare Holdings, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002000530",
+          "name": "Gamehaus Holdings Inc.",
+          "name_similarity": 0.7647
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 95,
+      "cusip": "55025L108",
+      "issuer": "LUMENT FINANCE TRUST INC",
+      "issuer_candidate_cik": "0001547546",
+      "name_candidates": [
+        {
+          "cik": "0001547546",
+          "name": "Lument Finance Trust, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 96,
+      "cusip": "23285D109",
+      "issuer": "CYTEK BIOSCIENCES INC",
+      "issuer_candidate_cik": "0001831915",
+      "name_candidates": [
+        {
+          "cik": "0001831915",
+          "name": "Cytek Biosciences, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 97,
+      "cusip": "339764201",
+      "issuer": "FLORA GROWTH CORP",
+      "issuer_candidate_cik": "0001790169",
+      "name_candidates": [
+        {
+          "cik": "0001790169",
+          "name": "Flora Growth Corp.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002061952",
+          "name": "Florida Growth 1 DST",
+          "name_similarity": 0.7857
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 98,
+      "cusip": "21676P103",
+      "issuer": "COOPER STD HLDGS INC",
+      "issuer_candidate_cik": "0001320461",
+      "name_candidates": [
+        {
+          "cik": "0001320461",
+          "name": "Cooper-Standard Holdings Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001914267",
+          "name": "Cooper Tire Holding Co",
+          "name_similarity": 0.7692
+        },
+        {
+          "cik": "0001914296",
+          "name": "Cooper International Holding Corp",
+          "name_similarity": 0.7083
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 99,
+      "cusip": "602496101",
+      "issuer": "MIMEDX GROUP INC",
+      "issuer_candidate_cik": "0001376339",
+      "name_candidates": [
+        {
+          "cik": "0001376339",
+          "name": "MIMEDX GROUP, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 100,
+      "cusip": "44888K407",
+      "issuer": "HYDROFARM HLDGS GROUP INC",
+      "issuer_candidate_cik": "0001695295",
+      "name_candidates": [
+        {
+          "cik": "0001695295",
+          "name": "HYDROFARM HOLDINGS GROUP, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 101,
+      "cusip": "04272N102",
+      "issuer": "ARRIVENT BIOPHARMA INC",
+      "issuer_candidate_cik": "0001868279",
+      "name_candidates": [
+        {
+          "cik": "0001868279",
+          "name": "ArriVent BioPharma, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 102,
+      "cusip": "543518104",
+      "issuer": "LOOP INDS INC",
+      "issuer_candidate_cik": "0001504678",
+      "name_candidates": [
+        {
+          "cik": "0001504678",
+          "name": "Loop Industries, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 103,
+      "cusip": "83191H107",
+      "issuer": "SMART SAND INC",
+      "issuer_candidate_cik": "0001529628",
+      "name_candidates": [
+        {
+          "cik": "0001529628",
+          "name": "Smart Sand, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002003375",
+          "name": "Smart Dalton",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 104,
+      "cusip": "425885100",
+      "issuer": "HENNESSY ADVISORS INC",
+      "issuer_candidate_cik": "0001145255",
+      "name_candidates": [
+        {
+          "cik": "0001145255",
+          "name": "HENNESSY ADVISORS INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000891944",
+          "name": "HENNESSY FUNDS TRUST",
+          "name_similarity": 0.7059
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 105,
+      "cusip": "254709108",
+      "issuer": "DISCOVER FINL SVCS",
+      "issuer_candidate_cik": "0001393612",
+      "name_candidates": [
+        {
+          "cik": "0001393612",
+          "name": "Discover Financial Services",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 106,
+      "cusip": "98585N106",
+      "issuer": "YEXT INC",
+      "issuer_candidate_cik": "0001614178",
+      "name_candidates": [
+        {
+          "cik": "0001614178",
+          "name": "Yext, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 107,
+      "cusip": "294766100",
+      "issuer": "EQUUS TOTAL RETURN INC",
+      "issuer_candidate_cik": "0000878932",
+      "name_candidates": [
+        {
+          "cik": "0000878932",
+          "name": "EQUUS TOTAL RETURN, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 108,
+      "cusip": "095306106",
+      "issuer": "BLUE BIRD CORP",
+      "issuer_candidate_cik": "0001589526",
+      "name_candidates": [
+        {
+          "cik": "0001589526",
+          "name": "Blue Bird Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002068420",
+          "name": "Bluebird AI Inc",
+          "name_similarity": 0.8889
+        },
+        {
+          "cik": "0001293971",
+          "name": "bluebird bio, Inc.",
+          "name_similarity": 0.8421
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 109,
+      "cusip": "532206109",
+      "issuer": "LIFE360 INC",
+      "issuer_candidate_cik": "0001581760",
+      "name_candidates": [
+        {
+          "cik": "0001581760",
+          "name": "Life360, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 110,
+      "cusip": "74164M108",
+      "issuer": "PRIMERICA INC",
+      "issuer_candidate_cik": "0001475922",
+      "name_candidates": [
+        {
+          "cik": "0001475922",
+          "name": "Primerica, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 111,
+      "cusip": "00847J105",
+      "issuer": "AGILYSYS INC",
+      "issuer_candidate_cik": "0000078749",
+      "name_candidates": [
+        {
+          "cik": "0000078749",
+          "name": "AGILYSYS INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 112,
+      "cusip": "18913Y103",
+      "issuer": "CLOUGH GLOBAL DIVID & INCOME",
+      "issuer_candidate_cik": "0001288795",
+      "name_candidates": [
+        {
+          "cik": "0001288795",
+          "name": "Clough Global Dividend & Income Fund",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 113,
+      "cusip": "693475105",
+      "issuer": "PNC FINL SVCS GROUP INC",
+      "issuer_candidate_cik": "0000713676",
+      "name_candidates": [
+        {
+          "cik": "0000713676",
+          "name": "PNC FINANCIAL SERVICES GROUP, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 114,
+      "cusip": "92823T207",
+      "issuer": "VIRNETX HLDG CORP",
+      "issuer_candidate_cik": "0001082324",
+      "name_candidates": [
+        {
+          "cik": "0001082324",
+          "name": "VirnetX Holding Corp",
+          "name_similarity": 0.9655
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 115,
+      "cusip": "09627Y109",
+      "issuer": "BLUEPRINT MEDICINES CORP",
+      "issuer_candidate_cik": "0001597264",
+      "name_candidates": [
+        {
+          "cik": "0001597264",
+          "name": "Blueprint Medicines Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 116,
+      "cusip": "55955D100",
+      "issuer": "MAGNITE INC",
+      "issuer_candidate_cik": "0001595974",
+      "name_candidates": [
+        {
+          "cik": "0001595974",
+          "name": "MAGNITE, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000041719",
+          "name": "Magnera Corp",
+          "name_similarity": 0.7143
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 117,
+      "cusip": "58844R108",
+      "issuer": "MERCHANTS BANCORP IND",
+      "issuer_candidate_cik": "0001629019",
+      "name_candidates": [
+        {
+          "cik": "0001629019",
+          "name": "Merchants Bancorp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001967306",
+          "name": "Mercer Bancorp, Inc.",
+          "name_similarity": 0.7586
+        },
+        {
+          "cik": "0001727770",
+          "name": "Merchants Financial Group, Inc.",
+          "name_similarity": 0.7179
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 118,
+      "cusip": "00373V100",
+      "issuer": "ABOVE FOOD INGREDIENTS INC",
+      "issuer_candidate_cik": "0001979484",
+      "name_candidates": [
+        {
+          "cik": "0001979484",
+          "name": "Above Food Ingredients Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 119,
+      "cusip": "876511106",
+      "issuer": "TASEKO MINES LTD",
+      "issuer_candidate_cik": "0000878518",
+      "name_candidates": [
+        {
+          "cik": "0000878518",
+          "name": "TASEKO MINES LTD",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 120,
+      "cusip": "75508B104",
+      "issuer": "RAYONIER ADVANCED MATLS INC",
+      "issuer_candidate_cik": "0001597672",
+      "name_candidates": [
+        {
+          "cik": "0001597672",
+          "name": "RAYONIER ADVANCED MATERIALS INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 121,
+      "cusip": "98943L107",
+      "issuer": "ZENTALIS PHARMACEUTICALS INC",
+      "issuer_candidate_cik": "0001725160",
+      "name_candidates": [
+        {
+          "cik": "0001725160",
+          "name": "Zentalis Pharmaceuticals, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 122,
+      "cusip": "59151K108",
+      "issuer": "METHANEX CORP",
+      "issuer_candidate_cik": "0000886977",
+      "name_candidates": [
+        {
+          "cik": "0000886977",
+          "name": "METHANEX CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 123,
+      "cusip": "879369106",
+      "issuer": "TELEFLEX INCORPORATED",
+      "issuer_candidate_cik": "0000096943",
+      "name_candidates": [
+        {
+          "cik": "0000096943",
+          "name": "TELEFLEX INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 124,
+      "cusip": "05329W102",
+      "issuer": "AUTONATION INC",
+      "issuer_candidate_cik": "0000350698",
+      "name_candidates": [
+        {
+          "cik": "0000350698",
+          "name": "AUTONATION, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001681914",
+          "name": "Automaton, Inc.",
+          "name_similarity": 0.8421
+        },
+        {
+          "cik": "0002061091",
+          "name": "AUTOMATO AI INC.",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 125,
+      "cusip": "320866106",
+      "issuer": "FIRST MID ILL BANCSHARES INC",
+      "issuer_candidate_cik": "0000700565",
+      "name_candidates": [
+        {
+          "cik": "0000700565",
+          "name": "FIRST MID BANCSHARES, INC.",
+          "name_similarity": 0.9231
+        },
+        {
+          "cik": "0000912967",
+          "name": "FIRST BANCSHARES INC /MO/",
+          "name_similarity": 0.8333
+        },
+        {
+          "cik": "0000947559",
+          "name": "FIRST BANCSHARES INC /MS/",
+          "name_similarity": 0.8333
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 126,
+      "cusip": "252131107",
+      "issuer": "DEXCOM INC",
+      "issuer_candidate_cik": "0001093557",
+      "name_candidates": [
+        {
+          "cik": "0001093557",
+          "name": "DEXCOM INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 127,
+      "cusip": "55616P104",
+      "issuer": "MACYS INC",
+      "issuer_candidate_cik": "0000794367",
+      "name_candidates": [
+        {
+          "cik": "0000794367",
+          "name": "Macy's, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 128,
+      "cusip": "92922P106",
+      "issuer": "W & T OFFSHORE INC",
+      "issuer_candidate_cik": "0001288403",
+      "name_candidates": [
+        {
+          "cik": "0001288403",
+          "name": "W&T OFFSHORE INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 129,
+      "cusip": "88322Q108",
+      "issuer": "TG THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001001316",
+      "name_candidates": [
+        {
+          "cik": "0001001316",
+          "name": "TG THERAPEUTICS, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 130,
+      "cusip": "444859102",
+      "issuer": "HUMANA INC",
+      "issuer_candidate_cik": "0000049071",
+      "name_candidates": [
+        {
+          "cik": "0000049071",
+          "name": "HUMANA INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002095484",
+          "name": "Humanola, Inc.",
+          "name_similarity": 0.8571
+        },
+        {
+          "cik": "0001787542",
+          "name": "Huma.AI, Inc.",
+          "name_similarity": 0.8333
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 131,
+      "cusip": "600544100",
+      "issuer": "MILLERKNOLL INC",
+      "issuer_candidate_cik": "0000066382",
+      "name_candidates": [
+        {
+          "cik": "0000066382",
+          "name": "MILLERKNOLL, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001867504",
+          "name": "Miller Nicole",
+          "name_similarity": 0.7826
+        },
+        {
+          "cik": "0001184244",
+          "name": "MILLER JON",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 132,
+      "cusip": "108621103",
+      "issuer": "BRIDGEWATER BANCSHARES INC",
+      "issuer_candidate_cik": "0001341317",
+      "name_candidates": [
+        {
+          "cik": "0001341317",
+          "name": "Bridgewater Bancshares Inc",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001600319",
+          "name": "Bridgewater Advisors Inc.",
+          "name_similarity": 0.75
+        },
+        {
+          "cik": "0001350694",
+          "name": "Bridgewater Associates, LP",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 133,
+      "cusip": "20337X109",
+      "issuer": "COMMSCOPE HLDG CO INC",
+      "issuer_candidate_cik": "0001517228",
+      "name_candidates": [
+        {
+          "cik": "0001517228",
+          "name": "CommScope Holding Company, Inc.",
+          "name_similarity": 0.9697
+        },
+        {
+          "cik": "0001729208",
+          "name": "CommonWealth Holdings, LLC",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 134,
+      "cusip": "256163106",
+      "issuer": "DOCUSIGN INC",
+      "issuer_candidate_cik": "0001261333",
+      "name_candidates": [
+        {
+          "cik": "0001261333",
+          "name": "DOCUSIGN, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 135,
+      "cusip": "62944T105",
+      "issuer": "NVR INC",
+      "issuer_candidate_cik": "0000906163",
+      "name_candidates": [
+        {
+          "cik": "0000906163",
+          "name": "NVR INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 136,
+      "cusip": "59156R108",
+      "issuer": "METLIFE INC",
+      "issuer_candidate_cik": "0001099219",
+      "name_candidates": [
+        {
+          "cik": "0001099219",
+          "name": "METLIFE INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 137,
+      "cusip": "070203104",
+      "issuer": "BASSETT FURNITURE INDS INC",
+      "issuer_candidate_cik": "0000010329",
+      "name_candidates": [
+        {
+          "cik": "0000010329",
+          "name": "BASSETT FURNITURE INDUSTRIES INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 138,
+      "cusip": "26142Q304",
+      "issuer": "DRAGANFLY INC.",
+      "issuer_candidate_cik": "0001786286",
+      "name_candidates": [
+        {
+          "cik": "0001786286",
+          "name": "Draganfly Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 139,
+      "cusip": "749685103",
+      "issuer": "RPM INTL INC",
+      "issuer_candidate_cik": "0000110621",
+      "name_candidates": [
+        {
+          "cik": "0000110621",
+          "name": "RPM INTERNATIONAL INC/DE/",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002018293",
+          "name": "RPM Interactive, Inc.",
+          "name_similarity": 0.7333
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 140,
+      "cusip": "776696106",
+      "issuer": "ROPER TECHNOLOGIES INC",
+      "issuer_candidate_cik": "0000882835",
+      "name_candidates": [
+        {
+          "cik": "0000882835",
+          "name": "ROPER TECHNOLOGIES INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 141,
+      "cusip": "15202L107",
+      "issuer": "CENTERSPACE",
+      "issuer_candidate_cik": "0000798359",
+      "name_candidates": [
+        {
+          "cik": "0000798359",
+          "name": "CENTERSPACE",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002000790",
+          "name": "Centese, Inc.",
+          "name_similarity": 0.7778
+        },
+        {
+          "cik": "0002054457",
+          "name": "CenterSeat, Inc.",
+          "name_similarity": 0.7619
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 142,
+      "cusip": "00191U102",
+      "issuer": "ASGN INC",
+      "issuer_candidate_cik": "0000890564",
+      "name_candidates": [
+        {
+          "cik": "0000890564",
+          "name": "ASGN Inc",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 143,
+      "cusip": "69924R108",
+      "issuer": "PARAMOUNT GROUP INC",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001605607",
+          "name": "Paramount Group, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002010642",
+          "name": "Paramount Group Real Estate Special Situations Fund II, LP",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0000813828",
+          "name": "Paramount Global",
+          "name_similarity": 0.7586
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 144,
+      "cusip": "16934Q802",
+      "issuer": "CHIMERA INVT CORP",
+      "issuer_candidate_cik": "0001409493",
+      "name_candidates": [
+        {
+          "cik": "0001409493",
+          "name": "CHIMERA INVESTMENT CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 145,
+      "cusip": "45674E109",
+      "issuer": "IN8BIO INC",
+      "issuer_candidate_cik": "0001740279",
+      "name_candidates": [
+        {
+          "cik": "0001740279",
+          "name": "IN8BIO, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 146,
+      "cusip": "666762109",
+      "issuer": "NORTHRIM BANCORP INC",
+      "issuer_candidate_cik": "0001163370",
+      "name_candidates": [
+        {
+          "cik": "0001163370",
+          "name": "NORTHRIM BANCORP INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001493225",
+          "name": "Northfield Bancorp, Inc.",
+          "name_similarity": 0.8125
+        },
+        {
+          "cik": "0001281189",
+          "name": "NORTHUMBERLAND BANCORP",
+          "name_similarity": 0.7222
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 147,
+      "cusip": "018581108",
+      "issuer": "BREAD FINANCIAL HOLDINGS INC",
+      "issuer_candidate_cik": "0001101215",
+      "name_candidates": [
+        {
+          "cik": "0001101215",
+          "name": "BREAD FINANCIAL HOLDINGS, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 148,
+      "cusip": "912909108",
+      "issuer": "UNITED STATES STL CORP NEW",
+      "issuer_candidate_cik": "0001163302",
+      "name_candidates": [
+        {
+          "cik": "0001163302",
+          "name": "UNITED STATES STEEL CORP",
+          "name_similarity": 0.9375
+        },
+        {
+          "cik": "0002091245",
+          "name": "United States Tungsten, LLC",
+          "name_similarity": 0.7895
+        },
+        {
+          "cik": "0000101538",
+          "name": "UNITED STATES ANTIMONY CORP",
+          "name_similarity": 0.7429
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [
+        {
+          "cik": "0001163302",
+          "name": "UNITED STATES STEEL CORP",
+          "form": "25-NSE",
+          "filed": "2025-06-18",
+          "filename": "edgar/data/1163302/0000876661-25-000453.txt"
+        }
+      ],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 149,
+      "cusip": "844895102",
+      "issuer": "SOUTHWEST GAS HLDGS INC",
+      "issuer_candidate_cik": "0001692115",
+      "name_candidates": [
+        {
+          "cik": "0001692115",
+          "name": "Southwest Gas Holdings, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002092324",
+          "name": "South Crest Holdings LLC",
+          "name_similarity": 0.7805
+        },
+        {
+          "cik": "0000092380",
+          "name": "SOUTHWEST AIRLINES CO",
+          "name_similarity": 0.7568
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 150,
+      "cusip": "125141101",
+      "issuer": "CECO ENVIRONMENTAL CORP",
+      "issuer_candidate_cik": "0000003197",
+      "name_candidates": [
+        {
+          "cik": "0000003197",
+          "name": "CECO ENVIRONMENTAL CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 151,
+      "cusip": "396879108",
+      "issuer": "GREENWICH LIFESCIENCES INC",
+      "issuer_candidate_cik": "0001799788",
+      "name_candidates": [
+        {
+          "cik": "0001799788",
+          "name": "Greenwich LifeSciences, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 152,
+      "cusip": "416515104",
+      "issuer": "HARTFORD INSURANCE GROUP INC",
+      "issuer_candidate_cik": "0000874766",
+      "name_candidates": [
+        {
+          "cik": "0000874766",
+          "name": "HARTFORD INSURANCE GROUP, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001586998",
+          "name": "Hartford Funds Management Group, Inc.",
+          "name_similarity": 0.72
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 153,
+      "cusip": "84833T103",
+      "issuer": "SPERO THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001701108",
+      "name_candidates": [
+        {
+          "cik": "0001701108",
+          "name": "Spero Therapeutics, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 154,
+      "cusip": "67073S307",
+      "issuer": "CIMG INC",
+      "issuer_candidate_cik": "0001527613",
+      "name_candidates": [
+        {
+          "cik": "0001527613",
+          "name": "CIMG Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 155,
+      "cusip": "609786108",
+      "issuer": "MONOGRAM TECHNOLOGIES INC",
+      "issuer_candidate_cik": "0001769759",
+      "name_candidates": [
+        {
+          "cik": "0001769759",
+          "name": "Monogram Technologies Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 156,
+      "cusip": "88162G103",
+      "issuer": "TETRA TECH INC NEW",
+      "issuer_candidate_cik": "0000831641",
+      "name_candidates": [
+        {
+          "cik": "0000831641",
+          "name": "TETRA TECH INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000844965",
+          "name": "TETRA TECHNOLOGIES INC",
+          "name_similarity": 0.875
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 157,
+      "cusip": "573075108",
+      "issuer": "MARTEN TRANS LTD",
+      "issuer_candidate_cik": "0000799167",
+      "name_candidates": [
+        {
+          "cik": "0000799167",
+          "name": "MARTEN TRANSPORT LTD",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001778694",
+          "name": "Martin Transport Inc.",
+          "name_similarity": 0.8485
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 158,
+      "cusip": "46116X101",
+      "issuer": "INTRA-CELLULAR THERAPIES INC",
+      "issuer_candidate_cik": "0001567514",
+      "name_candidates": [
+        {
+          "cik": "0001567514",
+          "name": "Intra-Cellular Therapies, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 159,
+      "cusip": "G0750C108",
+      "issuer": "AXALTA COATING SYS LTD",
+      "issuer_candidate_cik": "0001616862",
+      "name_candidates": [
+        {
+          "cik": "0001616862",
+          "name": "Axalta Coating Systems Ltd.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 160,
+      "cusip": "553498106",
+      "issuer": "MSA SAFETY INC",
+      "issuer_candidate_cik": "0000066570",
+      "name_candidates": [
+        {
+          "cik": "0000066570",
+          "name": "MSA Safety Inc",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 161,
+      "cusip": "89142B107",
+      "issuer": "TORRID HLDGS INC",
+      "issuer_candidate_cik": "0001792781",
+      "name_candidates": [
+        {
+          "cik": "0001792781",
+          "name": "Torrid Holdings Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 162,
+      "cusip": "844741108",
+      "issuer": "SOUTHWEST AIRLS CO",
+      "issuer_candidate_cik": "0000092380",
+      "name_candidates": [
+        {
+          "cik": "0000092380",
+          "name": "SOUTHWEST AIRLINES CO",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000092416",
+          "name": "SOUTHWEST GAS CORP",
+          "name_similarity": 0.7586
+        },
+        {
+          "cik": "0001692115",
+          "name": "Southwest Gas Holdings, Inc.",
+          "name_similarity": 0.7568
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 163,
+      "cusip": "48666K109",
+      "issuer": "KB HOME",
+      "issuer_candidate_cik": "0000795266",
+      "name_candidates": [
+        {
+          "cik": "0000795266",
+          "name": "KB HOME",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 164,
+      "cusip": "55453W105",
+      "issuer": "MACKENZIE RLTY CAP INC",
+      "issuer_candidate_cik": "0001550913",
+      "name_candidates": [
+        {
+          "cik": "0001550913",
+          "name": "MacKenzie Realty Capital, Inc.",
+          "name_similarity": 0.9524
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 165,
+      "cusip": "74460D109",
+      "issuer": "PUBLIC STORAGE OPER CO",
+      "issuer_candidate_cik": "0001989278",
+      "name_candidates": [
+        {
+          "cik": "0001989278",
+          "name": "Public Storage Operating Co",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0001393311",
+          "name": "Public Storage",
+          "name_similarity": 0.8667
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 166,
+      "cusip": "983134107",
+      "issuer": "WYNN RESORTS LTD",
+      "issuer_candidate_cik": "0001174922",
+      "name_candidates": [
+        {
+          "cik": "0001174922",
+          "name": "WYNN RESORTS LTD",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 167,
+      "cusip": "87807B107",
+      "issuer": "TC ENERGY CORP",
+      "issuer_candidate_cik": "0001232384",
+      "name_candidates": [
+        {
+          "cik": "0001232384",
+          "name": "TC ENERGY CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 168,
+      "cusip": "94845U105",
+      "issuer": "WEBTOON ENTMT INC",
+      "issuer_candidate_cik": "0001997859",
+      "name_candidates": [
+        {
+          "cik": "0001997859",
+          "name": "WEBTOON Entertainment Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 169,
+      "cusip": "08915P101",
+      "issuer": "BIG 5 SPORTING GOODS CORP",
+      "issuer_candidate_cik": "0001156388",
+      "name_candidates": [
+        {
+          "cik": "0001156388",
+          "name": "BIG 5 SPORTING GOODS Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 170,
+      "cusip": "14216R101",
+      "issuer": "CARISMA THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001485003",
+      "name_candidates": [
+        {
+          "cik": "0001485003",
+          "name": "Carisma Therapeutics Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 171,
+      "cusip": "806037107",
+      "issuer": "SCANSOURCE INC",
+      "issuer_candidate_cik": "0000918965",
+      "name_candidates": [
+        {
+          "cik": "0000918965",
+          "name": "SCANSOURCE, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 172,
+      "cusip": "46131B704",
+      "issuer": "INVESCO MORTGAGE CAPITAL INC",
+      "issuer_candidate_cik": "0001437071",
+      "name_candidates": [
+        {
+          "cik": "0001437071",
+          "name": "Invesco Mortgage Capital Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002066272",
+          "name": "Inverted Capital I, LP",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 173,
+      "cusip": "29271Q103",
+      "issuer": "ENERGY SVCS ACQUISITION CORP",
+      "issuer_candidate_cik": null,
+      "name_candidates": [],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 174,
+      "cusip": "46266C105",
+      "issuer": "IQVIA HLDGS INC",
+      "issuer_candidate_cik": "0001478242",
+      "name_candidates": [
+        {
+          "cik": "0001478242",
+          "name": "IQVIA HOLDINGS INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 175,
+      "cusip": "670928100",
+      "issuer": "NUVEEN MUN VALUE FD INC",
+      "issuer_candidate_cik": "0000812801",
+      "name_candidates": [
+        {
+          "cik": "0000812801",
+          "name": "NUVEEN MUNICIPAL VALUE FUND INC",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0000818850",
+          "name": "NUVEEN NEW YORK MUNICIPAL VALUE FUND",
+          "name_similarity": 0.8727
+        },
+        {
+          "cik": "0001450445",
+          "name": "Nuveen AMT-Free Municipal Value Fund",
+          "name_similarity": 0.8727
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 176,
+      "cusip": "67079U306",
+      "issuer": "NUTEX HEALTH INC",
+      "issuer_candidate_cik": "0001479681",
+      "name_candidates": [
+        {
+          "cik": "0001479681",
+          "name": "Nutex Health, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 177,
+      "cusip": "045487105",
+      "issuer": "ASSOCIATED BANC CORP",
+      "issuer_candidate_cik": "0000007789",
+      "name_candidates": [
+        {
+          "cik": "0000007789",
+          "name": "ASSOCIATED BANC-CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 178,
+      "cusip": "36828A101",
+      "issuer": "GE VERNOVA INC",
+      "issuer_candidate_cik": "0001996810",
+      "name_candidates": [
+        {
+          "cik": "0001996810",
+          "name": "GE Vernova Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "issuer": "KAIROS PHARMA LTD",
+      "issuer_candidate_cik": "0001962011",
+      "name_candidates": [
+        {
+          "cik": "0001962011",
+          "name": "Kairos Pharma, LTD.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 180,
+      "cusip": "75902K106",
+      "issuer": "REGIONAL MGMT CORP",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001519401",
+          "name": "Regional Management Corp.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001742262",
+          "name": "Regional Management Receivables III, LLC",
+          "name_similarity": 0.96
+        },
+        {
+          "cik": "0002058355",
+          "name": "Regional Management Issuance Trust 2025-1",
+          "name_similarity": 0.96
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 181,
+      "cusip": "67401P405",
+      "issuer": "OAKTREE SPECIALTY LENDING CO",
+      "issuer_candidate_cik": "0001414932",
+      "name_candidates": [
+        {
+          "cik": "0001414932",
+          "name": "Oaktree Specialty Lending Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 182,
+      "cusip": "53224K302",
+      "issuer": "LIGHTBRIDGE CORP",
+      "issuer_candidate_cik": "0001084554",
+      "name_candidates": [
+        {
+          "cik": "0001084554",
+          "name": "LIGHTBRIDGE Corp",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 183,
+      "cusip": "76881Y109",
+      "issuer": "RIVERNORTH OPPORTUNITIES FD",
+      "issuer_candidate_cik": "0001501072",
+      "name_candidates": [
+        {
+          "cik": "0001501072",
+          "name": "RIVERNORTH OPPORTUNITIES FUND, INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001746967",
+          "name": "RiverNorth Opportunistic Municipal Income Fund, Inc.",
+          "name_similarity": 0.7536
+        },
+        {
+          "cik": "0001354018",
+          "name": "Riverview Opportunistic Fund LP",
+          "name_similarity": 0.7273
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 184,
+      "cusip": "87583X109",
+      "issuer": "TANGO THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001819133",
+      "name_candidates": [
+        {
+          "cik": "0001819133",
+          "name": "Tango Therapeutics, Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 185,
+      "cusip": "09250W107",
+      "issuer": "BLACKROCK HEALTH SCIENCES TR",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001314966",
+          "name": "BlackRock Health Sciences Trust",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001785971",
+          "name": "BlackRock Health Sciences Term Trust",
+          "name_similarity": 0.9333
+        },
+        {
+          "cik": "0000832327",
+          "name": "BLACKROCK INCOME TRUST, INC.",
+          "name_similarity": 0.75
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 186,
+      "cusip": "20602D101",
+      "issuer": "CONCENTRIX CORP",
+      "issuer_candidate_cik": "0001803599",
+      "name_candidates": [
+        {
+          "cik": "0001803599",
+          "name": "Concentrix Corp",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0002071998",
+          "name": "Concrete AI, Inc.",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 187,
+      "cusip": "233331107",
+      "issuer": "DTE ENERGY CO",
+      "issuer_candidate_cik": "0000936340",
+      "name_candidates": [
+        {
+          "cik": "0000936340",
+          "name": "DTE ENERGY CO",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 188,
+      "cusip": "047649108",
+      "issuer": "ATKORE INC",
+      "issuer_candidate_cik": "0001666138",
+      "name_candidates": [
+        {
+          "cik": "0001666138",
+          "name": "Atkore Inc.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "issuer": "CALLAN JMB INC",
+      "issuer_candidate_cik": "0002032545",
+      "name_candidates": [
+        {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001803290",
+          "name": "Callan John",
+          "name_similarity": 0.7368
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 190,
+      "cusip": "816307300",
+      "issuer": "SELECTQUOTE INC",
+      "issuer_candidate_cik": "0001794783",
+      "name_candidates": [
+        {
+          "cik": "0001794783",
+          "name": "SelectQuote, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001777508",
+          "name": "selectIon, Inc.",
+          "name_similarity": 0.7
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 191,
+      "cusip": "33734E103",
+      "issuer": "FIRST TR MTG INCOME FD",
+      "issuer_candidate_cik": "0001319183",
+      "name_candidates": [
+        {
+          "cik": "0001319183",
+          "name": "FIRST TRUST MORTGAGE INCOME FUND",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001556336",
+          "name": "FIRST TRUST MLP & ENERGY INCOME FUND",
+          "name_similarity": 0.7667
+        },
+        {
+          "cik": "0001282850",
+          "name": "FIRST TRUST SENIOR FLOATING RATE INCOME FUND II",
+          "name_similarity": 0.7647
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "investment_fund_forms_indexed_requires_entity_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 192,
+      "cusip": "27829L105",
+      "issuer": "EATON VANCE NATL MUN OPPORT",
+      "issuer_candidate_cik": null,
+      "name_candidates": [
+        {
+          "cik": "0001454741",
+          "name": "Eaton Vance National Municipal Opportunities Trust",
+          "name_similarity": 0.7838
+        },
+        {
+          "cik": "0000778365",
+          "name": "Eaton Vance Municipals Trust",
+          "name_similarity": 0.7778
+        },
+        {
+          "cik": "0000914529",
+          "name": "Eaton Vance Municipals Trust II",
+          "name_similarity": 0.75
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 193,
+      "cusip": "75943R102",
+      "issuer": "RELAY THERAPEUTICS INC",
+      "issuer_candidate_cik": "0001812364",
+      "name_candidates": [
+        {
+          "cik": "0001812364",
+          "name": "Relay Therapeutics, Inc.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001876828",
+          "name": "Relation Therapeutics Inc.",
+          "name_similarity": 0.8649
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 194,
+      "cusip": "68827L101",
+      "issuer": "OSISKO GOLD ROYALTIES LTD",
+      "issuer_candidate_cik": "0001627272",
+      "name_candidates": [
+        {
+          "cik": "0001627272",
+          "name": "Osisko Gold Royalties LTD",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [
+        "foreign_issuer_forms_indexed_requires_scope_review"
+      ],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 195,
+      "cusip": "053807103",
+      "issuer": "AVNET INC",
+      "issuer_candidate_cik": "0000008858",
+      "name_candidates": [
+        {
+          "cik": "0000008858",
+          "name": "AVNET INC",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 196,
+      "cusip": "184499101",
+      "issuer": "CLEAN ENERGY FUELS CORP",
+      "issuer_candidate_cik": "0001368265",
+      "name_candidates": [
+        {
+          "cik": "0001368265",
+          "name": "Clean Energy Fuels Corp.",
+          "name_similarity": 1.0
+        },
+        {
+          "cik": "0001714896",
+          "name": "CLEAN ENERGY FUND, L.P.",
+          "name_similarity": 0.8485
+        },
+        {
+          "cik": "0001710438",
+          "name": "Clean Energy Fund",
+          "name_similarity": 0.8387
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 197,
+      "cusip": "419870100",
+      "issuer": "HAWAIIAN ELEC INDUSTRIES",
+      "issuer_candidate_cik": "0000354707",
+      "name_candidates": [
+        {
+          "cik": "0000354707",
+          "name": "HAWAIIAN ELECTRIC INDUSTRIES INC",
+          "name_similarity": 0.9167
+        },
+        {
+          "cik": "0000046207",
+          "name": "HAWAIIAN ELECTRIC CO INC",
+          "name_similarity": 0.7895
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 198,
+      "cusip": "020764106",
+      "issuer": "ALPHA METALLURGICAL RESOUR I",
+      "issuer_candidate_cik": "0001704715",
+      "name_candidates": [
+        {
+          "cik": "0001704715",
+          "name": "Alpha Metallurgical Resources, Inc.",
+          "name_similarity": 0.9231
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 199,
+      "cusip": "23331S100",
+      "issuer": "DHI GROUP INC",
+      "issuer_candidate_cik": "0001393883",
+      "name_candidates": [
+        {
+          "cik": "0001393883",
+          "name": "DHI GROUP, INC.",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    },
+    {
+      "ordinal": 200,
+      "cusip": "405024100",
+      "issuer": "HAEMONETICS CORP MASS",
+      "issuer_candidate_cik": "0000313143",
+      "name_candidates": [
+        {
+          "cik": "0000313143",
+          "name": "HAEMONETICS CORP",
+          "name_similarity": 1.0
+        }
+      ],
+      "name_match_is_identity_proof": false,
+      "index_flags": [],
+      "additional_removal_notices": [],
+      "identity_verified": false,
+      "eligible_for_backtest": false
+    }
+  ]
+}
