@@ -4,7 +4,7 @@ import hashlib
 from unittest.mock import patch
 
 from flow_probe.identity import name_key, propose
-from flow_probe.identity_sources import ownership_identity, listing_cover, listing_cover_parts, removal_notice, source_documents
+from flow_probe.identity_sources import ownership_identity, listing_cover, listing_cover_parts, removal_notice, source_documents, common_title
 
 CIK, CUSIP = '0000000001', '00848K309'
 
@@ -86,6 +86,16 @@ class IdentityTests(unittest.TestCase):
         result = listing_cover(body(cover(second), '10-Q'), source('10-Q'), CIK)
         self.assertIsNone(result['ticker_in_filing'])
         self.assertEqual(result['status'], 'needs_class_review')
+
+    def test_prefixed_share_class_keeps_other_securities_and_multiple_classes_separate(self):
+        self.assertTrue(common_title('Class A common stock, $0.0001 par value per share'))
+        for title in ['Class A preferred shares', 'Class A common stock warrants',
+                      'Depositary shares representing Class A common stock']:
+            self.assertFalse(common_title(title))
+        a = cover().replace('Common Stock', 'Class A common stock')
+        self.assertEqual(listing_cover(body(a, '10-Q'), source('10-Q'), CIK)['ticker_in_filing'], 'ABC')
+        b = fact('Security12bTitle', 'Class B common stock', 'b') + fact('TradingSymbol', 'ABC.B', 'b') + fact('SecurityExchangeName', 'Nasdaq', 'b')
+        self.assertIsNone(listing_cover(body(a + b, '10-Q'), source('10-Q'), CIK)['ticker_in_filing'])
 
     def test_separate_primary_and_tagged_original_header(self):
         whole = body(cover(), '10-Q', tagged=True)

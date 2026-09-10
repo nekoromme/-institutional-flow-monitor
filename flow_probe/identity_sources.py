@@ -127,7 +127,10 @@ class CoverFacts(HTMLParser):
 
 
 def common_title(title):
-    value = re.sub(r'[^A-Z]', '', title.upper())
+    # 「Class A common stock」のような種類名が先頭に付く普通株も読む。
+    # 優先株・預託証券・新株予約権の除外は、この後も維持する。
+    normalized = re.sub(r'^CLASS\s+(?:[A-Z]|\d+)\s+', '', title.upper().strip())
+    value = re.sub(r'[^A-Z]', '', normalized)
     return value.startswith(('COMMONSTOCK', 'COMMONSHARES', 'ORDINARYSHARES')) and not any(
         word in value for word in ('WARRANT', 'DEPOSITARY', 'PREFERRED'))
 
