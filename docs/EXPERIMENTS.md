@@ -22,3 +22,5 @@
 資料：[初回損益](STAGE4_RETURN_DIAGNOSTICS.md)、[別期間の実測](STAGE5_NEXT_RETURN_COMPARISON.md)、[再計算できる取引集合の比較](evidence/return-change-review-2026-09-10.json)。
 
 保有情報の追加価値は[機関保有と利益の照合](INSTITUTION_RETURN_REVIEW.md)に、事後的な関連と公表後の関連、少数例・資料品質・既存研究の限界を分けて記録した。今回も閲覧済み期間を未検証期間へ戻していない。
+
+固定候補のデータを追加整備した。原書類634件、追加165銘柄年・57,561日次レコード。欠損7例・出来高ゼロ426行を保留として記録。VCNXの6日は項目ごとの精度の混在で説明できたが、前回の品質基準・成績は変更しなかった。[拡張の記録](HISTORY_EXPANSION.md)。

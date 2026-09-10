@@ -11,7 +11,6 @@
     "response_too_large": 26,
     "network_or_timeout": 48
   },
-  "source_files_not_yet_attempted": 266,
   "years": [
     {
       "backtest_eligible": 0,
@@ -90,5 +89,6 @@
     "2023": "6ed6e21ed42dd15412675dd9e689503882db72926f305ab4edbfe4847f57e9a9",
     "2024": "b0633a8c38bb89d5171d7b15bb67b32b03d7a407b89d48ded23537e633b20e65",
     "2025": "44d31d00ecb011847e2d82866a68f0497d4e7c263826fb3df330b731dabbc34d"
-  }
+  },
+  "source_files_without_completed_record": 266
 }
