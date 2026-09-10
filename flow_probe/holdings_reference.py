@@ -12,7 +12,19 @@ QMCO_Q3_SOURCE = {
     "accession": "0001628280-26-008558", "filed": "2026-02-17",
 }
 
+# 2026年初の対象選び用。2025年秋に公表された原書類の普通株数を確認。
+# 2026年公表の分母を過去へ流用せず、この提出番号・株数の組だけを許可する。
 DENOMINATOR_REVIEWS = (
+    {"symbol": "UAVS", "end": "2025-09-30", "shares": 36734690, "taxonomy": "us-gaap",
+     "accession": "0001437749-25-035221", "filed": "2025-11-14",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/8504/000143774925035221/uavs20250930_10q.htm",
+     "sha256": "f146d4f1c33eb822eeeb925bcce65ac6a46870160f0252db87f1f5b2f3003dc1",
+     "location": "Balance sheets; common stock issued and outstanding; not 200,000,000 authorized shares"},
+    {"symbol": "QMCO", "end": "2025-09-30", "shares": 13333000, "taxonomy": "us-gaap",
+     "accession": "0000709283-25-000085", "filed": "2025-11-13",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/709283/000070928325000085/qtm-20250930.htm",
+     "sha256": "54591b895b10c532ced4c6211328ef20395c5564c61cf4749cf85ad54e0280ff",
+     "location": "Balance sheets in thousands; 13,333 thousand common shares, not common stock value 133"},
     {"symbol": "UAVS", "end": "2025-12-31", "shares": 43613800, "taxonomy": "us-gaap", **UAVS_Q1_SOURCE},
     {"symbol": "UAVS", "end": "2026-03-31", "shares": 57346783, "taxonomy": "us-gaap", **UAVS_Q1_SOURCE},
     {"symbol": "QMCO", "end": "2025-12-31", "shares": 14135000, "taxonomy": "us-gaap",

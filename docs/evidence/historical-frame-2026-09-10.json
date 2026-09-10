@@ -1,0 +1,4538 @@
+{
+  "version": "historical-frame-0.1",
+  "generated_at": "2026-09-10T05:18:58.170786+00:00",
+  "selection_as_of": "2026-01-01",
+  "holdings_period": "2025-09-30",
+  "decision_policy": "filing_date_strictly_before_2026-01-01; period_2025-09-30_only",
+  "purpose": "historical_security_review_frame_not_certified_low_ownership_universe",
+  "archive_vintage": "current_SEC_extracts_of_historical_filings_not_original_download_vintage",
+  "archives": [
+    {
+      "name": "01sep2025-30nov2025_form13f.zip",
+      "sha256": "7753ae28988c076baeb30a94656622ff0b3c5f55c90078d9d69fc14ba3d3b682",
+      "bytes": 85618099,
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01sep2025-30nov2025_form13f.zip"
+    },
+    {
+      "name": "01dec2025-28feb2026_form13f.zip",
+      "sha256": "ff340fc5dc0bc60539b03c3a97fffa3fe4ab0d728d6507a4aadabb4a888fbe01",
+      "bytes": 90264650,
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2025-28feb2026_form13f.zip"
+    },
+    {
+      "name": "01mar2026-31may2026_form13f.zip",
+      "sha256": "05f4da8f526cd471a387af45661a8cb3bbfaf345d3ec9c2cefd31349aa257e63",
+      "bytes": 99411274,
+      "url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01mar2026-31may2026_form13f.zip"
+    }
+  ],
+  "unique_filings": 33555,
+  "cutoff_audit": {
+    "selected_period": "2025-09-30",
+    "as_of": "2026-01-01",
+    "accepted_manager_states": 9771,
+    "unresolved_manager_states": 145,
+    "same_period_filings_excluded_at_or_after_cutoff": 192,
+    "later_period_filings_excluded": 21801
+  },
+  "official_list": {
+    "url": "https://www.sec.gov/files/investment/13flist2025q3-txt.txt",
+    "sha256": "7393a3557aff878c6e0cb452424a45a5df0241a1faf8ab94d748388d1de792af",
+    "bytes": 924858,
+    "historical_publication_timestamp_verified": false
+  },
+  "coverage": {
+    "information_rows_scanned_for_frame": 6740300,
+    "accepted_observation_rows": 1393544,
+    "official_narrow_common_securities": 3284,
+    "securities_with_accepted_observation": 3181,
+    "official_common_without_accepted_observation": 103,
+    "unobserved_is_not_zero_ownership": true
+  },
+  "frame_sha256": "78ce584c561331b11c2144891bcebadc681af1b73ab1e1dccd0908494dc75e74",
+  "selection": {
+    "seed": "institutional-flow-monitor/frame-2026Q1-v1",
+    "batch_size": 200,
+    "hash": "sha256(seed/cusip)",
+    "uses_current_ticker_list": false,
+    "uses_future_holdings_or_returns": false,
+    "role": "first_review_batch; low_ownership_and_controls_not_assigned"
+  },
+  "review_batch": [
+    {
+      "cusip": "86745K104",
+      "issuer": "SUNNOVA ENERGY INTL INC.",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-11-18",
+      "last_filed": "2025-11-18",
+      "example_accession": "0001062993-25-016928",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "001ddaaf49b3123d7e6381ab6d43990b987cf6140f4387227445e6e8ad2d0fdf"
+    },
+    {
+      "cusip": "88337F105",
+      "issuer": "THE ODP CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 178,
+      "observed_filings": 178,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0030ded29afe474e52000af77e4f2a78de5e1c6749f054acabadb0cefe028484"
+    },
+    {
+      "cusip": "759509102",
+      "issuer": "RELIANCE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 549,
+      "observed_filings": 550,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0039c6266d8e5c0bd4deb8629c502f2a4a6c4d722a7fb966f2d6407a9da9b560"
+    },
+    {
+      "cusip": "51216F109",
+      "issuer": "LAKESIDE HLDG LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 5,
+      "observed_filings": 5,
+      "first_filed": "2025-11-07",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "004abfb433730741396d49033b76868e051508c899520ff901ec7b2cdacbea3a"
+    },
+    {
+      "cusip": "68375N103",
+      "issuer": "OPKO HEALTH INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 191,
+      "observed_filings": 192,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-08",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "004e95b43aec0aee6d117128440a07f0357b0819b386a06f9def98f08f514bb0"
+    },
+    {
+      "cusip": "95766N103",
+      "issuer": "WESTERN ASSET MUN HIGH INCOM",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 39,
+      "observed_filings": 39,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "006f1758322d67db2a98abe49d70a465685de6bdaafd2c256e85ff2a77692293"
+    },
+    {
+      "cusip": "78454L100",
+      "issuer": "SM ENERGY CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 324,
+      "observed_filings": 324,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0073f06c39dfac4c8604feedcad830334ab491f0a34dbeafe7f5fe8b15024ef6"
+    },
+    {
+      "cusip": "874054109",
+      "issuer": "TAKE-TWO INTERACTIVE SOFTWAR",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 865,
+      "observed_filings": 868,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-16",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00826b71e0555a05afcb99d19126313ba4467f6ffc7a641fb9f18eca2331bb0c"
+    },
+    {
+      "cusip": "256086109",
+      "issuer": "DOCGO INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 104,
+      "observed_filings": 104,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "008355ccb24d58fcc6c03b43cbbf120c054aed78f4006fbb5df5f919b772001d"
+    },
+    {
+      "cusip": "09256A109",
+      "issuer": "BLACKROCK ENHANCED LARGE CAP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 87,
+      "observed_filings": 88,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-22",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00a49e6b11f25e87f912295f357178e5705bbb7eb01139929a3dcd0c3b2052ab"
+    },
+    {
+      "cusip": "832154405",
+      "issuer": "SMITH MICRO SOFTWARE INC",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 28,
+      "observed_filings": 28,
+      "first_filed": "2025-10-22",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00b5ef23c9f19d908791375fced10d1b0672b21247e89b245fe00a14e08dc488"
+    },
+    {
+      "cusip": "344174107",
+      "issuer": "FOGHORN THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 77,
+      "observed_filings": 77,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00b68e718b64948f17fb0c3f159722474a9db72a26ab48ab3f48d701cd99e1f6"
+    },
+    {
+      "cusip": "88688T100",
+      "issuer": "TILRAY BRANDS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 278,
+      "observed_filings": 278,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-16",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00db9654f276db92758a1817172986dd99116c6e995461d905ca88dfe79df2f8"
+    },
+    {
+      "cusip": "67000B104",
+      "issuer": "NOVANTA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 269,
+      "observed_filings": 272,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00dbd0e4ba855da02853a211306c5c7838951d40c06e8df2d9ccc77e0ffdb385"
+    },
+    {
+      "cusip": "26873J107",
+      "issuer": "EMX RTY CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 57,
+      "observed_filings": 57,
+      "first_filed": "2025-10-14",
+      "last_filed": "2025-11-21",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00f4493bef15a4fbd63cd9c99581a9e21fee232cb0a299a6fd4869a35823f9d7"
+    },
+    {
+      "cusip": "30263Y104",
+      "issuer": "FS BANCORP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 79,
+      "observed_filings": 79,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "00f4513c52d79de5db05129e93c14d161cda03726eb14469fab47e58943f3ec5"
+    },
+    {
+      "cusip": "45780L104",
+      "issuer": "INOGEN INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 112,
+      "observed_filings": 112,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0103248aeed282e69ecb36549dce2274cd94333fec9c9ae5e3f7e28a35b501b3"
+    },
+    {
+      "cusip": "03837C106",
+      "issuer": "APYX MEDICAL CORPORATION",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 45,
+      "observed_filings": 45,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "012715ad08861dc0639be12209f1178ac8c5db25e50c1b75076eff8f3ec15a28"
+    },
+    {
+      "cusip": "500754106",
+      "issuer": "KRAFT HEINZ CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 957,
+      "observed_filings": 959,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000007789-25-000175",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "01298f566b2bd061f125ff502886851184a5f440a0e8aa2a0ad532dc41082197"
+    },
+    {
+      "cusip": "88822Q103",
+      "issuer": "TIPTREE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 117,
+      "observed_filings": 117,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "013088ef0f385f18367b0b3206151f94d76eccadd7723d030b65a0aaf5f09480"
+    },
+    {
+      "cusip": "67064R102",
+      "issuer": "NUVEEN VIRGINIA QLTY MUNCPL",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 29,
+      "observed_filings": 29,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "014733ca4395e96aa403910533ea528f855da7997425909e9035106abd8009eb"
+    },
+    {
+      "cusip": "524660107",
+      "issuer": "LEGGETT & PLATT INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 281,
+      "observed_filings": 281,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "014ce317a88f0212484ea2753dc0552b32c594d76d1687b0599d5eb8dcb4abdd"
+    },
+    {
+      "cusip": "444097109",
+      "issuer": "HUDSON PAC PPTYS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 225,
+      "observed_filings": 225,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000010742-25-000021",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "014dc424666b695c43785a727e8eee97bfc8a772255992b79132aee9e59a4b2b"
+    },
+    {
+      "cusip": "65441V101",
+      "issuer": "NINE ENERGY SERVICE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 37,
+      "observed_filings": 37,
+      "first_filed": "2025-10-10",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000061227-25-000004",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "014ed5762bc73a490086820d61438a56fcf70000cc1a10a3f1ff1dbd392dd544"
+    },
+    {
+      "cusip": "443510607",
+      "issuer": "HUBBELL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 775,
+      "observed_filings": 777,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000007789-25-000175",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "016b9ed4fb2348c9ee63f0d0a3b852dd9d4be99db6091808a3e3f0eb75469eff"
+    },
+    {
+      "cusip": "723484101",
+      "issuer": "PINNACLE WEST CAP CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 525,
+      "observed_filings": 527,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "016bc78f4c9a1d2b55287b5ebf39711dbe6aa5bc5c86d83afcc15583310fca5a"
+    },
+    {
+      "cusip": "379463102",
+      "issuer": "GLOBAL WTR RES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 78,
+      "observed_filings": 78,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "01aec7ddbd149bab443b857cfad22d1b5d6faf0e83e53fdfaa695e23289f97c1"
+    },
+    {
+      "cusip": "745848101",
+      "issuer": "PULMONX CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 92,
+      "observed_filings": 92,
+      "first_filed": "2025-10-14",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "020e137a62da814ea62e501231055bf3e8b658b25666bd7970789e9ba20c6ebd"
+    },
+    {
+      "cusip": "36352H100",
+      "issuer": "GALIANO GOLD INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 77,
+      "observed_filings": 77,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0229eed6d87eb91a1114df0c28e61c01cf5e5b91b67685388e18b7f6c6e5cdc4"
+    },
+    {
+      "cusip": "910340108",
+      "issuer": "UNITED FIRE GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 162,
+      "observed_filings": 162,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "022fe94e87fd2bde7dfd6d4c8dd212783ac5729a066b2b75eb9d80996796ecad"
+    },
+    {
+      "cusip": "250639101",
+      "issuer": "DESWELL INDS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 11,
+      "observed_filings": 11,
+      "first_filed": "2025-11-05",
+      "last_filed": "2025-12-16",
+      "example_accession": "0000072971-25-000256",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "025ec6ba56e29f5790420b068a30bb8acf0e0cca32c0fc4ba08f10e923a490a9"
+    },
+    {
+      "cusip": "27829G106",
+      "issuer": "EATON VANCE RISK-MANAGED DIV",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 86,
+      "observed_filings": 86,
+      "first_filed": "2025-10-08",
+      "last_filed": "2025-12-22",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0285cabdd3eae70c382a1d8a7d3d0f12c3361d1f66170fccdd80fc9651be00d4"
+    },
+    {
+      "cusip": "023135106",
+      "issuer": "AMAZON COM INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 5003,
+      "observed_filings": 5018,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-31",
+      "example_accession": "0000007195-25-000006",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "028687ea6c4753e1805cc988c6ca815ba770cad8e5bd119efd30e073e6f502a7"
+    },
+    {
+      "cusip": "69121K104",
+      "issuer": "BLUE OWL CAPITAL CORPORATION",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 380,
+      "observed_filings": 380,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-23",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02878c84f099e0ca01166e97aa10a4b6eecb82182dd04551005dd312b65a8fd6"
+    },
+    {
+      "cusip": "10806X102",
+      "issuer": "BRIDGEBIO PHARMA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 336,
+      "observed_filings": 336,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "028e50e119126ba234aaff41234bff73f31fd95d4a431cce58805fe9611824d1"
+    },
+    {
+      "cusip": "421298100",
+      "issuer": "HAYWARD HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 252,
+      "observed_filings": 252,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "029df3b94fba1456937cb51e180a8602d7651d3e4a7cbdc9534cb285a476b0cd"
+    },
+    {
+      "cusip": "76882G107",
+      "issuer": "RIVERNORTH DOUBLELINE STRATE",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 41,
+      "observed_filings": 41,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02a6ddbea5d9bf3872cc84e7e8ee01db913af771588b7378c48ea13c3f3a3386"
+    },
+    {
+      "cusip": "30049A107",
+      "issuer": "EVOLUTION PETE CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 94,
+      "observed_filings": 94,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02d270ea65f6638687336d9e7dddc54aa752ec135dcff6924974121acc13949d"
+    },
+    {
+      "cusip": "527064109",
+      "issuer": "LESLIES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 3,
+      "observed_filings": 3,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-14",
+      "example_accession": "0001142031-25-000043",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02d82e8720c166b86043ad1bacb6c2231340c2a6d7cbd3e7c50ffbdb2a59539d"
+    },
+    {
+      "cusip": "782011100",
+      "issuer": "RUSH STREET INTERACTIVE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 210,
+      "observed_filings": 210,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02d88dcc36e56836010880d68c595e5ae5fb7ebb6c4bc4e127d226f05ef4e4bd"
+    },
+    {
+      "cusip": "092479104",
+      "issuer": "BLACKROCK MUN INCOME QUALITY",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 63,
+      "observed_filings": 63,
+      "first_filed": "2025-10-17",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000061227-25-000004",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02e2f2b885f5255e1667fa354fc01af1e000b505b141cc8e2c066b350b1f80ae"
+    },
+    {
+      "cusip": "626755102",
+      "issuer": "MURPHY USA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 440,
+      "observed_filings": 441,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "02ef87621eb5fe8db70c87f4c0b068e1bb0b733354d467567525a2bafa9a4806"
+    },
+    {
+      "cusip": "258622109",
+      "issuer": "DOUBLELINE INCOME SOLUTIONS",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 135,
+      "observed_filings": 135,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-23",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0302829b2084a0b6476400c71e05fa2c1311f242fa7cef48beffe3e0d868e4fe"
+    },
+    {
+      "cusip": "363576109",
+      "issuer": "GALLAGHER ARTHUR J & CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1157,
+      "observed_filings": 1161,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "033cfcac3b3c9b9ca8c5f690d66054b398ea1f5136021f63c22bddfabee2a20d"
+    },
+    {
+      "cusip": "683416101",
+      "issuer": "OOMA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 113,
+      "observed_filings": 113,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "033e9a76c94973ce05c485966fddcd824a2e1fb3987f398736f93977c2036d37"
+    },
+    {
+      "cusip": "70805E109",
+      "issuer": "PENNANT GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 165,
+      "observed_filings": 165,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0340fb4c3b79add398bb91faf74264d09acc19bb42b104be95762a52ae649f97"
+    },
+    {
+      "cusip": "32055Y201",
+      "issuer": "FIRST INTST BANCSYSTEM INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 200,
+      "observed_filings": 200,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "034146fcd634ef7b77430ae1a4fc8ffc84f65230d1750e436d0f05c91e909b63"
+    },
+    {
+      "cusip": "872540109",
+      "issuer": "TJX COS INC NEW",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 2133,
+      "observed_filings": 2138,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000007195-25-000006",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "034faf7b6bbd734d4e0893e470be863ed86b43a7fcfd1d0caa321140f5d450d4"
+    },
+    {
+      "cusip": "45333F109",
+      "issuer": "INCANNEX HEALTHCARE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 26,
+      "observed_filings": 26,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000312069-25-000619",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "035d2f297b0087bc96c9821cdce34dd2332567a3dd8f558d264cf1be68830330"
+    },
+    {
+      "cusip": "433535101",
+      "issuer": "HIREQUEST INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 47,
+      "observed_filings": 47,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0386d0a179acaab610c2cec4040a0853ca4ab527d356843293cd6fe051223862"
+    },
+    {
+      "cusip": "84265V105",
+      "issuer": "SOUTHERN COPPER CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 588,
+      "observed_filings": 588,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000009015-25-000030",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0392bf42255f6e70dfb458a9b415c5fc88ff0a23656d77c1dc793a0fd5e327b0"
+    },
+    {
+      "cusip": "647551100",
+      "issuer": "NEW MTN FIN CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 135,
+      "observed_filings": 135,
+      "first_filed": "2025-10-06",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "03a284caf28798699c95e35c6c59ba255da198b1d88f730b2d580a19a3358da5"
+    },
+    {
+      "cusip": "830940102",
+      "issuer": "SKYWARD SPECIALTY INS GROUP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 200,
+      "observed_filings": 201,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "03bc1539f211fe851fbdb2fca6ea5c6017539c3c27d258dde7133bc1888ff2d9"
+    },
+    {
+      "cusip": "12763L105",
+      "issuer": "CADRE HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 123,
+      "observed_filings": 123,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "03bd1753f42bc3910f7e6420586d26e73c8b8740c4d1c8f4483811406e7e9f3d"
+    },
+    {
+      "cusip": "035255108",
+      "issuer": "ANIKA THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 102,
+      "observed_filings": 102,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "03eb29bb26beffda6ee22af07c6b58e153a50976b3d9b04293d1790558f37c1c"
+    },
+    {
+      "cusip": "651229106",
+      "issuer": "NEWELL BRANDS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 344,
+      "observed_filings": 345,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "040d5942dfd275d4a7a6507e2d73c464965a5755211365a64b70c0ae8187e2c0"
+    },
+    {
+      "cusip": "84741T104",
+      "issuer": "SPECIAL OPPORTUNITIES FD INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 31,
+      "observed_filings": 31,
+      "first_filed": "2025-10-17",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000072971-25-000256",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0423f7681d581d1c71a7a99873f3e203b89514654250a8da387e09f3327b3c87"
+    },
+    {
+      "cusip": "401617105",
+      "issuer": "GUESS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 138,
+      "observed_filings": 138,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0432710bb010333eb5a8712012891a68b3b9dac162ff6f64c11145261a538753"
+    },
+    {
+      "cusip": "03823U102",
+      "issuer": "APPLIED OPTOELECTRONICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 153,
+      "observed_filings": 153,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04417243df01db68eec601cef8eed65681472bc8c9848c7f4f7b7bf08d70c23a"
+    },
+    {
+      "cusip": "126327105",
+      "issuer": "CS DISCO INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 100,
+      "observed_filings": 100,
+      "first_filed": "2025-10-03",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "049d14efe866d40fcf6b571ff3ace6171bc1b9e1055a900aa48bbeadf88384e9"
+    },
+    {
+      "cusip": "760911107",
+      "issuer": "RESEARCH FRONTIERS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 28,
+      "observed_filings": 28,
+      "first_filed": "2025-10-17",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04a8d62ffd3263eb4486610779ca79751e6de0616a70eef995d23c821900e2e2"
+    },
+    {
+      "cusip": "48238T109",
+      "issuer": "OPENLANE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 243,
+      "observed_filings": 243,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04a976015fc3d9c9c5f46d1879cbe143c91f88ad7ae0714e778c08ea2e28ab33"
+    },
+    {
+      "cusip": "68213N109",
+      "issuer": "OMNICELL COM",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 222,
+      "observed_filings": 222,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04f3ed258b7108709f5c9864b291ff58a5dc286851d98448db6de5b6f17fb1a1"
+    },
+    {
+      "cusip": "19842X109",
+      "issuer": "COLUMBIA SELIGM PREM TECH GR",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 49,
+      "observed_filings": 49,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-22",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04f4fc4b0f7f5da9d54bcf963692c0e84d5250495822a2b05eb214d7e9f3cb2b"
+    },
+    {
+      "cusip": "440327104",
+      "issuer": "HORACE MANN EDUCATORS CORP N",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 205,
+      "observed_filings": 205,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04fc8e3f54a4aa61b14345c5d9008b371fc4b25c368f2e7470cbcdf074d55b8a"
+    },
+    {
+      "cusip": "17248W303",
+      "issuer": "CINGULATE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 11,
+      "observed_filings": 11,
+      "first_filed": "2025-11-05",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "04fc8ea77d1bf444ce37583bd1fa473487b5e45c4d2838af17aa0c559b579f24"
+    },
+    {
+      "cusip": "237690102",
+      "issuer": "DATA I O CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 25,
+      "observed_filings": 25,
+      "first_filed": "2025-10-31",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0517430d8259e2a37cb17361962c7e923e6d558adf20faa4f0d3963a76b0c565"
+    },
+    {
+      "cusip": "45816D100",
+      "issuer": "CORECARD CORPORATION",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 76,
+      "observed_filings": 76,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "051e15ecbfbf84f548e3c9bcc5250311b145e6ae126b42e545d28f1c35026dc1"
+    },
+    {
+      "cusip": "675232102",
+      "issuer": "OCEANEERING INTL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 256,
+      "observed_filings": 256,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "053f03a416eb0ef80dd13768c85d9ab9c3db44020387e851d3cc8ed0ee24f703"
+    },
+    {
+      "cusip": "76152G100",
+      "issuer": "REVIVA PHARMACEUTCLS HLDGS I",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 38,
+      "observed_filings": 38,
+      "first_filed": "2025-10-21",
+      "last_filed": "2025-11-20",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0546e1b436f3350f99d8055115d67f28278076ac78f725babb672c9e1d8e9f1f"
+    },
+    {
+      "cusip": "668771108",
+      "issuer": "GEN DIGITAL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 584,
+      "observed_filings": 584,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0570148210d65a425f08d470f7df8f71bc7a50c2a98d3ffbf43d8dcd53bb9360"
+    },
+    {
+      "cusip": "09255P107",
+      "issuer": "BLACKROCK CORPOR HI YLD FD I",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 132,
+      "observed_filings": 132,
+      "first_filed": "2025-10-06",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0594c0bc0a516e2e68bbaf73833f6e3fb8d60275c4a2a90941549380d8e5bc9d"
+    },
+    {
+      "cusip": "74317M104",
+      "issuer": "PROFICIENT AUTO LOGISTICS IN",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 74,
+      "observed_filings": 74,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "05a2ef72c6ae9b2804fddeebc89c16fa52754bd90e66caad1c231f9c3e3941e9"
+    },
+    {
+      "cusip": "92686J106",
+      "issuer": "VIKING THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 317,
+      "observed_filings": 317,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-31",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "05c4d7306c5b18f910610ff8aa11be303bc4c5ff6befbf18aa2247165ee102ed"
+    },
+    {
+      "cusip": "055645303",
+      "issuer": "BRT APARTMENTS CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 81,
+      "observed_filings": 81,
+      "first_filed": "2025-10-03",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "05d146ea9a7e61d1595e19d4d4b1d3615f94151c54ce010c83d66c46345890a5"
+    },
+    {
+      "cusip": "126633205",
+      "issuer": "CVR PARTNERS LP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 51,
+      "observed_filings": 51,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "05f6d1a1fe31ae609ce515623f084b8b11d6749fb369d2081f94594d5e3d5ca0"
+    },
+    {
+      "cusip": "40434L105",
+      "issuer": "HP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 939,
+      "observed_filings": 941,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0618c3bfe3db737a0a96c6f5ae32d09183d41401b2b6568529a4b75357659e6e"
+    },
+    {
+      "cusip": "228895108",
+      "issuer": "CRYO-CELL INTL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 18,
+      "observed_filings": 18,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0621bd6416cb4aaa9b52cae39b87d43ba7c418461f0af08991943aa35f6ef2ea"
+    },
+    {
+      "cusip": "53635B107",
+      "issuer": "LIQUIDITY SVCS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 150,
+      "observed_filings": 150,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0626a306a90c56d79cb09e344d9d41254341c0b33d1b7e16aa2238b68b2d26c5"
+    },
+    {
+      "cusip": "N5749R100",
+      "issuer": "MERUS N V",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 230,
+      "observed_filings": 230,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "062a23e149d80b9ff411665cfd5158f17bbda7d3b07a3f70e256f3b29ece19cb"
+    },
+    {
+      "cusip": "03475V101",
+      "issuer": "ANGIODYNAMICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 126,
+      "observed_filings": 126,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-11-19",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0635f65d6341f457d531308d668e28e6460601c351729c682235dcf6cdb1dc02"
+    },
+    {
+      "cusip": "04638F108",
+      "issuer": "ASTRONOVA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 23,
+      "observed_filings": 23,
+      "first_filed": "2025-10-23",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06438183e0b89e076bf039628cd76902b9deba603550bbed2cda18703757a347"
+    },
+    {
+      "cusip": "516806205",
+      "issuer": "VITAL ENERGY INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 169,
+      "observed_filings": 169,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0647ca510b4d12f313f0927fa4b85dc812914327d4a96655898302f230eaf6f8"
+    },
+    {
+      "cusip": "G0378L100",
+      "issuer": "ANGLOGOLD ASHANTI PLC",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 363,
+      "observed_filings": 364,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000009015-25-000030",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06597dcc43e018a867c57e94a96fbb75fcb2bb5bdc5d592db36900521d56a1d9"
+    },
+    {
+      "cusip": "678026105",
+      "issuer": "OIL STS INTL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 139,
+      "observed_filings": 139,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "065c9594044afe9f455e5722f4019e152e1b683268db257855da465278c4f82c"
+    },
+    {
+      "cusip": "60855R100",
+      "issuer": "MOLINA HEALTHCARE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 544,
+      "observed_filings": 545,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0665b6f9a6a1c9451da5495e066b464d99797e4bdd3ad89c7ba45bbce690d4e9"
+    },
+    {
+      "cusip": "55939A107",
+      "issuer": "MAGNERA CORP",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 151,
+      "observed_filings": 151,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000014745-25-000008",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "068a7c0a7102f81253a42673ba317ea59c805cad83d9476e415e74299624b496"
+    },
+    {
+      "cusip": "401664107",
+      "issuer": "GUGGENHEIM TAXABLE MUNICP BO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 48,
+      "observed_filings": 48,
+      "first_filed": "2025-10-06",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06a61cacfa304391cd91398715995b20299bdd750d4b3b39a6c056596ca65a53"
+    },
+    {
+      "cusip": "65487K100",
+      "issuer": "NLIGHT INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 193,
+      "observed_filings": 193,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06b1549cc276015992254d3c13c27cd818624df0c603f55f8d4d8a7789241974"
+    },
+    {
+      "cusip": "278279104",
+      "issuer": "EATON VANCE FLTING RATE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 65,
+      "observed_filings": 66,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06b7c72e7a727df7a16a4e73a4ad71136cbcd3866339e55562838f242d51f10d"
+    },
+    {
+      "cusip": "45826H109",
+      "issuer": "INTEGER HLDGS CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 287,
+      "observed_filings": 288,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06c6146f26026a99e5475b5b4ac3426694255056495b68c7485a6236dea7606e"
+    },
+    {
+      "cusip": "42226A107",
+      "issuer": "HEALTHEQUITY INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 419,
+      "observed_filings": 419,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06cad5ae9dbb1d51d52a7b84d48a81f2e4cff582904762b4360b8f1a0d6b4921"
+    },
+    {
+      "cusip": "554382101",
+      "issuer": "MACERICH CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 240,
+      "observed_filings": 240,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06cec1058e563a56b90fc334399c5e0bbe3352a54e745d213832652810da2a23"
+    },
+    {
+      "cusip": "36468G103",
+      "issuer": "GAMESQUARE HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 40,
+      "observed_filings": 40,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06f742d39ccafa168ec732e37cf59c01d3be75e9929848effee438f8df9e781a"
+    },
+    {
+      "cusip": "55025L108",
+      "issuer": "LUMENT FINANCE TRUST INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 50,
+      "observed_filings": 50,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "06fd40fd92d14b87df6836309229ebcd9b2c11727e58f2b4eb90bd1ad1bfc124"
+    },
+    {
+      "cusip": "23285D109",
+      "issuer": "CYTEK BIOSCIENCES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 135,
+      "observed_filings": 135,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "070db876d085f9f1b3f7b1084cf5b20d00c5666b4188e651c512793619b6cbf3"
+    },
+    {
+      "cusip": "339764201",
+      "issuer": "FLORA GROWTH CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-11-14",
+      "last_filed": "2025-11-14",
+      "example_accession": "0001677044-25-000022",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "072d75410094d4c905430d91a79c0c19b67e430ca30bbd392366bacc75e1d9d6"
+    },
+    {
+      "cusip": "21676P103",
+      "issuer": "COOPER STD HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 118,
+      "observed_filings": 118,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "073325fcb01469c75e422a09bd93e3f102bd361b36b4abe17c02d39deb213b7b"
+    },
+    {
+      "cusip": "602496101",
+      "issuer": "MIMEDX GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 202,
+      "observed_filings": 202,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "073a8313bfc0a60b45a0827dabd75bc3f740cc56c50e274cdce8750a2a9a24ce"
+    },
+    {
+      "cusip": "44888K407",
+      "issuer": "HYDROFARM HLDGS GROUP INC",
+      "class": "COM",
+      "status": "*A*",
+      "observed_reporting_managers": 22,
+      "observed_filings": 22,
+      "first_filed": "2025-10-28",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "075fca3464f73e7995448a017c4d38a04c0f79734d7f41752a4e0f21f914fff4"
+    },
+    {
+      "cusip": "04272N102",
+      "issuer": "ARRIVENT BIOPHARMA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 89,
+      "observed_filings": 89,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "078a4cd9b1f2e49aef79007bb4cd9c56da1796cfd0ee07eb6202f8380dd68ef6"
+    },
+    {
+      "cusip": "543518104",
+      "issuer": "LOOP INDS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 29,
+      "observed_filings": 29,
+      "first_filed": "2025-10-14",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "079b0530a174178648f7e549894d0920640172bf862168b73e08532971cc51d9"
+    },
+    {
+      "cusip": "83191H107",
+      "issuer": "SMART SAND INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 42,
+      "observed_filings": 42,
+      "first_filed": "2025-10-28",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "07a32b5807990332181a0db21c1d47de834947df93a8aab735fc270d357e535e"
+    },
+    {
+      "cusip": "425885100",
+      "issuer": "HENNESSY ADVISORS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 25,
+      "observed_filings": 25,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "07ae5cc85e8831b004f20204c206366e9eaebcd19918a600a36926504dd71997"
+    },
+    {
+      "cusip": "254709108",
+      "issuer": "DISCOVER FINL SVCS",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 2,
+      "observed_filings": 2,
+      "first_filed": "2025-11-12",
+      "last_filed": "2025-11-13",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "07e13c2d62028d9f7eb3e40602da68bdc64c4d14e4cf3d2c93bd46f9ba3175e5"
+    },
+    {
+      "cusip": "98585N106",
+      "issuer": "YEXT INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 174,
+      "observed_filings": 175,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "07ff4008cb74e7654121474bebcfd12250ef554090362beaabcc33b7778e54d6"
+    },
+    {
+      "cusip": "294766100",
+      "issuer": "EQUUS TOTAL RETURN INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 6,
+      "observed_filings": 6,
+      "first_filed": "2025-11-06",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000072971-25-000256",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "080f0ac383b1eaa225a80cb06f0031ecdbb6c4fe44bceae399c06e110d7df855"
+    },
+    {
+      "cusip": "095306106",
+      "issuer": "BLUE BIRD CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 232,
+      "observed_filings": 232,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-23",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08175b691394a58baad172ef3732eb5c9cbb45f74989458422f93059af1d9f23"
+    },
+    {
+      "cusip": "532206109",
+      "issuer": "LIFE360 INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 179,
+      "observed_filings": 179,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000009015-25-000030",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08346600a3da1c25fd35c21a2cf531f10fbb994cf0c76f9db6fa5a5d98fe3491"
+    },
+    {
+      "cusip": "74164M108",
+      "issuer": "PRIMERICA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 427,
+      "observed_filings": 429,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "083d5cf2f59020465bb3a88fbaaf93c014c2d05c616cea641c35a5a1776abefc"
+    },
+    {
+      "cusip": "00847J105",
+      "issuer": "AGILYSYS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 226,
+      "observed_filings": 227,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "084514a79af423ed3e8402c82f320cac42765d9150763e4446fc54039aa107e2"
+    },
+    {
+      "cusip": "18913Y103",
+      "issuer": "CLOUGH GLOBAL DIVID & INCOME",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 27,
+      "observed_filings": 27,
+      "first_filed": "2025-10-21",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08467c9349460df9c136e4a6d4fec173c0dac24191df2742c2944d0bef33c473"
+    },
+    {
+      "cusip": "693475105",
+      "issuer": "PNC FINL SVCS GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1560,
+      "observed_filings": 1563,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "085d431d8d318660819997031d394cd1a31043f98093dd57c5ed7aefc53be971"
+    },
+    {
+      "cusip": "92823T207",
+      "issuer": "VIRNETX HLDG CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 21,
+      "observed_filings": 21,
+      "first_filed": "2025-10-21",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08684f3ee7a39c4cd850532d8fb1d2f56a6c5c41ee37c39a03c8f255711a5947"
+    },
+    {
+      "cusip": "09627Y109",
+      "issuer": "BLUEPRINT MEDICINES CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 4,
+      "observed_filings": 4,
+      "first_filed": "2025-11-03",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "086c3bd7b3dd6f9833f9014b29c4d6045ba1d2c7946976708a351a4fcadf4ca6"
+    },
+    {
+      "cusip": "55955D100",
+      "issuer": "MAGNITE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 272,
+      "observed_filings": 272,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "087be022811aefc1e970ed733855323f1408a162a0f0ec3dc98909dd93bb95cd"
+    },
+    {
+      "cusip": "58844R108",
+      "issuer": "MERCHANTS BANCORP IND",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 138,
+      "observed_filings": 138,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "088aad81d014dfaa2bd39ca4371489d158202ca10c7ee4dbd26acf58cb3e2641"
+    },
+    {
+      "cusip": "00373V100",
+      "issuer": "ABOVE FOOD INGREDIENTS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 14,
+      "observed_filings": 14,
+      "first_filed": "2025-10-20",
+      "last_filed": "2025-12-01",
+      "example_accession": "0000895421-25-000593",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08ad3c74f304100bd9d1fafeac70d1fed2b19b000953235b37253edb6a1a9f77"
+    },
+    {
+      "cusip": "876511106",
+      "issuer": "TASEKO MINES LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 137,
+      "observed_filings": 137,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08c02547934106fc438e3497a22f06f0b88423ded19068d7f6e4c9190475670e"
+    },
+    {
+      "cusip": "75508B104",
+      "issuer": "RAYONIER ADVANCED MATLS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 129,
+      "observed_filings": 129,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08dae789f7362e8e1a412c734b526501e99d1b4b9ba279fd481db5352eb97482"
+    },
+    {
+      "cusip": "98943L107",
+      "issuer": "ZENTALIS PHARMACEUTICALS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 88,
+      "observed_filings": 89,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-20",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08dd3b16ba751ccf90b5520dfa00e2d8b7094f9fb1479059d9cb5496794cd57d"
+    },
+    {
+      "cusip": "59151K108",
+      "issuer": "METHANEX CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 153,
+      "observed_filings": 153,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08df57efc77bb7c86bda528e7a06ad91b057ab0e3bd8ea94378a253c3de4e4b0"
+    },
+    {
+      "cusip": "879369106",
+      "issuer": "TELEFLEX INCORPORATED",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 363,
+      "observed_filings": 363,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "08e6db34a2d0a8d78cac75002879bf2ef42ab5cb056ff1d5d9eb390fc7c68eeb"
+    },
+    {
+      "cusip": "05329W102",
+      "issuer": "AUTONATION INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 444,
+      "observed_filings": 445,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "091897bd1e61844b4f33f4f4718256b299c975cee535ef125cf055ea421acb1d"
+    },
+    {
+      "cusip": "320866106",
+      "issuer": "FIRST MID ILL BANCSHARES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 129,
+      "observed_filings": 129,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "091dd7a19a59ee6e31879992d4e0d5c30da22a05930fd72b83c7e5202a61b2b3"
+    },
+    {
+      "cusip": "252131107",
+      "issuer": "DEXCOM INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 794,
+      "observed_filings": 797,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-16",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "095b2f12c5b57beabab022ea4294139e2f419f9ac1c3b94eaf7b4026ce156eef"
+    },
+    {
+      "cusip": "55616P104",
+      "issuer": "MACYS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 368,
+      "observed_filings": 368,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "096b5e51594838c4656875d4b1caa02d6fa508b4702b841225f234cc858a735a"
+    },
+    {
+      "cusip": "92922P106",
+      "issuer": "W & T OFFSHORE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 119,
+      "observed_filings": 119,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09752ef1c2f0a84fcec456b5e66d613f1c6d6b2c1a81eb9f9cf9a7aaa885d273"
+    },
+    {
+      "cusip": "88322Q108",
+      "issuer": "TG THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 303,
+      "observed_filings": 303,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "098784591665787dbf7abf0bd49176fcb093edbd181a5bbc5a98401a753315f3"
+    },
+    {
+      "cusip": "444859102",
+      "issuer": "HUMANA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 771,
+      "observed_filings": 774,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "098d65aa435300278fe91ab57767adf4837e53f55f16e17795c161d46af18494"
+    },
+    {
+      "cusip": "600544100",
+      "issuer": "MILLERKNOLL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 180,
+      "observed_filings": 180,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09c546ba0b83189ebbc580081ae18cf52c72618e90e6195beeefaf564a72f69e"
+    },
+    {
+      "cusip": "108621103",
+      "issuer": "BRIDGEWATER BANCSHARES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 109,
+      "observed_filings": 109,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09d369816bb4e5ad46bb6c31da2b4d764ca7d68088e19a7bebaac1216dbcb432"
+    },
+    {
+      "cusip": "20337X109",
+      "issuer": "COMMSCOPE HLDG CO INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 286,
+      "observed_filings": 286,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-23",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09d68f77bd3fddcc85351e45eba800dae41b589bbaa4d06c73169ba9d106aac0"
+    },
+    {
+      "cusip": "256163106",
+      "issuer": "DOCUSIGN INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 688,
+      "observed_filings": 689,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09d932df44d43917122ac3fb6ae443a071ec70c9c0d9b091a594007a51fbffcf"
+    },
+    {
+      "cusip": "62944T105",
+      "issuer": "NVR INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 591,
+      "observed_filings": 592,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09e35d1bfcfd924f8b3e67011c089b3583694c8b7950dbd884fe75156b936cf8"
+    },
+    {
+      "cusip": "59156R108",
+      "issuer": "METLIFE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1166,
+      "observed_filings": 1168,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09e912065e6759d64552fa1c89beb950135a2203744662632ac78388cc9ec2ef"
+    },
+    {
+      "cusip": "070203104",
+      "issuer": "BASSETT FURNITURE INDS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 64,
+      "observed_filings": 64,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "09eb1fe073bf918375ce0cc71b517edbe3494d68305c6cfd4b6c35ce5a70b9a1"
+    },
+    {
+      "cusip": "26142Q304",
+      "issuer": "DRAGANFLY INC.",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 40,
+      "observed_filings": 40,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a0664c488da91a8d8d251f603cdc2da8ab7b74e7384244a6d96e75c15284cec"
+    },
+    {
+      "cusip": "749685103",
+      "issuer": "RPM INTL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 654,
+      "observed_filings": 655,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a0b9d056af1d1972d2e024eeec51c0d6f4e873437640736b054914f95ccc5e7"
+    },
+    {
+      "cusip": "776696106",
+      "issuer": "ROPER TECHNOLOGIES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1103,
+      "observed_filings": 1107,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a1ce04c152a684fa2f4c13b068e2371ddae3ca2011648381c004ce5db624163"
+    },
+    {
+      "cusip": "15202L107",
+      "issuer": "CENTERSPACE",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 163,
+      "observed_filings": 163,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a4367ec0ab927eaf630deb6ccbcb84858b8ff75761e7e39f650660a8861531c"
+    },
+    {
+      "cusip": "00191U102",
+      "issuer": "ASGN INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 254,
+      "observed_filings": 254,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a506866dbfe7a680d4fe18e35c48996eb5e06a0b44d14cc4741f4005167b744"
+    },
+    {
+      "cusip": "69924R108",
+      "issuer": "PARAMOUNT GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 168,
+      "observed_filings": 168,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a728eee3f7609fc39901394cd8fd4423fa693e2b7f4bb887e39d4eb94ef5f91"
+    },
+    {
+      "cusip": "16934Q802",
+      "issuer": "CHIMERA INVT CORP",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 160,
+      "observed_filings": 160,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a76c139f29292f823c6ee41c78a0e236474cfddb8d8de4464ce7a16567b4dfd"
+    },
+    {
+      "cusip": "45674E109",
+      "issuer": "IN8BIO INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-11-12",
+      "last_filed": "2025-11-12",
+      "example_accession": "0001104659-25-110482",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a7e5af76bced5ac00a1ef8e5a8dbdb3863bdf4550792b62e9313fcbffd3bef5"
+    },
+    {
+      "cusip": "666762109",
+      "issuer": "NORTHRIM BANCORP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 126,
+      "observed_filings": 126,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a8928da39630835c8b54d8dd78c684dd289b5358af395b58ec2c1a08e1844d5"
+    },
+    {
+      "cusip": "018581108",
+      "issuer": "BREAD FINANCIAL HOLDINGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 301,
+      "observed_filings": 301,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a8994cc1269a63f06a36c256f5087ba753468816ade23af4c72d157e91667bf"
+    },
+    {
+      "cusip": "912909108",
+      "issuer": "UNITED STATES STL CORP NEW",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-11-12",
+      "last_filed": "2025-11-12",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a8b2d25d2d7fec81df41237c86bb491213f9846a16aa51a258fac7adef8768b"
+    },
+    {
+      "cusip": "844895102",
+      "issuer": "SOUTHWEST GAS HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 285,
+      "observed_filings": 285,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a9905005fb994ac317be39fa2eb9ad7a06ddf0e8ca2edd08fe39dfeda862325"
+    },
+    {
+      "cusip": "125141101",
+      "issuer": "CECO ENVIRONMENTAL CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 195,
+      "observed_filings": 195,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0a9a8a3f1db024c16bacb7023ca13b0fe9845e7a9aba1f26387b8f962500611b"
+    },
+    {
+      "cusip": "396879108",
+      "issuer": "GREENWICH LIFESCIENCES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 40,
+      "observed_filings": 40,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0ab9def8e7cfc600ed9037f12df4f2cb2dc3da0ebc439c134657f0eb4d931582"
+    },
+    {
+      "cusip": "416515104",
+      "issuer": "HARTFORD INSURANCE GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 959,
+      "observed_filings": 961,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0acc2cc87c5c9338e0e29284667efde901e7d3771a65502a2b1240df6bc79ac6"
+    },
+    {
+      "cusip": "84833T103",
+      "issuer": "SPERO THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 44,
+      "observed_filings": 44,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0ae540cccf5fedf7c1d84d4ef781affc2709e686f2db737392c7184f75cc98c4"
+    },
+    {
+      "cusip": "67073S307",
+      "issuer": "CIMG INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 11,
+      "observed_filings": 11,
+      "first_filed": "2025-11-05",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0aea251f7b6129ae87c5f183b36e07d6cc43176d17bcd924b14b68d099504670"
+    },
+    {
+      "cusip": "609786108",
+      "issuer": "MONOGRAM TECHNOLOGIES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 48,
+      "observed_filings": 48,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0af4537c41abdceda8d033a8a779b5f8690f7e9f87520349792e347f415d5fe7"
+    },
+    {
+      "cusip": "88162G103",
+      "issuer": "TETRA TECH INC NEW",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 507,
+      "observed_filings": 511,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b06a3d62aaff0f1505753646ea272fce81fe1b8d6a35447c848efae02256ac9"
+    },
+    {
+      "cusip": "573075108",
+      "issuer": "MARTEN TRANS LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 193,
+      "observed_filings": 193,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b0719c661f33841e5482071cd144cc54804b2347a08361e787ef2762de5de47"
+    },
+    {
+      "cusip": "46116X101",
+      "issuer": "INTRA-CELLULAR THERAPIES INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-11-12",
+      "last_filed": "2025-11-12",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b0b6b5759b81af0d395228732c2ea1faf59c1ff9fa8ab8d55226c590617aa21"
+    },
+    {
+      "cusip": "G0750C108",
+      "issuer": "AXALTA COATING SYS LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 339,
+      "observed_filings": 339,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b317681fef8df1162f8f788eb02f16e2332e707e743b4fd772ec196b0b41af3"
+    },
+    {
+      "cusip": "553498106",
+      "issuer": "MSA SAFETY INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 352,
+      "observed_filings": 352,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-18",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b4e223a63ecfe639eeb4aa994ebe077fc7b0c13821f439642cf813c1d83ec27"
+    },
+    {
+      "cusip": "89142B107",
+      "issuer": "TORRID HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 66,
+      "observed_filings": 66,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b50aa4bbdeed434f8cb325f80a8aad9e1eb8f8d40beef6bc521e3f0bdf376ce"
+    },
+    {
+      "cusip": "844741108",
+      "issuer": "SOUTHWEST AIRLS CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 638,
+      "observed_filings": 638,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b83d17cf9576bf7f8f84ba3983d1e09e618333fdbcfc8ef60f7e56068b852ad"
+    },
+    {
+      "cusip": "48666K109",
+      "issuer": "KB HOME",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 339,
+      "observed_filings": 339,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b9562d868a26593f186c7771b2b2fcfee352ab2a16fd2330823924448645c43"
+    },
+    {
+      "cusip": "55453W105",
+      "issuer": "MACKENZIE RLTY CAP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 2,
+      "observed_filings": 2,
+      "first_filed": "2025-11-14",
+      "last_filed": "2025-11-14",
+      "example_accession": "0001062993-25-016846",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b9c0e5434e422541ef1d685f1edb3cd8d3c4a9b52cbd2be976147384a3ac7f1"
+    },
+    {
+      "cusip": "74460D109",
+      "issuer": "PUBLIC STORAGE OPER CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 927,
+      "observed_filings": 928,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0b9da3faa7228bf225489a86e1b58f6373c193760a46f656b4b8580facda4502"
+    },
+    {
+      "cusip": "983134107",
+      "issuer": "WYNN RESORTS LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 458,
+      "observed_filings": 459,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-18",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bad01ec73a2143a8583422649ee6e89a9cc5373ba1741969edb50158c232def"
+    },
+    {
+      "cusip": "87807B107",
+      "issuer": "TC ENERGY CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 508,
+      "observed_filings": 508,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bae491d39c4cf3aae24100be7eec8c35478374e91fad0965507c26f64a296c4"
+    },
+    {
+      "cusip": "94845U105",
+      "issuer": "WEBTOON ENTMT INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 75,
+      "observed_filings": 75,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bb8022163c6bd5258bb2eca5165d87e0dd4e02d961ffd3a06c043a9c11c5d50"
+    },
+    {
+      "cusip": "08915P101",
+      "issuer": "BIG 5 SPORTING GOODS CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 39,
+      "observed_filings": 39,
+      "first_filed": "2025-10-21",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bc36a12a33fd116a149b59c01f2d7b0db8946597d4153d11897d7fa0a613715"
+    },
+    {
+      "cusip": "14216R101",
+      "issuer": "CARISMA THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 25,
+      "observed_filings": 25,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bcd1024411083d77213a30fc3c28830021b0781702ded28159af61947230ecd"
+    },
+    {
+      "cusip": "806037107",
+      "issuer": "SCANSOURCE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 192,
+      "observed_filings": 192,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-11-20",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bdd353c85328340afa691e29b5a3e86112f17a4fa930ce94922c3ffadf157ae"
+    },
+    {
+      "cusip": "46131B704",
+      "issuer": "INVESCO MORTGAGE CAPITAL INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 120,
+      "observed_filings": 120,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bec14487201d0ba7f03d2f73b4cf2e3d18c781eb1e3051550ad1b7d6b3f9e93"
+    },
+    {
+      "cusip": "29271Q103",
+      "issuer": "ENERGY SVCS ACQUISITION CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 77,
+      "observed_filings": 77,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000049205-25-000003",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0bede45a3d3be880e18f706b0ea536bc498c5d34565c0605ffbf6c4f3eeec1c0"
+    },
+    {
+      "cusip": "46266C105",
+      "issuer": "IQVIA HLDGS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 863,
+      "observed_filings": 865,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000007789-25-000175",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c2da620afedcca0172c5ed9b3b1595747977716a7e8290ecf07413798094c45"
+    },
+    {
+      "cusip": "670928100",
+      "issuer": "NUVEEN MUN VALUE FD INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 186,
+      "observed_filings": 186,
+      "first_filed": "2025-10-03",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c45106239a2b1910082ab70b2ae5d2e6ed2c8c4bf6e011d1a944a410e7f298e"
+    },
+    {
+      "cusip": "67079U306",
+      "issuer": "NUTEX HEALTH INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 88,
+      "observed_filings": 88,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c4be3fc452e83b99dafa2ec8654eb36c86806240c50723a69aac9cac56c11a8"
+    },
+    {
+      "cusip": "045487105",
+      "issuer": "ASSOCIATED BANC CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 275,
+      "observed_filings": 276,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000007789-25-000175",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c747b38411fee462e42efe95898064ebc044087c8e5317ed582f04805617452"
+    },
+    {
+      "cusip": "36828A101",
+      "issuer": "GE VERNOVA INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 2195,
+      "observed_filings": 2203,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000007789-25-000175",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c7696a5b2d8e8cafcef64857ffa1f2f9a32c506dc9b219be5f5312f9f05d6b9"
+    },
+    {
+      "cusip": "48301N104",
+      "issuer": "KAIROS PHARMA LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 14,
+      "observed_filings": 14,
+      "first_filed": "2025-11-07",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c7cc797bc09a0d5d1888f235f751b740308c465ed17f408aed4607fd29852c6"
+    },
+    {
+      "cusip": "75902K106",
+      "issuer": "REGIONAL MGMT CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 98,
+      "observed_filings": 98,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c841d94262e907a394ab00ebeac57251cad67876af2490c1ce1804a9f4fdc50"
+    },
+    {
+      "cusip": "67401P405",
+      "issuer": "OAKTREE SPECIALTY LENDING CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 156,
+      "observed_filings": 156,
+      "first_filed": "2025-10-06",
+      "last_filed": "2025-12-08",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c8f3ac8b8ddf450c7cf3a58416bb9208bb323a6ea3f5e1f7f7ecd4a10fe541c"
+    },
+    {
+      "cusip": "53224K302",
+      "issuer": "LIGHTBRIDGE CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 92,
+      "observed_filings": 92,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c95e20c70c5fccb94832926f949240778a452e949b7259fd5f04aad015e3996"
+    },
+    {
+      "cusip": "76881Y109",
+      "issuer": "RIVERNORTH OPPORTUNITIES FD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 40,
+      "observed_filings": 40,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0c9a45b029d33f766ecf44104109ef470cc9a8b1d061b5fb46afa7deb6445d17"
+    },
+    {
+      "cusip": "87583X109",
+      "issuer": "TANGO THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 123,
+      "observed_filings": 123,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0ca03c39f42fb0723610b8678880069e8ac7bd101739e460e2ee8d46233e8d45"
+    },
+    {
+      "cusip": "09250W107",
+      "issuer": "BLACKROCK HEALTH SCIENCES TR",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 61,
+      "observed_filings": 61,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-22",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d12db9e7cde29c54a1dd5b6f9990612fa8a8a3b08181715eec6df1e1ad59120"
+    },
+    {
+      "cusip": "20602D101",
+      "issuer": "CONCENTRIX CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 299,
+      "observed_filings": 299,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-17",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d255e098d4805670facb9b31f537219c1a929b01fe7511023b66c36ab4dc747"
+    },
+    {
+      "cusip": "233331107",
+      "issuer": "DTE ENERGY CO",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 776,
+      "observed_filings": 777,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-29",
+      "example_accession": "0000009631-25-000013",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d39f8e3bad094d40669bf6cbd18559611350cd0b8957df7f27699ea9b5a083a"
+    },
+    {
+      "cusip": "047649108",
+      "issuer": "ATKORE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 254,
+      "observed_filings": 254,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d43f6eb0b68b530ff46e0a1d09a14ae72f3ed58babf91d703e1c6c68a38ea32"
+    },
+    {
+      "cusip": "131100109",
+      "issuer": "CALLAN JMB INC",
+      "class": "COM",
+      "status": "*A*",
+      "observed_reporting_managers": 9,
+      "observed_filings": 9,
+      "first_filed": "2025-10-17",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d60b177d15c26241565412d41af7f6f954b3c0b2008daf798c0e43ac17c4488"
+    },
+    {
+      "cusip": "816307300",
+      "issuer": "SELECTQUOTE INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 150,
+      "observed_filings": 150,
+      "first_filed": "2025-10-06",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d6e7b0fd353b9b937b388f2636399ea02da730d3de9a8f27278ada1abf4d07b"
+    },
+    {
+      "cusip": "33734E103",
+      "issuer": "FIRST TR MTG INCOME FD",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 10,
+      "observed_filings": 10,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-14",
+      "example_accession": "0000072971-25-000256",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d90d219133d13d9d77f2ff1611dc47335e1209602912d6305403cdf4cf17fe3"
+    },
+    {
+      "cusip": "27829L105",
+      "issuer": "EATON VANCE NATL MUN OPPORT",
+      "class": "COM SHS",
+      "status": "",
+      "observed_reporting_managers": 38,
+      "observed_filings": 38,
+      "first_filed": "2025-10-15",
+      "last_filed": "2025-11-20",
+      "example_accession": "0000070858-25-000440",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0d9d588abc36c2fc99d41bfb9569a24c589235a3fea96b5a6168068d8f70c34c"
+    },
+    {
+      "cusip": "75943R102",
+      "issuer": "RELAY THERAPEUTICS INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 174,
+      "observed_filings": 174,
+      "first_filed": "2025-10-09",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0db859cf5e8f9c68d86dd125d2c122bc3d8a48358e607acc9345c8e1e14b7284"
+    },
+    {
+      "cusip": "68827L101",
+      "issuer": "OSISKO GOLD ROYALTIES LTD",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 1,
+      "observed_filings": 1,
+      "first_filed": "2025-10-30",
+      "last_filed": "2025-10-30",
+      "example_accession": "0001659196-25-000006",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0dc03cb33840256e2257855bd34877e058b47e7d1d08dcdba96a8fa1dfef7a40"
+    },
+    {
+      "cusip": "053807103",
+      "issuer": "AVNET INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 352,
+      "observed_filings": 352,
+      "first_filed": "2025-10-01",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0dceea5de4b6d126a35e3ff769a62469ee4f6749092a002459ca5b0bf3071cd9"
+    },
+    {
+      "cusip": "184499101",
+      "issuer": "CLEAN ENERGY FUELS CORP",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 163,
+      "observed_filings": 163,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0dd62f4998690e7c6d3e915bc40f2974fc17f0da3162e4ea713a8a8f237be6e8"
+    },
+    {
+      "cusip": "419870100",
+      "issuer": "HAWAIIAN ELEC INDUSTRIES",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 261,
+      "observed_filings": 261,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-02",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0e4990cc00af775f7a38dd825bdf88c62fe760487aa7e42b21a2c7918563d3f7"
+    },
+    {
+      "cusip": "020764106",
+      "issuer": "ALPHA METALLURGICAL RESOUR I",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 220,
+      "observed_filings": 221,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-16",
+      "example_accession": "0000036104-25-000067",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0e527fed4476c15996298eafe97ac28bf6a2ceaf43220e873fe94ee051719071"
+    },
+    {
+      "cusip": "23331S100",
+      "issuer": "DHI GROUP INC",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 54,
+      "observed_filings": 54,
+      "first_filed": "2025-10-07",
+      "last_filed": "2025-11-17",
+      "example_accession": "0000038777-25-000239",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0e692b376fe3a9aed5e0d46d5efef9f6f6925f7afe0bbacef7bacf28850c60f1"
+    },
+    {
+      "cusip": "405024100",
+      "issuer": "HAEMONETICS CORP MASS",
+      "class": "COM",
+      "status": "",
+      "observed_reporting_managers": 260,
+      "observed_filings": 260,
+      "first_filed": "2025-10-02",
+      "last_filed": "2025-12-15",
+      "example_accession": "0000012600-25-000011",
+      "ticker_at_selection": null,
+      "low_ownership_eligible": null,
+      "selection_hash": "0e6a10059e88a69e97256aaff5984ce591692e47ac4ed41b0c7f605c5338b67d"
+    }
+  ],
+  "pilot_selection_snapshot": {
+    "UAVS": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "00848K309",
+      "reported_share_sum_before_overlap_resolution": 2468213,
+      "positive_reporting_managers": 34,
+      "included_rows": 43,
+      "excluded_row_reasons": {},
+      "top_reported_positions": [
+        {
+          "cik": "0000102909",
+          "name": "VANGUARD GROUP INC",
+          "shares": 644022,
+          "accessions": [
+            "0000102909-25-000353"
+          ]
+        },
+        {
+          "cik": "0001610520",
+          "name": "UBS Group AG",
+          "shares": 429133,
+          "accessions": [
+            "0001193125-25-279802"
+          ]
+        },
+        {
+          "cik": "0001456670",
+          "name": "DNB ASSET MANAGEMENT AS",
+          "shares": 361332,
+          "accessions": [
+            "0000912282-25-001221"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 303151,
+          "accessions": [
+            "0001214717-25-000016"
+          ]
+        },
+        {
+          "cik": "0000093751",
+          "name": "STATE STREET CORP",
+          "shares": 141242,
+          "accessions": [
+            "0000093751-25-000651"
+          ]
+        },
+        {
+          "cik": "0002012383",
+          "name": "BlackRock, Inc.",
+          "shares": 115572,
+          "accessions": [
+            "0002012383-25-002949"
+          ]
+        },
+        {
+          "cik": "0000073124",
+          "name": "NORTHERN TRUST CORP",
+          "shares": 82641,
+          "accessions": [
+            "0000073124-25-000252"
+          ]
+        },
+        {
+          "cik": "0000886982",
+          "name": "GOLDMAN SACHS GROUP INC",
+          "shares": 69184,
+          "accessions": [
+            "0000886982-25-001521"
+          ]
+        },
+        {
+          "cik": "0001595888",
+          "name": "JANE STREET GROUP, LLC",
+          "shares": 59951,
+          "accessions": [
+            "0001595888-25-000155"
+          ]
+        },
+        {
+          "cik": "0001404763",
+          "name": "J.W. COLE ADVISORS, INC.",
+          "shares": 50319,
+          "accessions": [
+            "0001404763-25-000002"
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "denominator": {
+        "taxonomy": "us-gaap",
+        "tag": "CommonStockSharesOutstanding",
+        "shares": 36734690,
+        "end": "2025-09-30",
+        "filed": "2025-11-14",
+        "accession": "0001437749-25-035221",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/us-gaap/CommonStockSharesOutstanding.json",
+        "status": "exact_period",
+        "age_days": 0,
+        "same_date_other_values": [],
+        "security_class_verified": true,
+        "filing_review": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/8504/000143774925035221/uavs20250930_10q.htm",
+          "sha256": "f146d4f1c33eb822eeeb925bcce65ac6a46870160f0252db87f1f5b2f3003dc1",
+          "location": "Balance sheets; common stock issued and outstanding; not 200,000,000 authorized shares"
+        }
+      },
+      "official_security": {
+        "cusip": "00848K309",
+        "issuer": "AGEAGLE AERIAL SYS INC NEW",
+        "class": "COM SHS",
+        "status": ""
+      },
+      "denominator_source_sha256": {
+        "us-gaap": "9221059e336e1a2103ea60230153aad207bb61f3f6bd5142eed175f04e86822a",
+        "dei": "ffa72b8b5e0d2c38ca9cf4ffcd0ab28bc82df55186a562847fc039258d472f1a"
+      },
+      "symbol_mapping_scope": "existing_five_symbol_diagnostic_only",
+      "unreviewed_class_rows_count": 0,
+      "unreviewed_class_rows_sample": [],
+      "unresolved_filings_count": 1,
+      "unresolved_filings_sample": [
+        {
+          "cik": "0000926171",
+          "name": "NATIONAL BANK OF CANADA /FI/",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0000926171-25-000015"
+          ]
+        }
+      ],
+      "potential_overlap_relationships_count": 0,
+      "potential_overlap_relationships_sample": [],
+      "unresolved_manager_references_count": 5,
+      "unresolved_manager_references_sample": [
+        {
+          "cik": "0000073124",
+          "accession": "0000073124-25-000252",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": "0001513287",
+            "file_number": "028-14421",
+            "name": "Colonial First State Investments Ltd",
+            "sequence": "None"
+          },
+          "reason": "referenced_manager_not_in_acquired_period"
+        },
+        {
+          "cik": "0000073124",
+          "accession": "0000073124-25-000252",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": "0001414702",
+            "file_number": "",
+            "name": "Haven Global Partners LP",
+            "sequence": "None"
+          },
+          "reason": "referenced_manager_not_in_acquired_period"
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "RUSSELL FRANK CO",
+            "sequence": "None"
+          }
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+            "sequence": "None"
+          }
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+            "sequence": "None"
+          }
+        }
+      ],
+      "repeated_row_payloads_count": 0,
+      "repeated_row_payloads_sample": [],
+      "confidential_omission_managers_count": 5,
+      "confidential_omission_managers_sample": [
+        "0001450144",
+        "0001000275",
+        "0001179392",
+        "0001761013",
+        "0001456670"
+      ],
+      "amended_managers_with_target_in_history_count": 0,
+      "amended_managers_with_target_in_history_sample": []
+    },
+    "QMCO": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "747906600",
+      "reported_share_sum_before_overlap_resolution": 865029,
+      "positive_reporting_managers": 27,
+      "included_rows": 42,
+      "excluded_row_reasons": {},
+      "top_reported_positions": [
+        {
+          "cik": "0000102909",
+          "name": "VANGUARD GROUP INC",
+          "shares": 303597,
+          "accessions": [
+            "0000102909-25-000353"
+          ]
+        },
+        {
+          "cik": "0001610520",
+          "name": "UBS Group AG",
+          "shares": 162605,
+          "accessions": [
+            "0001193125-25-279802"
+          ]
+        },
+        {
+          "cik": "0002012383",
+          "name": "BlackRock, Inc.",
+          "shares": 162338,
+          "accessions": [
+            "0002012383-25-002949"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 79427,
+          "accessions": [
+            "0001214717-25-000016"
+          ]
+        },
+        {
+          "cik": "0001883897",
+          "name": "AlphaQuest LLC",
+          "shares": 35536,
+          "accessions": [
+            "0001140361-25-040228"
+          ]
+        },
+        {
+          "cik": "0000093751",
+          "name": "STATE STREET CORP",
+          "shares": 27347,
+          "accessions": [
+            "0000093751-25-000651"
+          ]
+        },
+        {
+          "cik": "0001000275",
+          "name": "ROYAL BANK OF CANADA",
+          "shares": 22715,
+          "accessions": [
+            "0001140361-25-042265"
+          ]
+        },
+        {
+          "cik": "0001691766",
+          "name": "FLAGSHIP HARBOR ADVISORS, LLC",
+          "shares": 22710,
+          "accessions": [
+            "0001691766-25-000007"
+          ]
+        },
+        {
+          "cik": "0000073124",
+          "name": "NORTHERN TRUST CORP",
+          "shares": 11687,
+          "accessions": [
+            "0000073124-25-000252"
+          ]
+        },
+        {
+          "cik": "0001962933",
+          "name": "Riverview Capital Advisers, LLC",
+          "shares": 10000,
+          "accessions": [
+            "0001962933-25-000006"
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "denominator": {
+        "taxonomy": "us-gaap",
+        "tag": "CommonStockSharesOutstanding",
+        "shares": 13333000,
+        "end": "2025-09-30",
+        "filed": "2025-11-13",
+        "accession": "0000709283-25-000085",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/us-gaap/CommonStockSharesOutstanding.json",
+        "status": "exact_period",
+        "age_days": 0,
+        "same_date_other_values": [],
+        "security_class_verified": true,
+        "filing_review": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/709283/000070928325000085/qtm-20250930.htm",
+          "sha256": "54591b895b10c532ced4c6211328ef20395c5564c61cf4749cf85ad54e0280ff",
+          "location": "Balance sheets in thousands; 13,333 thousand common shares, not common stock value 133"
+        }
+      },
+      "official_security": {
+        "cusip": "747906600",
+        "issuer": "QUANTUM CORP",
+        "class": "COM",
+        "status": ""
+      },
+      "denominator_source_sha256": {
+        "us-gaap": "b5dbf15b3b90dd9de507edb788f8e8081790f1a9374c6bef09afe308f504b3e1",
+        "dei": "b0b122187be6daad42dc0dff7d3c539d8000e96d61489d22067881e864d28438"
+      },
+      "symbol_mapping_scope": "existing_five_symbol_diagnostic_only",
+      "unreviewed_class_rows_count": 0,
+      "unreviewed_class_rows_sample": [],
+      "unresolved_filings_count": 1,
+      "unresolved_filings_sample": [
+        {
+          "cik": "0001795173",
+          "name": "Physician Wealth Advisors, Inc.",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001795173-25-000005"
+          ]
+        }
+      ],
+      "potential_overlap_relationships_count": 0,
+      "potential_overlap_relationships_sample": [],
+      "unresolved_manager_references_count": 5,
+      "unresolved_manager_references_sample": [
+        {
+          "cik": "0000073124",
+          "accession": "0000073124-25-000252",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": "0001513287",
+            "file_number": "028-14421",
+            "name": "Colonial First State Investments Ltd",
+            "sequence": "None"
+          },
+          "reason": "referenced_manager_not_in_acquired_period"
+        },
+        {
+          "cik": "0000073124",
+          "accession": "0000073124-25-000252",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": "0001414702",
+            "file_number": "",
+            "name": "Haven Global Partners LP",
+            "sequence": "None"
+          },
+          "reason": "referenced_manager_not_in_acquired_period"
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "RUSSELL FRANK CO",
+            "sequence": "None"
+          }
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+            "sequence": "None"
+          }
+        },
+        {
+          "cik": "0002012383",
+          "accession": "0002012383-25-002949",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+            "sequence": "None"
+          }
+        }
+      ],
+      "repeated_row_payloads_count": 1,
+      "repeated_row_payloads_sample": [
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "747906600",
+            "discretion": "DFND",
+            "issuer": "QUANTUM CORP",
+            "other_managers": "5",
+            "put_call": "",
+            "reported_value": 79,
+            "shares": 8,
+            "unit": "SH",
+            "votes": [
+              8,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "confidential_omission_managers_count": 6,
+      "confidential_omission_managers_sample": [
+        "0001137881",
+        "0000019617",
+        "0001633516",
+        "0001000275",
+        "0001166588",
+        "0001883897"
+      ],
+      "amended_managers_with_target_in_history_count": 1,
+      "amended_managers_with_target_in_history_sample": [
+        {
+          "cik": "0000019617",
+          "name": "JPMORGAN CHASE & CO",
+          "operations": [
+            {
+              "accession": "0000019617-25-001081",
+              "filed": "2025-11-07",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0000019617-25-001093",
+              "filed": "2025-11-26",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        }
+      ]
+    },
+    "MU": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "595112103",
+      "reported_share_sum_before_overlap_resolution": 878108557,
+      "positive_reporting_managers": 1995,
+      "included_rows": 2796,
+      "excluded_row_reasons": {
+        "option": 289,
+        "unreviewed_security_class": 33
+      },
+      "top_reported_positions": [
+        {
+          "cik": "0000102909",
+          "name": "VANGUARD GROUP INC",
+          "shares": 104653450,
+          "accessions": [
+            "0000102909-25-000353"
+          ]
+        },
+        {
+          "cik": "0002012383",
+          "name": "BlackRock, Inc.",
+          "shares": 93828422,
+          "accessions": [
+            "0002012383-25-002949"
+          ]
+        },
+        {
+          "cik": "0001422849",
+          "name": "Capital World Investors",
+          "shares": 64186496,
+          "accessions": [
+            "0001422849-25-000069"
+          ]
+        },
+        {
+          "cik": "0000093751",
+          "name": "STATE STREET CORP",
+          "shares": 51659173,
+          "accessions": [
+            "0000093751-25-000651"
+          ]
+        },
+        {
+          "cik": "0000315066",
+          "name": "FMR LLC",
+          "shares": 40064500,
+          "accessions": [
+            "0000315066-25-002929"
+          ]
+        },
+        {
+          "cik": "0000019617",
+          "name": "JPMORGAN CHASE & CO",
+          "shares": 34998906,
+          "accessions": [
+            "0000019617-25-001081",
+            "0000019617-25-001093"
+          ]
+        },
+        {
+          "cik": "0000763212",
+          "name": "PRIMECAP MANAGEMENT CO/CA/",
+          "shares": 29655435,
+          "accessions": [
+            "0000763212-25-000005"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 26038319,
+          "accessions": [
+            "0001214717-25-000016"
+          ]
+        },
+        {
+          "cik": "0001562230",
+          "name": "Capital International Investors",
+          "shares": 23372821,
+          "accessions": [
+            "0001562230-25-000122"
+          ]
+        },
+        {
+          "cik": "0000895421",
+          "name": "MORGAN STANLEY",
+          "shares": 15602366,
+          "accessions": [
+            "0000895421-25-000593"
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "denominator": {
+        "taxonomy": "dei",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "shares": 1122466035,
+        "end": "2025-09-26",
+        "filed": "2025-10-03",
+        "accession": "0000723125-25-000028",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/dei/EntityCommonStockSharesOutstanding.json",
+        "status": "older_date_proxy",
+        "age_days": 4,
+        "same_date_other_values": [],
+        "security_class_verified": false
+      },
+      "official_security": {
+        "cusip": "595112103",
+        "issuer": "MICRON TECHNOLOGY INC",
+        "class": "COM",
+        "status": ""
+      },
+      "denominator_source_sha256": {
+        "us-gaap": "0df7cd834ca7efd9ee7771e25f9aac7099ded8fc727174530d0be2534420e5f5",
+        "dei": "bb4eb112661f6a7c5470a8fa73c1e1eb9a1cd51b5090aa958630d5a1dada8ac3"
+      },
+      "symbol_mapping_scope": "existing_five_symbol_diagnostic_only",
+      "unreviewed_class_rows_count": 33,
+      "unreviewed_class_rows_sample": [
+        {
+          "cik": "0001063571",
+          "accession": "0001063571-25-000006",
+          "row_id": "119573015",
+          "reason": "unreviewed_security_class",
+          "class": "mu",
+          "shares": 1893
+        },
+        {
+          "cik": "0002048547",
+          "accession": "0002048547-25-000007",
+          "row_id": "119347369",
+          "reason": "unreviewed_security_class",
+          "class": "MU",
+          "shares": 153
+        },
+        {
+          "cik": "0001701714",
+          "accession": "0001701714-25-000003",
+          "row_id": "119297454",
+          "reason": "unreviewed_security_class",
+          "class": "OM",
+          "shares": 50
+        }
+      ],
+      "unresolved_filings_count": 42,
+      "unresolved_filings_sample": [
+        {
+          "cik": "0001802084",
+          "name": "CVA Family Office, LLC",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001802084-25-000007"
+          ]
+        },
+        {
+          "cik": "0001018674",
+          "name": "PARSONS CAPITAL MANAGEMENT INC/RI",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001018674-25-000008"
+          ]
+        },
+        {
+          "cik": "0001735057",
+          "name": "Versant Capital Management, Inc",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001735057-25-000007"
+          ]
+        }
+      ],
+      "potential_overlap_relationships_count": 297,
+      "potential_overlap_relationships_sample": [
+        {
+          "ciks": [
+            "0001462160",
+            "0001466546"
+          ],
+          "names": [
+            "Mitsubishi UFJ Trust & Banking Corp",
+            "Mitsubishi UFJ Asset Management Co., Ltd."
+          ],
+          "kinds": [
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            525524,
+            2337364
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0000073124",
+            "0001462160"
+          ],
+          "names": [
+            "NORTHERN TRUST CORP",
+            "Mitsubishi UFJ Trust & Banking Corp"
+          ],
+          "kinds": [
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            10459799,
+            525524
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0001462160",
+            "0001692234"
+          ],
+          "names": [
+            "Mitsubishi UFJ Trust & Banking Corp",
+            "Russell Investments Group, Ltd."
+          ],
+          "kinds": [
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            525524,
+            811101
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        }
+      ],
+      "unresolved_manager_references_count": 537,
+      "unresolved_manager_references_sample": [
+        {
+          "cik": "0000039263",
+          "accession": "0000039263-25-000119",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Frost Investment Services, LLC",
+            "sequence": "3"
+          }
+        },
+        {
+          "cik": "0001462160",
+          "accession": "0001193125-25-259342",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "028-21707",
+            "name": "Sonen Capital LLC",
+            "sequence": "None"
+          }
+        },
+        {
+          "cik": "0001462160",
+          "accession": "0001193125-25-259342",
+          "relationship": "reported_by",
+          "reference": {
+            "cik": null,
+            "file_number": "028-04701",
+            "name": "ABERDEEN ASSET MANAGEMENT PLC/UK",
+            "sequence": "None"
+          }
+        }
+      ],
+      "repeated_row_payloads_count": 26,
+      "repeated_row_payloads_sample": [
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "595112103",
+            "discretion": "OTR",
+            "issuer": "MICRON TECHNOLOGY INC",
+            "other_managers": "23",
+            "put_call": "",
+            "reported_value": 288125,
+            "shares": 1722,
+            "unit": "SH",
+            "votes": [
+              0,
+              0,
+              1722
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "595112103",
+            "discretion": "OTR",
+            "issuer": "MICRON TECHNOLOGY INC",
+            "other_managers": "13",
+            "put_call": "",
+            "reported_value": 7034300,
+            "shares": 42041,
+            "unit": "SH",
+            "votes": [
+              0,
+              42041,
+              0
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "595112103",
+            "discretion": "OTR",
+            "issuer": "MICRON TECHNOLOGY INC",
+            "other_managers": "1",
+            "put_call": "",
+            "reported_value": 978655,
+            "shares": 5849,
+            "unit": "SH",
+            "votes": [
+              0,
+              0,
+              5849
+            ]
+          }
+        }
+      ],
+      "confidential_omission_managers_count": 570,
+      "confidential_omission_managers_sample": [
+        "0000852933",
+        "0001536114",
+        "0001021926"
+      ],
+      "amended_managers_with_target_in_history_count": 33,
+      "amended_managers_with_target_in_history_sample": [
+        {
+          "cik": "0001780985",
+          "name": "OneAscent Financial Services LLC",
+          "operations": [
+            {
+              "accession": "0001780985-25-000005",
+              "filed": "2025-10-22",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0001780985-25-000006",
+              "filed": "2025-10-31",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0001531809",
+          "name": "CapWealth Advisors, LLC",
+          "operations": [
+            {
+              "accession": "0001531809-25-000006",
+              "filed": "2025-10-21",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0001531809-25-000007",
+              "filed": "2025-10-30",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0002035324",
+          "name": "NEW WAVE WEALTH ADVISORS LLC",
+          "operations": [
+            {
+              "accession": "0002035324-25-000010",
+              "filed": "2025-10-17",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0002035324-25-000011",
+              "filed": "2025-10-30",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        }
+      ]
+    },
+    "ONTO": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "683344105",
+      "reported_share_sum_before_overlap_resolution": 47269930,
+      "positive_reporting_managers": 454,
+      "included_rows": 670,
+      "excluded_row_reasons": {
+        "unreviewed_security_class": 23,
+        "option": 26
+      },
+      "top_reported_positions": [
+        {
+          "cik": "0000102909",
+          "name": "VANGUARD GROUP INC",
+          "shares": 5667404,
+          "accessions": [
+            "0000102909-25-000353"
+          ]
+        },
+        {
+          "cik": "0002012383",
+          "name": "BlackRock, Inc.",
+          "shares": 5213300,
+          "accessions": [
+            "0002012383-25-002949"
+          ]
+        },
+        {
+          "cik": "0001644956",
+          "name": "WILLIAM BLAIR INVESTMENT MANAGEMENT, LLC",
+          "shares": 1981761,
+          "accessions": [
+            "0001644956-25-000045"
+          ]
+        },
+        {
+          "cik": "0000093751",
+          "name": "STATE STREET CORP",
+          "shares": 1475218,
+          "accessions": [
+            "0000093751-25-000651"
+          ]
+        },
+        {
+          "cik": "0000902219",
+          "name": "WELLINGTON MANAGEMENT GROUP LLP",
+          "shares": 1398995,
+          "accessions": [
+            "0000902219-25-000462"
+          ]
+        },
+        {
+          "cik": "0000038777",
+          "name": "FRANKLIN RESOURCES INC",
+          "shares": 1114501,
+          "accessions": [
+            "0000038777-25-000239"
+          ]
+        },
+        {
+          "cik": "0001037792",
+          "name": "PARADIGM CAPITAL MANAGEMENT INC/NY",
+          "shares": 1112839,
+          "accessions": [
+            "0001037792-25-000014"
+          ]
+        },
+        {
+          "cik": "0001009232",
+          "name": "GENEVA CAPITAL MANAGEMENT LLC",
+          "shares": 1084447,
+          "accessions": [
+            "0001009232-25-000016"
+          ]
+        },
+        {
+          "cik": "0001009207",
+          "name": "D. E. Shaw & Co., Inc.",
+          "shares": 1002810,
+          "accessions": [
+            "0001104659-25-112505"
+          ]
+        },
+        {
+          "cik": "0001068837",
+          "name": "Voya Investment Management LLC",
+          "shares": 868607,
+          "accessions": [
+            "0001068837-25-000035"
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "denominator": {
+        "taxonomy": "dei",
+        "tag": "EntityCommonStockSharesOutstanding",
+        "shares": 49003572,
+        "end": "2025-07-15",
+        "filed": "2025-08-07",
+        "accession": "0000950170-25-105161",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/dei/EntityCommonStockSharesOutstanding.json",
+        "status": "older_date_proxy",
+        "age_days": 77,
+        "same_date_other_values": [],
+        "security_class_verified": false
+      },
+      "official_security": {
+        "cusip": "683344105",
+        "issuer": "ONTO INNOVATION INC",
+        "class": "COM",
+        "status": ""
+      },
+      "denominator_source_sha256": {
+        "us-gaap": "a3de35c4c84e0dd1f3b9b0d3915be8fc1a341405fab9448b050644a874e531ab",
+        "dei": "1c18aeab13b057f4303558908463d55f0ad805f2323ddfdc2fbd04f680b42585"
+      },
+      "symbol_mapping_scope": "existing_five_symbol_diagnostic_only",
+      "unreviewed_class_rows_count": 23,
+      "unreviewed_class_rows_sample": [
+        {
+          "cik": "0001616667",
+          "accession": "0000894189-25-011350",
+          "row_id": "119088338",
+          "reason": "unreviewed_security_class",
+          "class": "Common Stock - Domestic",
+          "shares": 9839
+        },
+        {
+          "cik": "0001419186",
+          "accession": "0001419186-25-000008",
+          "row_id": "120663569",
+          "reason": "unreviewed_security_class",
+          "class": "INNOVATION  INC  COM",
+          "shares": 11838
+        },
+        {
+          "cik": "0002023570",
+          "accession": "0002023570-25-000007",
+          "row_id": "120461149",
+          "reason": "unreviewed_security_class",
+          "class": "C",
+          "shares": 9
+        }
+      ],
+      "unresolved_filings_count": 9,
+      "unresolved_filings_sample": [
+        {
+          "cik": "0001735057",
+          "name": "Versant Capital Management, Inc",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001735057-25-000007"
+          ]
+        },
+        {
+          "cik": "0000036966",
+          "name": "FIRST HORIZON CORP",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0000036966-25-000134"
+          ]
+        },
+        {
+          "cik": "0001009016",
+          "name": "FORT WASHINGTON INVESTMENT ADVISORS INC /OH/",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001193125-25-242537"
+          ]
+        }
+      ],
+      "potential_overlap_relationships_count": 81,
+      "potential_overlap_relationships_sample": [
+        {
+          "ciks": [
+            "0000053417",
+            "0001137774"
+          ],
+          "names": [
+            "JENNISON ASSOCIATES LLC",
+            "PRUDENTIAL FINANCIAL INC"
+          ],
+          "kinds": [
+            "included_manager",
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            48857,
+            4877
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0001260824",
+            "0001759654"
+          ],
+          "names": [
+            "EVERGREEN CAPITAL MANAGEMENT LLC",
+            "Quantinno Capital Management LP"
+          ],
+          "kinds": [
+            "included_manager"
+          ],
+          "manager_share_totals": [
+            2891,
+            6004
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0000036644",
+            "0001941030"
+          ],
+          "names": [
+            "FIRST NATIONAL BANK OF OMAHA",
+            "First National Advisers, LLC"
+          ],
+          "kinds": [
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            15372,
+            3874
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        }
+      ],
+      "unresolved_manager_references_count": 185,
+      "unresolved_manager_references_sample": [
+        {
+          "cik": "0000039263",
+          "accession": "0000039263-25-000119",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Frost Investment Services, LLC",
+            "sequence": "3"
+          }
+        },
+        {
+          "cik": "0001415912",
+          "accession": "0001178913-25-003604",
+          "row_id": "119588189",
+          "sequence": ""
+        },
+        {
+          "cik": "0001455267",
+          "accession": "0001455267-25-000009",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Parkside Financial Bank & Trust",
+            "sequence": "2"
+          }
+        }
+      ],
+      "repeated_row_payloads_count": 10,
+      "repeated_row_payloads_sample": [
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "683344105",
+            "discretion": "OTR",
+            "issuer": "ONTO INNOVATION INC",
+            "other_managers": "23",
+            "put_call": "",
+            "reported_value": 3231,
+            "shares": 25,
+            "unit": "SH",
+            "votes": [
+              0,
+              0,
+              25
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "683344105",
+            "discretion": "DFND",
+            "issuer": "ONTO INNOVATION INC",
+            "other_managers": "5",
+            "put_call": "",
+            "reported_value": 39893,
+            "shares": 308,
+            "unit": "SH",
+            "votes": [
+              307,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "683344105",
+            "discretion": "DFND",
+            "issuer": "ONTO INNOVATION INC",
+            "other_managers": "4",
+            "put_call": "",
+            "reported_value": 30681738,
+            "shares": 237438,
+            "unit": "SH",
+            "votes": [
+              180998,
+              0,
+              56440
+            ]
+          }
+        }
+      ],
+      "confidential_omission_managers_count": 126,
+      "confidential_omission_managers_sample": [
+        "0001021926",
+        "0001137881",
+        "0001593051"
+      ],
+      "amended_managers_with_target_in_history_count": 8,
+      "amended_managers_with_target_in_history_sample": [
+        {
+          "cik": "0001553562",
+          "name": "AMF Tjanstepension AB",
+          "operations": [
+            {
+              "accession": "0001062993-25-016405",
+              "filed": "2025-10-31",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0001062993-25-016785",
+              "filed": "2025-11-14",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0000019617",
+          "name": "JPMORGAN CHASE & CO",
+          "operations": [
+            {
+              "accession": "0000019617-25-001081",
+              "filed": "2025-11-07",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0000019617-25-001093",
+              "filed": "2025-11-26",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0000800177",
+          "name": "DANSKE BANK A/S",
+          "operations": [
+            {
+              "accession": "0001104659-25-111088",
+              "filed": "2025-11-13",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0001104659-25-114006",
+              "filed": "2025-11-19",
+              "operation": "replace",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        }
+      ]
+    },
+    "AAOI": {
+      "status": "diagnostic_sum_not_certified_ownership",
+      "cusip": "03823U102",
+      "reported_share_sum_before_overlap_resolution": 39671261,
+      "positive_reporting_managers": 172,
+      "included_rows": 266,
+      "excluded_row_reasons": {
+        "option": 36,
+        "unreviewed_security_class": 1
+      },
+      "top_reported_positions": [
+        {
+          "cik": "0002012383",
+          "name": "BlackRock, Inc.",
+          "shares": 4851851,
+          "accessions": [
+            "0002012383-25-002949"
+          ]
+        },
+        {
+          "cik": "0000102909",
+          "name": "VANGUARD GROUP INC",
+          "shares": 4624570,
+          "accessions": [
+            "0000102909-25-000353"
+          ]
+        },
+        {
+          "cik": "0000937886",
+          "name": "OBERWEIS ASSET MANAGEMENT INC/",
+          "shares": 1888041,
+          "accessions": [
+            "0001213900-25-111225"
+          ]
+        },
+        {
+          "cik": "0000886982",
+          "name": "GOLDMAN SACHS GROUP INC",
+          "shares": 1663241,
+          "accessions": [
+            "0000886982-25-001521"
+          ]
+        },
+        {
+          "cik": "0001578177",
+          "name": "Hood River Capital Management LLC",
+          "shares": 1575623,
+          "accessions": [
+            "0001214659-25-016490"
+          ]
+        },
+        {
+          "cik": "0000093751",
+          "name": "STATE STREET CORP",
+          "shares": 1440595,
+          "accessions": [
+            "0000093751-25-000651"
+          ]
+        },
+        {
+          "cik": "0001214717",
+          "name": "GEODE CAPITAL MANAGEMENT, LLC",
+          "shares": 1366263,
+          "accessions": [
+            "0001214717-25-000016"
+          ]
+        },
+        {
+          "cik": "0000831001",
+          "name": "CITIGROUP INC",
+          "shares": 1160456,
+          "accessions": [
+            "0000831001-25-000158"
+          ]
+        },
+        {
+          "cik": "0001745907",
+          "name": "CloudAlpha Capital Management Limited/Hong Kong",
+          "shares": 1078750,
+          "accessions": [
+            "0001745907-25-000041"
+          ]
+        },
+        {
+          "cik": "0001446194",
+          "name": "SUSQUEHANNA INTERNATIONAL GROUP, LLP",
+          "shares": 1023223,
+          "accessions": [
+            "0001446194-25-000027"
+          ]
+        }
+      ],
+      "source_reviewed_filings": [],
+      "institutional_ownership_percent": null,
+      "low_ownership_eligible": null,
+      "denominator": {
+        "taxonomy": "us-gaap",
+        "tag": "CommonStockSharesOutstanding",
+        "shares": 68065000,
+        "end": "2025-09-30",
+        "filed": "2025-11-06",
+        "accession": "0001437749-25-033627",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CommonStockSharesOutstanding.json",
+        "status": "exact_period",
+        "age_days": 0,
+        "same_date_other_values": [],
+        "security_class_verified": false
+      },
+      "official_security": {
+        "cusip": "03823U102",
+        "issuer": "APPLIED OPTOELECTRONICS INC",
+        "class": "COM",
+        "status": ""
+      },
+      "denominator_source_sha256": {
+        "us-gaap": "42301774234ce9b214e9dc3d87129e2cc84f057fd84ec17b156f9f8fe6155c63",
+        "dei": "fd292bb21a1abb1462a7cbfd1fed7fde3d5f9d37bc1a2a78e9045a16b9a6cd24"
+      },
+      "symbol_mapping_scope": "existing_five_symbol_diagnostic_only",
+      "unreviewed_class_rows_count": 1,
+      "unreviewed_class_rows_sample": [
+        {
+          "cik": "0001419186",
+          "accession": "0001419186-25-000008",
+          "row_id": "120661307",
+          "reason": "unreviewed_security_class",
+          "class": "INC  COM",
+          "shares": 20286
+        }
+      ],
+      "unresolved_filings_count": 5,
+      "unresolved_filings_sample": [
+        {
+          "cik": "0001735057",
+          "name": "Versant Capital Management, Inc",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001735057-25-000007"
+          ]
+        },
+        {
+          "cik": "0001578621",
+          "name": "LMR Partners LLP",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001578621-25-000014"
+          ]
+        },
+        {
+          "cik": "0001081019",
+          "name": "CALIFORNIA STATE TEACHERS RETIREMENT SYSTEM",
+          "reasons": [
+            "entry_count_or_period_mismatch"
+          ],
+          "accessions": [
+            "0001081019-25-000025"
+          ]
+        }
+      ],
+      "potential_overlap_relationships_count": 18,
+      "potential_overlap_relationships_sample": [
+        {
+          "ciks": [
+            "0001603466",
+            "0001698051"
+          ],
+          "names": [
+            "Point72 Asset Management, L.P.",
+            "Point72 Europe (London) LLP"
+          ],
+          "kinds": [
+            "included_manager",
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            980972,
+            9033
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0001603466",
+            "0001666791"
+          ],
+          "names": [
+            "Point72 Asset Management, L.P.",
+            "Point72 Asia (Singapore) Pte. Ltd."
+          ],
+          "kinds": [
+            "included_manager",
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            980972,
+            338976
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        },
+        {
+          "ciks": [
+            "0001599822",
+            "0001603466"
+          ],
+          "names": [
+            "Point72 Hong Kong Ltd",
+            "Point72 Asset Management, L.P."
+          ],
+          "kinds": [
+            "included_manager",
+            "reported_by"
+          ],
+          "manager_share_totals": [
+            646759,
+            980972
+          ],
+          "equal_row_share_counts": [],
+          "status": "potential_overlap_not_automatically_subtracted"
+        }
+      ],
+      "unresolved_manager_references_count": 29,
+      "unresolved_manager_references_sample": [
+        {
+          "cik": "0001890906",
+          "accession": "0001890906-25-000166",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "",
+            "name": "Allspring Global Investments, LLC reporting on behalf of SEI INVESTMENTS CO",
+            "sequence": "2"
+          }
+        },
+        {
+          "cik": "0001533964",
+          "accession": "0001533964-25-000013",
+          "relationship": "included_manager",
+          "reference": {
+            "cik": null,
+            "file_number": "28-15626",
+            "name": "Virtu Americas LLC",
+            "sequence": "5"
+          }
+        },
+        {
+          "cik": "0001586767",
+          "accession": "0001586767-25-000010",
+          "row_id": "121311110",
+          "sequence": "ARAX"
+        }
+      ],
+      "repeated_row_payloads_count": 3,
+      "repeated_row_payloads_sample": [
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "03823U102",
+            "discretion": "DFND",
+            "issuer": "APPLIED OPTOELECTRONICS INC",
+            "other_managers": "4",
+            "put_call": "",
+            "reported_value": 265056,
+            "shares": 10222,
+            "unit": "SH",
+            "votes": [
+              8666,
+              0,
+              1556
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "03823U102",
+            "discretion": "DFND",
+            "issuer": "APPLIED OPTOELECTRONICS INC",
+            "other_managers": "2",
+            "put_call": "",
+            "reported_value": 567763,
+            "shares": 21896,
+            "unit": "SH",
+            "votes": [
+              0,
+              0,
+              21896
+            ]
+          }
+        },
+        {
+          "cik": "0000019617",
+          "copies": 2,
+          "row": {
+            "class": "COMMON",
+            "cusip": "03823U102",
+            "discretion": "DFND",
+            "issuer": "APPLIED OPTOELECTRONICS INC",
+            "other_managers": "5",
+            "put_call": "",
+            "reported_value": 55075,
+            "shares": 2124,
+            "unit": "SH",
+            "votes": [
+              2124,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "confidential_omission_managers_count": 54,
+      "confidential_omission_managers_sample": [
+        "0001015083",
+        "0001352895",
+        "0001551017"
+      ],
+      "amended_managers_with_target_in_history_count": 3,
+      "amended_managers_with_target_in_history_sample": [
+        {
+          "cik": "0000019617",
+          "name": "JPMORGAN CHASE & CO",
+          "operations": [
+            {
+              "accession": "0000019617-25-001081",
+              "filed": "2025-11-07",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0000019617-25-001093",
+              "filed": "2025-11-26",
+              "operation": "append",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0001853322",
+          "name": "DARK FOREST CAPITAL MANAGEMENT LP",
+          "operations": [
+            {
+              "accession": "0001853322-25-000010",
+              "filed": "2025-11-14",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0001853322-25-000011",
+              "filed": "2025-11-17",
+              "operation": "replace",
+              "amendment_number": 1
+            }
+          ],
+          "issues": []
+        },
+        {
+          "cik": "0000923093",
+          "name": "TUDOR INVESTMENT CORP ET AL",
+          "operations": [
+            {
+              "accession": "0000902664-25-004980",
+              "filed": "2025-11-14",
+              "operation": "original",
+              "amendment_number": null
+            },
+            {
+              "accession": "0000902664-25-005239",
+              "filed": "2025-12-09",
+              "operation": "replace",
+              "amendment_number": 1
+            },
+            {
+              "accession": "0000902664-25-005240",
+              "filed": "2025-12-09",
+              "operation": "append",
+              "amendment_number": 2
+            }
+          ],
+          "issues": []
+        }
+      ]
+    }
+  },
+  "certified_low_ownership_count": 0,
+  "matched_control_count": 0,
+  "remaining_gates": [
+    "historical_identity_listing_and_company_type",
+    "reported_ownership_coverage_and_overlap",
+    "historical_denominator_class",
+    "historical_size_liquidity_and_industry",
+    "comparison_protocol_and_sample_size"
+  ]
+}
