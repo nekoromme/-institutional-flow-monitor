@@ -172,7 +172,7 @@ def select_filings(filings, period, as_of):
             if amendment and (filing.get("amendment_number") is None or
                               amendment_numbers[filing["amendment_number"]] > 1):
                 issues.append("ambiguous_amendment_order")
-            if not filing["table_valid"]:
+            if not filing["table_valid"] and not filing.get("reviewed_table_usable", False):
                 issues.append("entry_count_or_period_mismatch")
             previous_number = filing.get("amendment_number") or 0
             operations.append({"accession": filing["accession"], "filed": filing["filed"],

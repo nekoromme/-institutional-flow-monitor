@@ -1,0 +1,3928 @@
+{
+  "version": "holdings-audit-0.2",
+  "generated_at": "2026-09-10T04:21:39.154888+00:00",
+  "as_of": "2026-06-01",
+  "date_policy": "filing_date_strictly_before_as_of; no_acceptance_time_in_bulk",
+  "holdings_filing_coverage": {
+    "from": "2025-12-01",
+    "through": "2026-05-31"
+  },
+  "current_ownership": false,
+  "backtest_labels_ready": false,
+  "total_information_rows_scanned": 7296094,
+  "unique_filings_in_archives": 23133,
+  "archives": [
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2025-28feb2026_form13f.zip",
+      "sha256": "ff340fc5dc0bc60539b03c3a97fffa3fe4ab0d728d6507a4aadabb4a888fbe01",
+      "bytes": 90264650
+    },
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01mar2026-31may2026_form13f.zip",
+      "sha256": "05f4da8f526cd471a387af45661a8cb3bbfaf345d3ec9c2cefd31349aa257e63",
+      "bytes": 99411274
+    }
+  ],
+  "security_lists": {
+    "2025-12-31": {
+      "source_url": "https://www.sec.gov/files/investment/13flist2025q4.txt",
+      "sha256": "6a70489393bc1d1977d00fabedb58550e904fe9c0a4a98cf35361920b91847c9",
+      "bytes": 994842
+    },
+    "2026-03-31": {
+      "source_url": "https://www.sec.gov/files/investment/13flist2026q1.txt",
+      "sha256": "8c6b35079ccadbadda946d59523aadc697e5e8dc64b60ae1aae3c4c3047455fb",
+      "bytes": 1995921
+    }
+  },
+  "company_concept_cache_files": {
+    "UAVS/us-gaap": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/us-gaap/CommonStockSharesOutstanding.json",
+      "sha256": "9221059e336e1a2103ea60230153aad207bb61f3f6bd5142eed175f04e86822a",
+      "bytes": 29792
+    },
+    "UAVS/dei": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/dei/EntityCommonStockSharesOutstanding.json",
+      "sha256": "ffa72b8b5e0d2c38ca9cf4ffcd0ab28bc82df55186a562847fc039258d472f1a",
+      "bytes": 15876
+    },
+    "QMCO/us-gaap": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/us-gaap/CommonStockSharesOutstanding.json",
+      "sha256": "b5dbf15b3b90dd9de507edb788f8e8081790f1a9374c6bef09afe308f504b3e1",
+      "bytes": 30630
+    },
+    "QMCO/dei": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/dei/EntityCommonStockSharesOutstanding.json",
+      "sha256": "b0b122187be6daad42dc0dff7d3c539d8000e96d61489d22067881e864d28438",
+      "bytes": 13920
+    },
+    "MU/us-gaap": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/us-gaap/CommonStockSharesOutstanding.json",
+      "sha256": "0df7cd834ca7efd9ee7771e25f9aac7099ded8fc727174530d0be2534420e5f5",
+      "bytes": 29751
+    },
+    "MU/dei": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/dei/EntityCommonStockSharesOutstanding.json",
+      "sha256": "bb4eb112661f6a7c5470a8fa73c1e1eb9a1cd51b5090aa958630d5a1dada8ac3",
+      "bytes": 15976
+    },
+    "ONTO/us-gaap": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/us-gaap/CommonStockSharesOutstanding.json",
+      "sha256": "a3de35c4c84e0dd1f3b9b0d3915be8fc1a341405fab9448b050644a874e531ab",
+      "bytes": 19413
+    },
+    "ONTO/dei": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/dei/EntityCommonStockSharesOutstanding.json",
+      "sha256": "1c18aeab13b057f4303558908463d55f0ad805f2323ddfdc2fbd04f680b42585",
+      "bytes": 14935
+    },
+    "AAOI/us-gaap": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CommonStockSharesOutstanding.json",
+      "sha256": "42301774234ce9b214e9dc3d87129e2cc84f057fd84ec17b156f9f8fe6155c63",
+      "bytes": 25033
+    },
+    "AAOI/dei": {
+      "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/dei/EntityCommonStockSharesOutstanding.json",
+      "sha256": "fd292bb21a1abb1462a7cbfd1fed7fde3d5f9d37bc1a2a78e9045a16b9a6cd24",
+      "bytes": 13952
+    }
+  },
+  "source_review_catalog_version": "filing-source-review-0.1",
+  "source_review_catalog_matches": [
+    {
+      "accession": "0001316507-26-000002",
+      "status": "matched",
+      "allow_table_for_analysis": false
+    },
+    {
+      "accession": "0001455258-26-000002",
+      "status": "matched",
+      "allow_table_for_analysis": false
+    },
+    {
+      "accession": "0001691766-26-000004",
+      "status": "matched",
+      "allow_table_for_analysis": true
+    },
+    {
+      "accession": "0000926171-26-000005",
+      "status": "matched",
+      "allow_table_for_analysis": true
+    }
+  ],
+  "limitations": [
+    "13F_does_not_cover_all_institutions_or_all_positions",
+    "absence_is_not_zero",
+    "joint_reporting_not_fully_resolved",
+    "bulk_release_time_not_used_as_original_filing_time",
+    "denominator_share_class_needs_filing_review",
+    "no_low_ownership_classification_or_return_backtest"
+  ],
+  "pilot_review_comparison": {
+    "status": "diagnostic_comparison_only",
+    "as_of": "2026-06-01",
+    "baseline_version": "holdings-audit-0.1",
+    "current_version": "holdings-audit-0.2",
+    "institutional_flow_label": null,
+    "symbols": {
+      "UAVS": {
+        "by_period": {
+          "2025-12-31": {
+            "before_review": 3278501,
+            "after_review": 3278502,
+            "difference": 1
+          },
+          "2026-03-31": {
+            "before_review": 4677116,
+            "after_review": 4677116,
+            "difference": 0
+          }
+        },
+        "change_in_observed_reported_sum": 1398614,
+        "net_institutional_buying_confirmed": false,
+        "single_issue_sensitivity": {
+          "scope": "only_the_identical_calamos_position; all_other_recorded_sums_held_fixed",
+          "is_confidence_interval": false,
+          "covers_all_data_uncertainty": false,
+          "reported_sum_if_full_overlap": 4375444,
+          "reported_sum_if_no_overlap": 4677116,
+          "change_if_full_overlap": 1096942,
+          "change_if_no_overlap": 1398614,
+          "other_unresolved_manager_references": 11,
+          "shares_outstanding_change_percent": 31.487701,
+          "previous_diagnostic_ratio_percent": 7.517121,
+          "current_diagnostic_ratio_percent_if_full_overlap": 7.629799,
+          "current_diagnostic_ratio_percent_if_no_overlap": 8.155847,
+          "diagnostic_ratio_change_percentage_points_if_full_overlap": 0.112678,
+          "diagnostic_ratio_change_percentage_points_if_no_overlap": 0.638726
+        }
+      },
+      "QMCO": {
+        "by_period": {
+          "2025-12-31": {
+            "before_review": 2055009,
+            "after_review": 2055109,
+            "difference": 100
+          },
+          "2026-03-31": {
+            "before_review": 1593540,
+            "after_review": 1610725,
+            "difference": 17185
+          }
+        },
+        "change_in_observed_reported_sum": -444384,
+        "net_institutional_buying_confirmed": false
+      },
+      "MU": {
+        "by_period": {
+          "2025-12-31": {
+            "before_review": 878567627,
+            "after_review": 881989427,
+            "difference": 3421800
+          },
+          "2026-03-31": {
+            "before_review": 840701102,
+            "after_review": 840714107,
+            "difference": 13005
+          }
+        },
+        "change_in_observed_reported_sum": -41275320,
+        "net_institutional_buying_confirmed": false
+      },
+      "ONTO": {
+        "by_period": {
+          "2025-12-31": {
+            "before_review": 47228292,
+            "after_review": 47228292,
+            "difference": 0
+          },
+          "2026-03-31": {
+            "before_review": 47251084,
+            "after_review": 47251084,
+            "difference": 0
+          }
+        },
+        "change_in_observed_reported_sum": 22792,
+        "net_institutional_buying_confirmed": false
+      },
+      "AAOI": {
+        "by_period": {
+          "2025-12-31": {
+            "before_review": 47500048,
+            "after_review": 47500086,
+            "difference": 38
+          },
+          "2026-03-31": {
+            "before_review": 52893491,
+            "after_review": 52893491,
+            "difference": 0
+          }
+        },
+        "change_in_observed_reported_sum": 5393405,
+        "net_institutional_buying_confirmed": false
+      }
+    }
+  },
+  "manager_ledger_sha256": "420f906fcb1146dde26f00157d9a6e75d4818dcd8897bf913ee5acf8672d91a1",
+  "detail_policy": "lists_are_counted_and_sampled; full_local_audit_is_reproducible",
+  "quarters": {
+    "2025-12-31": {
+      "reporting_managers_in_acquired_files": 10753,
+      "unresolved_manager_count_all_securities": 149,
+      "source_filings": 11025,
+      "symbols": {
+        "UAVS": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "00848K309",
+          "reported_share_sum_before_overlap_resolution": 3278502,
+          "positive_reporting_managers": 37,
+          "included_rows": 46,
+          "excluded_row_reasons": {},
+          "top_reported_positions": [
+            {
+              "cik": "0000102909",
+              "name": "VANGUARD GROUP INC",
+              "shares": 1685406,
+              "accessions": [
+                "0000102909-26-000031"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 398259,
+              "accessions": [
+                "0001214717-26-000003"
+              ]
+            },
+            {
+              "cik": "0001595888",
+              "name": "JANE STREET GROUP, LLC",
+              "shares": 178996,
+              "accessions": [
+                "0001595888-26-000023"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 141242,
+              "accessions": [
+                "0000093751-26-000100"
+              ]
+            },
+            {
+              "cik": "0001610520",
+              "name": "UBS Group AG",
+              "shares": 132271,
+              "accessions": [
+                "0001610520-26-000004"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 115572,
+              "accessions": [
+                "0002012383-26-000920"
+              ]
+            },
+            {
+              "cik": "0001533964",
+              "name": "Virtu Financial LLC",
+              "shares": 112360,
+              "accessions": [
+                "0001533964-26-000008"
+              ]
+            },
+            {
+              "cik": "0001828301",
+              "name": "XTX Topco Ltd",
+              "shares": 98203,
+              "accessions": [
+                "0001828301-26-000001"
+              ]
+            },
+            {
+              "cik": "0000073124",
+              "name": "NORTHERN TRUST CORP",
+              "shares": 95880,
+              "accessions": [
+                "0000073124-26-000008"
+              ]
+            },
+            {
+              "cik": "0001037389",
+              "name": "RENAISSANCE TECHNOLOGIES LLC",
+              "shares": 94115,
+              "accessions": [
+                "0001037389-26-000023"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0000926171",
+              "name": "NATIONAL BANK OF CANADA /FI/",
+              "accession": "0000926171-26-000005",
+              "decision": "explicit_count_correction_in_original_note",
+              "original_declared_entries": 5429,
+              "actual_entries": 5428,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/primary_doc.xml",
+                "sha256": "5ba172fb10f0d7e97dc08757814eb55994246c174db49cc91d0a5143c3897206",
+                "bytes": 3656
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/13fdecember2025holdings.xml",
+                "sha256": "61420a172609e55142d4f07f3af4c621a2f6d921065d4b4d52f6bcda32b64eab",
+                "bytes": 3114788
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "00848K309",
+            "issuer": "AGEAGLE AERIAL SYS INC NEW",
+            "class": "COM SHS",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 43613800,
+            "end": "2025-12-31",
+            "filed": "2026-05-15",
+            "accession": "0001437749-26-017229",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [],
+            "security_class_verified": true,
+            "filing_review": {
+              "source_url": "https://www.sec.gov/Archives/edgar/data/8504/000143774926017229/uavs20260331_10q.htm",
+              "sha256": "06e6c48a0644a3e66be9820c468ffa322120810c0ee9d244fba6ba1a8ca65464",
+              "location": "Condensed consolidated balance sheets; common stock issued and outstanding"
+            }
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 7.517121,
+          "unprocessed_all_versions_share_sum": 3282546,
+          "unreviewed_class_rows_count": 0,
+          "unreviewed_class_rows_sample": [],
+          "unresolved_filings_count": 0,
+          "unresolved_filings_sample": [],
+          "potential_overlap_relationships_count": 0,
+          "potential_overlap_relationships_sample": [],
+          "unresolved_manager_references_count": 7,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001533964",
+              "accession": "0001533964-26-000008",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "28-15626",
+                "name": "Virtu Americas LLC",
+                "sequence": "5"
+              }
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000008",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001513287",
+                "file_number": "028-14421",
+                "name": "Colonial First State Investments Ltd",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000008",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001414702",
+                "file_number": "",
+                "name": "Haven Global Partners LP",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001828301",
+              "accession": "0001828301-26-000001",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "XTX Quantitative Strategies Ltd",
+                "sequence": "7"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "RUSSELL FRANK CO",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 2,
+          "confidential_omission_managers_sample": [
+            "0001000275",
+            "0001179392"
+          ],
+          "amended_managers_with_target_in_history_count": 1,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0000895421",
+              "name": "MORGAN STANLEY",
+              "operations": [
+                {
+                  "accession": "0000895421-26-000080",
+                  "filed": "2026-02-13",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000895421-26-000187",
+                  "filed": "2026-05-27",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "QMCO": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "747906600",
+          "reported_share_sum_before_overlap_resolution": 2055109,
+          "positive_reporting_managers": 40,
+          "included_rows": 55,
+          "excluded_row_reasons": {},
+          "top_reported_positions": [
+            {
+              "cik": "0000102909",
+              "name": "VANGUARD GROUP INC",
+              "shares": 625538,
+              "accessions": [
+                "0000102909-26-000031"
+              ]
+            },
+            {
+              "cik": "0001350290",
+              "name": "Portolan Capital Management, LLC",
+              "shares": 477214,
+              "accessions": [
+                "0001104659-26-016304"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 220746,
+              "accessions": [
+                "0002012383-26-000920"
+              ]
+            },
+            {
+              "cik": "0001610520",
+              "name": "UBS Group AG",
+              "shares": 165838,
+              "accessions": [
+                "0001610520-26-000004"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 156871,
+              "accessions": [
+                "0001214717-26-000003"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 90714,
+              "accessions": [
+                "0000093751-26-000100"
+              ]
+            },
+            {
+              "cik": "0002114319",
+              "name": "Cygnus Capital Advisors, LLC",
+              "shares": 69423,
+              "accessions": [
+                "0002114319-26-000004"
+              ]
+            },
+            {
+              "cik": "0001883897",
+              "name": "AlphaQuest LLC",
+              "shares": 29386,
+              "accessions": [
+                "0001140361-26-004367"
+              ]
+            },
+            {
+              "cik": "0000073124",
+              "name": "NORTHERN TRUST CORP",
+              "shares": 28762,
+              "accessions": [
+                "0000073124-26-000008"
+              ]
+            },
+            {
+              "cik": "0001691766",
+              "name": "FLAGSHIP HARBOR ADVISORS, LLC",
+              "shares": 26585,
+              "accessions": [
+                "0001691766-26-000003"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0000926171",
+              "name": "NATIONAL BANK OF CANADA /FI/",
+              "accession": "0000926171-26-000005",
+              "decision": "explicit_count_correction_in_original_note",
+              "original_declared_entries": 5429,
+              "actual_entries": 5428,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/primary_doc.xml",
+                "sha256": "5ba172fb10f0d7e97dc08757814eb55994246c174db49cc91d0a5143c3897206",
+                "bytes": 3656
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/13fdecember2025holdings.xml",
+                "sha256": "61420a172609e55142d4f07f3af4c621a2f6d921065d4b4d52f6bcda32b64eab",
+                "bytes": 3114788
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "747906600",
+            "issuer": "QUANTUM CORP",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 14135000,
+            "end": "2025-12-31",
+            "filed": "2026-02-17",
+            "accession": "0001628280-26-008558",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [],
+            "security_class_verified": true,
+            "filing_review": {
+              "source_url": "https://www.sec.gov/Archives/edgar/data/709283/000162828026008558/qtm-20251231.htm",
+              "sha256": "fa7f86760c243ac1682fb3d5a4fdfed068ac128513556dd74de76e6e4360845b",
+              "location": "Balance sheets; 14,135 thousand common shares; not the common stock dollar amount"
+            }
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 14.539151,
+          "unprocessed_all_versions_share_sum": 2059422,
+          "unreviewed_class_rows_count": 0,
+          "unreviewed_class_rows_sample": [],
+          "unresolved_filings_count": 0,
+          "unresolved_filings_sample": [],
+          "potential_overlap_relationships_count": 0,
+          "potential_overlap_relationships_sample": [],
+          "unresolved_manager_references_count": 12,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000008",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001513287",
+                "file_number": "028-14421",
+                "name": "Colonial First State Investments Ltd",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000008",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001414702",
+                "file_number": "",
+                "name": "Haven Global Partners LP",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0000080255",
+              "accession": "0000080255-26-000231",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "T. Rowe Price International Ltd",
+                "sequence": "1"
+              }
+            },
+            {
+              "cik": "0001828301",
+              "accession": "0001828301-26-000001",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "XTX Quantitative Strategies Ltd",
+                "sequence": "7"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "RUSSELL FRANK CO",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-000920",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001141802-26-000007",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001074032",
+                "file_number": "028-07406",
+                "name": "MDT ADVISERS INC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001141802-26-000007",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0000721204",
+                "file_number": "028-01190",
+                "name": "RUSSELL FRANK CO/",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001141802-26-000007",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001056593",
+                "file_number": "028-04691",
+                "name": "SCHAFER CULLEN CAPITAL MANAGEMENT INC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001141802-26-000007",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001409108",
+                "file_number": "028-12558",
+                "name": "FRANKLIN TEMPLETON PRIVATE PORTFOLIO GROUP, LLC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001141802-26-000007",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001569141",
+                "file_number": "028-15235",
+                "name": "Alley Co LLC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 7,
+          "confidential_omission_managers_sample": [
+            "0001000275",
+            "0001350290",
+            "0002109868",
+            "0001056288",
+            "0001166588",
+            "0001883897",
+            "0001749744"
+          ],
+          "amended_managers_with_target_in_history_count": 2,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0000895421",
+              "name": "MORGAN STANLEY",
+              "operations": [
+                {
+                  "accession": "0000895421-26-000080",
+                  "filed": "2026-02-13",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000895421-26-000187",
+                  "filed": "2026-05-27",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001141802",
+              "name": "NORTHWESTERN MUTUAL WEALTH MANAGEMENT CO",
+              "operations": [
+                {
+                  "accession": "0001141802-26-000004",
+                  "filed": "2026-02-05",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001141802-26-000007",
+                  "filed": "2026-02-10",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "MU": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "595112103",
+          "reported_share_sum_before_overlap_resolution": 881989427,
+          "positive_reporting_managers": 2605,
+          "included_rows": 3502,
+          "excluded_row_reasons": {
+            "option": 397,
+            "unreviewed_security_class": 25
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0000102909",
+              "name": "VANGUARD GROUP INC",
+              "shares": 106608094,
+              "accessions": [
+                "0000102909-26-000031"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 100701543,
+              "accessions": [
+                "0002012383-26-000920"
+              ]
+            },
+            {
+              "cik": "0001422849",
+              "name": "Capital World Investors",
+              "shares": 58249125,
+              "accessions": [
+                "0001422849-26-000010"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 52749817,
+              "accessions": [
+                "0000093751-26-000100"
+              ]
+            },
+            {
+              "cik": "0000315066",
+              "name": "FMR LLC",
+              "shares": 39596338,
+              "accessions": [
+                "0000315066-26-000611"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 25997769,
+              "accessions": [
+                "0001214717-26-000003"
+              ]
+            },
+            {
+              "cik": "0000763212",
+              "name": "PRIMECAP MANAGEMENT CO/CA/",
+              "shares": 24794936,
+              "accessions": [
+                "0000763212-26-000012"
+              ]
+            },
+            {
+              "cik": "0001374170",
+              "name": "NORGES BANK",
+              "shares": 22541101,
+              "accessions": [
+                "0001374170-26-000012"
+              ]
+            },
+            {
+              "cik": "0001562230",
+              "name": "Capital International Investors",
+              "shares": 22056387,
+              "accessions": [
+                "0001562230-26-000005"
+              ]
+            },
+            {
+              "cik": "0000895421",
+              "name": "MORGAN STANLEY",
+              "shares": 16396655,
+              "accessions": [
+                "0000895421-26-000187"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0000926171",
+              "name": "NATIONAL BANK OF CANADA /FI/",
+              "accession": "0000926171-26-000005",
+              "decision": "explicit_count_correction_in_original_note",
+              "original_declared_entries": 5429,
+              "actual_entries": 5428,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/primary_doc.xml",
+                "sha256": "5ba172fb10f0d7e97dc08757814eb55994246c174db49cc91d0a5143c3897206",
+                "bytes": 3656
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/13fdecember2025holdings.xml",
+                "sha256": "61420a172609e55142d4f07f3af4c621a2f6d921065d4b4d52f6bcda32b64eab",
+                "bytes": 3114788
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "595112103",
+            "issuer": "MICRON TECHNOLOGY INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "dei",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "shares": 1125509261,
+            "end": "2025-12-10",
+            "filed": "2025-12-18",
+            "accession": "0000723125-25-000046",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/dei/EntityCommonStockSharesOutstanding.json",
+            "status": "older_date_proxy",
+            "age_days": 21,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 78.363587,
+          "unprocessed_all_versions_share_sum": 914579026,
+          "unreviewed_class_rows_count": 25,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001616667",
+              "accession": "0000894189-26-004242",
+              "row_id": "125685700",
+              "reason": "unreviewed_security_class",
+              "class": "Common Stock - Domestic",
+              "shares": 169097
+            },
+            {
+              "cik": "0000714364",
+              "accession": "0000714364-26-000002",
+              "row_id": "122759693",
+              "reason": "unreviewed_security_class",
+              "class": "Micron Technology Inc",
+              "shares": 922
+            },
+            {
+              "cik": "0001533964",
+              "accession": "0001533964-26-000008",
+              "row_id": "125679048",
+              "reason": "unreviewed_security_class",
+              "class": "OM",
+              "shares": 9197
+            }
+          ],
+          "unresolved_filings_count": 51,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0001962615",
+              "name": "Trifecta Capital Advisors, LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001962615-26-000001"
+              ]
+            },
+            {
+              "cik": "0002008513",
+              "name": "Turning Point Benefit Group, Inc.",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0002008513-26-000001"
+              ]
+            },
+            {
+              "cik": "0000831571",
+              "name": "ST GERMAIN D J CO INC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0000831571-26-000001"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 337,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0001462160",
+                "0001694895"
+              ],
+              "names": [
+                "Mitsubishi UFJ Trust & Banking Corp",
+                "Mitsubishi UFJ Asset Management (UK) Ltd."
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                511761,
+                4000
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001345929",
+                "0001462160"
+              ],
+              "names": [
+                "BROWN ADVISORY INC",
+                "Mitsubishi UFJ Trust & Banking Corp"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                77274,
+                511761
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001462160",
+                "0001766150"
+              ],
+              "names": [
+                "Mitsubishi UFJ Trust & Banking Corp",
+                "EASTERLY INVESTMENT PARTNERS LLC"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                511761,
+                2037
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 571,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001089877",
+              "accession": "0001089877-26-000004",
+              "row_id": "123204790",
+              "sequence": "02"
+            },
+            {
+              "cik": "0002011169",
+              "accession": "0001172661-26-000407",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001364742",
+                "file_number": "028-12019",
+                "name": "BlackRock Finance, Inc.",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001462160",
+              "accession": "0001193125-26-030268",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "028-21707",
+                "name": "Sonen Capital LLC",
+                "sequence": "None"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 32,
+          "repeated_row_payloads_sample": [
+            {
+              "cik": "0001719165",
+              "copies": 2,
+              "row": {
+                "class": "COM",
+                "cusip": "595112103",
+                "discretion": "DFND",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "1",
+                "put_call": "",
+                "reported_value": 1095,
+                "shares": 3837,
+                "unit": "SH",
+                "votes": [
+                  3837,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "cik": "0001979372",
+              "copies": 4,
+              "row": {
+                "class": "COMMON STOCK",
+                "cusip": "595112103",
+                "discretion": "SOLE",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "",
+                "put_call": "",
+                "reported_value": 856,
+                "shares": 3,
+                "unit": "SH",
+                "votes": [
+                  3,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "cik": "0001979372",
+              "copies": 2,
+              "row": {
+                "class": "COMMON STOCK",
+                "cusip": "595112103",
+                "discretion": "SOLE",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "",
+                "put_call": "",
+                "reported_value": 2568,
+                "shares": 9,
+                "unit": "SH",
+                "votes": [
+                  9,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "confidential_omission_managers_count": 723,
+          "confidential_omission_managers_sample": [
+            "0002008792",
+            "0001687156",
+            "0002011169"
+          ],
+          "amended_managers_with_target_in_history_count": 65,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0000036270",
+              "name": "M&T Bank Corp",
+              "operations": [
+                {
+                  "accession": "0001193125-26-026208",
+                  "filed": "2026-01-28",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001193125-26-029857",
+                  "filed": "2026-01-30",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001389400",
+              "name": "Stockman Wealth Management, Inc.",
+              "operations": [
+                {
+                  "accession": "0001389400-26-000003",
+                  "filed": "2026-01-15",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001389400-26-000004",
+                  "filed": "2026-01-29",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001862067",
+              "name": "FWG Holdings, LLC",
+              "operations": [
+                {
+                  "accession": "0001862067-26-000001",
+                  "filed": "2026-01-29",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001862067-26-000002",
+                  "filed": "2026-02-02",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "ONTO": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "683344105",
+          "reported_share_sum_before_overlap_resolution": 47228292,
+          "positive_reporting_managers": 474,
+          "included_rows": 712,
+          "excluded_row_reasons": {
+            "unreviewed_security_class": 15,
+            "option": 14
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0000102909",
+              "name": "VANGUARD GROUP INC",
+              "shares": 5576305,
+              "accessions": [
+                "0000102909-26-000031"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 4931826,
+              "accessions": [
+                "0002012383-26-000920"
+              ]
+            },
+            {
+              "cik": "0001644956",
+              "name": "WILLIAM BLAIR INVESTMENT MANAGEMENT, LLC",
+              "shares": 1726587,
+              "accessions": [
+                "0001644956-26-000007"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 1459278,
+              "accessions": [
+                "0000093751-26-000100"
+              ]
+            },
+            {
+              "cik": "0000038777",
+              "name": "FRANKLIN RESOURCES INC",
+              "shares": 1353001,
+              "accessions": [
+                "0000038777-26-000055"
+              ]
+            },
+            {
+              "cik": "0000902219",
+              "name": "WELLINGTON MANAGEMENT GROUP LLP",
+              "shares": 1218548,
+              "accessions": [
+                "0000902219-26-000103"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 1127532,
+              "accessions": [
+                "0001214717-26-000003"
+              ]
+            },
+            {
+              "cik": "0001037792",
+              "name": "PARADIGM CAPITAL MANAGEMENT INC/NY",
+              "shares": 1125838,
+              "accessions": [
+                "0001037792-26-000001"
+              ]
+            },
+            {
+              "cik": "0001068837",
+              "name": "VOYA INVESTMENT MANAGEMENT LLC",
+              "shares": 971242,
+              "accessions": [
+                "0001068837-26-000001"
+              ]
+            },
+            {
+              "cik": "0000314984",
+              "name": "Thrivent Financial for Lutherans",
+              "shares": 960911,
+              "accessions": [
+                "0001193125-26-038569"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "683344105",
+            "issuer": "ONTO INNOVATION INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "dei",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "shares": 49011162,
+            "end": "2025-10-15",
+            "filed": "2025-11-06",
+            "accession": "0001193125-25-270040",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/dei/EntityCommonStockSharesOutstanding.json",
+            "status": "older_date_proxy",
+            "age_days": 77,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 96.362318,
+          "unprocessed_all_versions_share_sum": 48741868,
+          "unreviewed_class_rows_count": 15,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001368163",
+              "accession": "0000947871-26-000067",
+              "row_id": "123028201",
+              "reason": "unreviewed_security_class",
+              "class": "SELECT INTL EQUI",
+              "shares": 16735
+            },
+            {
+              "cik": "0001616667",
+              "accession": "0000894189-26-004242",
+              "row_id": "125685313",
+              "reason": "unreviewed_security_class",
+              "class": "Common Stock - Domestic",
+              "shares": 335018
+            },
+            {
+              "cik": "0001323645",
+              "accession": "0001323645-26-000006",
+              "row_id": "125418917",
+              "reason": "unreviewed_security_class",
+              "class": "ONTO INNOVATION INC COM",
+              "shares": 92663
+            }
+          ],
+          "unresolved_filings_count": 7,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0002008513",
+              "name": "Turning Point Benefit Group, Inc.",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0002008513-26-000001"
+              ]
+            },
+            {
+              "cik": "0000831571",
+              "name": "ST GERMAIN D J CO INC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0000831571-26-000001"
+              ]
+            },
+            {
+              "cik": "0001621225",
+              "name": "Merit Financial Group, LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001621225-26-000003"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 92,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0000053417",
+                "0001137774"
+              ],
+              "names": [
+                "JENNISON ASSOCIATES LLC",
+                "PRUDENTIAL FINANCIAL INC"
+              ],
+              "kinds": [
+                "included_manager",
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                680822,
+                3075
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0000861177",
+                "0001610520"
+              ],
+              "names": [
+                "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+                "UBS Group AG"
+              ],
+              "kinds": [
+                "included_manager",
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                145891,
+                256731
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0000102909",
+                "0001767306"
+              ],
+              "names": [
+                "VANGUARD GROUP INC",
+                "Vanguard Personalized Indexing Management, LLC"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                5576305,
+                5310
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 196,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001089877",
+              "accession": "0001089877-26-000004",
+              "row_id": "123204908",
+              "sequence": "02"
+            },
+            {
+              "cik": "0000714142",
+              "accession": "0000714142-26-000001",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "INTERNAL MGMT S&P400 INDEX",
+                "sequence": "1"
+              }
+            },
+            {
+              "cik": "0000714142",
+              "accession": "0000714142-26-000001",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "MED S&P 400 STOCK INDEX",
+                "sequence": "25"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 2,
+          "repeated_row_payloads_sample": [
+            {
+              "cik": "0000873630",
+              "copies": 2,
+              "row": {
+                "class": "COM",
+                "cusip": "683344105",
+                "discretion": "SOLE",
+                "issuer": "ONTO INNOVATION INC",
+                "other_managers": "4",
+                "put_call": "",
+                "reported_value": 404279,
+                "shares": 2561,
+                "unit": "SH",
+                "votes": [
+                  2561,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "cik": "0000873630",
+              "copies": 2,
+              "row": {
+                "class": "COM",
+                "cusip": "683344105",
+                "discretion": "DFND",
+                "issuer": "ONTO INNOVATION INC",
+                "other_managers": "10",
+                "put_call": "",
+                "reported_value": 1416111,
+                "shares": 8903,
+                "unit": "SH",
+                "votes": [
+                  8903,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "confidential_omission_managers_count": 121,
+          "confidential_omission_managers_sample": [
+            "0002008792",
+            "0001556915",
+            "0002001015"
+          ],
+          "amended_managers_with_target_in_history_count": 14,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0000036270",
+              "name": "M&T Bank Corp",
+              "operations": [
+                {
+                  "accession": "0001193125-26-026208",
+                  "filed": "2026-01-28",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001193125-26-029857",
+                  "filed": "2026-01-30",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001616667",
+              "name": "Pacer Advisors, Inc.",
+              "operations": [
+                {
+                  "accession": "0000894189-26-003359",
+                  "filed": "2026-02-04",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000894189-26-004242",
+                  "filed": "2026-02-24",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001463559",
+              "name": "Alberta Investment Management Corp",
+              "operations": [
+                {
+                  "accession": "0001123292-26-000176",
+                  "filed": "2026-02-17",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001123292-26-000218",
+                  "filed": "2026-02-19",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "AAOI": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "03823U102",
+          "reported_share_sum_before_overlap_resolution": 47500086,
+          "positive_reporting_managers": 210,
+          "included_rows": 311,
+          "excluded_row_reasons": {
+            "unreviewed_security_class": 6,
+            "option": 36
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 5306432,
+              "accessions": [
+                "0002012383-26-000920"
+              ]
+            },
+            {
+              "cik": "0000102909",
+              "name": "VANGUARD GROUP INC",
+              "shares": 4982660,
+              "accessions": [
+                "0000102909-26-000031"
+              ]
+            },
+            {
+              "cik": "0000914208",
+              "name": "Invesco Ltd.",
+              "shares": 3512309,
+              "accessions": [
+                "0000914208-26-000071"
+              ]
+            },
+            {
+              "cik": "0000080255",
+              "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+              "shares": 2229757,
+              "accessions": [
+                "0000080255-26-000231"
+              ]
+            },
+            {
+              "cik": "0000937886",
+              "name": "OBERWEIS ASSET MANAGEMENT INC/",
+              "shares": 2039641,
+              "accessions": [
+                "0001213900-26-017101"
+              ]
+            },
+            {
+              "cik": "0001609074",
+              "name": "HAWK RIDGE CAPITAL MANAGEMENT LP",
+              "shares": 1700900,
+              "accessions": [
+                "0001892688-26-000044"
+              ]
+            },
+            {
+              "cik": "0000895421",
+              "name": "MORGAN STANLEY",
+              "shares": 1699855,
+              "accessions": [
+                "0000895421-26-000187"
+              ]
+            },
+            {
+              "cik": "0001595888",
+              "name": "JANE STREET GROUP, LLC",
+              "shares": 1682894,
+              "accessions": [
+                "0001595888-26-000023"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 1606236,
+              "accessions": [
+                "0000093751-26-000100"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 1512902,
+              "accessions": [
+                "0001214717-26-000003"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0000926171",
+              "name": "NATIONAL BANK OF CANADA /FI/",
+              "accession": "0000926171-26-000005",
+              "decision": "explicit_count_correction_in_original_note",
+              "original_declared_entries": 5429,
+              "actual_entries": 5428,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/primary_doc.xml",
+                "sha256": "5ba172fb10f0d7e97dc08757814eb55994246c174db49cc91d0a5143c3897206",
+                "bytes": 3656
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/13fdecember2025holdings.xml",
+                "sha256": "61420a172609e55142d4f07f3af4c621a2f6d921065d4b4d52f6bcda32b64eab",
+                "bytes": 3114788
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "03823U102",
+            "issuer": "APPLIED OPTOELECTRONICS INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 74998000,
+            "end": "2025-12-31",
+            "filed": "2026-05-07",
+            "accession": "0001437749-26-015620",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 63.335137,
+          "unprocessed_all_versions_share_sum": 50270032,
+          "unreviewed_class_rows_count": 6,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001368163",
+              "accession": "0000947871-26-000067",
+              "row_id": "123026602",
+              "reason": "unreviewed_security_class",
+              "class": "CALL",
+              "shares": 13685
+            },
+            {
+              "cik": "0001533964",
+              "accession": "0001533964-26-000008",
+              "row_id": "125678656",
+              "reason": "unreviewed_security_class",
+              "class": "OM",
+              "shares": 52412
+            },
+            {
+              "cik": "0001653169",
+              "accession": "0001653169-26-000002",
+              "row_id": "125469055",
+              "reason": "unreviewed_security_class",
+              "class": "A",
+              "shares": 7127
+            }
+          ],
+          "unresolved_filings_count": 3,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0001540235",
+              "name": "Creative Planning",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001540235-26-000002"
+              ]
+            },
+            {
+              "cik": "0001586767",
+              "name": "Arax Advisory Partners",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001586767-26-000001"
+              ]
+            },
+            {
+              "cik": "0001963355",
+              "name": "Caitong International Asset Management Co., Ltd",
+              "reasons": [
+                "ambiguous_amendment_order"
+              ],
+              "accessions": [
+                "0001963355-26-000004"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 30,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0000861177",
+                "0001610520"
+              ],
+              "names": [
+                "UBS AM, a distinct business unit of UBS ASSET MANAGEMENT AMERICAS LLC",
+                "UBS Group AG"
+              ],
+              "kinds": [
+                "included_manager",
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                93485,
+                951065
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001207017",
+                "0001692234"
+              ],
+              "names": [
+                "LAZARD ASSET MANAGEMENT LLC",
+                "Russell Investments Group, Ltd."
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                9881,
+                69978
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0000073124",
+                "0000938206"
+              ],
+              "names": [
+                "NORTHERN TRUST CORP",
+                "Driehaus Capital Management LLC"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                526928,
+                507473
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 46,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0002017870",
+              "accession": "0002017870-26-000001",
+              "row_id": "123006385",
+              "sequence": "1"
+            },
+            {
+              "cik": "0001894302",
+              "accession": "0001894302-26-000001",
+              "row_id": "122663004",
+              "sequence": "SJS"
+            },
+            {
+              "cik": "0001894302",
+              "accession": "0001894302-26-000001",
+              "row_id": "122663004",
+              "sequence": "INVESTMENT"
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 60,
+          "confidential_omission_managers_sample": [
+            "0002008792",
+            "0001803804",
+            "0001558481"
+          ],
+          "amended_managers_with_target_in_history_count": 8,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0002090040",
+              "name": "Strive Financial Group ,LLC",
+              "operations": [
+                {
+                  "accession": "0002090040-26-000002",
+                  "filed": "2026-02-18",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0002090040-26-000005",
+                  "filed": "2026-05-15",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001739439",
+              "name": "Rockefeller Capital Management L.P.",
+              "operations": [
+                {
+                  "accession": "0001739439-26-000002",
+                  "filed": "2026-02-17",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001739439-26-000003",
+                  "filed": "2026-03-17",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001728321",
+              "name": "Kovack Advisors, Inc.",
+              "operations": [
+                {
+                  "accession": "0001728321-26-000001",
+                  "filed": "2026-02-12",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001728321-26-000002",
+                  "filed": "2026-02-17",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        }
+      }
+    },
+    "2026-03-31": {
+      "reporting_managers_in_acquired_files": 10648,
+      "unresolved_manager_count_all_securities": 153,
+      "source_filings": 10776,
+      "symbols": {
+        "UAVS": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "00848K309",
+          "reported_share_sum_before_overlap_resolution": 4677116,
+          "positive_reporting_managers": 43,
+          "included_rows": 49,
+          "excluded_row_reasons": {},
+          "top_reported_positions": [
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "shares": 1820175,
+              "accessions": [
+                "0002100119-26-001311"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 502536,
+              "accessions": [
+                "0001214717-26-000006"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 378799,
+              "accessions": [
+                "0002012383-26-001841"
+              ]
+            },
+            {
+              "cik": "0001316507",
+              "name": "Calamos Advisors LLC",
+              "shares": 301672,
+              "accessions": [
+                "0001316507-26-000002"
+              ]
+            },
+            {
+              "cik": "0001455258",
+              "name": "Calamos Wealth Management LLC",
+              "shares": 301672,
+              "accessions": [
+                "0001455258-26-000002"
+              ]
+            },
+            {
+              "cik": "0001610520",
+              "name": "UBS Group AG",
+              "shares": 288748,
+              "accessions": [
+                "0001610520-26-000057"
+              ]
+            },
+            {
+              "cik": "0000933478",
+              "name": "VANGUARD FIDUCIARY TRUST CO",
+              "shares": 241987,
+              "accessions": [
+                "0000933478-26-000004"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 150742,
+              "accessions": [
+                "0000093751-26-000315"
+              ]
+            },
+            {
+              "cik": "0000073124",
+              "name": "NORTHERN TRUST CORP",
+              "shares": 95880,
+              "accessions": [
+                "0000073124-26-000036"
+              ]
+            },
+            {
+              "cik": "0001692507",
+              "name": "Centiva Capital, LP",
+              "shares": 80966,
+              "accessions": [
+                "0001172661-26-001915"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0001316507",
+              "name": "Calamos Advisors LLC",
+              "accession": "0001316507-26-000002",
+              "decision": "overlap_evidence_only",
+              "original_declared_entries": 1269,
+              "actual_entries": 1269,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/primary_doc.xml",
+                "sha256": "b519899cf88206eb829692622b0ebf66ec954b462620a0f2eb55db76db3d88bc",
+                "bytes": 3377
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/infotable.xml",
+                "sha256": "41a9327ac8a46c01d965e47096f0bfb128361df180046fac04553e33cbedcdc1",
+                "bytes": 766693
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": true,
+              "reviewed_table_usable": false
+            },
+            {
+              "cik": "0001455258",
+              "name": "Calamos Wealth Management LLC",
+              "accession": "0001455258-26-000002",
+              "decision": "overlap_evidence_only",
+              "original_declared_entries": 546,
+              "actual_entries": 546,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/primary_doc.xml",
+                "sha256": "1546980110f0a8516f61e1bf38359b5e019b753a846ec7396cdee445b93ed88e",
+                "bytes": 2076
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/infotable.xml",
+                "sha256": "227a53788a9ab90bcb6921fa516f75963b931c63507a516849662e29fea4a2e9",
+                "bytes": 328077
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": true,
+              "reviewed_table_usable": false
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "00848K309",
+            "issuer": "AGEAGLE AERIAL SYS INC NEW",
+            "class": "COM SHS",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 57346783,
+            "end": "2026-03-31",
+            "filed": "2026-05-15",
+            "accession": "0001437749-26-017229",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [
+              {
+                "taxonomy": "dei",
+                "tag": "EntityCommonStockSharesOutstanding",
+                "shares": 57246783,
+                "end": "2026-03-31",
+                "filed": "2026-03-31",
+                "accession": "0001437749-26-010682",
+                "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000008504/dei/EntityCommonStockSharesOutstanding.json"
+              }
+            ],
+            "security_class_verified": true,
+            "filing_review": {
+              "source_url": "https://www.sec.gov/Archives/edgar/data/8504/000143774926017229/uavs20260331_10q.htm",
+              "sha256": "06e6c48a0644a3e66be9820c468ffa322120810c0ee9d244fba6ba1a8ca65464",
+              "location": "Condensed consolidated balance sheets; common stock issued and outstanding"
+            }
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 8.155847,
+          "unprocessed_all_versions_share_sum": 6497291,
+          "unreviewed_class_rows_count": 0,
+          "unreviewed_class_rows_sample": [],
+          "unresolved_filings_count": 0,
+          "unresolved_filings_sample": [],
+          "potential_overlap_relationships_count": 1,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0001316507",
+                "0001455258"
+              ],
+              "names": [
+                "Calamos Advisors LLC",
+                "Calamos Wealth Management LLC"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                301672,
+                301672
+              ],
+              "equal_row_share_counts": [
+                301672
+              ],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 11,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001533964",
+              "accession": "0001533964-26-000010",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "28-15626",
+                "name": "Virtu Americas LLC",
+                "sequence": "5"
+              }
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000036",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001513287",
+                "file_number": "028-14421",
+                "name": "Colonial First State Investments Ltd",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000036",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001414702",
+                "file_number": "",
+                "name": "Haven Global Partners LP",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "RUSSELL FRANK CO",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001085146-26-000398",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001569141",
+                "file_number": "028-15235",
+                "name": "Alley Co LLC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001085146-26-000398",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0000721204",
+                "file_number": "028-01190",
+                "name": "RUSSELL FRANK CO/",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001085146-26-000398",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001056593",
+                "file_number": "028-04691",
+                "name": "SCHAFER CULLEN CAPITAL MANAGEMENT INC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001085146-26-000398",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001409108",
+                "file_number": "028-12558",
+                "name": "FRANKLIN TEMPLETON PRIVATE PORTFOLIO GROUP, LLC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001141802",
+              "accession": "0001085146-26-000398",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001074032",
+                "file_number": "028-07406",
+                "name": "MDT ADVISERS INC",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 6,
+          "confidential_omission_managers_sample": [
+            "0001000275",
+            "0001450144",
+            "0001179392",
+            "0001692507",
+            "0001535847",
+            "0001141802"
+          ],
+          "amended_managers_with_target_in_history_count": 3,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "operations": [
+                {
+                  "accession": "0002100119-26-001306",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0002100119-26-001311",
+                  "filed": "2026-05-15",
+                  "operation": "replace",
+                  "amendment_number": 1
+                },
+                {
+                  "accession": "0002100119-26-001313",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 2
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0000933478",
+              "name": "VANGUARD FIDUCIARY TRUST CO",
+              "operations": [
+                {
+                  "accession": "0000933478-26-000004",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000933478-26-000008",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001811242",
+              "name": "Vanguard Global Advisers, LLC",
+              "operations": [
+                {
+                  "accession": "0001811242-26-000004",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001811242-26-000008",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "QMCO": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "747906600",
+          "reported_share_sum_before_overlap_resolution": 1610725,
+          "positive_reporting_managers": 37,
+          "included_rows": 47,
+          "excluded_row_reasons": {},
+          "top_reported_positions": [
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "shares": 539275,
+              "accessions": [
+                "0002100119-26-001311"
+              ]
+            },
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 217532,
+              "accessions": [
+                "0002012383-26-001841"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 159179,
+              "accessions": [
+                "0001214717-26-000006"
+              ]
+            },
+            {
+              "cik": "0002114319",
+              "name": "Cygnus Capital Advisors, LLC",
+              "shares": 124086,
+              "accessions": [
+                "0002114319-26-000005"
+              ]
+            },
+            {
+              "cik": "0001610520",
+              "name": "UBS Group AG",
+              "shares": 99068,
+              "accessions": [
+                "0001610520-26-000057"
+              ]
+            },
+            {
+              "cik": "0000933478",
+              "name": "VANGUARD FIDUCIARY TRUST CO",
+              "shares": 80263,
+              "accessions": [
+                "0000933478-26-000004"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 72814,
+              "accessions": [
+                "0000093751-26-000315"
+              ]
+            },
+            {
+              "cik": "0001856405",
+              "name": "SONA ASSET MANAGEMENT (US) LLC",
+              "shares": 70092,
+              "accessions": [
+                "0000905148-26-002399"
+              ]
+            },
+            {
+              "cik": "0001318757",
+              "name": "MARSHALL WACE, LLP",
+              "shares": 37528,
+              "accessions": [
+                "0001318757-26-000005"
+              ]
+            },
+            {
+              "cik": "0000073124",
+              "name": "NORTHERN TRUST CORP",
+              "shares": 28762,
+              "accessions": [
+                "0000073124-26-000036"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0001691766",
+              "name": "FLAGSHIP HARBOR ADVISORS, LLC",
+              "accession": "0001691766-26-000004",
+              "decision": "full_information_table_verified_header_count_warning_retained",
+              "original_declared_entries": 722,
+              "actual_entries": 732,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/primary_doc.xml",
+                "sha256": "5ee60910b7f7a0782ff5eb2b494202448e58ad2aa7ff82ae853d05a002193996",
+                "bytes": 1944
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/flagshipharbor1q2026.inftbl.xml",
+                "sha256": "04df1d30ecfe87762f57e35a4db26c5c0e5581d05851111f72af84d8b54bb53c",
+                "bytes": 362084
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "747906600",
+            "issuer": "QUANTUM CORP",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "dei",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "shares": 14638029,
+            "end": "2026-02-12",
+            "filed": "2026-02-17",
+            "accession": "0001628280-26-008558",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000709283/dei/EntityCommonStockSharesOutstanding.json",
+            "status": "older_date_proxy",
+            "age_days": 47,
+            "same_date_other_values": [],
+            "security_class_verified": true,
+            "filing_review": {
+              "source_url": "https://www.sec.gov/Archives/edgar/data/709283/000162828026008558/qtm-20251231.htm",
+              "sha256": "fa7f86760c243ac1682fb3d5a4fdfed068ac128513556dd74de76e6e4360845b",
+              "location": "Cover; common shares at close of business on February 12, 2026"
+            }
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 11.003701,
+          "unprocessed_all_versions_share_sum": 2150000,
+          "unreviewed_class_rows_count": 0,
+          "unreviewed_class_rows_sample": [],
+          "unresolved_filings_count": 0,
+          "unresolved_filings_sample": [],
+          "potential_overlap_relationships_count": 0,
+          "potential_overlap_relationships_sample": [],
+          "unresolved_manager_references_count": 6,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0000080255",
+              "accession": "0000080255-26-000381",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "T. Rowe Price International Ltd",
+                "sequence": "1"
+              }
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000036",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001513287",
+                "file_number": "028-14421",
+                "name": "Colonial First State Investments Ltd",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0000073124",
+              "accession": "0000073124-26-000036",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": "0001414702",
+                "file_number": "",
+                "name": "Haven Global Partners LP",
+                "sequence": "None"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Mutual Funds/Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "Nationwide Variable Insurance Trust and Nationwide Fund Advisors",
+                "sequence": "None"
+              }
+            },
+            {
+              "cik": "0002012383",
+              "accession": "0002012383-26-001841",
+              "relationship": "reported_by",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "RUSSELL FRANK CO",
+                "sequence": "None"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 4,
+          "confidential_omission_managers_sample": [
+            "0001000275",
+            "0001856405",
+            "0001166588",
+            "0001056288"
+          ],
+          "amended_managers_with_target_in_history_count": 4,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "operations": [
+                {
+                  "accession": "0002100119-26-001306",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0002100119-26-001311",
+                  "filed": "2026-05-15",
+                  "operation": "replace",
+                  "amendment_number": 1
+                },
+                {
+                  "accession": "0002100119-26-001313",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 2
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0000933478",
+              "name": "VANGUARD FIDUCIARY TRUST CO",
+              "operations": [
+                {
+                  "accession": "0000933478-26-000004",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000933478-26-000008",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001811242",
+              "name": "Vanguard Global Advisers, LLC",
+              "operations": [
+                {
+                  "accession": "0001811242-26-000004",
+                  "filed": "2026-05-08",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001811242-26-000008",
+                  "filed": "2026-05-15",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0000019617",
+              "name": "JPMORGAN CHASE & CO",
+              "operations": [
+                {
+                  "accession": "0000019617-26-000212",
+                  "filed": "2026-05-13",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0000019617-26-000225",
+                  "filed": "2026-05-13",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "MU": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "595112103",
+          "reported_share_sum_before_overlap_resolution": 840714107,
+          "positive_reporting_managers": 2889,
+          "included_rows": 3895,
+          "excluded_row_reasons": {
+            "option": 469,
+            "unreviewed_security_class": 37
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 103147586,
+              "accessions": [
+                "0002012383-26-001841"
+              ]
+            },
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "shares": 73137283,
+              "accessions": [
+                "0002100119-26-001311"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 52239483,
+              "accessions": [
+                "0000093751-26-000315"
+              ]
+            },
+            {
+              "cik": "0001422849",
+              "name": "Capital World Investors",
+              "shares": 42054392,
+              "accessions": [
+                "0001422849-26-000046"
+              ]
+            },
+            {
+              "cik": "0000315066",
+              "name": "FMR LLC",
+              "shares": 32054565,
+              "accessions": [
+                "0000315066-26-001390"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 27432757,
+              "accessions": [
+                "0001214717-26-000006"
+              ]
+            },
+            {
+              "cik": "0002100121",
+              "name": "VANGUARD PORTFOLIO MANAGEMENT LLC",
+              "shares": 23024614,
+              "accessions": [
+                "0002100121-26-000861"
+              ]
+            },
+            {
+              "cik": "0000763212",
+              "name": "PRIMECAP MANAGEMENT CO/CA/",
+              "shares": 21874204,
+              "accessions": [
+                "0000763212-26-000016"
+              ]
+            },
+            {
+              "cik": "0000895421",
+              "name": "MORGAN STANLEY",
+              "shares": 16842006,
+              "accessions": [
+                "0000895421-26-000183"
+              ]
+            },
+            {
+              "cik": "0000019617",
+              "name": "JPMORGAN CHASE & CO",
+              "shares": 15775296,
+              "accessions": [
+                "0000019617-26-000225"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [
+            {
+              "cik": "0001691766",
+              "name": "FLAGSHIP HARBOR ADVISORS, LLC",
+              "accession": "0001691766-26-000004",
+              "decision": "full_information_table_verified_header_count_warning_retained",
+              "original_declared_entries": 722,
+              "actual_entries": 732,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/primary_doc.xml",
+                "sha256": "5ee60910b7f7a0782ff5eb2b494202448e58ad2aa7ff82ae853d05a002193996",
+                "bytes": 1944
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/flagshipharbor1q2026.inftbl.xml",
+                "sha256": "04df1d30ecfe87762f57e35a4db26c5c0e5581d05851111f72af84d8b54bb53c",
+                "bytes": 362084
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": false,
+              "reviewed_table_usable": true
+            },
+            {
+              "cik": "0001316507",
+              "name": "Calamos Advisors LLC",
+              "accession": "0001316507-26-000002",
+              "decision": "overlap_evidence_only",
+              "original_declared_entries": 1269,
+              "actual_entries": 1269,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/primary_doc.xml",
+                "sha256": "b519899cf88206eb829692622b0ebf66ec954b462620a0f2eb55db76db3d88bc",
+                "bytes": 3377
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/infotable.xml",
+                "sha256": "41a9327ac8a46c01d965e47096f0bfb128361df180046fac04553e33cbedcdc1",
+                "bytes": 766693
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": true,
+              "reviewed_table_usable": false
+            },
+            {
+              "cik": "0001455258",
+              "name": "Calamos Wealth Management LLC",
+              "accession": "0001455258-26-000002",
+              "decision": "overlap_evidence_only",
+              "original_declared_entries": 546,
+              "actual_entries": 546,
+              "primary": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/primary_doc.xml",
+                "sha256": "1546980110f0a8516f61e1bf38359b5e019b753a846ec7396cdee445b93ed88e",
+                "bytes": 2076
+              },
+              "information_table": {
+                "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/infotable.xml",
+                "sha256": "227a53788a9ab90bcb6921fa516f75963b931c63507a516849662e29fea4a2e9",
+                "bytes": 328077
+              },
+              "whole_ownership_verified": false,
+              "original_table_valid": true,
+              "reviewed_table_usable": false
+            }
+          ],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "595112103",
+            "issuer": "MICRON TECHNOLOGY INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "dei",
+            "tag": "EntityCommonStockSharesOutstanding",
+            "shares": 1127734051,
+            "end": "2026-03-11",
+            "filed": "2026-03-19",
+            "accession": "0000723125-26-000006",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000723125/dei/EntityCommonStockSharesOutstanding.json",
+            "status": "older_date_proxy",
+            "age_days": 20,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 74.548969,
+          "unprocessed_all_versions_share_sum": 920432209,
+          "unreviewed_class_rows_count": 37,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001419186",
+              "accession": "0001419186-26-000003",
+              "row_id": "126946420",
+              "reason": "unreviewed_security_class",
+              "class": "TECHNOLOGY  INC  COM",
+              "shares": 214597
+            },
+            {
+              "cik": "0001890698",
+              "accession": "0001890698-26-000003",
+              "row_id": "129559592",
+              "reason": "unreviewed_security_class",
+              "class": "MICRON TECHNOLOGY INC",
+              "shares": 637
+            },
+            {
+              "cik": "0001943239",
+              "accession": "0001943239-26-000003",
+              "row_id": "126747959",
+              "reason": "unreviewed_security_class",
+              "class": "A",
+              "shares": 13640
+            }
+          ],
+          "unresolved_filings_count": 56,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0001928635",
+              "name": "Range Financial Group LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001928635-26-000003"
+              ]
+            },
+            {
+              "cik": "0001802084",
+              "name": "CVA Family Office, LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001802084-26-000002"
+              ]
+            },
+            {
+              "cik": "0002032602",
+              "name": "Ascentis Wealth Management, LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0002032602-26-000003"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 428,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0001056947",
+                "0001970075"
+              ],
+              "names": [
+                "CAISSE DES DEPOTS ET CONSIGNATIONS",
+                "LBP AM SA"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                16662,
+                160121
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001341401",
+                "0002080520"
+              ],
+              "names": [
+                "River Road Asset Management, LLC",
+                "ABN AMRO INVESTMENT SOLUTIONS"
+              ],
+              "kinds": [
+                "included_manager",
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                14494,
+                73934
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001374384",
+                "0002111369"
+              ],
+              "names": [
+                "Intesa Sanpaolo S.p.A.",
+                "VUB Generali dochodkova spravcovska spolocnost, a.s."
+              ],
+              "kinds": [
+                "included_manager",
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                56480,
+                2589
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 626,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001677501",
+              "accession": "0001677501-26-000005",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": "0001363526",
+                "file_number": "",
+                "name": "Federated Hermes MDT Series",
+                "sequence": "31"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0001677501",
+              "accession": "0001677501-26-000005",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": "0001582968",
+                "file_number": "",
+                "name": "Polaris Wealth Advisory Group, LLC",
+                "sequence": "53"
+              },
+              "reason": "referenced_manager_not_in_acquired_period"
+            },
+            {
+              "cik": "0002023325",
+              "accession": "0002023325-26-000002",
+              "row_id": "126910681",
+              "sequence": "SKYVIEW"
+            }
+          ],
+          "repeated_row_payloads_count": 7,
+          "repeated_row_payloads_sample": [
+            {
+              "cik": "0001513703",
+              "copies": 2,
+              "row": {
+                "class": "COM",
+                "cusip": "595112103",
+                "discretion": "SOLE",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "",
+                "put_call": "",
+                "reported_value": 16892,
+                "shares": 50,
+                "unit": "SH",
+                "votes": [
+                  0,
+                  50,
+                  0
+                ]
+              }
+            },
+            {
+              "cik": "0001513703",
+              "copies": 3,
+              "row": {
+                "class": "COM",
+                "cusip": "595112103",
+                "discretion": "SOLE",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "",
+                "put_call": "",
+                "reported_value": 33784,
+                "shares": 100,
+                "unit": "SH",
+                "votes": [
+                  0,
+                  100,
+                  0
+                ]
+              }
+            },
+            {
+              "cik": "0001513703",
+              "copies": 3,
+              "row": {
+                "class": "COM",
+                "cusip": "595112103",
+                "discretion": "SOLE",
+                "issuer": "MICRON TECHNOLOGY INC",
+                "other_managers": "",
+                "put_call": "",
+                "reported_value": 101352,
+                "shares": 300,
+                "unit": "SH",
+                "votes": [
+                  0,
+                  300,
+                  0
+                ]
+              }
+            }
+          ],
+          "confidential_omission_managers_count": 784,
+          "confidential_omission_managers_sample": [
+            "0001957370",
+            "0001533504",
+            "0001977759"
+          ],
+          "amended_managers_with_target_in_history_count": 48,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0001427263",
+              "name": "GFS Advisors, LLC",
+              "operations": [
+                {
+                  "accession": "0001427263-26-000003",
+                  "filed": "2026-04-30",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001427263-26-000004",
+                  "filed": "2026-05-11",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0002003672",
+              "name": "Quantum Portfolio Management LLC",
+              "operations": [
+                {
+                  "accession": "0001172661-26-001572",
+                  "filed": "2026-04-29",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001172661-26-001580",
+                  "filed": "2026-05-01",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0000884423",
+              "name": "SALEM INVESTMENT COUNSELORS INC",
+              "operations": [
+                {
+                  "accession": "0001420506-26-000663",
+                  "filed": "2026-04-13",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001420506-26-000766",
+                  "filed": "2026-04-29",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "ONTO": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "683344105",
+          "reported_share_sum_before_overlap_resolution": 47251084,
+          "positive_reporting_managers": 556,
+          "included_rows": 833,
+          "excluded_row_reasons": {
+            "unreviewed_security_class": 15,
+            "option": 17
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 5534265,
+              "accessions": [
+                "0002012383-26-001841"
+              ]
+            },
+            {
+              "cik": "0002100121",
+              "name": "VANGUARD PORTFOLIO MANAGEMENT LLC",
+              "shares": 2743019,
+              "accessions": [
+                "0002100121-26-000861"
+              ]
+            },
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "shares": 2222852,
+              "accessions": [
+                "0002100119-26-001311"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 1499684,
+              "accessions": [
+                "0000093751-26-000315"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 1211014,
+              "accessions": [
+                "0001214717-26-000006"
+              ]
+            },
+            {
+              "cik": "0001603466",
+              "name": "Point72 Asset Management, L.P.",
+              "shares": 1203658,
+              "accessions": [
+                "0000919574-26-003476"
+              ]
+            },
+            {
+              "cik": "0001037792",
+              "name": "PARADIGM CAPITAL MANAGEMENT INC/NY",
+              "shares": 1102438,
+              "accessions": [
+                "0001037792-26-000007"
+              ]
+            },
+            {
+              "cik": "0001644956",
+              "name": "WILLIAM BLAIR INVESTMENT MANAGEMENT, LLC",
+              "shares": 964213,
+              "accessions": [
+                "0001644956-26-000021"
+              ]
+            },
+            {
+              "cik": "0001068837",
+              "name": "VOYA INVESTMENT MANAGEMENT LLC",
+              "shares": 917155,
+              "accessions": [
+                "0001068837-26-000002"
+              ]
+            },
+            {
+              "cik": "0000315066",
+              "name": "FMR LLC",
+              "shares": 828977,
+              "accessions": [
+                "0000315066-26-001390"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "683344105",
+            "issuer": "ONTO INNOVATION INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 49744000,
+            "end": "2026-03-31",
+            "filed": "2026-05-05",
+            "accession": "0001193125-26-206707",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000704532/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 94.988509,
+          "unprocessed_all_versions_share_sum": 49864048,
+          "unreviewed_class_rows_count": 15,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001419186",
+              "accession": "0001419186-26-000003",
+              "row_id": "126947409",
+              "reason": "unreviewed_security_class",
+              "class": "INNOVATION  INC  COM",
+              "shares": 12946
+            },
+            {
+              "cik": "0001910387",
+              "accession": "0001910387-26-000002",
+              "row_id": "129413561",
+              "reason": "unreviewed_security_class",
+              "class": "Class A",
+              "shares": 1676
+            },
+            {
+              "cik": "0001323645",
+              "accession": "0001323645-26-000007",
+              "row_id": "128327082",
+              "reason": "unreviewed_security_class",
+              "class": "ONTO INNOVATION INC COM",
+              "shares": 55785
+            }
+          ],
+          "unresolved_filings_count": 8,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0001802084",
+              "name": "CVA Family Office, LLC",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001802084-26-000002"
+              ]
+            },
+            {
+              "cik": "0001795173",
+              "name": "Physician Wealth Advisors, Inc.",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001795173-26-000003"
+              ]
+            },
+            {
+              "cik": "0001009016",
+              "name": "FORT WASHINGTON INVESTMENT ADVISORS INC /OH/",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001193125-26-168369"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 105,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0000073124",
+                "0002040686"
+              ],
+              "names": [
+                "NORTHERN TRUST CORP",
+                "Police & Firemen's Retirement System of New Jersey"
+              ],
+              "kinds": [
+                "included_manager"
+              ],
+              "manager_share_totals": [
+                456017,
+                21040
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0000107136",
+                "0001795705"
+              ],
+              "names": [
+                "&PARTNERS",
+                "Brooklyn Investment Group"
+              ],
+              "kinds": [
+                "included_manager"
+              ],
+              "manager_share_totals": [
+                2435,
+                6019
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001795705",
+                "0001992825"
+              ],
+              "names": [
+                "Brooklyn Investment Group",
+                "Farther Finance Advisors, LLC"
+              ],
+              "kinds": [
+                "included_manager"
+              ],
+              "manager_share_totals": [
+                6019,
+                1801
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 195,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0000829407",
+              "accession": "0000829407-26-000003",
+              "row_id": "126832043",
+              "sequence": "MONTAG"
+            },
+            {
+              "cik": "0001795705",
+              "accession": "0001795705-26-000002",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "TSG ADVICE PARTNERS, LLC",
+                "sequence": "5"
+              }
+            },
+            {
+              "cik": "0001795705",
+              "accession": "0001795705-26-000002",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "THREE BELL CAPITAL LLC",
+                "sequence": "7"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 145,
+          "confidential_omission_managers_sample": [
+            "0001542266",
+            "0001871926",
+            "0001556915"
+          ],
+          "amended_managers_with_target_in_history_count": 16,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0001280043",
+              "name": "SUMMITRY LLC",
+              "operations": [
+                {
+                  "accession": "0001941040-26-000311",
+                  "filed": "2026-05-11",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001941040-26-000383",
+                  "filed": "2026-05-22",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001006378",
+              "name": "SEGALL BRYANT & HAMILL, LLC",
+              "operations": [
+                {
+                  "accession": "0001006378-26-000004",
+                  "filed": "2026-05-15",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001006378-26-000005",
+                  "filed": "2026-05-22",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001274173",
+              "name": "JANUS HENDERSON GROUP PLC",
+              "operations": [
+                {
+                  "accession": "0001085146-26-000412",
+                  "filed": "2026-05-15",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001085146-26-000420",
+                  "filed": "2026-05-18",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        },
+        "AAOI": {
+          "status": "diagnostic_sum_not_certified_ownership",
+          "cusip": "03823U102",
+          "reported_share_sum_before_overlap_resolution": 52893491,
+          "positive_reporting_managers": 361,
+          "included_rows": 502,
+          "excluded_row_reasons": {
+            "unreviewed_security_class": 4,
+            "option": 57
+          },
+          "top_reported_positions": [
+            {
+              "cik": "0002012383",
+              "name": "BlackRock, Inc.",
+              "shares": 7192329,
+              "accessions": [
+                "0002012383-26-001841"
+              ]
+            },
+            {
+              "cik": "0002100119",
+              "name": "VANGUARD CAPITAL MANAGEMENT LLC",
+              "shares": 3061522,
+              "accessions": [
+                "0002100119-26-001311"
+              ]
+            },
+            {
+              "cik": "0000937886",
+              "name": "OBERWEIS ASSET MANAGEMENT INC/",
+              "shares": 2349969,
+              "accessions": [
+                "0001213900-26-057307"
+              ]
+            },
+            {
+              "cik": "0001595888",
+              "name": "JANE STREET GROUP, LLC",
+              "shares": 2279318,
+              "accessions": [
+                "0001595888-26-000043"
+              ]
+            },
+            {
+              "cik": "0001009207",
+              "name": "D. E. Shaw & Co., Inc.",
+              "shares": 2117157,
+              "accessions": [
+                "0001104659-26-062472"
+              ]
+            },
+            {
+              "cik": "0000914208",
+              "name": "Invesco Ltd.",
+              "shares": 2014405,
+              "accessions": [
+                "0000914208-26-000193"
+              ]
+            },
+            {
+              "cik": "0002100121",
+              "name": "VANGUARD PORTFOLIO MANAGEMENT LLC",
+              "shares": 1801883,
+              "accessions": [
+                "0002100121-26-000861"
+              ]
+            },
+            {
+              "cik": "0000080255",
+              "name": "PRICE T ROWE ASSOCIATES INC /MD/",
+              "shares": 1732381,
+              "accessions": [
+                "0000080255-26-000381"
+              ]
+            },
+            {
+              "cik": "0000093751",
+              "name": "STATE STREET CORP",
+              "shares": 1644293,
+              "accessions": [
+                "0000093751-26-000315"
+              ]
+            },
+            {
+              "cik": "0001214717",
+              "name": "GEODE CAPITAL MANAGEMENT, LLC",
+              "shares": 1621305,
+              "accessions": [
+                "0001214717-26-000006"
+              ]
+            }
+          ],
+          "source_reviewed_filings": [],
+          "institutional_ownership_percent": null,
+          "low_ownership_eligible": null,
+          "official_security": {
+            "cusip": "03823U102",
+            "issuer": "APPLIED OPTOELECTRONICS INC",
+            "class": "COM",
+            "status": ""
+          },
+          "denominator": {
+            "taxonomy": "us-gaap",
+            "tag": "CommonStockSharesOutstanding",
+            "shares": 78971000,
+            "end": "2026-03-31",
+            "filed": "2026-05-07",
+            "accession": "0001437749-26-015620",
+            "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CommonStockSharesOutstanding.json",
+            "status": "exact_period",
+            "age_days": 0,
+            "same_date_other_values": [],
+            "security_class_verified": false
+          },
+          "diagnostic_sum_divided_by_denominator_percent": 66.978373,
+          "unprocessed_all_versions_share_sum": 56020898,
+          "unreviewed_class_rows_count": 4,
+          "unreviewed_class_rows_sample": [
+            {
+              "cik": "0001419186",
+              "accession": "0001419186-26-000003",
+              "row_id": "126944394",
+              "reason": "unreviewed_security_class",
+              "class": "INC  COM",
+              "shares": 17106
+            },
+            {
+              "cik": "0001853322",
+              "accession": "0002073679-26-000055",
+              "row_id": "128806728",
+              "reason": "unreviewed_security_class",
+              "class": "0",
+              "shares": 13086
+            },
+            {
+              "cik": "0001323645",
+              "accession": "0001323645-26-000007",
+              "row_id": "128326942",
+              "reason": "unreviewed_security_class",
+              "class": "APPLIED OPTOELECTRONICS INC COM",
+              "shares": 35710
+            }
+          ],
+          "unresolved_filings_count": 5,
+          "unresolved_filings_sample": [
+            {
+              "cik": "0001795173",
+              "name": "Physician Wealth Advisors, Inc.",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001795173-26-000003"
+              ]
+            },
+            {
+              "cik": "0002071170",
+              "name": "TOWARZYSTWO FUNDUSZY INWESTYCYJNYCH PZU SA",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0002071170-26-000003"
+              ]
+            },
+            {
+              "cik": "0001586767",
+              "name": "Arax Advisory Partners",
+              "reasons": [
+                "entry_count_or_period_mismatch"
+              ],
+              "accessions": [
+                "0001586767-26-000003"
+              ]
+            }
+          ],
+          "potential_overlap_relationships_count": 46,
+          "potential_overlap_relationships_sample": [
+            {
+              "ciks": [
+                "0001795705",
+                "0001992825"
+              ],
+              "names": [
+                "Brooklyn Investment Group",
+                "Farther Finance Advisors, LLC"
+              ],
+              "kinds": [
+                "included_manager"
+              ],
+              "manager_share_totals": [
+                12484,
+                656
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001795705",
+                "0001956790"
+              ],
+              "names": [
+                "Brooklyn Investment Group",
+                "FourThought Financial Partners, LLC"
+              ],
+              "kinds": [
+                "included_manager"
+              ],
+              "manager_share_totals": [
+                12484,
+                3530
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            },
+            {
+              "ciks": [
+                "0001744347",
+                "0002016827"
+              ],
+              "names": [
+                "Vident Advisory, LLC",
+                "REX Advisers, LLC"
+              ],
+              "kinds": [
+                "reported_by"
+              ],
+              "manager_share_totals": [
+                7497,
+                7300
+              ],
+              "equal_row_share_counts": [],
+              "status": "potential_overlap_not_automatically_subtracted"
+            }
+          ],
+          "unresolved_manager_references_count": 61,
+          "unresolved_manager_references_sample": [
+            {
+              "cik": "0001795705",
+              "accession": "0001795705-26-000002",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "TSG ADVICE PARTNERS, LLC",
+                "sequence": "5"
+              }
+            },
+            {
+              "cik": "0001795705",
+              "accession": "0001795705-26-000002",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "THREE BELL CAPITAL LLC",
+                "sequence": "7"
+              }
+            },
+            {
+              "cik": "0001795705",
+              "accession": "0001795705-26-000002",
+              "relationship": "included_manager",
+              "reference": {
+                "cik": null,
+                "file_number": "",
+                "name": "ORCHID ADVISORY LLC",
+                "sequence": "22"
+              }
+            }
+          ],
+          "repeated_row_payloads_count": 0,
+          "repeated_row_payloads_sample": [],
+          "confidential_omission_managers_count": 98,
+          "confidential_omission_managers_sample": [
+            "0001054554",
+            "0001871926",
+            "0001996154"
+          ],
+          "amended_managers_with_target_in_history_count": 15,
+          "amended_managers_with_target_in_history_sample": [
+            {
+              "cik": "0002078832",
+              "name": "Q Fund Management (Hong Kong) Ltd",
+              "operations": [
+                {
+                  "accession": "0002078832-26-000006",
+                  "filed": "2026-04-24",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0002078832-26-000008",
+                  "filed": "2026-04-29",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001696615",
+              "name": "Kohmann Bosshard Financial Services, LLC",
+              "operations": [
+                {
+                  "accession": "0001696615-26-000002",
+                  "filed": "2026-04-23",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001696615-26-000003",
+                  "filed": "2026-05-01",
+                  "operation": "replace",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            },
+            {
+              "cik": "0001491072",
+              "name": "Anson Funds Management LP",
+              "operations": [
+                {
+                  "accession": "0001193125-26-223980",
+                  "filed": "2026-05-14",
+                  "operation": "original",
+                  "amendment_number": null
+                },
+                {
+                  "accession": "0001193125-26-229328",
+                  "filed": "2026-05-19",
+                  "operation": "append",
+                  "amendment_number": 1
+                }
+              ],
+              "issues": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "verification": {
+    "local_tests_passed": 54,
+    "original_filings_verified": 4,
+    "original_information_rows_verified": 7975,
+    "source_verification": {
+      "version": "filing-source-review-0.1",
+      "verified_at": "2026-09-10T04:15:54.616777+00:00",
+      "all_recorded_reviews_reproduced": true,
+      "filings": [
+        {
+          "accession": "0001316507-26-000002",
+          "comparison": {
+            "original_rows": 1269,
+            "bulk_rows": 1269,
+            "all_rows_match": true,
+            "source_only_rows": 0,
+            "bulk_only_rows": 0,
+            "duplicate_payload_excess": 0,
+            "unique_cusips": 1151,
+            "summed_reported_value": 28224976653,
+            "invalid_reported_value_rows": 0
+          },
+          "recorded_review_reproduced": true
+        },
+        {
+          "accession": "0001455258-26-000002",
+          "comparison": {
+            "original_rows": 546,
+            "bulk_rows": 546,
+            "all_rows_match": true,
+            "source_only_rows": 0,
+            "bulk_only_rows": 0,
+            "duplicate_payload_excess": 0,
+            "unique_cusips": 540,
+            "summed_reported_value": 2906641176,
+            "invalid_reported_value_rows": 0
+          },
+          "recorded_review_reproduced": true
+        },
+        {
+          "accession": "0001691766-26-000004",
+          "comparison": {
+            "original_rows": 732,
+            "bulk_rows": 732,
+            "all_rows_match": true,
+            "source_only_rows": 0,
+            "bulk_only_rows": 0,
+            "duplicate_payload_excess": 0,
+            "unique_cusips": 726,
+            "summed_reported_value": 2273866276,
+            "invalid_reported_value_rows": 0
+          },
+          "recorded_review_reproduced": true
+        },
+        {
+          "accession": "0000926171-26-000005",
+          "comparison": {
+            "original_rows": 5428,
+            "bulk_rows": 5428,
+            "all_rows_match": true,
+            "source_only_rows": 0,
+            "bulk_only_rows": 0,
+            "duplicate_payload_excess": 10,
+            "unique_cusips": 2868,
+            "summed_reported_value": 109988684910,
+            "invalid_reported_value_rows": 0
+          },
+          "recorded_review_reproduced": true
+        }
+      ],
+      "identical_calamos_position_rows": 256,
+      "economic_overlap_confirmed": false
+    }
+  }
+}

@@ -12,9 +12,10 @@ from pathlib import Path
 from .bulk13f import PARSER_VERSION, digest, extract_archive, integer, merge_archives, select_filings
 from .http_client import SafeHttp
 from .holdings_reference import reviewed_denominator
+from .filing_review import apply_filing_reviews, load_catalog, pilot_comparison
 
 
-VERSION = "holdings-audit-0.1"
+VERSION = "holdings-audit-0.2"
 SECURITIES = {
     "UAVS": {"cik": "0000008504", "cusip": "00848K309"},
     "QMCO": {"cik": "0000709283", "cusip": "747906600"},
@@ -192,6 +193,15 @@ def aggregate_security(states, cusip):
     ledger = [{"cik": cik, "name": states[cik]["name"], "shares": shares,
                "accessions": sorted({r["accession"] for r in included[cik]}),
                "rows": included[cik]} for cik, shares in sorted(manager_totals.items())]
+    source_reviews = []
+    for cik, rows in included.items():
+        active = {r["accession"] for r in rows}
+        for filing in states[cik]["filings"]:
+            if filing["accession"] in active and filing.get("source_table_review"):
+                source_reviews.append({"cik": cik, "name": states[cik]["name"],
+                                       **filing["source_table_review"],
+                                       "original_table_valid": filing["table_valid"],
+                                       "reviewed_table_usable": filing.get("reviewed_table_usable", False)})
     return {
         "status": "diagnostic_sum_not_certified_ownership", "cusip": cusip,
         "reported_share_sum_before_overlap_resolution": sum(manager_totals.values()),
@@ -205,6 +215,7 @@ def aggregate_security(states, cusip):
         "top_reported_positions": sorted(({k: v for k, v in m.items() if k != "rows"} for m in ledger),
                                          key=lambda m: (-m["shares"], m["cik"]))[:10],
         "ledger": ledger,
+        "source_reviewed_filings": source_reviews,
         "institutional_ownership_percent": None, "low_ownership_eligible": None,
     }
 
@@ -269,6 +280,8 @@ def run(root, *, fetch=False, as_of="2026-06-01"):
             cache.write_text(json.dumps(result))
         extracted.append(result)
     filings = merge_archives(extracted)
+    review_catalog = load_catalog()
+    filings, review_applications = apply_filing_reviews(filings, review_catalog)
     concepts, fact_manifests = {}, {}
     for symbol, security in SECURITIES.items():
         concepts[symbol] = {}
@@ -324,12 +337,17 @@ def run(root, *, fetch=False, as_of="2026-06-01"):
               "total_information_rows_scanned": sum(a["information_rows"] for a in extracted),
               "unique_filings_in_archives": len(filings), "archives": manifests,
               "security_lists": list_manifests, "company_concept_cache_files": fact_manifests,
+              "source_review_catalog_version": review_catalog["version"],
+              "source_review_catalog_matches": review_applications,
               "limitations": ["13F_does_not_cover_all_institutions_or_all_positions",
                               "absence_is_not_zero", "joint_reporting_not_fully_resolved",
                               "bulk_release_time_not_used_as_original_filing_time",
                               "denominator_share_class_needs_filing_review",
                               "no_low_ownership_classification_or_return_backtest"],
               "quarters": quarters}
+    baseline_path = Path(__file__).resolve().parents[1] / "docs/evidence/sec-bulk-holdings-2026-09-10.json"
+    baseline = json.loads(baseline_path.read_text())
+    report["pilot_review_comparison"] = pilot_comparison(report, baseline, review_catalog)
     out = root / "diagnostics/holdings"
     out.mkdir(parents=True, exist_ok=True)
     (out / "manager-ledger.json").write_text(json.dumps(ledgers, ensure_ascii=False, indent=2) + "\n")

@@ -1,0 +1,271 @@
+{
+  "version": "filing-source-review-0.1",
+  "reviewed_at": "2026-09-10",
+  "source_publication_policy": "original_filing_date; review_date_is_not_a_new_holdings_date",
+  "archives": [
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01dec2025-28feb2026_form13f.zip",
+      "sha256": "ff340fc5dc0bc60539b03c3a97fffa3fe4ab0d728d6507a4aadabb4a888fbe01",
+      "bytes": 90264650
+    },
+    {
+      "source_url": "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/01mar2026-31may2026_form13f.zip",
+      "sha256": "05f4da8f526cd471a387af45661a8cb3bbfaf345d3ec9c2cefd31349aa257e63",
+      "bytes": 99411274
+    }
+  ],
+  "filings": [
+    {
+      "label": "Calamos-Advisors",
+      "accession": "0001316507-26-000002",
+      "cik": "0001316507",
+      "filed": "2026-05-04",
+      "period": "2026-03-31",
+      "bulk_filing_sha256": "81f628503e626296433d95bb393ebc8a3077e140c47955112e79fd31edd140b3",
+      "primary": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/primary_doc.xml",
+        "sha256": "b519899cf88206eb829692622b0ebf66ec954b462620a0f2eb55db76db3d88bc",
+        "bytes": 3377
+      },
+      "information_table": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1316507/000131650726000002/infotable.xml",
+        "sha256": "41a9327ac8a46c01d965e47096f0bfb128361df180046fac04553e33cbedcdc1",
+        "bytes": 766693
+      },
+      "original_declared_entries": 1269,
+      "actual_entries": 1269,
+      "declared_value": 28224976653,
+      "additional_information": "",
+      "comparison": {
+        "original_rows": 1269,
+        "bulk_rows": 1269,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 0,
+        "unique_cusips": 1151,
+        "summed_reported_value": 28224976653,
+        "invalid_reported_value_rows": 0
+      },
+      "target_rows": [
+        {
+          "cusip": "00848K309",
+          "issuer": "AGEAGLE AERIAL SYS INC NEW",
+          "class": "COM SHS",
+          "shares": 301672,
+          "unit": "SH",
+          "put_call": "",
+          "discretion": "SOLE",
+          "other_managers": "",
+          "reported_value": 272711,
+          "votes": [
+            301672,
+            0,
+            0
+          ]
+        }
+      ],
+      "decision": "overlap_evidence_only",
+      "allow_table_for_analysis": false,
+      "economic_ownership_verified": false
+    },
+    {
+      "label": "Calamos-Wealth",
+      "accession": "0001455258-26-000002",
+      "cik": "0001455258",
+      "filed": "2026-05-04",
+      "period": "2026-03-31",
+      "bulk_filing_sha256": "769f25dfa3ef2b0fe3b977475f78f9ece4c296ef17b92cca11f1074dcaee61a6",
+      "primary": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/primary_doc.xml",
+        "sha256": "1546980110f0a8516f61e1bf38359b5e019b753a846ec7396cdee445b93ed88e",
+        "bytes": 2076
+      },
+      "information_table": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1455258/000145525826000002/infotable.xml",
+        "sha256": "227a53788a9ab90bcb6921fa516f75963b931c63507a516849662e29fea4a2e9",
+        "bytes": 328077
+      },
+      "original_declared_entries": 546,
+      "actual_entries": 546,
+      "declared_value": 2906641176,
+      "additional_information": "",
+      "comparison": {
+        "original_rows": 546,
+        "bulk_rows": 546,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 0,
+        "unique_cusips": 540,
+        "summed_reported_value": 2906641176,
+        "invalid_reported_value_rows": 0
+      },
+      "target_rows": [
+        {
+          "cusip": "00848K309",
+          "issuer": "AGEAGLE AERIAL SYS INC NEW",
+          "class": "COM SHS",
+          "shares": 301672,
+          "unit": "SH",
+          "put_call": "",
+          "discretion": "SOLE",
+          "other_managers": "",
+          "reported_value": 272711,
+          "votes": [
+            301672,
+            0,
+            0
+          ]
+        }
+      ],
+      "decision": "overlap_evidence_only",
+      "allow_table_for_analysis": false,
+      "economic_ownership_verified": false
+    },
+    {
+      "label": "Flagship",
+      "accession": "0001691766-26-000004",
+      "cik": "0001691766",
+      "filed": "2026-04-28",
+      "period": "2026-03-31",
+      "bulk_filing_sha256": "79cc87664f449640c4fdcf4b2d32d9732b5001c77485510c496e098492f44e79",
+      "primary": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/primary_doc.xml",
+        "sha256": "5ee60910b7f7a0782ff5eb2b494202448e58ad2aa7ff82ae853d05a002193996",
+        "bytes": 1944
+      },
+      "information_table": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1691766/000169176626000004/flagshipharbor1q2026.inftbl.xml",
+        "sha256": "04df1d30ecfe87762f57e35a4db26c5c0e5581d05851111f72af84d8b54bb53c",
+        "bytes": 362084
+      },
+      "original_declared_entries": 722,
+      "actual_entries": 732,
+      "declared_value": 2273866276,
+      "additional_information": "",
+      "comparison": {
+        "original_rows": 732,
+        "bulk_rows": 732,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 0,
+        "unique_cusips": 726,
+        "summed_reported_value": 2273866276,
+        "invalid_reported_value_rows": 0
+      },
+      "target_rows": [
+        {
+          "cusip": "747906600",
+          "issuer": "QUANTUM CORP",
+          "class": "COM",
+          "shares": 17185,
+          "unit": "SH",
+          "put_call": "",
+          "discretion": "SOLE",
+          "other_managers": "",
+          "reported_value": 81630,
+          "votes": [
+            0,
+            0,
+            17185
+          ]
+        }
+      ],
+      "decision": "full_information_table_verified_header_count_warning_retained",
+      "allow_table_for_analysis": true,
+      "economic_ownership_verified": false
+    },
+    {
+      "label": "National-Bank-Q4",
+      "accession": "0000926171-26-000005",
+      "cik": "0000926171",
+      "filed": "2026-02-17",
+      "period": "2025-12-31",
+      "bulk_filing_sha256": "02ad0911071de9caf94adc1a42345d86956bd572e5a53245559043b6a3eb16d4",
+      "primary": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/primary_doc.xml",
+        "sha256": "5ba172fb10f0d7e97dc08757814eb55994246c174db49cc91d0a5143c3897206",
+        "bytes": 3656
+      },
+      "information_table": {
+        "source_url": "https://www.sec.gov/Archives/edgar/data/926171/000092617126000005/13fdecember2025holdings.xml",
+        "sha256": "61420a172609e55142d4f07f3af4c621a2f6d921065d4b4d52f6bcda32b64eab",
+        "bytes": 3114788
+      },
+      "original_declared_entries": 5429,
+      "actual_entries": 5428,
+      "declared_value": 109988684910,
+      "additional_information": "Correct Total of lines: 5428 and not 5429.",
+      "comparison": {
+        "original_rows": 5428,
+        "bulk_rows": 5428,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 10,
+        "unique_cusips": 2868,
+        "summed_reported_value": 109988684910,
+        "invalid_reported_value_rows": 0
+      },
+      "target_rows": [
+        {
+          "cusip": "747906600",
+          "issuer": "QUANTUM CORP",
+          "class": "COM",
+          "shares": 100,
+          "unit": "SH",
+          "put_call": "",
+          "discretion": "DFND",
+          "other_managers": "1",
+          "reported_value": 644,
+          "votes": [
+            0,
+            100,
+            0
+          ]
+        },
+        {
+          "cusip": "00848K309",
+          "issuer": "AGEAGLE AERIAL SYS INC NEW",
+          "class": "COM SHS",
+          "shares": 1,
+          "unit": "SH",
+          "put_call": "",
+          "discretion": "DFND",
+          "other_managers": "1",
+          "reported_value": 1,
+          "votes": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "decision": "explicit_count_correction_in_original_note",
+      "allow_table_for_analysis": true,
+      "economic_ownership_verified": false
+    }
+  ],
+  "overlap": {
+    "period": "2026-03-31",
+    "cusip": "00848K309",
+    "ciks": [
+      "0001316507",
+      "0001455258"
+    ],
+    "accessions": [
+      "0001316507-26-000002",
+      "0001455258-26-000002"
+    ],
+    "identical_position_rows": 256,
+    "table_rows": [
+      1269,
+      546
+    ],
+    "identical_target_shares_each": 301672,
+    "economic_overlap_confirmed": false,
+    "automatic_subtraction": false
+  }
+}
