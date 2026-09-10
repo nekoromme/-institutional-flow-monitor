@@ -50,3 +50,5 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python -m flow_probe.batch_market
+      - name: 期間集約とデータ品質の要因検証
+        run: python -m flow_probe.factor_diagnostics
