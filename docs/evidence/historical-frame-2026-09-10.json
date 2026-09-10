@@ -4534,5 +4534,17 @@
     "historical_denominator_class",
     "historical_size_liquidity_and_industry",
     "comparison_protocol_and_sample_size"
-  ]
+  ],
+  "validation": {
+    "code_commit": "5afadcb01ca62415769b156bff53090da1063a57",
+    "local_bulk_execution": "completed; 6,740,300 rows scanned for frame",
+    "workflow_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34440771773",
+    "workflow_run_id": 34440771773,
+    "job_id": 102755163278,
+    "conclusion": "success",
+    "tests_passed": 69,
+    "github_execution_scope": "unit_tests_and_existing_Alpaca_five_symbol_pilot; bulk_SEC_frame_built_locally",
+    "existing_pilot_scored_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_pilot_scores_unchanged": true
+  }
 }
