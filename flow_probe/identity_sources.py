@@ -32,8 +32,11 @@ def single(element, name):
     return values[0] if len(values) == 1 else None
 
 
-def source_header(body, source):
+def source_header(body, source, *, as_of=AS_OF):
     """索引の提出日・提出番号・書類種別を原データと照合。時刻の境界も越えない。"""
+    # 既存の対象選定は2026年初の締切を維持する。後の報告による答え合わせ
+    # だけが、明示的に別の締切を指定できる。共有の定数は変更しない。
+    datetime.strptime(as_of, '%Y-%m-%d')
     text = body.decode('utf-8', errors='replace')
     header = text.split('</SEC-HEADER>', 1)[0]
     def value(label):
@@ -49,16 +52,16 @@ def source_header(body, source):
     filed = value('FILED AS OF DATE')
     accepted = re.search(r'<ACCEPTANCE-DATETIME>(\d{14})', header)
     if (value('ACCESSION NUMBER') != accession or value('CONFORMED SUBMISSION TYPE') != source['form']
-            or filed != source['filed'].replace('-', '') or source['filed'] >= AS_OF
-            or not accepted or accepted.group(1)[:8] >= AS_OF.replace('-', '')):
+            or filed != source['filed'].replace('-', '') or source['filed'] >= as_of
+            or not accepted or accepted.group(1)[:8] >= as_of.replace('-', '')):
         raise ValueError('original_header_or_time_mismatch')
     # 型が同じでもあり得ない日付を通さない。
     datetime.strptime(accepted.group(1), '%Y%m%d%H%M%S')
     return header, accepted.group(1)
 
 
-def source_documents(body, source):
-    header, accepted = source_header(body, source)
+def source_documents(body, source, *, as_of=AS_OF):
+    header, accepted = source_header(body, source, as_of=as_of)
     text = body.decode('utf-8', errors='replace')
     docs = []
     for part in re.findall(r'<DOCUMENT>(.*?)</DOCUMENT>', text, flags=re.S):

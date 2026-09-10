@@ -1,0 +1,300 @@
+{
+  "version": "cjmb-comparison-catalog-0.1",
+  "selection_as_of": "2026-01-01",
+  "outcome_as_of": "2026-06-01",
+  "periods": [
+    "2025-12-31",
+    "2026-03-31"
+  ],
+  "target": {
+    "ticker": "CJMB",
+    "cusip": "131100109",
+    "cik": "0002032545"
+  },
+  "admission_evidence_sha256": "bb28ec4d7dc6485261b77507ef317a901913312d28af65b00db66cf0e76c4c07",
+  "filings": [
+    {
+      "accession": "0001540235-26-000002",
+      "cik": "0001540235",
+      "period": "2025-12-31",
+      "filed": "2026-02-17",
+      "bulk_filing_sha256": "fced0ff503a62e8c847aec4de74487db078bf4182e6394cbee2261d981dd22bf",
+      "primary": {
+        "source": {
+          "filename": "edgar/data/1540235/0001540235-26-000002.txt",
+          "form": "13F-HR",
+          "filed": "2026-02-17",
+          "cik": "0001540235"
+        },
+        "path": "data/sec-cjmb/0001540235-26-000002.txt",
+        "accepted": "20260217130331",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1540235/0001540235-26-000002.txt",
+        "sha256": "3cc633b70633540ac2a4b0b49b5b3c842192853c8146ed2a5a99ccb22a49f368",
+        "bytes": 2475291
+      },
+      "information_table": {
+        "source": {
+          "filename": "edgar/data/1540235/0001540235-26-000002.txt",
+          "form": "13F-HR",
+          "filed": "2026-02-17",
+          "cik": "0001540235"
+        },
+        "path": "data/sec-cjmb/0001540235-26-000002.txt",
+        "accepted": "20260217130331",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1540235/0001540235-26-000002.txt",
+        "sha256": "3cc633b70633540ac2a4b0b49b5b3c842192853c8146ed2a5a99ccb22a49f368",
+        "bytes": 2475291
+      },
+      "original_declared_entries": 4596,
+      "actual_entries": 4593,
+      "declared_value": 139705144107,
+      "comparison": {
+        "original_rows": 4593,
+        "bulk_rows": 4593,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 1,
+        "unique_cusips": 3875,
+        "summed_reported_value": 139705144107,
+        "invalid_reported_value_rows": 0
+      },
+      "decision": "full_original_table_matches_bulk_header_count_warning_retained",
+      "allow_table_for_analysis": true,
+      "economic_ownership_verified": false
+    },
+    {
+      "accession": "0001481986-26-000001",
+      "cik": "0001481986",
+      "period": "2025-12-31",
+      "filed": "2026-02-12",
+      "bulk_filing_sha256": "605701c0896b3e0ba6feda5cfe86ca8b7dc8d53c8e70d85f7401511fb4882f82",
+      "primary": {
+        "source": {
+          "filename": "edgar/data/1481986/0001481986-26-000001.txt",
+          "form": "13F-HR",
+          "filed": "2026-02-12",
+          "cik": "0001481986"
+        },
+        "path": "data/sec-cjmb/0001481986-26-000001.txt",
+        "accepted": "20260212172649",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1481986/0001481986-26-000001.txt",
+        "sha256": "d9af222cb9a6d1d89e0e90642fdb5b58c45c6652573d1d85b0fca5b5c06d0d37",
+        "bytes": 828686
+      },
+      "information_table": {
+        "source": {
+          "filename": "edgar/data/1481986/0001481986-26-000001.txt",
+          "form": "13F-HR",
+          "filed": "2026-02-12",
+          "cik": "0001481986"
+        },
+        "path": "data/sec-cjmb/0001481986-26-000001.txt",
+        "accepted": "20260212172649",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1481986/0001481986-26-000001.txt",
+        "sha256": "d9af222cb9a6d1d89e0e90642fdb5b58c45c6652573d1d85b0fca5b5c06d0d37",
+        "bytes": 828686
+      },
+      "original_declared_entries": 1204,
+      "actual_entries": 1204,
+      "declared_value": 3780835934,
+      "comparison": {
+        "original_rows": 1204,
+        "bulk_rows": 1204,
+        "all_rows_match": true,
+        "source_only_rows": 0,
+        "bulk_only_rows": 0,
+        "duplicate_payload_excess": 0,
+        "unique_cusips": 1089,
+        "summed_reported_value": 3780835934,
+        "invalid_reported_value_rows": 0
+      },
+      "decision": "reference_fields_reviewed_no_identity_override",
+      "allow_table_for_analysis": false,
+      "economic_ownership_verified": false
+    }
+  ],
+  "denominator_reviews": [
+    {
+      "period": "2025-12-31",
+      "shares": 4858663,
+      "source": {
+        "source": {
+          "filename": "edgar/data/2032545/0001493152-26-014292.txt",
+          "form": "10-K",
+          "filed": "2026-03-31",
+          "cik": "0002032545"
+        },
+        "path": "data/sec-cjmb/0001493152-26-014292.txt",
+        "accepted": "20260331170110",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-014292.txt",
+        "sha256": "fb70992ef369a3385b284075ba46c79d4d7ed51fad391775106cff76f2bf7dc7",
+        "bytes": 20557402
+      },
+      "fact_id": "Fact000197",
+      "fact_sha256": "6eb07b0f65cbd4bf57e63089154aa4ea21d167307c14046b773b4365be6402c8",
+      "row_sha256": "3e2f3ea8125c010abbabd74ba393cf32f02a5a3ffa5ef8ef53adeac6fba21e67",
+      "row_excerpt": "Common stock - authorized 190,000,000 shares, par value $ 0.001 par value; 4,858,663 issued and outstanding as of December 31, 2025 and 3,000,000 December 31, 2024 4,860 3,000",
+      "class_review": "ordinary_common_stock_same_cusip_in_both_official_lists",
+      "verified_for_outcome_comparison_only": true
+    },
+    {
+      "period": "2026-03-31",
+      "shares": 5646118,
+      "source": {
+        "source": {
+          "filename": "edgar/data/2032545/0001493152-26-023708.txt",
+          "form": "10-Q",
+          "filed": "2026-05-15",
+          "cik": "0002032545"
+        },
+        "path": "data/sec-cjmb/0001493152-26-023708.txt",
+        "accepted": "20260515160202",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-023708.txt",
+        "sha256": "b9857f804dddf71c9425d26674777f41d79311b83b17a072e35542b5057ea366",
+        "bytes": 6094353
+      },
+      "fact_id": "Fact000150",
+      "fact_sha256": "402982f2699a7a0b319b1791fe915d20977d223deb2609ab383d0f6a2709033c",
+      "row_sha256": "8479603b3e07cb7d0a1c111205bbb2d994355f81d46f242d1d4caea7a62fdcf1",
+      "row_excerpt": "Common stock- authorized 190,000,000 shares, par value $ 0.001 par value; 5,646,118 and 4,858,663 shares issued and outstanding, as of March 31, 2026 and December 31, 2025, respectively 5,646 4,860",
+      "class_review": "ordinary_common_stock_same_cusip_in_both_official_lists",
+      "verified_for_outcome_comparison_only": true
+    }
+  ],
+  "share_unit_bridge": {
+    "source_sha256": "b9857f804dddf71c9425d26674777f41d79311b83b17a072e35542b5057ea366",
+    "rows": [
+      "January 1, 2026 - $ - 4,858,663 $ 4,860 $ 12,583,193 $ ( 10,260,014 ) $ 2,328,039",
+      "Issuance of ELOC Shares - - 768,705 768 2,091,454 2,092,222",
+      "Restricted stock unit awards vesting 18,750 18 ( 18 ) -",
+      "March 31, 2026 - $ - 5,646,118 $ 5,646 $ 15,068,955 $ ( 13,475,068 ) $ 1,599,533"
+    ],
+    "row_sha256": [
+      "0eecb883f2979c96d59b3a0297e801af4b54211b583d77b8b3537bf1fdc7dd3d",
+      "57610aa11ec2e2cfabe7c23805d4ee693637a7c84577a56a8f6b6b588a0a2613",
+      "7d0dd7031242e706e6302b3a35348104dc9c4b31df08f1b880699162691b5166",
+      "b2fc48976f5ac86e70bd6041b9b61a80de18e0d70d6645e6f5e7033231c84ac7"
+    ],
+    "beginning_shares": 4858663,
+    "equity_line_issued_shares": 768705,
+    "vested_award_shares": 18750,
+    "ending_shares": 5646118,
+    "reviewed_unit_multiplier": 1,
+    "explanation": "Q1 equity roll-forward reconciles opening ordinary shares, new issuance and vested awards to closing shares; pre-IPO reverse split affects an earlier period."
+  },
+  "concept_sources": [
+    {
+      "taxonomy": "us-gaap",
+      "meta": {
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0002032545/us-gaap/CommonStockSharesOutstanding.json",
+        "sha256": "cda9ae61171c91d5c91ecfc5dfe68b390faa89757139acb77e9ab59391a9c078",
+        "bytes": 2129
+      },
+      "facts": [
+        {
+          "end": "2025-12-31",
+          "val": 4858663,
+          "accn": "0001493152-26-014292",
+          "fy": 2025,
+          "fp": "FY",
+          "form": "10-K",
+          "filed": "2026-03-31"
+        },
+        {
+          "end": "2025-12-31",
+          "val": 4858663,
+          "accn": "0001493152-26-023708",
+          "fy": 2026,
+          "fp": "Q1",
+          "form": "10-Q",
+          "filed": "2026-05-15"
+        },
+        {
+          "end": "2026-03-31",
+          "val": 5646118,
+          "accn": "0001493152-26-023708",
+          "fy": 2026,
+          "fp": "Q1",
+          "form": "10-Q",
+          "filed": "2026-05-15",
+          "frame": "CY2026Q1I"
+        }
+      ]
+    },
+    {
+      "taxonomy": "dei",
+      "meta": {
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0002032545/dei/EntityCommonStockSharesOutstanding.json",
+        "sha256": "68fe8402a4673d166f3fa733194293fe222406c07169d5343095fd829649efde",
+        "bytes": 1580
+      },
+      "facts": []
+    }
+  ],
+  "issuer_sources": [
+    {
+      "source": {
+        "filename": "edgar/data/2032545/0001493152-26-014292.txt",
+        "form": "10-K",
+        "filed": "2026-03-31",
+        "cik": "0002032545"
+      },
+      "path": "data/sec-cjmb/0001493152-26-014292.txt",
+      "accepted": "20260331170110",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-014292.txt",
+      "sha256": "fb70992ef369a3385b284075ba46c79d4d7ed51fad391775106cff76f2bf7dc7",
+      "bytes": 20557402
+    },
+    {
+      "source": {
+        "filename": "edgar/data/2032545/0001493152-26-023708.txt",
+        "form": "10-Q",
+        "filed": "2026-05-15",
+        "cik": "0002032545"
+      },
+      "path": "data/sec-cjmb/0001493152-26-023708.txt",
+      "accepted": "20260515160202",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-26-023708.txt",
+      "sha256": "b9857f804dddf71c9425d26674777f41d79311b83b17a072e35542b5057ea366",
+      "bytes": 6094353
+    }
+  ],
+  "manager_sources": [
+    {
+      "source": {
+        "filename": "edgar/data/1540235/0001540235-26-000002.txt",
+        "form": "13F-HR",
+        "filed": "2026-02-17",
+        "cik": "0001540235"
+      },
+      "path": "data/sec-cjmb/0001540235-26-000002.txt",
+      "accepted": "20260217130331",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1540235/0001540235-26-000002.txt",
+      "sha256": "3cc633b70633540ac2a4b0b49b5b3c842192853c8146ed2a5a99ccb22a49f368",
+      "bytes": 2475291
+    },
+    {
+      "source": {
+        "filename": "edgar/data/1481986/0001481986-26-000001.txt",
+        "form": "13F-HR",
+        "filed": "2026-02-12",
+        "cik": "0001481986"
+      },
+      "path": "data/sec-cjmb/0001481986-26-000001.txt",
+      "accepted": "20260212172649",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1481986/0001481986-26-000001.txt",
+      "sha256": "d9af222cb9a6d1d89e0e90642fdb5b58c45c6652573d1d85b0fca5b5c06d0d37",
+      "bytes": 828686
+    }
+  ],
+  "drw_reference_review": {
+    "accession": "0001481986-26-000001",
+    "sequence": "1",
+    "name": "DRW Securities, LLC",
+    "crd_number": "000045908",
+    "sec_file_number": "8-51241",
+    "cik_or_13f_file_number_in_reference": null,
+    "decision": "name_matches_filer_but_no_identifier_override; unresolved_reference_retained"
+  }
+}
