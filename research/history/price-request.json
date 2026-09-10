@@ -1,0 +1,716 @@
+{
+  "purpose": "collect_identity_linked_missing_prices_only",
+  "returns_computed": false,
+  "years": {
+    "2023": {
+      "review_sha256": "652c6ab65d5f8c30f11b94ff24f5ecf843fd4f48f05c49f8fedbd8f943580bef",
+      "additional_candidates": [
+        {
+          "ordinal": 3,
+          "cusip": "89656D101",
+          "issuer_candidate_cik": "0000724742",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TPHS",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 4,
+          "cusip": "30212W100",
+          "issuer_candidate_cik": "0001495932",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "EXPI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 5,
+          "cusip": "42727E103",
+          "issuer_candidate_cik": "0000849145",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HGBL",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 6,
+          "cusip": "G0750C108",
+          "issuer_candidate_cik": "0001616862",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AXTA",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 8,
+          "cusip": "75901B107",
+          "issuer_candidate_cik": "0001590877",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 11,
+          "cusip": "87874R100",
+          "issuer_candidate_cik": "0001293282",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TTGT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 13,
+          "cusip": "46222L108",
+          "issuer_candidate_cik": "0001824920",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "IONQ",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 16,
+          "cusip": "918640103",
+          "issuer_candidate_cik": "0001205922",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "VCNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 18,
+          "cusip": "G4412G101",
+          "issuer_candidate_cik": "0001180262",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HLF",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 19,
+          "cusip": "67080M103",
+          "issuer_candidate_cik": "0001549595",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "NRIX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 25,
+          "cusip": "315616102",
+          "issuer_candidate_cik": "0001048695",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FFIV",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 26,
+          "cusip": "192422103",
+          "issuer_candidate_cik": "0000851205",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 27,
+          "cusip": "760759100",
+          "issuer_candidate_cik": "0001060391",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RSG",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 28,
+          "cusip": "09180C106",
+          "issuer_candidate_cik": "0001013488",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "BJRI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 29,
+          "cusip": "554225102",
+          "issuer_candidate_cik": "0001053584",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "MCBC",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 31,
+          "cusip": "396879108",
+          "issuer_candidate_cik": "0001799788",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "GLSI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 33,
+          "cusip": "353514102",
+          "issuer_candidate_cik": "0000038725",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FELE",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 34,
+          "cusip": "164651101",
+          "issuer_candidate_cik": "0001571776",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CHMI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 36,
+          "cusip": "02080L102",
+          "issuer_candidate_cik": "0001850902",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TKNO",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 37,
+          "cusip": "68622D106",
+          "issuer_candidate_cik": "0001802457",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "ORGN",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 38,
+          "cusip": "907818108",
+          "issuer_candidate_cik": "0000100885",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "UNP",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 39,
+          "cusip": "75629F109",
+          "issuer_candidate_cik": "0001588972",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "SCTL",
+          "backtest_eligible": false
+        }
+      ],
+      "already_collected_candidates": []
+    },
+    "2024": {
+      "review_sha256": "af891387c3c7de8073c8d2c40843d26f7aa4438ff740d6e73f3fd948f26b768a",
+      "additional_candidates": [
+        {
+          "ordinal": 1,
+          "cusip": "79466L302",
+          "issuer_candidate_cik": "0001108524",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CRM",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 3,
+          "cusip": "30212W100",
+          "issuer_candidate_cik": "0001495932",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "EXPI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 4,
+          "cusip": "42727E103",
+          "issuer_candidate_cik": "0000849145",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HGBL",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 5,
+          "cusip": "G0750C108",
+          "issuer_candidate_cik": "0001616862",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AXTA",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 7,
+          "cusip": "75901B107",
+          "issuer_candidate_cik": "0001590877",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 9,
+          "cusip": "31447E105",
+          "issuer_candidate_cik": "0001339005",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FEMY",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 10,
+          "cusip": "87874R100",
+          "issuer_candidate_cik": "0001293282",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TTGT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 12,
+          "cusip": "46222L108",
+          "issuer_candidate_cik": "0001824920",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "IONQ",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 17,
+          "cusip": "67080M103",
+          "issuer_candidate_cik": "0001549595",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "NRIX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 21,
+          "cusip": "315616102",
+          "issuer_candidate_cik": "0001048695",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FFIV",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 22,
+          "cusip": "192422103",
+          "issuer_candidate_cik": "0000851205",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 23,
+          "cusip": "760759100",
+          "issuer_candidate_cik": "0001060391",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RSG",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 24,
+          "cusip": "09180C106",
+          "issuer_candidate_cik": "0001013488",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "BJRI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 28,
+          "cusip": "05352A100",
+          "issuer_candidate_cik": "0001722482",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AVTR",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 29,
+          "cusip": "353514102",
+          "issuer_candidate_cik": "0000038725",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FELE",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 32,
+          "cusip": "02080L102",
+          "issuer_candidate_cik": "0001850902",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TKNO",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 33,
+          "cusip": "68622D106",
+          "issuer_candidate_cik": "0001802457",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "ORGN",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 34,
+          "cusip": "907818108",
+          "issuer_candidate_cik": "0000100885",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "UNP",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 35,
+          "cusip": "75629F109",
+          "issuer_candidate_cik": "0001588972",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "SCTL",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 37,
+          "cusip": "05368V106",
+          "issuer_candidate_cik": "0001122976",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AVNT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 38,
+          "cusip": "420261109",
+          "issuer_candidate_cik": "0000046250",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HWKN",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 39,
+          "cusip": "47973J102",
+          "issuer_candidate_cik": "0001612630",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "JYNT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 40,
+          "cusip": "126408103",
+          "issuer_candidate_cik": "0000277948",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CSX",
+          "backtest_eligible": false
+        }
+      ],
+      "already_collected_candidates": []
+    },
+    "2025": {
+      "review_sha256": "44d31d00ecb011847e2d82866a68f0497d4e7c263826fb3df330b731dabbc34d",
+      "additional_candidates": [
+        {
+          "ordinal": 1,
+          "cusip": "79466L302",
+          "issuer_candidate_cik": "0001108524",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CRM",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 2,
+          "cusip": "30212W100",
+          "issuer_candidate_cik": "0001495932",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "EXPI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 3,
+          "cusip": "42727E103",
+          "issuer_candidate_cik": "0000849145",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HGBL",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 4,
+          "cusip": "G0750C108",
+          "issuer_candidate_cik": "0001616862",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AXTA",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 6,
+          "cusip": "75901B107",
+          "issuer_candidate_cik": "0001590877",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 7,
+          "cusip": "53814X102",
+          "issuer_candidate_cik": "0001491419",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "LVO",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 11,
+          "cusip": "46222L108",
+          "issuer_candidate_cik": "0001824920",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "IONQ",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 12,
+          "cusip": "023939101",
+          "issuer_candidate_cik": "0002011286",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AMTM",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 14,
+          "cusip": "89157D105",
+          "issuer_candidate_cik": "0001827506",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TRML",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 16,
+          "cusip": "G4412G101",
+          "issuer_candidate_cik": "0001180262",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HLF",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 17,
+          "cusip": "67080M103",
+          "issuer_candidate_cik": "0001549595",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "NRIX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 21,
+          "cusip": "315616102",
+          "issuer_candidate_cik": "0001048695",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FFIV",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 22,
+          "cusip": "192422103",
+          "issuer_candidate_cik": "0000851205",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CGNX",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 23,
+          "cusip": "760759100",
+          "issuer_candidate_cik": "0001060391",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "RSG",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 24,
+          "cusip": "09180C106",
+          "issuer_candidate_cik": "0001013488",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "BJRI",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 27,
+          "cusip": "05352A100",
+          "issuer_candidate_cik": "0001722482",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AVTR",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 28,
+          "cusip": "353514102",
+          "issuer_candidate_cik": "0000038725",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "FELE",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 31,
+          "cusip": "02080L102",
+          "issuer_candidate_cik": "0001850902",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "TKNO",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 32,
+          "cusip": "68622D106",
+          "issuer_candidate_cik": "0001802457",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "ORGN",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 33,
+          "cusip": "907818108",
+          "issuer_candidate_cik": "0000100885",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "UNP",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 35,
+          "cusip": "05368V106",
+          "issuer_candidate_cik": "0001122976",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "AVNT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 36,
+          "cusip": "420261109",
+          "issuer_candidate_cik": "0000046250",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "HWKN",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 37,
+          "cusip": "47973J102",
+          "issuer_candidate_cik": "0001612630",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "JYNT",
+          "backtest_eligible": false
+        },
+        {
+          "ordinal": 38,
+          "cusip": "126408103",
+          "issuer_candidate_cik": "0000277948",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "CSX",
+          "backtest_eligible": false
+        }
+      ],
+      "already_collected_candidates": [
+        {
+          "ordinal": 39,
+          "cusip": "53635B107",
+          "issuer_candidate_cik": "0001235468",
+          "cusip_issuer_verified": true,
+          "price_collection_candidate": true,
+          "ticker_in_reviewed_filing": "LQDT",
+          "backtest_eligible": false
+        }
+      ]
+    }
+  },
+  "previously_collected_symbols": [
+    "AAOI",
+    "AMR",
+    "AMZN",
+    "ANIK",
+    "APYX",
+    "ASB",
+    "ASGN",
+    "ATKR",
+    "BRT",
+    "BWB",
+    "CECO",
+    "CJMB",
+    "CLNE",
+    "CNXC",
+    "COMM",
+    "CSR",
+    "DAIO",
+    "DCGO",
+    "DXCM",
+    "EPM",
+    "FHTX",
+    "FMBH",
+    "FSBW",
+    "GAME",
+    "HE",
+    "HUM",
+    "HYFM",
+    "INGN",
+    "IQV",
+    "IVR",
+    "KAPA",
+    "LAW",
+    "LQDT",
+    "LSH",
+    "LTBR",
+    "LUNG",
+    "MET",
+    "MGNI",
+    "MSA",
+    "MU",
+    "MUSA",
+    "NUTX",
+    "OIS",
+    "ONTO",
+    "PNTG",
+    "PRI",
+    "QMCO",
+    "RS",
+    "SMSI",
+    "SND",
+    "SPRO",
+    "SPY",
+    "TGTX",
+    "TIPT",
+    "TTWO",
+    "UAVS",
+    "UFCS",
+    "VKTX",
+    "WYNN"
+  ]
+}
