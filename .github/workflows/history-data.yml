@@ -1,0 +1,50 @@
+name: 3年分のデータ土台を収集
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'research/history/**'
+      - '.github/workflows/history-data.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: history-data-collection
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 保存用の暗号ライブラリを準備
+        run: python -m pip install cryptography==46.0.3
+      - name: 秘密を使わない収集・保存の点検
+        run: python -m unittest discover -s research/history -p 'test_*.py' -v
+      - name: 原データと当時の証券候補を収集
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PYTHONUNBUFFERED: '1'
+        run: python -m research.history.collect
+      - name: 公開可能な候補一覧と取得台帳を保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: history-public-${{ github.sha }}
+          path: diagnostics/history/
+          retention-days: 90
+          if-no-files-found: error
+      - name: 暗号化済み原市場データだけを保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: history-encrypted-${{ github.sha }}
+          path: data/history/encrypted/*.enc
+          retention-days: 90
+          if-no-files-found: error
