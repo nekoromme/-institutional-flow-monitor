@@ -1,0 +1,42 @@
+{
+  "version": "factor-corporate-actions-0.1",
+  "review_date": "2026-09-10",
+  "evaluation_end": "2026-03-31",
+  "use": "Post-period quality diagnosis only; not historical selection or features.",
+  "events": [
+    {
+      "symbol": "SMSI",
+      "old_shares_per_new_share": 5,
+      "documented_split_adjusted_trading_date": "2026-06-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/948708/000143774926018372/smsi20260526_8k.htm",
+      "source_sha256": "e9fb5d564d9a2b9b2546762c874da02d82ccb9d6f6b3af58eb72b7c55e635bd0",
+      "source_read_method": "downloaded_html",
+      "after_evaluation_end": true,
+      "price_and_volume_scale_reconciled": true,
+      "production_hold_released": false
+    },
+    {
+      "symbol": "GAME",
+      "old_shares_per_new_share": 8,
+      "documented_split_adjusted_trading_date": "2026-08-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1714562/000149315226039213/form8-k.htm",
+      "source_sha256": "1c84bb401e8439a8e5329b7ad246b8936143da30c694a45e37a42c291f572885",
+      "source_read_method": "downloaded_html",
+      "after_evaluation_end": true,
+      "price_and_volume_scale_reconciled": true,
+      "production_hold_released": false
+    },
+    {
+      "symbol": "KAPA",
+      "old_shares_per_new_share": 7,
+      "documented_split_adjusted_trading_date": "2026-09-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1962011/000149315226039695/form8-k.htm",
+      "source_sha256": null,
+      "source_read_method": "web",
+      "after_evaluation_end": true,
+      "price_and_volume_scale_reconciled": false,
+      "production_hold_released": false
+    }
+  ],
+  "kapa_remaining_issue": "Some paired prices exceed the diagnostic tolerance; volume scale agrees. No hold release."
+}

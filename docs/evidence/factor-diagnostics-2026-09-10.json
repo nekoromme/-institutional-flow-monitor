@@ -1,0 +1,1446 @@
+{
+  "version": "factor-diagnostics-0.1",
+  "protocol_sha256": "ebb17d254790110735dd1de7952b88773f3139b462c3742dbaa2f853b66c3a92",
+  "plan_sha256": "d06325c1f9361ff0c7c44d7b07181a0683f16b7939736b00fcfc0d948e27aaf6",
+  "code_commit": "ba55e81609f9adbab402bd4b68e1443e48cef188",
+  "private_market_sha256": "5893aec6170474b9126d4cc616bdced5af2ebfccd790509ca94bea66922c805b",
+  "holdings_sha256": "97d19c20e668ae1bdc676bd69f2a9662fb8fe0858a1fee135e8a0ab269e9a9f9",
+  "same_complete_cohort": [
+    "RS",
+    "TTWO",
+    "DCGO",
+    "FHTX",
+    "FSBW",
+    "INGN",
+    "APYX",
+    "TIPT",
+    "LUNG",
+    "UFCS",
+    "AMZN",
+    "EPM",
+    "MUSA",
+    "PNTG",
+    "ANIK",
+    "AAOI",
+    "LAW",
+    "DAIO",
+    "VKTX",
+    "BRT",
+    "LQDT",
+    "OIS",
+    "HYFM",
+    "SND",
+    "PRI",
+    "MGNI",
+    "FMBH",
+    "DXCM",
+    "TGTX",
+    "HUM",
+    "BWB",
+    "MET",
+    "CSR",
+    "ASGN",
+    "CECO",
+    "SPRO",
+    "MSA",
+    "WYNN",
+    "IVR",
+    "IQV",
+    "NUTX",
+    "ASB",
+    "LTBR",
+    "CNXC",
+    "ATKR",
+    "CJMB",
+    "CLNE",
+    "HE",
+    "AMR"
+  ],
+  "month_prefix_comparisons": {
+    "2026-01-31": {
+      "primary_low_reported_ratio": {
+        "n": 2,
+        "any_abnormal": 2,
+        "any_repeated": 1,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "HYFM",
+              "CJMB"
+            ],
+            "n": 2,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [],
+            "n": 0,
+            "reported_increases": 0,
+            "increase_fraction": null
+          },
+          "difference_percentage_points": null,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 0,
+          "valid_deletions": 0,
+          "minimum_difference_points": null,
+          "maximum_difference_points": null,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "relative_lower_third": {
+        "n": 14,
+        "any_abnormal": 7,
+        "any_repeated": 4,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "DCGO",
+              "APYX",
+              "HYFM",
+              "SND",
+              "FMBH",
+              "IVR",
+              "CJMB"
+            ],
+            "n": 7,
+            "reported_increases": 4,
+            "increase_fraction": 0.5714285714285714
+          },
+          "no_signal": {
+            "symbols": [
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "SPRO",
+              "NUTX",
+              "LTBR",
+              "CLNE"
+            ],
+            "n": 7,
+            "reported_increases": 4,
+            "increase_fraction": 0.5714285714285714
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "APYX",
+              "FMBH",
+              "IVR",
+              "CJMB"
+            ],
+            "n": 4,
+            "reported_increases": 3,
+            "increase_fraction": 0.75
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "HYFM",
+              "SND",
+              "SPRO",
+              "NUTX",
+              "LTBR",
+              "CLNE"
+            ],
+            "n": 10,
+            "reported_increases": 5,
+            "increase_fraction": 0.5
+          },
+          "difference_percentage_points": 25,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "APYX",
+              "FMBH",
+              "IVR",
+              "CJMB"
+            ],
+            "n": 4,
+            "reported_increases": 4,
+            "increase_fraction": 1
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "HYFM",
+              "SND",
+              "SPRO",
+              "NUTX",
+              "LTBR",
+              "CLNE"
+            ],
+            "n": 10,
+            "reported_increases": 6,
+            "increase_fraction": 0.6
+          },
+          "difference_percentage_points": 40,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 25,
+          "valid_deletions": 14,
+          "minimum_difference_points": 16.666666666666664,
+          "maximum_difference_points": 50,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "all": {
+        "n": 49,
+        "any_abnormal": 24,
+        "any_repeated": 11,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "INGN",
+              "APYX",
+              "EPM",
+              "PNTG",
+              "AAOI",
+              "VKTX",
+              "OIS",
+              "HYFM",
+              "SND",
+              "PRI",
+              "FMBH",
+              "DXCM",
+              "TGTX",
+              "HUM",
+              "BWB",
+              "IVR",
+              "ASB",
+              "CNXC",
+              "ATKR",
+              "CJMB",
+              "HE"
+            ],
+            "n": 24,
+            "reported_increases": 13,
+            "increase_fraction": 0.5416666666666666
+          },
+          "no_signal": {
+            "symbols": [
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "MUSA",
+              "ANIK",
+              "LAW",
+              "DAIO",
+              "BRT",
+              "LQDT",
+              "MGNI",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "MSA",
+              "WYNN",
+              "IQV",
+              "NUTX",
+              "LTBR",
+              "CLNE",
+              "AMR"
+            ],
+            "n": 25,
+            "reported_increases": 12,
+            "increase_fraction": 0.48
+          },
+          "difference_percentage_points": 6.166666666666664,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "INGN",
+              "APYX",
+              "PNTG",
+              "AAOI",
+              "OIS",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "IVR",
+              "CNXC",
+              "CJMB"
+            ],
+            "n": 11,
+            "reported_increases": 8,
+            "increase_fraction": 0.7272727272727273
+          },
+          "no_signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "EPM",
+              "MUSA",
+              "ANIK",
+              "LAW",
+              "DAIO",
+              "VKTX",
+              "BRT",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "PRI",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "MSA",
+              "WYNN",
+              "IQV",
+              "NUTX",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "CLNE",
+              "HE",
+              "AMR"
+            ],
+            "n": 38,
+            "reported_increases": 17,
+            "increase_fraction": 0.4473684210526316
+          },
+          "difference_percentage_points": 27.990430622009573,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "INGN",
+              "APYX",
+              "PNTG",
+              "AAOI",
+              "OIS",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "IVR",
+              "CNXC",
+              "CJMB"
+            ],
+            "n": 11,
+            "reported_increases": 9,
+            "increase_fraction": 0.8181818181818182
+          },
+          "no_signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "EPM",
+              "MUSA",
+              "ANIK",
+              "LAW",
+              "DAIO",
+              "VKTX",
+              "BRT",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "PRI",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "MSA",
+              "WYNN",
+              "IQV",
+              "NUTX",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "CLNE",
+              "HE",
+              "AMR"
+            ],
+            "n": 38,
+            "reported_increases": 22,
+            "increase_fraction": 0.5789473684210527
+          },
+          "difference_percentage_points": 23.923444976076556,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 27.990430622009573,
+          "valid_deletions": 49,
+          "minimum_difference_points": 25.26315789473684,
+          "maximum_difference_points": 35.26315789473685,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      }
+    },
+    "2026-02-28": {
+      "primary_low_reported_ratio": {
+        "n": 2,
+        "any_abnormal": 2,
+        "any_repeated": 1,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "HYFM",
+              "CJMB"
+            ],
+            "n": 2,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [],
+            "n": 0,
+            "reported_increases": 0,
+            "increase_fraction": null
+          },
+          "difference_percentage_points": null,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 0,
+          "valid_deletions": 0,
+          "minimum_difference_points": null,
+          "maximum_difference_points": null,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "relative_lower_third": {
+        "n": 14,
+        "any_abnormal": 11,
+        "any_repeated": 7,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "DCGO",
+              "APYX",
+              "DAIO",
+              "HYFM",
+              "SND",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 11,
+            "reported_increases": 6,
+            "increase_fraction": 0.5454545454545454
+          },
+          "no_signal": {
+            "symbols": [
+              "TIPT",
+              "BRT",
+              "LTBR"
+            ],
+            "n": 3,
+            "reported_increases": 2,
+            "increase_fraction": 0.6666666666666666
+          },
+          "difference_percentage_points": -12.121212121212121,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "APYX",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 7,
+            "reported_increases": 5,
+            "increase_fraction": 0.7142857142857143
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "HYFM",
+              "SND",
+              "LTBR"
+            ],
+            "n": 7,
+            "reported_increases": 3,
+            "increase_fraction": 0.42857142857142855
+          },
+          "difference_percentage_points": 28.571428571428577,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "APYX",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 7,
+            "reported_increases": 5,
+            "increase_fraction": 0.7142857142857143
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "HYFM",
+              "SND",
+              "LTBR"
+            ],
+            "n": 7,
+            "reported_increases": 5,
+            "increase_fraction": 0.7142857142857143
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 28.571428571428577,
+          "valid_deletions": 14,
+          "minimum_difference_points": 21.42857142857143,
+          "maximum_difference_points": 40.47619047619048,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "all": {
+        "n": 49,
+        "any_abnormal": 41,
+        "any_repeated": 28,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "INGN",
+              "APYX",
+              "UFCS",
+              "AMZN",
+              "EPM",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "DAIO",
+              "VKTX",
+              "OIS",
+              "HYFM",
+              "SND",
+              "PRI",
+              "MGNI",
+              "FMBH",
+              "DXCM",
+              "TGTX",
+              "HUM",
+              "BWB",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "ASB",
+              "CNXC",
+              "ATKR",
+              "CJMB",
+              "CLNE",
+              "HE",
+              "AMR"
+            ],
+            "n": 41,
+            "reported_increases": 21,
+            "increase_fraction": 0.5121951219512195
+          },
+          "no_signal": {
+            "symbols": [
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "BRT",
+              "LQDT",
+              "MSA",
+              "LTBR"
+            ],
+            "n": 8,
+            "reported_increases": 4,
+            "increase_fraction": 0.5
+          },
+          "difference_percentage_points": 1.2195121951219523,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "INGN",
+              "APYX",
+              "UFCS",
+              "AMZN",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "OIS",
+              "PRI",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "MET",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "CNXC",
+              "CJMB",
+              "CLNE",
+              "AMR"
+            ],
+            "n": 28,
+            "reported_increases": 16,
+            "increase_fraction": 0.5714285714285714
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "EPM",
+              "DAIO",
+              "VKTX",
+              "BRT",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "CSR",
+              "MSA",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "HE"
+            ],
+            "n": 21,
+            "reported_increases": 9,
+            "increase_fraction": 0.42857142857142855
+          },
+          "difference_percentage_points": 14.285714285714285,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "INGN",
+              "APYX",
+              "UFCS",
+              "AMZN",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "OIS",
+              "PRI",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "MET",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "CNXC",
+              "CJMB",
+              "CLNE",
+              "AMR"
+            ],
+            "n": 28,
+            "reported_increases": 17,
+            "increase_fraction": 0.6071428571428571
+          },
+          "no_signal": {
+            "symbols": [
+              "DCGO",
+              "FHTX",
+              "FSBW",
+              "TIPT",
+              "LUNG",
+              "EPM",
+              "DAIO",
+              "VKTX",
+              "BRT",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "CSR",
+              "MSA",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "HE"
+            ],
+            "n": 21,
+            "reported_increases": 14,
+            "increase_fraction": 0.6666666666666666
+          },
+          "difference_percentage_points": -5.952380952380953,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 14.285714285714285,
+          "valid_deletions": 49,
+          "minimum_difference_points": 12.142857142857139,
+          "maximum_difference_points": 17.14285714285714,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      }
+    },
+    "2026-03-31": {
+      "primary_low_reported_ratio": {
+        "n": 2,
+        "any_abnormal": 2,
+        "any_repeated": 1,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "HYFM",
+              "CJMB"
+            ],
+            "n": 2,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [],
+            "n": 0,
+            "reported_increases": 0,
+            "increase_fraction": null
+          },
+          "difference_percentage_points": null,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 0,
+            "increase_fraction": 0
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "CJMB"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "no_signal": {
+            "symbols": [
+              "HYFM"
+            ],
+            "n": 1,
+            "reported_increases": 1,
+            "increase_fraction": 1
+          },
+          "difference_percentage_points": 0,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 0,
+          "valid_deletions": 0,
+          "minimum_difference_points": null,
+          "maximum_difference_points": null,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "relative_lower_third": {
+        "n": 14,
+        "any_abnormal": 14,
+        "any_repeated": 10,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "DCGO",
+              "APYX",
+              "TIPT",
+              "DAIO",
+              "BRT",
+              "HYFM",
+              "SND",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "LTBR",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 14,
+            "reported_increases": 8,
+            "increase_fraction": 0.5714285714285714
+          },
+          "no_signal": {
+            "symbols": [],
+            "n": 0,
+            "reported_increases": 0,
+            "increase_fraction": null
+          },
+          "difference_percentage_points": null,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "DCGO",
+              "APYX",
+              "TIPT",
+              "BRT",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 10,
+            "reported_increases": 6,
+            "increase_fraction": 0.6
+          },
+          "no_signal": {
+            "symbols": [
+              "DAIO",
+              "HYFM",
+              "SND",
+              "LTBR"
+            ],
+            "n": 4,
+            "reported_increases": 2,
+            "increase_fraction": 0.5
+          },
+          "difference_percentage_points": 9.999999999999998,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "DCGO",
+              "APYX",
+              "TIPT",
+              "BRT",
+              "FMBH",
+              "SPRO",
+              "IVR",
+              "NUTX",
+              "CJMB",
+              "CLNE"
+            ],
+            "n": 10,
+            "reported_increases": 7,
+            "increase_fraction": 0.7
+          },
+          "no_signal": {
+            "symbols": [
+              "DAIO",
+              "HYFM",
+              "SND",
+              "LTBR"
+            ],
+            "n": 4,
+            "reported_increases": 3,
+            "increase_fraction": 0.75
+          },
+          "difference_percentage_points": -5.000000000000004,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": 9.999999999999998,
+          "valid_deletions": 14,
+          "minimum_difference_points": -6.666666666666665,
+          "maximum_difference_points": 26.666666666666668,
+          "opposite_sign_deletions": 2,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      },
+      "all": {
+        "n": 49,
+        "any_abnormal": 49,
+        "any_repeated": 34,
+        "abnormal_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "FHTX",
+              "FSBW",
+              "INGN",
+              "APYX",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "EPM",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "DAIO",
+              "VKTX",
+              "BRT",
+              "LQDT",
+              "OIS",
+              "HYFM",
+              "SND",
+              "PRI",
+              "MGNI",
+              "FMBH",
+              "DXCM",
+              "TGTX",
+              "HUM",
+              "BWB",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "MSA",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "ASB",
+              "LTBR",
+              "CNXC",
+              "ATKR",
+              "CJMB",
+              "CLNE",
+              "HE",
+              "AMR"
+            ],
+            "n": 49,
+            "reported_increases": 25,
+            "increase_fraction": 0.5102040816326531
+          },
+          "no_signal": {
+            "symbols": [],
+            "n": 0,
+            "reported_increases": 0,
+            "increase_fraction": null
+          },
+          "difference_percentage_points": null,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "FSBW",
+              "INGN",
+              "APYX",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "BRT",
+              "OIS",
+              "PRI",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "CNXC",
+              "CJMB",
+              "CLNE",
+              "AMR"
+            ],
+            "n": 34,
+            "reported_increases": 17,
+            "increase_fraction": 0.5
+          },
+          "no_signal": {
+            "symbols": [
+              "FHTX",
+              "EPM",
+              "DAIO",
+              "VKTX",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "MSA",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "HE"
+            ],
+            "n": 15,
+            "reported_increases": 8,
+            "increase_fraction": 0.5333333333333333
+          },
+          "difference_percentage_points": -3.3333333333333326,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "matched_repeated_contrast": {
+          "signal": {
+            "symbols": [
+              "RS",
+              "TTWO",
+              "DCGO",
+              "FSBW",
+              "INGN",
+              "APYX",
+              "TIPT",
+              "LUNG",
+              "UFCS",
+              "AMZN",
+              "MUSA",
+              "PNTG",
+              "ANIK",
+              "AAOI",
+              "LAW",
+              "BRT",
+              "OIS",
+              "PRI",
+              "FMBH",
+              "TGTX",
+              "HUM",
+              "MET",
+              "CSR",
+              "ASGN",
+              "CECO",
+              "SPRO",
+              "WYNN",
+              "IVR",
+              "IQV",
+              "NUTX",
+              "CNXC",
+              "CJMB",
+              "CLNE",
+              "AMR"
+            ],
+            "n": 34,
+            "reported_increases": 21,
+            "increase_fraction": 0.6176470588235294
+          },
+          "no_signal": {
+            "symbols": [
+              "FHTX",
+              "EPM",
+              "DAIO",
+              "VKTX",
+              "LQDT",
+              "HYFM",
+              "SND",
+              "MGNI",
+              "DXCM",
+              "BWB",
+              "MSA",
+              "ASB",
+              "LTBR",
+              "ATKR",
+              "HE"
+            ],
+            "n": 15,
+            "reported_increases": 10,
+            "increase_fraction": 0.6666666666666666
+          },
+          "difference_percentage_points": -4.901960784313719,
+          "unit": "symbol_quarter",
+          "uncertainty": "descriptive_only; one_quarter_cross_stock_dependence_not_estimated"
+        },
+        "leave_one_out": {
+          "baseline_difference_points": -3.3333333333333326,
+          "valid_deletions": 49,
+          "minimum_difference_points": -7.14285714285714,
+          "maximum_difference_points": 0,
+          "opposite_sign_deletions": 0,
+          "interpretation": "fragility_check_not_confidence_interval"
+        }
+      }
+    }
+  },
+  "price_direction_counts": {
+    "abnormal": {
+      "down": 123,
+      "up": 103,
+      "flat": 2
+    },
+    "other": {
+      "up": 1333,
+      "down": 1386,
+      "flat": 42
+    }
+  },
+  "outcome_direction_disagreement": {
+    "n": 14,
+    "denominator": 49,
+    "symbols": [
+      "DCGO",
+      "INGN",
+      "LUNG",
+      "EPM",
+      "LAW",
+      "LQDT",
+      "OIS",
+      "HYFM",
+      "DXCM",
+      "CSR",
+      "SPRO",
+      "NUTX",
+      "CJMB",
+      "CLNE"
+    ]
+  },
+  "split_scale_diagnostics": [
+    {
+      "symbol": "SMSI",
+      "scale": {
+        "status": "uniform_reciprocal_scale",
+        "pairs": 146,
+        "observed_price_multiplier": 5,
+        "prices_match": true,
+        "volumes_match": true,
+        "official_corporate_action_certified": false
+      },
+      "judgments_identical": true,
+      "raw_known_days": 61,
+      "raw_abnormal_days": 7,
+      "raw_repeated_days": 4,
+      "production_eligibility_changed": false
+    },
+    {
+      "symbol": "GAME",
+      "scale": {
+        "status": "uniform_reciprocal_scale",
+        "pairs": 146,
+        "observed_price_multiplier": 8,
+        "prices_match": true,
+        "volumes_match": true,
+        "official_corporate_action_certified": false
+      },
+      "judgments_identical": true,
+      "raw_known_days": 61,
+      "raw_abnormal_days": 0,
+      "raw_repeated_days": 0,
+      "production_eligibility_changed": false
+    },
+    {
+      "symbol": "KAPA",
+      "scale": {
+        "status": "nonuniform_or_inconsistent_scale",
+        "pairs": 146,
+        "observed_price_multiplier": 7,
+        "prices_match": false,
+        "volumes_match": true,
+        "official_corporate_action_certified": false
+      },
+      "judgments_identical": true,
+      "raw_known_days": 61,
+      "raw_abnormal_days": 4,
+      "raw_repeated_days": 1,
+      "production_eligibility_changed": false
+    }
+  ],
+  "zero_volume_sensitivity": {
+    "symbol": "LSH",
+    "assumption": "reported_zero_is_valid_no_trade_not_missing_data",
+    "baseline_known_days": 1,
+    "hypothetical_known_days": 61,
+    "hypothetical_abnormal_days": 9,
+    "hypothetical_repeated_days": 7,
+    "changed_dates": [
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09",
+      "2026-01-12",
+      "2026-01-13",
+      "2026-01-14",
+      "2026-01-15",
+      "2026-01-16",
+      "2026-01-20",
+      "2026-01-21",
+      "2026-01-22",
+      "2026-01-23",
+      "2026-01-26",
+      "2026-01-27",
+      "2026-01-28",
+      "2026-01-29",
+      "2026-01-30",
+      "2026-02-02",
+      "2026-02-03",
+      "2026-02-04",
+      "2026-02-05",
+      "2026-02-06",
+      "2026-02-09",
+      "2026-02-10",
+      "2026-02-11",
+      "2026-02-12",
+      "2026-02-13",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-02-19",
+      "2026-02-20",
+      "2026-02-23",
+      "2026-02-24",
+      "2026-02-25",
+      "2026-02-26",
+      "2026-02-27",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31"
+    ],
+    "production_eligibility_changed": false
+  },
+  "optimization_performed": false,
+  "production_model_changed": false,
+  "causal_effect_identified": false,
+  "new_quarter_validated": false,
+  "institutional_detection_accuracy": null,
+  "validation": {
+    "cjmb_score_unchanged": true,
+    "code_commit": "ba55e81609f9adbab402bd4b68e1443e48cef188",
+    "conclusion": "success",
+    "existing_five_score_unchanged": true,
+    "job_id": 102835831297,
+    "plan_commit": "32172186236134efdf06501acf97220d37ce62ba",
+    "run_id": 34466379088,
+    "tests_passed": 133,
+    "url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34466379088"
+  }
+}
