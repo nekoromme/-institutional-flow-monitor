@@ -16,7 +16,7 @@ from .cohort import AS_OF
 from .http_client import SafeHttp, ProbeError
 from .identity_reference import HTML_REMOVAL_REVIEWS
 
-VERSION = 'identity-sources-0.3'
+VERSION = 'identity-sources-0.3.1'
 
 
 def local(tag):
@@ -242,7 +242,11 @@ def download_sources(root, proposals, limit=20):
         source = item['source']; url = 'https://www.sec.gov/Archives/' + source['filename']
         path = folder / source['filename'].split('/')[-1]
         previous = prior.get(source['filename'])
-        if previous and previous['status'] == 'blocked':
+        # 自分で設けた1回分の時間・件数制限は、次の明示的な取得で再開できる。
+        # 提供元のアクセス拒否や容量超過まで繰り返し要求する変更ではない。
+        resuming_budget = (previous and previous['status'] == 'blocked'
+                           and previous.get('error', {}).get('category') == 'request_or_time_budget_exceeded')
+        if previous and previous['status'] == 'blocked' and not resuming_budget:
             return {**previous, **item}
         if previous and path.exists() and digest(path) != previous.get('sha256'):
             raise ValueError('cached_original_changed')
@@ -250,6 +254,7 @@ def download_sources(root, proposals, limit=20):
             if not path.exists():
                 path.write_bytes(local_client.client.read(url, max_bytes=24_000_000))
             return {**item, 'status': 'downloaded', 'url': url,
+                    **({'resumed_after': 'request_or_time_budget_exceeded'} if resuming_budget else {}),
                     'path': str(path.relative_to(root)), 'sha256': digest(path), 'bytes': path.stat().st_size}
         except ProbeError as exc:
             return {**item, 'status': 'blocked', 'url': url, 'error': exc.summary()}

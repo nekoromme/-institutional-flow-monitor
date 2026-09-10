@@ -1,10 +1,15 @@
 """名前の似た会社・保有者と発行者・普通株と社債を混同しない検査。"""
 import unittest
 import hashlib
+import json
+import io
+from contextlib import redirect_stdout
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from flow_probe.identity import name_key, propose
-from flow_probe.identity_sources import ownership_identity, listing_cover, listing_cover_parts, removal_notice, source_documents, common_title
+from flow_probe.identity_sources import ownership_identity, listing_cover, listing_cover_parts, removal_notice, source_documents, common_title, download_sources
 
 CIK, CUSIP = '0000000001', '00848K309'
 
@@ -156,6 +161,26 @@ class IdentityTests(unittest.TestCase):
     def test_unreviewed_html_removal_remains_unknown(self):
         with self.assertRaisesRegex(ValueError, 'missing_or_ambiguous_primary_xml'):
             removal_notice(body('<html>Common stock</html>', '25'), source('25'), CIK)
+
+    def test_new_run_resumes_local_budget_but_preserves_access_and_size_blocks(self):
+        for category in ['request_or_time_budget_exceeded', 'forbidden_check_auth_and_entitlement', 'response_too_large']:
+            with self.subTest(category=category), TemporaryDirectory() as directory:
+                root = Path(directory); folder = root / 'diagnostics/identity'; folder.mkdir(parents=True)
+                item = {'source': source('10-Q'), 'status': 'blocked', 'url': 'https://www.sec.gov/Archives/' + source()['filename'],
+                        'error': {'category': category, 'http_status': None}}
+                (folder / 'source-download.json').write_text(json.dumps({'files': [item]}))
+                proposals = {'rows': [{'ordinal': 1, 'selected_sources': {'listing_cover': source('10-Q')}}]}
+                with patch('flow_probe.identity_sources.SafeHttp') as client, redirect_stdout(io.StringIO()):
+                    client.return_value.read.return_value = b'original filing'
+                    report = download_sources(root, proposals, limit=1)
+                result = report['files'][0]
+                if category == 'request_or_time_budget_exceeded':
+                    self.assertEqual(result['status'], 'downloaded')
+                    self.assertEqual(result['resumed_after'], category)
+                    self.assertEqual(client.return_value.read.call_count, 1)
+                else:
+                    self.assertEqual(result['status'], 'blocked')
+                    client.return_value.read.assert_not_called()
 
 
 if __name__ == '__main__':
