@@ -1,0 +1,3281 @@
+{
+  "version": "class-expansion-0.1",
+  "selection_as_of": "2026-01-01",
+  "holdings_period": "2025-09-30",
+  "catalog_sha256": "e3ebd8f3f67a7402fdf8999cae02f2cf9085d41725aadcc30f4b24d1a0518361",
+  "selection_rule": "first_10_numeric_candidates_by_frozen_ordinal_excluding_previously_reviewed_4_179_189; no_ratio_quality_return_or_signal_filter",
+  "rows": [
+    {
+      "ordinal": 3,
+      "ticker": "RS",
+      "cusip": "759509102",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 52383000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/861884/0001104659-25-103175.txt",
+          "source_sha256": "7186612ebfc35356a9ada34dbb7396c99f07a12efeff208d83a4d865a04e69f7",
+          "form": "10-Q",
+          "filed": "2025-10-28"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 41339146,
+      "diagnostic_ratio_percent": 78.917103,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 14,
+          "potential_overlaps": 122,
+          "unresolved_references": 226,
+          "repeated_rows": 15,
+          "unreviewed_class_rows": 16,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 170
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 332,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 8,
+      "ticker": "TTWO",
+      "cusip": "874054109",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 184700000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 100000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/946581/0001628280-25-050326.txt",
+          "source_sha256": "ac0a65495cef46d812e4c9cff39954acf3425f184e24e0ca5f5ad4e4cf84cfe6",
+          "form": "10-Q",
+          "filed": "2025-11-07"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 177996041,
+      "diagnostic_ratio_percent": 96.370352,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 22,
+          "potential_overlaps": 166,
+          "unresolved_references": 363,
+          "repeated_rows": 32,
+          "unreviewed_class_rows": 30,
+          "confidential_omission_managers": 5,
+          "confidential_status_unknown_managers": 291
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 505,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 9,
+      "ticker": "DCGO",
+      "cusip": "256086109",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 97810755,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822359/0001628280-25-051102.txt",
+          "source_sha256": "f37fa605bd730cd5d64e737a62588d1eddc8ab9823f72b05a827df3915509424",
+          "form": "10-Q",
+          "filed": "2025-11-10"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 49522890,
+      "diagnostic_ratio_percent": 50.631334,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 12,
+          "unresolved_references": 19,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 34
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 4,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 11,
+      "ticker": "SMSI",
+      "cusip": "832154405",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 21477754,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/948708/0001437749-25-033340.txt",
+          "source_sha256": "58057587eec05cc81d8f7bedc7f4f2a6a6e7e899b1b48f05fd2e0b78e7f6acbc",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 1475408,
+      "diagnostic_ratio_percent": 6.869471,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 5,
+          "repeated_rows": 1,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 7
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 1,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 12,
+      "ticker": "FHTX",
+      "cusip": "344174107",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 56542877,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1822462/0001628280-25-049238.txt",
+          "source_sha256": "235834521c7195404c3118d132c2cde67810c0bb0f484144f6ae137e4913fec6",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 40915230,
+      "diagnostic_ratio_percent": 72.361422,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 9,
+          "unresolved_references": 13,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 23
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 4,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 16,
+      "ticker": "FSBW",
+      "cusip": "30263Y104",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 7535330,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1530249/000143774925034119/fsbw20250930_10q.htm",
+          "source_sha256": "2f93111432957211f58668c7c63b6cef7ca6188eddc0b7b2510c68055f7f9eda",
+          "form": "10-Q",
+          "filed": "2025-11-10"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 4676972,
+      "diagnostic_ratio_percent": 62.067249,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 13,
+          "unresolved_references": 14,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 19
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 7,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 17,
+      "ticker": "INGN",
+      "cusip": "45780L104",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 27148482,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1294133/0001193125-25-269484.txt",
+          "source_sha256": "b72de22b8fef0c7c96dddb7dcf407ae16c2558012166ebae779ee823fa192442",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 18467771,
+      "diagnostic_ratio_percent": 68.025059,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 19,
+          "unresolved_references": 35,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 33
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 8,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 18,
+      "ticker": "APYX",
+      "cusip": "03837C106",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 37819478,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/719135/0001437749-25-033499.txt",
+          "source_sha256": "4a2317457d346cb527bc3cbc1ded5485e9d4247118a2cd75bda290ade93a70db",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 15737051,
+      "diagnostic_ratio_percent": 41.610968,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 1,
+          "unresolved_references": 10,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 9
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 1,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 20,
+      "ticker": "TIPT",
+      "cusip": "88822Q103",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 37820120,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1393726/000119312525259809/tipt-20250930.htm",
+          "source_sha256": "0cc73a3d21c5db38bdd009ebeb8950f7406b5d15b50ea13476893b852b0c5a03",
+          "form": "10-Q",
+          "filed": "2025-10-31"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 13356893,
+      "diagnostic_ratio_percent": 35.316897,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 18,
+          "unresolved_references": 35,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 2,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 34
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 14,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 28,
+      "ticker": "LUNG",
+      "cusip": "745848101",
+      "denominator_review": {
+        "security_class_verified": true,
+        "shares": 41246534,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1127537/0001127537-25-000059.txt",
+          "source_sha256": "9c18a5d7aeda9c37e80073f91048f7595f2fd4088f6f13519fa2d86a6b9a2350",
+          "form": "10-Q",
+          "filed": "2025-11-12"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      },
+      "reported_shares_before_overlap_resolution": 32330477,
+      "diagnostic_ratio_percent": 78.3835,
+      "holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 7,
+          "unresolved_references": 17,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 23
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "same_size_cross_manager_position_pairs": 3,
+      "same_size_is_overlap_proof": false,
+      "automatically_subtracted": 0,
+      "listing_at_selection_date_confirmed": false,
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    }
+  ],
+  "candidate_inventory": [
+    {
+      "ordinal": 1,
+      "cusip": "86745K104",
+      "ticker": "NOVA",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 2,
+      "cusip": "88337F105",
+      "ticker": "ODP",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 3,
+      "cusip": "759509102",
+      "ticker": "RS",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "ticker": "LSH",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 5,
+      "cusip": "68375N103",
+      "ticker": "OPK",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 6,
+      "cusip": "95766N103",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 7,
+      "cusip": "78454L100",
+      "ticker": "SM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 8,
+      "cusip": "874054109",
+      "ticker": "TTWO",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 9,
+      "cusip": "256086109",
+      "ticker": "DCGO",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 10,
+      "cusip": "09256A109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 11,
+      "cusip": "832154405",
+      "ticker": "SMSI",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 12,
+      "cusip": "344174107",
+      "ticker": "FHTX",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 13,
+      "cusip": "88688T100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 14,
+      "cusip": "67000B104",
+      "ticker": "NOVT",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 15,
+      "cusip": "26873J107",
+      "ticker": "EMX",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 16,
+      "cusip": "30263Y104",
+      "ticker": "FSBW",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 17,
+      "cusip": "45780L104",
+      "ticker": "INGN",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 18,
+      "cusip": "03837C106",
+      "ticker": "APYX",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 19,
+      "cusip": "500754106",
+      "ticker": "KHC",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 20,
+      "cusip": "88822Q103",
+      "ticker": "TIPT",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 21,
+      "cusip": "67064R102",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 22,
+      "cusip": "524660107",
+      "ticker": "LEG",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 23,
+      "cusip": "444097109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 24,
+      "cusip": "65441V101",
+      "ticker": "NINE",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 25,
+      "cusip": "443510607",
+      "ticker": "HUBB",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 26,
+      "cusip": "723484101",
+      "ticker": "PNW",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 27,
+      "cusip": "379463102",
+      "ticker": "GWRS",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 28,
+      "cusip": "745848101",
+      "ticker": "LUNG",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 29,
+      "cusip": "36352H100",
+      "ticker": "GAU",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 30,
+      "cusip": "910340108",
+      "ticker": "UFCS",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 31,
+      "cusip": "250639101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 32,
+      "cusip": "27829G106",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 33,
+      "cusip": "023135106",
+      "ticker": "AMZN",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 34,
+      "cusip": "69121K104",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 35,
+      "cusip": "10806X102",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 36,
+      "cusip": "421298100",
+      "ticker": "HAYW",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 37,
+      "cusip": "76882G107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 38,
+      "cusip": "30049A107",
+      "ticker": "EPM",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 39,
+      "cusip": "527064109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 40,
+      "cusip": "782011100",
+      "ticker": "RSI",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 41,
+      "cusip": "092479104",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 42,
+      "cusip": "626755102",
+      "ticker": "MUSA",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 43,
+      "cusip": "258622109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 44,
+      "cusip": "363576109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 45,
+      "cusip": "683416101",
+      "ticker": "OOMA",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 46,
+      "cusip": "70805E109",
+      "ticker": "PNTG",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 47,
+      "cusip": "32055Y201",
+      "ticker": "FIBK",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 48,
+      "cusip": "872540109",
+      "ticker": "TJX",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 49,
+      "cusip": "45333F109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 50,
+      "cusip": "433535101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 51,
+      "cusip": "84265V105",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 52,
+      "cusip": "647551100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 53,
+      "cusip": "830940102",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 54,
+      "cusip": "12763L105",
+      "ticker": "CDRE",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 55,
+      "cusip": "035255108",
+      "ticker": "ANIK",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 56,
+      "cusip": "651229106",
+      "ticker": "NWL",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 57,
+      "cusip": "84741T104",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 58,
+      "cusip": "401617105",
+      "ticker": "GES",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 59,
+      "cusip": "03823U102",
+      "ticker": "AAOI",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 60,
+      "cusip": "126327105",
+      "ticker": "LAW",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 61,
+      "cusip": "760911107",
+      "ticker": "REFR",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 62,
+      "cusip": "48238T109",
+      "ticker": "KAR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 63,
+      "cusip": "68213N109",
+      "ticker": "OMCL",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 64,
+      "cusip": "19842X109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 65,
+      "cusip": "440327104",
+      "ticker": "HMN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 66,
+      "cusip": "17248W303",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 67,
+      "cusip": "237690102",
+      "ticker": "DAIO",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 68,
+      "cusip": "45816D100",
+      "ticker": "CCRD",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 69,
+      "cusip": "675232102",
+      "ticker": "OII",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 70,
+      "cusip": "76152G100",
+      "ticker": "RVPH",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 71,
+      "cusip": "668771108",
+      "ticker": "GEN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 72,
+      "cusip": "09255P107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 73,
+      "cusip": "74317M104",
+      "ticker": "PAL",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 74,
+      "cusip": "92686J106",
+      "ticker": "VKTX",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 75,
+      "cusip": "055645303",
+      "ticker": "BRT",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 76,
+      "cusip": "126633205",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 77,
+      "cusip": "40434L105",
+      "ticker": "HPQ",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 78,
+      "cusip": "228895108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 79,
+      "cusip": "53635B107",
+      "ticker": "LQDT",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 80,
+      "cusip": "N5749R100",
+      "ticker": "MRUS",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 81,
+      "cusip": "03475V101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 82,
+      "cusip": "04638F108",
+      "ticker": "ALOT",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 83,
+      "cusip": "516806205",
+      "ticker": "VTLE",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 84,
+      "cusip": "G0378L100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 85,
+      "cusip": "678026105",
+      "ticker": "OIS",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 86,
+      "cusip": "60855R100",
+      "ticker": "MOH",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 87,
+      "cusip": "55939A107",
+      "ticker": "MAGN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 88,
+      "cusip": "401664107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 89,
+      "cusip": "65487K100",
+      "ticker": "LASR",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 90,
+      "cusip": "278279104",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 91,
+      "cusip": "45826H109",
+      "ticker": "ITGR",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 92,
+      "cusip": "42226A107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 93,
+      "cusip": "554382101",
+      "ticker": "MAC",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 94,
+      "cusip": "36468G103",
+      "ticker": "GAME",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 95,
+      "cusip": "55025L108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 96,
+      "cusip": "23285D109",
+      "ticker": "CTKB",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 97,
+      "cusip": "339764201",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 98,
+      "cusip": "21676P103",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 99,
+      "cusip": "602496101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 100,
+      "cusip": "44888K407",
+      "ticker": "HYFM",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 101,
+      "cusip": "04272N102",
+      "ticker": "AVBP",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 102,
+      "cusip": "543518104",
+      "ticker": "LOOP",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 103,
+      "cusip": "83191H107",
+      "ticker": "SND",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 104,
+      "cusip": "425885100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 105,
+      "cusip": "254709108",
+      "ticker": "DFS",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 106,
+      "cusip": "98585N106",
+      "ticker": "YEXT",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 107,
+      "cusip": "294766100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 108,
+      "cusip": "095306106",
+      "ticker": "BLBD",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 109,
+      "cusip": "532206109",
+      "ticker": "LIF",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 110,
+      "cusip": "74164M108",
+      "ticker": "PRI",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 111,
+      "cusip": "00847J105",
+      "ticker": "AGYS",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 112,
+      "cusip": "18913Y103",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 113,
+      "cusip": "693475105",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 114,
+      "cusip": "92823T207",
+      "ticker": "VHC",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 115,
+      "cusip": "09627Y109",
+      "ticker": "BPMC",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 116,
+      "cusip": "55955D100",
+      "ticker": "MGNI",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 117,
+      "cusip": "58844R108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 118,
+      "cusip": "00373V100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 119,
+      "cusip": "876511106",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 120,
+      "cusip": "75508B104",
+      "ticker": "RYAM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 121,
+      "cusip": "98943L107",
+      "ticker": "ZNTL",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 122,
+      "cusip": "59151K108",
+      "ticker": "MEOH",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 123,
+      "cusip": "879369106",
+      "ticker": "TFX",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 124,
+      "cusip": "05329W102",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 125,
+      "cusip": "320866106",
+      "ticker": "FMBH",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 126,
+      "cusip": "252131107",
+      "ticker": "DXCM",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 127,
+      "cusip": "55616P104",
+      "ticker": "M",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 128,
+      "cusip": "92922P106",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 129,
+      "cusip": "88322Q108",
+      "ticker": "TGTX",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 130,
+      "cusip": "444859102",
+      "ticker": "HUM",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 131,
+      "cusip": "600544100",
+      "ticker": "MLKN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 132,
+      "cusip": "108621103",
+      "ticker": "BWB",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 133,
+      "cusip": "20337X109",
+      "ticker": "COMM",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 134,
+      "cusip": "256163106",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 135,
+      "cusip": "62944T105",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 136,
+      "cusip": "59156R108",
+      "ticker": "MET",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 137,
+      "cusip": "070203104",
+      "ticker": "BSET",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 138,
+      "cusip": "26142Q304",
+      "ticker": "DPRO",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 139,
+      "cusip": "749685103",
+      "ticker": "RPM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 140,
+      "cusip": "776696106",
+      "ticker": "ROP",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 141,
+      "cusip": "15202L107",
+      "ticker": "CSR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 142,
+      "cusip": "00191U102",
+      "ticker": "ASGN",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 143,
+      "cusip": "69924R108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 144,
+      "cusip": "16934Q802",
+      "ticker": "CIM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 145,
+      "cusip": "45674E109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 146,
+      "cusip": "666762109",
+      "ticker": "NRIM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 147,
+      "cusip": "018581108",
+      "ticker": "BFH",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 148,
+      "cusip": "912909108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 149,
+      "cusip": "844895102",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 150,
+      "cusip": "125141101",
+      "ticker": "CECO",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 151,
+      "cusip": "396879108",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 152,
+      "cusip": "416515104",
+      "ticker": "HIG",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 153,
+      "cusip": "84833T103",
+      "ticker": "SPRO",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 154,
+      "cusip": "67073S307",
+      "ticker": "IMG",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 155,
+      "cusip": "609786108",
+      "ticker": "MGRM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 156,
+      "cusip": "88162G103",
+      "ticker": "TTEK",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 157,
+      "cusip": "573075108",
+      "ticker": "MRTN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 158,
+      "cusip": "46116X101",
+      "ticker": "ITCI",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 159,
+      "cusip": "G0750C108",
+      "ticker": "AXTA",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 160,
+      "cusip": "553498106",
+      "ticker": "MSA",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 161,
+      "cusip": "89142B107",
+      "ticker": "CURV",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 162,
+      "cusip": "844741108",
+      "ticker": "LUV",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 163,
+      "cusip": "48666K109",
+      "ticker": "KBH",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 164,
+      "cusip": "55453W105",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 165,
+      "cusip": "74460D109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 166,
+      "cusip": "983134107",
+      "ticker": "WYNN",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 167,
+      "cusip": "87807B107",
+      "ticker": "TRP",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 168,
+      "cusip": "94845U105",
+      "ticker": "WBTN",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 169,
+      "cusip": "08915P101",
+      "ticker": "BGFV",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 170,
+      "cusip": "14216R101",
+      "ticker": "CARM",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "common_stock_removal_notice_requires_resolution_before_admission",
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "registration_removal_or_termination_indexed_requires_security_review",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 171,
+      "cusip": "806037107",
+      "ticker": "SCSC",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 172,
+      "cusip": "46131B704",
+      "ticker": "IVR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 173,
+      "cusip": "29271Q103",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 174,
+      "cusip": "46266C105",
+      "ticker": "IQV",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 175,
+      "cusip": "670928100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 176,
+      "cusip": "67079U306",
+      "ticker": "NUTX",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 177,
+      "cusip": "045487105",
+      "ticker": "ASB",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 178,
+      "cusip": "36828A101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "ticker": "KAPA",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 180,
+      "cusip": "75902K106",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 181,
+      "cusip": "67401P405",
+      "ticker": "OCSL",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 182,
+      "cusip": "53224K302",
+      "ticker": "LTBR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 183,
+      "cusip": "76881Y109",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 184,
+      "cusip": "87583X109",
+      "ticker": "TNGX",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "diagnostic_ratio_exceeds_100_percent_requires_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 185,
+      "cusip": "09250W107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 186,
+      "cusip": "20602D101",
+      "ticker": "CNXC",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 187,
+      "cusip": "233331107",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 188,
+      "cusip": "047649108",
+      "ticker": "ATKR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "ticker": "CJMB",
+      "class_status": "verified",
+      "remaining_review_reasons": [
+        "listing_at_selection_date_not_confirmed"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 190,
+      "cusip": "816307300",
+      "ticker": "SLQT",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 191,
+      "cusip": "33734E103",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "investment_fund_forms_indexed_requires_entity_review",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 192,
+      "cusip": "27829L105",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 193,
+      "cusip": "75943R102",
+      "ticker": "RLAY",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 194,
+      "cusip": "68827L101",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "foreign_issuer_forms_indexed_requires_scope_review",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 195,
+      "cusip": "053807103",
+      "ticker": "AVT",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 196,
+      "cusip": "184499101",
+      "ticker": "CLNE",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 197,
+      "cusip": "419870100",
+      "ticker": "HE",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 198,
+      "cusip": "020764106",
+      "ticker": "AMR",
+      "class_status": "numeric_candidate_unreviewed",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 199,
+      "cusip": "23331S100",
+      "ticker": null,
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "historical_security_identity_incomplete",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    },
+    {
+      "ordinal": 200,
+      "cusip": "405024100",
+      "ticker": "HAE",
+      "class_status": "denominator_unavailable",
+      "remaining_review_reasons": [
+        "denominator_security_class_not_certified",
+        "exact_period_denominator_unavailable_or_ambiguous",
+        "listing_at_selection_date_not_confirmed",
+        "reported_holdings_aggregation_requires_review"
+      ],
+      "low_ownership_eligible": null,
+      "eligible_for_accuracy_measurement": false
+    }
+  ],
+  "summary": {
+    "fixed_candidates": 200,
+    "additional_class_reviews": 10,
+    "total_class_reviews": 13,
+    "numeric_candidates_still_unreviewed": 52,
+    "separate_numeric_fact_and_visible_row": 3,
+    "rounded_denominators": 2,
+    "new_accuracy_eligible": 0,
+    "network_requests": 0
+  },
+  "limitations": [
+    "class_review_only_not_holdings_aggregation_clearance",
+    "pre_cutoff_filing_listing_not_selection_date_listing_confirmation",
+    "comparison_group_and_low_ownership_rule_not_finalized",
+    "no_signal_return_or_accuracy_result"
+  ],
+  "ci_validation": {
+    "run_id": 34461044992,
+    "job_id": 102818685697,
+    "url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34461044992",
+    "code_commit": "0bf3bfaa32a169f17511b4b1b923182f9dbdb639",
+    "conclusion": "success",
+    "tests_passed": 122,
+    "existing_five_scored_dataset_sha256": "eead8794c7412db7115f0d3330e7fd54f03ab0a96b29de96cce405caf55b622e",
+    "existing_five_score_unchanged": true,
+    "cjmb_scored_sha256": "4661309984517166032c696e156f78ed3405b58284c81e9d3bb04eefc236e4d4",
+    "cjmb_abnormal_days": 8,
+    "cjmb_repeated_abnormal_days": 5,
+    "class_original_source_review_execution": "local_saved_original_documents_not_downloaded_by_ci"
+  }
+}
