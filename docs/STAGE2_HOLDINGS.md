@@ -101,6 +101,8 @@ QMCOでは次の三つが別の数字になる。
 - `flow_probe/holdings_reference.py`：原書類で確認した分母と証拠。日付・提出番号・値が変わったら確認済み判定を引き継がない。
 - `tests/test_holdings.py`：追加19件。既存分を含む44件が成功した。これはコードの動作確認で、投資成績の検証ではない。
 
+同じコードのGitHub上の44件の動作確認と、市場データの接続試験も成功した。[実行記録](https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34435301584)（コード変更 `e8b867993e6ce7caf52b0ca0eabcb18b7d1fd8ca`）。一括保有資料の実データでの実行は今回の作業環境で行ったもので、このGitHubの実行に含めたという意味ではない。
+
 本物の二期のZIP、二期の公式証券一覧、5社の発行済み株数で処理を実行した。証券番号の先頭の0を落とさず、すべての明細を読み切っている。[2025年末の公式証券一覧](https://www.sec.gov/files/investment/13flist2025q4.txt)、[2026年3月末の公式証券一覧](https://www.sec.gov/files/investment/13flist2026q1.txt)
 
 ```bash

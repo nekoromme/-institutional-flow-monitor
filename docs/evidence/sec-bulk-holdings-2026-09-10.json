@@ -3531,6 +3531,13 @@
   },
   "verification": {
     "python_unittest_passed": 44,
-    "market_data_reacquisition_required_for_this_audit": false
+    "market_data_reacquisition_required_for_this_audit": false,
+    "code_commit": "e8b867993e6ce7caf52b0ca0eabcb18b7d1fd8ca",
+    "github_run_id": 34435301584,
+    "github_run_url": "https://github.com/nekoromme/-institutional-flow-monitor/actions/runs/34435301584",
+    "github_conclusion": "success",
+    "github_tests_passed": 44,
+    "bulk_audit_execution": "workspace",
+    "github_workflow_executes_bulk_audit": false
   }
 }
