@@ -1,0 +1,1031 @@
+{
+  "version": "class-full-0.1",
+  "catalog_sha256": "c786f62ad506fabf3edcdd293d58edac64bf071b659720cbd1f7c6fc2fbd2448",
+  "results": [
+    {
+      "ordinal": 30,
+      "ticker": "UFCS",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 25514329,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/101199/0000101199-25-000072.txt",
+          "source_sha256": "75fa1b76cd0c27519e77dec95ae2af166aa97b03a6b7cc8948e9a911af0cf5b5",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 33,
+      "ticker": "AMZN",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 10687000000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/0001018724-25-000123.txt",
+          "source_sha256": "f41d5e070769e403de5b9cf900f4a351b62edbd48746f0400626fabb9cbd4a65",
+          "form": "10-Q",
+          "filed": "2025-10-31"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 38,
+      "ticker": "EPM",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 34647751,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1006655/0001104659-25-110387.txt",
+          "source_sha256": "c82368a634b35261215dbbe21aabbd29a7c2c3e9d17cd5b16ddc523113c3a3f4",
+          "form": "10-Q",
+          "filed": "2025-11-12"
+        }
+      }
+    },
+    {
+      "ordinal": 42,
+      "ticker": "MUSA",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 18734447,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1573516/0001573516-25-000074.txt",
+          "source_sha256": "f3a0466bc9bdde8819c217dfc3472b98aab41a2d0faaa8443c1c194d1b7444b7",
+          "form": "10-Q",
+          "filed": "2025-10-30"
+        }
+      }
+    },
+    {
+      "ordinal": 46,
+      "ticker": "PNTG",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 34570000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1766400/0001766400-25-000139.txt",
+          "source_sha256": "03c031b2f3277349c48c44fe5ca6cf766e6d9f3d182c098a2abeebf191e7be59",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 55,
+      "ticker": "ANIK",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 14421000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/898437/0001171843-25-007032.txt",
+          "source_sha256": "544303e112f0e5fefe200eac59a0318a6a9e8060c84ae85f009fb66566fc0108",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 59,
+      "ticker": "AAOI",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 68065000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1158114/0001437749-25-033627.txt",
+          "source_sha256": "3ce94ff6073d35a7a7c6ae60620d21adf2fdf619b7d243653e2df2f6d88fd43a",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        }
+      }
+    },
+    {
+      "ordinal": 60,
+      "ticker": "LAW",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 62493000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1625641/0001625641-25-000172.txt",
+          "source_sha256": "5255f3d9d44e37d932c3d1b6582831550860c9f836d38ef3cb3e03b62e34e9e0",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 62,
+      "ticker": "KAR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 106449867,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1395942/0001395942-25-000068.txt",
+          "source_sha256": "a734cf4aa9d0ff2dd575e600756301f9c72f364e9b4c13f89d469d871cc80ad9",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 63,
+      "ticker": "OMCL",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 44876000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/926326/0000926326-25-000031.txt",
+          "source_sha256": "01165416ad28bf86d4dec6130b3d1de53d47d4961cf0b64968e607a04cc328bd",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 67,
+      "ticker": "DAIO",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 9390730,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/351998/0001654954-25-012945.txt",
+          "source_sha256": "c1c1e2dac2be140c45aa6a9327762154a4b8aa1abf76be05b21ce2c671e6e3cd",
+          "form": "10-Q",
+          "filed": "2025-11-12"
+        }
+      }
+    },
+    {
+      "ordinal": 70,
+      "ticker": "RVPH",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 96337119,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1742927/0001437749-25-034827.txt",
+          "source_sha256": "7d15cf3706cf69403558b69133e497c7a0cbb03cc5819f66a0883b70bb5ee2e9",
+          "form": "10-Q",
+          "filed": "2025-11-13"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 74,
+      "ticker": "VKTX",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 112446961,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1607678/0001193125-25-247059.txt",
+          "source_sha256": "f90f9fc1f3a3180d36b4d04bbc99035770c3d8910a7c515f47caee932b5d8abc",
+          "form": "10-Q",
+          "filed": "2025-10-23"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 75,
+      "ticker": "BRT",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 18034000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/14846/0000014846-25-000037.txt",
+          "source_sha256": "bc8a9400f34d5f79201cb0dafa86c656c38ebfa0cb7fbf8a8a852f5a9a27825d",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 79,
+      "ticker": "LQDT",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 37317175,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1235468/0001193125-25-289159.txt",
+          "source_sha256": "ac9be7023e6ea46452e059ab7f57df8005275e0ea1c96794af4635baf353afb9",
+          "form": "10-K",
+          "filed": "2025-11-20"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 80,
+      "ticker": "MRUS",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 75840942,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1651311/0001193125-25-260700.txt",
+          "source_sha256": "edaf606ee2d4ac23da1bbe44306a5227717c7afe4a5c80d4d2d4fd0351cd97ec",
+          "form": "10-Q",
+          "filed": "2025-10-31"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 85,
+      "ticker": "OIS",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 59754000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1121484/0001121484-25-000080.txt",
+          "source_sha256": "6f5d6bc618142b60b91dc70fc2295b14399cf43a7ae7f3280e509e81f159a372",
+          "form": "10-Q",
+          "filed": "2025-10-31"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 86,
+      "ticker": "MOH",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 51000000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1179929/0001179929-25-000128.txt",
+          "source_sha256": "09f43af7696704c64b8bde3d87c415d6829a916059d2d4bcbed922560575ff31",
+          "form": "10-Q",
+          "filed": "2025-10-23"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 93,
+      "ticker": "MAC",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 256296193,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/912242/0000912242-25-000076.txt",
+          "source_sha256": "363a3ed733c37bfc69f6a1e17d8443b52a0f2b2f89f738d70d9abee0ec396585",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 94,
+      "ticker": "GAME",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 98380767,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1714562/0001493152-25-023589.txt",
+          "source_sha256": "737971db18b1eddbdec4d3b5a194ec35a636c3deba259eddf17809bd55a28581",
+          "form": "10-Q",
+          "filed": "2025-11-14"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 100,
+      "ticker": "HYFM",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 4667004,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1695295/0001695295-25-000010.txt",
+          "source_sha256": "e24cb22ed7f178055a4e2a4ea75e04efb4164bc94121f7774237eb7a1f6b633e",
+          "form": "10-Q",
+          "filed": "2025-11-12"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 103,
+      "ticker": "SND",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 38897415,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1529628/0001529628-25-000129.txt",
+          "source_sha256": "93164e51cb4757570140b7a4c2577308a35e32bf2408e17c14a312133b83f51f",
+          "form": "10-Q",
+          "filed": "2025-11-12"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 110,
+      "ticker": "PRI",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 32076000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1475922/0001193125-25-268668.txt",
+          "source_sha256": "ab38b64686c0453d330554fdaefe6aa9fd05e953985fa3d11b9128dd1b61359b",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 111,
+      "ticker": "AGYS",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 28042618,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/78749/0001193125-25-251592.txt",
+          "source_sha256": "a95685da8e0d8b809b0fca4ff34a03eb8e88db546c90f33c95cd0c78e7ab5526",
+          "form": "10-Q",
+          "filed": "2025-10-27"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 114,
+      "ticker": "VHC",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 4270840,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1082324/0001140361-25-042294.txt",
+          "source_sha256": "942c446700dcd5205aa4197eb6baa3569c14148ecb5cb203eccfc9bd5dcedf48",
+          "form": "10-Q",
+          "filed": "2025-11-14"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 116,
+      "ticker": "MGNI",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 143643000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1595974/0001595974-25-000043.txt",
+          "source_sha256": "309a5023b2805b9de60daa3c52b8f6d976c26a1777b065e4943092fcc65e865a",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 125,
+      "ticker": "FMBH",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 23996833,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/700565/000119312525272249/fmbh-20250930.htm",
+          "source_sha256": "8b9d1513cd76baca08a69a3f1e5cd4dae7eb480635e9dcb421299c20a63682cb",
+          "form": "10-Q",
+          "filed": "2025-11-07"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 126,
+      "ticker": "DXCM",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 390000000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 100000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1093557/0001093557-25-000280.txt",
+          "source_sha256": "8a9b25b14ad0530367b6d09b00eed39252907357a9c0c64d55b39def9b3dab65",
+          "form": "10-Q",
+          "filed": "2025-10-30"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 129,
+      "ticker": "TGTX",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 155210533,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1001316/0001437749-25-033363.txt",
+          "source_sha256": "77da56d55bd3ae675c49d3511b76f39e97acc6e35c157c3ee47d486719f78125",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 130,
+      "ticker": "HUM",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 120273068,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/49071/0000049071-25-000057.txt",
+          "source_sha256": "ed5a189c1545dece678ace37421530ffd1eb53db2757aadd481c0fe144633edf",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 132,
+      "ticker": "BWB",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 27584732,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1341317/000110465925104003/bwb-20250930x10q.htm",
+          "source_sha256": "c34d27dc86c10247ed69109a2315854f95651d92146548085265b82c66cc1f1c",
+          "form": "10-Q",
+          "filed": "2025-10-30"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 133,
+      "ticker": "COMM",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 221527126,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1517228/0001193125-25-256715.txt",
+          "source_sha256": "4e3439342b739fc4ff9d87060ecb3e7a2151a1e1ffe1f173fa29eb659fd10305",
+          "form": "10-Q",
+          "filed": "2025-10-30"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 136,
+      "ticker": "MET",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 660724727,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921925000230/met-20250930.htm",
+          "source_sha256": "eec119adaa8f4c3b9694dff9cc410e251ed67e806741c07822ff8b039433a144",
+          "form": "10-Q",
+          "filed": "2025-11-07"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 141,
+      "ticker": "CSR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 16700000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 100000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/798359/0000798359-25-000111.txt",
+          "source_sha256": "a577dbf12b41acba9bbeedabfe0431ebadd3b582ab7de8dcfad1761466e1462d",
+          "form": "10-Q",
+          "filed": "2025-11-03"
+        }
+      }
+    },
+    {
+      "ordinal": 142,
+      "ticker": "ASGN",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 43100000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 100000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/890564/0000890564-25-000063.txt",
+          "source_sha256": "8731db46689d75d9a69a989a59969dd4c986f0546213073524b1fab15b4ee03e",
+          "form": "10-Q",
+          "filed": "2025-10-30"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 150,
+      "ticker": "CECO",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 35641031,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/3197/0001193125-25-252944.txt",
+          "source_sha256": "0de39270b4d8d51d2ede44e23b1b8d01e9dd7506ac0b5c315fdfeb15434bbe22",
+          "form": "10-Q",
+          "filed": "2025-10-28"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 153,
+      "ticker": "SPRO",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 56311795,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1701108/0001193125-25-280174.txt",
+          "source_sha256": "6a0a0ef2fe86376b6e6871a79a131d6a4bdc58969af2c3299e3e2e42841550bb",
+          "form": "10-Q",
+          "filed": "2025-11-13"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 160,
+      "ticker": "MSA",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 39152061,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/66570/0000066570-25-000042.txt",
+          "source_sha256": "9a77bc8b86ca00be6226dee01c0d1a5ee1840f2f5a991441e9b6c30a782270d2",
+          "form": "10-Q",
+          "filed": "2025-10-29"
+        }
+      }
+    },
+    {
+      "ordinal": 166,
+      "ticker": "WYNN",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 103977280,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1174922/0001174922-25-000151.txt",
+          "source_sha256": "526fb5982433c1c9af9c136094f0b2da9c780bafee5e6398ff4ded1005c66238",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 172,
+      "ticker": "IVR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 70945571,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1437071/0001437071-25-000051.txt",
+          "source_sha256": "2c9b434cf997b1360e08ecef2e3a3646d6236ad49cd9dd426510c7b4e52475c8",
+          "form": "10-Q",
+          "filed": "2025-11-05"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 174,
+      "ticker": "IQV",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 170300000,
+        "period": "2025-09-30",
+        "rounding_to_shares": 100000,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1478242/0001628280-25-046794.txt",
+          "source_sha256": "32ddcc339095d86ae0dcfb01e5cf3c0514ad584106f6f6705f8353f0fc2be80d",
+          "form": "10-Q",
+          "filed": "2025-10-28"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 176,
+      "ticker": "NUTX",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 6905262,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1479681/0001628280-25-053166.txt",
+          "source_sha256": "44f3d12952b9116d26f433adde32beb58eb064944d8c56d7a744865fe7245a73",
+          "form": "10-Q",
+          "filed": "2025-11-19"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 177,
+      "ticker": "ASB",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 165904108,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/7789/000000778925000179/asb-20250930.htm",
+          "source_sha256": "4215b4b8d46a2b5b21ce4f0975380abf7e287cb4bf469c56e954ad1e814f5733",
+          "form": "10-Q",
+          "filed": "2025-10-28"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 181,
+      "ticker": "OCSL",
+      "status": "held",
+      "reason": "class_expansion_visible_row_changed_or_ambiguous"
+    },
+    {
+      "ordinal": 182,
+      "ticker": "LTBR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 30384981,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1084554/0001477932-25-007949.txt",
+          "source_sha256": "71bc9e02272f915e056021c49c3fcb3ae329bb5c166835006b017fadd28edd6d",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "separate_numeric_fact_and_visible_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 184,
+      "ticker": "TNGX",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 111567062,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1819133/0001193125-25-263680.txt",
+          "source_sha256": "b09aeb320d4ddd8871e5cc9674cd920d717b0057137b6aa6eaaa228fbbd46b3b",
+          "form": "10-Q",
+          "filed": "2025-11-04"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 186,
+      "ticker": "CNXC",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 62257439,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1803599/0001803599-25-000147.txt",
+          "source_sha256": "85492677d9267e812e54ab171263cc1c7c525e2320e4ec203f6b6cd4b183cc32",
+          "form": "10-Q",
+          "filed": "2025-10-03"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 188,
+      "ticker": "ATKR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 33665258,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1666138/0001628280-25-054049.txt",
+          "source_sha256": "52345e7ae681beb324adf7f90e74fbade54839ac6e24a59554d316c14c89bbcc",
+          "form": "10-K",
+          "filed": "2025-11-26"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 193,
+      "ticker": "RLAY",
+      "status": "held",
+      "reason": "par_value_disagrees_between_security_identity_and_share_statement"
+    },
+    {
+      "ordinal": 196,
+      "ticker": "CLNE",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 219293281,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1368265/0001104659-25-106319.txt",
+          "source_sha256": "c108cab3144ec1e83283cc6c06021539e60943150a51faf69d67045ba1955ea4",
+          "form": "10-Q",
+          "filed": "2025-11-04"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 197,
+      "ticker": "HE",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 172620476,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/354707/0000354707-25-000063.txt",
+          "source_sha256": "fcbd5e9ed9df7f7b63e18c360347f3df41bdf669d0d68df29859229d1ab3da87",
+          "form": "10-Q",
+          "filed": "2025-11-07"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    },
+    {
+      "ordinal": 198,
+      "ticker": "AMR",
+      "status": "verified",
+      "review": {
+        "security_class_verified": true,
+        "shares": 12919308,
+        "period": "2025-09-30",
+        "rounding_to_shares": 1,
+        "source": {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1704715/0001704715-25-000042.txt",
+          "source_sha256": "170b5fa07a47c6be352bbfe6b68142f87d207ebb69265d78445a3d4859b4b298",
+          "form": "10-Q",
+          "filed": "2025-11-06"
+        },
+        "fact_location": "inside_reviewed_row",
+        "complete_institutional_ownership_confirmed": false
+      }
+    }
+  ],
+  "verified_ordinals": [
+    3,
+    4,
+    8,
+    9,
+    11,
+    12,
+    16,
+    17,
+    18,
+    20,
+    28,
+    30,
+    33,
+    38,
+    42,
+    46,
+    55,
+    59,
+    60,
+    62,
+    63,
+    67,
+    70,
+    74,
+    75,
+    79,
+    80,
+    85,
+    86,
+    93,
+    94,
+    100,
+    103,
+    110,
+    111,
+    114,
+    116,
+    125,
+    126,
+    129,
+    130,
+    132,
+    133,
+    136,
+    141,
+    142,
+    150,
+    153,
+    160,
+    166,
+    172,
+    174,
+    176,
+    177,
+    179,
+    182,
+    184,
+    186,
+    188,
+    189,
+    196,
+    197,
+    198
+  ],
+  "summary": {
+    "remaining_candidates_checked": 52,
+    "new_verified": 50,
+    "held": 2,
+    "total_verified": 63,
+    "numeric_candidates_unchecked": 0,
+    "denominator_unavailable": 135,
+    "certified_complete_institutional_ownership": 0,
+    "network_requests": 0
+  }
+}

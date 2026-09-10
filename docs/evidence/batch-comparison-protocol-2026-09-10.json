@@ -1,0 +1,2648 @@
+{
+  "version": "batch-comparison-protocol-0.1",
+  "status": "frozen_before_new_batch_market_and_outcome_aggregation; exploratory_not_untouched_validation",
+  "selection_as_of": "2026-01-01",
+  "selection_holdings_period": "2025-09-30",
+  "history_start": "2025-09-01",
+  "evaluation_start": "2026-01-01",
+  "evaluation_end": "2026-03-31",
+  "holdings_periods": [
+    "2025-12-31",
+    "2026-03-31"
+  ],
+  "outcome_as_of": "2026-06-01",
+  "materials_sha256": "42923679c92c576648bea3d468a154fac8e197a7256ec263494c5c06e8d58d3a",
+  "class_review_sha256": "ec5224691932f1e6a45accf46dd3b21f6f0796a04c549a32e83e562a5341988e",
+  "universe_rule": "all_verified_historical_common_share_candidates_with_no_index_flags_and_reported_ratio_0_to_100; retain_holdings_quality_flags",
+  "primary_group_rule": "reported_sum_divided_by_same_period_outstanding_at_most_20_percent; provisional_research_cutoff_not_empirically_optimized",
+  "relative_group_rule": "lowest_ceiling_one_third_of_eligible_candidates_with_boundary_ties_included",
+  "relative_boundary_percent": 50.631334,
+  "outcome_rule": "positive_change_in_observed_public_reported_share_sum; not_actual_institutional_net_buy",
+  "sensitivity_outcome": "change_in_sum_for_managers_with_positive_usable_positions_in_both_quarters",
+  "quality_sensitivity": "exclude_any_holdings_quality_flag_in_either_quarter; report_zero_sample_if_none",
+  "aggregation_unit": "one_symbol_one_calendar_quarter",
+  "quarter_signal_rule": "any_true_daily_signal_if_all_61_sessions_are_known; otherwise_unknown",
+  "comparisons": [
+    "abnormal_vs_no_abnormal_within_same_selection_group",
+    "repeated_vs_no_repeated_within_same_selection_group"
+  ],
+  "groups": [
+    "primary_low_reported_ratio",
+    "relative_lower_third",
+    "all_eligible_descriptive_only"
+  ],
+  "min_group_count_for_descriptive_difference": 1,
+  "performance_claim_allowed": false,
+  "model_parameters": "existing_60_full_session_baseline_strict_95th_percentile_repeat_2_of_5; unchanged",
+  "unreviewed_split_policy": "hold_entire_symbol_if_raw_and_adjusted_comparison_has_unreviewed_difference",
+  "missing_holdings_policy": "unobserved_not_zero; if_either_quarter_has_no_positive_reported_position_outcome_unknown",
+  "source_exception_policy": "CJMB_uses_separately_pinned_reviewed_comparison; no_exception_applied_to_other_symbols",
+  "market_data_persistence": "runner_local_only; no_raw_market_values_in_public_logs_or_git",
+  "prior_information_exposure": [
+    "existing_five_pilot_and_CJMB_outcome_already_seen",
+    "2026_Q1_is_exploratory_not_new_holdout"
+  ],
+  "symbols": [
+    {
+      "ordinal": 3,
+      "symbol": "RS",
+      "cusip": "759509102",
+      "issuer_cik": "0000861884",
+      "selection_reported_ratio_percent": 78.917103,
+      "selection_reported_shares": 41339146,
+      "selection_denominator": 52383000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 14,
+          "potential_overlaps": 122,
+          "unresolved_references": 226,
+          "repeated_rows": 15,
+          "unreviewed_class_rows": 16,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 170
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 4,
+      "symbol": "LSH",
+      "cusip": "51216F109",
+      "issuer_cik": "0001996192",
+      "selection_reported_ratio_percent": 0.530969,
+      "selection_reported_shares": 92535,
+      "selection_denominator": 17427559,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 1
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 8,
+      "symbol": "TTWO",
+      "cusip": "874054109",
+      "issuer_cik": "0000946581",
+      "selection_reported_ratio_percent": 96.370352,
+      "selection_reported_shares": 177996041,
+      "selection_denominator": 184700000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 22,
+          "potential_overlaps": 166,
+          "unresolved_references": 363,
+          "repeated_rows": 32,
+          "unreviewed_class_rows": 30,
+          "confidential_omission_managers": 5,
+          "confidential_status_unknown_managers": 291
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 9,
+      "symbol": "DCGO",
+      "cusip": "256086109",
+      "issuer_cik": "0001822359",
+      "selection_reported_ratio_percent": 50.631334,
+      "selection_reported_shares": 49522890,
+      "selection_denominator": 97810755,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 12,
+          "unresolved_references": 19,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 34
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 11,
+      "symbol": "SMSI",
+      "cusip": "832154405",
+      "issuer_cik": "0000948708",
+      "selection_reported_ratio_percent": 6.869471,
+      "selection_reported_shares": 1475408,
+      "selection_denominator": 21477754,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 5,
+          "repeated_rows": 1,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 7
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 12,
+      "symbol": "FHTX",
+      "cusip": "344174107",
+      "issuer_cik": "0001822462",
+      "selection_reported_ratio_percent": 72.361422,
+      "selection_reported_shares": 40915230,
+      "selection_denominator": 56542877,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 9,
+          "unresolved_references": 13,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 23
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 16,
+      "symbol": "FSBW",
+      "cusip": "30263Y104",
+      "issuer_cik": "0001530249",
+      "selection_reported_ratio_percent": 62.067249,
+      "selection_reported_shares": 4676972,
+      "selection_denominator": 7535330,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 13,
+          "unresolved_references": 14,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 19
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 17,
+      "symbol": "INGN",
+      "cusip": "45780L104",
+      "issuer_cik": "0001294133",
+      "selection_reported_ratio_percent": 68.025059,
+      "selection_reported_shares": 18467771,
+      "selection_denominator": 27148482,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 19,
+          "unresolved_references": 35,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 33
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 18,
+      "symbol": "APYX",
+      "cusip": "03837C106",
+      "issuer_cik": "0000719135",
+      "selection_reported_ratio_percent": 41.610968,
+      "selection_reported_shares": 15737051,
+      "selection_denominator": 37819478,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 1,
+          "unresolved_references": 10,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 9
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 20,
+      "symbol": "TIPT",
+      "cusip": "88822Q103",
+      "issuer_cik": "0001393726",
+      "selection_reported_ratio_percent": 35.316897,
+      "selection_reported_shares": 13356893,
+      "selection_denominator": 37820120,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 18,
+          "unresolved_references": 35,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 2,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 34
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 28,
+      "symbol": "LUNG",
+      "cusip": "745848101",
+      "issuer_cik": "0001127537",
+      "selection_reported_ratio_percent": 78.3835,
+      "selection_reported_shares": 32330477,
+      "selection_denominator": 41246534,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 7,
+          "unresolved_references": 17,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 23
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 30,
+      "symbol": "UFCS",
+      "cusip": "910340108",
+      "issuer_cik": "0000101199",
+      "selection_reported_ratio_percent": 66.080154,
+      "selection_reported_shares": 16859908,
+      "selection_denominator": 25514329,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 5,
+          "potential_overlaps": 26,
+          "unresolved_references": 38,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 5,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 45
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 33,
+      "symbol": "AMZN",
+      "cusip": "023135106",
+      "issuer_cik": "0001018724",
+      "selection_reported_ratio_percent": 64.269319,
+      "selection_reported_shares": 6868462170,
+      "selection_denominator": 10687000000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 83,
+          "potential_overlaps": 736,
+          "unresolved_references": 836,
+          "repeated_rows": 171,
+          "unreviewed_class_rows": 122,
+          "confidential_omission_managers": 24,
+          "confidential_status_unknown_managers": 1512
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 38,
+      "symbol": "EPM",
+      "cusip": "30049A107",
+      "issuer_cik": "0001006655",
+      "selection_reported_ratio_percent": 57.30307,
+      "selection_reported_shares": 19854225,
+      "selection_denominator": 34647751,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 17,
+          "unresolved_references": 25,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 25
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 42,
+      "symbol": "MUSA",
+      "cusip": "626755102",
+      "issuer_cik": "0001573516",
+      "selection_reported_ratio_percent": 87.030351,
+      "selection_reported_shares": 16304655,
+      "selection_denominator": 18734447,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 6,
+          "potential_overlaps": 81,
+          "unresolved_references": 195,
+          "repeated_rows": 9,
+          "unreviewed_class_rows": 15,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 143
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 46,
+      "symbol": "PNTG",
+      "cusip": "70805E109",
+      "issuer_cik": "0001766400",
+      "selection_reported_ratio_percent": 81.122531,
+      "selection_reported_shares": 28044059,
+      "selection_denominator": 34570000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 21,
+          "unresolved_references": 40,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 3,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 48
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 55,
+      "symbol": "ANIK",
+      "cusip": "035255108",
+      "issuer_cik": "0000898437",
+      "selection_reported_ratio_percent": 84.979454,
+      "selection_reported_shares": 12254887,
+      "selection_denominator": 14421000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 13,
+          "unresolved_references": 17,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 30
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 59,
+      "symbol": "AAOI",
+      "cusip": "03823U102",
+      "issuer_cik": "0001158114",
+      "selection_reported_ratio_percent": 58.284377,
+      "selection_reported_shares": 39671261,
+      "selection_denominator": 68065000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 5,
+          "potential_overlaps": 18,
+          "unresolved_references": 29,
+          "repeated_rows": 3,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 54
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 60,
+      "symbol": "LAW",
+      "cusip": "126327105",
+      "issuer_cik": "0001625641",
+      "selection_reported_ratio_percent": 55.028293,
+      "selection_reported_shares": 34388831,
+      "selection_denominator": 62493000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 11,
+          "unresolved_references": 22,
+          "repeated_rows": 3,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 29
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 67,
+      "symbol": "DAIO",
+      "cusip": "237690102",
+      "issuer_cik": "0000351998",
+      "selection_reported_ratio_percent": 33.983183,
+      "selection_reported_shares": 3191269,
+      "selection_denominator": 9390730,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 1,
+          "unresolved_references": 6,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 5
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 74,
+      "symbol": "VKTX",
+      "cusip": "92686J106",
+      "issuer_cik": "0001607678",
+      "selection_reported_ratio_percent": 65.5252,
+      "selection_reported_shares": 73681096,
+      "selection_denominator": 112446961,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 9,
+          "potential_overlaps": 49,
+          "unresolved_references": 88,
+          "repeated_rows": 7,
+          "unreviewed_class_rows": 5,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 99
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 75,
+      "symbol": "BRT",
+      "cusip": "055645303",
+      "issuer_cik": "0000014846",
+      "selection_reported_ratio_percent": 31.575602,
+      "selection_reported_shares": 5694344,
+      "selection_denominator": 18034000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 8,
+          "unresolved_references": 11,
+          "repeated_rows": 3,
+          "unreviewed_class_rows": 9,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 19
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 79,
+      "symbol": "LQDT",
+      "cusip": "53635B107",
+      "issuer_cik": "0001235468",
+      "selection_reported_ratio_percent": 66.73409,
+      "selection_reported_shares": 24903277,
+      "selection_denominator": 37317175,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 29,
+          "unresolved_references": 37,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 3,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 43
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 85,
+      "symbol": "OIS",
+      "cusip": "678026105",
+      "issuer_cik": "0001121484",
+      "selection_reported_ratio_percent": 90.493403,
+      "selection_reported_shares": 54073428,
+      "selection_denominator": 59754000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 4,
+          "potential_overlaps": 30,
+          "unresolved_references": 37,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 34
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 94,
+      "symbol": "GAME",
+      "cusip": "36468G103",
+      "issuer_cik": "0001714562",
+      "selection_reported_ratio_percent": 12.652089,
+      "selection_reported_shares": 12447222,
+      "selection_denominator": 98380767,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 1,
+          "unresolved_references": 8,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 10
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 100,
+      "symbol": "HYFM",
+      "cusip": "44888K407",
+      "issuer_cik": "0001695295",
+      "selection_reported_ratio_percent": 13.292575,
+      "selection_reported_shares": 620365,
+      "selection_denominator": 4667004,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 6,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 4
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 103,
+      "symbol": "SND",
+      "cusip": "83191H107",
+      "issuer_cik": "0001529628",
+      "selection_reported_ratio_percent": 29.926007,
+      "selection_reported_shares": 11640443,
+      "selection_denominator": 38897415,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 5,
+          "unresolved_references": 12,
+          "repeated_rows": 1,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 12
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 110,
+      "symbol": "PRI",
+      "cusip": "74164M108",
+      "issuer_cik": "0001475922",
+      "selection_reported_ratio_percent": 93.076977,
+      "selection_reported_shares": 29855371,
+      "selection_denominator": 32076000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 11,
+          "potential_overlaps": 95,
+          "unresolved_references": 273,
+          "repeated_rows": 12,
+          "unreviewed_class_rows": 11,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 130
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 116,
+      "symbol": "MGNI",
+      "cusip": "55955D100",
+      "issuer_cik": "0001595974",
+      "selection_reported_ratio_percent": 96.762206,
+      "selection_reported_shares": 138992135,
+      "selection_denominator": 143643000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 4,
+          "potential_overlaps": 40,
+          "unresolved_references": 55,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 4,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 89
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 125,
+      "symbol": "FMBH",
+      "cusip": "320866106",
+      "issuer_cik": "0000700565",
+      "selection_reported_ratio_percent": 47.515308,
+      "selection_reported_shares": 11402169,
+      "selection_denominator": 23996833,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 24,
+          "unresolved_references": 35,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 33
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 126,
+      "symbol": "DXCM",
+      "cusip": "252131107",
+      "issuer_cik": "0001093557",
+      "selection_reported_ratio_percent": 93.658875,
+      "selection_reported_shares": 365269614,
+      "selection_denominator": 390000000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 13,
+          "potential_overlaps": 141,
+          "unresolved_references": 274,
+          "repeated_rows": 27,
+          "unreviewed_class_rows": 22,
+          "confidential_omission_managers": 3,
+          "confidential_status_unknown_managers": 262
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 129,
+      "symbol": "TGTX",
+      "cusip": "88322Q108",
+      "issuer_cik": "0001001316",
+      "selection_reported_ratio_percent": 63.787767,
+      "selection_reported_shares": 99005333,
+      "selection_denominator": 155210533,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 4,
+          "potential_overlaps": 42,
+          "unresolved_references": 71,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 9,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 102
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 130,
+      "symbol": "HUM",
+      "cusip": "444859102",
+      "issuer_cik": "0000049071",
+      "selection_reported_ratio_percent": 97.971264,
+      "selection_reported_shares": 117833045,
+      "selection_denominator": 120273068,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 16,
+          "potential_overlaps": 171,
+          "unresolved_references": 350,
+          "repeated_rows": 25,
+          "unreviewed_class_rows": 14,
+          "confidential_omission_managers": 6,
+          "confidential_status_unknown_managers": 241
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 132,
+      "symbol": "BWB",
+      "cusip": "108621103",
+      "issuer_cik": "0001341317",
+      "selection_reported_ratio_percent": 59.549631,
+      "selection_reported_shares": 16426606,
+      "selection_denominator": 27584732,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 2,
+          "potential_overlaps": 21,
+          "unresolved_references": 44,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 36
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 133,
+      "symbol": "COMM",
+      "cusip": "20337X109",
+      "issuer_cik": "0001517228",
+      "selection_reported_ratio_percent": 87.922405,
+      "selection_reported_shares": 194771976,
+      "selection_denominator": 221527126,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 8,
+          "potential_overlaps": 41,
+          "unresolved_references": 57,
+          "repeated_rows": 2,
+          "unreviewed_class_rows": 4,
+          "confidential_omission_managers": 4,
+          "confidential_status_unknown_managers": 90
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 136,
+      "symbol": "MET",
+      "cusip": "59156R108",
+      "issuer_cik": "0001099219",
+      "selection_reported_ratio_percent": 72.371814,
+      "selection_reported_shares": 478178472,
+      "selection_denominator": 660724727,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 30,
+          "potential_overlaps": 215,
+          "unresolved_references": 428,
+          "repeated_rows": 27,
+          "unreviewed_class_rows": 31,
+          "confidential_omission_managers": 6,
+          "confidential_status_unknown_managers": 331
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 141,
+      "symbol": "CSR",
+      "cusip": "15202L107",
+      "issuer_cik": "0000798359",
+      "selection_reported_ratio_percent": 87.41312,
+      "selection_reported_shares": 14597991,
+      "selection_denominator": 16700000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 23,
+          "unresolved_references": 47,
+          "repeated_rows": 8,
+          "unreviewed_class_rows": 24,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 40
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 142,
+      "symbol": "ASGN",
+      "cusip": "00191U102",
+      "issuer_cik": "0000890564",
+      "selection_reported_ratio_percent": 96.922677,
+      "selection_reported_shares": 41773674,
+      "selection_denominator": 43100000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 7,
+          "potential_overlaps": 49,
+          "unresolved_references": 169,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 6,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 75
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 150,
+      "symbol": "CECO",
+      "cusip": "125141101",
+      "issuer_cik": "0000003197",
+      "selection_reported_ratio_percent": 80.390382,
+      "selection_reported_shares": 28651961,
+      "selection_denominator": 35641031,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 5,
+          "potential_overlaps": 33,
+          "unresolved_references": 40,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 3,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 69
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 153,
+      "symbol": "SPRO",
+      "cusip": "84833T103",
+      "issuer_cik": "0001701108",
+      "selection_reported_ratio_percent": 20.087689,
+      "selection_reported_shares": 11311738,
+      "selection_denominator": 56311795,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 3,
+          "unresolved_references": 5,
+          "repeated_rows": 1,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 10
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 160,
+      "symbol": "MSA",
+      "cusip": "553498106",
+      "issuer_cik": "0000066570",
+      "selection_reported_ratio_percent": 92.660315,
+      "selection_reported_shares": 36278423,
+      "selection_denominator": 39152061,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 4,
+          "potential_overlaps": 61,
+          "unresolved_references": 183,
+          "repeated_rows": 11,
+          "unreviewed_class_rows": 14,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 106
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 166,
+      "symbol": "WYNN",
+      "cusip": "983134107",
+      "issuer_cik": "0001174922",
+      "selection_reported_ratio_percent": 62.683867,
+      "selection_reported_shares": 65176980,
+      "selection_denominator": 103977280,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 11,
+          "potential_overlaps": 65,
+          "unresolved_references": 97,
+          "repeated_rows": 15,
+          "unreviewed_class_rows": 13,
+          "confidential_omission_managers": 3,
+          "confidential_status_unknown_managers": 137
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 172,
+      "symbol": "IVR",
+      "cusip": "46131B704",
+      "issuer_cik": "0001437071",
+      "selection_reported_ratio_percent": 44.894251,
+      "selection_reported_shares": 31850483,
+      "selection_denominator": 70945571,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 5,
+          "potential_overlaps": 16,
+          "unresolved_references": 43,
+          "repeated_rows": 5,
+          "unreviewed_class_rows": 27,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 37
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 174,
+      "symbol": "IQV",
+      "cusip": "46266C105",
+      "issuer_cik": "0001478242",
+      "selection_reported_ratio_percent": 93.822904,
+      "selection_reported_shares": 159780406,
+      "selection_denominator": 170300000,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 19,
+          "potential_overlaps": 143,
+          "unresolved_references": 260,
+          "repeated_rows": 26,
+          "unreviewed_class_rows": 19,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 291
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 176,
+      "symbol": "NUTX",
+      "cusip": "67079U306",
+      "issuer_cik": "0001479681",
+      "selection_reported_ratio_percent": 34.605798,
+      "selection_reported_shares": 2389621,
+      "selection_denominator": 6905262,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 1,
+          "potential_overlaps": 9,
+          "unresolved_references": 9,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 21
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 177,
+      "symbol": "ASB",
+      "cusip": "045487105",
+      "issuer_cik": "0000007789",
+      "selection_reported_ratio_percent": 84.961489,
+      "selection_reported_shares": 140954600,
+      "selection_denominator": 165904108,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 5,
+          "potential_overlaps": 44,
+          "unresolved_references": 63,
+          "repeated_rows": 8,
+          "unreviewed_class_rows": 10,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 77
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 179,
+      "symbol": "KAPA",
+      "cusip": "48301N104",
+      "issuer_cik": "0001962011",
+      "selection_reported_ratio_percent": 2.13732,
+      "selection_reported_shares": 445019,
+      "selection_denominator": 20821353,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 4
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 182,
+      "symbol": "LTBR",
+      "cusip": "53224K302",
+      "issuer_cik": "0001084554",
+      "selection_reported_ratio_percent": 39.147808,
+      "selection_reported_shares": 11895054,
+      "selection_denominator": 30384981,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 4,
+          "potential_overlaps": 5,
+          "unresolved_references": 14,
+          "repeated_rows": 6,
+          "unreviewed_class_rows": 1,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 30
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 186,
+      "symbol": "CNXC",
+      "cusip": "20602D101",
+      "issuer_cik": "0001803599",
+      "selection_reported_ratio_percent": 99.61389,
+      "selection_reported_shares": 62017057,
+      "selection_denominator": 62257439,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 8,
+          "potential_overlaps": 64,
+          "unresolved_references": 168,
+          "repeated_rows": 9,
+          "unreviewed_class_rows": 7,
+          "confidential_omission_managers": 2,
+          "confidential_status_unknown_managers": 83
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 188,
+      "symbol": "ATKR",
+      "cusip": "047649108",
+      "issuer_cik": "0001666138",
+      "selection_reported_ratio_percent": 96.031095,
+      "selection_reported_shares": 32329116,
+      "selection_denominator": 33665258,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 6,
+          "potential_overlaps": 62,
+          "unresolved_references": 70,
+          "repeated_rows": 6,
+          "unreviewed_class_rows": 4,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 76
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 189,
+      "symbol": "CJMB",
+      "cusip": "131100109",
+      "issuer_cik": "0002032545",
+      "selection_reported_ratio_percent": 16.219395,
+      "selection_reported_shares": 749827,
+      "selection_denominator": 4623027,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 0,
+          "potential_overlaps": 0,
+          "unresolved_references": 0,
+          "repeated_rows": 0,
+          "unreviewed_class_rows": 0,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 0
+        },
+        "no_detected_aggregation_issues": true,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": true,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 196,
+      "symbol": "CLNE",
+      "cusip": "184499101",
+      "issuer_cik": "0001368265",
+      "selection_reported_ratio_percent": 48.027197,
+      "selection_reported_shares": 105320415,
+      "selection_denominator": 219293281,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 6,
+          "potential_overlaps": 22,
+          "unresolved_references": 34,
+          "repeated_rows": 3,
+          "unreviewed_class_rows": 2,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 40
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": true
+    },
+    {
+      "ordinal": 197,
+      "symbol": "HE",
+      "cusip": "419870100",
+      "issuer_cik": "0000354707",
+      "selection_reported_ratio_percent": 73.155529,
+      "selection_reported_shares": 126281422,
+      "selection_denominator": 172620476,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 7,
+          "potential_overlaps": 28,
+          "unresolved_references": 161,
+          "repeated_rows": 4,
+          "unreviewed_class_rows": 2,
+          "confidential_omission_managers": 0,
+          "confidential_status_unknown_managers": 65
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    },
+    {
+      "ordinal": 198,
+      "symbol": "AMR",
+      "cusip": "020764106",
+      "issuer_cik": "0001704715",
+      "selection_reported_ratio_percent": 93.734742,
+      "selection_reported_shares": 12109880,
+      "selection_denominator": 12919308,
+      "selection_holdings_quality": {
+        "counts": {
+          "unresolved_filings": 3,
+          "potential_overlaps": 25,
+          "unresolved_references": 40,
+          "repeated_rows": 7,
+          "unreviewed_class_rows": 6,
+          "confidential_omission_managers": 1,
+          "confidential_status_unknown_managers": 65
+        },
+        "no_detected_aggregation_issues": false,
+        "complete_institutional_coverage_confirmed": false
+      },
+      "listing_evidence": "pre_cutoff_filing_proxy_not_continuous_listing_proof",
+      "low_complete_institutional_ownership_certified": false,
+      "primary_low_reported_ratio": false,
+      "relative_lower_third": false
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "ordinal": 1,
+      "ticker": "NOVA",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "ticker": "ODP",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "ticker": "OPK",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "ticker": "SM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 13,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 14,
+      "ticker": "NOVT",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 15,
+      "ticker": "EMX",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 19,
+      "ticker": "KHC",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 21,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 22,
+      "ticker": "LEG",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 23,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 24,
+      "ticker": "NINE",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 25,
+      "ticker": "HUBB",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 26,
+      "ticker": "PNW",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 27,
+      "ticker": "GWRS",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 29,
+      "ticker": "GAU",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 31,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 32,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 34,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 35,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 36,
+      "ticker": "HAYW",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 37,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 39,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 40,
+      "ticker": "RSI",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 41,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 43,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 44,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 45,
+      "ticker": "OOMA",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 47,
+      "ticker": "FIBK",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 48,
+      "ticker": "TJX",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 49,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 50,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 51,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 52,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 53,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 54,
+      "ticker": "CDRE",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 56,
+      "ticker": "NWL",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 57,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 58,
+      "ticker": "GES",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 61,
+      "ticker": "REFR",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 62,
+      "ticker": "KAR",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 63,
+      "ticker": "OMCL",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 64,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 65,
+      "ticker": "HMN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 66,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 68,
+      "ticker": "CCRD",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 69,
+      "ticker": "OII",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 70,
+      "ticker": "RVPH",
+      "reasons": [
+        "historical_index_requires_review"
+      ]
+    },
+    {
+      "ordinal": 71,
+      "ticker": "GEN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 72,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 73,
+      "ticker": "PAL",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 76,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 77,
+      "ticker": "HPQ",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 78,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 80,
+      "ticker": "MRUS",
+      "reasons": [
+        "historical_index_requires_review"
+      ]
+    },
+    {
+      "ordinal": 81,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 82,
+      "ticker": "ALOT",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 83,
+      "ticker": "VTLE",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 84,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 86,
+      "ticker": "MOH",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 87,
+      "ticker": "MAGN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 88,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 89,
+      "ticker": "LASR",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 90,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 91,
+      "ticker": "ITGR",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 92,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 93,
+      "ticker": "MAC",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 95,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 96,
+      "ticker": "CTKB",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 97,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 98,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 99,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 101,
+      "ticker": "AVBP",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 102,
+      "ticker": "LOOP",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 104,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 105,
+      "ticker": "DFS",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 106,
+      "ticker": "YEXT",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 107,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 108,
+      "ticker": "BLBD",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 109,
+      "ticker": "LIF",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 111,
+      "ticker": "AGYS",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 112,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 113,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 114,
+      "ticker": "VHC",
+      "reasons": [
+        "historical_index_requires_review"
+      ]
+    },
+    {
+      "ordinal": 115,
+      "ticker": "BPMC",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 117,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 118,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 119,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 120,
+      "ticker": "RYAM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 121,
+      "ticker": "ZNTL",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 122,
+      "ticker": "MEOH",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 123,
+      "ticker": "TFX",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 124,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 127,
+      "ticker": "M",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 128,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 131,
+      "ticker": "MLKN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 134,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 135,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 137,
+      "ticker": "BSET",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 138,
+      "ticker": "DPRO",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 139,
+      "ticker": "RPM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 140,
+      "ticker": "ROP",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 143,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 144,
+      "ticker": "CIM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 145,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 146,
+      "ticker": "NRIM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 147,
+      "ticker": "BFH",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 148,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 149,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 151,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 152,
+      "ticker": "HIG",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 154,
+      "ticker": "IMG",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 155,
+      "ticker": "MGRM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 156,
+      "ticker": "TTEK",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 157,
+      "ticker": "MRTN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 158,
+      "ticker": "ITCI",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 159,
+      "ticker": "AXTA",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 161,
+      "ticker": "CURV",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 162,
+      "ticker": "LUV",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 163,
+      "ticker": "KBH",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 164,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 165,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 167,
+      "ticker": "TRP",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 168,
+      "ticker": "WBTN",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 169,
+      "ticker": "BGFV",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 170,
+      "ticker": "CARM",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 171,
+      "ticker": "SCSC",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 173,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 175,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 178,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 180,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 181,
+      "ticker": "OCSL",
+      "reasons": [
+        "ordinary_share_denominator_not_verified"
+      ]
+    },
+    {
+      "ordinal": 183,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 184,
+      "ticker": "TNGX",
+      "reasons": [
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 185,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 187,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 190,
+      "ticker": "SLQT",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 191,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 192,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 193,
+      "ticker": "RLAY",
+      "reasons": [
+        "ordinary_share_denominator_not_verified"
+      ]
+    },
+    {
+      "ordinal": 194,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "historical_index_requires_review",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 195,
+      "ticker": "AVT",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 199,
+      "ticker": null,
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    },
+    {
+      "ordinal": 200,
+      "ticker": "HAE",
+      "reasons": [
+        "ordinary_share_denominator_not_verified",
+        "reported_ratio_unavailable_or_outside_0_100"
+      ]
+    }
+  ]
+}
