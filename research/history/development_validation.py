@@ -53,9 +53,9 @@ def run(root,secret):
             'reserved_year_opened':False,'reserved_year_returns_computed':False,
             'scope':'exploratory_identity_linked_candidates_not_complete_investment_universe','years':[]}
     private=[]
-    for year in DEVELOPMENT_YEARS:
+    for year,allow_rounding in [(y,p) for y in DEVELOPMENT_YEARS for p in (False,True)]:
         payload=load_development(root,year,secret)
-        books,quality=prepare_prices(payload,events)
+        books,quality=prepare_prices(payload,events,allow_cent_rounding=allow_rounding)
         scored,days=prepare_signals(payload,books,events,year)
         results={};ledgers={};skips={}
         for model in MODELS:
@@ -68,12 +68,12 @@ def run(root,secret):
             summary['not_executable']=sum(r['status']=='not_executable' for r in ledger)
             summary['cash_entitlement_valuations']=sum(r.get('valuation_kind')=='cash_entitlement' for r in ledger)
             results[model]=summary;ledgers[model]=ledger;skips[model]=skipped
-        report={'year':year,'requested_symbols':len(books),'price_quality':quality,'summaries':results,'skips':skips,
+        report={'year':year,'price_policy':'cent_rounding_compatibility' if allow_rounding else 'original_strict','requested_symbols':len(books),'price_quality':quality,'summaries':results,'skips':skips,
                 'signal_counts':{m:{'true':sum(r[m] is True for r in scored),'unknown':sum(r[m] is None for r in scored)} for m in MODELS},
                 'trade_ledgers':ledgers,'main_holding_sessions':10,'cost_each_side':.0025,
                 'cash_dividends_included':False,'benchmark_comparison_performed':False,'actual_execution_verified':False}
-        output['years'].append(report);private.append({'year':year,'scored':scored,'trade_ledgers':ledgers})
-        print(json.dumps({'year':year,'results':{m:{k:v[k] for k in ('attempts','priced','mean_net_return','median_net_return','net_win_fraction','cash_entitlement_valuations')} for m,v in results.items()}}),flush=True)
+        output['years'].append(report);private.append({'year':year,'price_policy':report['price_policy'],'scored':scored,'trade_ledgers':ledgers})
+        print(json.dumps({'year':year,'price_policy':report['price_policy'],'results':{m:{k:v[k] for k in ('attempts','priced','mean_net_return','median_net_return','net_win_fraction','cash_entitlement_valuations')} for m,v in results.items()}}),flush=True)
     raw=json.dumps(private,sort_keys=True,allow_nan=False).encode();encrypted=encrypt_bytes(raw,secret)
     if decrypt_bytes(encrypted,secret)!=raw:raise ValueError('validation_storage_roundtrip_failed')
     dest=root/'data/history/encrypted/validation-ledgers.enc';dest.write_bytes(encrypted)

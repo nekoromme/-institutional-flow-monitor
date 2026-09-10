@@ -4,6 +4,7 @@
 未来の企業行動は過去の通知条件には入れず、単位換算と会計にだけ使う。
 """
 import math
+from decimal import Decimal
 from collections import Counter
 from flow_probe.returns_core import by_date, valid_bar, after_cost, COSTS, PRIMARY_COST
 
@@ -23,18 +24,35 @@ def shares_between(events,symbol,start,end):
     return multiplier
 
 
-def prepare_prices(payload,events):
+def cent_rounding_compatible(row,other,factor):
+    """補正後が1セント刻みで、厳密な換算値の半セント以内か。
+
+    API仕様として断定せず、保存データからの丸め仮説を別ケースで調べる。
+    """
+    if factor==1:return False
+    f=Decimal(str(factor))
+    for k in ('o','h','l','c'):
+        observed=Decimal(str(other[k]));expected=Decimal(str(row[k]))*f
+        if observed!=observed.quantize(Decimal('.01')) or abs(observed-expected)>Decimal('.005'):
+            return False
+    return True
+
+
+def prepare_prices(payload,events,*,allow_cent_rounding=False):
     books={};quality=[];through=payload['retrieved_at_utc'][:10]
     for symbol,raw in payload['prices']['raw'].items():
-        original=by_date(raw);adjusted=by_date(payload['prices']['split'][symbol]);book={};issues=Counter();details=[]
+        original=by_date(raw);adjusted=by_date(payload['prices']['split'][symbol]);book={};issues=Counter();details=[];rounding_days=[]
         for day,row in original.items():
             other=adjusted.get(day)
             valid=valid_bar(row) and valid_bar(other)
             factor=1/shares_between(events,symbol,day,through)
             if valid:
                 # 共通の診断で既に用いている丸め許容幅を維持。成績を見て広げない。
-                valid=all(math.isclose(other[k],row[k]*factor,rel_tol=1e-8,abs_tol=.0001*(factor+1)) for k in ('o','h','l','c'))
-                valid=valid and math.isclose(other['v'],row['v']/factor,rel_tol=1e-6,abs_tol=1.0)
+                prices_match=all(math.isclose(other[k],row[k]*factor,rel_tol=1e-8,abs_tol=.0001*(factor+1)) for k in ('o','h','l','c'))
+                volumes_match=math.isclose(other['v'],row['v']/factor,rel_tol=1e-6,abs_tol=1.0)
+                rounding_match=allow_cent_rounding and cent_rounding_compatible(row,other,factor)
+                valid=(prices_match or rounding_match) and volumes_match
+                if valid and not prices_match:rounding_days.append(day)
             reason=None if valid else 'unreviewed_adjustment_or_invalid_bar'
             if reason:
                 issues[reason]+=1
@@ -47,7 +65,7 @@ def prepare_prices(payload,events):
         if original.keys()!=adjusted.keys():
             for x in book.values():x.update(valid=False,reason='unpaired_dates')
         books[symbol]=book
-        quality.append({'symbol':symbol,'observed_days':len(book),'valid_days':sum(x['valid'] for x in book.values()),'issues':dict(issues),'adjustment_failure_diagnostics':details})
+        quality.append({'symbol':symbol,'observed_days':len(book),'valid_days':sum(x['valid'] for x in book.values()),'issues':dict(issues),'adjustment_failure_diagnostics':details,'cent_rounding_accepted_dates':rounding_days})
     return books,quality
 
 

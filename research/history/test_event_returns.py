@@ -1,7 +1,7 @@
 """併合で利益を捏造せず、買収・欠損・未約定を混同しない検査。"""
 import unittest
 from pathlib import Path
-from research.history.event_returns import trade_value,shares_between,prepare_prices
+from research.history.event_returns import trade_value,shares_between,prepare_prices,cent_rounding_compatible
 from research.history.adjustment_scan import load_development
 
 DAYS=['2024-04-01','2024-04-02','2024-04-03','2024-04-04','2024-04-05','2024-04-08']
@@ -57,6 +57,20 @@ class EventChecks(unittest.TestCase):
         self.assertEqual(qa,qb)
         self.assertEqual(prepare_signals(original,a,[],2023),prepare_signals(revised,b,e,2023))
         self.assertTrue(prepare_signals(revised,b,e,2023)[0][-1]['abnormal'])
+
+    def test_cent_rounding_requires_cent_grid_and_half_cent_bound(self):
+        self.assertTrue(cent_rounding_compatible(bar(.3335),bar(6.67),20))
+        self.assertTrue(cent_rounding_compatible(bar(.33375),bar(6.68),20))
+        self.assertFalse(cent_rounding_compatible(bar(.333),bar(6.67),20))
+        self.assertFalse(cent_rounding_compatible(bar(.3335),bar(6.674),20))
+        self.assertFalse(cent_rounding_compatible(bar(1),bar(1),1))
+
+    def test_rounding_does_not_override_bad_volume(self):
+        raw={**bar(.3335),'t':'2024-01-02T05:00:00Z'}
+        other={**bar(6.67),'t':raw['t'],'v':20}
+        p={'retrieved_at_utc':'2026-09-10','prices':{'raw':{'A':[raw]},'split':{'A':[other]}}}
+        b,q=prepare_prices(p,[split('2026-01-01',.05)],allow_cent_rounding=True)
+        self.assertFalse(b['A']['2024-01-02']['valid'])
 
     def test_reserved_year_rejected_before_file_access(self):
         with self.assertRaisesRegex(ValueError,'reserved_year'):
