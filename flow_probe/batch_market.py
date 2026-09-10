@@ -3,6 +3,7 @@
 原価格・出来高は公開しない。一銘柄の不足や補正不一致を記録して、
 残る銘柄は続ける。結果を見て境界値や銘柄群を変更する処理はない。
 """
+from collections import Counter
 from datetime import datetime
 import hashlib
 import json
@@ -56,7 +57,7 @@ def run(root, client):
             else:
                 audit = split_adjustment_audit(raw, adjusted, complete=True, through=protocol['evaluation_end'])
                 # 補正差の原株数は公開しない。件数と該当日だけを記録する。
-                item['adjustment_audit'] = {k:audit[symbol][k] for k in ('status','paired_days','unpaired_days','coverage_complete','invalid_pairs','price_mismatch_days','volume_mismatch_days','unresolved_days')}
+                item['adjustment_audit'] = {k:audit[symbol][k] for k in ('status','paired_days','unpaired_days','coverage_complete','invalid_pairs','price_mismatch_days','volume_mismatch_days','unresolved_days','zero_raw_volume_days')}
                 if audit[symbol]['status'] != 'comparable_sample':
                     item['reason'] = 'unreviewed_adjustment_difference_or_missing_pairs'
                 else:
@@ -68,6 +69,8 @@ def run(root, client):
                                 repeated_days=sum(r['repeated'] is True for r in scored),
                                 unknown_abnormal_days=sum(r['abnormal'] is None for r in scored),
                                 unknown_repeated_days=sum(r['repeated'] is None for r in scored),
+                                unknown_abnormal_reasons=dict(Counter(r['reason'] for r in scored if r['abnormal'] is None)),
+                                unknown_repeat_reasons=dict(Counter(r['repeat_reason'] for r in scored if r['repeated'] is None)),
                                 quarter_abnormal=quarter_signal(scored, 'abnormal', expected),
                                 quarter_repeated=quarter_signal(scored, 'repeated', expected),
                                 scored_sha256=hashlib.sha256(json.dumps(scored, sort_keys=True, allow_nan=False).encode()).hexdigest())
