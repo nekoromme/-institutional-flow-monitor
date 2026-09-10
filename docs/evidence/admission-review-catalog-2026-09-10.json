@@ -1,0 +1,389 @@
+{
+  "version": "admission-catalog-0.1",
+  "class_reviews": [
+    {
+      "ordinal": 4,
+      "cusip": "51216F109",
+      "issuer_cik": "0001996192",
+      "ticker": "LSH",
+      "eligibility_row_sha256": "3119097e10e9b4d6df0e1f47fa3de2ca294858924cecbaef1d3f5beee7ddb877",
+      "denominator_source_sha256": "8413ac452ea7097f27c3339b5bde3fa3699bbc48691a62e5a188713b1caedb62",
+      "shares": 17427559,
+      "period": "2025-09-30",
+      "fact_id": "ixv-11608",
+      "balance_sheet_row_sha256": "7b6824cbc17720253b3e6286bd5aec270d20fc9d57c031809e5abe7ec735c1ad",
+      "balance_sheet_row_excerpt": "Common stocks, $ 0.0001 par value, 200,000,000 shares authorized, 17,427,559 and 10,500,000 issued and outstanding as of September 30, 2025 and June 30, 2025, respectively 1,743 1,050",
+      "ownership_source_sha256": "5d19f48c0f06829e981f2cf5d91ae881705cc648c69ab4e2f8f1146c373c462d",
+      "ownership_security_class": "Common stock, par value US$0.0001 per share",
+      "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+      "certifies_complete_institutional_ownership": false
+    },
+    {
+      "ordinal": 179,
+      "cusip": "48301N104",
+      "issuer_cik": "0001962011",
+      "ticker": "KAPA",
+      "eligibility_row_sha256": "7211fb813447de292688dc366e4322b77a97fbd78b679d610ec7891ad242b417",
+      "denominator_source_sha256": "f762a83711045d17f7c9b865c99105d354e440f41159986a1c31b347a96683b7",
+      "shares": 20821353,
+      "period": "2025-09-30",
+      "fact_id": "Fact000122",
+      "balance_sheet_row_sha256": "fc7f7e79b70279aab36d97f6e489c3d29c5d577a4eebd476f0610c0b5243e836",
+      "balance_sheet_row_excerpt": "Common stock, par value $ 0.001 , 100,000,000 shares authorized; 20,821,353 and 13,736,597 shares issued and outstanding, respectively 21 14",
+      "ownership_source_sha256": "8bd8527b5197d3c373fdb0760f17abddc1d2e30cad9ad94d082425e0e796c661",
+      "ownership_security_class": "Common Stock, par value $0.001 per share",
+      "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+      "certifies_complete_institutional_ownership": false
+    },
+    {
+      "ordinal": 189,
+      "cusip": "131100109",
+      "issuer_cik": "0002032545",
+      "ticker": "CJMB",
+      "eligibility_row_sha256": "ef15f23388c6ce73061c6aa398f5bb2e4ebe05329bc09681e68a24734c05cd70",
+      "denominator_source_sha256": "d3be4282a100a9f14cdff2de622d0697cf88cbe5b492fab76ea794b8f7f87151",
+      "shares": 4623027,
+      "period": "2025-09-30",
+      "fact_id": "Fact000172",
+      "balance_sheet_row_sha256": "2ee83c67451c863a0ed2c5674a3e04ad2bac2214437251f49def30660461a5a2",
+      "balance_sheet_row_excerpt": "Common stock - authorized 190,000,000 shares, par value $ 0.001 par value; 4,623,027 issued and outstanding as of September 30, 2025 and 3,000,000 December 31, 2024 4,623 3,000",
+      "ownership_source_sha256": "3a05091fd0a945374445d831b9dcb6bc3fec81ae77e0a02d7264a3727f1f6c54",
+      "ownership_security_class": "Common Stock, par value $0.001 per share",
+      "review_conclusion": "same_ordinary_common_stock_class_as_identified_security; not_authorized_or_preferred_share_count",
+      "certifies_complete_institutional_ownership": false
+    }
+  ],
+  "eligibility_materials_sha256": "42923679c92c576648bea3d468a154fac8e197a7256ec263494c5c06e8d58d3a",
+  "issuer_sources": {
+    "indexes": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR1/master.gz",
+        "sha256": "7f2dce76a503d73a1f819b3221c33818689954868b9100c9aa0a506f2ed9fed1",
+        "bytes": 4212501
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR2/master.gz",
+        "sha256": "5d4ba07160b4356cfc0983bfbad1c7d5e5eba3b9d9f6ff1424b23b87e594dbfc",
+        "bytes": 4152695
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR3/master.gz",
+        "sha256": "523c9fadd1c0add56fc0af183e424ba24fb6e532c1bde03e994a6f035abe0460",
+        "bytes": 3614356
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/full-index/2025/QTR4/master.gz",
+        "sha256": "7e4f3c550d6b7eb84c85b6f277d94fbc0ba085e1aba2ba3cd8030cb9d15028d8",
+        "bytes": 3408985
+      }
+    ],
+    "files": [
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "8-K",
+          "filed": "2025-10-03",
+          "filename": "edgar/data/1996192/0001213900-25-096070.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-096070.txt",
+        "path": "data/sec-admission/0001213900-25-096070.txt",
+        "status": "ok",
+        "sha256": "54d2f8f785032d8119af9005649d1bf8b041581e69ac6d966ca19e1f70b1d20f",
+        "bytes": 190057,
+        "accepted": "20251003160549"
+      },
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "10-Q",
+          "filed": "2025-11-19",
+          "filename": "edgar/data/1996192/0001213900-25-112601.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-112601.txt",
+        "path": "data/sec-identity/filings/0001213900-25-112601.txt",
+        "status": "ok",
+        "sha256": "8413ac452ea7097f27c3339b5bde3fa3699bbc48691a62e5a188713b1caedb62",
+        "bytes": 9556037,
+        "accepted": "20251119160125"
+      },
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "10-K",
+          "filed": "2025-10-14",
+          "filename": "edgar/data/1996192/0001213900-25-098720.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-098720.txt",
+        "path": "data/sec-admission/0001213900-25-098720.txt",
+        "status": "ok",
+        "sha256": "e376c7b77aca276536a6f613abee8bb07a0eb4748d3a9bf7208b827e0c5d06e4",
+        "bytes": 9895227,
+        "accepted": "20251014160607"
+      },
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "8-K",
+          "filed": "2025-10-06",
+          "filename": "edgar/data/1996192/0001213900-25-096538.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-096538.txt",
+        "path": "data/sec-admission/0001213900-25-096538.txt",
+        "status": "ok",
+        "sha256": "72ea11356f4c95ea2cf598b9f9d00bd461a7fee6adcefcb94169beee648925b9",
+        "bytes": 197707,
+        "accepted": "20251006161025"
+      },
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "8-K",
+          "filed": "2025-12-02",
+          "filename": "edgar/data/1996192/0001213900-25-117240.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-117240.txt",
+        "path": "data/sec-admission/0001213900-25-117240.txt",
+        "status": "ok",
+        "sha256": "ee132dbaf20852283bcd21bf0c71c36b0427eda398f206ac14a8b419efd3fde0",
+        "bytes": 210436,
+        "accepted": "20251202160543"
+      },
+      {
+        "source": {
+          "cik": "0001996192",
+          "name": "Lakeside Holding Ltd",
+          "form": "8-K",
+          "filed": "2025-12-19",
+          "filename": "edgar/data/1996192/0001213900-25-123832.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1996192/0001213900-25-123832.txt",
+        "path": "data/sec-admission/0001213900-25-123832.txt",
+        "status": "ok",
+        "sha256": "b14f6e37cb6be010e76a02eed5865d8fc72dad95e1b24e06e581fb0db85f8c40",
+        "bytes": 417398,
+        "accepted": "20251219160529"
+      },
+      {
+        "source": {
+          "cik": "0001962011",
+          "name": "Kairos Pharma, LTD.",
+          "form": "10-Q",
+          "filed": "2025-11-14",
+          "filename": "edgar/data/1962011/0001493152-25-023276.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1962011/0001493152-25-023276.txt",
+        "path": "data/sec-identity/filings/0001493152-25-023276.txt",
+        "status": "ok",
+        "sha256": "f762a83711045d17f7c9b865c99105d354e440f41159986a1c31b347a96683b7",
+        "bytes": 16912721,
+        "accepted": "20251114134149"
+      },
+      {
+        "source": {
+          "cik": "0001962011",
+          "name": "Kairos Pharma, LTD.",
+          "form": "8-K",
+          "filed": "2025-10-07",
+          "filename": "edgar/data/1962011/0001493152-25-017208.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1962011/0001493152-25-017208.txt",
+        "path": "data/sec-admission/0001493152-25-017208.txt",
+        "status": "ok",
+        "sha256": "49247f72f64f5f17e598eabd58b6585dacc26b6df1caf0b557d00161353085da",
+        "bytes": 275204,
+        "accepted": "20251007080047"
+      },
+      {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "10-Q",
+          "filed": "2025-11-14",
+          "filename": "edgar/data/2032545/0001493152-25-023475.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-25-023475.txt",
+        "path": "data/sec-identity/filings/0001493152-25-023475.txt",
+        "status": "ok",
+        "sha256": "d3be4282a100a9f14cdff2de622d0697cf88cbe5b492fab76ea794b8f7f87151",
+        "bytes": 6602567,
+        "accepted": "20251114161133"
+      },
+      {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "8-K",
+          "filed": "2025-12-05",
+          "filename": "edgar/data/2032545/0001493152-25-026422.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-25-026422.txt",
+        "path": "data/sec-admission/0001493152-25-026422.txt",
+        "status": "ok",
+        "sha256": "91fde0b3d29f6d307b6310c0ae1f0a74375734cd0dbcdda1aa7a2bbfe39c7cdc",
+        "bytes": 209044,
+        "accepted": "20251205170027"
+      },
+      {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "8-K",
+          "filed": "2025-11-14",
+          "filename": "edgar/data/2032545/0001493152-25-023445.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-25-023445.txt",
+        "path": "data/sec-admission/0001493152-25-023445.txt",
+        "status": "ok",
+        "sha256": "9a29ea46baaaeaacdade31373f81946ba2fab85033e9fd870896a220a0db86c4",
+        "bytes": 306404,
+        "accepted": "20251114160600"
+      },
+      {
+        "source": {
+          "cik": "0001962011",
+          "name": "Kairos Pharma, LTD.",
+          "form": "8-K",
+          "filed": "2025-10-15",
+          "filename": "edgar/data/1962011/0001493152-25-018145.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/1962011/0001493152-25-018145.txt",
+        "path": "data/sec-admission/0001493152-25-018145.txt",
+        "status": "ok",
+        "sha256": "72e725ce1dd6a3a99bd6eee1e756a5e8dd43ec50d79dfcc7fc8c1e90374f90ac",
+        "bytes": 256438,
+        "accepted": "20251015161043"
+      },
+      {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "8-K",
+          "filed": "2025-12-31",
+          "filename": "edgar/data/2032545/0001493152-25-029719.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-25-029719.txt",
+        "path": "data/sec-admission/0001493152-25-029719.txt",
+        "status": "ok",
+        "sha256": "cb717ed10270228d8d02fb4b53d6851553c712ddc496a1a0bf4b3150ff9b2913",
+        "bytes": 212775,
+        "accepted": "20251231090024"
+      },
+      {
+        "source": {
+          "cik": "0002032545",
+          "name": "CALLAN JMB INC.",
+          "form": "8-K",
+          "filed": "2025-12-08",
+          "filename": "edgar/data/2032545/0001493152-25-026612.txt"
+        },
+        "url": "https://www.sec.gov/Archives/edgar/data/2032545/0001493152-25-026612.txt",
+        "path": "data/sec-admission/0001493152-25-026612.txt",
+        "status": "ok",
+        "sha256": "aca90f3a381de2e3a79bd100a81f65b2adc38d63f1de37417465ab1eb2eb5903",
+        "bytes": 280222,
+        "accepted": "20251208151150"
+      }
+    ]
+  },
+  "manager_sources": {
+    "files": [
+      {
+        "cik": "0001179392",
+        "name": "TWO SIGMA INVESTMENTS, LP",
+        "accession": "0000899140-25-001286",
+        "url": "https://www.sec.gov/Archives/edgar/data/1179392/000089914025001286/primary_doc.xml",
+        "path": "data/sec-admission/0000899140-25-001286-primary.xml",
+        "status": "ok",
+        "sha256": "4aba80d28f117e124f688d8e5b8f0d1f2d6c2facd2df8b79e2cf01bdbeed3379",
+        "bytes": 5324
+      },
+      {
+        "cik": "0001000275",
+        "name": "ROYAL BANK OF CANADA",
+        "accession": "0001140361-25-042265",
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000114036125042265/primary_doc.xml",
+        "path": "data/sec-admission/0001140361-25-042265-primary.xml",
+        "status": "ok",
+        "sha256": "9b43c95d589379183ceb3e8518946f0d9e4a665b0721be54fa8bb0669b8aea90",
+        "bytes": 7453
+      },
+      {
+        "cik": "0001423053",
+        "name": "CITADEL ADVISORS LLC",
+        "accession": "0001104659-25-112514",
+        "url": "https://www.sec.gov/Archives/edgar/data/1423053/000110465925112514/primary_doc.xml",
+        "path": "data/sec-admission/0001104659-25-112514-primary.xml",
+        "status": "ok",
+        "sha256": "e2f8372ac50a24566972151c42621145e7c213596c9848f4c41443609a721cbf",
+        "bytes": 2470
+      },
+      {
+        "cik": "0001664193",
+        "name": "Aptus Capital Advisors, LLC",
+        "accession": "0001398344-25-020792",
+        "url": "https://www.sec.gov/Archives/edgar/data/1664193/000139834425020792/primary_doc.xml",
+        "path": "data/sec-admission/0001398344-25-020792-primary.xml",
+        "status": "ok",
+        "sha256": "495cef3206c26d998a7e2bf3a083b8a2c13cae43db1c6a05c0f384dafa522cec",
+        "bytes": 2505
+      },
+      {
+        "cik": "0001450144",
+        "name": "TWO SIGMA SECURITIES, LLC",
+        "accession": "0000899140-25-001288",
+        "url": "https://www.sec.gov/Archives/edgar/data/1450144/000089914025001288/primary_doc.xml",
+        "path": "data/sec-admission/0000899140-25-001288-primary.xml",
+        "status": "ok",
+        "sha256": "a806081fabd8da9e15735071b84807da63399b111a09a241537b47bb0e57dcd7",
+        "bytes": 1858
+      },
+      {
+        "cik": "0001673954",
+        "name": "SevenBridge Financial Group, LLC",
+        "accession": "0001951757-25-001420",
+        "url": "https://www.sec.gov/Archives/edgar/data/1673954/000195175725001420/primary_doc.xml",
+        "path": "data/sec-admission/0001951757-25-001420-primary.xml",
+        "status": "ok",
+        "sha256": "c1f3f7fd63bc9ce53ee9519763e983bcd6dd9f8dee851022970b794467ab7467",
+        "bytes": 1993
+      }
+    ]
+  },
+  "event_reviews": [
+    {
+      "accession": "0001213900-25-096070",
+      "event": "minimum_bid_compliance_regained",
+      "event_date": "2025-09-29",
+      "does_not_prove_continuous_listing": true
+    },
+    {
+      "accession": "0001213900-25-117240",
+      "event": "authorized_common_and_preferred_share_increases_not_approved",
+      "does_not_change_outstanding_share_denominator": true
+    },
+    {
+      "accession": "0001213900-25-123832",
+      "event": "private_placement_contract_for_8400000_common_shares",
+      "event_date": "2025-12-15",
+      "contract_shares": 8400000,
+      "completion_date_not_confirmed": true,
+      "do_not_mix_with_september_holdings": true
+    },
+    {
+      "accession": "0001493152-25-029719",
+      "event": "annual_meeting_election_and_auditor_ratification",
+      "event_date": "2025-12-29",
+      "voting_share_count_not_new_period_denominator": true
+    }
+  ],
+  "holdings_audit_sha256_by_cusip": {
+    "51216F109": "040d74f2234e7679f8edbc31243916ce26b0ff708e5465c03ea0079f98b75881",
+    "48301N104": "c0f8275697273fade241213a3847a4def48403bbc3319257d0f31d4a8eacc026",
+    "131100109": "43ac30ba3d227339fe022e692c1db2ed0f6de60d1da9ba747aeaca67304bf5a9"
+  }
+}
