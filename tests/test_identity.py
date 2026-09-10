@@ -1,5 +1,7 @@
 """名前の似た会社・保有者と発行者・普通株と社債を混同しない検査。"""
 import unittest
+import hashlib
+from unittest.mock import patch
 
 from flow_probe.identity import name_key, propose
 from flow_probe.identity_sources import ownership_identity, listing_cover, listing_cover_parts, removal_notice, source_documents
@@ -102,6 +104,25 @@ class IdentityTests(unittest.TestCase):
             result = removal_notice(body(xml, '25-NSE'), source('25-NSE'), CIK)
             self.assertEqual(result['status'], expected)
             self.assertIsNone(result['automatic_delisting_effective_date'])
+
+    def test_reviewed_html_removal_cannot_transfer_to_changed_source_or_issuer(self):
+        # 実際の原書類をテストへ埋め込まず、内容の指紋による結び付けを検査する。
+        original = body('<html>Common stock (Description of class of securities)</html>', '25')
+        original = original.replace(b'</SEC-HEADER>', b'CENTRAL INDEX KEY: 0000000001\n</SEC-HEADER>')
+        entry = {'issuer_cik': CIK, 'sha256': hashlib.sha256(original).hexdigest(),
+                 'security_class': 'Common stock', 'reviewed_on': '2026-09-10'}
+        with patch.dict('flow_probe.identity_sources.HTML_REMOVAL_REVIEWS',
+                        {'0000000002-25-000001': entry}, clear=True):
+            result = removal_notice(original, source('25'), CIK)
+            self.assertEqual(result['status'], 'common_stock_notice')
+            self.assertIsNone(result['automatic_delisting_effective_date'])
+            for changed, issuer in [(original + b'changed', CIK), (original, '0000000009')]:
+                with self.assertRaisesRegex(ValueError, 'reviewed_html_removal_source_changed'):
+                    removal_notice(changed, source('25'), issuer)
+
+    def test_unreviewed_html_removal_remains_unknown(self):
+        with self.assertRaisesRegex(ValueError, 'missing_or_ambiguous_primary_xml'):
+            removal_notice(body('<html>Common stock</html>', '25'), source('25'), CIK)
 
 
 if __name__ == '__main__':

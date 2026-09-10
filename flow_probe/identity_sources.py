@@ -1,5 +1,6 @@
 """会社名の候補を原提出書類で確かめる。保有比率や検出成績の認定はしない。"""
 import argparse
+import hashlib
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
@@ -13,8 +14,9 @@ from xml.etree import ElementTree as ET
 from .bulk13f import digest
 from .cohort import AS_OF
 from .http_client import SafeHttp, ProbeError
+from .identity_reference import HTML_REMOVAL_REVIEWS
 
-VERSION = 'identity-sources-0.1'
+VERSION = 'identity-sources-0.2'
 
 
 def local(tag):
@@ -166,7 +168,20 @@ def parse_cover(doc, cik, accepted):
 
 
 def removal_notice(body, source, cik):
-    _, doc, accepted = source_documents(body, source)
+    header, doc, accepted = source_documents(body, source)
+    accession = source['filename'].split('/')[-1].removesuffix('.txt')
+    checked = HTML_REMOVAL_REVIEWS.get(accession)
+    if checked is not None:
+        # 原文を点検済みの2件だけを補完する。書類の内容が変われば再確認へ戻す。
+        if (source['form'] != '25' or checked['issuer_cik'] != cik
+                or hashlib.sha256(body).hexdigest() != checked['sha256']
+                or re.findall(r'CENTRAL INDEX KEY:\s*(\d+)', header) != [cik]):
+            raise ValueError('reviewed_html_removal_source_changed')
+        return {'kind': 'removal', 'status': 'common_stock_notice',
+                'security_class': checked['security_class'],
+                'accepted_at_new_york': accepted, 'automatic_delisting_effective_date': None,
+                'acquisition': 'source_bound_original_text_review',
+                'reviewed_on': checked['reviewed_on']}
     root = xml_primary(doc)
     issuers = [e for e in root.iter() if local(e.tag) == 'issuer']
     if len(issuers) != 1 or single(issuers[0], 'cik') != cik:
