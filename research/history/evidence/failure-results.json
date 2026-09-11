@@ -1,0 +1,1444 @@
+{
+  "causation_established": false,
+  "code_commit": "ff2afbb22bb2d2fa5d32646a34e622792142a05d",
+  "diagnostic_only": true,
+  "encrypted_sha256": "23f09ac5d527b1ea612ec34a3617d596ac4dc5a8c9cd43d7c84195b1be50d63f",
+  "plan_sha256": "297c1369f3fb0be592dc1b67809284e9dd5fa73e76312002ba9538feb5b4fb44",
+  "reserved_2025_opened": false,
+  "years": [
+    {
+      "failure_shapes": {
+        "cost_erased_gain": {
+          "attempts": 5,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 5,
+          "cost_sensitivity": {
+            "0": 0.002507448685444391,
+            "0.0025": -0.00249258846510636,
+            "0.005": -0.007467749808938029,
+            "0.01": -0.01734418396179218
+          },
+          "dividend_adjustment_changes_return": 4,
+          "dividend_reference_pairs": 5,
+          "equal_symbol_mean_net_return": -0.00249258846510636,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.0021804433318398098,
+            "minimum_mean": -0.00297115611424581
+          },
+          "mean_dividend_adjusted_reference_net": -0.0024549717806634287,
+          "mean_loss": -0.00249258846510636,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.00249258846510636,
+          "mean_price_return": 0.002507448685444391,
+          "mean_win": null,
+          "median_net_return": -0.0031101491554133,
+          "net_win_fraction": 0.0,
+          "priced": 5,
+          "symbols": 5,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.00297115611424581,
+          "worst_adverse_price_return": -0.05896226415094341,
+          "worst_net_return": -0.0037411689981725615
+        },
+        "intraday_gain_only_then_loss": {
+          "attempts": 35,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.12621163976400482,
+            "0.0025": -0.13056968644847353,
+            "0.005": -0.1349060513086415,
+            "0.01": -0.14351437957065818
+          },
+          "dividend_adjustment_changes_return": 14,
+          "dividend_reference_pairs": 35,
+          "equal_symbol_mean_net_return": -0.1238436724615117,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.11826551050388151,
+            "minimum_mean": -0.1343599843591549
+          },
+          "mean_dividend_adjusted_reference_net": -0.12940060087107957,
+          "mean_loss": -0.13056968644847353,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.13056968644847353,
+          "mean_price_return": -0.12621163976400482,
+          "mean_win": null,
+          "median_net_return": -0.09720094382876876,
+          "net_win_fraction": 0.0,
+          "priced": 35,
+          "symbols": 31,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.13415554930992532,
+          "worst_adverse_price_return": -0.4679600235155791,
+          "worst_net_return": -0.4612542717280871
+        },
+        "never_recovered_cost_even_intraday": {
+          "attempts": 13,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.07764340853208199,
+            "0.0025": -0.08224369078379222,
+            "0.005": -0.08682108605912585,
+            "0.01": -0.09590789549184275
+          },
+          "dividend_adjustment_changes_return": 4,
+          "dividend_reference_pairs": 13,
+          "equal_symbol_mean_net_return": -0.08224369078379222,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.07237002426791779,
+            "minimum_mean": -0.08780372788515486
+          },
+          "mean_dividend_adjusted_reference_net": -0.08176646231750269,
+          "mean_loss": -0.08224369078379222,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.08224369078379222,
+          "mean_price_return": -0.07764340853208199,
+          "mean_win": null,
+          "median_net_return": -0.06077945288134934,
+          "net_win_fraction": 0.0,
+          "priced": 13,
+          "symbols": 13,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.08780372788515486,
+          "worst_adverse_price_return": -0.28153043478260864,
+          "worst_net_return": -0.2007276889742854
+        },
+        "non_loss": {
+          "attempts": 76,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.09884184681132654,
+            "0.0025": 0.09336133884718038,
+            "0.005": 0.08790809709181098,
+            "0.01": 0.07708260232001313
+          },
+          "dividend_adjustment_changes_return": 31,
+          "dividend_reference_pairs": 76,
+          "equal_symbol_mean_net_return": 0.09253690286791875,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.09599485007302173,
+            "minimum_mean": 0.08653433094371218
+          },
+          "mean_dividend_adjusted_reference_net": 0.09378363095436125,
+          "mean_loss": null,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.09336133884718038,
+          "mean_price_return": 0.09884184681132654,
+          "mean_win": 0.09336133884718038,
+          "median_net_return": 0.04817512222658871,
+          "net_win_fraction": 1.0,
+          "priced": 76,
+          "symbols": 53,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.08732211455159108,
+          "worst_adverse_price_return": -0.23173004480748638,
+          "worst_net_return": 0.0009292922302768236
+        },
+        "profitable_close_then_loss": {
+          "attempts": 50,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.05339093712754855,
+            "0.0025": -0.058112179336388604,
+            "0.005": -0.0628099327780206,
+            "0.01": -0.07213567104581493
+          },
+          "dividend_adjustment_changes_return": 17,
+          "dividend_reference_pairs": 50,
+          "equal_symbol_mean_net_return": -0.056207425447254475,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.052064949651106494,
+            "minimum_mean": -0.05987293633012738
+          },
+          "mean_dividend_adjusted_reference_net": -0.05802315208593986,
+          "mean_loss": -0.058112179336388604,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.058112179336388604,
+          "mean_price_return": -0.05339093712754855,
+          "mean_win": null,
+          "median_net_return": -0.024911202041546843,
+          "net_win_fraction": 0.0,
+          "priced": 50,
+          "symbols": 41,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.05919635582953797,
+          "worst_adverse_price_return": -0.39880952380952384,
+          "worst_net_return": -0.3544264339152119
+        }
+      },
+      "horizons": {
+        "10": {
+          "fixed_entries": {
+            "attempts": 179,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 5,
+            "cost_sensitivity": {
+              "0": -0.003194418759478337,
+              "0.0025": -0.008166017668408519,
+              "0.005": -0.013112882254408794,
+              "0.01": -0.02293314314047878
+            },
+            "dividend_adjustment_changes_return": 70,
+            "dividend_reference_pairs": 179,
+            "equal_symbol_mean_net_return": -0.00489978568557138,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.0034242564937820336,
+              "minimum_mean": -0.012728254296249115
+            },
+            "mean_dividend_adjusted_reference_net": -0.007697550565833379,
+            "mean_loss": -0.08307940694204693,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.008166017668408519,
+            "mean_price_return": -0.003194418759478337,
+            "mean_win": 0.09336133884718038,
+            "median_net_return": -0.010395207633090986,
+            "net_win_fraction": 0.4245810055865922,
+            "priced": 179,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.011281013054278106,
+            "worst_adverse_price_return": -0.4679600235155791,
+            "worst_net_return": -0.4612542717280871
+          },
+          "rescheduled": {
+            "attempts": 179,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 5,
+            "cost_sensitivity": {
+              "0": -0.003194418759478337,
+              "0.0025": -0.008166017668408519,
+              "0.005": -0.013112882254408794,
+              "0.01": -0.02293314314047878
+            },
+            "dividend_adjustment_changes_return": 70,
+            "dividend_reference_pairs": 179,
+            "equal_symbol_mean_net_return": -0.00489978568557138,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.0034242564937820336,
+              "minimum_mean": -0.012728254296249115
+            },
+            "mean_dividend_adjusted_reference_net": -0.007697550565833379,
+            "mean_loss": -0.08307940694204693,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.008166017668408519,
+            "mean_price_return": -0.003194418759478337,
+            "mean_win": 0.09336133884718038,
+            "median_net_return": -0.010395207633090986,
+            "net_win_fraction": 0.4245810055865922,
+            "priced": 179,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.011281013054278106,
+            "worst_adverse_price_return": -0.4679600235155791,
+            "worst_net_return": -0.4612542717280871
+          }
+        },
+        "20": {
+          "fixed_entries": {
+            "attempts": 179,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": 0.0004784786854855027,
+              "0.0025": -0.004511438913943256,
+              "0.005": -0.009476531052678438,
+              "0.01": -0.01933297633798947
+            },
+            "dividend_adjustment_changes_return": 72,
+            "dividend_reference_pairs": 179,
+            "equal_symbol_mean_net_return": -0.00603576673192444,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.005526285297392948,
+              "minimum_mean": -0.010868410057354496
+            },
+            "mean_dividend_adjusted_reference_net": -0.003658306209064149,
+            "mean_loss": -0.1288043438321357,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.004511438913943256,
+            "mean_price_return": 0.0004784786854855027,
+            "mean_win": 0.1360579178387744,
+            "median_net_return": -0.014839139774326382,
+            "net_win_fraction": 0.4692737430167598,
+            "priced": 179,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.009648682961808975,
+            "worst_adverse_price_return": -0.5734814814814815,
+            "worst_net_return": -0.553428927680798
+          },
+          "rescheduled": {
+            "attempts": 171,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": 0.0038676572346674205,
+              "0.0025": -0.0011391639984230943,
+              "0.005": -0.006121075673140123,
+              "0.01": -0.01601091023532601
+            },
+            "dividend_adjustment_changes_return": 69,
+            "dividend_reference_pairs": 171,
+            "equal_symbol_mean_net_return": -0.00010998684477897467,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.009483880503685944,
+              "minimum_mean": -0.007835574169057604
+            },
+            "mean_dividend_adjusted_reference_net": -0.0002461309172197677,
+            "mean_loss": -0.1269458398328731,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.0011391639984230943,
+            "mean_price_return": 0.0038676572346674205,
+            "mean_win": 0.13864603137318804,
+            "median_net_return": -0.01058535096856994,
+            "net_win_fraction": 0.47368421052631576,
+            "priced": 171,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.00649832379609708,
+            "worst_adverse_price_return": -0.5734814814814815,
+            "worst_net_return": -0.5146676538669638
+          }
+        },
+        "5": {
+          "fixed_entries": {
+            "attempts": 179,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 7,
+            "cost_sensitivity": {
+              "0": -0.005268407079401802,
+              "0.0025": -0.010229661906935845,
+              "0.005": -0.01516623387463154,
+              "0.01": -0.024966062384760197
+            },
+            "dividend_adjustment_changes_return": 71,
+            "dividend_reference_pairs": 179,
+            "equal_symbol_mean_net_return": -0.012897303801853294,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.006884365263931695,
+              "minimum_mean": -0.014347915240407894
+            },
+            "mean_dividend_adjusted_reference_net": -0.01010386812700644,
+            "mean_loss": -0.06681101485355945,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.010229661906935845,
+            "mean_price_return": -0.005268407079401802,
+            "mean_win": 0.0647222601782019,
+            "median_net_return": -0.009820448877805421,
+            "net_win_fraction": 0.4301675977653631,
+            "priced": 179,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.014258431402562336,
+            "worst_adverse_price_return": -0.4094616639477977,
+            "worst_net_return": -0.3712017758695205
+          },
+          "rescheduled": {
+            "attempts": 185,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 8,
+            "cost_sensitivity": {
+              "0": -0.004462235404251707,
+              "0.0025": -0.009427511038145603,
+              "0.005": -0.014368083808189406,
+              "0.01": -0.024175854505157628
+            },
+            "dividend_adjustment_changes_return": 73,
+            "dividend_reference_pairs": 185,
+            "equal_symbol_mean_net_return": -0.01347837500067105,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.006179276632787905,
+              "minimum_mean": -0.01340197299599791
+            },
+            "mean_dividend_adjusted_reference_net": -0.009307487722796933,
+            "mean_loss": -0.0653578569853725,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.009427511038145603,
+            "mean_price_return": -0.004462235404251707,
+            "mean_win": 0.0639810680175897,
+            "median_net_return": -0.008998330508964258,
+            "net_win_fraction": 0.43243243243243246,
+            "priced": 185,
+            "symbols": 78,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.013320548099845196,
+            "worst_adverse_price_return": -0.4094616639477977,
+            "worst_net_return": -0.3712017758695205
+          }
+        }
+      },
+      "losing_trades": 103,
+      "losses_with_negative_first_day": 74,
+      "slices": {
+        "entry_gap": {
+          "above": {
+            "attempts": 98,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": 0.0037784655130798242,
+              "0.0025": -0.0012279108735189816,
+              "0.005": -0.00620937991491091,
+              "0.01": -0.0160983357842089
+            },
+            "dividend_adjustment_changes_return": 38,
+            "dividend_reference_pairs": 98,
+            "equal_symbol_mean_net_return": 0.0029428521069364234,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.002392051646733437,
+              "minimum_mean": -0.005746230811254621
+            },
+            "mean_dividend_adjusted_reference_net": -0.0007112945421594257,
+            "mean_loss": -0.06642115756770638,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.0012279108735189816,
+            "mean_price_return": 0.0037784655130798242,
+            "mean_win": 0.08569641805206421,
+            "median_net_return": -0.010800783367667599,
+            "net_win_fraction": 0.42857142857142855,
+            "priced": 98,
+            "symbols": 63,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.005746230811254621,
+            "worst_adverse_price_return": -0.4094616639477977,
+            "worst_net_return": -0.254364089775561
+          },
+          "at_or_below": {
+            "attempts": 81,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 2,
+            "cost_sensitivity": {
+              "0": -0.01163074787936352,
+              "0.0025": -0.016560270333830427,
+              "0.005": -0.02146526780096179,
+              "0.01": -0.031202416238188015
+            },
+            "dividend_adjustment_changes_return": 32,
+            "dividend_reference_pairs": 81,
+            "equal_symbol_mean_net_return": -0.006319013967858576,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.007197110685790529,
+              "minimum_mean": -0.026593752566390433
+            },
+            "mean_dividend_adjusted_reference_net": -0.0161500578537352,
+            "mean_loss": -0.10292753385615483,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.016560270333830427,
+            "mean_price_return": -0.01163074787936352,
+            "mean_win": 0.10282977041761801,
+            "median_net_return": -0.009802107634140356,
+            "net_win_fraction": 0.41975308641975306,
+            "priced": 81,
+            "symbols": 50,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.023596063225708033,
+            "worst_adverse_price_return": -0.4679600235155791,
+            "worst_net_return": -0.4612542717280871
+          }
+        },
+        "pre_signal_five_day_return": {
+          "above": {
+            "attempts": 61,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": -0.030578446632180265,
+              "0.0025": -0.03541346684847851,
+              "0.005": -0.0402244322378301,
+              "0.01": -0.049774913035503444
+            },
+            "dividend_adjustment_changes_return": 9,
+            "dividend_reference_pairs": 61,
+            "equal_symbol_mean_net_return": -0.018682123113163657,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.02311294544696675,
+              "minimum_mean": -0.05066684605606739
+            },
+            "mean_dividend_adjusted_reference_net": -0.03535303104647521,
+            "mean_loss": -0.13849667295040466,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.03541346684847851,
+            "mean_price_return": -0.030578446632180265,
+            "mean_win": 0.13489791714600816,
+            "median_net_return": -0.024736470268980293,
+            "net_win_fraction": 0.3770491803278688,
+            "priced": 61,
+            "symbols": 37,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.045108743979559454,
+            "worst_adverse_price_return": -0.4679600235155791,
+            "worst_net_return": -0.4612542717280871
+          },
+          "at_or_below": {
+            "attempts": 118,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 4,
+            "cost_sensitivity": {
+              "0": 0.010961731242511643,
+              "0.0025": 0.005919528094170036,
+              "0.005": 0.0009024105336310343,
+              "0.01": -0.009057312940508402
+            },
+            "dividend_adjustment_changes_return": 61,
+            "dividend_reference_pairs": 118,
+            "equal_symbol_mean_net_return": 0.0046380584556904945,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.008165515193846092,
+              "minimum_mean": 0.0014760673143002204
+            },
+            "mean_dividend_adjusted_reference_net": 0.006598926631786552,
+            "mean_loss": -0.05068162066023781,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.005919528094170036,
+            "mean_price_return": 0.010961731242511643,
+            "mean_win": 0.07533603128353815,
+            "median_net_return": -0.007209542024596005,
+            "net_win_fraction": 0.4491525423728814,
+            "priced": 118,
+            "symbols": 64,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": 0.002234659760899369,
+            "worst_adverse_price_return": -0.24039627982207845,
+            "worst_net_return": -0.2007276889742854
+          }
+        },
+        "signal_close_position": {
+          "above": {
+            "attempts": 105,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 2,
+            "cost_sensitivity": {
+              "0": -0.00211823925143362,
+              "0.0025": -0.007095205639206916,
+              "0.005": -0.012047411000175463,
+              "0.01": -0.021878274117741875
+            },
+            "dividend_adjustment_changes_return": 43,
+            "dividend_reference_pairs": 105,
+            "equal_symbol_mean_net_return": -0.00987892736988228,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.002159382545521843,
+              "minimum_mean": -0.014935805741288683
+            },
+            "mean_dividend_adjusted_reference_net": -0.006571049972877379,
+            "mean_loss": -0.09041928847608688,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.007095205639206916,
+            "mean_price_return": -0.00211823925143362,
+            "mean_win": 0.09977698756461739,
+            "median_net_return": -0.008650349159112336,
+            "net_win_fraction": 0.4380952380952381,
+            "priced": 105,
+            "symbols": 66,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.012416343780126002,
+            "worst_adverse_price_return": -0.4094616639477977,
+            "worst_net_return": -0.37929789034330363
+          },
+          "at_or_below": {
+            "attempts": 74,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": -0.004721430223595841,
+              "0.0025": -0.00968541311524863,
+              "0.005": -0.014624699574604737,
+              "0.01": -0.024429916753821685
+            },
+            "dividend_adjustment_changes_return": 27,
+            "dividend_reference_pairs": 74,
+            "equal_symbol_mean_net_return": -0.0037364909504067627,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.0017727146912076997,
+              "minimum_mean": -0.013780045138467006
+            },
+            "mean_dividend_adjusted_reference_net": -0.009295963569352028,
+            "mean_loss": -0.073237293066857,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.00968541311524863,
+            "mean_price_return": -0.004721430223595841,
+            "mean_win": 0.08352401081377697,
+            "median_net_return": -0.01243723943956887,
+            "net_win_fraction": 0.40540540540540543,
+            "priced": 74,
+            "symbols": 50,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.014478050493472224,
+            "worst_adverse_price_return": -0.4679600235155791,
+            "worst_net_return": -0.4612542717280871
+          }
+        }
+      },
+      "summary": {
+        "attempts": 179,
+        "benchmark_pairs": 0,
+        "cost_erased_positive_trades": 5,
+        "cost_sensitivity": {
+          "0": -0.003194418759478337,
+          "0.0025": -0.008166017668408519,
+          "0.005": -0.013112882254408794,
+          "0.01": -0.02293314314047878
+        },
+        "dividend_adjustment_changes_return": 70,
+        "dividend_reference_pairs": 179,
+        "equal_symbol_mean_net_return": -0.00489978568557138,
+        "leave_one_symbol_out": {
+          "interpretation": "fragility_only_not_confidence_interval",
+          "maximum_mean": -0.0034242564937820336,
+          "minimum_mean": -0.012728254296249115
+        },
+        "mean_dividend_adjusted_reference_net": -0.007697550565833379,
+        "mean_loss": -0.08307940694204693,
+        "mean_net_excess_over_benchmark": null,
+        "mean_net_return": -0.008166017668408519,
+        "mean_price_return": -0.003194418759478337,
+        "mean_win": 0.09336133884718038,
+        "median_net_return": -0.010395207633090986,
+        "net_win_fraction": 0.4245810055865922,
+        "priced": 179,
+        "symbols": 78,
+        "unresolved": 0,
+        "unresolved_reasons": {},
+        "without_best_trade_mean": -0.011281013054278106,
+        "worst_adverse_price_return": -0.4679600235155791,
+        "worst_net_return": -0.4612542717280871
+      },
+      "worst_trades": [
+        {
+          "best_close_net": -0.007327360610818734,
+          "entry_gap": -0.14522613065326617,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.0751824143345341,
+          "net_return": -0.4612542717280871,
+          "pre_signal_five_day_return": 3.43207126948775,
+          "signal_date": "2023-12-01",
+          "symbol": "VVOS"
+        },
+        {
+          "best_close_net": -0.03251432038293178,
+          "entry_gap": -0.05461538461538462,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.03251432038293178,
+          "net_return": -0.37929789034330363,
+          "pre_signal_five_day_return": 0.625,
+          "signal_date": "2023-02-13",
+          "symbol": "NBSE"
+        },
+        {
+          "best_close_net": 0.1075436408977557,
+          "entry_gap": -0.2941176470588235,
+          "failure_shape": "profitable_close_then_loss",
+          "first_day_net": 0.1075436408977557,
+          "net_return": -0.3544264339152119,
+          "pre_signal_five_day_return": 2.1733333333333333,
+          "signal_date": "2023-09-06",
+          "symbol": "NBSE"
+        },
+        {
+          "best_close_net": -0.07273306096460974,
+          "entry_gap": 0.0,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.07273306096460974,
+          "net_return": -0.2675014591181619,
+          "pre_signal_five_day_return": 0.40718562874251507,
+          "signal_date": "2023-11-08",
+          "symbol": "LYEL"
+        },
+        {
+          "best_close_net": 0.06134663341645896,
+          "entry_gap": 0.050000000000000044,
+          "failure_shape": "profitable_close_then_loss",
+          "first_day_net": 0.06134663341645896,
+          "net_return": -0.254364089775561,
+          "pre_signal_five_day_return": 0.22186495176848875,
+          "signal_date": "2023-09-28",
+          "symbol": "SANW"
+        },
+        {
+          "best_close_net": -0.12195027138037251,
+          "entry_gap": 0.00990099009900991,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.12195027138037251,
+          "net_return": -0.247887633856535,
+          "pre_signal_five_day_return": 0.24891801656980328,
+          "signal_date": "2023-12-07",
+          "symbol": "ADVM"
+        },
+        {
+          "best_close_net": -0.006465835411471166,
+          "entry_gap": -0.12473742122636788,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.1130174563591021,
+          "net_return": -0.2454962593516209,
+          "pre_signal_five_day_return": 0.3813734973055134,
+          "signal_date": "2023-08-08",
+          "symbol": "VVOS"
+        },
+        {
+          "best_close_net": -0.003364346067945889,
+          "entry_gap": 0.0182724252491695,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.003364346067945889,
+          "net_return": -0.21600159470817237,
+          "pre_signal_five_day_return": 0.20641282565130248,
+          "signal_date": "2023-12-14",
+          "symbol": "SPWR"
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "failure_shapes": {
+        "cost_erased_gain": {
+          "attempts": 1,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 1,
+          "cost_sensitivity": {
+            "0": 0.003067089357973174,
+            "0.0025": -0.001935739017876914,
+            "0.005": -0.006913677700315035,
+            "0.01": -0.01679562528277878
+          },
+          "dividend_adjustment_changes_return": 1,
+          "dividend_reference_pairs": 1,
+          "equal_symbol_mean_net_return": -0.001935739017876914,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": null,
+            "minimum_mean": null
+          },
+          "mean_dividend_adjusted_reference_net": -0.0019213971182818756,
+          "mean_loss": -0.001935739017876914,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.001935739017876914,
+          "mean_price_return": 0.003067089357973174,
+          "mean_win": null,
+          "median_net_return": -0.001935739017876914,
+          "net_win_fraction": 0.0,
+          "priced": 1,
+          "symbols": 1,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": null,
+          "worst_adverse_price_return": -0.031469625505812004,
+          "worst_net_return": -0.001935739017876914
+        },
+        "intraday_gain_only_then_loss": {
+          "attempts": 39,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.08412212205621734,
+            "0.0025": -0.08869009152227103,
+            "0.005": -0.0932353347720758,
+            "0.01": -0.10225831765906454
+          },
+          "dividend_adjustment_changes_return": 15,
+          "dividend_reference_pairs": 39,
+          "equal_symbol_mean_net_return": -0.08626334440010312,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.07285462507344502,
+            "minimum_mean": -0.09281908101121947
+          },
+          "mean_dividend_adjusted_reference_net": -0.08759555864217122,
+          "mean_loss": -0.08869009152227103,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.08869009152227103,
+          "mean_price_return": -0.08412212205621734,
+          "mean_win": null,
+          "median_net_return": -0.05620694667570292,
+          "net_win_fraction": 0.0,
+          "priced": 39,
+          "symbols": 30,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.09085574006398686,
+          "worst_adverse_price_return": -0.7525444023149073,
+          "worst_net_return": -0.7023500916437702
+        },
+        "never_recovered_cost_even_intraday": {
+          "attempts": 10,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.08351053666371427,
+            "0.0025": -0.08808155643097745,
+            "0.005": -0.0926298348063638,
+            "0.01": -0.10165884286839322
+          },
+          "dividend_adjustment_changes_return": 6,
+          "dividend_reference_pairs": 10,
+          "equal_symbol_mean_net_return": -0.08808155643097745,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.0620300958039082,
+            "minimum_mean": -0.0955677907101233
+          },
+          "mean_dividend_adjusted_reference_net": -0.08726683154000173,
+          "mean_loss": -0.08808155643097745,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.08808155643097745,
+          "mean_price_return": -0.08351053666371427,
+          "mean_win": null,
+          "median_net_return": -0.07780634782869156,
+          "net_win_fraction": 0.0,
+          "priced": 10,
+          "symbols": 10,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.0955677907101233,
+          "worst_adverse_price_return": -0.3255319148936171,
+          "worst_net_return": -0.32254470207460073
+        },
+        "non_loss": {
+          "attempts": 65,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": 0.11511235520741368,
+            "0.0025": 0.10955069757545662,
+            "0.005": 0.10401670988196686,
+            "0.01": 0.09303092243102924
+          },
+          "dividend_adjustment_changes_return": 23,
+          "dividend_reference_pairs": 65,
+          "equal_symbol_mean_net_return": 0.12192294056229279,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": 0.11362886356047688,
+            "minimum_mean": 0.09850332726854243
+          },
+          "mean_dividend_adjusted_reference_net": 0.11137503401653273,
+          "mean_loss": null,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": 0.10955069757545662,
+          "mean_price_return": 0.11511235520741368,
+          "mean_win": 0.10955069757545662,
+          "median_net_return": 0.06111056877379517,
+          "net_win_fraction": 1.0,
+          "priced": 65,
+          "symbols": 41,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": 0.09850332726854243,
+          "worst_adverse_price_return": -0.22470817120622566,
+          "worst_net_return": 0.003570300184042141
+        },
+        "profitable_close_then_loss": {
+          "attempts": 41,
+          "benchmark_pairs": 0,
+          "cost_erased_positive_trades": 0,
+          "cost_sensitivity": {
+            "0": -0.05363286604656204,
+            "0.0025": -0.0583529016273771,
+            "0.005": -0.06304945444410859,
+            "0.01": -0.07237280929316478
+          },
+          "dividend_adjustment_changes_return": 15,
+          "dividend_reference_pairs": 41,
+          "equal_symbol_mean_net_return": -0.06031931241695102,
+          "leave_one_symbol_out": {
+            "interpretation": "fragility_only_not_confidence_interval",
+            "maximum_mean": -0.05429100673088524,
+            "minimum_mean": -0.0603808889521308
+          },
+          "mean_dividend_adjusted_reference_net": -0.05811678590362851,
+          "mean_loss": -0.0583529016273771,
+          "mean_net_excess_over_benchmark": null,
+          "mean_net_return": -0.0583529016273771,
+          "mean_price_return": -0.05363286604656204,
+          "mean_win": null,
+          "median_net_return": -0.039151049415088734,
+          "net_win_fraction": 0.0,
+          "priced": 41,
+          "symbols": 31,
+          "unresolved": 0,
+          "unresolved_reasons": {},
+          "without_best_trade_mean": -0.05968703588875978,
+          "worst_adverse_price_return": -0.2735849056603774,
+          "worst_net_return": -0.22082869748705158
+        }
+      },
+      "horizons": {
+        "10": {
+          "fixed_entries": {
+            "attempts": 156,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": 0.007503554763469227,
+              "0.0025": 0.002478599378115367,
+              "0.005": -0.0025213562292020174,
+              "0.01": -0.012447010677391563
+            },
+            "dividend_adjustment_changes_return": 60,
+            "dividend_reference_pairs": 156,
+            "equal_symbol_mean_net_return": -0.004878108224096348,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.007780220493522307,
+              "minimum_mean": -0.0014844188559046275
+            },
+            "mean_dividend_adjusted_reference_net": 0.0036267467273261656,
+            "mean_loss": -0.07400147076284266,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.002478599378115367,
+            "mean_price_return": 0.007503554763469227,
+            "mean_win": 0.10955069757545662,
+            "median_net_return": -0.016357076782425206,
+            "net_win_fraction": 0.4166666666666667,
+            "priced": 156,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.0027736831885933353,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7023500916437702
+          },
+          "rescheduled": {
+            "attempts": 156,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": 0.007503554763469227,
+              "0.0025": 0.002478599378115367,
+              "0.005": -0.0025213562292020174,
+              "0.01": -0.012447010677391563
+            },
+            "dividend_adjustment_changes_return": 60,
+            "dividend_reference_pairs": 156,
+            "equal_symbol_mean_net_return": -0.004878108224096348,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.007780220493522307,
+              "minimum_mean": -0.0014844188559046275
+            },
+            "mean_dividend_adjusted_reference_net": 0.0036267467273261656,
+            "mean_loss": -0.07400147076284266,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.002478599378115367,
+            "mean_price_return": 0.007503554763469227,
+            "mean_win": 0.10955069757545662,
+            "median_net_return": -0.016357076782425206,
+            "net_win_fraction": 0.4166666666666667,
+            "priced": 156,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.0027736831885933353,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7023500916437702
+          }
+        },
+        "20": {
+          "fixed_entries": {
+            "attempts": 156,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": 0.02372221395449918,
+              "0.0025": 0.018616367500860882,
+              "0.005": 0.013535923268384863,
+              "0.01": 0.0034504869454991785
+            },
+            "dividend_adjustment_changes_return": 61,
+            "dividend_reference_pairs": 156,
+            "equal_symbol_mean_net_return": 0.004485265203302407,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.021660956261179604,
+              "minimum_mean": 0.005013683533131978
+            },
+            "mean_dividend_adjusted_reference_net": 0.020518870776093184,
+            "mean_loss": -0.11501923617532643,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.018616367500860882,
+            "mean_price_return": 0.02372221395449918,
+            "mean_win": 0.1745245717897461,
+            "median_net_return": -0.010065238878370353,
+            "net_win_fraction": 0.46153846153846156,
+            "priced": 156,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": 0.00811511982331101,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7033429198904554
+          },
+          "rescheduled": {
+            "attempts": 141,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 3,
+            "cost_sensitivity": {
+              "0": 0.021861559087575796,
+              "0.0025": 0.01676499270808674,
+              "0.005": 0.011693782380236838,
+              "0.01": 0.001626676729405961
+            },
+            "dividend_adjustment_changes_return": 58,
+            "dividend_reference_pairs": 141,
+            "equal_symbol_mean_net_return": 0.005362854777041029,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.020100267751205887,
+              "minimum_mean": 0.010180535062384335
+            },
+            "mean_dividend_adjusted_reference_net": 0.01886057178169901,
+            "mean_loss": -0.11764746993129133,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.01676499270808674,
+            "mean_price_return": 0.021861559087575796,
+            "mean_win": 0.1739241797941288,
+            "median_net_return": -0.009962593516209428,
+            "net_win_fraction": 0.46099290780141844,
+            "priced": 141,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": 0.005125387245136711,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7033429198904554
+          }
+        },
+        "5": {
+          "fixed_entries": {
+            "attempts": 156,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 4,
+            "cost_sensitivity": {
+              "0": 0.0010698609975582796,
+              "0.0025": -0.003923006139586545,
+              "0.005": -0.008891033141720794,
+              "0.01": -0.018753304566749823
+            },
+            "dividend_adjustment_changes_return": 61,
+            "dividend_reference_pairs": 156,
+            "equal_symbol_mean_net_return": -0.005747103605817243,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.001106053279625565,
+              "minimum_mean": -0.007142423619361195
+            },
+            "mean_dividend_adjusted_reference_net": -0.003814306913783776,
+            "mean_loss": -0.06317189883732618,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.003923006139586545,
+            "mean_price_return": 0.0010698609975582796,
+            "mean_win": 0.08834985953722109,
+            "median_net_return": -0.011893447470719354,
+            "net_win_fraction": 0.391025641025641,
+            "priced": 156,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.008745438173640978,
+            "worst_adverse_price_return": -0.7006585511873877,
+            "worst_net_return": -0.6822949610607287
+          },
+          "rescheduled": {
+            "attempts": 167,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 5,
+            "cost_sensitivity": {
+              "0": 0.0024572035543942825,
+              "0.0025": -0.002542582996999102,
+              "0.005": -0.0075174949884354025,
+              "0.01": -0.017393434139752157
+            },
+            "dividend_adjustment_changes_return": 65,
+            "dividend_reference_pairs": 167,
+            "equal_symbol_mean_net_return": -0.005355568386974608,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.002187602731482169,
+              "minimum_mean": -0.006164573454771127
+            },
+            "mean_dividend_adjusted_reference_net": -0.0024404050365961346,
+            "mean_loss": -0.06351683088689107,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.002542582996999102,
+            "mean_price_return": 0.0024572035543942825,
+            "mean_win": 0.08405852270168804,
+            "median_net_return": -0.009059193448603509,
+            "net_win_fraction": 0.41317365269461076,
+            "priced": 167,
+            "symbols": 58,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.007037140479745184,
+            "worst_adverse_price_return": -0.7006585511873877,
+            "worst_net_return": -0.6822949610607287
+          }
+        }
+      },
+      "losing_trades": 91,
+      "losses_with_negative_first_day": 62,
+      "slices": {
+        "entry_gap": {
+          "above": {
+            "attempts": 89,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": 0.007943573565801713,
+              "0.0025": 0.0029164235729549287,
+              "0.005": -0.002085715723410146,
+              "0.01": -0.012015705118669623
+            },
+            "dividend_adjustment_changes_return": 37,
+            "dividend_reference_pairs": 89,
+            "equal_symbol_mean_net_return": -0.0021743556843663607,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.008325712992969414,
+              "minimum_mean": -0.004385462025105437
+            },
+            "mean_dividend_adjusted_reference_net": 0.004626691384497236,
+            "mean_loss": -0.06707867152842656,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.0029164235729549287,
+            "mean_price_return": 0.007943573565801713,
+            "mean_win": 0.1405734439390052,
+            "median_net_return": -0.022125537220777813,
+            "net_win_fraction": 0.33707865168539325,
+            "priced": 89,
+            "symbols": 48,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.006329780673011085,
+            "worst_adverse_price_return": -0.3255319148936171,
+            "worst_net_return": -0.32254470207460073
+          },
+          "at_or_below": {
+            "attempts": 67,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 0,
+            "cost_sensitivity": {
+              "0": 0.006919052175296223,
+              "0.0025": 0.001897012014821023,
+              "0.005": -0.003100042871224055,
+              "0.01": -0.013019938956887871
+            },
+            "dividend_adjustment_changes_return": 23,
+            "dividend_reference_pairs": 67,
+            "equal_symbol_mean_net_return": 0.007277431302182017,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.013138213800118877,
+              "minimum_mean": -0.007072572884388515
+            },
+            "mean_dividend_adjusted_reference_net": 0.002298462033472058,
+            "mean_loss": -0.08676538185129737,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.001897012014821023,
+            "mean_price_return": 0.006919052175296223,
+            "mean_win": 0.0829597721209864,
+            "median_net_return": 0.008550053437833993,
+            "net_win_fraction": 0.5223880597014925,
+            "priced": 67,
+            "symbols": 44,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.007072572884388515,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7023500916437702
+          }
+        },
+        "pre_signal_five_day_return": {
+          "above": {
+            "attempts": 70,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 0,
+            "cost_sensitivity": {
+              "0": 0.030223239246905582,
+              "0.0025": 0.02508496872697099,
+              "0.005": 0.019972261741961338,
+              "0.01": 0.009822779063798526
+            },
+            "dividend_adjustment_changes_return": 19,
+            "dividend_reference_pairs": 70,
+            "equal_symbol_mean_net_return": 0.02097856113755236,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.03915196631799139,
+              "minimum_mean": 0.01639486642221776
+            },
+            "mean_dividend_adjusted_reference_net": 0.02690327678574056,
+            "mean_loss": -0.09778045520395112,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.02508496872697099,
+            "mean_price_return": 0.030223239246905582,
+            "mean_win": 0.1628431713161867,
+            "median_net_return": -0.008967592119062007,
+            "net_win_fraction": 0.4714285714285714,
+            "priced": 70,
+            "symbols": 38,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": 0.01361399150246384,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7023500916437702
+          },
+          "at_or_below": {
+            "attempts": 86,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": -0.010989211676537106,
+              "0.0025": -0.015921933812813628,
+              "0.005": -0.020830115042939634,
+              "0.01": -0.030573583722546285
+            },
+            "dividend_adjustment_changes_return": 41,
+            "dividend_reference_pairs": 86,
+            "equal_symbol_mean_net_return": -0.02046196948962246,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.013935848465574899,
+              "minimum_mean": -0.01822362242200791
+            },
+            "mean_dividend_adjusted_reference_net": -0.015319266110918108,
+            "mean_loss": -0.05770846290504613,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.015921933812813628,
+            "mean_price_return": -0.010989211676537106,
+            "mean_win": 0.05459283403032872,
+            "median_net_return": -0.021662428488246788,
+            "net_win_fraction": 0.37209302325581395,
+            "priced": 86,
+            "symbols": 46,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.017624093023050808,
+            "worst_adverse_price_return": -0.2571428571428571,
+            "worst_net_return": -0.1682317643391521
+          }
+        },
+        "signal_close_position": {
+          "above": {
+            "attempts": 96,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 1,
+            "cost_sensitivity": {
+              "0": -0.010108001774514193,
+              "0.0025": -0.015045118972646196,
+              "0.005": -0.01995767339864829,
+              "0.01": -0.029709823521553526
+            },
+            "dividend_adjustment_changes_return": 35,
+            "dividend_reference_pairs": 96,
+            "equal_symbol_mean_net_return": -0.020495750004544535,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": -0.006771107726758171,
+              "minimum_mean": -0.020929407610149917
+            },
+            "mean_dividend_adjusted_reference_net": -0.013605113003396238,
+            "mean_loss": -0.08511625422733583,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": -0.015045118972646196,
+            "mean_price_return": -0.010108001774514193,
+            "mean_win": 0.09668993454158863,
+            "median_net_return": -0.02105864682433123,
+            "net_win_fraction": 0.3854166666666667,
+            "priced": 96,
+            "symbols": 49,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": -0.0237990928272842,
+            "worst_adverse_price_return": -0.7525444023149073,
+            "worst_net_return": -0.7023500916437702
+          },
+          "at_or_below": {
+            "attempts": 60,
+            "benchmark_pairs": 0,
+            "cost_erased_positive_trades": 0,
+            "cost_sensitivity": {
+              "0": 0.035682045224242696,
+              "0.0025": 0.030516548739333866,
+              "0.005": 0.025376751241912018,
+              "0.01": 0.01517348987326758
+            },
+            "dividend_adjustment_changes_return": 25,
+            "dividend_reference_pairs": 60,
+            "equal_symbol_mean_net_return": 0.03912055133591443,
+            "leave_one_symbol_out": {
+              "interpretation": "fragility_only_not_confidence_interval",
+              "maximum_mean": 0.03662080420660842,
+              "minimum_mean": 0.020515448796256382
+            },
+            "mean_dividend_adjusted_reference_net": 0.031197722296482013,
+            "mean_loss": -0.05350858875018339,
+            "mean_net_excess_over_benchmark": null,
+            "mean_net_return": 0.030516548739333866,
+            "mean_price_return": 0.035682045224242696,
+            "mean_win": 0.12654527729878215,
+            "median_net_return": -0.009983941427229914,
+            "net_win_fraction": 0.4666666666666667,
+            "priced": 60,
+            "symbols": 42,
+            "unresolved": 0,
+            "unresolved_reasons": {},
+            "without_best_trade_mean": 0.020967852694870875,
+            "worst_adverse_price_return": -0.22470817120622566,
+            "worst_net_return": -0.1520563487355513
+          }
+        }
+      },
+      "summary": {
+        "attempts": 156,
+        "benchmark_pairs": 0,
+        "cost_erased_positive_trades": 1,
+        "cost_sensitivity": {
+          "0": 0.007503554763469227,
+          "0.0025": 0.002478599378115367,
+          "0.005": -0.0025213562292020174,
+          "0.01": -0.012447010677391563
+        },
+        "dividend_adjustment_changes_return": 60,
+        "dividend_reference_pairs": 156,
+        "equal_symbol_mean_net_return": -0.004878108224096348,
+        "leave_one_symbol_out": {
+          "interpretation": "fragility_only_not_confidence_interval",
+          "maximum_mean": 0.007780220493522307,
+          "minimum_mean": -0.0014844188559046275
+        },
+        "mean_dividend_adjusted_reference_net": 0.0036267467273261656,
+        "mean_loss": -0.07400147076284266,
+        "mean_net_excess_over_benchmark": null,
+        "mean_net_return": 0.002478599378115367,
+        "mean_price_return": 0.007503554763469227,
+        "mean_win": 0.10955069757545662,
+        "median_net_return": -0.016357076782425206,
+        "net_win_fraction": 0.4166666666666667,
+        "priced": 156,
+        "symbols": 58,
+        "unresolved": 0,
+        "unresolved_reasons": {},
+        "without_best_trade_mean": -0.0027736831885933353,
+        "worst_adverse_price_return": -0.7525444023149073,
+        "worst_net_return": -0.7023500916437702
+      },
+      "worst_trades": [
+        {
+          "best_close_net": -0.017695732729640645,
+          "entry_gap": -0.017450980392156867,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.017695732729640645,
+          "net_return": -0.7023500916437702,
+          "pre_signal_five_day_return": 0.21255349500713283,
+          "signal_date": "2024-10-22",
+          "symbol": "GORO"
+        },
+        {
+          "best_close_net": -0.024040961426221474,
+          "entry_gap": 0.010752688172043001,
+          "failure_shape": "never_recovered_cost_even_intraday",
+          "first_day_net": -0.024040961426221474,
+          "net_return": -0.32254470207460073,
+          "pre_signal_five_day_return": 0.6202090592334495,
+          "signal_date": "2024-02-29",
+          "symbol": "CDXS"
+        },
+        {
+          "best_close_net": -0.1679373725359069,
+          "entry_gap": 0.030590717299578074,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.1679373725359069,
+          "net_return": -0.22904356304734574,
+          "pre_signal_five_day_return": 0.21694480102695768,
+          "signal_date": "2024-07-18",
+          "symbol": "ADVM"
+        },
+        {
+          "best_close_net": 0.06994053328217942,
+          "entry_gap": 0.03347280334728042,
+          "failure_shape": "profitable_close_then_loss",
+          "first_day_net": 0.056244005371187455,
+          "net_return": -0.22082869748705158,
+          "pre_signal_five_day_return": 0.12312030075187952,
+          "signal_date": "2024-02-16",
+          "symbol": "SANW"
+        },
+        {
+          "best_close_net": -0.031292458508899945,
+          "entry_gap": -0.003436426116838587,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.031292458508899945,
+          "net_return": -0.21885802734542947,
+          "pre_signal_five_day_return": 0.17972972972972978,
+          "signal_date": "2024-07-16",
+          "symbol": "LVWR"
+        },
+        {
+          "best_close_net": 0.013786288994495077,
+          "entry_gap": -0.012422360248447228,
+          "failure_shape": "profitable_close_then_loss",
+          "first_day_net": -0.03627723144967754,
+          "net_return": -0.2177574930598033,
+          "pre_signal_five_day_return": 0.12587412587412605,
+          "signal_date": "2024-09-19",
+          "symbol": "VVOS"
+        },
+        {
+          "best_close_net": -0.2103775850319226,
+          "entry_gap": -0.03193133047210306,
+          "failure_shape": "intraday_gain_only_then_loss",
+          "first_day_net": -0.23684537547777984,
+          "net_return": -0.2103775850319226,
+          "pre_signal_five_day_return": 0.32386363636363646,
+          "signal_date": "2024-12-17",
+          "symbol": "BGFV"
+        },
+        {
+          "best_close_net": 0.0001948254364090296,
+          "entry_gap": 0.0,
+          "failure_shape": "profitable_close_then_loss",
+          "first_day_net": 0.0001948254364090296,
+          "net_return": -0.1682317643391521,
+          "pre_signal_five_day_return": 0.0696378830083566,
+          "signal_date": "2024-05-31",
+          "symbol": "HLLY"
+        }
+      ],
+      "year": 2024
+    }
+  ]
+}
