@@ -1,0 +1,49 @@
+name: 監視対象の値動きと失敗時期を比較
+on:
+  push:
+    branches: [main]
+    paths: ['research/history/cohort-context-request.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: historical-cohort-context
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cryptography==46.0.3
+      - run: python -m unittest discover -s research/history -p 'test_*.py' -v
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-expansion-encrypted-711eef96040703aa007d0e8c51409b5b8124a2fe
+          run-id: 34543739126
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/encrypted/
+      - name: 原因診断から事前固定の追加検証まで実行
+        env:
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python -m research.history.cohort_context_trial
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-cohort-context-public-${{ github.sha }}
+          path: diagnostics/history/cohort-context/
+          retention-days: 90
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-cohort-context-encrypted-${{ github.sha }}
+          path: data/history/encrypted/cohort-context-ledgers.enc
+          retention-days: 90
+          if-no-files-found: error
