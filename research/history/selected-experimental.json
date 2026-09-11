@@ -1,0 +1,22 @@
+{
+  "status": "experimental_profit_optimized_not_validated",
+  "selected_id": "depressed_h20_profit20_a0.2_c0.0025",
+  "config": {
+    "cost": 0.0025,
+    "entry": "depressed",
+    "horizon": 20,
+    "policy": "profit20",
+    "ticket": 0.2
+  },
+  "lower_drawdown_alternative_id": "volume_fade_h20_profit20_a0.1_c0.0025",
+  "seen_years": [
+    2023,
+    2024
+  ],
+  "reserved_2025_opened": false,
+  "unique_configurations_this_exploration": 137,
+  "code_commit": "84526657c836859d13ee71bf70a489705d85ec86",
+  "validated": false,
+  "production_adopted": false,
+  "rationale": "User-authorized profit-first exploration; highest seen-period portfolio CAGR; entry, exit and allocation all changed; worse drawdown and below SPY buy-and-hold."
+}
