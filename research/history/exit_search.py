@@ -102,7 +102,7 @@ def simulate_exit(scored, books, days, field, horizon, policy='none', *, ticket=
     return {'summary':summary,'years':annual_summaries(record)},record
 
 
-def load_inputs(root,secret):
+def load_inputs(root,secret,*,apply_extension=True):
     combined={};all_scored=[];calendar=set();overlap=0
     for year in (2023,2024):
         p=load_expanded(root,year,secret);books,_=prepare(p)
@@ -119,7 +119,7 @@ def load_inputs(root,secret):
         overlap+=merge_books(combined,books);all_scored.extend(scored);calendar.update(days)
     if len(all_scored)!=len({(r['symbol'],r['date']) for r in all_scored}):raise ValueError('duplicate_signals')
     # 延長価格は購入シグナルを作った後にだけ足す。対象一覧は変えない。
-    if os.environ.get('EXIT_EXTENSION') == '1':
+    if apply_extension and os.environ.get('EXIT_EXTENSION') == '1':
         path=root/'data/history/encrypted/exit-extension.enc'
         manifest=json.loads((root/'diagnostics/history/exit-search/extension.json').read_text())
         if digest(path)!=manifest['encrypted_sha256']:raise ValueError('extension_cipher_changed')
