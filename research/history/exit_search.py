@@ -50,7 +50,7 @@ def simulate_exit(scored, books, days, field, horizon, policy='none', *, ticket=
 
     def price(s,d):
         b=books.get(s,{}).get(d)
-        if not b or not b['valid']:raise ValueError('missing_required_price')
+        if not b or not b['valid']:raise ValueError(f'missing_required_price:{s}:{d}')
         return b['split']
 
     def sell(s,i,when,why):
