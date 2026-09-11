@@ -132,3 +132,5 @@ GitHubで生成した診断の詳細は、実行ログ内の `STAGE1_DIAGNOSTICS
 暫定データで検証を再開：[比較検証・試行1](docs/PRACTICAL_VALIDATION_1.md)。主条件335取引と改善2案を評価し、今回は採用なし。
 
 最新：[負け方の診断と試行2](docs/FAILURE_REVIEW_2.md)。3つの追加変更を評価し採用なし。負け例だけに合うルールを反証。
+
+最新：[凪の出来高と方向推定・試行3](docs/QUIET_AND_DIRECTION_3.md)。日足2案の検証後、実約定と直前気配で主導方向を推定。
