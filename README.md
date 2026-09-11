@@ -138,3 +138,5 @@ GitHubで生成した診断の詳細は、実行ログ内の `STAGE1_DIAGNOSTICS
 最新：[下落許容の出来高異常・試行4](docs/DOWNSIDE_REVIEW_4.md)。175取引を評価し、負け方から追加案も再検証。
 
 最新：[反発の原因追求と連続試行5](docs/REVERSAL_REVIEW_5.md)。5案を3サイクルで検証し、時期の偏りと周囲の銘柄との差まで診断。
+
+最新：[年間の資金全体の成績と指数比較](docs/ANNUAL_PORTFOLIO_REVIEW.md)。現金・同時保有・年末持ち越しを含む連続2年評価。
