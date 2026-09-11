@@ -72,6 +72,58 @@
       "source_local_path": "data/history/action-review/0001140361-26-033157.txt",
       "selection_information": false,
       "review_basis": "original_filing_explicit_ratio_and_trading_date"
+    },
+    {
+      "symbol": "AGFS",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2023-03-31",
+      "cash_per_share_usd": 3.0,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1592016/0001140361-23-015209.txt",
+      "source_sha256": "13a676ebfc035905c5070c020cfb0c6d0dac301b7da4d705968c4beaf940684b",
+      "source_local_path": "data/history/gap-events/0001140361-23-015209.txt.gz",
+      "filed": "2023-03-31",
+      "review_basis": "original_8K_common_share_conversion_and_trading_suspension",
+      "selection_information": false,
+      "cash_payment_date": null
+    },
+    {
+      "symbol": "CTG",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2023-12-13",
+      "cash_per_share_usd": 10.5,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/23111/0001193125-23-294477.txt",
+      "source_sha256": "c9e84aebbfd4b3daab782d1aef1a0be9e5d5c51e22c9432728777a9a66bd895f",
+      "source_local_path": "data/history/gap-events/0001193125-23-294477.txt.gz",
+      "filed": "2023-12-13",
+      "review_basis": "original_8K_common_share_conversion_and_trading_suspension",
+      "selection_information": false,
+      "cash_payment_date": null
+    },
+    {
+      "symbol": "FSTX",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2023-03-09",
+      "cash_per_share_usd": 7.12,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1566373/0001193125-23-065376.txt",
+      "source_sha256": "6d62716d5fad2d532d23e0dd0bcef24121b8a19d43ef76227ba69bb946d57d09",
+      "source_local_path": "data/history/gap-events/0001193125-23-065376.txt.gz",
+      "filed": "2023-03-09",
+      "review_basis": "original_8K_common_share_conversion_and_trading_suspension",
+      "selection_information": false,
+      "cash_payment_date": null
+    },
+    {
+      "symbol": "CTLT",
+      "kind": "cash_merger_trading_end",
+      "first_non_trading_date": "2024-12-18",
+      "cash_per_share_usd": 63.5,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596783/0001193125-24-280922.txt",
+      "source_sha256": "d4c4bcf115fe6f97161f2741c238071e201df093a902d9e87e59e3d431a823ca",
+      "source_local_path": "data/history/gap-events/0001193125-24-280922.txt.gz",
+      "filed": "2024-12-18",
+      "review_basis": "original_8K_common_share_conversion_and_trading_suspension",
+      "selection_information": false,
+      "cash_payment_date": null
     }
   ]
 }

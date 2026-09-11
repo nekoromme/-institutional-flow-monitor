@@ -1,0 +1,40 @@
+{
+  "purpose": "post_event_data_interpretation_only",
+  "selection_information": false,
+  "run_id": 34544996363,
+  "missing_symbol_years": 7,
+  "original_missing_rows": 1013,
+  "rename_recovered_rows_across_overlapping_year_windows": 273,
+  "cash_merger_absences": 498,
+  "AVYA_absences_pending_terminal_rights": 242,
+  "AVYA": {
+    "source": {
+      "bytes": 5081,
+      "path": "data/history/gap-events/0000876661-23-000119.txt.gz",
+      "retrieved_at_utc": "2026-09-11T00:10:57.601030+00:00",
+      "sha256": "54f84f36f91a72c22348ddb4dbebf6693006b87e7b453a70bf423b4dcdf10e58",
+      "symbol": "AVYA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1418100/0000876661-23-000119.txt"
+    },
+    "exchange_suspension_determination_date": "2023-02-15",
+    "listing_removal_date": "2023-02-27",
+    "first_missing_bar_date": "2023-02-14",
+    "first_missing_day_not_explained_by_suspension_notice": true,
+    "terminal_cash_value": null,
+    "policy": "no_imputed_zero_return; OTC and final cancellation remain unverified"
+  },
+  "LAZY": {
+    "replacement_symbol": "GORV",
+    "effective_date": "2024-01-17",
+    "announcement_url": "https://www.prnewswire.com/news-releases/lazydays-announces-rebranding-actions-and-stock-symbol-change-302036694.html",
+    "adjustment_units_certified": false
+  },
+  "zero_volume": {
+    "dataset_rows": 426,
+    "sampled_dates": 16,
+    "samples_with_trades": 7,
+    "all_refetched_daily_still_zero": true,
+    "all_minute_responses_empty": true,
+    "policy": "unresolved; do not substitute trade counts for eligible share volume; do not treat empty SIP as proof of no OTC trading"
+  }
+}

@@ -126,3 +126,5 @@ GitHubで生成した診断の詳細は、実行ログ内の `STAGE1_DIAGNOSTICS
 - [第2段階の仕様と準備結果](docs/STAGE2.md)
 - [第2段階の保有資料集計・分母の照合](docs/STAGE2_HOLDINGS.md)
 - [原報告の再照合・集計の修正・残る不確かさ](docs/STAGE2_REVIEW.md)
+
+最新のデータ整備：[欠損・ゼロ出来高の点検](docs/HISTORY_GAP_AUDIT.md)。コード変更の273行を修復し、現金買収4件を追加。拡張対象の成績計算は企業行動確認後に進める。
