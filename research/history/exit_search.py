@@ -118,6 +118,14 @@ def load_inputs(root,secret):
             if v is not None:r['cohort_tailwind']=r['falling_signal'] and v>0
         overlap+=merge_books(combined,books);all_scored.extend(scored);calendar.update(days)
     if len(all_scored)!=len({(r['symbol'],r['date']) for r in all_scored}):raise ValueError('duplicate_signals')
+    # 延長価格は購入シグナルを作った後にだけ足す。対象一覧は変えない。
+    if os.environ.get('EXIT_EXTENSION') == '1':
+        path=root/'data/history/encrypted/exit-extension.enc'
+        manifest=json.loads((root/'diagnostics/history/exit-search/extension.json').read_text())
+        if digest(path)!=manifest['encrypted_sha256']:raise ValueError('extension_cipher_changed')
+        extra=json.loads(decrypt_bytes(path.read_bytes(),secret))['prices']
+        additions={symbol:{d:{'valid':valid_bar(b),'split':b} for d,b in by_date(rows).items()} for symbol,rows in extra.items()}
+        overlap+=merge_books(combined,additions)
     source=root/'data/history/prior-annual/annual-portfolio.enc'
     if digest(source)!=SOURCE_HASH:raise ValueError('benchmark_input_changed')
     captures=json.loads(decrypt_bytes(source.read_bytes(),secret))['benchmark_captures']
@@ -180,6 +188,17 @@ def run(root,secret):
     out['best_profit_id']=normal[0]['id'] if normal else None
     restricted=[r for r in normal if r['summary']['max_close_drawdown']>=-.2 and all(y['annual_return']>0 for y in r['years'])]
     out['best_positive_years_drawdown20_id']=restricted[0]['id'] if restricted else None
+    if os.environ.get('EXIT_EXTENSION') == '1':
+        out['extension_metadata']=json.loads((root/'diagnostics/history/exit-search/extension.json').read_text())
+        out['new_market_requests']=out['extension_metadata']['metadata']['http_requests']
+        previous=json.loads((root/'research/history/evidence/exit-search-initial-results.json').read_text())
+        known={r['id']:r for r in previous['results'] if r['status']=='ok' and r['stage']=='base'}
+        out['reproduced_base_ids']=[]
+        for r in out['results']:
+            if r['id'] in known:
+                if r['status']!='ok' or r['summary']!=known[r['id']]['summary'] or r['years']!=known[r['id']]['years']:
+                    raise ValueError('extension_changed_previous_valid_result')
+                out['reproduced_base_ids'].append(r['id'])
     out['configuration_count']=len(out['results'])
     for r in normal[:5]:r['paired_SPY']=paired_index(private[r['id']],books,days,r['config']['ticket'],r['config']['cost'])
     out['legacy_baseline']=json.loads((root/'research/history/evidence/annual-continuous-results.json').read_text())['models']['cohort_tailwind']
