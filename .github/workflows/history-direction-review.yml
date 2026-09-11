@@ -1,0 +1,43 @@
+name: 保存済み約定の通常取引コード対応を修正
+on:
+  push:
+    branches: [main]
+    paths: ['research/history/direction-review-request.json']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cryptography==46.0.3
+      - run: python -m unittest discover -s research/history -p 'test_*.py'
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-quiet-encrypted-d0ec82bb5251af0eb3926bd491cd28a929e27b30
+          run-id: 34553377668
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/encrypted/
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-quiet-public-d0ec82bb5251af0eb3926bd491cd28a929e27b30
+          run-id: 34553377668
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: diagnostics/history/quiet/
+      - name: 同じ入力から分類し直す
+        env:
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          RECLASSIFY_ONLY: '1'
+        run: python -m research.history.direction_probe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: direction-reviewed-${{ github.sha }}
+          path: diagnostics/history/quiet/direction-reviewed.json
+          retention-days: 90

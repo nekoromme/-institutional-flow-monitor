@@ -22,7 +22,7 @@ def classify(trades,quotes,max_age=1,lag_ms=0):
         if not numeric(size) or size<=0 or not numeric(price) or price<=0:count['invalid_trade']+=1;continue
         volume['total']+=size;count['total']+=1
         # 通常/自動執行/端株の限定集合。場外時間や遅延等の混入を安易に分類しない。
-        if not c or not set(c)<={'@','F','I'}:volume['unsupported_condition']+=size;continue
+        if not c or not set(c)<={'@',' ','F','I'}:volume['unsupported_condition']+=size;continue
         ns=timestamp_ns(t['t']);i=bisect_left(stamps,ns-int(lag_ms*1e6))-1
         if i<0:volume['no_prior_quote']+=size;continue
         b=q[i];age=(ns-stamps[i])/1e9;bid,ask=b.get('bp'),b.get('ap')
@@ -69,4 +69,21 @@ def run(root,secret,key):
     raw=json.dumps(private,sort_keys=True,allow_nan=False).encode();enc=encrypt_bytes(raw,secret);assert decrypt_bytes(enc,secret)==raw
     path=root/'data/history/encrypted/direction-probe.enc';path.write_bytes(enc);out['encrypted_sha256']=digest(path);out['http']=client.metrics()
     write_json(root/'diagnostics/history/quiet/direction.json',out);return out
-if __name__=='__main__':run(ROOT,os.environ.get('ALPACA_SECRET_KEY',''),os.environ.get('ALPACA_API_KEY',''))
+def reclassify(root,secret):
+    prior=json.loads((root/'diagnostics/history/quiet/direction.json').read_text())
+    path=root/'data/history/encrypted/direction-probe.enc'
+    if digest(path)!=prior['encrypted_sha256']:raise ValueError('direction_input_changed')
+    private=json.loads(decrypt_bytes(path.read_bytes(),secret));out=dict(prior)
+    out.update(samples=[],reclassified_from_same_saved_input=True,reclassification_code_commit=os.environ.get('GITHUB_SHA'),
+               implementation_correction='CTS regular trade is space, not only @; see specification version history February 2017',
+               condition_source='https://www.ctaplan.com/publicdocs/ctaplan/CTS_Pillar_Output_Specification.pdf')
+    for x in private:
+        complete=all(m['complete'] for m in x['metadata'].values());r=x['records']
+        out['samples'].append({k:v for k,v in x.items() if k!='records'} | {'complete':complete,
+            'classifications':[classify(r['trades'],r['quotes'],age,lag) for age,lag in ((1,0),(5,0),(1,1))] if complete else []})
+    write_json(root/'diagnostics/history/quiet/direction-reviewed.json',out)
+    return out
+
+if __name__=='__main__':
+    if os.environ.get('RECLASSIFY_ONLY')=='1':reclassify(ROOT,os.environ.get('ALPACA_SECRET_KEY',''))
+    else:run(ROOT,os.environ.get('ALPACA_SECRET_KEY',''),os.environ.get('ALPACA_API_KEY',''))
