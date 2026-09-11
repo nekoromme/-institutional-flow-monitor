@@ -1,0 +1,61 @@
+name: 会社の存続・財務条件を比較
+on:
+  push:
+    branches: [main]
+    paths: ['research/history/quality-request.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: historical-quality
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install cryptography==46.0.3
+      - run: python -m unittest discover -s research/history -p 'test_*.py' -v
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-expansion-encrypted-711eef96040703aa007d0e8c51409b5b8124a2fe
+          run-id: 34543739126
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/encrypted/
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-annual-encrypted-c8588b37b69d4abfa7dd6da20c5903c515722995
+          run-id: 34559833955
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/prior-annual/
+      - uses: actions/download-artifact@v4
+        with:
+          name: history-exit-extension-encrypted-84526657c836859d13ee71bf70a489705d85ec86
+          run-id: 34561604571
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: data/history/encrypted/
+      - name: 当時の財務を取得して選定条件を比較
+        env:
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python -m research.history.quality_trial
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-quality-public-${{ github.sha }}
+          path: diagnostics/history/quality/
+          retention-days: 90
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-quality-encrypted-${{ github.sha }}
+          path: data/history/encrypted/quality-trial.enc
+          retention-days: 90
+          if-no-files-found: error
