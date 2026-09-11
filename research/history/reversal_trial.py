@@ -32,18 +32,24 @@ def enrich(scored, books, days):
     index = {d: i for i, d in enumerate(days)}
     for r in scored:
         r.update(falling_control=None, recovery_close=None, intact_trend=None,
-                 recovery_control=None, trend_control=None)
+                 recovery_control=None, trend_control=None, volume_fade=None,
+                 depressed=None, fade_control=None, depressed_control=None)
         if r['no_up_control'] is None:
             continue
         i = index[r['date']]
         book = books[r['symbol']]
         recovery, intact = mechanism_flags(book[r['date']]['split'],
             [book[d]['split']['c'] for d in days[i-60:i]])
+        # 売買量の山を越えたか。価格の下げ止まりは要求しない。
+        fading = book[r['date']]['split']['v'] < max(book[d]['split']['v'] for d in days[i-4:i])
         control = r['no_up_control'] and r['signal_day_down']
         r.update(falling_control=control, recovery_close=r['falling_signal'] and recovery,
                  intact_trend=r['falling_signal'] and intact,
                  recovery_control=control and recovery, trend_control=control and intact,
-                 recovery_flag=recovery, intact_flag=intact)
+                 recovery_flag=recovery, intact_flag=intact,
+                 volume_fade=r['falling_signal'] and fading,
+                 depressed=r['falling_signal'] and not intact,
+                 fade_control=control and fading, depressed_control=control and not intact)
 
 
 def compare_pass(s, parent, control):
@@ -68,8 +74,11 @@ def run(root, secret):
         enrich(scored, books, days)
         flags = {(r['symbol'], r['date']): r for r in scored}
         ledgers, summaries, halves = {}, {}, {}
-        for model in ('falling_signal', 'falling_control', 'recovery_close', 'intact_trend',
-                      'recovery_control', 'trend_control'):
+        models = ['falling_signal', 'falling_control', 'recovery_close', 'intact_trend',
+                  'recovery_control', 'trend_control']
+        if os.environ.get('REVERSAL_FOLLOWUP') == '1':
+            models += ['volume_fade', 'depressed', 'fade_control', 'depressed_control']
+        for model in models:
             attempts, _ = schedule(scored, days, model, 10,
                                    start=f'{year}-01-01', end=f'{year}-12-31')
             ledger = evaluate(attempts, books, days)
@@ -123,6 +132,10 @@ def run(root, secret):
     controls = {'recovery_close': 'recovery_control', 'intact_trend': 'trend_control'}
     if out['shorter_executed']:
         controls['falling_short5'] = 'control_short5'
+    if os.environ.get('REVERSAL_FOLLOWUP') == '1':
+        out['followup_plan_sha256'] = digest(root/'research/history/REVERSAL_FOLLOWUP.md')
+        out['new_strategy_variants'] += 2
+        controls.update(volume_fade='fade_control', depressed='depressed_control')
     out['passing_models'] = [m for m, c in controls.items() if all(
         compare_pass(y['summaries'][m], y['summaries']['falling_signal'], y['summaries'][c])
         for y in out['years'])]
