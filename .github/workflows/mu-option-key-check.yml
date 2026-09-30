@@ -1,0 +1,139 @@
+name: MUの既存キー接続・閲覧権限を確認
+on:
+  push:
+    branches: [codex/mu-option-key-check-20260930]
+    paths:
+      - '.github/workflows/mu-option-key-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mu-option-key-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: 登録済みキーで市場データだけを照会
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PYTHONUNBUFFERED: '1'
+        shell: bash
+        run: |
+          python - <<'PY'
+          """既存のAlpacaキーで、MUの市場データを読める範囲を小さく確認する。
+          
+          キーの値・認証ヘッダー・原市場データは出力しない。
+          照会先は市場データ専用サーバーだけ。注文や口座操作は含めない。
+          """
+          import json
+          import os
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from datetime import datetime, timedelta, timezone
+          from zoneinfo import ZoneInfo
+          
+          BASE = "https://data.alpaca.markets"
+          UTC = timezone.utc
+          
+          def iso(stamp):
+              return stamp.astimezone(UTC).isoformat().replace("+00:00", "Z")
+          
+          def get_market(path, params):
+              """一時的な混雑だけ再試行し、認証失敗はそのまま診断する。"""
+              request = urllib.request.Request(
+                  BASE + path + "?" + urllib.parse.urlencode(params),
+                  headers={
+                      "APCA-API-KEY-ID": os.environ["ALPACA_API_KEY"],
+                      "APCA-API-SECRET-KEY": os.environ["ALPACA_SECRET_KEY"],
+                      "User-Agent": "MU-market-access-check/1.0",
+                  },
+              )
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(request, timeout=25) as response:
+                          return response.status, json.load(response)
+                  except urllib.error.HTTPError as exc:
+                      # 応答本文にもキーを含む可能性を排除するため、本文は公開しない。
+                      if exc.code == 429 and attempt < 2:
+                          time.sleep(2 ** (attempt + 1))
+                          continue
+                      return exc.code, None
+                  except (urllib.error.URLError, TimeoutError, ValueError):
+                      if attempt < 2:
+                          time.sleep(2 ** (attempt + 1))
+                          continue
+                      return "connection_or_format_error", None
+              return "retry_limit", None
+          
+          def probe(label, path, params, field):
+              status, payload = get_market(path, params)
+              groups = (payload or {}).get(field) or {}
+              rows = [row for value in groups.values() for row in (value if isinstance(value, list) else [value])]
+              stamps = [row["t"] for row in rows if isinstance(row.get("t"), str)]
+              return {
+                  "test": label,
+                  "feed_requested": params.get("feed", "historical_endpoint"),
+                  "http_status": status,
+                  "returned_records": len(rows),
+                  "more_pages_exist": bool((payload or {}).get("next_page_token")),
+                  "first_record_at": min(stamps) if stamps else None,
+                  "last_record_at": max(stamps) if stamps else None,
+                  "market_values_published": False,
+              }
+          
+          result = {
+              "checked_at_utc": iso(datetime.now(UTC)),
+              "key_present": bool(os.environ.get("ALPACA_API_KEY")),
+              "secret_present": bool(os.environ.get("ALPACA_SECRET_KEY")),
+              "tests": [],
+          }
+          if result["key_present"] and result["secret_present"]:
+              now = datetime.now(UTC)
+              ny = now.astimezone(ZoneInfo("America/New_York"))
+              # 今回は開始直後の1分間を読む。無料契約の15分制限より古い区間。
+              start = ny.replace(hour=9, minute=30, second=0, microsecond=0).astimezone(UTC)
+              end = min(start + timedelta(minutes=1), now - timedelta(minutes=20))
+              if end <= start:
+                  result["session_status"] = "session_not_yet_old_enough"
+              else:
+                  option_params = {
+                      "symbols": "MU261002C01100000",
+                      "start": iso(start),
+                      "end": iso(end),
+                      "limit": 1000,
+                      "sort": "asc",
+                  }
+                  result["sample_window_utc"] = {"start": iso(start), "end": iso(end)}
+                  # 株の実データが読めるかも確認して、キー失効と契約制限を区別する。
+                  stock_params = {
+                      "symbols": "MU", "start": iso(start), "end": iso(end),
+                      "limit": 1000, "sort": "asc", "feed": "sip",
+                  }
+                  result["tests"].append(probe("MU_stock_actual_trades", "/v2/stocks/trades", stock_params, "trades"))
+                  result["tests"].append(probe("MU_option_actual_trades", "/v1beta1/options/trades", option_params, "trades"))
+                  latest_params = {"symbols": option_params["symbols"], "feed": "opra"}
+                  result["tests"].append(probe("MU_option_latest_actual_quotes", "/v1beta1/options/quotes/latest", latest_params, "quotes"))
+                  # 加工された無料の参考データは、実際の価格と区別して確認する。
+                  latest_params["feed"] = "indicative"
+                  result["tests"].append(probe("MU_option_latest_indicative_quotes", "/v1beta1/options/quotes/latest", latest_params, "quotes"))
+          else:
+              result["session_status"] = "repository_secrets_not_available"
+          
+          print("MU_KEY_ACCESS_CHECK_BEGIN")
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          print("MU_KEY_ACCESS_CHECK_END")
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary_path:
+              with open(summary_path, "a", encoding="utf-8") as file:
+                  file.write("# MUの既存キー接続・閲覧権限の確認\n\n")
+                  file.write("キーの値、認証ヘッダー、原市場データは出力していません。\n\n")
+                  file.write("| 試験 | 指定データ | 応答 | 件数 |\n|---|---|---|---:|\n")
+                  for test in result["tests"]:
+                      file.write("| {} | {} | {} | {} |\n".format(test["test"], test["feed_requested"], test["http_status"], test["returned_records"]))
+          
+          PY
