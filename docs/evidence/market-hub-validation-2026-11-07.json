@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-07",
+  "status": "verified",
+  "initial_run": 42344358496,
+  "restore_run": 42344482249,
+  "live_price_records": 27430,
+  "symbols": 22,
+  "local_tests": {
+    "hub": 16,
+    "existing": 162,
+    "history": 79
+  },
+  "live_confirmed": [
+    "SIP daily collection",
+    "three event study specifications",
+    "authenticated encryption roundtrip",
+    "previous successful run cache restore",
+    "aggregate-only publication"
+  ],
+  "not_live_verified": [
+    "FRED key and entitlement",
+    "new SEC adapter",
+    "external CSV vendor semantics",
+    "KRX direct ingestion",
+    "historical options entitlement"
+  ],
+  "known_limits": [
+    "90-day artifact retention",
+    "not proof of improved prediction accuracy",
+    "daily bars not RTH-only",
+    "retrieval-time split adjustments",
+    "current selected symbol sample"
+  ]
+}
