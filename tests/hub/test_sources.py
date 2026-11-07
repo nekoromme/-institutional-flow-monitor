@@ -10,7 +10,7 @@ from flow_probe.http_client import ProbeError
 from market_hub.store import Store
 from market_hub.source_access import SourceHttp
 from market_hub.supplemental import collect_fred_csv, collect_korea_naver, collect_retail_top10
-from market_hub.options_data import collect_chain, collect_history
+from market_hub.options_data import collect_chain, collect_history, collect_contracts
 
 
 class FakeSource:
@@ -94,6 +94,16 @@ class SourcesTests(unittest.TestCase):
     def test_historical_quotes_are_not_an_invented_api(self):
         with self.assertRaisesRegex(ValueError,'not_provided'):
             collect_history(self.store,['MU240621C00100000'],'2024-06-03T18:00:00Z','2024-06-03T18:01:00Z',kind='quotes')
+
+    def test_current_oi_keeps_actual_reference_date_and_zero(self):
+        source=FakeSource([{'option_contracts':[
+            {'symbol':'MU261120C00100000','underlying_symbol':'MU','open_interest':'0','open_interest_date':'2026-11-05','size':'100'},
+            {'symbol':'MU261120P00100000','underlying_symbol':'MU','open_interest':None,'open_interest_date':None,'size':'100'}],
+            'next_page_token':None}])
+        result=collect_contracts(self.store,'MU',client=source)
+        self.assertEqual(result['contracts_with_open_interest'],1)
+        self.assertEqual(result['open_interest_date_range'],['2026-11-05','2026-11-05'])
+        self.assertFalse(result['historical_backfill'])
 
     def test_option_history_before_february_2024_refused(self):
         with self.assertRaisesRegex(ValueError,'available_range'):

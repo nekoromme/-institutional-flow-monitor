@@ -172,7 +172,7 @@ def safe_failure(source, exc):
 
 
 def collect_supplemental(store, config_path):
-    from .options_data import collect_options
+    from .options_data import collect_options, collect_history
     from .providers import collect_macro
     config=json.loads(Path(config_path).read_text())
     today=date.today();end=(today-timedelta(days=1)).isoformat()
@@ -203,6 +203,11 @@ def collect_supplemental(store, config_path):
             result.extend(collect_options(store,symbol))
         except Exception as exc:
             result.append(safe_failure('alpaca_options:'+symbol,exc))
+    for request in config.get('option_history_requests',[]):
+        try:
+            result.append(collect_history(store,request['contracts'],request['start'],request['end'],kind=request.get('kind','bars')))
+        except Exception as exc:
+            result.append(safe_failure('alpaca_requested_option_history',exc))
     try:
         result.append(collect_retail_top10(store,(today-timedelta(days=35)).isoformat(),end))
     except Exception as exc:

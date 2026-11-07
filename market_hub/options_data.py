@@ -57,6 +57,56 @@ def collect_chain(store, underlying, *, feed, client=None, strike_min=None, stri
     return identifier,groups
 
 
+def collect_contracts(store, underlying, *, client=None, strike_min=None, strike_max=None):
+    """現在提供されている建玉とその基準日、契約倍率を保存。過去へ遡及しない。"""
+    if not re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,14}',underlying):
+        raise ValueError('invalid_option_request')
+    client=client or SourceHttp()
+    now=datetime.now(timezone.utc)
+    params={'underlying_symbols':underlying,'status':'active','limit':1000,
+            'expiration_date_gte':now.date().isoformat(),
+            'expiration_date_lte':(now.date()+timedelta(days=35)).isoformat()}
+    if strike_min is not None:
+        params.update(strike_price_gte=strike_min,strike_price_lte=strike_max)
+    url='https://paper-api.alpaca.markets/v2/options/contracts'
+    records=[];tokens=set();seen=set()
+    for _ in range(20):
+        payload=client.json(url,params)
+        chunk=payload.get('option_contracts')
+        if not isinstance(chunk,list):
+            raise ValueError('unexpected_option_contract_schema')
+        for row in chunk:
+            if row.get('underlying_symbol')!=underlying or row.get('symbol') in seen:
+                raise ValueError('unexpected_option_contract_entity')
+            seen.add(row['symbol'])
+            oi=row.get('open_interest')
+            if oi is not None and (not str(oi).isdigit() or int(oi)<0):
+                raise ValueError('invalid_open_interest')
+            oi_date=row.get('open_interest_date')
+            if oi_date is not None:
+                datetime.strptime(oi_date,'%Y-%m-%d')
+            records.append(row)
+        token=payload.get('next_page_token')
+        if not token:
+            break
+        if token in tokens:
+            raise ValueError('repeated_contract_page_token')
+        tokens.add(token);params['page_token']=token
+    else:
+        raise ValueError('option_contracts_incomplete')
+    if not records:
+        raise ValueError('empty_option_contracts')
+    metadata={'retrieved_at_utc':utcnow(),'source_url':url,'coverage':'active; expiry_next_35_days; strike_filter_if_provided',
+              'strike_filter':[strike_min,strike_max],'historical_backfill':False,
+              'open_interest_date_rule':'use_each_contract_open_interest_date; missing_is_unknown',
+              'multiplier_rule':'use_provider_contract_fields; never_assume_100'}
+    identifier=store.put('alpaca_option_contracts_oi',underlying,metadata,records)
+    dates=sorted({r['open_interest_date'] for r in records if r.get('open_interest_date')})
+    return {'source':'alpaca_option_contracts_oi:'+underlying,'status':'ok','dataset_id':identifier,
+            'contracts':len(records),'contracts_with_open_interest':sum(r.get('open_interest') is not None for r in records),
+            'open_interest_date_range':[dates[0],dates[-1]] if dates else None,'historical_backfill':False}
+
+
 def collect_history(store, contracts, start, end, *, kind='bars', feed=None, client=None):
     if kind=='quotes':
         raise ValueError('historical_option_quotes_not_provided')
@@ -130,6 +180,10 @@ def collect_options(store, underlying):
         rows=store.prices(ref['id'])
         if rows:
             strike_min=round(rows[-1]['close']*.8,2);strike_max=round(rows[-1]['close']*1.2,2)
+    try:
+        result.append(collect_contracts(store,underlying,client=client,strike_min=strike_min,strike_max=strike_max))
+    except Exception as exc:
+        result.append(safe_failure('alpaca_option_contracts_oi:'+underlying,exc))
     for feed in ('opra','indicative'):
         try:
             identifier,groups=collect_chain(store,underlying,feed=feed,client=client,strike_min=strike_min,strike_max=strike_max)

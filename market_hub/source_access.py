@@ -29,6 +29,7 @@ class SourceHttp:
             host == 'fred.stlouisfed.org' and path == '/graph/fredgraph.csv' or
             host == 'fchart.stock.naver.com' and path == '/sise.nhn' or
             host == 'data.nasdaq.com' and path == '/api/v3/datatables/NDAQ/RTAT10.json' or
+            host == 'paper-api.alpaca.markets' and path == '/v2/options/contracts' or
             host == 'data.alpaca.markets' and (
                 path in {'/v1beta1/options/bars','/v1beta1/options/trades'} or
                 re.fullmatch(r'/v1beta1/options/snapshots/[A-Z][A-Z0-9.\-]{0,14}',path))
@@ -36,7 +37,7 @@ class SourceHttp:
         if not allowed or parsed.scheme != 'https' or parsed.username or parsed.password or parsed.port not in (None,443) or parsed.query or parsed.fragment:
             raise ProbeError('destination_not_allowed')
         headers = {'User-Agent':'market-hub/0.2 (personal financial research)', 'Accept':'*/*'}
-        if host == 'data.alpaca.markets':
+        if host in {'data.alpaca.markets','paper-api.alpaca.markets'}:
             key, secret = os.environ.get('ALPACA_API_KEY',''),os.environ.get('ALPACA_SECRET_KEY','')
             if not key or not secret:
                 raise ProbeError('alpaca_credentials_missing')
