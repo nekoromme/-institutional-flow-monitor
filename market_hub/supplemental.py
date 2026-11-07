@@ -192,8 +192,12 @@ def collect_supplemental(store, config_path):
     # キーが既にあれば当時版APIも実測。キーの値自体は読まない・表示しない。
     if os.environ.get('FRED_API_KEY'):
         try:
-            identifier=collect_macro(store,'DGS10',start,end,today.isoformat())
-            result.append({'source':'fred_vintage_api','status':'ok','dataset_id':identifier})
+            requests=config.get('fred_vintage_requests') or [{'series':'DGS10','start':start,'end':end,'vintage':today.isoformat()}]
+            for request in requests:
+                identifier=collect_macro(store,request['series'],request['start'],request['end'],request['vintage'])
+                data=store.dataset(identifier)
+                result.append({'source':'fred_vintage_api','status':'ok','dataset_id':identifier,
+                    'series':request['series'],'vintage':request['vintage'],'rows':len(data['payload'])})
         except Exception as exc:
             result.append(safe_failure('fred_vintage_api',exc))
     else:
@@ -208,10 +212,20 @@ def collect_supplemental(store, config_path):
             result.append(collect_history(store,request['contracts'],request['start'],request['end'],kind=request.get('kind','bars')))
         except Exception as exc:
             result.append(safe_failure('alpaca_requested_option_history',exc))
-    try:
-        result.append(collect_retail_top10(store,(today-timedelta(days=35)).isoformat(),end))
-    except Exception as exc:
-        result.append(safe_failure('nasdaq_rtat10',exc))
+    mode=config.get('retail_flow_mode','optional_nasdaq_api')
+    if mode=='public_reports':
+        # 公開記事は検索・本文照合が必要。数値を機械で作ったり、ゼロで埋めたりしない。
+        result.append({'source':'retail_public_research','status':'external_research',
+                       'signup_required':False,'workflow':'existing_morning_retail_flow_research',
+                       'coverage':'public_reports_only; not_a_complete_daily_panel'})
+        result.append({'source':'nasdaq_rtat10','status':'disabled_by_preference'})
+    elif mode=='optional_nasdaq_api':
+        try:
+            result.append(collect_retail_top10(store,(today-timedelta(days=35)).isoformat(),end))
+        except Exception as exc:
+            result.append(safe_failure('nasdaq_rtat10',exc))
+    else:
+        result.append({'source':'retail_mode','status':'error','category':'invalid_retail_mode'})
     return {'retrieved_at_utc':utcnow(),'sources':result,'raw_data_public':False,
             'status':'partial' if any(r['status']=='error' for r in result) else 'ok',
             'note':'Each source has its own status; aggregate success is not proof that every source works.'}

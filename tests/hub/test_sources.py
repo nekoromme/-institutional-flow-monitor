@@ -9,7 +9,7 @@ from urllib.error import HTTPError
 from flow_probe.http_client import ProbeError
 from market_hub.store import Store
 from market_hub.source_access import SourceHttp
-from market_hub.supplemental import collect_fred_csv, collect_korea_naver, collect_retail_top10
+from market_hub.supplemental import collect_fred_csv, collect_korea_naver, collect_retail_top10, collect_supplemental
 from market_hub.options_data import collect_chain, collect_history, collect_contracts
 
 
@@ -60,6 +60,33 @@ class SourcesTests(unittest.TestCase):
         raw=b'<protocol><chartdata symbol="005930" timeframe="day"/></protocol>'
         with self.assertRaisesRegex(ValueError,'entity'):
             collect_korea_naver(self.store,'000660',client=FakeSource([raw]))
+    def test_public_preference_never_requires_nasdaq_key_or_calls_api(self):
+        import json
+        config=Path(self.tmp.name)/'sources.json'
+        config.write_text(json.dumps({'retail_flow_mode':'public_reports'}))
+        with patch.dict(os.environ,{},clear=True), patch('market_hub.supplemental.collect_retail_top10',side_effect=AssertionError('API must stay disabled')):
+            result=collect_supplemental(self.store,config)
+        entries={r['source']:r for r in result['sources']}
+        self.assertEqual(entries['nasdaq_rtat10']['status'],'disabled_by_preference')
+        self.assertFalse(entries['retail_public_research']['signup_required'])
+
+    def test_configured_fred_vintage_is_preserved_in_key_check(self):
+        import json
+        config=Path(self.tmp.name)/'sources.json'
+        request={'series':'PAYEMS','start':'2024-01-01','end':'2024-06-30','vintage':'2024-07-10'}
+        config.write_text(json.dumps({'retail_flow_mode':'public_reports','fred_vintage_requests':[request]}))
+        calls=[]
+        def fetch(store,series,start,end,vintage):
+            calls.append((series,start,end,vintage))
+            return store.put('fred',series,{'retrieved_at_utc':'2026-11-07T00:00:00Z','vintage':vintage},[{'date':'2024-06-01','value':'1'}])
+        with patch.dict(os.environ,{'FRED_API_KEY':'fixture-only'},clear=True),patch('market_hub.providers.collect_macro',side_effect=fetch):
+            result=collect_supplemental(self.store,config)
+        self.assertEqual(calls,[('PAYEMS','2024-01-01','2024-06-30','2024-07-10')])
+        item=next(r for r in result['sources'] if r['source']=='fred_vintage_api')
+        self.assertEqual(item['vintage'],'2024-07-10')
+        self.assertEqual(item['rows'],1)
+        self.assertNotIn('fixture-only',str(result))
+
     def test_retail_key_missing_is_not_zero_flow(self):
         with patch.dict(os.environ,{},clear=True):
             result=collect_retail_top10(self.store,'2024-01-01','2024-01-03')

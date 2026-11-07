@@ -66,11 +66,11 @@
     },
     {
       "id": "retail_flows",
-      "status": "nasdaq_rtat10_adapter_ready_key_pending",
+      "status": "public_reports_preferred_no_signup_required",
       "uses": [
         "Vanda等の個人投資家フロー"
       ],
-      "limits": "無料上位10銘柄の活動比率と10日派生センチメント。純買付金額と全市場フローは有料データ等が別途必要。"
+      "limits": "既存の朝の公開情報調査を優先。Nasdaq APIはユーザー希望で無効化し登録不要。公開値のある日だけ使い、欠けのない日次パネルとは見なさない。"
     },
     {
       "id": "historical_options",
