@@ -29,7 +29,7 @@
     },
     {
       "id": "fred",
-      "status": "public_csv_live_verified_vintage_api_key_pending",
+      "status": "public_csv_and_historical_vintage_api_live_verified_2026-11-07",
       "uses": [
         "金利",
         "為替",
@@ -40,7 +40,7 @@
         "FRED_API_KEY"
       ],
       "docs": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html",
-      "limits": "公式CSVの最新改定値をキーなしで取得。当時版APIはFRED_API_KEY登録後に試験。最新改定値を当時の判断へ投入しない。"
+      "limits": "公式CSVの最新公表版とFRED_API_KEYによる当時版APIの両方を確認済み。PAYEMSの2024-07-10版で2024年1〜6月の6観測を取得。時刻は日次なので発表直前の検証には追加資料が必要。"
     },
     {
       "id": "external_price_csv",

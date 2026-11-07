@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-07",
+  "run_id": 42356688605,
+  "commit": "b08c5e1c38c7daeaeaf3dc01c80581038418fab5",
+  "fred": {
+    "dataset_id": "0c3fe9869e6c31ae1b7793c4ca0354ee6360feae89888d109d0f3af080bfe2fb",
+    "rows": 6,
+    "series": "PAYEMS",
+    "source": "fred_vintage_api",
+    "status": "ok",
+    "vintage": "2024-07-10"
+  },
+  "retail_flow_mode": "public_reports",
+  "nasdaq_api": "disabled_by_preference",
+  "existing_public_research_automation": "Automation_e1236f209a2c8191946673336ad934f8",
+  "tests": {
+    "hub": 35,
+    "existing": 162
+  }
+}
