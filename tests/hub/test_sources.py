@@ -83,13 +83,18 @@ class SourcesTests(unittest.TestCase):
         self.assertTrue(metadata['indicative_derivatives'])
         self.assertFalse(metadata['historical_greeks'])
         self.assertFalse(metadata['open_interest_included'])
-    def test_option_quotes_are_paginated_and_feed_explicit(self):
+    def test_option_trades_paginate_without_inventing_feed_parameter(self):
         contract='MU240621C00100000'
-        source=FakeSource([{'quotes':{contract:[{'t':'2024-06-03T18:00:01Z','bp':1,'ap':2}]},'next_page_token':'second'},
-                           {'quotes':{contract:[{'t':'2024-06-03T18:00:02Z','bp':1,'ap':2}]},'next_page_token':None}])
-        result=collect_history(self.store,[contract],'2024-06-03T18:00:00Z','2024-06-03T18:01:00Z',kind='quotes',feed='opra',client=source)
+        source=FakeSource([{'trades':{contract:[{'t':'2024-06-03T18:00:01Z','p':1,'s':2}]},'next_page_token':'second'},
+                           {'trades':{contract:[{'t':'2024-06-03T18:00:02Z','p':1,'s':2}]},'next_page_token':None}])
+        result=collect_history(self.store,[contract],'2024-06-03T18:00:00Z','2024-06-03T18:01:00Z',kind='trades',client=source)
         self.assertEqual(result['records'],2)
-        self.assertTrue(all(call[1]['feed']=='opra' for call in source.calls))
+        self.assertTrue(all('feed' not in call[1] for call in source.calls))
+
+    def test_historical_quotes_are_not_an_invented_api(self):
+        with self.assertRaisesRegex(ValueError,'not_provided'):
+            collect_history(self.store,['MU240621C00100000'],'2024-06-03T18:00:00Z','2024-06-03T18:01:00Z',kind='quotes')
+
     def test_option_history_before_february_2024_refused(self):
         with self.assertRaisesRegex(ValueError,'available_range'):
             collect_history(self.store,['MU240119C00100000'],'2024-01-02T00:00:00Z','2024-01-03T00:00:00Z')

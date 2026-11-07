@@ -41,7 +41,7 @@ def parser():
     history.add_argument('--contracts',required=True)
     history.add_argument('--start',required=True)
     history.add_argument('--end',required=True)
-    history.add_argument('--kind',choices=['bars','quotes','trades'],default='bars')
+    history.add_argument('--kind',choices=['bars','trades'],default='bars')
     history.add_argument('--feed',choices=['opra','indicative'])
     commands.add_parser('inventory', help='保存済みデータのIDと取得時刻を表示')
     study = commands.add_parser('study', help='条件固定のイベント検証')

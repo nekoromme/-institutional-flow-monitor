@@ -30,7 +30,7 @@ def collect_chain(store, underlying, *, feed, client=None, strike_min=None, stri
         if not isinstance(snapshots,dict):
             raise ValueError('unexpected_option_snapshot_schema')
         for symbol,value in snapshots.items():
-            if not re.fullmatch(re.escape(underlying)+r'\d{6}[CP]\d{8}',symbol):
+            if not re.fullmatch(re.escape(underlying)+r'[0-9]?\d{6}[CP]\d{8}',symbol):
                 raise ValueError('unexpected_option_contract')
             if symbol in groups:
                 raise ValueError('duplicate_option_snapshot')
@@ -58,7 +58,9 @@ def collect_chain(store, underlying, *, feed, client=None, strike_min=None, stri
 
 
 def collect_history(store, contracts, start, end, *, kind='bars', feed=None, client=None):
-    if kind not in ('bars','quotes','trades') or not contracts or len(contracts)>100:
+    if kind=='quotes':
+        raise ValueError('historical_option_quotes_not_provided')
+    if kind not in ('bars','trades') or not contracts or len(contracts)>100:
         raise ValueError('invalid_option_history_request')
     if any(not re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,14}\d{6}[CP]\d{8}',x) for x in contracts):
         raise ValueError('invalid_occ_contract_symbol')
@@ -67,16 +69,12 @@ def collect_history(store, contracts, start, end, *, kind='bars', feed=None, cli
         raise ValueError('option_history_date_outside_available_range')
     if ended-began>timedelta(days=366 if kind=='bars' else 1):
         raise ValueError('option_history_window_too_large')
-    if kind=='bars' and feed is not None:
-        # bars APIにfeedは文書化されていないため、勝手に指定して無視される危険を避ける。
-        raise ValueError('option_bar_feed_not_documented')
-    if kind!='bars' and feed not in ('opra','indicative'):
-        raise ValueError('option_quote_trade_feed_required')
+    if feed is not None:
+        # bars/tradesの履歴APIにはfeed指定が文書化されていない。
+        raise ValueError('option_history_feed_not_documented')
     params={'symbols':','.join(contracts),'start':start,'end':end,'limit':10000,'sort':'asc'}
     if kind=='bars':
         params['timeframe']='1Day'
-    else:
-        params['feed']=feed
     client=client or SourceHttp()
     groups={c:[] for c in contracts};tokens=set();url=BASE+kind
     for _ in range(30):
@@ -149,11 +147,11 @@ def collect_options(store, underlying):
         for field in ('latestTrade','latestQuote'):
             item=snapshot.get(field,{})
             if item.get('t') and timestamp(item['t'])<=cutoff:
-                eligible.append((timestamp(item['t']),contract))
+                eligible.append((1 if field=='latestTrade' else 0,timestamp(item['t']),contract))
     if not eligible:
         result.append({'source':'alpaca_option_history:'+underlying,'status':'no_timestamped_contract_available'})
         return result
-    point,contract=max(eligible)
+    _,point,contract=max(eligible)
     # 日中の一部や代表契約だけの取得を、過去チェーン全体の網羅と呼ばない。
     end=(point+timedelta(seconds=1)).isoformat()
     start=(point-timedelta(days=7)).replace(hour=0,minute=0,second=0,microsecond=0).isoformat()
@@ -161,10 +159,10 @@ def collect_options(store, underlying):
         result.append(collect_history(store,[contract],start,end,client=client))
     except Exception as exc:
         result.append(safe_failure('alpaca_option_history_bars:'+underlying,exc))
-    for feed in ('opra','indicative'):
-        try:
-            result.append(collect_history(store,[contract],(point-timedelta(seconds=30)).isoformat(),end,
-                                          kind='quotes',feed=feed,client=client))
-        except Exception as exc:
-            result.append({**safe_failure('alpaca_option_history_quotes:'+underlying,exc),'feed_requested':feed})
+    try:
+        result.append(collect_history(store,[contract],(point-timedelta(seconds=30)).isoformat(),end,
+                                      kind='trades',client=client))
+    except Exception as exc:
+        result.append(safe_failure('alpaca_option_history_trades:'+underlying,exc))
+    result.append({'source':'alpaca_option_historical_quotes:'+underlying,'status':'not_provided_by_documented_api'})
     return result

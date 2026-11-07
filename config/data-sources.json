@@ -78,7 +78,7 @@
       "uses": [
         "過去の建玉・IV・スキュー"
       ],
-      "limits": "チェーン、代表契約の履歴bars/quotesを実測。現在IV/Greeksと過去のIV/建玉を区別。参考配信を実市場気配と呼ばない。"
+      "limits": "チェーン、代表契約の履歴bars/tradesを実測。現在IV/Greeksと過去のIV/建玉を区別。参考配信を実市場気配と呼ばない。"
     },
     {
       "id": "naver_korea",

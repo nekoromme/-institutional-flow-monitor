@@ -158,7 +158,8 @@ def collect_retail_top10(store, start, end, *, client=None):
               'sentiment_definition':'derived_from_most_recent_10_trading_day_net_flows',
               'not_available':['daily_net_buy_dollars','full_universe','actor_identity_ground_truth']}
     identifier=store.put('nasdaq_rtat10','TOP10',metadata,rows)
-    return {'source':'nasdaq_rtat10','status':'ok','dataset_id':identifier,'rows':len(rows)}
+    return {'source':'nasdaq_rtat10','status':'ok','dataset_id':identifier,'rows':len(rows),'latest_observation_date':max(r['date'] for r in rows),
+            'requested_end':end,'publication_lag_possible':True}
 
 
 def safe_failure(source, exc):
