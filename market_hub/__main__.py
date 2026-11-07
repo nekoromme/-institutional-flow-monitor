@@ -35,6 +35,14 @@ def parser():
     macro = commands.add_parser('macro', help='当時の改定版を指定してFREDを取得')
     for arg in ('series','start','end','vintage'):
         macro.add_argument('--'+arg, required=True)
+    enrich = commands.add_parser('enrich', help='韓国株・公式経済CSV・オプション・主体別指標の取得')
+    enrich.add_argument('--config', default='config/source-request.json')
+    history = commands.add_parser('option-history', help='指定契約の過去オプションを取得')
+    history.add_argument('--contracts',required=True)
+    history.add_argument('--start',required=True)
+    history.add_argument('--end',required=True)
+    history.add_argument('--kind',choices=['bars','quotes','trades'],default='bars')
+    history.add_argument('--feed',choices=['opra','indicative'])
     commands.add_parser('inventory', help='保存済みデータのIDと取得時刻を表示')
     study = commands.add_parser('study', help='条件固定のイベント検証')
     study.add_argument('--dataset', required=True)
@@ -157,6 +165,13 @@ def main(argv=None):
             result = collect_sec(store, args.cik)
         elif args.command == 'macro':
             result = {'dataset_id': collect_macro(store,args.series,args.start,args.end,args.vintage)}
+        elif args.command == 'enrich':
+            from .supplemental import collect_supplemental
+            result = collect_supplemental(store,args.config)
+            write_private('diagnostics/hub/source-status.json',result)
+        elif args.command == 'option-history':
+            from .options_data import collect_history
+            result = collect_history(store,args.contracts.split(','),args.start,args.end,kind=args.kind,feed=args.feed)
         elif args.command == 'inventory':
             result = store.inventory()
         elif args.command == 'import-prices':

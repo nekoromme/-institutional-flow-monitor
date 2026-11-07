@@ -154,6 +154,8 @@ def run_study(store, dataset_id, benchmark_id, *, kind, threshold, horizons,
               cost_bps=25, test_start=None, as_of=None, allow_overlap=False):
     own, ref = store.dataset(dataset_id), store.dataset(benchmark_id)
     a, b = own['metadata'], ref['metadata']
+    if a.get('calendar_verified') is False or b.get('calendar_verified') is False:
+        raise ValueError('unverified_exchange_calendar')
     for key in ('feed', 'adjustment', 'currency', 'timeframe', 'session_scope', 'exchange_timezone'):
         if a.get(key) != b.get(key) or a.get(key) is None:
             raise ValueError('incompatible_price_datasets')

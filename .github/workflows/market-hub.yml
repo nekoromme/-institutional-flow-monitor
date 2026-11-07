@@ -2,9 +2,9 @@ name: 株価分析ハブ・検証とデータ更新
 on:
   push:
     branches: [main]
-    paths: ['market_hub/**', 'tests/hub/**', 'config/market-hub.json', 'config/research-request.json', '.github/workflows/market-hub.yml']
+    paths: ['market_hub/**', 'tests/hub/**', 'config/market-hub.json', 'config/research-request.json', 'config/source-request.json', '.github/workflows/market-hub.yml']
   pull_request:
-    paths: ['market_hub/**', 'tests/hub/**', 'config/market-hub.json', 'config/research-request.json', '.github/workflows/market-hub.yml']
+    paths: ['market_hub/**', 'tests/hub/**', 'config/market-hub.json', 'config/research-request.json', 'config/source-request.json', '.github/workflows/market-hub.yml']
   workflow_dispatch:
   schedule:
     - cron: '35 6 * * 2-6' # 日本時間 火〜土15:35。NY前日の時間外も終了後に取得。
@@ -75,6 +75,13 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python -m market_hub cycle
+      - name: 韓国株・経済データ・オプションの接続と収集
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          NASDAQ_DATA_LINK_API_KEY: ${{ secrets.NASDAQ_DATA_LINK_API_KEY }}
+        run: python -m market_hub enrich
       - name: DBを暗号化・復号照合
         env:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
