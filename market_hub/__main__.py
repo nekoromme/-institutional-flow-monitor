@@ -3,6 +3,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -126,7 +127,9 @@ def cycle(store, config_path, request_path):
               'records': sum(r['rows'] for r in results),
               'symbols_with_missing_sessions': sum(bool(r['missing_sessions']) for r in results),
               'raw_data_public': False, 'coverage': 'Alpaca SIP split-adjusted provider daily bars',
-              'cache_retention_days': 90}
+              'cache_retention_days': 90,
+              'coverage_diagnostics': [{'symbol':r['symbol'], 'rows':r['rows'],
+                  'missing_session_count':len(r['missing_sessions'])} for r in results]}
     write_private('diagnostics/hub/status.json', status)
     return status
 
@@ -184,9 +187,11 @@ def main(argv=None):
             result = {'status':'encrypted','bytes':len(encrypted)}
         print(canonical(result))
         return 0
-    except (ValueError, KeyError, TypeError, OSError, ProbeError) as exc:
+    except Exception as exc:
         # 未知の例外文字列は外部応答やパスを含み得るため、公開しない。
         category = exc.category if isinstance(exc,ProbeError) else 'hub_operation_failed'
+        if isinstance(exc,ValueError) and re.fullmatch(r'[a-z_]{3,80}',str(exc)):
+            category = str(exc)
         print(canonical({'status':'error','category':category,'operation':args.command}),file=sys.stderr)
         return 1
     finally:
