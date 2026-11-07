@@ -50,7 +50,7 @@
         "為替",
         "契約済みデータ"
       ],
-      "limits": "カレンダー・補正・時刻・通貨・出所必須。米韓を同じ営業日扱いにしない。自動KRX収集は未実装。"
+      "limits": "カレンダー・補正・時刻・通貨・出所必須。NAVER韓国株の直接取得は別実装済み。KRX公式API直接接続は未実装。"
     },
     {
       "id": "evidence_json",
@@ -74,15 +74,15 @@
     },
     {
       "id": "historical_options",
-      "status": "alpaca_adapter_ready_live_entitlement_test_pending",
+      "status": "live_verified_partial_entitlement_2026-11-07",
       "uses": [
         "過去の建玉・IV・スキュー"
       ],
-      "limits": "チェーン、代表契約の履歴bars/tradesを実測。現在IV/Greeksと過去のIV/建玉を区別。参考配信を実市場気配と呼ばない。"
+      "limits": "MU/VRT/SOXLの参考チェーン、代表契約の過去日足・約定、基準日付き現在建玉を取得済み。OPRAチェーン403。過去気配APIなし。過去IV・建玉の網羅バックフィルではない。"
     },
     {
       "id": "naver_korea",
-      "status": "local_live_verified_actions_test_pending",
+      "status": "actions_live_verified_2026-11-07",
       "uses": [
         "SKハイニクス000660",
         "サムスン005930"

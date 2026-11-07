@@ -1,0 +1,275 @@
+{
+  "date": "2026-11-07",
+  "workflow_run": 42352343487,
+  "commit": "3838f24c26980debdf71db851d281c80b994a3bf",
+  "hub_tests": 33,
+  "existing_tests": 162,
+  "source_status": {
+    "note": "Each source has its own status; aggregate success is not proof that every source works.",
+    "raw_data_public": false,
+    "retrieved_at_utc": "2026-11-07T07:42:30.701036+00:00",
+    "sources": [
+      {
+        "dataset_id": "05a1bb65b28d1e916851ae3c5fb6fa5b72f504b8f0e2bb9927fb138b7c61dfbc",
+        "missing_values": 110,
+        "point_in_time_usable": false,
+        "rows": 2609,
+        "series": "DGS2",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "a8f5f69bcdc6fbd14d0ae696c0b1f204304b49471b94ee681091ec54e87326b6",
+        "missing_values": 110,
+        "point_in_time_usable": false,
+        "rows": 2609,
+        "series": "DGS10",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "7ad43aabc3b579660d301ee7e4219e6b0208e1226d81cfb3124f696bcd0fb59f",
+        "missing_values": 110,
+        "point_in_time_usable": false,
+        "rows": 2610,
+        "series": "T10Y2Y",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "6ab9eb5b2cbafe84e11a4d4e9670c9f9c50f42ca96302724bb9bd3d40794d978",
+        "missing_values": 113,
+        "point_in_time_usable": false,
+        "rows": 2605,
+        "series": "DEXKOUS",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "8447428dfd342c4de2b5a3c635aca90e63d68b57b14247b308fa4ea8712f8d86",
+        "missing_values": 113,
+        "point_in_time_usable": false,
+        "rows": 2605,
+        "series": "DEXJPUS",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "879b015c8f27221c87840cd36ed713c1bcf6493c35294c7ad079b28cfa4f9c70",
+        "missing_values": 115,
+        "point_in_time_usable": false,
+        "rows": 2605,
+        "series": "DTWEXBGS",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "8d0e24fe0e8c4901104787e074ed3534faa3e82abd4ab486929ed8ecbcda1c8c",
+        "missing_values": 1,
+        "point_in_time_usable": false,
+        "rows": 119,
+        "series": "UNRATE",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "f0ce6060ae086c7ff38dcd4c644ea94d2a2a8faa1d0c8c5cd35bdb97f5c1cc5b",
+        "missing_values": 0,
+        "point_in_time_usable": false,
+        "rows": 119,
+        "series": "PAYEMS",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "52ddb134e3d00536df47c0d649543fc1ce92c1c99de8aa54ec725652caed0a9d",
+        "missing_values": 1,
+        "point_in_time_usable": false,
+        "rows": 118,
+        "series": "CPIAUCSL",
+        "source": "fred_public_csv",
+        "status": "ok"
+      },
+      {
+        "dataset_id": "38aa4cc21ff9a24ed1ce7758132ae2bcf2331e85ad0d63c32db7caee16369fb8",
+        "end": "2026-11-06",
+        "event_study_eligible": false,
+        "invalid_rows_quarantined": 0,
+        "rows": 1500,
+        "source": "naver_korea",
+        "start": "2020-09-21",
+        "status": "ok",
+        "symbol": "000660"
+      },
+      {
+        "dataset_id": "98f7449c7890a14b7f864925280571bafb7d38923ff2b40e844c494c4c7e0fd8",
+        "end": "2026-11-06",
+        "event_study_eligible": false,
+        "invalid_rows_quarantined": 0,
+        "rows": 1500,
+        "source": "naver_korea",
+        "start": "2020-09-21",
+        "status": "ok",
+        "symbol": "005930"
+      },
+      {
+        "required_secret": "FRED_API_KEY",
+        "source": "fred_vintage_api",
+        "status": "not_configured"
+      },
+      {
+        "contracts": 1432,
+        "contracts_with_open_interest": 882,
+        "dataset_id": "42429be4cd9a12b8b376c8d293a2bd3b976c1546f5038bbd0705691929aab9aa",
+        "historical_backfill": false,
+        "open_interest_date_range": [
+          "2026-11-05",
+          "2026-11-05"
+        ],
+        "source": "alpaca_option_contracts_oi:MU",
+        "status": "ok"
+      },
+      {
+        "category": "forbidden_check_auth_and_entitlement",
+        "feed_requested": "opra",
+        "http_status": 403,
+        "source": "alpaca_option_chain:MU",
+        "status": "error"
+      },
+      {
+        "contracts": 1236,
+        "dataset_id": "2b8df45f4f440b0221de7784eca07da5c4a989bcefad3917d515c7c539b48771",
+        "feed_requested": "indicative",
+        "greek_contracts": 1114,
+        "historical_implied_volatility": false,
+        "historical_open_interest": false,
+        "source": "alpaca_option_chain:MU",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "eb2e62a429ece6e2b5f83c71e213f8534563ac3357080eacc78dc9004b921a1b",
+        "feed_requested": null,
+        "records": 6,
+        "source": "alpaca_option_history_bars",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "8247b9b801afac1cc503d53c3607f6adab03bc49046ac29be85933a6c32b31f4",
+        "feed_requested": null,
+        "records": 1,
+        "source": "alpaca_option_history_trades",
+        "status": "ok"
+      },
+      {
+        "source": "alpaca_option_historical_quotes:MU",
+        "status": "not_provided_by_documented_api"
+      },
+      {
+        "contracts": 218,
+        "contracts_with_open_interest": 170,
+        "dataset_id": "f9ca0d8fdc5167d33666ba33d6d7146f382bfd5268d7e99bafb0ddf460c83fb1",
+        "historical_backfill": false,
+        "open_interest_date_range": [
+          "2026-11-05",
+          "2026-11-05"
+        ],
+        "source": "alpaca_option_contracts_oi:VRT",
+        "status": "ok"
+      },
+      {
+        "category": "forbidden_check_auth_and_entitlement",
+        "feed_requested": "opra",
+        "http_status": 403,
+        "source": "alpaca_option_chain:VRT",
+        "status": "error"
+      },
+      {
+        "contracts": 187,
+        "dataset_id": "28d2fd3d89bcb2c3701339b2c1ff137e2624787c828a6b63d324f1ea57a6c16f",
+        "feed_requested": "indicative",
+        "greek_contracts": 184,
+        "historical_implied_volatility": false,
+        "historical_open_interest": false,
+        "source": "alpaca_option_chain:VRT",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "f60b0f11033c5ae9c07c54e90f04a06291da2aca6a26b6a6c1886b1018dc066c",
+        "feed_requested": null,
+        "records": 6,
+        "source": "alpaca_option_history_bars",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "9463894316051d91b53d0b6721107b47018a7a96bd77bb93fd1dcefde484baa3",
+        "feed_requested": null,
+        "records": 1,
+        "source": "alpaca_option_history_trades",
+        "status": "ok"
+      },
+      {
+        "source": "alpaca_option_historical_quotes:VRT",
+        "status": "not_provided_by_documented_api"
+      },
+      {
+        "contracts": 190,
+        "contracts_with_open_interest": 166,
+        "dataset_id": "88de5d85687c5c52bb988d59fd62f1c083d468a1584ad481dd7ed0b715c1a1ff",
+        "historical_backfill": false,
+        "open_interest_date_range": [
+          "2026-11-05",
+          "2026-11-05"
+        ],
+        "source": "alpaca_option_contracts_oi:SOXL",
+        "status": "ok"
+      },
+      {
+        "category": "forbidden_check_auth_and_entitlement",
+        "feed_requested": "opra",
+        "http_status": 403,
+        "source": "alpaca_option_chain:SOXL",
+        "status": "error"
+      },
+      {
+        "contracts": 190,
+        "dataset_id": "983e688ce559a0a4c179f7e01382f0df02cb5897801fe90fac96691cbc4ea710",
+        "feed_requested": "indicative",
+        "greek_contracts": 178,
+        "historical_implied_volatility": false,
+        "historical_open_interest": false,
+        "source": "alpaca_option_chain:SOXL",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "6b2b0de1de346c2229974f0e4d7144aab4669e7716ea498f9be05b1e16de2bac",
+        "feed_requested": null,
+        "records": 6,
+        "source": "alpaca_option_history_bars",
+        "status": "ok"
+      },
+      {
+        "contracts": 1,
+        "dataset_id": "5043dff27ebd5e17bc1b55a0233113a51c01a19f70452f98135e52605aab56db",
+        "feed_requested": null,
+        "records": 1,
+        "source": "alpaca_option_history_trades",
+        "status": "ok"
+      },
+      {
+        "source": "alpaca_option_historical_quotes:SOXL",
+        "status": "not_provided_by_documented_api"
+      },
+      {
+        "required_secret": "NASDAQ_DATA_LINK_API_KEY",
+        "source": "nasdaq_rtat10",
+        "status": "not_configured"
+      }
+    ],
+    "status": "partial"
+  }
+}
