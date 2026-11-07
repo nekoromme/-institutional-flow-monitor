@@ -1,0 +1,2 @@
+# 暗号化キャッシュのみで使用。指標計算・SQLite・取得はPython標準機能。
+cryptography==46.0.3

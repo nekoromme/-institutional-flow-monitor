@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "lookback_calendar_days": 1826,
+  "symbols": ["SPY", "QQQ", "SOXX", "SOXL", "TMF", "NVDA", "MU", "LRCX", "TSM", "ONTO", "AAOI", "VRT", "VST", "CEG", "STRL", "LEU", "CCJ", "BWXT", "SMR", "MSTR", "COIN", "MARA"],
+  "benchmark_default": "SPY",
+  "note": "研究対象の現在リスト。推奨銘柄でも過去の全上場銘柄一覧でもない。韓国本国株とADR比率は確認済み外部データを取り込む。"
+}

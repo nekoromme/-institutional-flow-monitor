@@ -1,0 +1,12 @@
+{
+  "reviewed_on": "2026-11-07",
+  "sources": [
+    {"id":"alpaca", "status":"implemented_live_test_pending", "uses":["米株・ETF日足", "既存コードの分足・歩み値・気配"], "credentials":["ALPACA_API_KEY","ALPACA_SECRET_KEY"], "docs":"https://docs.alpaca.markets/us/reference/stockbars", "limits":"SIPを明示。権限は実測。日足はRTH限定ではない。split補正は取得時の版。配当別。"},
+    {"id":"sec", "status":"implemented", "uses":["提出履歴","XBRL決算情報","既存コードの13F"], "credentials":[], "docs":"https://www.sec.gov/search-filings/edgar-application-programming-interfaces", "limits":"提出日・受理時刻で利用可否を判定。独自タグ・部門別数値の網羅は保証しない。提出履歴の過去アーカイブは参照だけで自動全取得ではない。"},
+    {"id":"fred", "status":"implemented_key_not_verified", "uses":["金利","為替","雇用・景気","当時の改定版"], "credentials":["FRED_API_KEY"], "docs":"https://fred.stlouisfed.org/docs/api/fred/series_observations.html", "limits":"vintage指定必須。公表時刻の粒度は日次で、発表直前の検証には追加資料が必要。シリーズごとの利用条件を確認。"},
+    {"id":"external_price_csv", "status":"implemented_import", "uses":["韓国株","為替","契約済みデータ"], "limits":"カレンダー・補正・時刻・通貨・出所必須。米韓を同じ営業日扱いにしない。自動KRX収集は未実装。"},
+    {"id":"evidence_json", "status":"implemented_import", "uses":["主体別売買","オプション","ニュース","予測記事","決算イベント"], "limits":"公表・対象・取得時刻、実測/推計/意見、集計範囲を必須保存。自動ニュース検索・有料サイト取得は未実装。"},
+    {"id":"retail_flows", "status":"external_research_required", "uses":["Vanda等の個人投資家フロー"], "limits":"契約データや公開報道に依存。出来高から主体を断定しない。"},
+    {"id":"historical_options", "status":"external_data_required", "uses":["過去の建玉・IV・スキュー"], "limits":"過去チェーンを無料で網羅できると仮定しない。現時点の建玉を過去へ適用しない。"}
+  ]
+}
